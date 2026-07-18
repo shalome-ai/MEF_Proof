@@ -137,15 +137,17 @@ theorem zeta3_pow_three : zeta3 ^ 3 = 1 := by
 /-- `ζ₃ ≠ 1`: the periodicity is strict (order exactly three, with
 `zeta3_pow_three`). Uses `Complex.exp_eq_one_iff`; the arithmetic
 reduces to `1 = 3n`, impossible in `ℤ`. -/
+/- `zeta3 ≠ 1`: the periodicity is strict (order exactly three, with
+`zeta3_pow_three`). Uses `Complex.exp_eq_one_iff`; the arithmetic
+reduces to `1 = 3n`, impossible in `Z`. -/
 theorem zeta3_ne_one : zeta3 ≠ 1 := by
-  rw [zeta3, Complex.exp_eq_one_iff]
+  rw [ne_eq, zeta3, Complex.exp_eq_one_iff]
   rintro ⟨n, hn⟩
   -- take imaginary parts: 2π/3 = n·2π over ℝ
   have hre : (2 * Real.pi / 3 : ℝ) = (n : ℝ) * (2 * Real.pi) := by
     have h' := congrArg Complex.im hn
     simp [Complex.mul_im, Complex.mul_re, Complex.I_im, Complex.I_re,
       Complex.ofReal_im, Complex.ofReal_re] at h'
-    push_cast at h' ⊢
     linarith [h']
   have hπ : Real.pi ≠ 0 := Real.pi_ne_zero
   have h3 : (1 : ℝ) * Real.pi = (3 * (n : ℝ)) * Real.pi := by

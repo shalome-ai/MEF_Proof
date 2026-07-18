@@ -24,6 +24,9 @@
   accomplished with no `sorry`.
 -/
 import Mathlib
+set_option linter.unusedSectionVars false
+set_option linter.unusedFintypeInType false
+set_option linter.unusedDecidableInType false
 
 open Matrix
 open Kronecker
@@ -142,17 +145,17 @@ def qJ : Quaternion ℝ := ⟨0, 0, 1, 0⟩
 /-- The imaginary unit `k` as a quaternion. -/
 def qK : Quaternion ℝ := ⟨0, 0, 0, 1⟩
 
-/-- `i² = −1`. -/
+/- `i^2 = -1` . -/
 theorem qI_mul_qI : qI * qI = -1 := by
-  ext <;> simp [qI, Quaternion.ext_iff] <;> norm_num
+  ext <;> simp [qI] <;> rfl
 
-/-- `ij = k`. -/
+/- `ij = k` . -/
 theorem qI_mul_qJ : qI * qJ = qK := by
-  ext <;> simp [qI, qJ, qK, Quaternion.ext_iff] <;> norm_num
+  ext <;> simp [qI, qJ, qK]
 
-/-- `ji = −k`: the non-commutativity of the fibre algebra. -/
+/- `ji = -k`: the non-commutativity of the fibre algebra. -/
 theorem qJ_mul_qI : qJ * qI = -qK := by
-  ext <;> simp [qI, qJ, qK, Quaternion.ext_iff] <;> norm_num
+  ext <;> simp [qI, qJ, qK]
 
 /-- Fixed points of quaternion conjugation are the reals:
 `q̄ = q ↔ imI = imJ = imK = 0`. -/

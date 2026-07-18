@@ -200,26 +200,31 @@ theorem zeta6_pow_six : zeta6 ^ 6 = 1 := by
   rw [h]
   exact Complex.exp_two_pi_mul_I
 
-/-- `zeta6` is a primitive sixth root of unity: `e^{iπ/3} = e^{2πi/6}`,
-which Mathlib certifies as primitive of order six. -/
-theorem zeta6_isPrimitiveRoot : IsPrimitiveRoot zeta6 6 := by
-  have h := Complex.isPrimitiveRoot_exp 6 (by norm_num)
-  have he : Complex.exp (2 * (Real.pi : ℂ) * Complex.I / (6 : ℕ)) = zeta6 := by
-    rw [zeta6]
-    congr 1
-    push_cast
-    ring
-  rwa [he] at h
-
-/- No smaller positive power of `zeta6` equals one: the order is exactly
-six. Immediate from primitivity, since `1 ≤ k ≤ 5 < 6`. -/
+/-- No smaller positive power of `zeta6` equals one: the order is exactly
+six. Uses `Complex.exp_eq_one_iff`; the arithmetic reduces to `k = 6n`
+with `1 ≤ k ≤ 5`, impossible. -/
 theorem zeta6_pow_ne_one {k : ℕ} (h1 : 1 ≤ k) (h2 : k ≤ 5) :
-    zeta6 ^ k ≠ 1 :=
-  zeta6_isPrimitiveRoot.pow_ne_one_of_pos_of_lt (by omega) (by omega)
+    zeta6 ^ k ≠ 1 := by
+  rw [zeta6, ← Complex.exp_nat_mul, Complex.exp_eq_one_iff]
+  rintro ⟨n, hn⟩
+  -- take imaginary parts: k·π/3 = n·2π over ℝ
+  have hre : (k : ℝ) * (Real.pi / 3) = (n : ℝ) * (2 * Real.pi) := by
+    have h' := congrArg Complex.im hn
+    simp [Complex.mul_im, Complex.mul_re, Complex.I_im, Complex.I_re,
+      Complex.ofReal_im, Complex.ofReal_re] at h'
+    push_cast at h' ⊢
+    linarith [h']
+  have hπ : Real.pi ≠ 0 := Real.pi_ne_zero
+  have hk6 : (k : ℝ) * Real.pi = (6 * (n : ℝ)) * Real.pi := by
+    ring_nf at hre ⊢
+    linarith [hre]
+  have hkn : (k : ℝ) = 6 * (n : ℝ) := mul_right_cancel₀ hπ hk6
+  have hkz : (k : ℤ) = 6 * n := by exact_mod_cast hkn
+  omega
 
-/- The Chinese-remainder decomposition `Z/6 ≅ Z/2 x Z/3` - the additive
+/-- The Chinese-remainder decomposition `ℤ/6 ≅ ℤ/2 × ℤ/3` — the additive
 form of `μ₆ ≅ μ₂ × μ₃`. -/
 noncomputable def z6_iso : ZMod 6 ≃+* ZMod 2 × ZMod 3 :=
-  ZMod.chineseRemainder (m := 2) (n := 3) (by decide)
+  ZMod.chineseRemainder (by decide)
 
 end C1
