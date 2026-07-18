@@ -9,13 +9,16 @@ import Mathlib
 
 namespace C6
 
-/-- A half-period cannot be lattice-translated below half a period:
-`(1/2 + m)² ≥ 1/4` for every integer `m`. -/
+/- A half-period cannot be lattice-translated below half a period:
+   `(1/2 + m)² ≥ 1/4` for every integer `m`. -/
 theorem half_period_bound (m : ℤ) : ((1 : ℝ) / 2 + m) ^ 2 ≥ 1 / 4 := by
-  rcases le_or_lt 0 m with h | h
+  have h : 0 ≤ m ∨ m < 0 := by omega
+  rcases h with h | h
   · have hm : (0 : ℝ) ≤ m := by exact_mod_cast h
     nlinarith [hm]
-  · have hm : (m : ℝ) ≤ -1 := by exact_mod_cast Int.lt_iff_add_one_le.mp h
+  · have hm : (m : ℝ) ≤ -1 := by
+      have h_le : m ≤ -1 := by omega
+      exact_mod_cast h_le
     nlinarith [hm]
 
 /-- Adjacent-corner squared distance is at least (half-period)². -/
@@ -41,36 +44,32 @@ def qJ : Quaternion ℝ := ⟨0, 0, 1, 0⟩
 def qK : Quaternion ℝ := ⟨0, 0, 0, 1⟩
 
 theorem qI_sq : qI * qI = -1 := by
-  rw [Quaternion.ext_iff]
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> simp [qI, Quaternion.mul_re,
-    Quaternion.mul_imI, Quaternion.mul_imJ, Quaternion.mul_imK]
+  ext <;> simp [qI] <;> rfl
 
 theorem qJ_sq : qJ * qJ = -1 := by
-  rw [Quaternion.ext_iff]
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> simp [qJ, Quaternion.mul_re,
-    Quaternion.mul_imI, Quaternion.mul_imJ, Quaternion.mul_imK]
+  ext <;> simp [qJ] <;> rfl
 
 theorem qK_sq : qK * qK = -1 := by
-  rw [Quaternion.ext_iff]
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> simp [qK, Quaternion.mul_re,
-    Quaternion.mul_imI, Quaternion.mul_imJ, Quaternion.mul_imK]
+  ext <;> simp [qK] <;> rfl
 
-/-- The sign convention is immaterial: (−u)² = u². -/
-theorem neg_sq (u : Quaternion ℝ) : (-u) * (-u) = u * u := by ring
+/- The sign convention is immaterial: (-u)² = u². -/
+theorem neg_sq (u : Quaternion ℝ) : (-u) * (-u) = u * u := by simp
 
-/-- General pure-imaginary unit square (mirrors the C5 certificate;
+/- General pure-imaginary unit square (mirrors the C5 certificate;
 restated so this file is standalone). -/
 theorem pure_unit_sq (p : Quaternion ℝ) (hp : p.re = 0)
     (hn : p.imI ^ 2 + p.imJ ^ 2 + p.imK ^ 2 = 1) : p * p = -1 := by
-  rw [Quaternion.ext_iff]
-  refine ⟨?_, ?_, ?_, ?_⟩
-  · simp [Quaternion.mul_re, hp]
+  -- Swap -1 for an explicit structure so the imaginary parts are exactly `0` (not `-0`)
+  have h_neg_one : (-1 : Quaternion ℝ) = ⟨-1, 0, 0, 0⟩ := by ext <;> simp <;> rfl
+  rw [h_neg_one]
+  ext
+  · simp [hp]
     nlinarith [hn]
-  · simp [Quaternion.mul_imI, hp]
+  · simp [hp]
     ring
-  · simp [Quaternion.mul_imJ, hp]
+  · simp [hp]
     ring
-  · simp [Quaternion.mul_imK, hp]
+  · simp [hp]
     ring
 
 /-- Even winding: (−1)ⁿ = 1. -/

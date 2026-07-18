@@ -2,6 +2,8 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Data.Rat.Defs
 import Mathlib.Tactic
 
+set_option linter.unusedVariables false
+
 /-!
 # N1 — Non-vanishing witness for the Shadow–Torsion Correspondence
 

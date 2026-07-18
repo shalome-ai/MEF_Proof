@@ -2,6 +2,8 @@ import Mathlib.Data.Complex.Basic
 import Mathlib.Analysis.SpecialFunctions.Complex.Circle
 import Mathlib.Tactic
 
+set_option linter.unusedSimpArgs false
+
 noncomputable section
 open Complex
 
@@ -61,7 +63,7 @@ lemma n2_normSq_eq (τ : ℂ) :
     weight 2 exactly, with correction coefficient 3. -/
 theorem n2_completion_identity (p τ E2τ E2S : ℂ)
     (hp : p ≠ 0) (him : τ.im ≠ 0)
-    (hE : E2S = τ^2 * E2τ + 12 * τ / (2 * p * I)) :
+    (hE : E2S = τ ^ 2 * E2τ + 12 * τ / (2 * p * I)) :
     E2S - 3 / (p * (((-τ⁻¹).im : ℝ) : ℂ))
       = τ^2 * (E2τ - 3 / (p * ((τ.im : ℝ) : ℂ))) := by
   have hτ : τ ≠ 0 := by
@@ -70,20 +72,21 @@ theorem n2_completion_identity (p τ E2τ E2S : ℂ)
     simpa [Complex.normSq_eq_zero] using hτ
   have himC : ((τ.im : ℝ) : ℂ) ≠ 0 := by exact_mod_cast him
   have hnsC : ((Complex.normSq τ : ℝ) : ℂ) ≠ 0 := by exact_mod_cast hns
-  -- rewrite Im(−1/τ) and pass to the cleared form
+  -- Rewrite Im(−1/τ) and substitute the definition of E2S
   rw [hE, n2_neg_inv_im]
   push_cast
-  rw [div_div_eq_mul_div]
-  -- clear all denominators; the residue is the key identity
+  -- Clear all denominators simultaneously
   have hI : (I : ℂ) ≠ 0 := Complex.I_ne_zero
   field_simp
-  -- reduce the surviving polynomial identity using τ·conj(τ) = normSq
-  -- and τ² − τ·conj(τ) = 2i·Im(τ)·τ
+  -- Bring in the structural complex identities
   have hkey := n2_key_identity τ
   have hnsq := n2_normSq_eq τ
-  -- normalise I² = −1 and close by ring arithmetic on the two facts
-  nlinarith [Complex.I_sq, hkey, hnsq, sq_nonneg (τ.im : ℝ)] <;>
-    try (rw [← hnsq] at hkey ⊢; ring_nf; nlinarith [Complex.I_sq])
+  have hI_sq : I ^ 2 = -1 := Complex.I_sq
+  -- Turn hkey into an explicit rewrite rule for τ^2
+  -- Substitute normSq into the goal
+  rw [hnsq]
+  -- Use simp only to exhaustively substitute τ^2 (and higher powers) and I^2 everywhere
+  linear_combination 6 * I * hkey + 12 * τ * (τ.im : ℂ) * hI_sq
 
 /-!
 ## Compilation note
