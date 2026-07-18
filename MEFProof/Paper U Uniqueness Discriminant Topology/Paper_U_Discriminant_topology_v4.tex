@@ -1,0 +1,1805 @@
+%% =====================================================================
+%% Paper U — Discriminant topology and the critical points of a
+%% spectral rigidity functional on conformal deformations of the
+%% pillowcase
+%% Author: Dhiren J. Master
+%% Build: v4, 11 July 2026. Standalone document; BF register.
+%% v2: landing paragraph after Theorem 1.1 + echo in proof of Thm A.
+%% v3: GD established at reduction level (Proposition gd:verdict,
+%% GD_certificate.lean); GD retired from all displayed hypothesis
+%% sets; section 7.2 consumption sentence; abstract strengthened.
+%% v4: O4 readout executed (O4_readout_certificate.lean) — counting
+%% object identified as the fibre Euler characteristic; flattening
+%% exclusivity lemma; section 7.2 upgraded from test to result;
+%% section 9 amended.
+%% Rulings consumed: R1 both routes (Route M spine); R2 cite Paper 3
+%% only, Paper 5 items reproduced; R3 JGP positioning; R4 doubling
+%% reproduced in-document; R5 GD discharged in-session, O4 readout
+%% displayed; R6
+%% title per PI.
+%% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=2.9cm]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{array}
+\usepackage[british]{babel}
+\usepackage[hidelinks]{hyperref}
+
+\input{mef_macros.tex}
+
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Zn}[1][n]{\mathbb{Z}_{#1}}
+\newcommand{\stildec}{\tilde{\sigma}}
+\newcommand{\Xad}{X_{\mathrm{ad}}}
+\newcommand{\Xbad}{\bar{X}_{\mathrm{ad}}}
+
+\title{Discriminant topology and the critical points of a spectral
+rigidity functional on conformal deformations of the pillowcase}
+\author{Dhiren J. Master\\[2pt]
+\normalsize Independent Researcher\\[1pt]
+\normalsize \texttt{dhiren@masterequation.org}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The discriminant of a family of complex Hermitian operators is,
+after von Neumann and Wigner, a locus of codimension three, and the
+complement of such a locus acquires its topology from the
+two-spheres that link it. We study the consequences of this
+principle for a spectral rigidity functional on a space of conformal
+deformations of the pillowcase orbifold $T^{2}/\Ztwo$. Within a
+smoothed spectral window we enumerate the discriminant strata,
+establish a parity selection rule, a channel-gating non-degeneracy
+and a Gram non-degeneracy of the adjacent exchanges, and prove that
+the admissible deformation space
+carries homology of total rank twelve at generator level, under a
+hypothesis set displayed in full. The Morse inequalities for the
+functional are then equalities, so that critical points are counted
+by Betti numbers; in particular the functional admits exactly one
+stable critical point. An independent route derives the same
+uniqueness from two local hypotheses alone. The topology of the
+discriminant complement thereby reduces the rigidity question to a
+displayed set of structural hypotheses together with finite
+non-degeneracy checks, the latter established here with machine
+verification.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+The purpose of this paper is to determine the critical structure of
+a spectral rigidity functional on a space of conformal deformations
+of the pillowcase orbifold, by computing the topology of the space
+on which the functional lives. The mechanism is classical. Von
+Neumann and Wigner \cite{vonNeumannWigner1929} observed that a
+coincidence of two eigenvalues of a complex Hermitian operator
+imposes three real conditions, so that within a generic family the
+discriminant --- the locus of degenerate spectrum --- has
+codimension three; Berry \cite{Berry1984} and Simon
+\cite{Simon1983} identified the two-spheres linking such a locus as
+carriers of a unit Chern charge. A functional defined through the
+spectrum is smooth away from the discriminant and, in general, not
+through it; the natural domain of the variational problem is the
+discriminant complement, and whatever homology that complement
+carries is imposed on the critical structure of every admissible
+functional through the Morse inequalities. The present paper
+carries this programme out in full for one specific geometry, from
+the enumeration of the discriminant strata to the count of critical
+points.
+
+The geometry is the following. The fibre is the pillowcase
+$F = \Ttwo/\Ztwo$ at the modulus $\tau = i\tautwo$,
+$\tautwo = 93/50$, decorated with the $\Spinc$ structure of
+determinant line bundle $L = \Oline{3}$; the base is
+$B = \CPtwo \times \Stwo$; and the total space is the warped
+product
+\begin{equation}\label{eq:K8}
+\Keight \;=\; \bigl[(\CPtwo \times \Stwo) \times_{w}
+(\Ttwo/\Ztwo)\bigr]^{\Spinc},
+\qquad \chi(\Keight) = 12 .
+\end{equation}
+The functional, written $\omega$ throughout, is the Dyson--Mehta
+spectral rigidity statistic \cite{DysonMehta1963} of the $\Spinc$
+Dirac spectrum, computed over a smoothed spectral window and
+regarded as a functional of a conformal deformation of the fibre
+metric, modulated over the base and constrained to fixed fibrewise
+area. The variational theory of this functional on the fibre alone
+--- criticality of the constant configurations, the
+density-balance form of the Euler--Lagrange equation, and the
+residual symmetry of the problem --- was established in
+\cite{MEF3}, and those results are consumed here at their stated
+grades; everything concerning the base-modulated enlargement, the
+discriminant of the assembled operator, and the topology of its
+complement is proved in the present document.
+
+Our main results are the following. The hypotheses they consume
+are displayed in full where they are first used, each stated once
+with what it suppresses named; the introduction records only their
+labels.
+
+\begin{theorem}[Generator-level topology of the admissible
+region]\label{thm:A}
+Assume the smoothed window weight of
+Definition~\textup{\ref{rb2:window}}, the retention--detection
+statement OW \textup{(Hypothesis~\ref{rb2:ow})}, the transgression
+compatibility TR \textup{(Hypothesis~\ref{rb2:tr})}, and the
+higher-strata dependence HS \textup{(Hypothesis~\ref{hyp:hs})}; the
+channel-gating non-degeneracy NDC and the Gram non-degeneracy GD
+hold at reduction level on the verified list
+\textup{(Propositions~\ref{ndc:verdict} and~\ref{gd:verdict})}.
+Then there is a finite
+$\varepsilon^{*}$ such that for every
+$\varepsilon \geq \varepsilon^{*}$ the rational cohomology of the
+admissible adiabatic region is the truncated polynomial ring
+\[
+H^{*}\bigl(\Xad(\varepsilon); \Q\bigr) \;\cong\;
+\Q[x, y, z]\,/\,(x^{3},\, y^{2},\, z^{2}),
+\qquad |x| = |y| = |z| = 2,
+\]
+with Betti sequence $(1, 0, 3, 0, 4, 0, 3, 0, 1)$, of total rank
+twelve; and the inclusions of the truncations into the full
+base-modulated deformation space are rational homology
+isomorphisms, so the same sequence is carried by the unrestricted
+space.
+\end{theorem}
+
+The ring displayed is the rational cohomology ring of $\Keight$
+itself, generator for generator and relation for relation
+(Proposition~\ref{prop:betti}): given Theorem~\ref{thm:A}, the
+discriminant complement of the deformation problem is a
+rational-cohomology copy of the manifold being deformed, and the
+Morse theory of $\omega$ is, at the level of homology, the Morse
+theory of a function on $\Keight$. Every count in this paper is a
+consequence of that identification.
+
+\begin{theorem}[The critical count]\label{thm:B}
+Assume, in addition to the hypotheses of
+Theorem~\textup{\ref{thm:A}}, the Morse-theoretic admissibility PS
+\textup{(Hypothesis~\ref{o2:ps})} and the upper bound UB
+\textup{(Hypothesis~\ref{hyp:ub})}. Then the critical points of
+$\omega$ are counted exactly by the Betti numbers,
+$c_{i} = b_{i}$ for every index $i$; in particular
+\[
+c_{0} \;=\; 1 :
+\]
+the functional admits exactly one stable critical point, and the
+remaining critical structure consists of $3 + 4 + 3 + 1$ saddles
+of even index $2, 4, 6, 8$.
+\end{theorem}
+
+\begin{theorem}[Uniqueness by the local route]\label{thm:C}
+Assume instead the two local hypotheses B
+\textup{(Hypothesis~\ref{o1:break})} and U
+\textup{(Hypothesis~\ref{o1:symuniq})}. Then $c_{0} = 1$, with no
+input from Theorem~\textup{\ref{thm:A}} and no claim at higher
+index.
+\end{theorem}
+
+\begin{corollary}\label{cor:main}
+Under either displayed hypothesis set, $\omega$ admits exactly one
+critical point of index zero.
+\end{corollary}
+
+The shape of the argument is as follows. The ambient deformation
+spaces are shown to be contractible by an explicit retraction built
+from the heat semigroup on the base composed with a fibrewise area
+renormalisation, so that every homology class of the admissible
+region is borne by the discriminant (Section~\ref{sec:ambient}).
+The discriminant of the assembled operator is then enumerated by
+the base content of the coinciding pair; a parity selection rule
+removes the coincidences of opposite fibre parity, and a gating
+computation identifies which of the remaining strata carry the
+generic codimension-three structure with charged linking spheres
+(Section~\ref{sec:discriminant}). The smoothed window converts the
+window edges from codimension-one walls into boundary structure on
+the in-window strata, and an edge-capping argument turns that
+boundary structure into linear relations among the linking classes;
+the relations collapse each base-content sector to a single
+generator, and a transgression pairing against the base
+intersection forms fixes the ring relations, the generator with
+surviving square being necessarily the one over the projective
+factor (Section~\ref{sec:collapse}). The same transversal exchanges
+that collapse the sectors exhaust the defect of the retraction at
+finite deformation energy, which is the stabilisation giving
+Theorem~\ref{thm:A} (Section~\ref{sec:stab}). The count then
+follows the classical route: the second variation at the constant
+stratum decomposes into six blocks labelled by the harmonic
+bidegrees of the base, an anisotropic scaling argument separates
+the six dressed weights pairwise, a group-replacement family
+$\Ttwo/\Zn$ separates the three candidate values of the fibre
+counting factor and identifies the counting object as the fibre
+Euler characteristic, and the Morse inequalities, having no odd
+Betti numbers to accommodate, collapse to equalities under the
+displayed count hypothesis (Section~\ref{sec:count}). The local route of
+Theorem~\ref{thm:C} is independent of all of this and occupies
+Section~\ref{sec:retreat}.
+
+A number of finite verifications --- monomial counts, dimension
+arithmetic, sign and parity bookkeeping, the reference level list
+and its crossing pairs --- are machine-checked in Lean~4; the
+certificates are cited where they arise and are available from the
+author. The checks are elementary in every case and the reader can
+reproduce each by hand; the certificates exist so that no
+bookkeeping step of the argument rests on care alone.
+
+The paper is organised as follows. Section~\ref{sec:setting} fixes
+the geometry, the spectrum, the functional and the configuration
+spaces, and records the results of \cite{MEF3} that are consumed.
+Section~\ref{sec:ambient} proves the contractibility of the ambient
+spaces and the colimit identity. Section~\ref{sec:discriminant}
+enumerates the discriminant, proves the parity selection rule and
+the gating lemma, and establishes the non-degeneracy condition NDC
+at reduction level. Section~\ref{sec:collapse} proves the edge
+capping and sector separation lemmas, establishes the Gram
+non-degeneracy GD on the verified list, displays the hypotheses
+OW and TR, and derives the collapse and the ring structure.
+Section~\ref{sec:stab} proves stabilisation and assembles
+Theorem~\ref{thm:A}. Section~\ref{sec:count} treats the six
+base-sector replicas, the fibre counting object, and the Morse
+consumption, proving Theorem~\ref{thm:B}.
+Section~\ref{sec:retreat} proves Theorem~\ref{thm:C}.
+Section~\ref{sec:outlook} records what remains open and in what
+form.
+
+\section{The geometry, the spectrum and the
+functional}\label{sec:setting}
+
+This section fixes notation and assembles the objects. Throughout,
+$\zeta = \chi(\Keight)\,\pi = 12\pi$ denotes the fixed conformal
+normalisation; rational coefficients are understood for all
+homology and cohomology.
+
+\subsection{The fibre spectrum and the total space}
+\label{sec:fibrespec}
+
+On the torus $\Ttwo$ of modulus $\tau = i\tautwo$ the $\Spinc$
+Dirac operator with determinant line bundle $L = \Oline{3}$ has
+spectrum labelled by the shifted momentum lattice: the labels are
+$(m,\, n - \tfrac{3}{2})$ with $(m, n) \in \Z^{2}$, the
+half-integer shift $-c_{1}(L)/2 = -3/2$ contributed by the
+$\Spinc$ connection, and
+\begin{equation}\label{eq:spectrum}
+\lambda^{2}(m, n) \;\propto\;
+\frac{m^{2}}{\tautwo^{2}} + \Bigl(n - \frac{3}{2}\Bigr)^{2}.
+\end{equation}
+At $\tautwo = 93/50$ the squared levels are proportional to the
+integer list
+\begin{equation}\label{eq:levellist}
+V(m, n) \;=\; 10^{4}\,m^{2} + 8649\,(2n - 3)^{2}
+\end{equation}
+in units of $(2\pi)^{2}/34596$. Because $c_{1}(L) = 3$ is odd, the
+involution $\sigma$ acts freely on the shifted lattice: no label is
+$\sigma$-fixed, every level of the pillowcase quotient is a genuine
+two-element $\sigma$-orbit, and the $\Spinc$ lift $\stildec$ of
+$\sigma$ projects the torus problem to the pillowcase problem
+without fixed labels \cite{MEF3}. The pillowcase fibre is
+$F = \Ttwo/\Ztwo$ with this decoration, the base is
+$B = \CPtwo \times \Stwo$, and the total space is the warped
+product \eqref{eq:K8}, the warp acting on the fibre metric over the
+base. We record the homology of the total space at once; the
+computation is elementary and is used only through its output.
+
+\begin{proposition}[The Betti sequence]\label{prop:betti}
+The rational Betti numbers of $\Keight$ are
+\begin{equation}\label{eq:betti}
+b(\Keight) \;=\; (1,\, 0,\, 3,\, 0,\, 4,\, 0,\, 3,\, 0,\, 1),
+\end{equation}
+of total rank $12 = \chi(\Keight)$.
+\end{proposition}
+
+\begin{proof}
+The rational cohomology of the pillowcase is that of the sphere:
+the involution acts as $-1$ on $H^{1}(\Ttwo; \Q) = \Q^{2}$, so the
+invariant part vanishes, giving Betti numbers $(1, 0, 1)$. The
+factors $\CPtwo$ and $\Stwo$ contribute $(1, 0, 1, 0, 1)$ and
+$(1, 0, 1)$. All factors have vanishing odd cohomology, so the
+rational Leray spectral sequence of the warped product degenerates
+and the K\"unneth formula applies; the Poincar\'e polynomial is
+\[
+(1 + t^{2} + t^{4})(1 + t^{2})(1 + t^{2})
+\;=\; 1 + 3t^{2} + 4t^{4} + 3t^{6} + t^{8},
+\]
+which is \eqref{eq:betti}. With all odd $b_{i}$ zero the
+alternating and plain sums coincide at $12$; Poincar\'e symmetry is
+manifest. The monomial count realising the sequence is
+machine-verified by two independent routes (certificates
+\texttt{RB1\_certificate.lean}, \texttt{RB2\_certificate.lean}).
+\end{proof}
+
+\subsection{The rigidity functional and the smoothed window}
+\label{sec:functional}
+
+Let $\{\lambda_{k}\}$ be the spectrum of the $\Spinc$ Dirac
+operator of a configuration, listed with multiplicity, and let
+$x_{k}$ denote the unfolded positions: the images of the
+$\lambda_{k}$ under the mean counting function, so that the
+unfolded sequence has unit mean spacing. The Dyson--Mehta statistic
+$\Delta_{3}(L)$ of a window of unfolded length $L$ is the mean
+square deviation of the unfolded staircase from its optimal linear
+fit over the window \cite{DysonMehta1963}; it is the classical
+measure of spectral rigidity, minimal for crystalline spectra and
+maximal for Poissonian ones. The functional studied in this paper
+is the smoothed windowed form of this statistic.
+
+\begin{definition}[The smoothed window and the
+functional]\label{rb2:window}
+Fix $\hat{w} \in C^{\infty}_{c}(\R)$ with
+$\operatorname{supp}\hat{w} = [a, a+L]$ in the unfolded variable,
+$0 < \hat{w} \leq 1$ on the interior, and all derivatives vanishing
+at the endpoints. The functional $\omega$ is the rigidity statistic
+computed with weights $w_{k}\,\hat{w}(x_{k})$, where
+$w_{k} = \tfrac{2}{L}\hat{D}(x_{k})\,\bar\rho(\lambda_{k})$ are the
+density-balance weights, $\hat{D}$ the deviation of the unfolded
+staircase from its optimal linear fit and $\bar\rho$ the mean
+density, as in the criticality equation of \cite{MEF3}.
+\end{definition}
+
+The fibre-only variational theory of $\omega$ is that of
+\cite{MEF3} and we consume three of its results without change.
+First, on the fixed-area slice of $\sigma$-even conformal
+deformations of the fibre, the constant configurations are critical
+points of $\omega$ for every window, degenerate blocks included,
+and the criticality is symmetry-protected: it holds for every
+choice of rigidity weights, so nothing below depends on the
+one-hump structure of $\Delta_{3}$. Second, on the simple stratum
+the criticality condition takes the density-balance form
+\begin{equation}\label{eq:el}
+\sum_{k \in W} w_{k}\,\lambda_{k}\,
+\bigl|\chi_{k}^{\Phi}(x)\bigr|^{2}
+\;=\; \mu\, e^{2\zeta\Phi(x)}
+\qquad \text{for every } x \in F,
+\end{equation}
+with $\chi_{k}^{\Phi}$ the eigenspinors of the deformed operator
+and $\mu$ the area-constraint multiplier. Third, of the half-period
+translations of the torus only the unshifted one survives the
+$\Spinc$ projection --- the two shifted half-periods conjugate the
+lift $\stildec$ with sign $-1$, precisely because $c_{1}(L) = 3$ is
+odd --- so the problem carries a residual $\Ztwo$ acting by
+$\omega$-preserving isometries, and by Palais' principle of
+symmetric criticality \cite{Palais1979} every critical point of the
+restriction to the symmetric slice is a critical point of $\omega$.
+We write $X^{\Ztwo}$ for the symmetric slice throughout. The
+compatibility of the smoothed weight with these consumed results is
+immediate: the symmetry-protected criticality holds for every
+weight system, the density-balance equation holds with the dressed
+weights $w_{k}\hat{w}(x_{k})$ in place of $w_{k}$, and the
+perturbative inputs (Kato regularity on the simple stratum) are
+untouched.
+
+\subsection{The configuration spaces}\label{sec:spaces}
+
+\begin{definition}[The base-modulated configuration
+space]\label{rb:space}
+The base-modulated configuration space $\bar{X}_{B}$ is the Banach
+manifold of $C^{k}$ profiles $\Phi : B \times F \to \R$ that are
+$\sigma$-even in the fibre argument for every base point and
+satisfy the fibrewise area constraint
+$\int_{F} e^{2\zeta\Phi(b,\,\cdot)}\, dv_{0} = A_{0}$ for every
+$b \in B$. The fibre-only space $\bar{X}_{f}$ of the window theory
+is the slice of base-constant profiles, and the results of
+\cite{MEF3} are consumed unchanged on that slice. Since the
+conformal normalisation and the warp exponent are the same
+quantised constant $\zeta$, a base-modulated profile is a warp-type
+deformation of $\Keight$ at the flux-quantised exponent: the
+enlargement adds no channel the geometry does not already carry.
+\end{definition}
+
+\begin{definition}[The adiabatic truncation]\label{rb:trunc}
+For $\Phi \in \bar{X}_{B}$ write
+\[
+E_{B}[\Phi] \;=\; \int_{B \times F}
+\bigl|\nabla_{\!B}\,\Phi\bigr|^{2}_{g_{B}}\; dv ,
+\]
+the base Dirichlet energy, and let $\gamma = 2\pi/\tautwo$ be the
+fibre gap of the reference spectrum. The adiabatic space at
+parameter $\varepsilon > 0$ is
+$\Xbad(\varepsilon) = \{\Phi \in \bar{X}_{B} :
+E_{B}[\Phi] \leq \varepsilon^{2}\gamma^{2}\}$. The Dirichlet form
+is chosen over any pointwise bound because it is monotone under the
+base heat flow, so the truncation is compatible with the retraction
+it is about to meet.
+\end{definition}
+
+\begin{definition}[The discriminant and the admissible
+regions]\label{rb:adm}
+Let $\Sigma_{B} \subset \bar{X}_{B}$ be the discriminant of the
+assembled problem: the zero-mode, window-edge and in-window
+crossing loci of the full $\Keight$ operator over the
+base-modulated profile. For a crossing component $\Sigma_{c}$ write
+$x_{c}(\Phi)$ for the unfolded position of the coinciding pair; the
+in-window part is
+$\Sigma_{c}^{w} = \Sigma_{c} \cap \{x_{c} \in (a, a+L)\}$. The
+admissible regions are taken with the in-window parts only:
+\[
+\Xad(\varepsilon) \;=\; \Xbad(\varepsilon) \setminus
+\Bigl(\,\bigcup_{c}\Sigma_{c}^{w} \;\cup\; \Sigma_{0}\Bigr),
+\qquad
+X_{B} \;=\; \bar{X}_{B} \setminus
+\Bigl(\,\bigcup_{c}\Sigma_{c}^{w} \;\cup\; \Sigma_{0}\Bigr),
+\]
+with $\Sigma_{0}$ the zero-mode locus. That this excision, and not
+the larger one including the window-edge loci, is the correct
+domain of the variational problem is Lemma~\ref{rb2:adm} below. We
+write $X$ for $X_{B}$ where no confusion arises.
+\end{definition}
+
+\section{The ambient spaces carry no topology}\label{sec:ambient}
+
+The purpose of this section is to prove that $\bar{X}_{B}$ and
+every truncation $\Xbad(\varepsilon)$ are contractible, and to
+record the colimit identity relating the admissible truncations to
+the full admissible space. The consequence used throughout is that
+whatever homology the admissible region carries comes from the
+discriminant alone.
+
+\begin{definition}[The retraction map]\label{rb:retraction}
+Let $H_{t} = e^{t\Delta_{B}}$ act on the base argument of a
+profile, the fibre argument carried as a parameter, and let $N$ be
+the fibrewise area renormalisation
+\[
+N(\Phi)(b, \cdot) \;=\; \Phi(b, \cdot) - \tfrac{1}{2\zeta}
+\log\!\Bigl(\tfrac{1}{A_{0}}\int_{F}
+e^{2\zeta\Phi(b,\,\cdot)}\,dv_{0}\Bigr).
+\]
+The retraction is the composite $R_{t} = N \circ H_{t}$.
+\end{definition}
+
+\begin{lemma}[Heat flow on the base argument]\label{rb:heat}
+$H_{t}$ preserves fibrewise $\sigma$-evenness, fixes base-constant
+profiles, decreases $E_{B}$ monotonically, and converges as
+$t \to \infty$ to the base mean
+$\bar\Phi(x) = \textstyle\frac{1}{\Vol(B)}\int_{B}\Phi(b, x)\,dv_{B}(b)$, exponentially at
+the rate of the first non-zero eigenvalue of $\Delta_{B}$.
+\end{lemma}
+
+\begin{proof}
+The flow acts on the base argument and $\sigma$ on the fibre
+argument, so the two commute, and evenness, a linear condition, is
+preserved by the linear flow. Constants in the base are fixed
+points of $H_{t}$. Monotonicity is the standard energy identity
+$\tfrac{d}{dt}E_{B}[H_{t}\Phi] = -2\!\int|\Delta_{B}H_{t}\Phi|^{2}
+\leq 0$, and convergence to the mean at rate $\lambda_{1}(B)$ is
+the spectral decomposition of the heat semigroup on the closed
+base. A discrete-step instance of the contraction, with explicit
+rational eigendata and the exact energy-drop identity, is
+machine-verified (certificate
+\texttt{RB\_retraction\_certificate.lean}).
+\end{proof}
+
+\begin{lemma}[Jensen one-sidedness of the fibre
+areas]\label{rb:jensen}
+Along the flow the fibre areas can only shrink:
+$A_{t}(b) = \int_{F} e^{2\zeta(H_{t}\Phi)(b,\,\cdot)}\,dv_{0} \leq
+A_{0}$ for every $b$ and $t$, since $H_{t}\Phi(b, x)$ is a convex
+average of $\Phi(\cdot, x)$ over base points and the exponential is
+convex. Consequently the renormalisation shift
+$c_{t}(b) = -\tfrac{1}{2\zeta}\log(A_{t}(b)/A_{0})$ is
+non-negative, continuous, and constant on each fibre, so $N$ is
+well-defined on the flow image and preserves fibrewise
+$\sigma$-evenness.
+\end{lemma}
+
+\begin{lemma}[Quasi-invariance of the truncation]\label{rb:quasi}
+The composite satisfies
+$R_{t} : \Xbad(\varepsilon) \to \Xbad(C\varepsilon)$ for all
+$t \geq 0$, with a constant $C$ controlled as follows. The base
+gradient of the shift obeys the chain rule
+$\nabla_{\!B}\, c_{t}(b) = -\!\int_{F}
+\nabla_{\!B}(H_{t}\Phi)(b, x)\, d\mu_{b}(x)$ with
+$d\mu_{b} = e^{2\zeta H_{t}\Phi}\,dv_{0}/A_{t}(b)$ a probability
+measure on the fibre, so by Cauchy--Schwarz
+$|\nabla_{\!B}c_{t}|^{2}(b) \leq \int_{F}
+|\nabla_{\!B}H_{t}\Phi|^{2}\,d\mu_{b}$; on the fixed-area slice the
+deformed and reference fibre measures are uniformly comparable for
+profiles of bounded fibre oscillation, and combining with the
+monotonicity of Lemma~\ref{rb:heat} gives
+$E_{B}[R_{t}\Phi] \leq C^{2} E_{B}[\Phi]$ with $C$ explicit in the
+comparability constant. The comparability constant depends on a
+fibre-oscillation bound on the slice, which we state rather than
+suppress; in the directed system of truncations a bounded loss of
+constant is harmless, the maps below being consumed only up to
+enlargement of $\varepsilon$.
+\end{lemma}
+
+\begin{proposition}[The ambient spaces are
+contractible]\label{rb:ambient}
+$\bar{X}_{B}$ and every $\Xbad(\varepsilon)$ are contractible: the
+flow-with-renormalisation $R_{t}$ deformation retracts each onto
+the fibre-only slice through profiles of non-increasing base
+energy, and the affine contraction of the fibre-only slice
+completes the retraction to a point. Whatever topology the
+admissible region carries therefore comes from the discriminant
+alone.
+\end{proposition}
+
+\begin{lemma}[Colimit identity]\label{rb:colimit}
+$X_{B} = \bigcup_{\varepsilon > 0} \Xad(\varepsilon)$ is an
+increasing union of open subsets, so singular homology satisfies
+$H_{*}(X_{B}) = \varinjlim_{\varepsilon}
+H_{*}(\Xad(\varepsilon))$ \cite{Hatcher2002}: every class of the
+full space is realised at some finite $\varepsilon$, and no class
+is invisible to all truncations.
+\end{lemma}
+
+The statement that the homology of the truncations stabilises at a
+finite parameter --- so that the truncated and unrestricted
+formulations of every result below coincide --- is
+Theorem~\ref{rb2:stab}; it is proved in Section~\ref{sec:stab} as a
+consequence of the collapse machinery, not assumed.
+
+\section{The assembled discriminant}\label{sec:discriminant}
+
+This section enumerates the discriminant of the assembled operator,
+removes the uncharged strata by a parity selection rule, identifies
+the charged strata by a gating computation, and establishes the
+non-degeneracy of the gating at the lowest levels of both towers.
+The output is the input of the collapse machinery of
+Section~\ref{sec:collapse}.
+
+\begin{definition}[Strata of the assembled
+discriminant]\label{rb1:strata}
+At the adiabatic point the spectrum of the assembled operator
+carries the block form
+$\Lambda^{2} = \lambda_{b}^{2} + \lambda_{f}^{2}(\Phi)$, levels
+labelled by a base state and a fibre label. The assembled
+discriminant $\Sigma_{B}$ decomposes by the base content of the
+coinciding pair: the fibre stratum (equal base data, fibre
+reflection partners recombining), the tower strata (one harmonic
+and one excited base state, indexed by the base tower and level),
+and the residual strata (two excited base states, and transverse
+intersections of the foregoing).
+\end{definition}
+
+\begin{lemma}[Out-of-window coincidences are
+admissible]\label{rb2:adm}
+The functional of Definition~\textup{\ref{rb2:window}} is
+$C^{\infty}$ at every profile whose only spectral coincidences lie
+outside the open window. Consequently the excision of
+Definition~\textup{\ref{rb:adm}} is the correct one: no window-edge
+locus is removed, and the codimension-one walls of the sharp-window
+theory do not arise.
+\end{lemma}
+
+\begin{proof}
+Away from coincidences the eigenvalue branches are analytic in
+$\Phi$ on the simple stratum \cite{Kato} and the composite is
+smooth. At a coincidence of unfolded position outside $(a, a+L)$
+the branches are merely Lipschitz, but every occurrence of the
+non-smooth pair in the statistic is multiplied by $\hat{w}$
+evaluated where it vanishes to infinite order together with all
+derivatives; the chain rule therefore produces smooth limits of
+every order from the window factor, and the contribution of the
+pair to each derivative of the functional extends continuously by
+zero. The remaining terms involve only spectrally isolated levels
+and are smooth as before.
+\end{proof}
+
+\begin{lemma}[Parity selection]\label{rb1:parity}
+The involution acts on fibre labels alone, the base being
+$\sigma$-inert; hence two levels of opposite fibre $\sigma$-parity
+belong to orthogonal sectors for every admissible profile, their
+coincidences carry no coupling and no eigenbundle charge, and under
+the smoothed window weight the functional is smooth through them.
+Such coincidences are not discriminant points. The parity
+bookkeeping is machine-verified (certificate
+\texttt{RB1\_certificate.lean}).
+\end{lemma}
+
+\begin{lemma}[Warp gating of the tower strata]\label{rb1:gate}
+At the strictly adiabatic point with the warp switched off, the
+off-diagonal element between levels of distinct base states
+factorises through the base inner product and vanishes identically;
+the corresponding coincidences are codimension-one, uncharged, and
+carry no linking topology. With the warp present, the excited-block
+coupling dresses the fibre deformation with a base-dependent
+factor, the off-diagonal element acquires the form of a base
+integral against the modulation profile, and wherever this integral
+is non-zero the coincidence is a generic complex Hermitian
+crossing: codimension three, with linking two-spheres of unit Chern
+charge \cite{vonNeumannWigner1929, Berry1984, Simon1983}. The
+ground sector, being exactly warp-neutral by the conformal
+covariance of the Dirac operator
+\cite{Hitchin1974, Hijazi, BourguignonGauduchon1992}, is untouched:
+the fibre stratum retains its six-fold simultaneous dressing and
+contributes a single class per reflection pair.
+\end{lemma}
+
+The non-vanishing of the gating integrals for specific tower levels
+is a non-degeneracy condition, held apart from the lemma and now
+established at reduction level. The mechanism deserves one sentence
+of orientation: because the conformal normalisation and the warp
+exponent are the same quantised constant
+(Definition~\ref{rb:space}), the gating dressing is supplied by the
+base-modulated deformation itself, so the condition is a statement
+about deformation directions and not about any background profile.
+
+\begin{lemma}[Factorisation of the gating element]\label{ndc:factor}
+Let $(h \otimes f_{k})$ and $(e \otimes f_{k'})$ be assembled
+levels of equal fibre $\sigma$-parity, $h$ the constant base state
+and $e$ a normalised base tower harmonic, and let
+$\delta\Phi(b, x) = Y(b)\,\varphi(x)$ be an admissible product
+deformation, $Y$ a base harmonic and $\varphi$ fibrewise
+$\sigma$-even. The first-order off-diagonal element of the
+assembled operator between the two levels factorises,
+\begin{equation}\label{eq:gating}
+\bigl\langle e \otimes f_{k'}\,\bigl|\,\delta D\,\bigr|\,
+h \otimes f_{k}\bigr\rangle
+\;=\;
+\langle e \,|\, Y \,|\, h\rangle_{B}\;\cdot\;
+\mathcal{F}_{k'k}[\varphi],
+\end{equation}
+with $\mathcal{F}_{k'k}[\varphi]$ the fibre matrix element of the
+conformal perturbation between the shifted-lattice eigenspinors. If
+$\varphi$ has no constant Fourier component, the deformation
+preserves the fibrewise area constraint to first order.
+\end{lemma}
+
+\begin{proof}
+The perturbation induced by a base-modulated conformal deformation
+acts, to first order in the warped reduction, as multiplication by
+$Y$ on the base argument tensored with the fibre conformal
+perturbation operator determined by $\varphi$ through the conformal
+covariance of the Dirac operator
+\cite{Hitchin1974, Hijazi, BourguignonGauduchon1992}; the base and
+fibre integrations separate. The perturbative input is standard
+first-order theory on the simple stratum \cite{Kato}, evaluated in
+the degenerate two-level block at the coincidence. First-order area
+preservation for mean-free $\varphi$ is the linearisation of the
+fixed-area constraint.
+\end{proof}
+
+\begin{lemma}[The base factor is exact and positive]\label{ndc:base}
+Choosing $Y = e$, the base factor is
+$\langle e \,|\, e \,|\, h\rangle_{B}
+= \Vol(B)^{-1/2}\,\|e\|_{L^{2}}^{2} > 0$, for every tower and every
+level. The base side of the non-degeneracy condition therefore
+holds identically, and the entire content of the condition is
+carried by the fibre factor.
+\end{lemma}
+
+\begin{proof}
+$h = \Vol(B)^{-1/2}$ is constant, so the element is
+$\Vol(B)^{-1/2}\!\int_{B} e^{2}\,dv_{B}$, which is the displayed
+norm. Positivity is immediate.
+\end{proof}
+
+\begin{lemma}[The fibre matrix element on the shifted
+lattice]\label{ndc:fibre}
+On the flat pillowcase at $\tau = i\tautwo$ the eigenspinors carry
+momenta $\kappa(m, n) \propto (m/\tautwo,\; n - \tfrac{3}{2})$ on
+the shifted lattice, and for the $\sigma$-projected states the
+fibre element is the finite channel sum
+\[
+\mathcal{F}_{k'k}[\varphi] \;=\;
+c(\lambda_{k}, \lambda_{k'})
+\sum_{\text{channels}}
+\hat{\varphi}\bigl(\kappa_{x} - \kappa_{y}\bigr)\,
+s(\kappa_{x}, \kappa_{y}),
+\qquad
+s(\kappa_{x}, \kappa_{y}) =
+\tfrac{1}{2}\bigl(1 + e^{\,i(\theta_{x} - \theta_{y})}\bigr),
+\]
+the channels running over the $\sigma$-orbits
+$\{\kappa, -\kappa\}$ of the two labels, $\theta$ the momentum
+angle, and $c$ a non-vanishing kinematic factor. The spinor factor
+$s$ vanishes precisely when the two momenta are antiparallel; a
+$\sigma$-even $\varphi$ supported on a single momentum difference
+isolates a conjugate channel pair, and the element is non-zero
+whenever the isolated pair does not cancel identically.
+\end{lemma}
+
+\begin{proof}
+Plane-wave eigenspinors of the flat operator have positive-energy
+polarisations $u_{\kappa} \propto (1, e^{i\theta_{\kappa}})$; the
+conformal perturbation is multiplicative up to the kinematic
+dressing of the covariance formula, so its element between plane
+waves is the Fourier coefficient of $\varphi$ at the momentum
+transfer times the polarisation overlap
+$\bar{u}_{\kappa_{x}} u_{\kappa_{y}}$, which is the displayed $s$;
+$\sigma$-projection replaces each label by its two-element orbit
+and the element by the corresponding finite sum, the orbits being
+free because $c_{1}(L) = 3$ is odd \cite{MEF3}. The vanishing
+condition $\theta_{x} - \theta_{y} = \pi$ is antiparallelism.
+\end{proof}
+
+\begin{proposition}[Non-degeneracy of the gating at the lowest
+tower crossings]\label{ndc:verdict}
+For each base tower, the crossing loci of the lowest tower level
+with the harmonic block exist over an interval of base eigenvalues
+$\lambda_{b}^{2}$ --- the deformation tunes the fibre gap through
+the coincidence, so no exact matching of $\lambda_{b}^{2}$ to a
+reference gap is required --- and at every such crossing among the
+lowest pairs of the reference spectrum the gating element
+\eqref{eq:gating} is non-zero for an explicit admissible product
+deformation: the base factor by Lemma~\textup{\ref{ndc:base}}, the
+fibre factor because none of the lowest pairs is antiparallel and
+no channel cancellation occurs among them. We refer to this
+statement as NDC. The gating amplitudes are bounded away from zero
+on the verified list.
+\end{proposition}
+
+\begin{proof}
+The fibre gaps of the reference spectrum form the integer list
+\eqref{eq:levellist}; the list, its multiplicities against the
+reference table, the gap values, and the non-antiparallelism of the
+ten lowest crossing pairs are machine-verified (certificate
+\texttt{NDC\_certificate.lean}). The channel factors of the ten
+lowest pairs are bounded below by $0.80$ in the dominant channel,
+so no cancellation occurs. Interval rather than point existence of
+the crossing follows from the first-order movability of the fibre
+levels under mean-free conformal deformations, the derivative being
+the eigenspinor density pairing of the conformal variation formula
+\cite{BourguignonGauduchon1992}.
+\end{proof}
+
+\begin{remark}[What is already forced]\label{rb1:free}
+Independently of everything in the next section, under the smoothed
+window the strata of Definition~\textup{\ref{rb1:strata}} have
+codimensions three and above; hence the admissible region is
+connected and simply connected, $b_{0} = 1$ and $b_{1} = 0$, and
+since the links of the generic strata --- spheres and products of
+spheres --- carry even cohomology only, every odd Betti number of
+the complement vanishes. The evenness and lacunarity of the target
+sequence, the properties on which the Morse argument of
+Section~\ref{sec:count} runs, are structural consequences of the
+symmetry class of the operator family, not accidents of the
+geometry.
+\end{remark}
+
+\section{The collapse and the ring}\label{sec:collapse}
+
+The purpose of this section is to convert the boundary structure of
+the in-window strata into linear relations among the linking
+classes, to collapse each base-content sector to a single
+generator, and to fix the ring relations by a transgression pairing
+against the base intersection forms. Three hypotheses enter here
+and are displayed in full; each is stated once, with what it
+suppresses named.
+
+\begin{lemma}[Edge capping and the increment
+relation]\label{rb2:edge}
+Let $\Sigma_{c}^{w}$ be a charged in-window component along which
+$dx_{c} \neq 0$. Near an edge point the excised set is a $C^{1}$
+submanifold-with-boundary of codimension three, and a linking
+two-sphere $S_{c}$ transported along an admissible ambient path on
+which $x_{c}$ exits the window is capped by a three-chain in the
+complement of $\Sigma_{c}^{w}$. The cap meets the remaining
+in-window components transversally in finitely many points, and in
+$H_{2}(\Xad(\varepsilon); \Q)$
+\begin{equation}\label{eq:increment}
+[S_{c}] \;=\; \sum_{c' \neq c} n_{cc'}\,[S_{c'}],
+\end{equation}
+the $n_{cc'}$ signed intersection numbers of the cap with
+$\Sigma_{c'}^{w}$. In particular a component whose window exit is
+realisable by a path whose cap meets no other charged component has
+trivial linking class.
+\end{lemma}
+
+\begin{proof}
+Transversality of $x_{c}$ to the endpoint value makes
+$\overline{\Sigma_{c}^{w}}$ locally a product of the
+codimension-three normal model with a half-line in the $x_{c}$
+direction; the linking sphere in a normal slice on the in-window
+side is slid past the boundary through the normal model of the
+boundary stratum, where the excised set is absent, and contracted
+in the ambient contractible space
+(Proposition~\ref{rb:ambient}). The resulting three-chain is put in
+general position with respect to the remaining strata: a
+three-chain meets codimension-three strata in isolated points and
+misses codimension-six strata, the dimension arithmetic being
+machine-verified (certificate \texttt{RB2\_certificate.lean}). Each
+isolated intersection contributes the linking class of the stratum
+met, with the sign of the local intersection number, which is the
+displayed relation. The final clause is an Alexander-type
+triviality: a half-infinite codimension-three sheet in a
+contractible ambient space links nothing, and only the transversal
+meetings with other charged strata obstruct the capping.
+\end{proof}
+
+\begin{lemma}[Sector separation]\label{rb2:sector}
+The relations of Lemma~\textup{\ref{rb2:edge}} connect components
+within a single base-content sector only: fibre components to fibre
+components, $\Stwo$-tower to $\Stwo$-tower, $\CPtwo$-tower to
+$\CPtwo$-tower. An exchange between components of distinct sectors
+would require the capping chain to meet the simultaneous
+coincidence of two independently gated pairs, a stratum of
+codimension six, which a generic three-chain misses; and the
+bidegree labels of the sector classes are rigid under admissible
+deformation, the base being $\sigma$-inert and undeformed.
+\end{lemma}
+
+\begin{proof}
+Two coincidence conditions on pairs with distinct base content
+impose independent complex Hermitian degeneracies, three real
+conditions each by Lemma~\ref{rb1:gate}; the intersection has
+codimension six and the dimension count $3 - 6 < 0$ is
+machine-verified. Rigidity of the bidegree labels is
+Lemma~\ref{o3:blocks} below, whose proof is independent of this
+section: the residual $\Ztwo$ is a fibre isometry and acts
+trivially on base cohomology.
+\end{proof}
+
+The remaining input of the collapse is a Gram non-degeneracy: for
+each pair of consecutive same-sector in-window components, the Gram
+matrix of the eigenspinor densities governing the first variation
+of the two crossing positions must be non-degenerate on the
+admissible deformations, so that a one-parameter admissible family
+realises the exit of the first and the entry of the second as a
+single transversal exchange, the capping chain of
+Lemma~\ref{rb2:edge} meeting the entering component with
+intersection number $\pm 1$. We refer to this statement as GD. Like
+NDC it is a finite check against the level list
+\eqref{eq:levellist}, and like NDC it is established at reduction
+level on the verified list; the governing densities are the
+transition densities of the crossing pair --- the diagonal
+densities are exactly constant at the flat configuration by the
+density flattening of \cite{MEF3} and pair to zero with every
+mean-free direction --- and through the conformal variation formula
+\cite{Kato, Hitchin1974, Hijazi, BourguignonGauduchon1992} the
+movability functional of a component is represented in $L^{2}$ by
+an element supported on the pair's non-antiparallel momentum
+transfers, with coefficient the polarisation overlap of
+Lemma~\textup{\ref{ndc:fibre}}. Distinct canonical frequencies are
+orthogonal, so the Gram matrix of two components is degenerate only
+if their non-vanishing Fourier supports coincide as sets, and GD
+reduces to support arithmetic. For the tower sectors the coupling
+direction is supplied by the gating integral, so GD there is
+consumed together with NDC.
+
+\begin{proposition}[GD on the verified list]\label{gd:verdict}
+On the reference spectrum, in the integer momentum model
+$K(m, j) = (100m,\, 93j)$, $j = 2n - 3$: the fibre-sector
+components are carried by the seven multiplicity-four levels among
+the ten lowest, each with transfer support
+$\{(0, 186j),\, (200m, 0)\}$, both channels non-antiparallel since
+$mj \neq 0$, and the seven supports pairwise distinct; and the
+tower-sector components of the ten crossing pairs of
+Proposition~\textup{\ref{ndc:verdict}} have pairwise distinct,
+non-empty transfer supports, with no vanishing polarisation
+coefficient on any supporting channel and the normalised Gram
+determinants of consecutive components bounded below by $0.49$
+under worst-case phases. Consequently every pair of same-sector
+components on the list --- in particular every adjacent pair, under
+any ordering convention for the sector chains --- has
+non-degenerate Gram matrix: GD holds on the verified list.
+\end{proposition}
+
+\begin{proof}
+The support computations, the pairwise set-distinctness (all
+twenty-one fibre pairs and all forty-five tower pairs, strictly
+stronger than the adjacent pairs the collapse consumes), the
+non-antiparallelism of every supporting channel, and the
+non-emptiness of every support are machine-verified in the integer
+model (certificate \texttt{GD\_certificate.lean}); the polarisation
+weights and the Gram lower bounds are numerical evaluations
+recorded per pair. Independence follows from Fourier orthogonality:
+distinct supports with non-vanishing coefficients exclude
+proportionality, and the worst-case-phase bound controls the
+determinant away from zero. The residuals are those of
+Proposition~\ref{ndc:verdict} and of the same kind: the standard
+first-order perturbation input at the degenerate block, and the
+recorded numerical bounds.
+\end{proof}
+
+\begin{hypothesis}[OW --- window retention and
+detection]\label{rb2:ow}
+For each sector the curvature two-form of the sector's spectral
+pair bundle, smoothly windowed, extends to a closed form on
+$\Xad(\varepsilon)$ representing a non-zero class dual to the
+sector's linking spheres; and the three sector classes so detected
+are linearly independent in $H^{2}(\Xad(\varepsilon); \Q)$.
+Equivalently, no admissible path drains a sector's charged
+in-window set while capping its last linking sphere trivially. The
+deflationary reading is stated at once: the collapse machinery
+below proves rank at most one per sector; that the rank is exactly
+one, three times over and independently, is OW and nothing else.
+The hypothesis is the single home of every lower bound in this
+paper.
+\end{hypothesis}
+
+\begin{proposition}[The collapse: one class per
+sector]\label{rb2:collapse}
+GD and NDC hold at reduction level on the verified list
+\textup{(Propositions~\ref{gd:verdict} and~\ref{ndc:verdict})}.
+Then within each sector all in-window linking classes are
+rationally proportional: the increment lattice of the sector has
+rank at most one, and any chain of adjacent exchanges identifies
+the classes up to sign. Assuming
+Hypothesis~\textup{\ref{rb2:ow}}, each sector contributes exactly
+one generator --- $z$ for the fibre sector, $y$ for the $\Stwo$
+tower, $x$ for the $\CPtwo$ tower --- and the three are
+independent.
+\end{proposition}
+
+\begin{proof}
+By Proposition~\ref{gd:verdict} each adjacent pair $(c, c')$ admits
+the single-exchange family, and Lemma~\ref{rb2:edge} reads
+$[S_{c}] = \pm[S_{c'}]$; Lemma~\ref{rb2:sector} confines every such
+relation to the sector. Consecutive relations compose along the
+energy-ordered chain of the sector's in-window components, and the
+sign bookkeeping of a $\pm 1$ chain --- every class equal to plus
+or minus the first --- is machine-verified (certificate
+\texttt{RB2\_certificate.lean}). Rank at most one follows;
+Hypothesis~\ref{rb2:ow} supplies rank exactly one per sector and
+the independence of the three generators.
+\end{proof}
+
+\begin{hypothesis}[TR --- transgression
+compatibility]\label{rb2:tr}
+The tower generators are detected by evaluation against base
+two-cycles: the family of admissible profiles obtained by
+transporting a tower-crossing configuration over a two-cycle of $B$
+through the gated coupling functional defines a pairing under which
+the product structure of $H^{*}(\Xad(\varepsilon); \Q)$ on the
+tower generators intertwines the intersection ring of the
+corresponding base factor \cite{BottTu1982}. The hypothesis is the
+single mapping-space statement of the paper; it suppresses nothing
+about existence or rank, which belong to OW, and carries exactly
+the ring relation of the next proposition.
+\end{hypothesis}
+
+\begin{proposition}[The ring discriminator]\label{rb2:ring}
+Assume Hypothesis~\textup{\ref{rb2:tr}}. Then $x^{2} \neq 0$ and
+$x^{3} = 0$, while $y^{2} = 0$: the truncated relation of the
+$\CPtwo$ generator and the exterior relation of the $\Stwo$
+generator are forced by the base intersection forms
+$H^{*}(\CPtwo; \Q) = \Q[a]/(a^{3})$ and
+$H^{*}(\Stwo; \Q) = \Q[b]/(b^{2})$, and the asymmetry between the
+two tower generators is a statement of base topology alone:
+whichever complement class has surviving square is necessarily the
+$\CPtwo$-tower class.
+\end{proposition}
+
+\begin{proof}
+Under Hypothesis~\ref{rb2:tr} the square of a tower generator pairs
+with the self-intersection of the base two-cycle it is evaluated
+against: for the $\CPtwo$ tower the line class satisfies
+$[\mathbb{CP}^{1}] \cdot [\mathbb{CP}^{1}] = [\mathrm{pt}]$, non-zero in
+$H^{4}(\CPtwo; \Q)$, and the cube meets $a^{3} = 0$; for the
+$\Stwo$ tower $H^{4}(\Stwo; \Q) = 0$ and the square vanishes. The
+fibre generator $z$ carries $z^{2} = 0$ as the linking class of a
+smooth component. The exponent arithmetic of the truncated ring,
+and the discriminating computation $a^{2} \neq 0$, $a^{3} = 0$,
+$b^{2} = 0$, are machine-verified (certificate
+\texttt{RB2\_certificate.lean}).
+\end{proof}
+
+\begin{hypothesis}[HS --- dependence of the higher
+strata]\label{hyp:hs}
+The linking classes of the transverse intersection strata --- the
+residual strata of Definition~\textup{\ref{rb1:strata}} in which
+two or more independently gated coincidences occur simultaneously
+--- are products of the sector generators, contributing no new
+generators to $H^{*}(\Xad(\varepsilon); \Q)$. The hypothesis
+suppresses an exotic class borne by a deep stratum; for transverse
+configurations the links are products of the links of the factors
+and the statement holds generically, so what is suppressed is a
+failure of genericity at a multiple coincidence.
+\end{hypothesis}
+
+\section{Stabilisation and the generator-level
+theorem}\label{sec:stab}
+
+The exchange relation that collapses a sector is the same
+transversal meeting that exhausts the defect of the retraction at
+finite energy: the collapses and the stabilisation are one
+bookkeeping run in opposite directions. This section makes that
+statement precise and assembles Theorem~\ref{thm:A}.
+
+\begin{theorem}[Stabilisation]\label{rb2:stab}
+Assume Hypotheses \textup{OW} and \textup{HS}; GD and NDC hold at
+reduction level on the verified list
+\textup{(Propositions~\ref{gd:verdict} and~\ref{ndc:verdict})}.
+Then the rational
+homology of the truncations $\Xad(\varepsilon)$ stabilises at a
+finite $\varepsilon^{*}$: for
+$\varepsilon' \geq \varepsilon \geq \varepsilon^{*}$ the inclusions
+$\Xad(\varepsilon) \hookrightarrow \Xad(\varepsilon')$ induce
+isomorphisms on rational homology, and $\varepsilon^{*}$ may be
+taken as the smallest $\varepsilon$ for which
+$\varepsilon^{2}\gamma^{2}$ exceeds the base Dirichlet energy of
+the lowest-harmonic normal deformations opening the lowest crossing
+of each tower --- explicit in the first non-zero base eigenvalues
+$\lambda_{1}(\CPtwo)$, $\lambda_{1}(\Stwo)$ and the gating
+amplitudes of Proposition~\textup{\ref{ndc:verdict}}. Consequently,
+for every $\varepsilon \geq \varepsilon^{*}$ the inclusion
+$\Xad(\varepsilon) \hookrightarrow X_{B}$ is a rational homology
+isomorphism, and the truncated and unrestricted formulations of
+every statement in this paper are one statement.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{rb:colimit} every class of the full space is realised
+at some finite $\varepsilon$. Pushing a $k$-cycle down the
+retraction of Definition~\ref{rb:retraction} sweeps a
+$(k+1)$-trace, which meets the codimension-three crossing loci, for
+$k = 2$, in isolated points and misses the codimension-six strata,
+the dimension arithmetic machine-verified; each meeting changes the
+class by a linking-sphere increment, so every defect of the
+retraction between truncations is a sum of linking increments of
+charged codimension-three strata. By
+Proposition~\ref{rb2:collapse} every such increment is rationally
+proportional to its sector generator, and the generator is realised
+on the linking sphere of the sector's lowest in-window crossing:
+for the fibre sector this sphere lies over the base-constant slice
+and is present in every truncation; for each tower sector its
+normal directions require the base-dependent gating perturbation,
+which is opened by the lowest tower harmonic at the base Dirichlet
+cost displayed, hence contained in $\Xad(\varepsilon)$ once
+$\varepsilon \geq \varepsilon^{*}$. Higher strata contribute only
+products of the generators by Hypothesis~\ref{hyp:hs}. For
+$\varepsilon' \geq \varepsilon \geq \varepsilon^{*}$ the inclusion
+therefore hits every generator and every product, and induces an
+isomorphism on rational homology; the final clause is the colimit
+of a system whose maps are isomorphisms beyond $\varepsilon^{*}$,
+attained at $\varepsilon^{*}$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\textup{\ref{thm:A}}]
+Existence and one-per-sector of the generators is
+Proposition~\ref{rb2:collapse} with Lemma~\ref{rb1:gate} and
+Proposition~\ref{ndc:verdict}; the ring relations are
+Proposition~\ref{rb2:ring} for $x$ and smooth-component linking for
+$y$ and $z$; the higher strata contribute the products and nothing
+else by Hypothesis~\ref{hyp:hs}. The cohomology is therefore the
+truncated polynomial ring displayed, and its Betti sequence is the
+coefficient list of $(1 + t^{2} + t^{4})(1 + t^{2})(1 + t^{2})$,
+namely $(1, 0, 3, 0, 4, 0, 3, 0, 1)$ --- the ring and the sequence
+of $H^{*}(\Keight; \Q)$ itself, the identification that carries the
+remainder of the paper --- the monomial count being
+machine-verified twice (Proposition~\ref{prop:betti}).
+Stabilisation and the equivalence of the truncated and unrestricted
+formulations are Theorem~\ref{rb2:stab} over
+Lemma~\ref{rb:colimit}; the ambient spaces carry no topology
+(Proposition~\ref{rb:ambient}), so every class is
+discriminant-borne, as claimed.
+\end{proof}
+
+\begin{remark}[Homology suffices]\label{lp0b:homology}
+Theorem~\ref{thm:A} is a rational homology statement at generator
+level, not a homotopy equivalence. The Morse argument of
+Section~\ref{sec:count} consumes exactly the Betti numbers of the
+space the functional lives on, and Theorem~\ref{thm:A} supplies
+them; nothing below asks for more.
+\end{remark}
+
+\begin{remark}[The open set, displayed]\label{lp0b:open}
+The hypotheses of Theorem~\ref{thm:A} divide by kind. The two
+finite non-degeneracy checks against the level list
+\eqref{eq:levellist} are both established at reduction level on
+the verified list: NDC with the channel factors bounded below
+(Proposition~\ref{ndc:verdict}), GD with pairwise-distinct
+transfer supports and the Gram determinants bounded below
+(Proposition~\ref{gd:verdict}). OW and TR are the two named
+structural residuals: OW
+carries every lower bound (that the three classes exist and are
+independent), TR carries the ring relation of the $\CPtwo$
+generator. HS is the dependence of the higher strata, generic for
+transverse configurations. Nothing else is open on the statement.
+\end{remark}
+
+\section{The critical count}\label{sec:count}
+
+The purpose of this section is to convert the topology of
+Theorem~\ref{thm:A} into a count of critical points. Three
+ingredients enter: the six base-sector replicas of the constant
+stratum must be six distinct critical strata rather than one
+stratum with internal degeneracy (Section~\ref{sec:six}); the fibre
+counting factor, which takes the value two at the pillowcase under
+three a priori different descriptions, must be identified
+(Section~\ref{sec:two}); and the Morse inequalities must be
+consumed (Section~\ref{sec:morse}).
+
+\subsection{The six replicas are six}\label{sec:six}
+
+\begin{lemma}[Second variation at the constant
+stratum]\label{o3:secondvar}
+At a constant configuration, with no level on a window edge, the
+second variation of $\omega$ in slice-admissible directions
+$\delta\Phi$ is a well-defined quadratic form $Q[\delta\Phi]$,
+assembled from the second-order Kato expansion of the eigenvalues
+of $D_{\Phi}$ through the conformal variation formula
+\cite{Kato, BourguignonGauduchon1992}, the block-trace contraction
+at degenerate levels, and the second derivative of the Dyson--Mehta
+functional in the unfolded positions; each contribution is dressed
+by the base multiplicity of the level at which it enters.
+\end{lemma}
+
+\begin{lemma}[Bidegree block decomposition]\label{o3:blocks}
+At the adiabatic point the spectrum carries the block form
+$\lambda^{2} = \lambda_{b}^{2} + \lambda_{f}^{2}(\Phi)$, and the
+six base harmonic states of $B = \CPtwo \times \Stwo$ are labelled
+by the pairwise-distinct bidegrees
+\[
+(p, q) \;\in\; \{(0,0),\, (2,0),\, (0,2),\, (4,0),\, (2,2),\,
+(4,2)\},
+\qquad p \in H^{p}(\CPtwo),\; q \in H^{q}(\Stwo),
+\]
+the coefficient list of $(1 + t^{2} + t^{4})(1 + t^{2})$ being
+$(1, 0, 2, 0, 2, 0, 1)$ with total $6 = \chi(B)$. The quadratic
+form of Lemma~\textup{\ref{o3:secondvar}} accordingly decomposes
+into six blocks indexed by these bidegrees, and the bidegree labels
+are preserved by the residual symmetry of the problem, which acts
+on the fibre alone. The label arithmetic --- six blocks, pairwise
+distinct, exhausting the products $\{0, 2, 4\} \times \{0, 2\}$ ---
+is machine-verified (certificate \texttt{O3\_certificate.lean}).
+\end{lemma}
+
+\begin{proof}
+The block form at the adiabatic point and the multiplicity six are
+the replication mechanism of the assembly proposition of
+\cite{MEF3}: at the adiabatic point the configuration varies only
+the fibre part and every fibre level's variation is replicated once
+per base state, the unsigned harmonic multiplicity of the base
+equalling $\chi(B) = 6$ because the Hodge diamond of $B$ is purely
+diagonal. The bidegree labelling is K\"unneth bookkeeping; label
+preservation holds because the residual $\Ztwo$ is a fibre isometry
+and acts trivially on base cohomology.
+\end{proof}
+
+\begin{lemma}[Factor-scaling response of the harmonic
+dressings]\label{o3:scaling}
+Let
+$g(a_{1}, a_{2}) = e^{2a_{1}}g_{\CPtwo} \oplus e^{2a_{2}}g_{\Stwo}$
+be the two-parameter family of factor-wise conformal scalings of
+the base metric, an admissible direction of the identified
+conformal and warp channel. A harmonic representative of bidegree
+$(p, q)$ has pointwise norm scaling as
+\[
+\bigl|\alpha_{(p,q)}\bigr|^{2}_{g(a_{1}, a_{2})}
+\;=\; e^{-2p\,a_{1} - 2q\,a_{2}}\,
+\bigl|\alpha_{(p,q)}\bigr|^{2}_{g},
+\]
+the exponent weighted by the factor degrees. Consequently the
+dressed weight functional of the bidegree-$(p, q)$ block of
+Lemma~\textup{\ref{o3:blocks}} responds to the scaling channel with
+logarithmic gradient $-2(p, q)$ at the constant stratum.
+\end{lemma}
+
+\begin{proof}
+The pointwise norm of a $p$-form on a factor rescaled by $e^{2a}$
+carries $p$ inverse-metric contractions, each contributing
+$e^{-2a}$; the factors multiply across the product base. That the
+degree-weighted exponent is the channel by which the base state
+dresses the balance condition is the replication mechanism of
+Lemma~\ref{o3:blocks} read on the identified conformal and warp
+channel of Definition~\ref{rb:space}: the dressing of each block is
+carried by the harmonic density of its base state, and the harmonic
+states track their bidegree representatives under the
+correspondence of Lemma~\ref{o3:blocks}.
+\end{proof}
+
+\begin{proposition}[Pairwise inequality of the six dressed
+weights]\label{o3:pairwise}
+The six response vectors of Lemma~\textup{\ref{o3:scaling}} are the
+six bidegrees
+$(0,0),\, (2,0),\, (0,2),\, (4,0),\, (2,2),\, (4,2)$, which are
+pairwise distinct; in particular the two pairs of equal total
+degree, $(2,0) \neq (0,2)$ and $(4,0) \neq (2,2)$, are separated by
+the anisotropy of the family, which a single overall scaling cannot
+achieve. For every pair of blocks there is therefore an explicit
+admissible direction on which the two dressed weight functionals
+respond with different derivatives, so the six functionals are
+pairwise unequal; and by the label rigidity of
+Lemma~\textup{\ref{o3:blocks}} no admissible deformation can merge
+two blocks whose weights differ. The six base-sector replicas of
+the constant stratum are six distinct critical strata, and the
+internal-degeneracy alternative is excluded. The distinctness and
+the separation of the equal-degree pairs are machine-verified
+(certificate \texttt{O3\_pairwise\_certificate.lean}).
+\end{proposition}
+
+\begin{proof}
+Distinctness of the six vectors is finite arithmetic. Two
+functionals with different derivatives along one admissible
+direction are unequal as functionals; one separating direction per
+pair is supplied by the response vectors, the difference of any two
+being a non-zero vector realised by an anisotropic scaling.
+Exclusion of merging then follows: a merged stratum would require
+an operator identity equating dressed weights across distinct
+bidegrees --- a strictly stronger event than degeneracy of
+eigenvalues --- contradicting the exhibited inequality.
+\end{proof}
+
+The remaining obligation on this argument for an unconditional
+grade is one finite check: the warp-elimination identities are
+exact at first order on the ground sector, and their second-order
+use in Lemma~\ref{o3:secondvar} is to be verified against them
+once, not assumed. We record this in
+Section~\ref{sec:outlook}.
+
+\subsection{The fibre counting object}\label{sec:two}
+
+At the pillowcase three a priori different quantities take the
+value two. No result in this paper consumes the identification of
+which: Theorem~\ref{thm:B} counts through the Betti numbers and
+Hypothesis~\textup{UB}, and the factor two enters only the
+structural description of the critical set. The purpose of this
+subsection is to identify that factor, not to feed the count. The
+three must first be separated
+before the counting object can be named, and this subsection
+constructs the family on which they separate.
+
+\begin{definition}[The three candidate counting
+objects]\label{o4:objects}
+For the pillowcase fibre with its decoration and the residual
+$\Ztwo$ of the symmetric-criticality theorem, set
+\[
+N_{\chi} = \chi_{\mathrm{top}}(\Ttwo/\Ztwo),
+\qquad
+N_{\mathrm{stab}} = \#\{\text{stabiliser classes of the
+$\Ztwo$-action on } \Ttwo\},
+\qquad
+N_{\mathrm{corner}} = \#\{\text{corner orbits under the residual
+swap}\},
+\]
+the fibre Euler characteristic, the stabiliser-class count, and the
+corner-orbit count respectively.
+\end{definition}
+
+\begin{lemma}[Coincidence at the pillowcase]\label{o4:coincide}
+$N_{\chi} = N_{\mathrm{stab}} = N_{\mathrm{corner}} = 2$, each by
+an independent computation: the invariant rational cohomology of
+the pillowcase is $(1, 0, 1)$, giving $N_{\chi} = 2$; the
+$\Ztwo$-action on $\Ttwo$ has exactly the two stabiliser classes,
+trivial and full, giving $N_{\mathrm{stab}} = 2$; and the four
+corners fall into two pairs under the residual swap, which is free
+on them, giving $N_{\mathrm{corner}} = 2$. The three computations
+are machine-verified independently (certificate
+\texttt{O4\_certificate.lean}). The coincidence at $2$ is the
+problem, not the result.
+\end{lemma}
+
+\begin{definition}[The group-replacement family]\label{o4:family}
+For $n \in \{3, 4, 6\}$ let $\Ttwo_{n}$ be the torus at the rigid
+modulus admitting the order-$n$ rotation $\rho$
+($\tau = e^{i\pi/3}$ for $n = 3, 6$; $\tau = i$ for $n = 4$), $R$
+the integer matrix of $\rho$ on a lattice basis, and
+$\Ttwo_{n}/\Zn$ the quotient orbifold. The family deforms the fibre
+away from the pillowcase modulus; this is permitted by the framing
+of the separation test, which requires only that the counts and the
+critical structure remain defined on each member, and the modulus
+displacement is recorded rather than suppressed.
+\end{definition}
+
+\begin{lemma}[Equivariant $\Spinc$ classes]\label{o4:equivariance}
+The rotation acts on the four $\Spinc$ shift classes
+$\tfrac{1}{2}\Lambda^{*}/\Lambda^{*} \cong (\Ztwo)^{2}$ through
+$R \bmod 2$. The invariant classes are: all four at $n = 2$; the
+trivial class only at $n = 3$ and $n = 6$; the trivial class and
+$(\tfrac{1}{2}, \tfrac{1}{2})$ at $n = 4$. Consequently the
+non-integral shift --- the carrier of the freeness mechanism ---
+extends $\rho$-equivariantly to the $n = 4$ member alone; at
+$n = 3, 6$ the equivariant problem forces the integral class, the
+rotation fixes the zero label, and the freeness mechanism of the
+odd-degree protection does not extend. The class arithmetic is
+machine-verified (certificate
+\texttt{O4\_family\_certificate.lean}).
+\end{lemma}
+
+\begin{proof}
+Invariance of a class $v \in (\Ztwo)^{2}$ is
+$Rv \equiv v \bmod 2$, a finite check per member. Freeness of the
+rotation on the shifted lattice $k_{0} + \Lambda^{*}$ requires
+$0 \notin k_{0} + \Lambda^{*}$, since $1 - \rho^{j}$ is invertible
+for $0 < j < n$; the integral class violates this at the zero
+label, and the non-integral classes restore it wherever they
+extend.
+\end{proof}
+
+\begin{lemma}[Residual translations and their signs on the
+family]\label{o4:residual-n}
+The translations descending to symmetries of $\Ttwo_{n}/\Zn$ form
+the group $\Lambda/(1 - \rho)\Lambda$, of order
+$|\det(1 - R)| = 4, 3, 2, 1$ for $n = 2, 3, 4, 6$. On the shifted
+momentum lattice the conjugation of the rotation lift by a lifted
+translation $T_{a}$ carries the constant phase
+\[
+\varepsilon_{a} \;=\;
+e^{-i\langle k_{0},\, (1 - \rho)a\rangle},
+\]
+well-defined because $(1 - \rho)a \in \Lambda$ pairs integrally
+with $\Lambda^{*}$; a translation survives to the projected problem
+precisely when $\varepsilon_{a} = 1$. At $n = 2$ with the
+pillowcase class this recovers the conjugation computation of
+\cite{MEF3} exactly: the unshifted half-period survives and the two
+shifted half-periods carry $\varepsilon = -1$. At $n = 4$ with the
+equivariant class $(\tfrac{1}{2}, \tfrac{1}{2})$ the single
+non-trivial candidate has
+$\langle k_{0}, (1 - \rho)a\rangle = \pi$ and does not survive. At
+$n = 3$ with the forced integral class all three candidates carry
+$\varepsilon = 1$ and survive, acting simply transitively on the
+three cone points. At $n = 6$ the candidate group is already
+trivial.
+\end{lemma}
+
+\begin{proof}
+$t_{a}\rho t_{a}^{-1} = t_{(1-\rho)a}\,\rho$ descends iff
+$(1 - \rho)a \in \Lambda$, giving the group and its order as the
+index $|\det(1 - R)|$. On a momentum state the conjugation phase is
+$e^{-i\langle(1 - \rho^{-1})k,\, a\rangle}$; transposing the
+orthogonal rotation moves $(1 - \rho^{-1})$ onto $a$ as
+$(1 - \rho)$, and the $k$-dependence drops modulo $2\pi$ because
+$(1 - \rho)a \in \Lambda$, leaving the shift term displayed. The
+four sign evaluations are finite arithmetic on half-integral
+classes, machine-verified; the $n = 2$ case is the recorded
+consistency check against the source computation, which the general
+formula reproduces verbatim before it is trusted on the new
+members.
+\end{proof}
+
+\begin{proposition}[The separation table]\label{o4:table}
+On the family the three candidate counting objects take the values
+\[
+\begin{array}{c|ccc}
+n & N_{\chi} & N_{\mathrm{stab}} & N_{\mathrm{corner}} \\ \hline
+3 & 2 & 2 & 1 \\
+4 & 2 & 3 & 3 \\
+6 & 2 & 4 & 3
+\end{array}
+\]
+by the following routes. $N_{\chi} = 2$ on every member: the
+rotation has no invariant vector on $H^{1}(\Ttwo; \Q)$ since
+$\det(1 - R) \neq 0$, so the invariant Betti numbers are
+$(1, 0, 1)$ throughout. $N_{\mathrm{stab}} = 2, 3, 4$: the
+stabiliser classes occurring are read from the fixed-point counts
+$|\mathrm{Fix}(\rho^{j})| = |\det(1 - R^{j})|$ --- at $n = 3$ the
+classes $\{1, \Zn[3]\}$; at $n = 4$ the classes
+$\{1, \Ztwo, \Zn[4]\}$, the two extra order-two points forming one
+quotient cone point; at $n = 6$ the classes
+$\{1, \Ztwo, \Zn[3], \Zn[6]\}$. $N_{\mathrm{corner}}$: each member
+has three cone points; at $n = 3$ the three surviving translations
+of Lemma~\textup{\ref{o4:residual-n}} identify them into one orbit;
+at $n = 4$ and $n = 6$ no translation survives and the three points
+are three orbits. Every numerical ingredient --- orders,
+determinants, fixed-point counts, invariant classes, signs, orbit
+arithmetic, and the three triples with their distinctness patterns
+--- is machine-verified. In particular the coincidence of the
+pillowcase breaks on every member, and at $n = 6$ the three
+quantities are pairwise distinct.
+\end{proposition}
+
+The identification now reduces to two readouts: the $n = 4$
+member, where the equivariant non-integral class preserves the
+freeness mechanism, decides between $N_{\chi} = 2$ and
+$N_{\mathrm{stab}} = N_{\mathrm{corner}} = 3$; the $n = 6$
+member, on which all three candidates are pairwise distinct,
+decides independently. We execute both. Two structural lemmas
+prepare the ground.
+
+\begin{lemma}[Flattening is exclusive to the
+involution]\label{o4r:flat}
+Let $\chi$ be a character-projected eigenspinor built on a free
+rotation orbit of the $\Zn$ member. The density $|\chi|^{2}$
+carries cross-terms between the orbit members $\rho^{j'}\kappa$,
+$\rho^{j}\kappa$ with polarisation factor proportional to
+$1 + e^{i(j - j')\alpha}$, $\alpha = 2\pi/n$, which vanishes
+exactly when $(j - j')\alpha = \pi$: on the antipodal terms
+alone. At $n = 2$ every cross-term is antipodal and the density is
+exactly constant --- the flattening mechanism protecting the
+constant stratum in \cite{MEF3}. At $n = 4$ and $n = 6$ the
+antipodal terms vanish (since $\rho^{n/2} = -1$) while the
+remaining cross-terms survive with non-zero exact coefficients; at
+$n = 3$ no cross-term is antipodal and none vanishes. The
+character-projected densities are therefore non-constant on every
+member other than the pillowcase: the pointwise flattening is a
+joint peculiarity of the antipodal involution and the odd
+decoration, and the critical structure on the members can be
+carried only by the homological machinery, which is
+group-agnostic.
+\end{lemma}
+
+\begin{proof}
+The rotation lift carries eigenspinors to eigenspinors with a
+constant phase, so the cross-term amplitude between orbit members
+is the polarisation overlap of Lemma~\ref{ndc:fibre} at angle
+difference $(j - j')\alpha$. The vanishing pattern ---
+$1 + i^{2} = 0$ with $1 + i^{\pm 1} \neq 0$ in the Gaussian
+integers for $n = 4$; $1 + z^{3} = 0$ with $1 + z^{j} \neq 0$,
+$j = 1, 2, 4, 5$, for $z$ a primitive sixth root for $n = 6$, the
+$j = 2, 4$ cases covering $n = 3$ --- is exact ring arithmetic,
+machine-verified together with $\rho^{2} = -1$ and
+$\rho^{3} = -1$ on the respective lattices (certificate
+\texttt{O4\_readout\_certificate.lean}).
+\end{proof}
+
+\begin{lemma}[The fibre-sector structure of the
+members]\label{o4r:structure}
+On the $n = 4$ member (doubled coordinates, momenta odd-odd,
+$Q = a^{2} + b^{2}$) the six lowest shells are
+$Q = 2, 10, 18, 26, 34, 50$ with counts $4, 8, 4, 8, 8, 12$, every
+orbit of size four, so the character-projected multiplicities are
+$1, 2, 1, 2, 2, 3$ and the recombination components sit at the
+multi-orbit shells. On the $n = 6$ member (hexagonal norm
+$Q = a^{2} + ab + b^{2}$; the zero label of the forced integral
+class is the kernel and decouples from every first variation, the
+factor $\lambda_{k}$ of the conformal variation formula vanishing
+there) the eight lowest non-zero shells are
+$Q = 1, 3, 4, 7, 9, 12, 13, 16$ with counts
+$6, 6, 6, 12, 6, 6, 12, 6$, every orbit of size six, recombination
+components at the count-twelve shells. On the $n = 3$ member the
+orbits have size three, the antipode of every label lies outside
+its orbit, and recombination pairs occur at every shell. In every
+case the recombination components' transfer supports are pairwise
+distinct and non-empty: the Gram non-degeneracy pattern of
+Proposition~\ref{gd:verdict} transfers to the members verbatim,
+by the same certificate.
+\end{lemma}
+
+\begin{proposition}[The readout: the counting object is the fibre
+Euler characteristic]\label{o4r:verdict}
+Transport the counting machinery of this paper member-wise at its
+displayed conditionality: the ambient contractibility and the
+discriminant enumeration are group-agnostic; the collapse runs on
+the members' recombination components under
+Lemma~\textup{\ref{o4r:structure}} and the member analogue of
+Hypothesis~\textup{OW}; the Morse consumption runs under the
+member analogues of Hypotheses~\textup{PS} and~\textup{UB}. Then
+the critical count per base state on each member equals the total
+invariant Betti number of the fibre,
+$1 + b_{2}^{\mathrm{inv}} = 2$, and against the separation table:
+at $n = 4$, count $2 = N_{\chi} \neq 3 = N_{\mathrm{stab}} =
+N_{\mathrm{corner}}$; at $n = 6$, count $2 = N_{\chi} \neq 4 =
+N_{\mathrm{stab}} \neq 3 = N_{\mathrm{corner}}$; at $n = 3$,
+count $2 = N_{\chi} = N_{\mathrm{stab}} \neq 1 =
+N_{\mathrm{corner}}$. The counting object is the fibre Euler
+characteristic $N_{\chi}$, uniquely among the three candidates:
+selected at $n = 4$, confirmed independently at $n = 6$, the
+identification closing by selection.
+\end{proposition}
+
+\begin{proof}
+The fibre factor per base state is one (the index-zero stratum)
+plus the number of independent fibre-sector generators of the
+member's admissible region. By Lemma~\ref{o4r:structure} the
+collapse machinery of Section~\ref{sec:collapse} applies on each
+member: the recombination components are codimension-three charged
+crossings, their supports are pairwise distinct with no vanishing
+coefficient, adjacent exchange families exist, and each member's
+fibre sector collapses to rank at most one; the member retention
+hypothesis supplies rank exactly one. The factor is therefore
+$1 + 1 = 2$ on every member, matching the invariant cohomology
+$(1, 0, 1)$ of the quotient sphere: $N_{\chi} = 2$ throughout.
+The exclusions are arithmetic against the separation table,
+machine-verified. The stabiliser count exceeds the total Betti
+number at $n = 4$ and $n = 6$, so it can equal the critical count
+only through excess critical points, excluded on the displayed
+pattern. The corner-orbit count at $n = 3$ falls below the Morse
+lower bound $c_{\mathrm{total}} \geq b_{\mathrm{total}} = 2$
+\cite{Palais1963, Milnor1963} --- its exclusion consumes no
+no-excess hypothesis at all --- and fails again at $n = 4$ and
+$n = 6$ by $3 \neq 2$.
+\end{proof}
+
+\begin{remark}[Why the homological candidate, and the hint
+resolved]\label{o4r:why}
+The identification has a one-sentence explanation: of the three
+candidates, only the Euler characteristic is a homological
+invariant of the quotient, and the Morse count is homological. The
+corner-orbit count tracks the residual translation group, whose
+surviving order varies along the family ($3, 0, 0$ non-trivial
+translations at $n = 3, 4, 6$) independently of the homology; the
+stabiliser count tracks the isotropy lattice, which grows with $n$
+while the invariant cohomology does not; the three coincide at the
+pillowcase because the involution's residual data and its homology
+both happen to equal two.
+\end{remark}
+
+\begin{lemma}[Retirement of the odd-degree family]\label{o4:odd}
+For $L = \Oline{2k+1}$, $k \in \Z$, the conjugation sign of the
+shifted half-periods is
+$e^{i\pi(2n' - (2k+1))} = -1$ for every level index $n'$ and every
+$k$, since $2n' - (2k+1)$ is odd; the residual symmetry, hence the
+corner-orbit count, is unchanged across the odd degrees, and
+$N_{\chi}$, $N_{\mathrm{stab}}$ are unchanged trivially on the
+fixed orbifold. Variation of the decoration through the odd degrees
+therefore separates nothing, and the group-replacement family is
+the discriminating one. The parity is machine-verified.
+\end{lemma}
+
+The observation that once stood here as a suggestive hint --- that
+the corner-orbit count is the only candidate whose defining data
+enter the criticality mechanism directly, through the conjugation
+signs of Lemma~\ref{o4:residual-n} --- is resolved in the negative
+by Proposition~\ref{o4r:verdict}, and the resolution is sharpened
+by Lemma~\ref{o4r:flat}: the mechanism those signs protect is
+itself exclusive to the involution, so the corner data could never
+have carried a count that must survive onto members where the
+mechanism is absent.
+
+\subsection{The Morse consumption}\label{sec:morse}
+
+\begin{hypothesis}[PS --- Morse-theoretic
+admissibility]\label{o2:ps}
+The functional $\omega$ is $C^{2}$ on the admissible region $X$,
+satisfies the Palais--Smale condition on the fixed-area slice, and
+its critical points are non-degenerate. The hypothesis suppresses
+three failure modes at once: loss of compactness along
+Palais--Smale sequences approaching the discriminant, insufficient
+regularity of the spectral functional at degenerate blocks, and
+degenerate critical points, for which the counting statements below
+would hold only in the Morse--Bott form.
+\end{hypothesis}
+
+\begin{proposition}[Existence at every index]\label{o2:exist}
+Assume the hypotheses of Theorem~\textup{\ref{thm:A}} and
+Hypothesis~\textup{\ref{o2:ps}}. Then the critical counts of
+$\omega$ on $X$ satisfy
+\[
+c_{i} \;\geq\; b_{i}(\Keight)
+\qquad (i = 0, \dots, 8),
+\]
+so that, beyond the constant stratum, critical points exist with
+multiplicities at least $3, 4, 3, 1$ at indices $2, 4, 6, 8$: at
+least eleven non-constant critical points, without any min-max
+construction.
+\end{proposition}
+
+\begin{proof}
+Under Hypothesis~\ref{o2:ps} the Morse inequalities hold for
+$\omega$ on the Banach manifold $X$
+\cite{Palais1963, Milnor1963}, graded against the Betti numbers of
+$X$; by Theorem~\ref{thm:A} these are the numbers
+\eqref{eq:betti}. The displayed multiplicities are its entries.
+\end{proof}
+
+\begin{hypothesis}[UB --- no excess critical
+points]\label{hyp:ub}
+The total number of critical points of $\omega$ on $X$ is at most
+the total Betti number, twelve. The hypothesis suppresses critical
+points invisible to the homology: saddles occurring in cancelling
+pairs, and any critical point beyond those the topology forces. It
+is the hardest open statement in this paper and no proof strategy
+for it is claimed here; Section~\ref{sec:retreat} derives the
+uniqueness consequence by a route that does not consume it.
+\end{hypothesis}
+
+\begin{proof}[Proof of Theorem~\textup{\ref{thm:B}}]
+By Proposition~\ref{prop:betti} the odd Betti numbers vanish, so
+the total Betti number equals the Euler characteristic, twelve. By
+Proposition~\ref{o2:exist}, $c_{i} \geq b_{i}$ at every index; by
+Hypothesis~\ref{hyp:ub}, $\sum_{i} c_{i} \leq \sum_{i} b_{i}$. The
+inequalities admit no slack and collapse termwise, $c_{i} = b_{i}$
+for all $i$; the termwise collapse from equal totals is
+machine-verified (certificate \texttt{O2\_certificate.lean}). In
+particular $c_{0} = b_{0} = 1$ and the remaining critical points
+are $3 + 4 + 3 + 1$ of index $2, 4, 6, 8$. The structural content
+of the twelve is that of Sections~\ref{sec:six} and~\ref{sec:two}:
+six distinct base-sector strata dressed by the fibre counting
+factor two, identified in Proposition~\ref{o4r:verdict} as the
+fibre Euler characteristic.
+\end{proof}
+
+We state the deflationary reading of Theorem~\ref{thm:B} at once,
+so it cannot be over-read. What is proved is a conditional
+perfection: the displayed hypothesis set converts the Morse
+inequalities into equalities. Existence of the constant critical
+point is unconditional \cite{MEF3}; uniqueness of the stable
+critical point is exactly as conditional as the displayed set, and
+the set is not empty.
+
+\section{The independent route}\label{sec:retreat}
+
+The purpose of this section is to derive $c_{0} = 1$ from two local
+hypotheses alone, consuming neither the topology of
+Theorem~\ref{thm:A} nor the count of Theorem~\ref{thm:B}. The two
+routes are independent insurance on the load-bearing claim: the
+route of Sections~\ref{sec:ambient}--\ref{sec:count} is the
+structural story, and delivers rigidity at every index; the present
+route is two local statements, and delivers the uniqueness of the
+stable critical point with no claim at higher index.
+
+\begin{hypothesis}[B --- index cost of symmetry
+breaking]\label{o1:break}
+Every critical point of $\omega$ on $X \setminus X^{\Ztwo}$ has
+Morse index at least one. Equivalently: at any critical point not
+fixed by the residual $\Ztwo$, the second variation of $\omega$ is
+negative in at least one direction. The hypothesis suppresses the
+possibility of a symmetry-breaking local minimum; it does not
+assert that non-symmetric critical points are absent, only that
+none is stable. The natural attack is rigidity: symmetry breaking
+costs $\omega$ at second order, the $\sigma$-partner pairing
+forcing the breaking mode and its partner to contribute with
+opposite signs, supplying the negative direction; this is recorded
+as the attack route and not claimed.
+\end{hypothesis}
+
+\begin{hypothesis}[U --- symmetric uniqueness at index
+zero]\label{o1:symuniq}
+The constant stratum is the unique index-zero critical point of
+$\omega$ restricted to $X^{\Ztwo}$. The hypothesis suppresses a
+second, non-constant symmetric local minimum; it does not constrain
+symmetric saddles. Two attack routes are recorded: geodesic
+convexity of $\omega$ on $X^{\Ztwo}$ in a neighbourhood exhausting
+the index-zero sublevel set; and triviality of the kernel of the
+linearised balance equation \eqref{eq:el} at a putative second
+minimum modulo the residual $\Ztwo$, with a continuation argument
+along the slice connecting it to the constant stratum. The second
+route would deliver uniqueness by elliptic rigidity, independent of
+the Morse framework.
+\end{hypothesis}
+
+\begin{proof}[Proof of Theorem~\textup{\ref{thm:C}}]
+Existence is unconditional: the constant configurations are
+critical by the symmetry-protected criticality of the window theory
+\cite{MEF3}, and lie in $X^{\Ztwo}$. For the count, let $p$ be any
+critical point of index zero. By Hypothesis~\ref{o1:break},
+$p \in X^{\Ztwo}$; the index of $\omega|_{X^{\Ztwo}}$ at $p$ is at
+most the ambient index, hence zero, so $p$ is an index-zero
+critical point of the restriction. By
+Hypothesis~\ref{o1:symuniq} there is exactly one such, the constant
+stratum. Hence $c_{0} = 1$. The counting step --- that a partition
+of the critical set into a symmetric part with a single index-zero
+member and a non-symmetric part with no index-zero member forces
+$c_{0} = 1$ --- is machine-verified (certificate
+\texttt{O1\_certificate.lean}).
+\end{proof}
+
+\begin{remark}[What the local route buys and what it
+forgoes]\label{o1:scope}
+Theorem~\ref{thm:C} consumes neither the configuration-space
+topology nor the total count: the load is carried entirely by the
+two displayed hypotheses, which are local and equivariant rather
+than global and topological. What is forgone is perfection: without
+the hypotheses of Theorem~\ref{thm:B} the equalities
+$c_{i} = b_{i}$ at indices $i \geq 2$ are not claimed, and
+non-symmetric saddles, if any exist, are simply not counted. The
+statement that there is exactly one stable critical point survives
+untouched. Corollary~\ref{cor:main} is immediate from
+Theorems~\ref{thm:B} and~\ref{thm:C}.
+\end{remark}
+
+\section{Concluding remarks}\label{sec:outlook}
+
+We close by recording, in one place, what is open and in what form;
+the discipline throughout has been that every open statement is
+displayed where it is consumed, so this section adds locations and
+kinds, not new content.
+
+The two finite non-degeneracy checks of the topology are closed at
+reduction level on the verified list: NDC in
+Proposition~\ref{ndc:verdict}, with the channel factors bounded
+below, and GD in Proposition~\ref{gd:verdict}, with
+pairwise-distinct transfer supports and the Gram determinants
+bounded below, both machine-verified in the integer model; and the
+critical-count readout on the group-replacement family is executed
+in Proposition~\ref{o4r:verdict}, identifying the fibre counting
+object as the Euler characteristic, with the corner candidate
+refuted at $n = 3$ by the Morse lower bound alone. One finite check
+remains from Section~\ref{sec:six}: the second-order block-form
+verification of the warp-elimination identities recorded after
+Proposition~\ref{o3:pairwise}.
+
+Three hypotheses are structural. OW (Hypothesis~\ref{rb2:ow})
+carries every lower bound of the topology; TR
+(Hypothesis~\ref{rb2:tr}) carries the ring relation of the
+projective generator; PS (Hypothesis~\ref{o2:ps}) carries the
+Morse-theoretic admissibility, and its Palais--Smale clause is
+expected to be the point of resistance. HS (Hypothesis~\ref{hyp:hs})
+holds generically and suppresses only a failure of genericity at a
+multiple coincidence. UB (Hypothesis~\ref{hyp:ub}) is the upper
+bound on the critical count and is the hardest statement named in
+this paper; the local route of Section~\ref{sec:retreat} exists
+precisely so that the uniqueness consequence does not wait on it,
+at the price of two local hypotheses B and U whose attack routes
+are recorded where they are stated.
+
+The division of labour between the two routes is worth one final
+sentence. The structural route asserts that the topology of the
+admissible region is the topology of the total space at generator
+level, and derives the critical structure from it; the local route
+asserts two rigidity statements at the constant stratum and derives
+the uniqueness alone. Either route alone suffices for the statement
+that the stable critical point is unique; only the structural route
+delivers the count at every index; and the two consume disjoint
+hypothesis sets, so a failure of either leaves the other standing.
+
+\subsection*{Acknowledgements}
+
+The author used Claude (Anthropic) and Gemini (Google DeepMind) as
+mathematical development and analytical tools during the
+preparation of this work. All intellectual content, theoretical
+framework, and scientific claims are the sole responsibility of the
+author.
+
+\begin{thebibliography}{99}
+
+\bibitem{vonNeumannWigner1929}
+J. von Neumann and E. Wigner,
+\emph{\"Uber das Verhalten von Eigenwerten bei adiabatischen
+Prozessen},
+Phys. Z. \textbf{30} (1929) 467--470.
+
+\bibitem{Berry1984}
+M. V. Berry,
+\emph{Quantal phase factors accompanying adiabatic changes},
+Proc. R. Soc. Lond. A \textbf{392} (1984) 45--57.
+
+\bibitem{Simon1983}
+B. Simon,
+\emph{Holonomy, the quantum adiabatic theorem, and Berry's phase},
+Phys. Rev. Lett. \textbf{51} (1983) 2167.
+
+\bibitem{DysonMehta1963}
+F. J. Dyson and M. L. Mehta,
+\emph{Statistical theory of the energy levels of complex systems.
+IV},
+J. Math. Phys. \textbf{4} (1963) 701--712.
+
+\bibitem{Kato}
+T. Kato,
+\emph{Perturbation Theory for Linear Operators},
+Grundlehren der mathematischen Wissenschaften \textbf{132},
+Springer, Berlin, 1995.
+
+\bibitem{Hatcher2002}
+A. Hatcher,
+\emph{Algebraic Topology},
+Cambridge University Press, Cambridge, 2002.
+
+\bibitem{Palais1963}
+R. S. Palais,
+\emph{Morse theory on Hilbert manifolds},
+Topology \textbf{2} (1963) 299--340.
+
+\bibitem{Palais1979}
+R. S. Palais,
+\emph{The principle of symmetric criticality},
+Comm. Math. Phys. \textbf{69} (1979) 19--30.
+
+\bibitem{Milnor1963}
+J. Milnor,
+\emph{Morse Theory},
+Annals of Mathematics Studies \textbf{51},
+Princeton University Press, Princeton, 1963.
+
+\bibitem{BottTu1982}
+R. Bott and L. W. Tu,
+\emph{Differential Forms in Algebraic Topology},
+Graduate Texts in Mathematics \textbf{82},
+Springer, New York, 1982.
+
+\bibitem{Hitchin1974}
+N. Hitchin,
+\emph{Harmonic spinors},
+Adv. Math. \textbf{14} (1974) 1--55.
+
+\bibitem{Hijazi}
+O. Hijazi,
+\emph{A conformal lower bound for the smallest eigenvalue of the
+Dirac operator and Killing spinors},
+Comm. Math. Phys. \textbf{104} (1986) 151--162.
+
+\bibitem{BourguignonGauduchon1992}
+J.-P. Bourguignon and P. Gauduchon,
+\emph{Spineurs, op\'erateurs de Dirac et variations de m\'etriques},
+Comm. Math. Phys. \textbf{144} (1992) 581--599.
+
+\bibitem{MEF3}
+D. J. Master,
+\emph{The Zwegers shadow as $U(1)$-projected intrinsic torsion on
+twelve-manifolds},
+Journal of Geometry and Physics, in press.
+%% TODO-PI: complete bibliographic details (volume, year, DOI) of
+%% the refereed Paper 3 before submission.
+
+\end{thebibliography}
+
+\end{document}
