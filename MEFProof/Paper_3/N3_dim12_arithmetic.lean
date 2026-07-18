@@ -1,4 +1,3 @@
-import Mathlib.Data.Nat.Defs
 import Mathlib.Tactic
 
 /-!

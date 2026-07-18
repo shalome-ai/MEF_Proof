@@ -93,3 +93,10 @@ theorem first_excited_above_one : exponent 1 = 9 / 4 := by
   unfold exponent; norm_num
 
 end R9
+
+#print axioms R9.odd_sq_mod_four
+#print axioms R9.numerator_not_div_four
+#print axioms R9.exponent_not_integer
+#print axioms R9.q1_absent
+#print axioms R9.ground_mode_is_quarter
+#print axioms R9.first_excited_above_one
