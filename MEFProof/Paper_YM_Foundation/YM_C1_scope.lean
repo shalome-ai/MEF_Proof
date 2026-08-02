@@ -27,7 +27,7 @@ Build: inside a Mathlib checkout (tag v4.15.0), with YM_L2 at YML/:
   lake env sh -c 'LEAN_PATH="$LEAN_PATH:$PWD" lean YML/YM_C1.lean'
 ================================================================
 -/
-import YML.YM_L2
+import MEFProof.Paper_YM_Foundation.YM_L2_positivity
 
 noncomputable section
 namespace YMC1

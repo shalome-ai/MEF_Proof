@@ -42,6 +42,8 @@ Decision arithmetic:
     N_corner = 1 < 2.
 ------------------------------------------------------------------ -/
 
+namespace YMO4
+
 abbrev Pt := Int × Int
 
 def r4 (v : Pt) : Pt := (-v.2, v.1)
@@ -235,3 +237,5 @@ theorem z4_shell2_is_orbit :
   native_decide
 
 theorem z6_zpow3_is_minus_one : zpow 3 = (-1, 0) := by native_decide
+
+end YMO4

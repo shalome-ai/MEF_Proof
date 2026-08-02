@@ -24,6 +24,8 @@ non-vanishing of the polarisation coefficients recorded numerically
 in GD_results.md.
 ------------------------------------------------------------------ -/
 
+namespace YMGD
+
 abbrev Pt := Int × Int
 
 def kvec (m j : Int) : Pt := (100 * m, 93 * j)
@@ -131,3 +133,5 @@ theorem fib_L2_support :
 theorem fib_L9_support :
     eqSet (fibSupport 4 1) [(0,186), (800,0)] = true := by
   native_decide
+
+end YMGD

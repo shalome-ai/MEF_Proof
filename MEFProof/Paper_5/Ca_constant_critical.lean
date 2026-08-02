@@ -56,8 +56,7 @@
 
 import Mathlib
 
-namespace CaConstantCritical
-
+namespace Paper5.CaConstantCritical
 /-! ### L1 — the σ-action on the shifted momentum lattice is free
 
 σ sends the lattice label (m, n) to (−m, 3 − n) (Node C §1.2). A fixed label
@@ -156,4 +155,4 @@ the Node B first variation is a constant function, so the variation
 vanishes for all mean-zero (slice-admissible) δΦ — at every window, with
 the degenerate blocks handled by the trace contraction. -/
 
-end CaConstantCritical
+end Paper5.CaConstantCritical

@@ -26,7 +26,7 @@ checkout (tag v4.15.0) and run
   lake env sh -c 'LEAN_PATH="$LEAN_PATH:$PWD" lean YML/YM_L2.lean'
 ================================================================
 -/
-import YML.YM_L1
+import MEFProof.Paper_YM_Foundation.YM_L1_corner_distinctness
 
 noncomputable section
 namespace YML2

@@ -42,6 +42,6 @@ theorem corners_eq_matrix_dim (n : Nat) : corners n = matrixDim n :=
 /-- (3) Positivity at every stage. -/
 theorem corners_pos (n : Nat) : 0 < corners n := by
   rw [corners_eq_pow]
-  exact Nat.pos_pow_of_pos n (by decide)
+  exact Nat.pow_pos (by decide)
 
 end PaperC.C2

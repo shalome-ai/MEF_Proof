@@ -37,8 +37,7 @@
 
 import Mathlib
 
-namespace A3ChainCore
-
+namespace Paper3.A3ChainCore
 /-! ### Node B core -/
 
 /-- Kernel decoupling: the Bourguignon–Gauduchon variation −ζ·λ·I vanishes
@@ -112,4 +111,4 @@ theorem a3_assembly : (6 : ℤ) * 2 = 12 ∧ (3 : ℤ) * 2 * 2 = 12 := by
 theorem a3_profile_sum : (1 + 3 + 4 + 3 + 1 : ℤ) = 12 := by
   norm_num
 
-end A3ChainCore
+end Paper3.A3ChainCore

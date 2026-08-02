@@ -36,9 +36,9 @@ YM_P1 at YML/:
   lake env sh -c 'LEAN_PATH="$LEAN_PATH:$PWD" lean YML/YM_P2.lean'
 ================================================================
 -/
-import YML.YM_L1
-import YML.YM_L2
-import YML.YM_P1
+import MEFProof.Paper_YM_Foundation.YM_L1_corner_distinctness
+import MEFProof.Paper_YM_Foundation.YM_L2_positivity
+import MEFProof.Paper_YM_Foundation.YM_P1_identification
 
 noncomputable section
 namespace YMP2
