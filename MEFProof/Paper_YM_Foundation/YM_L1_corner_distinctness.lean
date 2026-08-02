@@ -19,7 +19,7 @@ torus is the product of two copies. This is the object of the
 prose statement itself, not a substitute model.
 ================================================================
 -/
-import Mathlib.Topology.Instances.AddCircle.Defs
+import Mathlib
 
 noncomputable section
 namespace YML1

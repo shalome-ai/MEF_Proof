@@ -1,7 +1,4 @@
-import Mathlib.Data.Real.Basic
-import Mathlib.Tactic.Linarith
-import Mathlib.Data.Fin.VecNotation
-import Mathlib.Tactic.FinCases
+import Mathlib
 set_option linter.style.longLine false
 /-!
 # MEF Formalization Phase 2: The $T^2/\mathbb{Z}_2$ Spatial Torus and Rigid Involution
