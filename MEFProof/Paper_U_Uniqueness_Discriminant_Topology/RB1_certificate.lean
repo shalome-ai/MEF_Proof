@@ -46,7 +46,12 @@ theorem monomials_nodup : monomials.Nodup := by decide
 /-- The list is exactly the full exponent box {0,1,2}×{0,1}×{0,1}. -/
 theorem monomials_complete :
     ∀ a b c : ℕ, (a, b, c) ∈ monomials ↔ (a ≤ 2 ∧ b ≤ 1 ∧ c ≤ 1) := by
-  decide
+  intro a b c
+  constructor
+  · intro h
+    fin_cases h <;> decide
+  · rintro ⟨ha, hb, hc⟩
+    interval_cases a <;> interval_cases b <;> interval_cases c <;> decide
 
 /-- Cohomological degree of a monomial: 2(a + b + c). -/
 def degreeOf (m : ℕ × ℕ × ℕ) : ℕ := 2 * (m.1 + m.2.1 + m.2.2)

@@ -82,13 +82,12 @@ theorem gbh4_comb_identity (p T w0 : ℝ) (hp : p ≠ 0) (hT : T ≠ 0) :
 theorem gbh4_taueff_ratio (c R l : ℝ) (hc : c ≠ 0) (hR : R ≠ 0) (hl : l ≠ 0) :
     (c / R) / (c / l) = l / R := by
   field_simp
-  ring
 
 /-- The platform window: ℓ/R ≤ ε ↔ ℓ ≤ ε·R for R > 0 — the inequality
 behind R_eff ≳ 1.7ℓ_κ (doublet) and ≳ 6.3ℓ_κ (triplet). -/
 theorem gbh4_window_iff (l R eps : ℝ) (hR : 0 < R) :
     l / R ≤ eps ↔ l ≤ eps * R :=
-  div_le_iff hR
+  div_le_iff₀ hR
 
 /-! ### Assembly remark (comment-level)
 

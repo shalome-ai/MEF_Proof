@@ -76,7 +76,6 @@ theorem n2b_pattern_ratio (g c W d1 dn E1 En : ℝ)
     (hg : g ≠ 0) (hc : c ≠ 0) (hW : W ≠ 0) (hd1 : d1 ≠ 0) (hE1 : E1 ≠ 0) :
     (g * dn * En * c * W) / (g * d1 * E1 * c * W) = (dn * En) / (d1 * E1) := by
   field_simp
-  ring
 
 /-- Geometric envelope: E(n) = qⁿ gives E(n)/E(1) = q^{n−1}. Stated
 multiplicatively (q^{n−1} · q = qⁿ for n ≥ 1) so no nonzero hypothesis or
@@ -98,7 +97,6 @@ theorem n2b_cell_average (k L : ℝ) (hk : k ≠ 0) (hL : L ≠ 0) :
     ((1 / (2 * k)) - Real.exp (-(2 * k * L)) / (2 * k)) / L
       = (1 - Real.exp (-(2 * k * L))) / (2 * k * L) := by
   field_simp
-  ring
 
 /-! ### d_odd spot checks (values used in the note and the N0 tables) -/
 

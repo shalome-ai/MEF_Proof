@@ -213,7 +213,7 @@ theorem reservoir_nonneg_and_bounded
 -- A.8  Holonomy-neutrality of equal-transport bilinears (Lemma lem:neutral).
 theorem holonomy_neutral_bilinear
     {n : Type*} [Fintype n] [DecidableEq n]
-    (z : ℂ) (hz : Complex.abs z = 1)
+    (z : ℂ) (hz : ‖z‖ = 1)
     (M : Matrix n n ℂ) (psi : n → ℂ) :
     dotProduct (star (z • psi)) (M.mulVec (z • psi))
       = dotProduct (star psi) (M.mulVec psi) := by
@@ -222,7 +222,7 @@ theorem holonomy_neutral_bilinear
       rw [Complex.normSq_eq_conj_mul_self]
     rw [h1]
     have : Complex.normSq z = 1 := by
-      rw [Complex.normSq_eq_abs, hz]; norm_num
+      rw [Complex.normSq_eq_norm_sq, hz]; norm_num
     rw [this]; norm_num
   rw [Matrix.mulVec_smul, star_smul, smul_dotProduct, dotProduct_smul, smul_smul]
   simp only [RCLike.star_def]

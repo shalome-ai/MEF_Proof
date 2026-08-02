@@ -50,14 +50,14 @@ def dirichlet (u0 u1 u2 u3 : ℚ) : ℚ :=
 theorem step_fixes_constants (c : ℚ) :
     step0 c c c c = c ∧ step1 c c c c = c
       ∧ step2 c c c c = c ∧ step3 c c c c = c := by
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> · unfold step0 step1 step2 step3; ring
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> · simp only [step0, step1, step2, step3]; ring
 
 /-- The step preserves the mean (mass conservation of the flow). -/
 theorem step_preserves_mean (u0 u1 u2 u3 : ℚ) :
     step0 u0 u1 u2 u3 + step1 u0 u1 u2 u3
       + step2 u0 u1 u2 u3 + step3 u0 u1 u2 u3
       = u0 + u1 + u2 + u3 := by
-  unfold step0 step1 step2 step3; ring
+  simp only [step0, step1, step2, step3]; ring
 
 /-- **The exact energy-drop identity.** The decrease of the Dirichlet
     energy in one step is the displayed sum of squares — an identity,
@@ -87,22 +87,22 @@ theorem energy_monotone (u0 u1 u2 u3 : ℚ) :
 theorem mode_mean :
     step0 1 1 1 1 = 1 ∧ step1 1 1 1 1 = 1
       ∧ step2 1 1 1 1 = 1 ∧ step3 1 1 1 1 = 1 := by
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> · unfold step0 step1 step2 step3; norm_num
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> · simp only [step0, step1, step2, step3]; norm_num
 
 theorem mode_slow_a :
     step0 1 0 (-1) 0 = 1 / 2 ∧ step1 1 0 (-1) 0 = 0
       ∧ step2 1 0 (-1) 0 = -(1 / 2) ∧ step3 1 0 (-1) 0 = 0 := by
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> · unfold step0 step1 step2 step3; norm_num
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> · simp only [step0, step1, step2, step3]; norm_num
 
 theorem mode_slow_b :
     step0 0 1 0 (-1) = 0 ∧ step1 0 1 0 (-1) = 1 / 2
       ∧ step2 0 1 0 (-1) = 0 ∧ step3 0 1 0 (-1) = -(1 / 2) := by
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> · unfold step0 step1 step2 step3; norm_num
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> · simp only [step0, step1, step2, step3]; norm_num
 
 theorem mode_alternating_killed :
     step0 1 (-1) 1 (-1) = 0 ∧ step1 1 (-1) 1 (-1) = 0
       ∧ step2 1 (-1) 1 (-1) = 0 ∧ step3 1 (-1) 1 (-1) = 0 := by
-  refine ⟨?_, ?_, ?_, ?_⟩ <;> · unfold step0 step1 step2 step3; norm_num
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> · simp only [step0, step1, step2, step3]; norm_num
 
 /- ------------------------------------------------------------------
    §2  Fibrewise σ-evenness survives base averaging and shifts
