@@ -1,3 +1,26 @@
-/.lake
-*:Zone.Identifier
+# Lean build artefacts
+/.lake/
+/build/
+*.olean
+*.ilean
+*.trace
+
+# Windows download artefacts
 *Zone.Identifier
+
+# Manuscripts — canonical home is Zenodo (DOI), not this repository
+*.tex
+*.pdf
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# Internal working documents — not referee-facing
+*_workflow.md
+Prop5*.md
+mod_5_list.md
+*_defect_note*.md
+*_Certificate_Manifest.md
