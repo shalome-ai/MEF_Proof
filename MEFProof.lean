@@ -1,11 +1,3 @@
-/-!
-# MEF_Proof — machine-checked certificates
-
-This is the library root. It imports every certificate in the repository, so
-that `lake build` compiles and verifies the whole collection. Each module is a
-self-contained certificate; the grouping below follows the paper it supports.
--/
-
 -- Paper 1
 import MEFProof.Paper_1.P1_L1_flux_ratio
 import MEFProof.Paper_1.P1_L2_structural_identity
@@ -105,3 +97,11 @@ import MEFProof.CFM_Mechanism.CFM_Certificates
 
 -- Root
 import MEFProof.Basic
+
+/-!
+# MEF_Proof — machine-checked certificates
+
+This is the library root. It imports every certificate in the repository, so
+that `lake build` compiles and verifies the whole collection. Each module is a
+self-contained certificate; the grouping above follows the paper it supports.
+-/
