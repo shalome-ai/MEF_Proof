@@ -24,3 +24,6 @@ Prop5*.md
 mod_5_list.md
 *_defect_note*.md
 *_Certificate_Manifest.md
+# Working artefacts
+*.patch
+apply_fixes*.sh
