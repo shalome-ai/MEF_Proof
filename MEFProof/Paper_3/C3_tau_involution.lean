@@ -1,8 +1,7 @@
 /-
   C3_tau_involution.lean
-  Paper XXII / Paper 3 — consolidation node C3.
-  Matrix-algebra and arithmetic core of the companion note "The
-  Transpose Anti-Involution on the Hyperfinite Completion".
+  Paper 3 — consolidation node C3.
+  Certifies Paper 3: Theorem 5.7, Propositions 5.8 and 5.9, Lemma 5.15.
 
   Blocks:
     A. Transpose calculus: period two, anti-multiplicativity, unitality,
@@ -194,3 +193,10 @@ theorem fixed_locus_critical (s : ℂ) :
         zero_sub, neg_neg]
 
 end C3
+
+/-! ### Axiom footprint -/
+
+#print axioms C3.tau_anti_mul
+#print axioms C3.tower_coherence
+#print axioms C3.L_fixed
+#print axioms C3.fixed_locus_critical

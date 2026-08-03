@@ -5,7 +5,6 @@
   "The constant configurations form a critical stratum of the rigidity
    functional ω on X, for every window."
 
-  Companion note: NodeC_Reduction.md  (§1.2–§1.4).
   Status: CERT-pending (certificate delivered; PI local compile outstanding).
 
   ── DECLARED-INPUT BOUNDARY (the [D] analytic layer, NOT formalised) ──
@@ -156,3 +155,9 @@ vanishes for all mean-zero (slice-admissible) δΦ — at every window, with
 the degenerate blocks handled by the trace contraction. -/
 
 end Paper3.CaConstantCritical
+
+/-! ### Axiom footprint -/
+
+#print axioms Paper3.CaConstantCritical.ca_sigma_free
+#print axioms Paper3.CaConstantCritical.ca_partner_degenerate
+#print axioms Paper3.CaConstantCritical.ca_projected_density_const

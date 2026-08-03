@@ -85,3 +85,8 @@ theorem n2b_ground_sector_core :
       ((Real.exp (-(d/2) * x))^2 * c) * Real.exp (d * x) = c) ∧
     (∀ d x : ℝ, -((d + 1)/2) * x + ((d - 1)/2) * x = -x) :=
   ⟨n2b_half_weight_sq, n2b_density, n2b_net_weight⟩
+
+/-! ### Axiom footprint -/
+
+#print axioms n2b_ground_sector_core
+#print axioms n2b_measure_cancel

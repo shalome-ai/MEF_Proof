@@ -1,8 +1,7 @@
 /-
   C2_level_lift.lean
-  Paper XXII / Paper 3 — consolidation node C2.
-  Arithmetic core of the companion note "The Codomain Lives at Level
-  Thirty-Six".
+  Paper 3 — consolidation node C2.
+  Certifies Paper 3: Lemmas 4.1 and 4.2, Propositions 4.3 and 4.4.
 
   Blocks:
     A. Oddness is forced: an even character cancels the unary theta
@@ -158,3 +157,9 @@ theorem zeta3_ne_one : zeta3 ≠ 1 := by
   omega
 
 end C2
+
+/-! ### Axiom footprint -/
+
+#print axioms C2.odd_char_mod_three_forced
+#print axioms C2.naive_level
+#print axioms C2.lifted_level

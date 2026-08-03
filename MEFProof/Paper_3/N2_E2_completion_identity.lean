@@ -104,3 +104,8 @@ against `n2_key_identity` after `field_simp`, e.g.
 for the coefficient C that `field_simp` leaves in front of the key
 identity. The four helper lemmas stand independently.
 -/
+
+/-! ### Axiom footprint -/
+
+#print axioms n2_key_identity
+#print axioms n2_completion_identity

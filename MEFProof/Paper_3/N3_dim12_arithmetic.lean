@@ -3,7 +3,7 @@ import Mathlib.Tactic
 /-!
 # N3 — Dimension-twelve arithmetic
 
-Paper 3 (JGP), Theorem 7.5 (Dimension-twelve simultaneity), leg (i).
+Paper 3 (JGP), Theorem 7.3 (Dimension-twelve simultaneity), leg (i).
 
 Leg (i) of the theorem rests on the Atiyah–Bott–Shapiro periodicity
 of Clifford modules: Cl(0,12) ≅ ℍ(32), with the Clifford-quaternionic
@@ -63,3 +63,8 @@ theorem n3_dim12_arithmetic :
     4 * 2^2 = 2^4 ∧ 16^2 = 2^8 ∧ 2^4 * 2^8 = 2^12 ∧ 4 * 32^2 = 2^12 :=
   ⟨n3_twelve_mod_eight, n3_first_nontrivial,
    n3_dim_H2, n3_dim_R16, n3_dim_tensor, n3_dim_H32⟩
+
+/-! ### Axiom footprint -/
+
+#print axioms n3_dim12_arithmetic
+#print axioms n3_twelve_mod_eight

@@ -1,5 +1,6 @@
 /-
-  C4_euler_twelve.lean — Paper XXII / Paper 3, consolidation node C4.
+  C4_euler_twelve.lean — Paper 3, consolidation node C4.
+  Certifies Lemma 7.1 and Proposition 7.2.
   Arithmetic core of "The Euler Characteristic is Twelve".
   Blocks: Betti sums; involution quotient formula; orbifold Gauss–Bonnet
   arithmetic; the product and the identification with dim M₁₂.
@@ -38,3 +39,8 @@ theorem dim_M12 : (1 : ℤ) + 3 + 8 = 12 := by norm_num
 theorem identification : (3 : ℤ) * 2 * 2 = 1 + 3 + 8 := by norm_num
 
 end C4
+
+/-! ### Axiom footprint -/
+
+#print axioms C4.gauss_bonnet
+#print axioms C4.identification

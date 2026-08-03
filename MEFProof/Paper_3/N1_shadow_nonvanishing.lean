@@ -7,7 +7,7 @@ set_option linter.unusedVariables false
 /-!
 # N1 — Non-vanishing witness for the Shadow–Torsion Correspondence
 
-Paper 3 (JGP), Theorem 3.2 (Shadow–torsion correspondence), clause (iv).
+Paper 3, Theorem 3.1 (Shadow–torsion correspondence), clause (iv).
 
 The canonical proof argues by contradiction: if the shadow extraction
 commuted with the Swann pullback, Leray injectivity would force
@@ -23,7 +23,7 @@ This file certifies the finite core of that witness:
 * the contribution of n = 1 is (−1)^1 · 1 = −1, which is non-zero.
 
 The identification of g as the shadow of the equivariant elliptic
-genus is the content of Theorem 3.2 itself and of the surrounding
+genus is the content of Theorem 3.1 itself and of the surrounding
 analytic setup; it is an input here, not a claim of this file.
 -/
 
@@ -74,3 +74,9 @@ theorem n1_shadow_nonvanishing :
     (∀ n : ℕ, 1 ≤ n → (n1_exponent n = 1/4 ↔ n = 1)) ∧
     n1_coeff 1 = -1 ∧ n1_coeff 1 ≠ 0 :=
   ⟨n1_unique_contributor, n1_leading_coeff, n1_witness_nonzero⟩
+
+/-! ### Axiom footprint -/
+
+#print axioms n1_shadow_nonvanishing
+#print axioms n1_unique_contributor
+#print axioms n1_witness_nonzero

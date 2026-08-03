@@ -2,10 +2,10 @@ import Mathlib.Data.Rat.Defs
 import Mathlib.Tactic
 set_option linter.style.longLine false
 /-!
-# MEF Formalization: R9 — The $\vartheta_2$ Fractional Spectrum and the Absence of the $q^1$ Mode
+# R9 — The $\vartheta_2$ Fractional Spectrum and the Absence of the $q^1$ Mode
 
-This file formalizes the arithmetic core of Proposition R9 of Paper XXII (§ "The
-fractional-mode spectral structure"). The $\mathcal{K}_8$ corner link carries the
+This file formalises the arithmetic core of Paper 3, Lemma 6.9, Proposition 6.10
+and Corollary 6.11. The $\mathcal{K}_8$ corner link carries the
 $\mathrm{Spin}^c$-shifted spectrum whose $\tau$-domain $q$-series has Fourier exponents
 $(2k+1)^2/4$ for $k \geq 0$:
 $$

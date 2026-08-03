@@ -3,7 +3,6 @@
   ─────────────────────────────────────────────────────────────────────────
   Machine-checked algebraic core of the A3/Hodge reduction chain, Nodes
   B / C-b′ / C′, plus the N0 χ_y identities folded in for completeness.
-  Companion note: A3_Chain_EL_Stratification_Assembly.tex.
   Status: CERT-pending (PI local compile outstanding).
 
   ── DECLARED-INPUT BOUNDARY (analytic layer, NOT formalised) ──
@@ -74,7 +73,7 @@ theorem a3_shifted_parity (n : ℤ) : ∃ k : ℤ, 2 * n - 3 = 2 * k + 1 :=
 
 /-! ### C′ / N0 core — χ_y identities and the assembly arithmetic -/
 
-/-- χ_y(K₈) with the Paper XI coefficients (1, −3, 4, −3, 1). -/
+/-- χ_y(K₈) with the coefficients (1, −3, 4, −3, 1). -/
 def chiY (y : ℝ) : ℝ := 1 - 3 * y + 4 * y ^ 2 - 3 * y ^ 3 + y ^ 4
 
 theorem a3_chiY_factor (y : ℝ) :
@@ -112,3 +111,10 @@ theorem a3_profile_sum : (1 + 3 + 4 + 3 + 1 : ℤ) = 12 := by
   norm_num
 
 end Paper3.A3ChainCore
+
+/-! ### Axiom footprint -/
+
+#print axioms Paper3.A3ChainCore.a3_kernel_decouple
+#print axioms Paper3.A3ChainCore.a3_normalisation_indep
+#print axioms Paper3.A3ChainCore.a3_base_signed_unsigned
+#print axioms Paper3.A3ChainCore.a3_assembly

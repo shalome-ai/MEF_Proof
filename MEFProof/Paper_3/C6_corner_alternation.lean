@@ -1,5 +1,6 @@
 /-
-  C6_corner_alternation.lean — Paper XXII / Paper 3, consolidation node C6.
+  C6_corner_alternation.lean — Paper 3, consolidation node C6.
+  Certifies Corollary 10.3.
   Arithmetic core of "Corner Separation, and the Sign of a Full Period".
   Blocks: half-period lattice bounds (corner separation); quaternion unit
   squares and convention-freeness; the (−1)ⁿ alternation.
@@ -81,3 +82,9 @@ theorem alternation_odd {n : ℕ} (h : Odd n) : ((-1 : ℤ)) ^ n = -1 :=
   h.neg_one_pow
 
 end C6
+
+/-! ### Axiom footprint -/
+
+#print axioms C6.diagonal_distance_sq
+#print axioms C6.alternation_even
+#print axioms C6.alternation_odd

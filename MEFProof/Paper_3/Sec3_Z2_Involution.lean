@@ -1,10 +1,11 @@
 import Mathlib
 set_option linter.style.longLine false
 /-!
-# MEF Formalization Phase 2: The $T^2/\mathbb{Z}_2$ Spatial Torus and Rigid Involution
+# The $T^2/\mathbb{Z}_2$ Spatial Torus and Rigid Involution
 This file formalizes the 2D spatial torus under modulo-1 coordinates and establishes
 the geometric $\mathbb{Z}_2$ involution ($\sigma$) as a mechanically verified rigid involution.
-This directly satisfies the foundational criteria of the Master Equation Framework (Paper XXII, §4).
+Certifies Paper 3: Lemma 6.1, Propositions 6.2 and 6.3, Remark 6.4,
+Lemma 8.1 and Corollary 8.2.
 -/
 
 /-- Define the equivalence relation for the 2D Spatial Torus ($T^2$).
@@ -61,7 +62,7 @@ def sigma (t : Torus) : Torus :=
   Quotient.map sigma_raw sigma_raw_respects t
 
 /-- Core Theorem: The map $\sigma$ is a rigid involution on the Torus ($\sigma \circ \sigma = \text{id}$).
-    This establishes the homological stability required for the Tate cohomology setup in Paper XV. -/
+    This establishes the homological stability required for the Tate cohomology setup. -/
 theorem sigma_involution (t : Torus) : sigma (sigma t) = t := by
   induction t using Quotient.ind
   case a p =>
@@ -111,7 +112,7 @@ theorem sigma_fixed_P4 : sigma P4 = P4 := by
   constructor <;> linarith
 /-!
 ## R6 extension: the Spin^c involution lift at the four corners
-Certifies `lem:spinc-involution-lift` (Paper XXII §4.5, eq. 4.x):
+Certifies Paper 3, Lemma 6.1 (`lem:spinc-involution-lift`):
 the corner character χ(m,n) = (−1)^{mn}, the degree-d U(1) monodromy phase
 (−1)^{d·m·n}, and the four-corner product = (−1)^d — hence −1 at degree 3,
 and the Remark's witness that an even degree gives +1 at every corner.
@@ -156,7 +157,7 @@ theorem cornerProduct_eq_neg_one_pow (d : ℤ) :
              Int.toNat_zero, pow_zero, List.map_cons, List.map_nil,
              List.prod_cons, List.prod_nil, one_mul, mul_one]
 
-/-- **Remark witness (line 613).** An even-degree line bundle gives phase +1 at
+/-- **Remark witness (Paper 3, Remark 6.4).** An even-degree line bundle gives phase +1 at
     every corner, hence trivial product — which would violate Atiyah–Bott. This
     is the algebraic content of "the integer 3 is odd": odd degree ⇒ product −1. -/
 theorem cornerProduct_even_eq_one (d : ℤ) (hev : Even d.toNat) :
@@ -188,7 +189,7 @@ theorem unique_nontrivial_corner_is_P4 :
 
 /-!
 ## R10 extension: Fixed-Point Vanishing (the σ-parity vanishing lemma)
-Certifies `lem:fixed-point-vanishing` (Paper XX) / `prop:universal-vanishing` (Paper XXII):
+Certifies Paper 3, Lemma 8.1 (`lem:fpv`) and Corollary 8.2 (`cor:pairing`):
 a σ-odd section — modelled (per the source's "equivalently, a continuous σ-antiinvariant
 function") as a function Ψ : Torus → ℝ with Ψ(σ t) = −Ψ(t) — vanishes at every σ-fixed point,
 hence at all four corners P1…P4. The pointwise pairing ⟨δ_{P_α}, Ψ⟩ = Ψ(P_α) is therefore
@@ -234,3 +235,10 @@ theorem corner_pairing_vanishes
   · exact (fixed_point_vanishing Ψ hΨ).2.1
   · exact (fixed_point_vanishing Ψ hΨ).2.2.1
   · exact (fixed_point_vanishing Ψ hΨ).2.2.2
+
+/-! ### Axiom footprint -/
+
+#print axioms sigma_involution
+#print axioms cornerProduct_eq_neg_one_pow
+#print axioms fixed_point_vanishing
+#print axioms corner_pairing_vanishes

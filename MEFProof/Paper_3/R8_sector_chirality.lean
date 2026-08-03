@@ -3,9 +3,10 @@ import Mathlib
 set_option linter.style.longLine false
 set_option linter.style.whitespace false
 /-!
-# MEF Formalization: R8 — Sector-Restricted Chirality Identification
+# R8 — Sector-Restricted Chirality Identification
 
-Certifies `prop:sector-chirality` (Paper XXII, JGP cut, line 1132, eq:sector-chirality):
+Certifies Paper 3, Theorem 6.7 (`thm:sector-chirality`); also Lemma 6.5 and
+Proposition 6.6:
 on the positive transverse-chirality sector that carries the index, the `Spin^c` involution
 lift `σ̃ᶜ` coincides with the Clifford chirality operator `γ₅` up to the corner character
 $$ \chi(m,n) = -i \cdot (-1)^{m n}, \qquad \tilde\sigma^c(\alpha) = \gamma_5 \cdot \chi(\alpha). $$
@@ -15,23 +16,23 @@ $$ \chi(m,n) = -i \cdot (-1)^{m n}, \qquad \tilde\sigma^c(\alpha) = \gamma_5 \cd
   monodromy phase `σ̃ᶜ(m,n) = σ̃ · (-1)^{m n}`. We re-state the integer phase `(-1)^{m n}` and its
   four corner values; we do not re-derive R6.
 
-## What is derived here (the residual γ₅-coincidence step, Paper XXII line 1141)
+## What is derived here (the residual γ₅-coincidence step)
 The geometric Pin(2) lift is `σ̃ = c(e₁) c(e₂)`; the 2D base chirality operator is
 `γ_{2D} = i · c(e₁) c(e₂)`, so `σ̃ = -i · γ_{2D}`. On the positive transverse sector
 `γ_transverse Ψ = +Ψ`, hence `γ₅ Ψ = γ_{2D} Ψ`, so `σ̃ = -i · γ₅` on that sector. Composing with
 the R6 phase gives `σ̃ᶜ(α) = γ₅ · χ(α)` with `χ(m,n) = -i (-1)^{m n}`.
 
 ## The non-standard-holonomy point, made explicit (per PI: we are likely to be pressed on it)
-The MEF `Spin^c` holonomy is non-standard: the spinor lift `J` of the geometric involution
+The `Spin^c` holonomy is non-standard: the spinor lift `J` of the geometric involution
 satisfies `J² = -1` (Paper I/IV Appendix A, eq:A.17 — boxed `Hol = e^{iπ/2} = i`, ledger line 40,
-classified D), **not** `J² = +1`. This file models the two relations the corpus actually fixes —
+classified D), **not** `J² = +1`. This file models the two relations that are actually fixed —
 `σ̃² = -1` and `γ_{2D}² = +1` — and leaves the *individual generator square* `c(eᵢ)² = ε` a free
 parameter `ε ∈ {+1,-1}`. The result is **invariant under that choice**: `σ̃² = (c(e₁)c(e₂))² = -1`
 holds for either ε, because the `-1` comes from the anticommutation `c(e₁)c(e₂) = -c(e₂)c(e₁)`,
-not from the generator square. The corpus never states a c(eᵢ)² convention, and (Theorem
-`sigma_sq_signature_invariant` below) it does not need to: the chirality identification is
-signature-free, exactly as the parallel Kloosterman-sign derivation is convention-free in
-Paper XXI (line 645: "the sign does not depend on the choice of generator, because (±i)² = -1").
+not from the generator square. No c(eᵢ)² convention is fixed anywhere, and (Theorem
+`sigma_sq_signature_invariant` below) none is needed: the chirality identification is
+signature-free, because (±i)² = -1 renders the sign independent of the choice of
+generator.
 -/
 
 namespace R8
@@ -39,7 +40,7 @@ namespace R8
 /-! ## Part 0 — The signature-invariance fact (the nit-proof)
 
 We show, for an abstract pair of anticommuting Clifford generators with **free** square
-`c(eᵢ)² = ε` (the metric-signature choice the corpus does not fix), that the geometric lift
+`c(eᵢ)² = ε` (the metric-signature choice, left unfixed), that the geometric lift
 `σ̃ = c(e₁)c(e₂)` squares to `-1` for **either** `ε = +1` or `ε = -1`. The `-1` is carried by the
 anticommutation `c(e₁)c(e₂) = -c(e₂)c(e₁)`, not by `ε`, so the result is signature-independent. -/
 
@@ -91,7 +92,7 @@ theorem gamma2D_sq : gamma2D * gamma2D = 1 := by
   rw [Complex.I_mul_I]
   norm_num
 
-/-- **σ̃ = -i · γ_{2D}** (Paper XXII line 1141): since `γ_{2D} = i·σ̃` and `(-i)·i = 1`. -/
+/-- **σ̃ = -i · γ_{2D}** (Paper 3, §6): since `γ_{2D} = i·σ̃` and `(-i)·i = 1`. -/
 theorem sigmaTilde_eq_neg_i_gamma2D : sigmaTilde = (-Complex.I) • gamma2D := by
   unfold gamma2D
   rw [smul_smul, neg_mul, Complex.I_mul_I, neg_neg, one_smul]
@@ -111,7 +112,7 @@ noncomputable def gamma5_sector : Matrix (Fin 2) (Fin 2) ℂ := gamma2D
 theorem gamma5_sector_sq : gamma5_sector * gamma5_sector = 1 := by
   unfold gamma5_sector; exact gamma2D_sq
 
-/-- **`σ̃ = -i · γ₅` on the index-contributing sector** (Paper XXII line 1141, clean form).
+/-- **`σ̃ = -i · γ₅` on the index-contributing sector** (Paper 3, §6, clean form).
     This replaces the source proof's informal `·(-1)²·(-1)` middle line with the exact identity:
     `σ̃ = -i·γ_{2D} = -i·γ₅` on the sector. -/
 theorem sigmaTilde_eq_neg_i_gamma5_sector :
@@ -152,7 +153,7 @@ theorem chi_values :
   · rw [e01]; push_cast; ring
   · rw [e11]; push_cast; ring
 
-/-- The corner sum `Σ_α χ(α) = -2i` (Paper XXII line 1156): `-i -i -i +i = -2i`.
+/-- The corner sum `Σ_α χ(α) = -2i` (Paper 3, §6): `-i -i -i +i = -2i`.
     This is the multiplicative constant the χ-weighting carries; recorded for R9's use. -/
 theorem chi_corner_sum :
     chi 0 0 + chi 1 0 + chi 0 1 + chi 1 1 = -2 * Complex.I := by
@@ -169,3 +170,9 @@ theorem sector_chirality (m n : ℤ) :
       mul_comm ((cornerPhase m n : ℤ) : ℂ) (-Complex.I)]
 
 end R8
+
+/-! ### Axiom footprint -/
+
+#print axioms R8.sector_chirality
+#print axioms R8.sigma_sq_signature_invariant
+#print axioms R8.sigmaTilde_eq_neg_i_gamma5_sector

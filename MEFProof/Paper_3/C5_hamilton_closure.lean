@@ -1,5 +1,6 @@
 /-
-  C5_hamilton_closure.lean — Paper XXII / Paper 3, consolidation node C5.
+  C5_hamilton_closure.lean — Paper 3, consolidation node C5.
+  Certifies Lemma 10.1 and Corollary 10.2.
   Component arithmetic of "The Hamilton Product Generates a Real Scalar".
   Blocks: the pure-imaginary product decomposition (real part = −dot,
   imaginary part = cross); the non-closure witness; the Re ⊕ Im splitting;
@@ -68,3 +69,8 @@ namespace C5
   theorem neg_sq (p : Quaternion ℝ) : (-p) * (-p) = p * p := by simp
 
 end C5
+
+/-! ### Axiom footprint -/
+
+#print axioms C5.im_not_closed
+#print axioms C5.pure_unit_sq

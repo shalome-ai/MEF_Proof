@@ -1,7 +1,8 @@
 /-
   C1_c1L_anchoring.lean
-  Paper XXII / Paper 3 — consolidation node C1.
-  Arithmetic core of the companion note "The Determinant Line is O(3)".
+  Paper 3 — consolidation node C1.
+  Paper 3: Lemma 2.1, Proposition 2.2, Remark 2.3, Lemma 5.4,
+  Proposition 5.5, Lemma 7.4, Theorem 7.5, Proposition 7.6.
 
   Blocks:
     A. Chern polynomial of T CP²: the expansion (1+X)^3 and its
@@ -223,3 +224,10 @@ noncomputable def z6_iso : ZMod 6 ≃+* ZMod 2 × ZMod 3 :=
   ZMod.chineseRemainder (m := 2) (n := 3) (by decide)
 
 end C1
+
+/-! ### Axiom footprint -/
+
+#print axioms C1.c1L_eq
+#print axioms C1.anchored_unique
+#print axioms C1.holonomy_quantised
+#print axioms C1.composite_phase

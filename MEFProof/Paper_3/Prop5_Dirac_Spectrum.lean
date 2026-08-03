@@ -4,8 +4,8 @@ import Mathlib.Tactic
 noncomputable section
 
 /--
-PAPER XXII: The Almost-Quaternionic Mock Modular Correspondence
-Proposition 6.3 (Second Rigidity Witness)
+Paper 3, Proposition 7.13 (The lowest eigenvalue is $\pi$); also Lemmas 7.11
+and 7.12.
 Statement: the lowest eigenvalue of the Spin^c Dirac operator on (T^2, tau = i*tau_2)
 with determinant line bundle L = O(3) equals pi, independently of tau_2 > 0.
 Proven below as `prop5_min_eigenvalue_is_pi` (and in squared form as `prop5_min_is_pi_sq`).
@@ -89,3 +89,9 @@ theorem prop5_min_eigenvalue_is_pi (tau_2 : ℝ) (htau : tau_2 > 0) :
     have hge : Real.pi ^ 2 ≤ lambda_sq m n tau_2 := hlb ⟨(m, n), rfl⟩
     calc Real.pi = Real.sqrt (Real.pi ^ 2) := (Real.sqrt_sq Real.pi_pos.le).symm
       _ ≤ Real.sqrt (lambda_sq m n tau_2) := Real.sqrt_le_sqrt hge
+
+/-! ### Axiom footprint -/
+
+#print axioms prop5_min_eigenvalue_is_pi
+#print axioms prop5_min_is_pi_sq
+#print axioms n_mode_bound
