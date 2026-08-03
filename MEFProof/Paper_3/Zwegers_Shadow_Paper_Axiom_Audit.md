@@ -46,7 +46,7 @@ Toolchain: Lean 4.29.1, Mathlib pinned at `v4.29.1` (see `lean-toolchain` and
 
 Scope note: the audit covers the headline results of each certificate — those
 which correspond to a numbered result of the paper, as tabulated in
-`CORRESPONDENCE.md`. Because axiom dependency is transitive, auditing a result
+`Zwegers_Shadow_Paper_Lean_Correspondence.md`. Because axiom dependency is transitive, auditing a result
 also audits every lemma feeding into it; the supporting lemmas within each file
 are therefore covered without being listed separately.
 

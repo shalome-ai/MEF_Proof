@@ -8,7 +8,7 @@ It exists because a proof assistant verifies that a stated theorem follows from
 its premises; it does not verify that the stated theorem is the one the paper
 asserts. That correspondence is a matter of reading, and this table is what
 makes the reading possible. The axiom footprint of each result is recorded
-separately in `AXIOM_AUDIT.md`.
+separately in `Zwegers_Shadow_Paper_Axiom_Audit.md`.
 
 ---
 
