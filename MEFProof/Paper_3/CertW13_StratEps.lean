@@ -11,16 +11,20 @@
    momentum-eigenbasis evaluation are human-audited inputs, outside
    scope. -/
 
+namespace CertW13
+
 /-- Sign of an integer exponent: (-1)^e as a parity. -/
 def esgn (e : Int) : Int := if e % 2 = 0 then 1 else -1
 
 /-- Unshifted direction: the exponent 2m is even, the sign is +1. -/
 theorem eps_unshifted (m : Int) : esgn (2 * m) = 1 := by
-  simp [esgn]
+  unfold esgn
+  rw [if_pos (by omega : (2 * m) % 2 = 0)]
 
 /-- Shifted direction: the exponent 2n - 3 is odd, the sign is -1. -/
 theorem eps_shifted (n : Int) : esgn (2 * n - 3) = -1 := by
-  simp [esgn]; omega
+  unfold esgn
+  rw [if_neg (by omega : ¬ (2 * n - 3) % 2 = 0)]
 
 /-- The general clause: with determinant class c, the shifted exponent
     is 2n - c; its sign is -1 for every n precisely when c is odd. -/
@@ -29,11 +33,13 @@ theorem eps_iff_odd (c : Int) :
   constructor
   · intro h
     have h0 := h 0
-    simp [esgn] at h0
-    omega
+    unfold esgn at h0
+    split at h0
+    · exact absurd h0 (by decide)
+    · omega
   · intro hc n
-    simp [esgn]
-    omega
+    unfold esgn
+    rw [if_neg (by omega : ¬ (2 * n - c) % 2 = 0)]
 
 /-- The diagonal product: the two shifted half-periods each contribute
     -1 and the unshifted one +1; the product over the two shifted
@@ -45,3 +51,5 @@ theorem diagonal_products :
 #print axioms eps_shifted
 #print axioms eps_iff_odd
 #print axioms diagonal_products
+
+end CertW13

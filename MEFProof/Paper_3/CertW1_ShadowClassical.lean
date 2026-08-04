@@ -6,6 +6,13 @@
 
 set_option maxRecDepth 40000
 
+namespace CertW1
+
+/-- Portable (index, value) enumeration: `List.enum` was removed from
+    the 4.29 core library; `range`/`zip` exist in every toolchain. -/
+def enumL {α : Type} (xs : List α) : List (Nat × α) :=
+  (List.range xs.length).zip xs
+
 def chi4 (n : Nat) : Int :=
   match n % 4 with
   | 1 => 1
@@ -59,7 +66,7 @@ def psmulShift (c : Int) (k : Nat) (xs : List Int) : List Int :=
   List.replicate k 0 ++ xs.map (c * ·)
 
 def pmulTrunc (n : Nat) (xs ys : List Int) : List Int :=
-  (xs.enum.foldl (fun acc (p : Nat × Int) =>
+  ((enumL xs).foldl (fun acc (p : Nat × Int) =>
     padd acc (psmulShift p.2 p.1 ys)) []).take n
 
 def cubeFactor (n m : Nat) : List Int :=
@@ -97,3 +104,5 @@ theorem level_sixty_four : 4 * 4^2 = 64 := rfl
 #print axioms chi4_odd
 #print axioms product_eq_jacobi_50
 #print axioms product_eq_chi_50
+
+end CertW1
