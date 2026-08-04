@@ -20,6 +20,17 @@ import MEFProof.Paper_3.C4_euler_twelve
 import MEFProof.Paper_3.C5_hamilton_closure
 import MEFProof.Paper_3.C6_corner_alternation
 import MEFProof.Paper_3.Ca_constant_critical
+import MEFProof.Paper_3.CertW1_ShadowClassical
+import MEFProof.Paper_3.CertW2_Appell3Sign
+import MEFProof.Paper_3.CertW3_SectorClassDictionary
+import MEFProof.Paper_3.CertW4_CornerSectorDFT
+import MEFProof.Paper_3.CertW5_LevelConjugation
+import MEFProof.Paper_3.CertW7_StdIrrSchur
+import MEFProof.Paper_3.CertW9_AntiinvSectorDims
+import MEFProof.Paper_3.CertW10_FlatClasses
+import MEFProof.Paper_3.CertW11_ChiralTelescope
+import MEFProof.Paper_3.CertW12_GenusSectorS3
+import MEFProof.Paper_3.CertW13_StratEps
 import MEFProof.Paper_3.N1_shadow_nonvanishing
 import MEFProof.Paper_3.N2_E2_completion_identity
 import MEFProof.Paper_3.N2b_warp_ground_sector

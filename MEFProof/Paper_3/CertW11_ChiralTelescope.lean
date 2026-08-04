@@ -15,6 +15,8 @@
    the period integral, and its differentiation are human-audited
    analytic steps with cited termini, outside scope. -/
 
+namespace CertW11
+
 /-- Doubled towers: 2μ⁺_m = 2m + 3, 2μ⁻_m = -2m + 1. -/
 def dplus (m : Nat) : Int := 2 * m + 3
 
@@ -65,3 +67,5 @@ theorem smallest_case :
 #print axioms survivor_values
 #print axioms no_quarter_in_plus
 #print axioms smallest_case
+
+end CertW11

@@ -12,6 +12,8 @@
    clauses of prop:torsion-class, are human-audited inputs, outside
    scope. -/
 
+namespace CertW9
+
 /-- The four generators as (a, b) ∈ Bool²; degree and σ-sign. -/
 def gens : List (Bool × Bool) :=
   [(false, false), (true, false), (false, true), (true, true)]
@@ -56,3 +58,5 @@ theorem no_odd_constants : antiDim 0 = 0 := by decide
 #print axioms inv_dims
 #print axioms complementation
 #print axioms no_odd_constants
+
+end CertW9

@@ -3,6 +3,8 @@
    duplicated from CERT-W1 per the island rule. The monodromy reading is
    the paper's [D]-grade identification, outside scope. -/
 
+namespace CertW2
+
 def chi4 (n : Nat) : Int :=
   match n % 4 with
   | 1 => 1
@@ -41,3 +43,5 @@ theorem chi4_sign_odd (n : Nat) (h : n % 2 = 1) :
   rw [hk, chi4_odd]
 
 #print axioms chi4_sign_odd
+
+end CertW2

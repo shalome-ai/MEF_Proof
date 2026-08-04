@@ -16,6 +16,8 @@
    elliptic shift laws — is human-audited with cited termini
    (Mumford; Dabholkar–Murthy–Zagier), outside scope. -/
 
+namespace CertW12
+
 /-- (1a) n² and n have the same parity: the θ₃ ↔ θ₄ exchange under T. -/
 theorem sq_parity (n : Nat) : (n * n) % 2 = n % 2 := by
   have h : n % 2 = 0 ∨ n % 2 = 1 := by omega
@@ -84,3 +86,5 @@ theorem ones_fixed :
 #print axioms s3_generated
 #print axioms sum_preserved
 #print axioms ones_fixed
+
+end CertW12

@@ -22,6 +22,8 @@
    lem:antiinv, lem:telescope, thm:level-stabiliser and
    lem:same-vector) are human-audited inputs, outside scope. -/
 
+namespace CertW7
+
 /-- 2×2 integer matrices as quadruples (a, b, c, d) = [[a,b],[c,d]]. -/
 def mmul (X Y : Int × Int × Int × Int) : Int × Int × Int × Int :=
   (X.1 * Y.1 + X.2.1 * Y.2.2.1,
@@ -145,3 +147,5 @@ theorem normaliser_nonzero :
 #print axioms commutant_scalar
 #print axioms scalar_invertible
 #print axioms normaliser_nonzero
+
+end CertW7

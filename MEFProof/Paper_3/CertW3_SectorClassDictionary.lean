@@ -5,6 +5,8 @@
    The identification with the modular permutation of sector functions
    (thm:genus-jacobi) is the cited/derived input, outside scope. -/
 
+namespace CertW3
+
 def Tact (v : Bool × Bool) : Bool × Bool := (xor v.1 v.2, v.2)
 def Sact (v : Bool × Bool) : Bool × Bool := (v.2, v.1)
 
@@ -32,3 +34,5 @@ theorem six_distinct :
 
 #print axioms T_fixes
 #print axioms six_distinct
+
+end CertW3

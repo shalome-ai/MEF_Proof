@@ -11,6 +11,8 @@
    the corresponding cycles, and of H¹(T²/ℤ₂; ℤ₂) with the two-torsion
    group of the cover, are human-audited inputs, outside scope. -/
 
+namespace CertW10
+
 /-- -1 acts as the identity mod 2: for every integral class n,
     (-1)·n ≡ n (mod 2). -/
 theorem sigma_trivial_mod_two (n : Int) : ((-1) * n) % 2 = n % 2 ∨
@@ -41,3 +43,5 @@ theorem classes_distinct : classes.Pairwise (· ≠ ·) := by decide
 #print axioms neg_parity
 #print axioms three_plus_one
 #print axioms classes_distinct
+
+end CertW10

@@ -8,6 +8,8 @@
    projection. Which vector the geometry and the spectrum present is the
    human-audited identification, outside scope. -/
 
+namespace CertW4
+
 /-- (-1)^x for a Boolean exponent. -/
 def ch (x : Bool) : Int := if x then -1 else 1
 
@@ -76,3 +78,5 @@ theorem witness_sumzero_nonzero :
 #print axioms dft_w
 #print axioms pairing_equivariance
 #print axioms witness_dft
+
+end CertW4

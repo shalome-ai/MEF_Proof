@@ -5,6 +5,8 @@
    action on two-torsion labels. Cusp counts and modular-curve facts
    are cited (Diamond–Shurman), outside scope. -/
 
+namespace CertW5
+
 /-- (1) The conjugate of a Γ₀(4) element lies in Γ(2). -/
 theorem gamma04_conj_in_gamma2 (a b c d : Int)
     (hc : c % 4 = 0) (hdet : a*d - b*c = 1) :
@@ -53,3 +55,5 @@ theorem gamma2_trivial_on_twotorsion (a b c d m n : Int)
 #print axioms gamma04_conj_in_gamma2
 #print axioms gamma2_conj_in_gamma04
 #print axioms gamma2_trivial_on_twotorsion
+
+end CertW5
