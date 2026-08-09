@@ -5,7 +5,7 @@ character of Γ₀(2), with χ(γ₁,₂) = −1. Compiled against
 Lean 4.15.0 / Mathlib v4.15.0.
 -/
 import Mathlib.Algebra.Ring.Parity
-import Mathlib.Data.Int.Defs
+import Mathlib.Algebra.Ring.Int.Parity
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
 noncomputable section

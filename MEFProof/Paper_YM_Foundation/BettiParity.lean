@@ -9,7 +9,7 @@ implication, in full generality (any Betti sequence, any range),
 not merely at statement level.
 Unconditional; zero `sorry`.
 -/
-import Mathlib.Algebra.BigOperators.Group.Finset
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic.NormNum
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
 

@@ -35,27 +35,27 @@ theorem pairCount_eq_dodd (m : ℕ) (hm : 1 ≤ m) :
     (fun d => (m / d, (d - 1) / 2))
   · -- forward map lands in the odd divisors
     rintro ⟨n, a⟩ hp
-    simp only [mem_filter, mem_product, mem_range] at hp
+    simp only [Finset.mem_coe, mem_filter, mem_product, mem_range] at hp
     obtain ⟨⟨-, -⟩, hn1, hprod⟩ := hp
-    simp only [mem_filter, Nat.mem_divisors]
+    simp only [Finset.mem_coe, mem_filter, Nat.mem_divisors]
     exact ⟨⟨⟨n, by rw [Nat.mul_comm]; exact hprod.symm⟩, by omega⟩,
            ⟨a, rfl⟩⟩
   · -- inverse map lands in the pair set
     intro d hd
-    simp only [mem_filter, Nat.mem_divisors] at hd
+    simp only [Finset.mem_coe, mem_filter, Nat.mem_divisors] at hd
     obtain ⟨⟨hdvd, hm0⟩, hodd⟩ := hd
     have hd1 : 1 ≤ d := Nat.one_le_iff_ne_zero.mpr (by rintro rfl; simp at hodd)
     have hdle : d ≤ m := Nat.le_of_dvd (by omega) hdvd
     have hq1 : 1 ≤ m / d := Nat.one_le_div_iff (by omega) |>.mpr hdle
     have hqle : m / d ≤ m := Nat.div_le_self m d
     have hdodd : d % 2 = 1 := Nat.odd_iff.mp hodd
-    simp only [mem_filter, mem_product, mem_range]
+    simp only [Finset.mem_coe, mem_filter, mem_product, mem_range]
     refine ⟨⟨by omega, by omega⟩, hq1, ?_⟩
     rw [show 2 * ((d - 1) / 2) + 1 = d by omega]
     exact Nat.div_mul_cancel hdvd
   · -- left inverse
     rintro ⟨n, a⟩ hp
-    simp only [mem_filter, mem_product, mem_range] at hp
+    simp only [Finset.mem_coe, mem_filter, mem_product, mem_range] at hp
     obtain ⟨⟨-, -⟩, hn1, hprod⟩ := hp
     have hpos : 0 < 2 * a + 1 := by omega
     have hdiv : m / (2 * a + 1) = n := by
@@ -64,7 +64,7 @@ theorem pairCount_eq_dodd (m : ℕ) (hm : 1 ≤ m) :
     exact ⟨hdiv, by omega⟩
   · -- right inverse
     intro d hd
-    simp only [mem_filter, Nat.mem_divisors] at hd
+    simp only [Finset.mem_coe, mem_filter, Nat.mem_divisors] at hd
     have hdodd : d % 2 = 1 := Nat.odd_iff.mp hd.2
     have hd1 : 1 ≤ d := by omega
     dsimp only

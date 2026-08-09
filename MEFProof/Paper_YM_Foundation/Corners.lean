@@ -9,7 +9,7 @@ Model: the circle is Mathlib's `AddCircle (1 : ℝ) = ℝ/ℤ`; the torus
 is the product of two copies -- the object of the prose statement
 itself, not a substitute model.
 -/
-import Mathlib.Topology.Instances.AddCircle
+import Mathlib.Topology.Instances.AddCircle.Real
 
 noncomputable section
 namespace Corners

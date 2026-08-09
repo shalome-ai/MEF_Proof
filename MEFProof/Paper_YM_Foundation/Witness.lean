@@ -12,7 +12,7 @@ value of the gap is exhibited, not merely asserted, to depend on
 the setting. Unconditional; zero `sorry`.
 -/
 import Mathlib.Analysis.Normed.Group.AddCircle
-import Mathlib.Topology.Instances.AddCircle
+import Mathlib.Topology.Instances.AddCircle.Real
 
 set_option linter.unusedSectionVars false
 
