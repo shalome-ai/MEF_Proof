@@ -1,28 +1,18 @@
 /-
-================================================================
-YM_L1_corner_distinctness.lean
-================================================================
-Certificate for YM-L1 (statement register R-1):
+Certificate 1 (Lemma: corner distinctness).
 On the torus T² = ℝ²/ℤ², the involution σ : (x,y) ↦ (-x,-y) has
-exactly four fixed points — the 2-torsion points
-(0,0), (1/2,0), (0,1/2), (1/2,1/2) — and they are pairwise distinct.
-
-Status target: CERT (unconditional — no hypotheses beyond
-Lean/Mathlib, zero `sorry`).
-
-Claim (c) of register R-1 (logical priority over the quaternionic
-layer) is witnessed structurally: this file contains no reference
-to quaternions, Sp(1), SU(2), SU(3), or any gauge group.
-
-Model: the circle is Mathlib's `AddCircle (1 : ℝ) = ℝ ⧸ ℤ`; the
-torus is the product of two copies. This is the object of the
-prose statement itself, not a substitute model.
-================================================================
+exactly four fixed points -- the 2-torsion points
+(0,0), (1/2,0), (0,1/2), (1/2,1/2) -- and they are pairwise distinct.
+Unconditional; zero `sorry`. No reference to any gauge group, and no
+quaternionic structure, appears in this file.
+Model: the circle is Mathlib's `AddCircle (1 : ℝ) = ℝ/ℤ`; the torus
+is the product of two copies -- the object of the prose statement
+itself, not a substitute model.
 -/
-import Mathlib
+import Mathlib.Topology.Instances.AddCircle
 
 noncomputable section
-namespace YML1
+namespace Corners
 
 open AddCircle
 
@@ -66,7 +56,6 @@ theorem neg_eq_self_iff (x : S) :
   refine QuotientAddGroup.induction_on x (fun r => ?_)
   constructor
   · intro h
-    -- from -↑r = ↑r deduce ↑(r + r) = 0
     have hneg : ((-r : ℝ) : S) = ((r : ℝ) : S) := by
       rw [AddCircle.coe_neg]; exact h
     have h0 : ((r + r : ℝ) : S) = 0 := by
@@ -77,15 +66,13 @@ theorem neg_eq_self_iff (x : S) :
     obtain ⟨n, hn⟩ := h0
     rw [zsmul_eq_mul, mul_one] at hn
     rcases Int.even_or_odd n with ⟨m, hm⟩ | ⟨m, hm⟩
-    · -- n = m + m  ⇒  r = m  ⇒  x = 0
-      left
+    · left
       have hr : r = (m : ℝ) := by
         have : ((m : ℝ) + (m : ℝ)) = r + r := by
           rw [← hn, hm]; push_cast; ring
         linarith
       rw [hr]; exact int_coe_eq_zero m
-    · -- n = 2m + 1  ⇒  r = m + 1/2  ⇒  x = 1/2
-      right
+    · right
       have hr : r = (m : ℝ) + 1/2 := by
         have : ((2 * m + 1 : ℤ) : ℝ) = r + r := by rw [← hn, hm]
         push_cast at this; linarith
@@ -141,12 +128,12 @@ theorem corners_pairwise_distinct :
    fun h => half_ne_zero (congrArg Prod.snd h).symm,
    fun h => half_ne_zero (congrArg Prod.fst h).symm⟩
 
-/-- **Summary (YM-L1).** σ has exactly the four corners as fixed
-points, and they are pairwise distinct. -/
-theorem YM_L1 :
+/-- **Summary.** σ has exactly the four corners as fixed points, and
+they are pairwise distinct. -/
+theorem corner_distinctness :
     (∀ q : T, sigma q = q ↔ q = c00 ∨ q = c10 ∨ q = c01 ∨ q = c11) ∧
     (c00 ≠ c10 ∧ c00 ≠ c01 ∧ c00 ≠ c11 ∧
      c10 ≠ c01 ∧ c10 ≠ c11 ∧ c01 ≠ c11) :=
   ⟨fixed_iff, corners_pairwise_distinct⟩
 
-end YML1
+end Corners
