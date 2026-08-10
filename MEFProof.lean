@@ -77,18 +77,6 @@ import MEFProof.Paper_U_Uniqueness_Discriminant_Topology.O4_certificate
 import MEFProof.Paper_U_Uniqueness_Discriminant_Topology.RB1_certificate
 import MEFProof.Paper_U_Uniqueness_Discriminant_Topology.RB_retraction_certificate
 
--- Paper YM Foundation
-import MEFProof.Paper_YM_Foundation.GD_certificate
-import MEFProof.Paper_YM_Foundation.O4_readout_certificate
-import MEFProof.Paper_YM_Foundation.YM_A1_multiplier_characterisation
-import MEFProof.Paper_YM_Foundation.YM_A1_orbit_signature
-import MEFProof.Paper_YM_Foundation.YM_A8_transit_parity
-import MEFProof.Paper_YM_Foundation.YM_C1_scope
-import MEFProof.Paper_YM_Foundation.YM_L1_corner_distinctness
-import MEFProof.Paper_YM_Foundation.YM_L2_positivity
-import MEFProof.Paper_YM_Foundation.YM_P1_identification
-import MEFProof.Paper_YM_Foundation.YM_P2_gauge_transfer
-
 -- Paper GBH1 Schwarzschild
 import MEFProof.Paper_GBH1_Schwarzschild.H5_transmission_bound
 import MEFProof.Paper_GBH1_Schwarzschild.WP1_N1_budget_limit
