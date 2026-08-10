@@ -12,10 +12,10 @@ repository and running `lake build`; the footprints appear in the build log.
 
 Lean's kernel admits three axioms beyond its type theory:
 
-* `propext` — propositional extensionality: propositions that imply each other
+- `propext` — propositional extensionality: propositions that imply each other
   are equal.
-* `Classical.choice` — the axiom of choice.
-* `Quot.sound` — soundness of quotient types.
+- `Classical.choice` — the axiom of choice.
+- `Quot.sound` — soundness of quotient types.
 
 These are the standard foundation of ordinary mathematics as formalised in Lean
 and its library, and their appearance carries no adverse implication. A result
@@ -30,16 +30,16 @@ mark an assumption introduced by the author rather than by the foundations.
 
 ## Summary — Paper 3
 
-| | |
-|---|---|
-| Certificates audited | 16 |
-| Results audited | 50 |
-| Depending on `propext, Classical.choice, Quot.sound` | 35 |
-| Depending on `propext, Quot.sound` | 6 |
-| Depending on `propext` alone | 6 |
-| Depending on no axioms | 3 |
-| Containing `sorryAx` | **0** |
-| Containing author-introduced axioms | **0** |
+|                                                      |       |
+| ---------------------------------------------------- | ----- |
+| Certificates audited                                 | 16    |
+| Results audited                                      | 50    |
+| Depending on `propext, Classical.choice, Quot.sound` | 35    |
+| Depending on `propext, Quot.sound`                   | 6     |
+| Depending on `propext` alone                         | 6     |
+| Depending on no axioms                               | 3     |
+| Containing `sorryAx`                                 | **0** |
+| Containing author-introduced axioms                  | **0** |
 
 Toolchain: Lean 4.29.1, Mathlib pinned at `v4.29.1` (see `lean-toolchain` and
 `lake-manifest.json`).
@@ -52,142 +52,136 @@ are therefore covered without being listed separately.
 
 ---
 
-## Paper 3 — *The Zwegers shadow as U(1)-projected intrinsic torsion*
+## Paper 3 — _The Zwegers shadow as U(1)-projected intrinsic torsion_
 
 ### `Sec3_Z2_Involution.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `sigma_involution` | `propext, Classical.choice, Quot.sound` |
-| `cornerProduct_eq_neg_one_pow` | `propext` |
-| `fixed_point_vanishing` | `propext, Classical.choice, Quot.sound` |
-| `corner_pairing_vanishes` | `propext, Classical.choice, Quot.sound` |
+| Declaration                    | Axiom footprint                         |
+| ------------------------------ | --------------------------------------- |
+| `sigma_involution`             | `propext, Classical.choice, Quot.sound` |
+| `cornerProduct_eq_neg_one_pow` | `propext`                               |
+| `fixed_point_vanishing`        | `propext, Classical.choice, Quot.sound` |
+| `corner_pairing_vanishes`      | `propext, Classical.choice, Quot.sound` |
 
 ### `N1_shadow_nonvanishing.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration              | Axiom footprint                         |
+| ------------------------ | --------------------------------------- |
 | `n1_shadow_nonvanishing` | `propext, Classical.choice, Quot.sound` |
-| `n1_unique_contributor` | `propext, Classical.choice, Quot.sound` |
-| `n1_witness_nonzero` | `propext, Quot.sound` |
+| `n1_unique_contributor`  | `propext, Classical.choice, Quot.sound` |
+| `n1_witness_nonzero`     | `propext, Quot.sound`                   |
 
 ### `C2_level_lift.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration                    | Axiom footprint                         |
+| ------------------------------ | --------------------------------------- |
 | `C2.odd_char_mod_three_forced` | `propext, Classical.choice, Quot.sound` |
-| `C2.naive_level` | `propext` |
-| `C2.lifted_level` | `propext` |
+| `C2.naive_level`               | `propext`                               |
+| `C2.lifted_level`              | `propext`                               |
 
 ### `C3_tau_involution.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `C3.tau_anti_mul` | `propext, Classical.choice, Quot.sound` |
-| `C3.tower_coherence` | `propext, Classical.choice, Quot.sound` |
-| `C3.L_fixed` | `propext, Classical.choice, Quot.sound` |
+| Declaration               | Axiom footprint                         |
+| ------------------------- | --------------------------------------- |
+| `C3.tau_anti_mul`         | `propext, Classical.choice, Quot.sound` |
+| `C3.tower_coherence`      | `propext, Classical.choice, Quot.sound` |
+| `C3.L_fixed`              | `propext, Classical.choice, Quot.sound` |
 | `C3.fixed_locus_critical` | `propext, Classical.choice, Quot.sound` |
 
 ### `R8_sector_chirality.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `R8.sector_chirality` | `propext, Classical.choice, Quot.sound` |
-| `R8.sigma_sq_signature_invariant` | *none* |
+| Declaration                            | Axiom footprint                         |
+| -------------------------------------- | --------------------------------------- |
+| `R8.sector_chirality`                  | `propext, Classical.choice, Quot.sound` |
+| `R8.sigma_sq_signature_invariant`      | _none_                                  |
 | `R8.sigmaTilde_eq_neg_i_gamma5_sector` | `propext, Classical.choice, Quot.sound` |
 
 ### `R9_theta2_spectrum.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `R9.odd_sq_mod_four` | `propext, Quot.sound` |
-| `R9.numerator_not_div_four` | `propext, Quot.sound` |
-| `R9.exponent_not_integer` | `propext, Classical.choice, Quot.sound` |
-| `R9.q1_absent` | `propext, Classical.choice, Quot.sound` |
-| `R9.ground_mode_is_quarter` | `propext, Classical.choice, Quot.sound` |
+| Declaration                  | Axiom footprint                         |
+| ---------------------------- | --------------------------------------- |
+| `R9.odd_sq_mod_four`         | `propext, Quot.sound`                   |
+| `R9.numerator_not_div_four`  | `propext, Quot.sound`                   |
+| `R9.exponent_not_integer`    | `propext, Classical.choice, Quot.sound` |
+| `R9.q1_absent`               | `propext, Classical.choice, Quot.sound` |
+| `R9.ground_mode_is_quarter`  | `propext, Classical.choice, Quot.sound` |
 | `R9.first_excited_above_one` | `propext, Classical.choice, Quot.sound` |
 
 ### `C1_c1L_anchoring.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `C1.c1L_eq` | `propext, Classical.choice, Quot.sound` |
-| `C1.anchored_unique` | *none* |
+| Declaration             | Axiom footprint                         |
+| ----------------------- | --------------------------------------- |
+| `C1.c1L_eq`             | `propext, Classical.choice, Quot.sound` |
+| `C1.anchored_unique`    | _none_                                  |
 | `C1.holonomy_quantised` | `propext, Classical.choice, Quot.sound` |
-| `C1.composite_phase` | `propext, Classical.choice, Quot.sound` |
+| `C1.composite_phase`    | `propext, Classical.choice, Quot.sound` |
 
 ### `C4_euler_twelve.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `C4.gauss_bonnet` | `propext, Classical.choice, Quot.sound` |
-| `C4.identification` | `propext` |
+| Declaration         | Axiom footprint                         |
+| ------------------- | --------------------------------------- |
+| `C4.gauss_bonnet`   | `propext, Classical.choice, Quot.sound` |
+| `C4.identification` | `propext`                               |
 
 ### `N2_E2_completion_identity.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `n2_key_identity` | `propext, Classical.choice, Quot.sound` |
+| Declaration              | Axiom footprint                         |
+| ------------------------ | --------------------------------------- |
+| `n2_key_identity`        | `propext, Classical.choice, Quot.sound` |
 | `n2_completion_identity` | `propext, Classical.choice, Quot.sound` |
 
 ### `N3_dim12_arithmetic.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration           | Axiom footprint       |
+| --------------------- | --------------------- |
 | `n3_dim12_arithmetic` | `propext, Quot.sound` |
-| `n3_twelve_mod_eight` | *none* |
+| `n3_twelve_mod_eight` | _none_                |
 
 ### `Prop5_Dirac_Spectrum.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration                  | Axiom footprint                         |
+| ---------------------------- | --------------------------------------- |
 | `prop5_min_eigenvalue_is_pi` | `propext, Classical.choice, Quot.sound` |
-| `prop5_min_is_pi_sq` | `propext, Classical.choice, Quot.sound` |
-| `n_mode_bound` | `propext, Classical.choice, Quot.sound` |
+| `prop5_min_is_pi_sq`         | `propext, Classical.choice, Quot.sound` |
+| `n_mode_bound`               | `propext, Classical.choice, Quot.sound` |
 
 ### `Ca_constant_critical.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `Paper3.CaConstantCritical.ca_sigma_free` | `propext, Quot.sound` |
-| `Paper3.CaConstantCritical.ca_partner_degenerate` | `propext, Quot.sound` |
+| Declaration                                            | Axiom footprint                         |
+| ------------------------------------------------------ | --------------------------------------- |
+| `Paper3.CaConstantCritical.ca_sigma_free`              | `propext, Quot.sound`                   |
+| `Paper3.CaConstantCritical.ca_partner_degenerate`      | `propext, Quot.sound`                   |
 | `Paper3.CaConstantCritical.ca_projected_density_const` | `propext, Classical.choice, Quot.sound` |
 
 ### `A3_chain_core.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
-| `Paper3.A3ChainCore.a3_kernel_decouple` | `propext, Classical.choice, Quot.sound` |
-| `Paper3.A3ChainCore.a3_normalisation_indep` | `propext, Classical.choice, Quot.sound` |
-| `Paper3.A3ChainCore.a3_base_signed_unsigned` | `propext` |
-| `Paper3.A3ChainCore.a3_assembly` | `propext` |
+| Declaration                                  | Axiom footprint                         |
+| -------------------------------------------- | --------------------------------------- |
+| `Paper3.A3ChainCore.a3_kernel_decouple`      | `propext, Classical.choice, Quot.sound` |
+| `Paper3.A3ChainCore.a3_normalisation_indep`  | `propext, Classical.choice, Quot.sound` |
+| `Paper3.A3ChainCore.a3_base_signed_unsigned` | `propext`                               |
+| `Paper3.A3ChainCore.a3_assembly`             | `propext`                               |
 
 ### `N2b_warp_ground_sector.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration              | Axiom footprint                         |
+| ------------------------ | --------------------------------------- |
 | `n2b_ground_sector_core` | `propext, Classical.choice, Quot.sound` |
-| `n2b_measure_cancel` | `propext, Classical.choice, Quot.sound` |
+| `n2b_measure_cancel`     | `propext, Classical.choice, Quot.sound` |
 
 ### `C5_hamilton_closure.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration        | Axiom footprint                         |
+| ------------------ | --------------------------------------- |
 | `C5.im_not_closed` | `propext, Classical.choice, Quot.sound` |
-| `C5.pure_unit_sq` | `propext, Classical.choice, Quot.sound` |
+| `C5.pure_unit_sq`  | `propext, Classical.choice, Quot.sound` |
 
 ### `C6_corner_alternation.lean`
 
-| Declaration | Axiom footprint |
-|---|---|
+| Declaration               | Axiom footprint                         |
+| ------------------------- | --------------------------------------- |
 | `C6.diagonal_distance_sq` | `propext, Classical.choice, Quot.sound` |
-| `C6.alternation_even` | `propext, Classical.choice, Quot.sound` |
-| `C6.alternation_odd` | `propext, Classical.choice, Quot.sound` |
+| `C6.alternation_even`     | `propext, Classical.choice, Quot.sound` |
+| `C6.alternation_odd`      | `propext, Classical.choice, Quot.sound` |
 
 ---
-
-## Other papers
-
-Certificates for the remaining papers in this repository are present and build
-clean, but their axiom footprints are not yet tabulated here. Sections for
-Paper GBH1 and YM-Foundation-A will follow.
