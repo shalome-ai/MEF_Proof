@@ -204,7 +204,7 @@ theorem Kgen_nonneg (p : Fin 11 → Rat) : 0 ≤ Kgen p := by
     if every pᵢ²(1−pᵢ)² vanished, every pᵢ would be 0 or 1, whence
     Σ pᵢ² = Σ pᵢ = 1 and the amplitude would vanish. -/
 theorem Kdiag_pos_of_amplitude (p : Fin 11 → Rat) (A : Rat)
-    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i)^2) = 1 - A)
+    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i) ^ 2) = 1 - A)
     (hA : 0 < A) : 0 < Kdiag p := by
   rcases lt_or_eq_of_le (Kdiag_nonneg p) with h | h
   · exact h
