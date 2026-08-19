@@ -67,7 +67,7 @@ import MEFProof.Paper_A_Hyperfinite_Quaternionic.A_C5_fixed_subalgebra
 import MEFProof.Paper_C_Equivariant_Dirac.C_C1_pullback_compat
 import MEFProof.Paper_C_Equivariant_Dirac.C_C2_corner_count
 import MEFProof.Paper_C_Equivariant_Dirac.C_C3_commuting_square
-import MEFProof.Paper_C_Equivariant_Dirac.C_C4_index_airthmetic
+import MEFProof.Paper_C_Equivariant_Dirac.C_C4_index_arithmetic
 
 -- Paper U Uniqueness Discriminant Topology
 import MEFProof.Paper_U_Uniqueness_Discriminant_Topology.LP0_certificate
