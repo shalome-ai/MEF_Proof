@@ -23,7 +23,7 @@
   (6) stagewise_canonical_odd : that family is nonetheless odd at
       every stage; compatibility, not parity, is what fails.
 
-  Lean 4.15.0, core only. No axioms, no sorry.
+  Lean 4.29.1 core only. No axioms, no sorry.
 -/
 
 namespace PaperC.C1

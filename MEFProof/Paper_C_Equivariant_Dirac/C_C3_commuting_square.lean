@@ -38,7 +38,7 @@
                           with the transpose anti-involution, so the
                           anchoring is intrinsic, not a convention.
 
-  Lean 4.15.0, core only. Zero sorry; proofs by kernel decision procedure.
+  Lean 4.29.1, core only. Zero sorry; proofs by kernel decision procedure.
 -/
 
 namespace PaperC.C3

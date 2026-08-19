@@ -15,7 +15,7 @@
       algebraic towers agree at every stage.
   (3) corners_pos           : the count is positive at every stage.
 
-  Lean 4.15.0, core only. No axioms, no sorry.
+  Lean 4.29.1, core only. No axioms, no sorry.
 -/
 
 namespace PaperC.C2
