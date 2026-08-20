@@ -17,7 +17,7 @@
     (5) without the antipodal generator, 1 and −1 are NOT connected:
         the group ⟨Ad_i, Ad_j, conj⟩ gives five orbits, not four
         (the essential-central-factor remark, Paper A §4).
-  Lean 4.15.0, core only.  Zero `sorry`, zero declared axioms.
+  Lean 4.29.1, core only.  Zero `sorry`, zero declared axioms.
 -/
 
 namespace AC4

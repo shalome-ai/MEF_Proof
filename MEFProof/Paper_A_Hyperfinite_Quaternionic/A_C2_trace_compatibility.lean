@@ -5,7 +5,7 @@
   τ_{n+1} ∘ ι_n = τ_n follows (normalisation: τ_n = 4^{-n} Tr).
   Kronecker index pairs (i, a), a < 4, are encoded as p = 4*i + a,
   so p / 4 = i and p % 4 = a.
-  Lean 4.15.0, core only.  Zero `sorry`, zero declared axioms.
+  Lean 4.29.1, core only.  Zero `sorry`, zero declared axioms.
 -/
 
 namespace AC2

@@ -8,7 +8,7 @@
   (associativity, unit laws) are proved in-document from the finite
   sum calculus.  Equalities of matrices are tracked entrywise on
   indices < n via `EqOn`.
-  Lean 4.15.0, core only.  Zero `sorry`, zero declared axioms.
+  Lean 4.29.1, core only.  Zero `sorry`, zero declared axioms.
 -/
 
 namespace AC3

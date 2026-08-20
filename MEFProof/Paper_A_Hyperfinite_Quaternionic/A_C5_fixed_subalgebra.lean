@@ -11,7 +11,7 @@
            notions differ (the Jordan caveat of §3).
     (3)  On real matrices, Θ and * coincide.
 
-  Lean 4.15.0, core only.  Zero `sorry`, zero declared axioms.
+  Lean 4.29.1, core only.  Zero `sorry`, zero declared axioms.
 -/
 
 namespace AC5

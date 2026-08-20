@@ -5,7 +5,7 @@
   Matrices are modelled with entries in ℤ; the proofs use only
   commutativity of entry multiplication, so the identities are generic
   over commutative rings (in the paper: ℂ).
-  Lean 4.15.0, core only.  Zero `sorry`, zero declared axioms.
+  Lean 4.29.1 core only.  Zero `sorry`, zero declared axioms.
 -/
 
 namespace AC1
