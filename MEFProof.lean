@@ -83,7 +83,7 @@ import MEFProof.Paper_U_Uniqueness_Discriminant_Topology.RB_retraction_certifica
 
 -- Paper GBH1 Schwarzschild
 import MEFProof.Paper_GBH1_Schwarzschild.GBH_cert_background
-import MEFProof.Paper_GBH1_Schwarzschild.WP1_N1_budget_limit
+import MEFProof.Paper_GBH1_Schwarzschild.GBH_cert_budget_limit
 import MEFProof.Paper_GBH1_Schwarzschild.GBH_cert_exclusion
 
 -- Paper Icosian CFM
