@@ -9,6 +9,7 @@ import YML.OddDivisors
 import YML.TransitParity
 import YML.TransitParityExt
 import YML.Witness
+import YML.WitnessGeodesic
 
 -- Axiom audit driver
 import YML.Audit

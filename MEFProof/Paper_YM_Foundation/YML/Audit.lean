@@ -8,6 +8,7 @@ import YML.OddDivisors
 import YML.TransitParity
 import YML.TransitParityExt
 import YML.Witness
+import YML.WitnessGeodesic
 
 #print axioms Corners.fixed_iff
 #print axioms Corners.corners_pairwise_distinct
@@ -34,3 +35,7 @@ import YML.Witness
 #print axioms Witness.gap_square
 #print axioms Witness.gap_doubled
 #print axioms Witness.value_depends_on_setting
+#print axioms WitnessGeodesic.geodesic
+#print axioms WitnessGeodesic.geodesic_continuousOn
+#print axioms WitnessGeodesic.geodesic_square
+#print axioms WitnessGeodesic.geodesic_doubled
