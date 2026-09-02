@@ -1,19 +1,6 @@
 /-
   WP1_N1_budget_limit.lean — G-BH-1R / Node N1 CERT target
   ---------------------------------------------------------
-  The algebraic skeleton of Proposition (Budget recovery) in
-  WP1_N1_reduced_system.tex: the near-puncture limit of the reduced
-  Master Equation reduces to the generalised Kasner budget eq:budget,
-  and the winding-lift data saturates it.
-
-  Conventions follow the companion document's Appendix (namespace
-  MEF.BlackHoleCluster): everything over Q, decidable by norm_num /
-  nlinarith / ring; transcendental content excluded by design.  The
-  coupling-and-slope combination zeta * qtilde^2 enters as a single
-  non-negative rational  s  carried as a hypothesis, exactly as the
-  document's "normalised dilaton slope" absorbs the fixed numerical
-  factor between the raw (tau,tau)-constraint and the canonical budget
-  form.  Nothing transcendental is asserted.
 
   Status: CERT-pending — delivered for independent PI local compile
   (Lean 4 + Mathlib), per the established project pattern.

@@ -3,6 +3,16 @@
   (Wave 2, amendment A3; Lemma lem:kasner-curv, Theorem thm:exclusion,
   Corollary cor:saturation)
   -----------------------------------------------------------------
+  RE-ISSUE (September 2026, repair node F2): the pair-sum coefficient
+  of the Kretschmann scalar was carried as 8 in the previous issue;
+  the correct multiplicity is 4 (each independent frame component
+  enters R_abcd R^abcd exactly four times, for both index types).
+  Consequently C(w), C(2/3) and the Kgen normalisation change; every
+  positivity, zero-locus and dichotomy statement is unchanged.  The
+  certified values now agree with the exact Schwarzschild interior
+  (K τ⁴ = 64/27) and with lem:gauss-budget.  Full symbolic
+  re-contraction on file (G7_kretschmann_recontraction.py).
+  -----------------------------------------------------------------
   SUPERSEDES GBH_cert_transmission_v2.lean (Wave 1): the frame-norm
   transmission route is withdrawn with amendment A3 — the frame-sup
   axiom is violated by the background under boosted frames — and the
@@ -10,18 +20,18 @@
   budget parametrisation, and the surviving divergence-witness
   machinery.  Namespace carries no framework identifier.
 
-  Map to the .tex (GBH_v3_Wave2_sections.tex):
+  Map to the .tex (Paper_GBH1_Schwarzschild_interior_v8.tex):
     C_def / C_expand      — the Kretschmann coefficient of the family
                             (p_r, w, w, 0⁸): from the component sum
-                            4Σpᵢ²(1−pᵢ)² + 8Σ_{i<j}pᵢ²pⱼ² with
+                            4Σpᵢ²(1−pᵢ)² + 4Σ_{i<j}pᵢ²pⱼ² with
                             p_r = 1 − 2w, the closed form
-                            C(w) = 32w²(1−2w)² + 8w²(1−w)² + 8w⁴
+                            C(w) = 24w²(1−2w)² + 8w²(1−w)² + 4w⁴
                             (eq:kasner-K).
     C_pos                 — C(w) > 0 for every w ≠ 0: the positivity
                             dichotomy (sum of squares; the middle term
                             controls 0 < w < 1, the last w ≥ 1).
     C_zero_iff            — C(w) = 0 ↔ w = 0: flat point only.
-    C_at_vacuum           — C(2/3) = 32/9: the dynamical realisation
+    C_at_vacuum           — C(2/3) = 64/27: the dynamical realisation
                             of the Schwarzschild-interior exponents is
                             curvature-singular (the winding immersion
                             is forced).
@@ -36,7 +46,7 @@
                             the two vacuum data of cor:saturation.
     Kdiag / Kpair / Kgen  — general eleven-vector coefficient (round-2
                             extension, node R1): Kgen = 4·Kdiag +
-                            4·Kpair, with 4·Kpair = 8·Σ_{i<j} pᵢ²pⱼ².
+                            2·Kpair, with 2·Kpair = 4·Σ_{i<j} pᵢ²pⱼ².
     Kgen_nonneg / Kdiag_nonneg / Kpair_nonneg
                           — non-negativity (sum-of-squares structure).
     Kgen_pos_of_amplitude — Σp = 1, Σp² = 1 − A, A > 0 ⇒ Kgen > 0:
@@ -67,14 +77,14 @@ namespace SchwarzschildLift.Exclusion
 /-! ### The Kretschmann coefficient of the family -/
 
 /-- C(w): the closed form of eq:kasner-K. -/
-def C (w : Rat) : Rat := 32*w^2*(1-2*w)^2 + 8*w^2*(1-w)^2 + 8*w^4
+def C (w : Rat) : Rat := 24*w^2*(1-2*w)^2 + 8*w^2*(1-w)^2 + 4*w^4
 
 /-- The closed form agrees with the component sum
-    4[p_r²(1−p_r)² + 2w²(1−w)²] + 8[2p_r²w² + w⁴] at p_r = 1 − 2w:
+    4[p_r²(1−p_r)² + 2w²(1−w)²] + 4[2p_r²w² + w⁴] at p_r = 1 − 2w:
     the expansion step of lem:kasner-curv. -/
 theorem C_expand (w : Rat) :
     C w = 4*((1-2*w)^2*(1-(1-2*w))^2 + 2*w^2*(1-w)^2)
-        + 8*(2*(1-2*w)^2*w^2 + w^4) := by
+        + 4*(2*(1-2*w)^2*w^2 + w^4) := by
   unfold C; ring
 
 /-- Positivity dichotomy: C(w) > 0 for every w ≠ 0. -/
@@ -95,8 +105,10 @@ theorem C_zero_iff (w : Rat) : C w = 0 ↔ w = 0 := by
   · intro h; subst h; unfold C; norm_num
 
 /-- At the vacuum (Schwarzschild-interior) point w = 2/3:
-    C = 32/9 > 0 — the dynamical realisation is singular. -/
-theorem C_at_vacuum : C (2/3) = 32/9 := by
+    C = 64/27 > 0 — the dynamical realisation is singular; this is
+    the value K τ⁴ of the exact Schwarzschild interior at its singular
+    locus (K = 48G²M²/r⁶ on r³ = (9GM/2)τ²). -/
+theorem C_at_vacuum : C (2/3) = 64/27 := by
   unfold C; norm_num
 
 /-! ### The budget parametrisation (eq:Qw) -/
@@ -148,8 +160,8 @@ theorem vacuum_two_solutions (w : Rat) :
   · rintro (h | h) <;> subst h <;> norm_num
 
 /-! ### The general eleven-vector coefficient (round-2 extension, R1)
-    Kgen p = 4·Σᵢ pᵢ²(1−pᵢ)² + 8·Σ_{i<j} pᵢ²pⱼ², carried here in the
-    equivalent form 4·Kdiag + 4·Kpair with
+    Kgen p = 4·Σᵢ pᵢ²(1−pᵢ)² + 4·Σ_{i<j} pᵢ²pⱼ², carried here in the
+    equivalent form 4·Kdiag + 2·Kpair with
     Kpair = (Σᵢ pᵢ²)² − Σᵢ pᵢ⁴ = 2·Σ_{i<j} pᵢ²pⱼ². -/
 
 open Finset
@@ -161,7 +173,7 @@ def Kdiag (p : Fin 11 → Rat) : Rat := ∑ i, (p i)^2 * (1 - p i)^2
 def Kpair (p : Fin 11 → Rat) : Rat := (∑ i, (p i)^2)^2 - ∑ i, (p i)^4
 
 /-- The general Kretschmann coefficient. -/
-def Kgen (p : Fin 11 → Rat) : Rat := 4 * Kdiag p + 4 * Kpair p
+def Kgen (p : Fin 11 → Rat) : Rat := 4 * Kdiag p + 2 * Kpair p
 
 /-- Auxiliary, over any index subset: for non-negative terms,
     Σ_{k∈s} xₖ² ≤ (Σ_{k∈s} xₖ)². -/
@@ -204,7 +216,7 @@ theorem Kgen_nonneg (p : Fin 11 → Rat) : 0 ≤ Kgen p := by
     if every pᵢ²(1−pᵢ)² vanished, every pᵢ would be 0 or 1, whence
     Σ pᵢ² = Σ pᵢ = 1 and the amplitude would vanish. -/
 theorem Kdiag_pos_of_amplitude (p : Fin 11 → Rat) (A : Rat)
-    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i) ^ 2) = 1 - A)
+    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i)^2) = 1 - A)
     (hA : 0 < A) : 0 < Kdiag p := by
   rcases lt_or_eq_of_le (Kdiag_nonneg p) with h | h
   · exact h
@@ -230,7 +242,7 @@ theorem Kdiag_pos_of_amplitude (p : Fin 11 → Rat) (A : Rat)
 
 /-- Kgen is strictly positive under a non-zero amplitude. -/
 theorem Kgen_pos_of_amplitude (p : Fin 11 → Rat) (A : Rat)
-    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i) ^ 2) = 1 - A)
+    (hsum : (∑ i, p i) = 1) (hsq : (∑ i, (p i)^2) = 1 - A)
     (hA : 0 < A) : 0 < Kgen p := by
   unfold Kgen
   linarith [Kdiag_pos_of_amplitude p A hsum hsq hA, Kpair_nonneg p]
@@ -300,7 +312,7 @@ theorem Kgen_pos_of_pair (p : Fin 11 → Rat) (i j : Fin 11) (hij : i ≠ j)
     the .tex). -/
 theorem Kgen_frozen_eq_C (w : Rat) :
     4*((1-2*w)^2*(1-(1-2*w))^2 + 2*(w^2*(1-w)^2))
-      + 4*((((1-2*w)^2 + 2*w^2)^2) - ((1-2*w)^4 + 2*w^4))
+      + 2*((((1-2*w)^2 + 2*w^2)^2) - ((1-2*w)^4 + 2*w^4))
     = C w := by
   unfold C; ring
 
