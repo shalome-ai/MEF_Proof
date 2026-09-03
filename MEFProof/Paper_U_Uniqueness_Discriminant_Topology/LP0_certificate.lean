@@ -121,7 +121,7 @@ theorem sigmaEven_affine (t : ℚ) (f g : α → ℚ)
     (hf : SigmaEven s f) (hg : SigmaEven s g) :
     SigmaEven s (fun x => t * f x + (1 - t) * g x) := by
   intro x
-  show t * f (s x) + (1 - t) * g (s x) = t * f x + (1 - t) * g x
+  change t * f (s x) + (1 - t) * g (s x) = t * f x + (1 - t) * g x
   rw [hf x, hg x]
 
 /-- Constant shifts preserve σ-evenness (the area-normalisation map
@@ -129,7 +129,7 @@ theorem sigmaEven_affine (t : ℚ) (f g : α → ℚ)
 theorem sigmaEven_shift (κ : ℚ) (f : α → ℚ) (hf : SigmaEven s f) :
     SigmaEven s (fun x => f x + κ) := by
   intro x
-  show f (s x) + κ = f x + κ
+  change f (s x) + κ = f x + κ
   rw [hf x]
 
 end LP0

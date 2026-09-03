@@ -24,6 +24,9 @@
 
 namespace AC9
 
+set_option linter.unusedSimpArgs false
+
+
 /-- (1)  Coordinate form. Hypotheses: the entrywise content of
     λ(i)M = Mλ(i) and λ(j)M = Mλ(j). Conclusion: every entry of M is the
     stated signed copy of a first-column entry, so M = ρ(q) with

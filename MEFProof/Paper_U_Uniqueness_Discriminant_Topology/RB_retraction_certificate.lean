@@ -36,10 +36,10 @@ namespace RB
 
 /-- One explicit Euler step of the graph heat flow on the 4-cycle,
     step size 1/4: w_i = u_i/2 + (u_{i+1} + u_{i-1})/4. -/
-def step0 (u0 u1 u2 u3 : ℚ) : ℚ := u0 / 2 + (u1 + u3) / 4
-def step1 (u0 u1 u2 u3 : ℚ) : ℚ := u1 / 2 + (u2 + u0) / 4
-def step2 (u0 u1 u2 u3 : ℚ) : ℚ := u2 / 2 + (u3 + u1) / 4
-def step3 (u0 u1 u2 u3 : ℚ) : ℚ := u3 / 2 + (u0 + u2) / 4
+def step0 (u0 u1 _u2 u3 : ℚ) : ℚ := u0 / 2 + (u1 + u3) / 4
+def step1 (u0 u1 u2 _u3 : ℚ) : ℚ := u1 / 2 + (u2 + u0) / 4
+def step2 (_u0 u1 u2 u3 : ℚ) : ℚ := u2 / 2 + (u3 + u1) / 4
+def step3 (u0 _u1 u2 u3 : ℚ) : ℚ := u3 / 2 + (u0 + u2) / 4
 
 /-- The base Dirichlet energy on the 4-cycle. -/
 def dirichlet (u0 u1 u2 u3 : ℚ) : ℚ :=
@@ -108,7 +108,7 @@ theorem mode_alternating_killed :
    §2  Fibrewise σ-evenness survives base averaging and shifts
    ------------------------------------------------------------------ -/
 
-variable {β F : Type*} [Fintype β] (s : F → F)
+variable {β F : Type*} (s : F → F)
 
 /-- Fibrewise σ-evenness of a base-modulated profile. -/
 def FibrewiseEven (Φ : β → F → ℚ) : Prop :=
@@ -117,11 +117,11 @@ def FibrewiseEven (Φ : β → F → ℚ) : Prop :=
 /-- Any base-averaging kernel (heat step included) preserves
     fibrewise σ-evenness: the flow acts on the base argument, the
     involution on the fibre argument, and the two commute. -/
-theorem fibrewiseEven_baseAverage (w : β → β → ℚ) (Φ : β → F → ℚ)
+theorem fibrewiseEven_baseAverage [Fintype β] (w : β → β → ℚ) (Φ : β → F → ℚ)
     (hΦ : FibrewiseEven s Φ) :
     FibrewiseEven s (fun b x => ∑ b', w b b' * Φ b' x) := by
   intro b x
-  show (∑ b', w b b' * Φ b' (s x)) = ∑ b', w b b' * Φ b' x
+  change (∑ b', w b b' * Φ b' (s x)) = ∑ b', w b b' * Φ b' x
   exact Finset.sum_congr rfl fun b' _ => by rw [hΦ b' x]
 
 /-- Fibrewise-constant shifts (the area renormalisation of rb:jensen)
@@ -130,7 +130,7 @@ theorem fibrewiseEven_shift (c : β → ℚ) (Φ : β → F → ℚ)
     (hΦ : FibrewiseEven s Φ) :
     FibrewiseEven s (fun b x => Φ b x + c b) := by
   intro b x
-  show Φ b (s x) + c b = Φ b x + c b
+  change Φ b (s x) + c b = Φ b x + c b
   rw [hΦ b x]
 
 /- ------------------------------------------------------------------

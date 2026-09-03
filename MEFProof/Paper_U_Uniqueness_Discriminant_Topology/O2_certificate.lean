@@ -33,9 +33,8 @@ open Finset
 theorem termwise_squeeze {n : ℕ} (b c : Fin n → ℕ)
     (hle : ∀ i, b i ≤ c i) (hsum : ∑ i, b i = ∑ i, c i) :
     ∀ i, b i = c i := by
-  by_contra h
-  push_neg at h
-  obtain ⟨j, hj⟩ := h
+  intro j
+  by_contra hj
   have hlt : b j < c j := lt_of_le_of_ne (hle j) hj
   have hstrict : ∑ i, b i < ∑ i, c i :=
     Finset.sum_lt_sum (fun i _ => hle i) ⟨j, Finset.mem_univ j, hlt⟩

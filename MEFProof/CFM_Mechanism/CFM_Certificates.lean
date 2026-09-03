@@ -9,6 +9,10 @@
 -/
 import Mathlib
 set_option linter.unusedVariables false
+set_option linter.style.whitespace false
+set_option linter.unusedDecidableInType false
+set_option linter.style.show false
+
 open Real
 
 namespace CFM
