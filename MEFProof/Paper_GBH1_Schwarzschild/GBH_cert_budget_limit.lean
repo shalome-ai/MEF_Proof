@@ -24,6 +24,9 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
 namespace MEF.GBH1R
 
 open Finset

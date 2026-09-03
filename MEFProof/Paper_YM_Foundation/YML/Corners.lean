@@ -10,6 +10,8 @@ is the product of two copies -- the object of the prose statement
 itself, not a substitute model.
 -/
 import Mathlib.Topology.Instances.AddCircle.Real
+set_option linter.style.whitespace false
+set_option linter.style.show false
 
 noncomputable section
 namespace Corners

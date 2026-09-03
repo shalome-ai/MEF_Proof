@@ -26,6 +26,9 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
 namespace SchwarzschildLift.Background
 
 /-- Scalar curvature of the product: R = −2 + 6y, as the trace of the

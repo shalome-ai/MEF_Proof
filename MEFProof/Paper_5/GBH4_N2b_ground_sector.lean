@@ -42,6 +42,10 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
+
 namespace GBH4N2b
 
 /-! ### Lemma 1 core — the warp-cancellation exponent identity

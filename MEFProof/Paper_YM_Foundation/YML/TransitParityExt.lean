@@ -8,6 +8,9 @@ import Mathlib.Algebra.Ring.Parity
 import Mathlib.Algebra.Ring.Int.Parity
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
 noncomputable section
 namespace TransitParityExt
 

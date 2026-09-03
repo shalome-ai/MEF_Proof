@@ -12,7 +12,8 @@ manipulation carried in the prose.
 Unconditional; zero `sorry`.
 -/
 import Mathlib.NumberTheory.Divisors
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 namespace OddDivisors
 
 open Finset

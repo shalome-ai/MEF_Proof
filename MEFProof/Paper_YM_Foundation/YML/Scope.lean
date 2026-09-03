@@ -16,7 +16,8 @@ half quantifies over it.
 Unconditional (statement-level); zero `sorry`.
 -/
 import YML.Gap
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 noncomputable section
 namespace Scope
 open Gap

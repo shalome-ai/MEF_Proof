@@ -45,7 +45,8 @@ import Mathlib.Data.Finset.Card
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.Ring
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 noncomputable section
 namespace TransitParity
 

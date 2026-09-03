@@ -13,7 +13,8 @@ fibre carrying the induced distance.
 No reference to any gauge group appears in this file.
 -/
 import YML.Corners
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 noncomputable section
 namespace Gap
 open Corners

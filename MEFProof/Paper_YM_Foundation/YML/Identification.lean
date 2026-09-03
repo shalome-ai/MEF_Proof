@@ -24,7 +24,8 @@ in the wave log; no compile claim is made here).
 -/
 import Mathlib.NumberTheory.Divisors
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 noncomputable section
 namespace Identification
 

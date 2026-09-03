@@ -37,6 +37,9 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
 namespace Paper5.A3ChainCore
 /-! ### Node B core -/
 

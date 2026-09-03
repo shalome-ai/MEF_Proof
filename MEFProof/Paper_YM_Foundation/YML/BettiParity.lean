@@ -12,7 +12,8 @@ Unconditional; zero `sorry`.
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Tactic.NormNum
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 namespace BettiParity
 
 open Finset

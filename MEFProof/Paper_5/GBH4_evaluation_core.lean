@@ -30,6 +30,10 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
+
 namespace GBH4Eval
 
 /-- Odd-divisor count, computable (same definition as the N2b cert). -/

@@ -72,6 +72,9 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
 namespace SchwarzschildLift.Exclusion
 
 /-! ### The Kretschmann coefficient of the family -/

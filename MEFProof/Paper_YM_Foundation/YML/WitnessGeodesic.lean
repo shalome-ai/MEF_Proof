@@ -34,6 +34,8 @@ Compiled against Lean 4.29.1 / Mathlib v4.29.1.
 import YML.Witness
 
 set_option linter.unusedSectionVars false
+set_option linter.style.whitespace false
+set_option linter.style.show false
 
 noncomputable section
 namespace WitnessGeodesic

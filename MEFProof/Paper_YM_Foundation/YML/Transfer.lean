@@ -21,7 +21,8 @@ in the wave log; no compile claim is made here).
 import YML.Corners
 import YML.Gap
 import YML.Identification
-
+set_option linter.style.whitespace false
+set_option linter.style.show false
 noncomputable section
 namespace Transfer
 open Corners Gap Identification

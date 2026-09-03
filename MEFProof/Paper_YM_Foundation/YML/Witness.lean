@@ -15,6 +15,8 @@ import Mathlib.Analysis.Normed.Group.AddCircle
 import Mathlib.Topology.Instances.AddCircle.Real
 
 set_option linter.unusedSectionVars false
+set_option linter.style.whitespace false
+set_option linter.style.show false
 
 noncomputable section
 namespace Witness

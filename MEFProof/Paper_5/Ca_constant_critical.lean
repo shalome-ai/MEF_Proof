@@ -56,6 +56,10 @@
 
 import Mathlib
 
+set_option linter.style.whitespace false
+set_option linter.style.show false
+
+
 namespace Paper5.CaConstantCritical
 /-! ### L1 — the σ-action on the shifted momentum lattice is free
 
