@@ -1,5 +1,5 @@
 /-
-  WP1_N1_budget_limit.lean — G-BH-1R / Node N1 CERT target
+  GBH_cert_budget_limit.lean — G-BH-1R / Node N1 CERT target
   ---------------------------------------------------------
 
   Status: CERT-pending — delivered for independent PI local compile
@@ -96,12 +96,6 @@ theorem constraint_iff_budget (P S2 s : Rat) (hP : P = 1) :
   subst hP
   constructor <;> intro h <;> linarith
 
-/-! ### Saturation lemma (the no-go, restated for the reduced system)
-    If the 4D exponents are the winding values (−1/3, 2/3, 2/3) and
-    the full 11-vector satisfies eq:budget with s = ζ q̃² ≥ 0, then
-    every internal exponent vanishes and s = 0: the interior boundary
-    data sit exactly on the budget surface and admit no internal
-    excitation and no dilaton slope. -/
 
 theorem internal_sumsq_nonpos (pint : Fin 8 → Rat) (s : Rat)
     (hs : 0 ≤ s)

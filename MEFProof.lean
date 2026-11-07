@@ -98,6 +98,26 @@ import MEFProof.Paper_Icosian_CFM.ICO_C7_Icosian_Membership
 -- CFM Mechanism
 import MEFProof.CFM_Mechanism.CFM_Certificates
 
+-- Tau_2 Derivation
+import MEFProof.Paper_Tau2.T2_L1_flux_weights
+import MEFProof.Paper_Tau2.T2_L2_H32_D4
+import MEFProof.Paper_Tau2.T2_L3_D5
+import MEFProof.Paper_Tau2.T2_L4_swap
+import MEFProof.Paper_Tau2.T2_L5_phi_dressing
+import MEFProof.Paper_Tau2.T2_L6_hypercharge_S2
+import MEFProof.Paper_Tau2.T2_L7_P8
+import MEFProof.Paper_Tau2.T2_L8_D4prime
+import MEFProof.Paper_Tau2.T2_L9_step3
+import MEFProof.Paper_Tau2.T2_L11_step3c
+import MEFProof.Paper_Tau2.T2_L13_step4b
+
+-- Paper M1
+import MEFProof.Paper_M1.M1_L1_drive
+import MEFProof.Paper_M1.M1_L2_fibre
+import MEFProof.Paper_M1.M1_L3_dimension
+import MEFProof.Paper_M1.M1_L4_base
+import MEFProof.Paper_M1.M1_L5_vacuum
+
 -- Root
 import MEFProof.Basic
 
