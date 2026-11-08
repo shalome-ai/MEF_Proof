@@ -141,3 +141,30 @@ theorem L1_odd_trace_iff_order_three :
 /-- The cat map reduced mod 2 is ((0,1),(1,1)), of order 3. -/
 theorem L1_M0_mod2_order3 :
     F2M.mul (F2M.mul ⟨0,1,1,1⟩ ⟨0,1,1,1⟩) ⟨0,1,1,1⟩ = F2M.I ∧ (⟨0,1,1,1⟩ : F2M) ≠ F2M.I := by decide
+
+/-! ### The drive is the square of the Fibonacci matrix -/
+
+/-- The Fibonacci matrix F = ((1,1),(1,0)): F·(F_n, F_{n−1}) = (F_{n+1}, F_n). -/
+def Fib : M2 := ⟨1,1,1,0⟩
+
+/-- M₀ = F², so the least drive is two Fibonacci steps, and its eigenvalue
+    φ² is the square of the Fibonacci growth rate. -/
+theorem L1_M0_is_Fib_squared : M2.mul Fib Fib = M0 := by decide
+
+/-- Powers of F carry the Fibonacci numbers: F^n = ((F_{n+1}, F_n), (F_n, F_{n−1})),
+    checked for n = 2..6 (F² = M₀, F³, F⁴, F⁵, F⁶). -/
+theorem L1_Fib_powers :
+    M2.mul Fib Fib = ⟨2,1,1,1⟩ ∧
+    M2.mul (M2.mul Fib Fib) Fib = ⟨3,2,2,1⟩ ∧
+    M2.mul (M2.mul (M2.mul Fib Fib) Fib) Fib = ⟨5,3,3,2⟩ ∧
+    M2.mul (M2.mul (M2.mul (M2.mul Fib Fib) Fib) Fib) Fib = ⟨8,5,5,3⟩ ∧
+    M2.mul (M2.mul (M2.mul (M2.mul (M2.mul Fib Fib) Fib) Fib) Fib) Fib = ⟨13,8,8,5⟩ := by decide
+
+/-- Fibonacci recursion in the entries: the (1,1) entry of Fⁿ⁺¹ is the sum of the
+    (1,1) and (1,2) entries of Fⁿ. -/
+theorem L1_Fib_recursion (X : M2) : (M2.mul X Fib).a = X.a + X.b := by
+  simp only [M2.mul, Fib, Int.mul_one, Int.mul_zero, Int.add_zero]
+
+/-- tr F = 1, det F = −1: F itself is not in SL(2,Z); its square is the least
+    element of SL(2,Z) with trace > 2. -/
+theorem L1_Fib_not_SL2 : M2.det Fib = -1 ∧ M2.tr Fib = 1 ∧ M2.det (M2.mul Fib Fib) = 1 ∧ M2.tr (M2.mul Fib Fib) = 3 := by decide

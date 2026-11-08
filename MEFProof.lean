@@ -118,6 +118,15 @@ import MEFProof.Paper_M1.M1_L3_dimension
 import MEFProof.Paper_M1.M1_L4_base
 import MEFProof.Paper_M1.M1_L5_vacuum
 
+-- Paper M2
+import MEFProof.Paper_M2.M2_L1_parity
+import MEFProof.Paper_M2.M2_L2_master
+import MEFProof.Paper_M2.M2_L2_reduction
+import MEFProof.Paper_M2.M2_L3_zeta
+import MEFProof.Paper_M2.M2_L4_handedness
+import MEFProof.Paper_M2.M2_L5_warp
+import MEFProof.Paper_M2.M2_L6_omega
+
 -- Root
 import MEFProof.Basic
 
