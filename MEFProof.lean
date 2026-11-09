@@ -126,6 +126,7 @@ import MEFProof.Paper_M2.M2_L3_zeta
 import MEFProof.Paper_M2.M2_L4_handedness
 import MEFProof.Paper_M2.M2_L5_warp
 import MEFProof.Paper_M2.M2_L6_omega
+import MEFProof.Paper_M2.M2_L7_module
 
 -- Root
 import MEFProof.Basic
