@@ -1,0 +1,236 @@
+% ===================================================================
+% Paper M1 — Four axioms and their minimal geometry
+% Base paper of the Master Equation Framework series.  Draft v1, 7 Nov 2026.
+% Compile: xelatex (three passes).  Certificates: M1_lean/*.lean, Lean 4.15.0 core.
+% ===================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=25mm]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{fontspec}
+\setmonofont{DejaVu Sans Mono}[Scale=0.78]
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,columns=fullflexible,keepspaces=true,frame=single,framesep=4pt,xleftmargin=2pt,extendedchars=true}
+\usepackage[hidelinks]{hyperref}
+\input{mef_macros.tex}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Hquat}{\mathbb{H}}
+\newcommand{\ImH}{\operatorname{Im}\Hquat}
+\newcommand{\Ad}{\operatorname{Ad}}
+\newcommand{\Fix}{\operatorname{Fix}}
+\newcommand{\Sol}{\mathrm{Sol}}
+\newcommand{\rigR}{[\textup{R}]}
+\newcommand{\rigD}{[\textup{D}]}
+\newcommand{\rigM}{[\textup{M}]}
+\newcommand{\rigG}{[\textup{G}]}
+
+\title{The Master Equation from four axioms: the field equation of the minimal twelve-dimensional geometry}
+\author{Dhiren J. Master}
+\date{9 November 2026 (v1.0, canon)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Einstein's field equations relate the curvature of a space to the matter in it and to the energy of empty space, and in a century of use they have described gravity and left the other forces, the existence and structure of matter, and the direction of time to be supplied from outside. The first paper of this series derived, from four sentences a child can verify, a unique twelve-dimensional geometry. We show here that the same four sentences, with the same principle of minimality, derive a field equation on that geometry, and that the equation is Einstein's with one additional term. Two of the axioms, closure and order, give Einstein's equation with its cosmological and matter terms. The third, that the universe grows and decays as a function of itself, gives the additional term: the exponential of growth and decay has two sheets, the sheets are one field $\psi$, a section of the Clifford module of the geometry, with shadow $\bar\psi$, their even combination $\omega=\psi+\bar\psi$ and the unique lowest-order even scalar vanishing both where the sheets coincide and where growth opposes decay, $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$, enter the action through one coupling $\zeta$, and the variation gives $G_{MN}=8\pi G_{\mathrm{eff}}T_{MN}+\zeta T^{\QCD}_{MN}+\Lambda_{\mathrm{eff}}g_{MN}$. The fourth axiom, the drive, makes the two sheets mirror images relative to the flow of time rather than one sheet written backwards, so that the term is physical and the arrow of time and the distinctness of matter from its shadow are the same fact; no Lorentzian structure is assumed. The coupling is derived from the restriction of the equation to the base of the geometry as the exponent by which the warp falls across a half-period, $\zeta=\chi(\Keight)\pi=12\pi$. The derivation is minimal rather than unique: at four named points the smallest option the axioms admit is taken, and each is tagged. The field $\omega$ vanishes at the locked phase by the second axiom and at the uncorrelated phase by the fourth, and the coupling is largest at the sheet angle $\arctan\sqrt2$.
+\end{abstract}
+
+\section{What is observed, and what this paper derives}\label{sec:intro}
+
+The purpose of this paper is to derive the field equation of the Master Equation programme from the four axioms of M1, on the geometry M1 showed those axioms select, and to show that the equation is Einstein's with one additional term, produced by the one axiom Einstein's theory does not contain.
+
+\subsection{The result in plain words}\label{sec:plain}
+
+M1 began from four observations, taken as axioms in the simplest words that carry them, and we restate them as M1 did.
+
+\begin{axiom}[closure]\label{ax:A1}
+The universe closes on itself, so that it can be aware of itself.
+\end{axiom}
+
+\begin{axiom}[growth and decay]\label{ax:A2}
+The universe grows and decays as a function of itself.
+\end{axiom}
+
+\begin{axiom}[order]\label{ax:A3}
+The order of events matters, so that each instance is unique and cannot be foretold.
+\end{axiom}
+
+\begin{axiom}[drive]\label{ax:A4}
+The universe is in constant change; it never stands still.
+\end{axiom}
+
+Read as conditions on a shape, with every point at which a word acquires a mathematical meaning isolated as a numbered reading, and with the rule that no unforced structure is added, these four picked out one shape, twelve-dimensional, described in M1. This paper asks what rule of motion the same four sentences impose on that shape.
+
+The answer can be stated before any mathematics. Einstein's equation says that the curvature of space is produced by two things: the matter in it, and the energy that empty space has of its own. Our equation says the same, with one more source of curvature added: the difference between growth and decay, weighted by how coherently the two are held together. Written as a formula it is Einstein's equation with one extra term on the right-hand side, and the extra term has one number in front of it, which we compute to be $12\pi$.
+
+Which observation produces which part of the equation is the content of the paper, and it is worth saying at once. That the universe closes on itself is what makes an equation of motion exist at all, and it supplies the energy of empty space; that the order of events matters is what supplies matter, in the form of the spinor fields that carry non-commutativity, together with the forces that act between them. These two observations alone give Einstein's equation, with its matter and its cosmological constant. That the universe grows and decays is the observation Einstein's theory does not contain, and it is the one that produces the additional term: the growth law has two faces, growth and decay, and the field written on those two faces is a new source of curvature. That the universe never stands still is what makes the two faces genuinely two rather than one face read in a mirror; it is the source of the arrow of time, and it is why matter is distinct from its shadow. In the programme that follows this paper, the second observation is also where the masses, the generations and the mixings of matter come from, so that what was missing from a theory of four forces, an account of why there is matter and why it does not run backwards, is supplied by the two observations the earlier theory left out. We do not derive those consequences here; we derive the equation and its coupling.
+
+\subsection{What the mathematics is doing}\label{sec:what-maths}
+
+For a reader meeting this for the first time, the argument has three moves, and each can be said in ordinary words.
+
+The first move is to write down a single number, the \emph{action}, for
+every way the shape and the fields on it could possibly be arranged, and
+then to pick out the arrangement for which that number is \emph{stationary}.
+Stationary means this: if you alter the arrangement by a tiny amount in any
+direction --- bend the shape slightly here, raise the field slightly there
+--- the number does not change to first order. It is the same idea as finding
+the bottom of a valley by looking for the place where the ground is level:
+at the lowest point, a small step in any direction neither raises nor
+lowers you. For a function of one variable this is the condition that its
+derivative be zero; the action is a function of infinitely many variables
+(the value of every field at every point), and the stationary condition is
+that its derivative with respect to each of them be zero at once. Working
+out what those conditions say is a mechanical calculation, and the result
+is the field equation. This is how every field equation in physics is
+obtained, Einstein's included: the equation is not guessed, it is the
+condition that the action be stationary. The first axiom is what makes the
+move possible, because a shape that closes on itself has no edge over which
+the small alterations could leak away and spoil the count.
+
+The content of the paper is then entirely in \emph{which terms the action
+is allowed to contain}. We allow nothing the axioms do not force, and where
+the axioms leave a choice we take the smallest option, as M1 did; the paper
+names each such choice. There are three kinds of term: the curvature of the
+shape itself, the matter fields and the force field that the third axiom
+supplies, and the field written on the two faces of the growth law that the
+second axiom supplies.
+
+The second move is to identify that last field. The growth law $w=w_{0}e^{\kappa s}$ has two solutions, growth and decay, exchanged by an operation the second axiom asks for. We show that this operation is the reversal of the drive of the fourth axiom together with a quarter-turn of the internal fibre, that it reverses the orientation of the shape, and hence that the two solutions, written as one field $\psi$ and its shadow $\bar\psi$, have opposite handedness. The even combination $\omega=\psi+\bar\psi$ measures how far the two faces agree; the odd combination $\psi-\bar\psi$ measures how far they are held apart. The one scalar built from them that respects the exchange and vanishes both when the faces coincide and when growth exactly opposes decay is $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$, and the shape couples to the two faces through it and through nothing else.
+
+The third move is the computation. Varying the action gives Einstein's equation with the one extra term; the extra term is the stress tensor of a scalar field, a standard object, multiplied by the coupling $\zeta$. To find $\zeta$ we restrict the equation to the two-dimensional base of the internal shape, where the growth law appears as a warp that falls off across the base, and we show that across one half of the base the warp falls by exactly $N\pi$, where $N$ is the number of units of flux the shape carries and $\pi$ is the angle missing at each of the four corners of the pillowcase. The number of flux units is the Euler characteristic of the internal shape, twelve, so $\zeta=12\pi$.
+
+\subsection{What this paper proves, and how it is organised}\label{sec:results}
+
+The results, in the order they are proved, are these. The sheets of A2 are one field $\psi$, a section of the Clifford module $\Hquat^{32}$ that A3 forces, with shadow $\bar\psi$ obtained by the flow-reversing involution; $\omega=\psi+\bar\psi$ and $\psi-\bar\psi$ are the Coherent Field and the sheet variable, and $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$ is the unique lowest-order even scalar vanishing both where the sheets coincide and where growth opposes decay (Section~\ref{sec:variables}). The involution is the quarter-turn flow reversal $\tau$ with $\tau^{2}$ the fold, it reverses orientation, and $\bar\psi$ has the opposite handedness to $\psi$ (Section~\ref{sec:handedness}). The action on $M_{12}$ that the axioms and the standing minimality principle admit has one gravitational term, the induced connection of the $\Spinc$ line, and the dilaton coupled through $\QCD$ alone; its variation is the Master Equation, Einstein's equation with the one additional term, and the dilaton's equation is $\zeta\Box\QCD=V'$ (Section~\ref{sec:equation}). The restriction of the equation to the base is the two-dimensional system in which the warp falls by $N\pi$ across a half-period, $N=\chi(\Keight)=12$, so $\zeta=12\pi$ (Section~\ref{sec:warp}). The Coherent Field vanishes at the locked phase by A2 and at the uncorrelated phase by A4, the coupling is largest at $\arctan\sqrt2$, and $\omega$ keeps one sign on the solutions (Section~\ref{sec:omega-shape}).
+
+The paper is organised as follows. Section~\ref{sec:variables} defines the variables, states the fifth reading of the series, that the metric is positive-definite and time is the drive's orbit parameter, and states the standing principle of minimality. Section~\ref{sec:handedness} proves the handedness theorem. Section~\ref{sec:equation} writes the action and derives the equation, saying for each term which axiom produces it. Section~\ref{sec:warp} derives the value of $\zeta$. Section~\ref{sec:omega-shape} derives the shape of $\omega$. Section~\ref{sec:outlook} says what the equation dictates for the physics and what remains open. As in M1, this introduction and the opening of each section are intended to be followed by a first-year student; from Section~\ref{sec:handedness} the register is that of a formal paper, every load-bearing step is proved or reduced to a cited classical result or to a stated reading, the smallest case is worked by hand, and the finite and arithmetic parts are certified in Lean (Appendix~\ref{app:lean}). Rigour is tagged \rigR, \rigD, \rigM, \rigG\ as in M1. The deflationary reading of the paper is stated where it belongs: the equation is derived from the action, and the action is fixed by the axioms together with four minimal choices, each named (Sections~\ref{sec:summary3} and~\ref{sec:summary4}); a reader who rejects minimality as a principle has a family of actions, not an equation. Every symbol of M1 keeps its meaning; the symbols introduced here are tabulated in Appendix~\ref{app:labels}.
+
+\input{M2_WP0_definitions.tex}
+\input{M2_WP2_handedness.tex}
+\input{M2_WP3_master_equation.tex}
+\input{M2_WP4_warp_exponent.tex}
+\input{M2_WP5_omega.tex}
+
+\section{Applications and outlook}\label{sec:outlook}
+
+The equation \eqref{eq:master} with $\zeta=12\pi$ is the one the papers of the programme have used, and this paper fixes its origin: the form from the variation, the coupling from the warp exponent, the variables from the sheets. By axiom: closure gives the equation and the vacuum term, order gives matter and the forces, growth and decay gives the additional term, the drive gives the arrow. Three things follow for the physics without further input. The two sectors $\psi$ and $\bar\psi$ are distinct by handedness relative to the flow, so the shadow sector of the programme is not a relabelling. The stress tensor of the dilaton along the flow is stiff, so wherever $\QCD$ is driven the geometry responds as the programme's collapse and budget analyses assume, read along the flow. And the warp falls by exactly $12\pi$ across a half-period of the base, which is the number from which the programme's hierarchies descend. The papers that follow derive from the same second axiom, through the walls of the sheets and the phase of the dilaton, the masses, the three generations and the mixing angles of the quarks and leptons and the Higgs sector: the structure of matter is the structure of growth and decay, and what a theory of four forces left unexplained, why there is matter and why it does not run backwards, is supplied by the two axioms such a theory omits. We do not pursue those derivations here. \rigM
+
+Four things are left open and named. The spectral face of $\omega$, its identification with a one-hump functional of the Dirac spectrum at the cone points, is the subject of a later paper (Section~\ref{sec:omega-hook}). The normalisation $\kappa_{2}^{2}=2/L$ is reproduced here as a relation among the scales and tagged \rigD; a derivation from the orbifold Gauss--Bonnet theorem with the warped weights would complete it (Section~\ref{sec:gb}). The content of the matter stress tensor, its generations and masses, belongs to the papers that follow (Section~\ref{sec:matter}). And the ratio of the drive's rate per circuit, $\log\varphi^{2}$, to the warp's exponent per half-period, $12\pi$, is a pure number of the geometry whose meaning this paper does not determine (Section~\ref{sec:handedness}).
+
+\section*{Acknowledgements}
+The author used Claude (Anthropic) and Gemini (Google DeepMind) as mathematical development and analytical tools during the preparation of this work. All intellectual content, theoretical framework, and scientific claims are the sole responsibility of the author.
+
+\appendix
+
+\section{Machine-verified certificates}\label{app:lean}
+
+Seven certificates accompany the paper, each a single Lean~4.15.0 file on the
+core toolchain with no Mathlib dependency, no author axioms and no
+\texttt{sorry}. They build within the series' proof tree
+\texttt{MEFProof.Paper\_M2}; the build record is
+\begin{lstlisting}
+Built MEFProof.Paper_M2.M2_L1_parity      (1.2s)
+Built MEFProof.Paper_M2.M2_L2_master      (549ms)
+Built MEFProof.Paper_M2.M2_L3_zeta        (626ms)
+Built MEFProof.Paper_M2.M2_L4_handedness  (1.2s)
+Built MEFProof.Paper_M2.M2_L5_warp        (649ms)
+Built MEFProof.Paper_M2.M2_L6_omega       (608ms)
+Built MEFProof.Paper_M2.M2_L7_module      (863ms)
+\end{lstlisting}
+Every certified statement is named at the point in the text where it is
+used. The analytic steps --- the variation, the Bianchi contraction, the
+ergodic theorem, the Pin anticommutation --- are one-line computations or
+cited theorems and are not certified; the certificates fix the arithmetic
+and the finite case analyses those steps rely on.
+
+\texttt{M2\_L1\_parity.lean} (Section~\ref{sec:variables}, 12 theorems):
+the $\hat\tau$-sign of a monomial $(\mathrm{Re}\,\psi)^{a}(\mathrm{Im}\,\psi)^{b}$
+is $(-1)^{b}$; vanishing on $\psi=\bar\psi$ iff $b\ge1$ and on $\psi=-\bar\psi$
+iff $a\ge1$; degree bound $a+b\ge3$ and uniqueness of $(1,2)$; the parity
+table of $\omega$, $\psi-\bar\psi$, $\lvert\psi-\bar\psi\rvert^{2}$, $\QCD$;
+multiplicativity of the sign.
+
+\texttt{M2\_L2\_master.lean} (Section~\ref{sec:equation}, 6): the flow
+components of $T^{\QCD}$ and the trace in twelve dimensions; $\lvert\nabla\QCD\rvert^{2}$
+is $\hat\tau$-even of degree six; the competing two-derivative terms fail
+the vanishing conditions.
+
+\texttt{M2\_L3\_zeta.lean} (Section~\ref{sec:warp}, 7): $\chi(\Keight)=3\cdot2\cdot2$;
+deficit $\pi$ per cone, total $4\pi=2\pi\chi$; $\zeta/\pi=12$ and the
+identity of the cone-deficit and Euler readings.
+
+\texttt{M2\_L4\_handedness.lean} (Section~\ref{sec:handedness}, 11):
+$SM_{0}S^{-1}=M_{0}^{-1}$; $S^{2}=-I$; $\det S=1$ and the orientation of
+$\tau$; the eigen-directions $(\varphi,1)$, $(-1,\varphi)$ in $\Z[\varphi]$
+with eigenvalues $\varphi^{\pm2}$; $S$ exchanges them; any involutive flow
+reversal has determinant $-1$.
+
+\texttt{M2\_L5\_warp.lean} (Section~\ref{sec:warp}, 9): the orbifold Euler
+count; the fundamental-domain check; the balance $kL=N\pi$; $\zeta=12\pi$
+and the $N=1$ case; $\tau$ fixes $P_{1},P_{4}$ and exchanges $P_{2},P_{3}$.
+
+\texttt{M2\_L6\_omega.lean} (Section~\ref{sec:omega-shape}, 5): the
+coefficient $8$ in $\QCD=8r^{3}\cos\vartheta\sin^{2}\vartheta$; the
+extremum $\tan^{2}\vartheta=2$; the sign bookkeeping of the half-circle; the
+zeros of the hump.
+
+\texttt{M2\_L7\_module.lean} (Sections~\ref{sec:variables}, \ref{sec:equation}, 8):
+$\mathrm{Cl}(0,12)\cong\Hquat(32)$ by Bott periodicity ($12\equiv4\bmod8$) and
+the module dimensions $32$, $64$, $128$; the three readings of the kinetic
+term, $1$, $32$, $1024$; the trace of a module-symmetric vacuum; the square
+of an imaginary quaternion is minus its squared modulus.
+
+The seven files follow verbatim.
+
+\subsection*{\texttt{M2\_L1\_parity.lean} --- the parity algebra}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L1_parity.lean}
+
+\subsection*{\texttt{M2\_L2\_master.lean} --- the dilaton term}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L2_master.lean}
+
+\subsection*{\texttt{M2\_L3\_zeta.lean} --- the integers of $\zeta$}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L3_zeta.lean}
+
+\subsection*{\texttt{M2\_L4\_handedness.lean} --- handedness}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L4_handedness.lean}
+
+\subsection*{\texttt{M2\_L5\_warp.lean} --- the warp exponent}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L5_warp.lean}
+
+\subsection*{\texttt{M2\_L6\_omega.lean} --- the shape of $\omega$}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L6_omega.lean}
+
+\subsection*{\texttt{M2\_L7\_module.lean} --- the Clifford module}
+\lstinputlisting{../../MEFProof/Paper_M2/M2_L7_module.lean}
+
+\input{M2_AppB.tex}
+
+\begin{thebibliography}{99}
+\bibitem{BishopONeill1969} R.~L. Bishop and B. O'Neill, Manifolds of negative curvature, \emph{Trans. Amer. Math. Soc.} 145 (1969) 1--49.
+\bibitem{Cartan1922} \'E. Cartan, Sur les \'equations de la gravitation d'Einstein, \emph{J. Math. Pures Appl.} 1 (1922) 141--203.
+\bibitem{Friedrich} T. Friedrich, \emph{Dirac Operators in Riemannian Geometry}, AMS, 2000.
+\bibitem{KatokHasselblatt} A. Katok and B. Hasselblatt, \emph{Introduction to the Modern Theory of Dynamical Systems}, Cambridge University Press, 1995.
+\bibitem{Kawasaki1979} T. Kawasaki, The Riemann--Roch theorem for complex $V$-manifolds, \emph{Osaka J. Math.} 16 (1979) 151--159.
+\bibitem{LawsonMichelsohn} H.~B. Lawson and M.-L. Michelsohn, \emph{Spin Geometry}, Princeton University Press, 1989.
+\bibitem{Lovelock1971} D. Lovelock, The Einstein tensor and its generalizations, \emph{J. Math. Phys.} 12 (1971) 498--501.
+\bibitem{ONeill1983} B. O'Neill, \emph{Semi-Riemannian Geometry}, Academic Press, 1983.
+\bibitem{RS1999} L. Randall and R. Sundrum, A large mass hierarchy from a small extra dimension, \emph{Phys. Rev. Lett.} 83 (1999) 3370--3373.
+\bibitem{Thurston} W.~P. Thurston, \emph{The Geometry and Topology of Three-Manifolds}, Princeton lecture notes, 1980.
+\bibitem{Vermeil1917} H. Vermeil, Notiz \"uber das mittlere Kr\"ummungsma\ss\ einer $n$-fach ausgedehnten Riemann'schen Mannigfaltigkeit, \emph{Nachr. Ges. Wiss. G\"ottingen} (1917) 334--344.
+\bibitem{Wald} R.~M. Wald, \emph{General Relativity}, University of Chicago Press, 1984.
+\bibitem{Weyl1922} H. Weyl, \emph{Raum, Zeit, Materie}, 5th ed., Springer, 1923.
+\end{thebibliography}
+\end{document}

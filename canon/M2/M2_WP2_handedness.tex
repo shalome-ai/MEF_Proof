@@ -1,0 +1,169 @@
+%%=====================================================================
+%% M2 — WP2 / R2.3: the two sectors are mirror images relative to the flow.
+%% SURGICAL FRAGMENT (insertion only; no preamble). UK English. "We".
+%% Architect draft, 8 Nov 2026, under PI rulings Q8 (Riemannian; time =
+%% orbit parameter of the drive), Q9 (handedness relative to the flow,
+%% derived in M2; Sol carries the arrow), Q10 (one warped direction, two
+%% forced rates). Depends on Def. def:psi (WP0, revised) and M1 §4, §7.
+%% Intended location: M2 Section 2, after the parity proposition.
+%%=====================================================================
+
+\subsection{The arrow, and why the shadow is not the image}\label{sec:handedness}
+
+Nothing so far distinguishes $\psi$ from $\bar\psi$ except a sign under the
+fold. If that were all, the second sector would be the first written
+backwards, and $\lvert\psi-\bar\psi\rvert^{2}$ would measure a convention. This
+subsection shows that it is not all: the operation relating the two sectors
+reverses the orientation of the geometry, so that $\bar\psi$ is the mirror of
+$\psi$ relative to the flow of A4, and the two carry opposite handedness. The
+argument uses no sign in the metric. Under the fifth reading of
+Section~\ref{sec:readings} the metric of $M_{12}$ is positive-definite and
+signs no direction; the distinction between the sectors is made by the drive.
+
+\paragraph{The Sol block.}
+A4 places a flow on $T\times F$ whose return map is the drive
+$M_{0}=\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$
+(M1 Theorem~4.2). The flow is therefore the suspension of $M_{0}$: the
+three-manifold obtained from $\Ttwo\times[0,1]$ by identifying $(x,1)$ with
+$(M_{0}x,0)$, with the flow $\partial_{s}$ along the interval. A torus bundle
+over a circle with hyperbolic monodromy carries the Sol geometry
+\cite{Thurston}, and in the eigenbasis of $M_{0}$ the Sol metric is
+\begin{equation}\label{eq:sol-metric}
+  \mathrm{d}\ell^{2}
+  \;=\;e^{2\kappa s}\,\mathrm{d}x_{u}^{2}+e^{-2\kappa s}\,\mathrm{d}x_{s}^{2}
+  +\mathrm{d}s^{2}\,,
+  \qquad \kappa=\log\lambda=\log\varphi^{2}\,,
+\end{equation}
+where $x_{u},x_{s}$ are coordinates along the unstable and stable
+eigenvectors $v_{u}=(\varphi,1)$ and $v_{s}=(-1,\varphi)$ of $M_{0}$, with
+eigenvalues $\varphi^{2}$ and $\varphi^{-2}=2-\varphi$
+(\texttt{L4\_eigen}). This is the factor $S^{1}_{\Sol}$ in the name of the
+geometry, and it is A2's law seen in A4's drive: one direction grows as
+$e^{\kappa s}$ and the other decays as $e^{-\kappa s}$, at the rate fixed by
+the trace-three theorem. The two sheets of the exponential are the two
+eigen-directions of the drive. \rigD
+
+\paragraph{Reversing the flow.}
+A symmetry of the Sol block that reverses the flow has the form
+$(x,s)\mapsto(Ax,-s)$ with $A\in GL(2,\Z)$, and it is well defined on the
+suspension iff $AM_{0}A^{-1}=M_{0}^{-1}$: reversing time inverts the
+monodromy, and $A$ must carry the inverted monodromy back. Such an $A$
+necessarily exchanges the two eigenlines, since it sends the eigenvalue
+$\lambda$ to $\lambda^{-1}$. Two kinds exist.
+
+\begin{proposition}[flow reversals]\label{prop:reversal}
+Let $A\in GL(2,\Z)$ satisfy $AM_{0}A^{-1}=M_{0}^{-1}$.
+\begin{enumerate}[label=(\roman*),nosep]
+\item If $A^{2}=I$ then $\det A=-1$, and the reversal $(Ax,-s)$ preserves the
+orientation of the Sol block.
+\item If $\det A=+1$ then $A^{2}=-I$; the reversal has order four, its square
+is the fold $x\mapsto-x$, and it reverses the orientation of the Sol block.
+The quarter-turn $S=\bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)$
+is such an $A$: $SM_{0}S^{-1}=M_{0}^{-1}$, $S^{2}=-I$, $Sv_{u}=-v_{s}$,
+$Sv_{s}=v_{u}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Write the matrix as $A=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)$
+with integer entries. Squaring it and setting the result equal to the
+identity gives four equations; the two off-diagonal ones read
+$b(a+d)=0$ and $c(a+d)=0$. There are two cases. If $a+d\neq0$ then $b$ and
+$c$ are both zero and $A$ is diagonal; but a diagonal matrix conjugating
+$M_{0}$ to its inverse would have to send the top-left entry $2$ of $M_{0}$
+to the top-left entry $1$ of $M_{0}^{-1}$, which forces $a=0$, contradicting
+$a^{2}=1$ from the diagonal of $A^{2}=I$. So $a+d=0$, that is $d=-a$, and then
+the determinant is $ad-bc=-a^{2}-bc=-(a^{2}+bc)=-1$, using the top-left
+entry $a^{2}+bc=1$ of $A^{2}=I$. The reversal $(x,s)\mapsto(Ax,-s)$ then has
+determinant $\det A\cdot(-1)=+1$: it preserves orientation
+(\texttt{L4\_involution\_det}). (ii) Any $A$ that exchanges the two
+eigenlines has zero diagonal in the eigenbasis, hence zero trace, and by
+Cayley--Hamilton $A^{2}=(\operatorname{tr}A)A-(\det A)I=-I$ when
+$\det A=1$. The quarter-turn $S$ is such an $A$: multiplying out,
+$SM_{0}S^{-1}=M_{0}^{-1}$ and $S^{2}=-I$ (\texttt{L4\_S\_conj},
+\texttt{L4\_S\_sq\_fold}); it sends $(\varphi,1)$ to $(1,-\varphi)$, which is
+minus the stable eigenvector, and $(-1,\varphi)$ to $(\varphi,1)$
+(\texttt{L4\_swap\_lines}); and the reversal built from it has determinant
+$\det S\cdot(-1)=-1$, so it reverses orientation
+(\texttt{L4\_tau\_reverses}). \rigR
+\end{proof}
+%% ARCH: (ii)'s trace-zero step is stated, not certified; the certificate
+%% covers S and the general involutive case (i). If the PI wants (ii) in
+%% full generality certified, it is a bounded enumeration — flag.
+
+The smallest case by hand: $S$ sends $(\varphi,1)$ to $(1,-\varphi)=-(-1,\varphi)$,
+the unstable line to the stable line. Running the flow backwards and turning
+the fibre by a quarter exchanges growth and decay exactly.
+
+\paragraph{The involution of A2 is the quarter-turn reversal.}
+A2(iii) asks for an involution of the warped piece with $\iota^{*}\kappa=-\kappa$.
+On the Sol block the only operations that send $\kappa$ to $-\kappa$ are the
+flow reversals of Proposition~\ref{prop:reversal}, and among them only
+case~(ii) reverses the orientation of the geometry. We take
+\begin{equation}\label{eq:tau}
+  \tau:(x,s)\longmapsto(Sx,-s)\,,\qquad \tau^{2}=\text{the fold},
+\end{equation}
+as the involution of A2. On the covering torus $\tau$ has order four; on the
+pillowcase $\Ttwo/\{\pm1\}$, which is where M1 reads A2, $\tau^{2}$ is the
+identity and $\tau$ is the involution M1 requires. M1's identification of
+$\iota$ with the fold is therefore the statement about $\tau^{2}$; the present
+paper refines it to $\tau$, whose square it is. \rigD
+%% ARCH / REGISTER: this refines M1's identification (fold ↔ A2's ι) to
+%% (τ ↔ A2's ι, τ² = fold). Consistent with M1 on the pillowcase; a genuine
+%% refinement on the cover. Flagged for the Register and for M1 v3 wording.
+%% Also consistent with the corpus's quarter-turn Spin^c holonomy e^{iπ/2}.
+
+\paragraph{Handedness.}
+A reflection of one direction of a Riemannian manifold lifts to the spinor
+bundle as an element of the Pin group lying in the odd component, and every
+odd element anticommutes with the chirality operator
+$\Gamma=\Gamma_{1}\cdots\Gamma_{12}$ \cite{LawsonMichelsohn}. The lift
+$\hat\tau$ of $\tau$ reverses orientation (Proposition~\ref{prop:reversal}),
+so $\hat\tau\Gamma=-\Gamma\hat\tau$.
+
+\begin{theorem}[the two sectors have opposite handedness]\label{thm:handedness}
+Let $\psi$ be a sheet field of definite chirality, $\Gamma\psi=\epsilon\psi$,
+and $\bar\psi\equiv\hat\tau\psi$ with $\hat\tau$ the Pin lift of $\tau$ acting on
+the module $M$. Then $\Gamma\bar\psi=-\epsilon\bar\psi$.
+Equivalently: the frame $(v_{u},v_{s},\partial_{s})$ in which $\psi$ grows
+along the flow is carried by $\tau$ to a frame of the opposite orientation,
+$(-v_{s},v_{u},-\partial_{s})$, in which $\bar\psi$ grows along the flow.
+\end{theorem}
+
+\begin{proof}
+$\Gamma\bar\psi=\Gamma\hat\tau\psi=-\hat\tau\Gamma\psi=-\epsilon\hat\tau\psi
+=-\epsilon\bar\psi$. The frame statement is \texttt{L4\_swap\_lines} together
+with $s\mapsto-s$; the determinant of the change of frame is $-1$. \rigR
+\end{proof}
+
+This is the content of the word ``shadow''. The second sector is not the
+first reflected in a mirror placed in space; it is the first reflected in the
+flow. Reversing the drive exchanges growth with decay, and the geometry
+records which is which: that record is the arrow of time, and the arrow is
+what keeps $\psi$ and $\bar\psi$ apart. Had the flow no stable and unstable
+direction, running it backwards would be indistinguishable from running it
+forwards, there would be no arrow, and $\psi$ and $\bar\psi$ would be one
+sector written twice. A4's positive entropy, which M1 used to force the
+hyperbolic drive, is the same fact as the distinctness of the two sectors.
+
+We record what has been used. The fifth reading (positive-definite metric)
+makes the chirality operator a Riemannian one and the Pin argument available
+in the form stated; no Lorentzian structure enters. The identification of
+A2's involution with $\tau$ rather than with its square is the one
+reading of this subsection, tagged \rigD\ above. The spinor lift of $\tau$
+is a standard construction once $\tau$ is an isometry of the Sol metric,
+which it is by \eqref{eq:sol-metric} since $S$ exchanges $x_{u}$ and
+$x_{s}$ while $s\mapsto-s$ exchanges the exponents.
+
+\paragraph{The warped direction.}
+A2's warp and the Sol exponential of \eqref{eq:sol-metric} share the flow
+direction $s$. They do not share a rate: the drive stretches the fibre torus
+by $\varphi^{2}$ per circuit, a theorem of A4, while the warp of the
+six-dimensional fibre over the base carries the exponent fixed in
+Section~\ref{sec:warp}, a theorem of the flux. Two forced numbers are not an unforced
+datum under M1's first minimality criterion, and the ratio of the two rates
+is a pure number of the geometry with no input. Whether the base coordinate
+$\theta_{\omega}$ of M1 is the flow coordinate $s$ is settled by the
+reduction of Section~\ref{sec:equation} and is not assumed here. \rigM
+%% PI ruling Q10. The ratio 24π/log φ² ≈ 78.4 is NOT stated in the text
+%% (unchecked against the corpus); it stays in this comment until checked.

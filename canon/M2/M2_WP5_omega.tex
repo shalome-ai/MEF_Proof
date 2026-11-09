@@ -1,0 +1,160 @@
+%%=====================================================================
+%% M2 — WP5: what ω is. SURGICAL FRAGMENT. UK English. "We".
+%% PI rulings: Q4 (revised; the two zeros derived in M2, GUE maximum [M],
+%% spectral proof to M3/M4), Q3 (half-circle route (a) after R3.1), R1
+%% (ω = ψ + ψ̄). Depends on WP0 (def:omega, prop:parity), WP2 (thm:handedness,
+%% M1 Thm 4.2 drive), WP4 (eq:a-Phi, decaying warp). Placeholder numbering.
+%%=====================================================================
+
+\section{What the Coherent Field is}\label{sec:omega-shape}
+
+The Coherent Field entered in Definition~\ref{def:omega} as the even
+combination of the sheets. This section says what it measures. The
+programme reads $\omega$ as a one-hump quantity: zero when the sheets are
+rigidly locked, zero when they are uncorrelated, positive between. We
+derive the two zeros from A2 and A4, show where the maximum of the
+coupling sits, settle the sign of $\omega$ on the solutions of
+Section~\ref{sec:warp}, and name what this paper does not prove.
+
+\subsection{The phase of a sheet field}\label{sec:phase}
+
+Work in the corner reading of Definition~\ref{def:psi}, where each
+component is complex, and write $\psi=re^{i\vartheta}$ in $\mathbb{C}_{u}$,
+so that $\omega=2r\cos\vartheta$ and $\psi-\bar\psi=2ir\sin\vartheta$; the
+statements below hold componentwise, and the module trace sums them. The phase
+$\vartheta$ is the angle between the two sheets: $\vartheta=0$ when they
+coincide, $\vartheta=\pm\pi/2$ when growth stands exactly against decay.
+By Definition~\ref{def:psi}, $\hat\tau$ sends $\vartheta\mapsto-\vartheta$.
+
+\begin{proposition}[the locked zero]\label{prop:locked}
+$\omega=0$ at a point iff $\bar\psi=-\psi$ there, i.e. iff the sheet field
+is $\hat\tau$-odd, $\vartheta=\pm\pi/2$. At such a point the dilaton
+vanishes, $\QCD=0$, and the geometry does not respond to the sheets.
+\end{proposition}
+
+\begin{proof}
+The Coherent Field is $\psi$ plus its shadow. It is zero at a point exactly
+when the shadow there is the negative of the field, $\hat\tau\psi=-\psi$:
+when exchanging growth and decay reverses the sign of every component. In
+the corner reading, where a component is $re^{i\vartheta}$ and the exchange
+sends $\vartheta$ to $-\vartheta$, this says $re^{i\vartheta}=-re^{-i\vartheta}$,
+that is $\cos\vartheta=0$, so $\vartheta=\pm\pi/2$: the two sheets stand at
+right angles, growth exactly against decay. At such a point the dilaton
+$\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$ is zero because its first factor is,
+and so the $\zeta$-term of \eqref{eq:master} vanishes there: the geometry
+does not respond. \rigR
+\end{proof}
+
+This is A2 read on the field: when growth is exactly opposed by decay the
+two sheets are locked, nothing in the geometry changes, and the even
+combination is zero. It is the reason the Coherent Field is the
+combination $\psi+\bar\psi$ and not the modulus, which does not vanish
+there (Section~\ref{sec:omega}). We call this the \emph{locked} or rigid
+configuration.
+%% PI ruling R1, now a proposition.
+
+\subsection{The uncorrelated zero, from the drive}\label{sec:uncorrelated}
+
+The second zero comes from A4. The drive $M_{0}$ acts on the base torus
+(M1 Theorem~4.2), and a sheet field is carried along its orbit,
+$\psi\mapsto\psi\circ M_{0}^{n}$. We make precise the average that the
+programme's ``orbit average'' refers to.
+
+\begin{definition}[orbit average]\label{def:orbit-average}
+For a sheet field $\psi$ and a point $z$ of the base, the orbit average of
+$\omega$ over $T$ circuits is
+$\langle\omega\rangle_{T}(z)=\tfrac1T\sum_{n<T}\omega(M_{0}^{n}z)$. The
+\emph{phase distribution} of $\psi$ is the push-forward of Lebesgue
+measure on the base under $z\mapsto\vartheta(z)$.
+\end{definition}
+
+\begin{proposition}[the uncorrelated zero]\label{prop:uncorrelated}
+The drive is ergodic for Lebesgue measure, so for almost every $z$,
+$\langle\omega\rangle_{T}(z)\to\int\omega\,\mathrm{d}\mu$ as $T\to\infty$:
+the orbit average is the space average. If the phase distribution of
+$\psi$ is uniform on the circle --- the phase of the sheets is
+uncorrelated with position --- then $\int\omega\,\mathrm{d}\mu=0$.
+\end{proposition}
+
+\begin{proof}
+A hyperbolic toral automorphism is ergodic, indeed mixing, for Lebesgue
+measure \cite{KatokHasselblatt}; M1 Proposition~4.1 shows A4 forces
+hyperbolicity. Birkhoff's theorem gives the first statement. For the
+second, with $r$ bounded and $\vartheta$ uniform,
+$\int\omega=2\int r\cos\vartheta\,\mathrm{d}\mu=2\bar r\int_{0}^{2\pi}\cos\vartheta\,\tfrac{\mathrm{d}\vartheta}{2\pi}=0$,
+where the factorisation uses that a uniform phase is independent of the
+modulus. \rigR\ (given the independence, which is what ``uniform phase''
+means).
+\end{proof}
+
+This is A4 read on the field: a drive of positive entropy mixes, and a
+sheet field whose phase has been mixed to uniformity has no net even
+combination. We call this the \emph{uncorrelated} configuration.
+
+\subsection{The hump, and where the coupling is largest}\label{sec:hump}
+
+Between the two zeros the average is positive. Let the phase distribution
+be concentrated around a lock angle $\vartheta_{0}$ with concentration
+$c\ge0$ (any unimodal family will do; the circular normal
+$\propto e^{c\cos(\vartheta-\vartheta_{0})}$ is the standard one). Then
+\begin{equation}\label{eq:hump}
+  \langle\omega\rangle\;=\;2\bar r\,A(c)\cos\vartheta_{0}\,,\qquad
+  A(c)=\frac{I_{1}(c)}{I_{0}(c)}\in[0,1)\,,
+\end{equation}
+which vanishes at $c=0$ (uniform, Proposition~\ref{prop:uncorrelated}),
+vanishes at $\vartheta_{0}=\pm\pi/2$ (locked,
+Proposition~\ref{prop:locked}), and is positive for
+$\lvert\vartheta_{0}\rvert<\pi/2$: one hump in the lock angle between the
+two locked configurations. \rigD
+
+The coupling to curvature is not maximal where $\omega$ is. In the phase,
+\begin{equation}\label{eq:Phi-phase}
+  \QCD\;=\;\omega\,\lvert\psi-\bar\psi\rvert^{2}\;=\;8r^{3}\cos\vartheta\,\sin^{2}\vartheta\,,
+\end{equation}
+which vanishes at $\vartheta=0$ (sheets coincident, no held distinction)
+and at $\vartheta=\pm\pi/2$ (locked), and is extremal where
+$\tan^{2}\vartheta=2$, $\sin^{2}\vartheta=\tfrac23$. The geometry responds
+most strongly neither when the sheets agree nor when they oppose, but at
+the definite intermediate angle $\vartheta^{\ast}=\arctan\sqrt2\approx54.7^{\circ}$
+(\texttt{L6\_Phi\_extremum}). \rigR
+%% Direct computation from prop:parity; the angle is the parity theorem's
+%% own number. Not in the corpus as far as read; flagged as new.
+
+\subsection{The sign of $\omega$ on the solutions}\label{sec:half-circle}
+
+Section~\ref{sec:warp} gave the warp as a decaying exponential,
+$a=-\zeta\QCD$ with $\QCD$ rising from $0$ at the wall to $1$ at the far
+wall, $\QCD$ there standing for the real part of the trace. On those
+solutions, therefore, $\QCD\ge0$. But $\QCD$ is $\omega$ times a
+non-negative real number, $\lvert\psi-\bar\psi\rvert^{2}$, so wherever the
+sheets are distinct --- wherever that number is not zero --- the real part
+of $\omega$ has the same sign as $\QCD$ and is non-negative: in the corner
+reading, $\cos\vartheta\ge0$, which is the half-circle
+$\lvert\vartheta\rvert\le\pi/2$. The Coherent Field does not change sign on
+the solutions. What fixed the sign was the direction of the warp: the
+exponential decays away from the wall, so $\QCD$ rises. Had the warp grown
+instead, the half-circle would be the other one, and the overall sign of
+$\psi$ --- which no axiom fixes, since $\psi\mapsto-\psi$ commutes with
+$\hat\tau$ and reverses $\omega$ and $\QCD$ together --- would be chosen to
+restore $\mathrm{Re}\,\omega\ge0$. Away from the corner reading $\omega$
+carries an imaginary part along the selected unit, which the sign statement
+does not constrain. \rigD
+%% Closes R2.4 (Q3, route (a)). PI ruling 9 Nov 2026: modulus squared; the
+%% signs of Φ and Re ω now agree directly. Minimality Register M2-9 updated.
+
+\subsection{What this paper does not prove}\label{sec:omega-hook}
+
+The programme's canonical reading of $\omega$ is a one-hump complexity
+functional of a \emph{spectrum}: zero for a rigidly ordered spectrum,
+zero for an uncorrelated one, maximal in the regime of strong level
+repulsion, with spectral rigidity as the computable proxy. The two zeros
+derived above are the field-level counterparts of the first two
+statements: locked for rigidly ordered, uniform for uncorrelated. The
+identification of the field $\omega$ with that spectral functional, and
+the placement of its maximum in the regime of strong level repulsion, are
+not proved here; they require the spectrum of the Dirac operator at the
+cone points of the pillowcase and a bridge theorem between the two
+descriptions, which is the subject of a later paper of the series. We
+record the reading as motivated and the bridge as open. \rigM
+%% Q4 (revised): GUE maximum [M]; spectral proof registered as M3/M4
+%% (Register §12.1). ω named per omega-definition-usage §6a throughout.

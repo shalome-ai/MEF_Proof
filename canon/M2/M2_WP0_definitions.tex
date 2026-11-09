@@ -1,0 +1,264 @@
+%%=====================================================================
+%% M2 — WP0 definitions sheet. SURGICAL FRAGMENT (insertion only; no
+%% preamble; symbols per mef_macros.tex and the M1 preamble macros
+%% \Hquat, \Ad, \rigR, \rigD, \rigM, \rigG). UK English. "We" throughout.
+%% Architect draft, 8 Nov 2026 — every choice that is the architect's
+%% rather than a PI ruling or an M1 result is marked in a %% ARCH comment.
+%% Intended location: M2 Section 2 (after the recall of A1–A4 and M1).
+%%=====================================================================
+
+\section{The variables}\label{sec:variables}
+
+The geometry is fixed by M1: $M_{12}=(S^{1}\times\Sigma)\times\Keight$ with
+$\Sigma=S^{3}$ and $\Keight=[(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)]^{\Spinc}$,
+the fibre $\Ttwo$ carrying the involution of A2 (the fold on the pillowcase; refined in Section~\ref{sec:handedness}) and the
+Fibonacci drive $M_{0}$ of A4, with corners $P_{1},\dots,P_{4}$ labelled as in
+M1 Appendix~B. We keep every convention of M1 unchanged; in particular the
+fibre coordinates are $(\theta_{\psi},\theta_{\omega})$ with half-periods
+$(L_{\psi},L_{\omega})$. In this paper $\psi$ and $\omega$ also name
+\emph{fields}. The two uses are distinguished by position: a subscript
+$\theta_{\psi},\theta_{\omega},L_{\psi},L_{\omega},k_{\omega}$ is a coordinate
+label inherited from M1; a bare $\psi$, $\bar\psi$ or $\omega$ is a field
+defined in this section. The cumulative table of symbols is Appendix~B.
+
+\subsection{The fifth reading}\label{sec:readings}
+
+M1 numbered four readings by which the four sentences became conditions,
+and its abstract already describes the geometry as compact and Riemannian
+without making that a numbered reading. This paper makes it one, and
+attaches it to every result that depends on it.
+
+\begin{definition}[the metric signs no direction]\label{def:riemannian}
+The metric of $M_{12}$ is positive-definite. Time is not a direction the
+metric distinguishes by a sign; it is the orbit parameter $s$ of the flow of
+A4 on $T\times F$. A derivative ``along time'' is a derivative along that
+flow, and every statement below that reads as a statement about time is a
+statement along the flow.
+\end{definition}
+
+The reading is the geometric form of a sentence as plain as M1's four: the
+universe does not label its directions. It is also the reading under which
+A1 is unproblematic, since a compact closed manifold with a signed direction
+would contain closed time-like curves, and under which the spectra of the
+operators of the programme are real and discrete. What singles out a
+direction is the drive, and Section~\ref{sec:handedness} shows that the drive
+singles it out with an orientation. \rigD
+%% PI ruling Q8 (8 Nov 2026). Register: fifth numbered reading of the series.
+
+\paragraph{The standing principle.}
+M1 chose among geometries by a minimality principle (M1 Definition~3.2),
+and every paper of the series applies the same principle to every datum
+the axioms leave open: terms in an action, connections, couplings,
+readings. Where a choice exists we take the minimal option and tag the
+result \rigD\ with minimality as its hypothesis, on the same footing as
+M1's own minimality results; and where the minimal option fails --- a
+contradiction, an empty solution set, a conflict with a result already
+established --- we say so where it happens rather than enlarge the choice
+silently. The present paper applies the principle three times
+(Section~\ref{sec:action}), and names each instance.
+%% PI, 8 Nov 2026: the one unwritten axiom of the series, now written once.
+
+\subsection{One complex field from two sheets}\label{sec:field}
+
+Axiom A2 supplies a growth law $w=w_{0}e^{\kappa s}$ along the warped
+direction and an involution $\iota$ with $\iota^{*}\kappa=-\kappa$
+(M1 Definition~2.2). The two signs of $\kappa$ are the two \emph{sheets} of
+the exponential, growth and decay, exchanged by $\iota$. M1 identifies
+$\iota$ on the fibre algebra: at the drive-fixed corner $P_{1}=C_{0}$ it is
+conjugation on $\Hquat$, whose commutative fixed subalgebra containing the
+selected unit is $\mathbb{C}_{i}$ (M1 Propositions~5.4 and~5.6); at the three
+cycled corners $P_{3}=C_{i}$, $P_{2}=C_{j}$, $P_{4}=C_{k}$ it is the inner
+automorphism by the surviving unit, and the drive's three-cycle
+$\Ad_{w}:i\to j\to k$ carries one corner's reading to the next
+(M1 Proposition~5.6, certificate \texttt{L2\_Ad\_w\_cycles}).
+
+Before the definition, three facts it rests on, each from M1, stated in
+words. First, the third axiom says the fibre algebra --- the quaternions,
+by M1 Proposition~5.2 --- acts on spinors (M1 Definition~2.5); so whatever
+field the two sheets of the growth law make, it is a spinor-type object,
+and its values live in the space on which the quaternions act. Second,
+that space is fixed by the dimension: in twelve dimensions the Clifford
+algebra is the algebra of $32\times32$ quaternionic matrices, by the
+eightfold periodicity of Bott (twelve is four more than eight, and the
+four-dimensional case is $\Hquat(2)$, so the twelve-dimensional case is
+$\Hquat(2)$ enlarged sixteenfold); the space it acts on irreducibly is
+therefore thirty-two quaternions, which is sixty-four complex numbers or
+one hundred and twenty-eight real ones (\texttt{L7\_module\_dims}). Third,
+the operation that exchanges the two sheets is the flow reversal $\tau$ of
+Section~\ref{sec:handedness}: reverse the drive and turn the fibre by a
+quarter. Done twice it is the fold of the torus that makes the pillowcase,
+so on the pillowcase itself it is an involution.
+
+\begin{definition}[the field $\psi$ and its shadow]\label{def:psi}
+Let $M\cong\Hquat^{32}$ be the irreducible module of the Clifford algebra
+of $M_{12}$. A \emph{sheet field} is a smooth section $\psi$ of $M$: at
+every point of the shape, thirty-two quaternions
+$\psi_{1},\dots,\psi_{32}$, varying smoothly from point to point. Let
+$\hat\tau$ be the lift of the flow reversal $\tau$ to $M$ --- the operation
+that carries a spinor at a point to a spinor at the reversed point, and
+which, because $\tau$ reverses orientation, is an odd element of the Pin
+group. The \emph{shadow} of $\psi$ is the sheet field
+\begin{equation}\label{eq:equivariance}
+  \bar\psi\;\equiv\;\hat\tau\psi\,,
+\end{equation}
+the field as seen after the exchange of growth and decay. Applying
+$\hat\tau$ twice returns $\psi$ carried round the fold, which on the
+pillowcase is $\psi$ itself up to the sign $\pm1$ that M1 Corollary~7.4
+assigns to each corner. So on the pillowcase every sheet field splits into
+an even part and an odd part under the exchange,
+\[
+  \psi\;=\;\tfrac12(\psi+\bar\psi)\;+\;\tfrac12(\psi-\bar\psi)\,,
+\]
+the first unchanged by exchanging growth and decay, the second reversed
+by it. Finally, at a corner $C_{u}$ of the pillowcase the quaternions
+collapse to the complex numbers $\mathbb{C}_{u}$ fixed by the corner
+reading (M1 Propositions~5.4 and~5.6); the \emph{corner reading} of a
+sheet field is its image there, thirty-two complex numbers instead of
+thirty-two quaternions, and it is in that reading that the phase of
+Section~\ref{sec:omega-shape} is defined.
+\end{definition}
+%% PI rulings 8 Nov 2026 (R-F1(Φ) adopted; Q17(b)): ψ is a section of the
+%% Clifford module M ≅ ℍ³² (A3), the bar is the geometric lift τ̂ of the flow
+%% reversal WITHOUT conjugation (so ω = ψ + τ̂ψ is quaternion-valued, carrying
+%% the imaginary direction along the selected unit — R-τ11), and the
+%% corner-algebra bundle 𝒞 is the corner reading of the module-valued field.
+
+The two sheets of A2 are therefore one field: its $\hat\tau$-even part is
+what growth and decay share, its $\hat\tau$-odd part is what distinguishes
+them. That the field is module-valued rather than real or complex is not an
+extra choice: M1 Proposition~7.3 reads the spinor data of A3 as the
+$\Spinc$ module, and the selected imaginary unit of Proposition~7.2 is the
+direction in $\mathrm{Im}\,\Hquat$ along which the even part carries its
+imaginary component. In the corner reading each component is a complex
+number $x+iy$ in $\mathbb{C}_{u}$ and $\hat\tau$ sends $y\mapsto-y$.
+\rigD
+
+\subsection{The even and odd variables, and the dilaton}\label{sec:omega}
+
+\begin{definition}[$\omega$ and the odd variable]\label{def:omega}
+\begin{equation}\label{eq:omega-def}
+  \omega\;\equiv\;\psi+\bar\psi\,,
+  \qquad
+  \psi-\bar\psi\,,
+\end{equation}
+both sections of $M$. The first is the even part of the sheet field doubled,
+the second the odd part doubled. $\omega$ is the Coherent Field of the
+programme: it measures how much the two sheets agree. It is quaternion-valued,
+and its imaginary part lies along the selected unit; since the odd variable
+will enter the dilaton only through its modulus, a non-negative real number,
+$\omega$ is the only one of the two that can give the dilaton a direction
+(Section~\ref{sec:omega}). In the corner reading, where each component is a
+complex number, $\omega=2\,\mathrm{Re}\,\psi$ and $\psi-\bar\psi=2i\,\mathrm{Im}\,\psi$.
+\end{definition}
+
+Two properties of $\omega$ are fixed at the level of the definition and are
+the inputs to the next proposition. First, $\omega$ is the even
+\emph{combination} of the sheets and not their modulus: when growth stands
+exactly against decay, $\psi=-\bar\psi$, nothing in the geometry changes and
+$\omega=0$. The modulus $|\psi|$ does not vanish there; the combination
+does. Second, when the two sheets coincide, $\psi=\bar\psi$, there is no held
+distinction between them, and we require that whatever couples the sheets to
+the curvature vanish: this is the motivated condition that the coupling is a
+coupling \emph{between} the sheets, not a coupling of either sheet alone.
+\rigM
+%% PI ruling R1 (8 Nov 2026): ω = ψ + ψ̄, with the reason as stated.
+%% The second condition reproduces omega-definition-usage_v2.md §4 in-document.
+
+\begin{proposition}[the lowest even invariant]\label{prop:parity}
+Write $E=\tfrac12(\psi+\bar\psi)$ for the even part and $O=\tfrac12(\psi-\bar\psi)$
+for the odd part of a sheet field. Consider scalars built by multiplying
+powers of $E$ and powers of $\lvert O\rvert$ together, and ask for those
+that are unchanged when growth and decay are exchanged, and that vanish
+both when the sheets coincide ($O=0$) and when growth exactly opposes
+decay ($E=0$). Every such scalar has total degree at least three, and the
+one of degree three is, up to a real constant, $E\,\lvert O\rvert^{2}$.
+In the programme's normalisation it is the dilaton
+\begin{equation}\label{eq:PhiQC}
+  \QCD\;=\;\omega\,\lvert\psi-\bar\psi\rvert^{2}\,,
+\end{equation}
+taken component by component in $M$: the $\alpha$-th component of $\QCD$
+is $\omega_{\alpha}$ times the squared modulus of $(\psi-\bar\psi)_{\alpha}$.
+\end{proposition}
+
+\begin{proof}
+We work in the corner reading, where each component is a complex number
+$x+iy$ with $x=\mathrm{Re}\,\psi$ the even part and $y=\mathrm{Im}\,\psi$ the
+odd part; the general case is the same argument in each component. A
+monomial $x^{a}y^{b}$ changes sign under the exchange exactly when $b$ is
+odd, because the exchange sends $y$ to $-y$ and leaves $x$ alone; so the
+even monomials are those with $b$ even. The monomial vanishes identically
+on the locus $y=0$ only if $y$ actually appears, that is $b\ge1$, and on the
+locus $x=0$ only if $x$ appears, $a\ge1$. Put the three conditions together:
+$b$ is even and at least one, so $b\ge2$; $a\ge1$; hence $a+b\ge3$, with
+equality only when $a=1$ and $b=2$. The unique degree-three candidate is
+therefore $xy^{2}$. In the original variables $x=\omega/2$ and
+$y^{2}=\lvert\psi-\bar\psi\rvert^{2}/4$, so $xy^{2}=\tfrac18\,\omega\lvert\psi-\bar\psi\rvert^{2}$,
+which is \eqref{eq:PhiQC} up to the constant $\tfrac18$. The classification
+of exponents, the two vanishing criteria and the parity table of $\omega$,
+$\psi-\bar\psi$, $\lvert\psi-\bar\psi\rvert^{2}$ and $\QCD$ are certified in
+\texttt{M2\_L1\_parity.lean} (\texttt{L1\_unique}, \texttt{L1\_vanish\_Im},
+\texttt{L1\_vanish\_Re}, \texttt{L1\_table\_*}). \rigR
+\end{proof}
+
+One remark on the module. The factor $\lvert\psi-\bar\psi\rvert^{2}$ is a
+non-negative real number in each component, so it carries no direction in
+the quaternions: whatever direction $\QCD$ has, it has because $\omega$ has
+it. In particular $\QCD$ has an imaginary part only through $\omega$, and
+$\omega$ is the unique carrier of the imaginary direction
+(\texttt{L7\_imaginary\_square\_real}, which certifies the supporting fact
+that the square of an imaginary quaternion is the negative of its squared
+modulus). The real factor also commutes with everything, so no question of
+the order of factors arises. The quaternionic structure that the fibre
+paper of the series reads as the $Sp(1)$ flux on $\Stwo$ is carried by the
+direction of $\omega$; this paper does not use it. \rigR
+
+We record what the proposition does and does not decide. Parity alone does
+not choose $\psi+\bar\psi$ over the modulus $\lvert\psi\rvert$ as the even
+factor: both are unchanged by the exchange. The choice is the first property above, that $\omega$ vanishes
+when growth stands against decay; with the modulus in its place $\QCD$ would
+not vanish there. The proposition then shows that once the even variable is
+$\omega$ and the two vanishing conditions are imposed, there is no further
+freedom at lowest order.
+%% Correction logged (handover): an earlier argument treating the fold and
+%% conjugation as independent involutions was wrong; they are one involution.
+%% PI ruling 9 Nov 2026: the square in Φ is the modulus squared |ψ−ψ̄|²
+%% (the Source of Truth wrote (ψ−ψ̄)²; Corpus Errors entry 19).
+
+The smallest case by hand: the drive-fixed corner $P_{1}$ is fixed by $\tau$
+(Section~\ref{sec:handedness}), so $\bar\psi(P_{1})=\psi(P_{1})$ up to the
+corner sign, so $\mathrm{Im}\,\psi(0)=0$ and
+$\QCD(P_{1})=0$: the dilaton vanishes at the real corner, where there is one
+sheet and nothing to hold apart.
+
+\subsection{What is varied, and over what}\label{sec:scheme}
+
+The field equation of this paper is obtained by variation and reduction. We
+state the scheme once so that each later section can cite it.
+
+\begin{definition}[the variational data]\label{def:scheme}
+\begin{enumerate}[label=(\roman*),nosep]
+\item \emph{The domain} is $M_{12}$ of M1: compact, connected, without
+boundary (A1, M1 Definition~2.1).
+\item \emph{The fields varied} are the twelve-dimensional metric $g$, with
+the A2 warp $w=e^{A}$ depending on the base coordinates
+$(\theta_{\psi},\theta_{\omega})$ (M1 Definition~2.2(i)); the dilaton
+$\QCD$ of Section~\ref{sec:omega}, a section of the Clifford module $M$ on
+$M_{12}$ with coupling $\zeta$ (Section~\ref{sec:equation} states how its kinetic term arises from the sheets);
+the $\Spinc$ spinor of A3 on the bundle with determinant line
+$L=\mathcal{O}(3)$ (M1 Proposition~7.3); and the $\Spinc$ connection.
+\item \emph{The reduction} integrates over $\Keight$ in two stages: over the
+six-dimensional fibre $\CPtwo\times\Stwo$, leaving a two-dimensional system
+on the pillowcase base $\Ttwo/\Ztwo$ (Section~\ref{sec:warp}); and over the base, leaving
+the four-dimensional equation on $S^{1}\times\Sigma$ (Section~\ref{sec:equation}). The field
+equation of this paper is the twelve-dimensional one, on $M_{12}$; the
+reduction is how its consequences on the base and on the external block
+are read.
+\item \emph{The scale} of $M_{12}$ is the declared input of M1
+(Theorem~8.1, Proposition~8.2) and is not varied.
+\end{enumerate}
+\end{definition}
+%% ARCH: section numbers are placeholders (§3 = WP3, §4 = WP4); renumber at
+%% assembly. ROLLBACK 8 Nov 2026: the earlier sentence identifying Φ_QC with
+%% the 4D image of the warp was the handover's error and is removed; Φ_QC is
+%% a dilaton on M₁₂ (re-scoped R3.1).
+

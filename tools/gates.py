@@ -6,8 +6,9 @@ Usage:  python3 tools/gates.py M2            # all five gates
 
 Gate 1  XeLaTeX, three passes; zero errors; zero undefined references.
 Gate 2  Zero overfull boxes; margin scan clean (25 mm; only footer page numbers
-        outside). The scan renders each page and looks for ink more than 1 mm into
-        the margin (TeX lets the last line's descenders hang just below the block).
+        outside). The scan renders each page and flags ink more than 1 mm into the
+        side or top margins, or more than 2 mm below the text block (the last
+        line's depth); Lean listing frames count (Decision Log P15).
 Gate 3  Lint: forbidden ω names (canon/omega-definition-usage_v2.md §6a); "I "
         voice outside the acknowledgements; US spellings; hard-coded
         "Section~N"; \cite of an MEF corpus paper; "!" in prose; bullets or
@@ -38,7 +39,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build" / "gates"
 MARGIN_PT = 25.0 / 25.4 * 72.0          # 25 mm
-MARGIN_SLACK_PT = 72.0 / 25.4               # 1 mm: ink allowed past the margin line (descenders)
+MARGIN_SLACK_PT = 72.0 / 25.4               # 1 mm past the side and top margin lines
+BOTTOM_SLACK_PT = 2 * 72.0 / 25.4           # 2 mm below the text block: the last line's depth (P15)
 MAX_REPORT = 40                          # findings printed per gate
 
 
@@ -235,12 +237,12 @@ def gate2(pid):
     over = [l for l in unwrap_log(read(log)).split("\n") if re.match(r"^Overfull \\[hv]box", l)]
     notes += [f"overfull: {l.strip()}" for l in over]
     m, slack, zoom, out = MARGIN_PT, MARGIN_SLACK_PT, 2, []
-    a = m - slack                      # ink further than `slack` into a margin is flagged
+    a, ab = m - slack, m - BOTTOM_SLACK_PT     # flagged bands begin here
     with pymupdf.open(str(pdf)) as doc:
         for pno, page in enumerate(doc, 1):
             W, H = page.rect.width, page.rect.height
             strips = {"left": pymupdf.Rect(0, 0, a, H), "right": pymupdf.Rect(W - a, 0, W, H),
-                      "top": pymupdf.Rect(a, 0, W - a, a), "bottom": pymupdf.Rect(a, H - a, W - a, H)}
+                      "top": pymupdf.Rect(a, 0, W - a, a), "bottom": pymupdf.Rect(a, H - ab, W - a, H)}
             spans = [(pymupdf.Rect(s["bbox"]), s["text"].strip())
                      for blk in page.get_text("dict")["blocks"] if blk["type"] == 0
                      for ln in blk["lines"] for s in ln["spans"] if s["text"].strip()]
@@ -257,7 +259,7 @@ def gate2(pid):
                            f"[{ink.x0:.0f},{ink.y0:.0f},{ink.x1:.0f},{ink.y1:.0f}] "
                            + (f"near {near!r}" if near else "(a rule or drawing)"))
     notes.insert(0, f"{len(over)} overfull box(es); ink in the 25 mm margin on {len(out)} page "
-                    f"side(s) (slack 1 mm = {slack:.2f} pt; footer page numbers exempt)")
+                    f"side(s) (1 mm at the sides and top, 2 mm below the block; footer page numbers exempt)")
     notes += out
     return not over and not out, notes
 

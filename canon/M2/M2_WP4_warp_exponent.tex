@@ -1,0 +1,286 @@
+%%=====================================================================
+%% M2 — WP4: the warp exponent and the value of ζ. SURGICAL FRAGMENT.
+%% UK English. "We". Reproduces, in-document and without citation, the
+%% derivation of Paper 2 §§3–4 and Paper I Addendum §§3–4 (fossil), on the
+%% footing of M2 §3 (the base system is the restriction of the Master
+%% Equation). PI rulings: Q12/Q14 (weak (c)), Q15 (direction: τ-symmetric,
+%% j/k convention; τ₂ physical), Q16 (jump exact, constant slope a boundary
+%% condition), Λ₁₂ by stationarity (M2-6). Placeholders: §3 = WP3, §2 = WP0/WP2.
+%%=====================================================================
+
+\section{The warp exponent and the value of $\zeta$}\label{sec:warp}
+
+The purpose of this section is to solve the base restriction of the Master
+Equation, \eqref{eq:2D}, for the profile of the warp across a half-period
+of the pillowcase, and to show that the exponent by which the warp falls is
+$N\pi$ with $N$ the number of flux units, that $N=\chi(\Keight)=12$, and
+hence that the coupling of Section~\ref{sec:equation} has the value
+$\zeta=12\pi$. We announce the two results.
+
+\begin{theorem}[exact warp exponent per flux unit]\label{thm:warp-exponent}
+For the base system \eqref{eq:2D} on $\Ttwo/\Ztwo$ with $N$ units of
+quantised flux localised at a cone point, the warp exponent across the
+half-period transverse to the wall on which the flux sits satisfies
+exactly
+\begin{equation}\label{eq:kL-Npi}
+  kL\;=\;N\pi\,,
+\end{equation}
+where $k$ is the constant decay rate of the warp exponent between the
+walls and $L$ the corresponding half-period. The factor $\pi$ is the
+deficit angle at the cone point.
+\end{theorem}
+
+\begin{corollary}[the value of $\zeta$]\label{cor:zeta}
+With $N=\chi(\Keight)=12$ (Proposition~\ref{prop:flux}) and the dilaton
+normalised to fall by one unit across the half-period (\eqref{eq:a-Phi}),
+\begin{equation}\label{eq:zeta}
+  \zeta\;=\;kL\;=\;\chi(\Keight)\,\pi\;=\;12\pi\,.
+\end{equation}
+\end{corollary}
+
+\subsection{The topological integers}\label{sec:integers}
+
+\begin{proposition}\label{prop:chi-pillowcase}
+$\chi(\Ttwo/\Ztwo)=2$, and the total curvature of the pillowcase is $4\pi$,
+concentrated as a deficit of exactly $\pi$ at each of the four cone points.
+\end{proposition}
+
+\begin{proof}
+We give two independent routes to the Euler characteristic, and then the
+curvature. First route, by the cone points. The Euler characteristic of a
+torus is zero. Folding it in half by the map $z\mapsto-z$ would halve that
+to zero again, except at the four points the fold leaves fixed, where the
+quotient is not smooth: each fixed point contributes a correction of
+$1-\tfrac12=\tfrac12$, because a neighbourhood of it is a cone of angle
+$\pi$, half a full turn. Four corrections of a half make two, so
+$\chi=0+4\cdot\tfrac12=2$ (M1 Theorem~5.7, \texttt{L2\_chi\_pillowcase}).
+Second route, by counting holes. The folded torus is, as a topological
+space, a sphere --- stretch the pillowcase out and it is a ball with four
+puckered points --- and a sphere has one connected piece, no independent
+loops and one enclosed cavity, Betti numbers $(1,0,1)$, so $\chi=1-0+1=2$.
+The two routes agree. For the curvature, the Gauss--Bonnet theorem for
+orbifolds \cite{Kawasaki1979} says the total curvature is $2\pi$ times the
+Euler characteristic, $4\pi$. The pillowcase is flat everywhere except at
+the four cone points, so all $4\pi$ of curvature sits at them, $\pi$ at
+each --- which is exactly the angle missing at a cone of angle $\pi$
+(\texttt{L5\_deficit}). \rigR
+\end{proof}
+
+\begin{proposition}\label{prop:chi-K8}
+$\chi(\Keight)=\chi(\CPtwo)\,\chi(\Stwo)\,\chi(\Ttwo/\Ztwo)=3\cdot2\cdot2=12$.
+\end{proposition}
+
+\begin{proof}
+Multiplicativity of $\chi$ over fibrations with compact fibre; the warp
+does not change the additive structure of cohomology
+(M1 Theorem~7.6, \texttt{L3\_chi\_K8}). \rigR
+\end{proof}
+
+\begin{proposition}[the flux number]\label{prop:flux}
+Tadpole cancellation on $\Keight$ fixes the number of quantised flux units
+of the determinant line to $N_{\mathrm{flux}}=\chi(\Keight)=12$, and all
+twelve sit on the base cycle.
+\end{proposition}
+
+\begin{proof}
+On a compact space the total charge sourced must cancel. The gravitational
+contribution to the tadpole is the Euler density, whose integral is
+$\chi(\Keight)$; the flux contribution is integrally quantised and must
+balance it, so $N_{\mathrm{flux}}=\chi(\Keight)=12$. Cross-check from the
+parity structure: the individual quanta are odd on the non-spin factor
+$\CPtwo$ and even on the spin factor $\Stwo$, by $c_{1}\equiv w_{2}\bmod2$
+(M1 Proposition~7.3, \texttt{L4\_flux\_parity}), and the values
+$(Q_{c},Q_{w})=(3,6)$ of M1 Proposition~8.2 are the ones the constraint
+admits. The twelve units sit on the base because a localised flux
+satisfying the first-order equation of Section~\ref{sec:bps} needs a cone
+point to sit at, and the base is the only cycle that has them. The
+smallest case: one unit at one corner balanced by one unit of integrated
+Euler density on its cone neighbourhood; the general case is the sum of
+twelve such balances. \rigD
+\end{proof}
+%% Weak (c), Q14: flux quanta are topological data; the placement argument is
+%% the Addendum's §4.6 reason, reproduced. Minimality Register M2-2.
+
+\subsection{The base system and its single modulus}\label{sec:base-system}
+
+Section~\ref{sec:base-restriction} obtained the base restriction
+\eqref{eq:2D} of the Master Equation: two-dimensional gravity with
+coefficient $\kappa_{2}^{-2}$, the energy $\tfrac12\lvert F\rvert^{2}$ of
+the line's field strength, a potential, and the gradient terms of the
+fibre warp $a$ and the dilaton $\QCD$. Two facts reduce it to a system with
+a single modulus.
+
+\paragraph{The fibre decouples from the jump.}
+$\CPtwo$ with the Fubini--Study metric and $\Stwo$ with the round metric
+are Einstein, $\mathrm{Ric}=(6/R_{c}^{2})g$ and $\mathrm{Ric}=(1/R_{w}^{2})g$
+(M1 Propositions~7.1, 7.2). For a warp depending only on the base
+coordinates the warped-product curvature \cite{BishopONeill1969} therefore
+contributes to the base equation only smooth scalar terms in $a$ --- a
+potential and a modification of the gradient term --- with no mixed
+base--fibre components. Smooth terms cannot change a jump condition at a
+cone point; they change the shape of the profile between cone points.
+The effective two-dimensional gravitational coefficient is the
+fibre-volume-weighted one,
+\begin{equation}\label{eq:kappa-eff}
+  \kappa_{2}^{2}\;=\;\frac{\kappa_{12}^{2}}{V_{4}\,\mathrm{Vol}_{0}\,e^{6a_{0}}}\,,
+  \qquad \mathrm{Vol}_{0}=\mathrm{Vol}(\CPtwo)\,\mathrm{Vol}(\Stwo)\,,
+\end{equation}
+with $V_{4}$ the external volume and $a_{0}$ the warp at the wall. \rigD
+
+\paragraph{The dilaton and the warp are one modulus.}
+On the solutions constructed below the dilaton's profile and the fibre
+warp are tied by \eqref{eq:a-Phi}, $a=-\zeta\QCD$, with $\QCD$ the
+canonically normalised modulus of the warped direction and $\QCD=1$ the
+configuration at the far wall. This is the definition of the
+normalisation of $\QCD$ on the base, and it is what makes the coupling
+$\zeta$ of \eqref{eq:master} and the exponent of \eqref{eq:kL-Npi} one
+number: a profile of $\QCD$ that falls by one unit across the half-period
+is a warp exponent that falls by $\zeta$. In the fossil form of this
+construction the transverse base length itself was written with the
+factor $e^{2\zeta\QCD}$ while the fibre carried $e^{2a}$; under
+\eqref{eq:a-Phi} these are two expressions of the same exponent and not
+two warps. \rigD
+%% Q16 reconciliation: Paper 2 §7.3 (a = −ζΦ, Φ = 1 boundary) adopted as the
+%% normalisation; Addendum eq. 8D-metric's e^{2ζΦ}dθ_ω² read as the same
+%% exponent on the transverse length. Flag: "canonically normalised" here
+%% means the normalisation that makes ΔΦ = 1 per half-period, fixed by the
+%% boundary configuration; M2-7 (bracket convention) remains with the PI.
+
+With these two facts \eqref{eq:2D} is the single-modulus system
+\begin{equation}\label{eq:2D-single}
+  S_{2}\;=\;\int_{\Ttwo/\Ztwo}\!\sqrt{g_{2}}\,
+  \Bigl[\frac{1}{2\kappa_{2}^{2}}R_{2}\;-\;\tfrac12\lvert F\rvert^{2}\;-\;V(a)\Bigr]\,,
+\end{equation}
+with $V(a)$ the bulk potential assembled from $\Lambda_{12}$, the fibre
+curvature and the dilaton potential, continuous on the base. It is the
+restriction of the Master Equation and not an axiom. \rigD
+
+\subsection{Bogomol'nyi completion}\label{sec:bps}
+
+Let $\theta$ be the base coordinate transverse to the wall on which the
+flux sits, and consider a static profile $a(\theta)$. The energy
+functional of \eqref{eq:2D-single} admits a completion of the square once
+$V(a)$ balances the geometric bulk terms,
+\begin{equation}\label{eq:square}
+  \mathcal{E}\;\propto\;\int\sqrt{g_{2}}\,
+  \Bigl(\partial_{\theta}a\;\pm\;\frac{\kappa_{2}^{2}}{2}\,\frac{\lvert F_{\psi\omega}\rvert}{\sqrt{g_{2}}}\Bigr)^{2}
+  \;\ge\;0\,,
+\end{equation}
+saturated when the square vanishes. The balance of $V$ against the bulk
+terms is the familiar one of warped five-dimensional models
+\cite{RS1999}; here it is not a tuning but the condition that
+$\Lambda_{12}$ be the value at which the base system admits a solution
+with the given topology, which is how $\Lambda_{12}$ is fixed in this
+series (Section~\ref{sec:action}). The negative root, a decaying warp,
+gives the first-order equation
+\begin{equation}\label{eq:bps}
+  \partial_{\theta}a\;=\;-\frac{\kappa_{2}^{2}}{2}\,\frac{\lvert F_{\psi\omega}\rvert}{\sqrt{g_{2}}}\,,
+\end{equation}
+and everything below is an exact consequence of it. \rigR\ (as a theorem of
+\eqref{eq:2D-single}); the balance condition is \rigD.
+%% Minimality Register M2-6 (Λ₁₂ by stationarity) is where the "tuning" lives.
+
+\subsection{Flux localisation and quantisation}\label{sec:flux}
+
+Dirac quantisation over the orbifold is $\frac{1}{2\pi}\int F=N$. For $N$
+units at the drive-fixed corner $P_{1}=(0,0)$ --- the one corner fixed by
+both the fold and the drive (M1 Propositions~4.3, 5.6) --- the density is
+\begin{equation}\label{eq:flux-density}
+  F_{\psi\omega}\;=\;N\pi\,\frac{\delta(\theta_{\psi})\,\delta(\theta_{\omega})}{\sqrt{g_{2}}}\,,
+\end{equation}
+checked directly: over the fundamental domain
+$\frac{1}{2\pi}\int F=N/2$, and the domain is half of the covering torus,
+so the total over the cover is $2\cdot N/2=N$ (\texttt{L5\_FD\_check}).
+\rigR
+
+\subsection{Solving the first-order equation}\label{sec:solve}
+
+Away from the corner the localised flux vanishes and the flow is driven by
+the constant bulk potential, giving the linear profile
+\begin{equation}\label{eq:bulk}
+  \partial_{\theta}a=-k\qquad\Longrightarrow\qquad a(\theta)=a(0)-k\lvert\theta\rvert\,;
+\end{equation}
+that the slope is constant between the walls is the boundary condition of
+the construction, and the fibre's smooth backreaction, absorbed in $V$,
+alters the shape between the walls without touching what follows. At the
+corner, integrating \eqref{eq:bps} across $[-\epsilon,\epsilon]$,
+\begin{equation}\label{eq:kink}
+  [\partial_{\theta}a]_{0}\;=\;-\frac{\kappa_{2}^{2}}{2}\int_{-\epsilon}^{\epsilon}\frac{\lvert F_{\psi\omega}\rvert}{\sqrt{g_{2}}}\,\mathrm{d}\theta
+  \;=\;-\kappa_{2}^{2}N\pi\,,
+\end{equation}
+exactly: each unit of flux contributes a kink of exactly $\kappa_{2}^{2}\pi$,
+and no smooth term contributes as $\epsilon\to0$. From \eqref{eq:bulk} the
+same kink is $a'(0^{+})-a'(0^{-})=-2k$, so
+\begin{equation}\label{eq:balance}
+  2k\;=\;\kappa_{2}^{2}\,N\pi\,.
+\end{equation}
+\rigR\ (the jump); \rigD\ (constant slope).
+%% Q16: jump exact, slope a boundary condition. Stated as such.
+
+\subsection{Gauss--Bonnet normalisation}\label{sec:gb}
+
+The half-period $L$ and the two-dimensional coupling are not independent.
+By Proposition~\ref{prop:chi-pillowcase} the total curvature $4\pi$ sits as
+$\pi$ at each corner; the normalisation connecting the deficit angles to
+the length of the domain fixes
+\begin{equation}\label{eq:kappa-fix}
+  \kappa_{2}^{2}\;=\;\frac{2}{L}\,,
+\end{equation}
+which, with \eqref{eq:kappa-eff}, is a relation among the scales of the
+geometry: $\kappa_{12}^{2}=2V_{4}\mathrm{Vol}_{0}e^{6a_{0}}/L$, the
+half-period measured in the gravitational unit weighted by the fibre
+volume. It is the one normalisation of this section and we tag it as
+such. \rigD
+%% Assumption 4 of the WP4 list: κ₂² = 2/L is reproduced as in Paper 2 / the
+%% Addendum, with eq:kappa-eff making it a scale relation. A derivation from
+%% the orbifold Gauss–Bonnet theorem with the e^{6a} weights would upgrade it
+%% to [R]; not supplied here. PI to confirm the reading.
+
+\subsection{The result}\label{sec:result}
+
+Substituting \eqref{eq:kappa-fix} in \eqref{eq:balance},
+$2k=(2/L)N\pi$, hence $kL=N\pi$, which is Theorem~\ref{thm:warp-exponent}
+(\texttt{L5\_balance}). The smallest case by hand: $N=1$, one unit at one
+corner, kink $\kappa_{2}^{2}\pi=2\pi/L$, rate $k=\pi/L$, exponent across
+the half-period exactly $\pi$; the general case is $N$ copies of this
+balance. Corollary~\ref{cor:zeta} is the composition with
+Proposition~\ref{prop:flux}: $\zeta=kL=\chi(\Keight)\pi=12\pi$
+(\texttt{L5\_zeta}). Three checks: (i) if the fundamental domain
+degenerates to $S^{1}/\Ztwo$ the two-form flux becomes a brane tension
+and \eqref{eq:kink} is the Israel junction condition of \cite{RS1999};
+(ii) the saturated configuration has positive-definite flux energy;
+(iii) $\partial_{\theta}a=-k<0$ between the walls, so the warp decreases
+monotonically. \rigR
+
+\subsection{Which direction, and the two sheets}\label{sec:direction}
+
+Nothing above depends on whether the transverse coordinate $\theta$ is
+$\theta_{\psi}$ or $\theta_{\omega}$: the normalisation \eqref{eq:kappa-fix}
+is applied per direction and \eqref{eq:kL-Npi} is direction-blind. The
+sheet exchange $\tau$ of Section~\ref{sec:handedness} fixes $P_{1}$ and
+$P_{4}$ and exchanges $P_{2}$ and $P_{3}$, the $\psi$- and
+$\omega$-half-periods (\texttt{L5\_tau\_corners}), so a profile transverse
+to the wall of one sheet is, under $\tau$, a profile transverse to the wall
+of the other. The exponent $12\pi$ is therefore $\tau$-symmetric, and
+calling the transverse period $L_{\omega}$ or $L_{\psi}$ is the choice of
+which sheet one calls $\psi$, the convention of M1 Appendix~B. What is not
+conventional is the aspect ratio: the two half-periods differ by
+$\tau_{2}=L_{\omega}/L_{\psi}=1.8466$ (M1 Proposition~8.2), so the rate $k$
+differs by $\tau_{2}$ between the sheets, and any quantity built from a
+period length rather than from the exponent depends on which sheet is
+described. In this series ``$L_{\omega}=12\pi$'' means the half-period
+transverse to the $\psi$-wall, in the sheet called $\psi$, in the unit of
+\eqref{eq:kappa-fix}. \rigD
+%% PI ruling Q15. Register entry 16 (Paper 2 θ_ω vs Addendum θ_ψ).
+
+\subsection{What is derived and what is read}\label{sec:summary4}
+
+The jump \eqref{eq:kink}, the balance \eqref{eq:balance}, the integers of
+Section~\ref{sec:integers} and the composition \eqref{eq:zeta} are
+theorems (\rigR). Read, and named: the placement of the twelve units on
+the base cycle (\rigD, Proposition~\ref{prop:flux}); the constant slope
+between walls (\rigD, boundary condition); the normalisation
+\eqref{eq:kappa-fix} (\rigD); the tie $a=-\zeta\QCD$ with $\QCD=1$ at the
+far wall (\rigD, the definition of the dilaton's normalisation); and the
+balance of $V$ as the determination of $\Lambda_{12}$ (\rigD). The value
+$\zeta=12\pi$ rests on these and on nothing outside this paper and M1.

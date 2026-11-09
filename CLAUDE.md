@@ -45,7 +45,7 @@ One work package per session, scoped by the paper's SOW/DAG (the live task list)
 
 ## 8. Gates (run on every commit of a paper; a failing gate does not merge)
 1. XeLaTeX three passes, zero errors, zero undefined references.
-2. Zero overfull boxes; margin scan clean (25 mm; only footer page numbers outside).
+2. Zero overfull boxes; margin scan clean (25 mm; only footer page numbers outside): ink more than 1 mm into the side or top margins, or more than 2 mm below the text block, fails; Lean listing frames count, so the template sets them inside the text block (P15).
 3. Lint: forbidden ω names; "I " voice outside acknowledgements; US spellings; hard-coded "Section~N"; any `\cite` of a MEF corpus paper; `!` in prose; bullets or boxes in prose.
 4. `lake build` of the paper's certificates under the repository toolchain (Lean 4.29.1, Mathlib present); grep for `sorry` and `^axiom` returns nothing; the certificates import no Mathlib module and must also compile standalone on core Lean.
 5. Every `\texttt{Lx_...}` named in the paper exists as a theorem in the paper's certificates.

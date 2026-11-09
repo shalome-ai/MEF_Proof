@@ -1,0 +1,78 @@
+%%=====================================================================
+%% mef_macros.tex
+%% Canonical macro set for the Master Equation Framework (MEF) series.
+%% Version: 1.0 (April 2026)
+%%
+%% Single source of truth for symbol notation across MEF papers.
+%% Derived from main.tex (thesis preamble) plus selected additions
+%% from Paper XVI (number sets and rigour-classification marks).
+%%
+%% Usage: place \input{mef_macros.tex} in the preamble of every MEF
+%% paper after the package loads but before \begin{document}.  Drift
+%% between papers is prevented by editing only this file.
+%%
+%% Companion file: mef_field_content_preamble.tex (Section 2 reader-
+%% orientation block).
+%%=====================================================================
+
+%% ---- Quantum Coherence Dilaton and its constituents ----
+\newcommand{\QCD}{\Phi_{\mathrm{QC}}}           % Quantum Coherence Dilaton (canonical)
+\newcommand{\consciousness}{\omega}             % consciousness coherence field
+\newcommand{\zetaval}{12\pi}                    % quantum coherence coupling = chi(K_8) * pi
+
+%% ---- Manifolds ----
+\newcommand{\Mtwelve}{\mathcal{M}_{12}}         % 12D parent manifold
+\newcommand{\Keight}{K_8}                       % 8D internal manifold
+\newcommand{\CPtwo}{\mathbb{CP}^2}              % complex projective plane
+\newcommand{\Stwo}{S^2}                         % 2-sphere
+\newcommand{\Ttwo}{T^2}                         % 2-torus
+
+%% ---- Discrete groups ----
+\newcommand{\Ztwo}{\mathbb{Z}_2}                % pillowcase orbifold group
+\newcommand{\Zfour}{\mathbb{Z}_4}
+
+%% ---- Spin^c and bundles ----
+\newcommand{\Spinc}{\text{Spin}^c}              % Spin^c structure
+\newcommand{\Oline}[1]{\mathcal{O}(#1)}         % line bundle of degree #1
+
+%% ---- Number fields (NB: \Q = mathbb Q is RATIONALS, not the dilaton; \QCD = \mathcal{Q} is the dilaton) ----
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+%% ---- Effective couplings, scales, moduli ----
+\newcommand{\Veff}{V_{\text{eff}}}
+\newcommand{\VCKM}{V_{\text{CKM}}}
+\newcommand{\lambdaC}{\lambda_C}
+\newcommand{\tautwo}{\tau_2}                    % stabilised aspect modulus
+\newcommand{\thetaW}{\theta_W}                  % Weinberg angle
+\newcommand{\Rw}{R_w}                           % S^2 radius (warped fibre)
+\newcommand{\Rc}{R_c}                           % CP^2 radius (Calabi-like)
+\newcommand{\Rfibre}{\mathcal{R}_{\text{fibre}}}
+\newcommand{\Cfibre}{C_{\mathrm{fibre}}}
+\newcommand{\Rsix}{\mathcal{R}_6}
+\newcommand{\Fsq}{\mathcal{F}^2}
+\newcommand{\centcorr}{\mathcal{C}_{32}}
+
+%% ---- Spin^c holonomy phases ----
+\newcommand{\Phiomega}{\phi_\consciousness}     % omega-axis holonomy
+\newcommand{\Phipsi}{\phi_\psi}                 % psi-axis holonomy
+
+%% ---- Arithmetic ----
+\newcommand{\dodd}{d_{\mathrm{odd}}}            % odd divisor function
+
+%% ---- Operators ----
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\Vol}{\mathrm{Vol}}
+\newcommand{\vol}{\mathrm{vol}}
+
+%% ---- Rigour-classification marks ----
+\newcommand{\rigmark}{\hfill\textbf{[Rigorous]}}
+\newcommand{\dermark}{\hfill\textbf{[Derived]}}
+\newcommand{\motmark}{\hfill\textbf{[Motivated]}}
+\newcommand{\gapmark}{\hfill\textbf{[Gap]}}
+\newcommand{\rigder}{\hfill\textbf{[Rigorous / Derived]}}
+\newcommand{\dergap}{\hfill\textbf{[Derived / Gap]}}
+
+%% ---- End of mef_macros.tex ----

@@ -10,7 +10,7 @@ The paper is `papers/Mx/` if that folder holds a main `.tex`, otherwise `canon/M
 | Gate | Checks | Needs |
 |---|---|---|
 | 1 | XeLaTeX three passes; zero errors; zero undefined references; page count against the stored PDF if there is one | XeLaTeX |
-| 2 | zero overfull boxes; no ink more than 1 mm into the 25 mm margin except the footer page number | gate 1's build; PyMuPDF |
+| 2 | zero overfull boxes; no ink more than 1 mm into the side or top margins, or more than 2 mm below the text block (the last line's depth), except the footer page number; Lean listing frames count (Decision Log P15) | gate 1's build; PyMuPDF |
 | 3 | forbidden ω names (`canon/omega-definition-usage_v2.md` §6a); "I" voice outside the acknowledgements; US spellings; hard-coded section numbers (a section of another Mx paper, e.g. "M1 §7", is allowed); `\cite` of an MEF corpus paper (keys in `sources/MEF-Bibliography.tex`, or a bibitem by Master that is not an Mx canon title); `!` in prose; bullets or boxes | — |
 | 4 | `lake build` of the paper's certificates; no `sorry`, no `axiom` (comments ignored); no Mathlib import; each file compiles standalone on core Lean | elan / Lake |
 | 5 | every `\texttt{Lx_...}` in the paper is a theorem in the paper's certificates; names found only in an earlier Mx paper's certificates pass as cross-references | — |
@@ -19,4 +19,4 @@ The paper is `papers/Mx/` if that folder holds a main `.tex`, otherwise `canon/M
 
 **PyMuPDF.** `python3 -m pip install --user pymupdf`.
 
-**Known results on the frozen papers (9 Nov 2026).** M1 and M2 pass gates 1, 4, 5. Gate 2 finds, in both, the Lean listing frames of Appendix A about 4.6 pt into the right margin (frame corners 3.5 pt below the block) and a few subscripts on a page's last line 3–5 pt below the block. Gate 3 finds four items in M1 (l.562 "coherence field"; l.58 "I" voice ×2; l.139 "toward") and none in M2.
+**Known results on the frozen papers (9 Nov 2026), accepted by the PI (P15).** M1 and M2 pass gates 1, 4, 5 (gate 1's page counts match the stored PDFs: 26 and 30). Gate 2 finds, in both, only the Lean listing frames of Appendix A, 4.6 pt into the right margin; they stay as frozen, and from M3 on the template sets the frames inside the text block. Gate 3 finds four items in M1, kept as they stand (l.562 "coherence field"; l.58 "I" voice ×2; l.139 "toward"), and none in M2.

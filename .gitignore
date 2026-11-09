@@ -17,6 +17,11 @@
 *.bbl
 *.blg
 *.synctex.gz
+# Mx series: the frozen canon and the papers in progress are tracked (Decision Log P15)
+!canon/**/*.tex
+!canon/**/*.pdf
+!papers/**/*.tex
+!papers/**/*.pdf
 
 # Internal working documents — not referee-facing
 *_workflow.md

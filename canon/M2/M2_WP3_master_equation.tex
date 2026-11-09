@@ -1,0 +1,374 @@
+%%=====================================================================
+%% M2 — WP3 / R3.1–R3.6 (RE-SCOPED, 8 Nov 2026): the field equation on M₁₂.
+%% SURGICAL FRAGMENT (insertion only; no preamble). UK English. "We".
+%% Under PI rulings Q1 (one gravitational term), Q8 (Riemannian; time =
+%% flow parameter), Q12 (induced Spin^c connection, no gauge coupling), and
+%% the re-scoped R3.1 (Φ_QC a dilaton on M₁₂ with coupling ζ; the warp is
+%% the geometry's response, a = −ζΦ; Paper 2's 2D system is the base
+%% restriction). Supersedes the withdrawn 4D-radion draft entirely (SOW §8).
+%% Depends on WP0 (def:scheme, def:riemannian, def:omega, prop:parity) and
+%% WP2 (sec:handedness). Placeholder: Section~\ref{sec:warp} = WP4 (warp exponent).
+%%=====================================================================
+
+\section{The field equation}\label{sec:equation}
+
+The purpose of this section is to write the action on $M_{12}$ that the
+axioms admit, to vary it, and to display the field equation that results.
+In plain terms: we write down the one number that every configuration of
+the shape and its fields is assigned, allow it to contain only what the
+axioms force or the smallest option they leave open, and ask for the
+configurations at which it does not change. The answer is Einstein's
+equation with one additional term, and the section says which axiom is
+responsible for each part: closure for the curvature and the vacuum term,
+order for the matter and the force field, growth and decay for the
+additional term. The equation is twelve-dimensional. Its restriction to
+the base of $\Keight$ is the system in which Section~\ref{sec:warp} derives
+the warp exponent, and its four-dimensional consequences are the subject
+of later papers of the series; neither is needed to state it. We announce
+the result.
+
+\begin{theorem}[the Master Equation]\label{thm:master}
+Under the action \eqref{eq:action} the metric of $M_{12}$ satisfies
+\begin{equation}\label{eq:master}
+\begin{gathered}
+  G_{MN}\;=\;8\pi G_{\mathrm{eff}}\,T_{MN}\;+\;\zeta\,T^{\QCD}_{MN}\;+\;\Lambda_{\mathrm{eff}}\,g_{MN}\,,\\
+  T^{\QCD}_{MN}\;\equiv\;\langle\nabla_{M}\QCD,\nabla_{N}\QCD\rangle_{M}-\tfrac12\,g_{MN}\,\langle\nabla\QCD,\nabla\QCD\rangle_{M}\,,
+\end{gathered}
+\end{equation}
+where $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$ is the dilaton of
+Definition~\ref{def:omega}, a section of the Clifford module $M\cong\Hquat^{32}$,
+$\langle u,v\rangle_{M}=\sum_{\alpha}\mathrm{Re}(u_{\alpha}\bar v_{\alpha})$ the
+module inner product, $\zeta$ the coupling, $T_{MN}$ the conserved
+stress tensor of the spinor sector of A3 together with the field strength
+of the $\Spinc$ line, $8\pi G_{\mathrm{eff}}=\kappa_{12}^{2}$, and
+$\Lambda_{\mathrm{eff}}$ collects the vacuum terms. The dilaton satisfies
+\begin{equation}\label{eq:dilaton}
+  \zeta\,\Box\QCD\;=\;V'(\QCD)\,,
+\end{equation}
+so that $\Box\QCD=0$ wherever the potential is stationary or absent.
+\end{theorem}
+
+In words, the tensor $T^{\QCD}_{MN}$ is built as follows. Take the rate of
+change of the dilaton in direction $M$ and the rate of change in direction
+$N$; these are each thirty-two quaternions, and their inner product over
+the module, summing the real parts of the products component by component,
+is a single real number $\langle\nabla_{M}\QCD,\nabla_{N}\QCD\rangle_{M}$. That is
+the first term: the stress the dilaton's variation puts between directions
+$M$ and $N$. The second term subtracts half the total squared rate of change
+of the dilaton, in all directions at once, spread evenly over the metric
+$g_{MN}$; it is the pressure the dilaton's gradient exerts isotropically. The
+difference is the standard stress tensor of a scalar field, familiar from
+every textbook, with the one change that the squares are inner products
+over the module. For a single real component it is exactly
+$\nabla_{M}\QCD\nabla_{N}\QCD-\tfrac12g_{MN}\lvert\nabla\QCD\rvert^{2}$.
+
+Read term by term, \eqref{eq:master} is Einstein's equation, $G_{MN}=8\pi G\,T_{MN}+\Lambda g_{MN}$,
+with the one additional term $\zeta T^{\QCD}_{MN}$. The curvature on the
+left and the vacuum term exist because the shape closes on itself (A1);
+the matter and force term $T_{MN}$ exists because order matters (A3) and
+the algebra of order acts on spinors; the additional term exists because
+the shape grows and decays as a function of itself (A2), its field being
+written on the two sheets of that law; and the two sheets are two, rather
+than one sheet and its reflection, because the shape never stands still
+(A4, Section~\ref{sec:handedness}). Einstein's equation is the case in
+which the second and fourth axioms are absent.
+
+Two readings are fixed now. By Definition~\ref{def:riemannian} the metric
+is positive-definite and every ``time'' statement below is a statement
+along the flow. And $\zeta$ in \eqref{eq:master} is a coupling constant of
+the twelve-dimensional theory; Section~\ref{sec:warp} derives its value, $12\pi$, as the
+exponent by which the warp of A2 falls across a half-period of the base
+when the geometry responds to the dilaton's profile. The number is one
+number seen in two places, and the equation displays it once.
+%% Re-scoped R3.1. The withdrawn 4D radion computation is not this object.
+
+\subsection{The action}\label{sec:action}
+
+\begin{definition}[the action on $M_{12}$]\label{def:action}
+\begin{equation}\label{eq:action}
+\begin{aligned}
+  S\;=\;\frac{1}{2\kappa_{12}^{2}}\int_{M_{12}}\!\sqrt{g}\,
+  \Bigl[\,R\;-\;2\Lambda_{12}\;-\;\tfrac14\,F_{MN}F^{MN}
+  \;-\;&\zeta\,\langle\nabla\QCD,\nabla\QCD\rangle_{M}\;-\;2V(\QCD)\Bigr]\\
+  &+\;S_{\mathrm{spinor}}[g,\Psi,A]\,,
+\end{aligned}
+\end{equation}
+with $F=\mathrm{d}A$ the curvature of the induced connection on the
+determinant line $L=K^{-1}$ (Section~\ref{sec:connection}), $\QCD$ the
+dilaton of Definition~\ref{def:omega}, $V$ its potential, and
+$S_{\mathrm{spinor}}$ the Dirac action of the $\Spinc$ spinor of A3 on the
+bundle of M1 Proposition~7.3.
+\end{definition}
+%% CONVENTION RULED (PI, 9 Nov 2026, M2-7): the Φ kinetic term sits inside
+%% the 1/2κ² bracket with coefficient ζ; this reproduces the canonical display
+%% with no κ² on T^Φ. CFM v12 l.1525's −½ζ outside the bracket is the
+%% superseded normalisation (Corpus Errors entry 20).
+
+In words: the number $S$ assigned to a configuration is the integral over
+the whole twelve-dimensional shape of five contributions, all weighted by
+the volume element $\sqrt{g}$ and divided by twice the gravitational
+constant $\kappa_{12}^{2}$. The first, $R$, is the scalar curvature --- how
+much the shape bends at each point. The second, $-2\Lambda_{12}$, is the
+energy of empty volume, a constant per unit volume. The third,
+$-\tfrac14F_{MN}F^{MN}$, is the energy of the field strength of the
+$\Spinc$ line, the one abelian field the geometry carries. The fourth,
+$-\zeta\langle\nabla\QCD,\nabla\QCD\rangle_{M}$, is the energy stored in the
+dilaton's variation from point to point, the module inner product of its
+gradient with itself, multiplied by the coupling $\zeta$. The fifth,
+$-2V(\QCD)$, is the potential energy of the dilaton's value. Added to all
+of these is the action of the spinor field of the third axiom, the Dirac
+action $S_{\mathrm{spinor}}$, which depends on the metric, the spinor
+$\Psi$ and the connection $A$. Each term is accounted for by an axiom or a
+reading, and we go through them.
+
+\paragraph{One gravitational term.}
+By A1 the domain is compact without boundary (M1 Definition~2.1), so the
+action has no boundary terms and its stationary points are Euler--Lagrange
+equations with no boundary data \cite{Wald}. The divergence-free symmetric
+tensors built from the metric and two derivatives in twelve dimensions
+form the five-term Lovelock family \cite{Lovelock1971}; every term beyond
+the first carries an independent dimensionful coefficient, an unforced
+datum under criterion~(1) of M1 Definition~3.2, excluded on the ground that
+excluded the twisted $\Spinc$ lines in M1 Proposition~7.3. The Einstein
+term survives because without it there is no equation; its coefficient is
+the declared scale of M1 Theorem~8.1. Once one term linear in second
+derivatives is admitted its uniqueness holds in every dimension
+\cite{Vermeil1917,Weyl1922,Cartan1922}. \rigD
+%% PI ruling Q1.
+
+\paragraph{The connection of the line.}\label{sec:connection}
+M1 Proposition~7.3 selects the $\Spinc$ structure induced by the
+almost-complex structure of A3's selected unit, with determinant line
+$L=K^{-1}$ (M1 Definition~2.5). The connection on $L$ is part of the
+geometry's own data, and its field strength is the one abelian field
+strength the geometry carries. Its energy therefore enters
+\eqref{eq:action} inside the gravitational bracket, weighted by
+$1/2\kappa_{12}^{2}$: a separate gauge coupling for a connection the
+geometry already owns would be an unforced datum, excluded by
+criterion~(1). What is \emph{not} fixed by the metric is the flux: the
+quanta of $F$ through the cycles of $\Keight$ are topological data, with
+total $N=\chi(\Keight)$ by the tadpole condition (Section~\ref{sec:warp}), and they sit
+on the base cycle because it is the only cycle with cone points at which a
+localised flux can satisfy the first-order equation of Section~\ref{sec:warp}. \rigD
+%% PI rulings Q12/Q14 (weak (c), 8 Nov 2026). Consistent with CFM v12 l.1419
+%% (Maxwell term inside the bracket) and Paper I Addendum §4.4–4.6 (κ²_{2,eff}
+%% = κ₈²/(Vol₀ e^{6A₀}); twelve units on the base cycle). The identification
+%% F = Ricci form, briefly adopted, is withdrawn (Minimality Register M2-2).
+
+\paragraph{The dilaton term, and why the sheets enter through $\QCD$ alone.}
+The fundamental fields are the sheets $\psi,\bar\psi$ and the Coherent
+Field $\omega$ (Section~\ref{sec:variables}); the spinor's own dynamics are
+the Dirac action in $S_{\mathrm{spinor}}$. The dilaton
+$\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$ is composite and module-valued, so a
+two-derivative term in it is a particular interaction among the
+fundamental fields and their gradients, and writing it as the only such
+term is a statement: the geometry couples to the sheets through $\QCD$ and
+through nothing else. Which quadratic form in $\nabla\QCD$ appears is not a
+further choice: the invariant symmetric forms on an irreducible
+quaternionic-unitary module form a one-dimensional space, so covariance
+under the fibre algebra forces the module inner product
+$\langle\nabla_{M}\QCD,\nabla_{N}\QCD\rangle_{M}$ --- the trace of the square,
+not the square of the trace. For a vacuum symmetric under the module the
+trace is $32$ times a single component, and the three readings of
+``$\zeta\nabla\QCD\nabla\QCD$'' for a module-valued field --- one component,
+the trace, the square of the trace --- carry the weights $1$, $32$ and $1024$
+(\texttt{L7\_three\_readings}); only the second is covariant. \rigR
+We adopt this by the standing principle of Section~\ref{sec:readings}, and
+the reason it is the minimal coupling is Proposition~\ref{prop:parity}. If curvature is to respond to the sheets
+through a scalar that is even under the fold and vanishes both where the
+sheets coincide and where growth stands against decay, $\QCD$ is the unique
+lowest-order candidate, and $\lvert\nabla\QCD\rvert^{2}$ is then the unique
+two-derivative term with those properties; the competing terms fail the
+vanishing conditions ($\lvert\nabla\omega\rvert^{2}$ does not vanish at
+$\psi=\bar\psi$; $\lvert\nabla\psi\rvert^{2}$ vanishes nowhere). This is
+A2 read on the metric: the geometry grows and decays in response to the
+asymmetry of the sheets weighted by their coherence, and to nothing else.
+$\zeta$ is the strength of that one coupling and is never absorbed into a
+redefinition of the field. \rigD\ (minimality)
+%% The corpus posits S_Φ (CFM l.1525; Paper 2 §7.3 "microscopic origin a
+%% separate question"). M2 names the step and gives the parity theorem as
+%% its reason. Tagged [D]: minimal, not the only conceivable, coupling.
+
+\paragraph{The potential and the vacuum term.}
+$\Lambda_{12}$ is the energy of empty twelve-volume; $V(\QCD)$ is the
+dilaton's potential, whose form on the base is obtained in Section~\ref{sec:warp} from
+the fibre curvature and $\Lambda_{12}$ when the action is evaluated on the
+warped configuration. Neither is a free parameter of this paper:
+$\Lambda_{12}$ is fixed by the requirement that the base system of
+Section~\ref{sec:warp} admit a solution with the given topology, and $V$ is derived
+there. Earlier work in the programme took $\Lambda_{12}=0$ as an axiom of
+the construction; in this series that statement is the case in which the
+solvability condition returns zero, to be established or refuted where the
+fibre radii are derived, and it is not assumed here. \rigD
+%% PI ruling (Λ₁₂ by stationarity, 8 Nov 2026).
+
+\subsection{Variation}\label{sec:variation}
+
+\begin{proof}[Proof of Theorem~\ref{thm:master}]
+Varying \eqref{eq:action} with respect to $g^{MN}$,
+\begin{equation}\label{eq:var}
+\begin{aligned}
+  G_{MN}+\Lambda_{12}g_{MN}
+  \;=\;&\zeta\Bigl(\langle\nabla_{M}\QCD,\nabla_{N}\QCD\rangle_{M}-\tfrac12 g_{MN}\langle\nabla\QCD,\nabla\QCD\rangle_{M}\Bigr)
+  \;-\;V(\QCD)\,g_{MN}\\
+  &+\;\tfrac12\Bigl(F_{MP}F_{N}{}^{P}-\tfrac14 g_{MN}F^{2}\Bigr)
+  \;+\;\kappa_{12}^{2}\,T^{\mathrm{sp}}_{MN}\,,
+\end{aligned}
+\end{equation}
+where $T^{\mathrm{sp}}_{MN}=-\frac{2}{\sqrt g}\frac{\delta S_{\mathrm{spinor}}}{\delta g^{MN}}$.
+The first bracket is $T^{\QCD}_{MN}$ with coefficient $\zeta$ and nothing
+else; it is the canonical stress tensor of a module-valued scalar, the
+trace over $M$ of the scalar form, and its form is forced by the kinetic
+term, not chosen. For a single component it reduces to
+$\nabla_{M}\QCD\nabla_{N}\QCD-\tfrac12g_{MN}\lvert\nabla\QCD\rvert^{2}$, which is
+the display the programme has used; every value of $\langle\QCD\rangle$ in
+later papers is a trace over the thirty-two components. Writing
+$8\pi G_{\mathrm{eff}}T_{MN}\equiv\kappa_{12}^{2}T^{\mathrm{sp}}_{MN}+\tfrac12(F_{MP}F_{N}{}^{P}-\tfrac14g_{MN}F^{2})$
+and $\Lambda_{\mathrm{eff}}g_{MN}\equiv-\bigl(\Lambda_{12}+V(\QCD)\bigr)g_{MN}$
+gives \eqref{eq:master}. Varying with respect to $\QCD$ gives
+\eqref{eq:dilaton}. \rigR
+\end{proof}
+
+The identification of $\Lambda_{\mathrm{eff}}$ carries the dilaton's
+potential, so it is constant only where $V$ is stationary; this is the
+reading under which the canonical display and \eqref{eq:dilaton} are
+consistent, as the next proposition shows.
+
+\begin{proposition}[consistency]\label{prop:bianchi}
+$\nabla^{M}T^{\QCD}_{MN}=\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}$. Hence the contracted
+Bianchi identity, the conservation of $T_{MN}$ and \eqref{eq:master} imply
+\[
+\zeta\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}=\nabla_{N}V=\langle V'(\QCD),\nabla_{N}\QCD\rangle_{M}\,,
+\]
+which is \eqref{eq:dilaton} on the support of $\nabla\QCD$; and where
+$V'=0$, $\Box\QCD=0$ there. The computation is componentwise and the trace
+is linear.
+\end{proposition}
+
+\begin{proof}
+Take the divergence of the stress tensor, that is, contract its first
+index with a derivative. The first term, the inner product of two
+gradients, gives by the product rule two pieces: the Laplacian of the
+dilaton paired with its gradient, $\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}$,
+and the gradient paired with the second derivative,
+$\langle\nabla^{M}\QCD,\nabla_{M}\nabla_{N}\QCD\rangle_{M}$. The second term,
+half the squared gradient spread over the metric, gives on differentiation
+$\langle\nabla^{M}\QCD,\nabla_{N}\nabla_{M}\QCD\rangle_{M}$, the gradient
+paired with the second derivative in the other order. For a scalar the two
+orders of covariant differentiation agree, so those two pieces cancel and
+only $\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}$ survives:
+\begin{align*}
+\nabla^{M}\bigl(\langle\nabla_{M}\QCD,\nabla_{N}\QCD\rangle_{M}\bigr)-\tfrac12\nabla_{N}\langle\nabla\QCD,\nabla\QCD\rangle_{M}
+&=\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}\,.
+\end{align*}
+Now take the divergence of both sides of \eqref{eq:master}. The left side
+vanishes by the contracted Bianchi identity, the geometric fact that the
+Einstein tensor is automatically divergence-free. The matter term vanishes
+because $T_{MN}$ is conserved (Section~\ref{sec:matter}). The vacuum term
+contributes the gradient of $\Lambda_{\mathrm{eff}}$, which is the gradient
+of $-V(\QCD)$, that is $-\langle V'(\QCD),\nabla_{N}\QCD\rangle_{M}$. What is
+left is
+\[
+\zeta\langle\Box\QCD,\nabla_{N}\QCD\rangle_{M}=\langle V'(\QCD),\nabla_{N}\QCD\rangle_{M}\,,
+\]
+which is \eqref{eq:dilaton} wherever the dilaton is actually varying; and
+where the potential is flat, $V'=0$, it says the dilaton satisfies the wave
+equation $\Box\QCD=0$ there. The computation is componentwise and the trace
+is linear, so nothing changes in passing from one component to the module.
+\rigR
+\end{proof}
+%% The F1 note's "□Φ = 0 on supp ∇Φ" is the V' = 0 case; flag for the note.
+
+\begin{proposition}[the dilaton stress tensor along the flow]\label{prop:stiff}
+Let $\QCD$ depend only on the flow parameter $s$ of A4. In an orthonormal
+frame $(\partial_{s},e_{1},\dots,e_{11})$ the tensor $\zeta T^{\QCD}$ is
+diagonal with
+\begin{equation}\label{eq:stiff}
+  \zeta T^{\QCD}_{ss}=\tfrac12\zeta\langle\dot\QCD,\dot\QCD\rangle_{M}\,,\qquad
+  \zeta T^{\QCD}_{ii}=-\tfrac12\zeta\langle\dot\QCD,\dot\QCD\rangle_{M}\quad(i=1,\dots,11)\,.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+If the dilaton depends only on the flow parameter, its gradient points
+along the flow and nowhere else: $\nabla\QCD=\dot\QCD\,\partial_{s}$, where
+the dot is the derivative along the flow. Its squared length is then just
+$\langle\dot\QCD,\dot\QCD\rangle_{M}$. In the component along the flow the
+first term of the stress tensor contributes the whole of that, and the
+second term subtracts half of it, leaving a half. In any direction
+transverse to the flow the first term contributes nothing, because the
+gradient has no component there, and the second term subtracts half the
+squared length, leaving minus a half. Off-diagonal components vanish for
+the same reason (\texttt{L2\_flow\_components}). \rigR
+\end{proof}
+
+The reading. In a Lorentzian presentation, with the flow parameter
+continued to a signed time, the two entries of \eqref{eq:stiff} are an
+energy density and an isotropic pressure with
+$\rho_{\QCD}=p_{\QCD}=\tfrac12\zeta\langle\dot\QCD,\dot\QCD\rangle_{M}$, the stiff equation of
+state, and \eqref{eq:dilaton} with $V'=0$ gives $\rho_{\QCD}\propto a^{-6}$
+on an isotropic background. These are the statements the programme uses.
+Under Definition~\ref{def:riemannian} they are the components
+\eqref{eq:stiff} read along the flow, the transverse sign carried by the
+continuation; the equation is \eqref{eq:master} in either reading. \rigD
+
+\subsection{The base restriction}\label{sec:base-restriction}
+
+Section~\ref{sec:warp} works on the base $\Ttwo/\Ztwo$ with the fibre warped. We record
+here, so that Section~\ref{sec:warp} may cite it, what the Master Equation becomes
+there. Evaluate \eqref{eq:action} on the configuration of
+Definition~\ref{def:scheme}: metric $g_{4}+e^{2a(\theta)}\hat g_{6}+g_{2}(\theta)$,
+dilaton $\QCD=\QCD(\theta)$, the connection induced. The fibre volume
+contributes $e^{6a}$, its curvature $e^{-2a}\hat R_{6}$, and the
+warped-product scalar curvature contributes the gradient terms of $a$
+\cite[Ch.~7]{ONeill1983}; the result is a two-dimensional action on the
+base of the form
+\begin{equation}\label{eq:2D}
+  S_{2}\;=\;\int_{\Ttwo/\Ztwo}\!\sqrt{g_{2}}\,
+  \Bigl[\frac{1}{2\kappa_{2}^{2}}R_{2}\;-\;\tfrac12\lvert F\rvert^{2}
+  \;-\;\mathcal{V}(a,\QCD)\;-\;\mathcal{K}(a,\nabla a,\nabla\QCD)\Bigr]\,,
+\end{equation}
+with $\kappa_{2}^{-2}$ the fibre-volume-weighted gravitational
+coefficient, $\mathcal{V}$ the potential assembled from $\Lambda_{12}$,
+$\hat R_{6}$ and $V(\QCD)$ with the weights $e^{6a}$ and $e^{4a}$, and
+$\mathcal{K}$ the gradient terms of $a$ and $\QCD$. The warp of A2 is the
+geometry's response to the dilaton: on the solutions of Section~\ref{sec:warp} the two
+profiles are tied by
+\begin{equation}\label{eq:a-Phi}
+  a\;=\;-\zeta\,\QCD\,,
+\end{equation}
+with $\QCD$ falling by one unit across a half-period, so that the warp
+exponent across the half-period is $\zeta$ and \eqref{eq:2D} collapses to
+the single-modulus Einstein--Maxwell system with potential that Section~\ref{sec:warp}
+solves. That system is therefore the base restriction of
+\eqref{eq:master}, not an axiom. \rigD
+%% Discharges Paper 2's Σ-2 as a restriction of the Master Equation. The
+%% relation eq:a-Phi is Paper 2 §7.3's definition of Φ as the modulus of the
+%% warped direction, here read as the solution relation; its derivation as a
+%% property of the solutions, with the boundary configuration Φ = 1, is in
+%% Section 4 (WP4), which reproduces Paper 2 §4 on this footing.
+
+\subsection{The matter sector}\label{sec:matter}
+
+$T_{MN}$ in \eqref{eq:master} is the stress tensor of the $\Spinc$ Dirac
+field of A3 on the bundle with $L=\mathcal{O}(3)$ (M1 Proposition~7.3) with
+the Clifford action of the fibre algebra (M1 Definition~2.5), together
+with the field strength of the induced connection. The one property of
+$T_{MN}$ used in this paper is its conservation, which follows from the
+diffeomorphism invariance of $S_{\mathrm{spinor}}$ on the closed manifold
+$M_{12}$ (A1) by the standard argument \cite{Wald}; for the field strength
+it is the Bianchi identity $\mathrm{d}F=0$ and the Maxwell equation. The
+content of $T_{MN}$, its decomposition into generations and its masses,
+belongs to later papers of the series and is not opened here. \rigD
+
+\subsection{What is derived and what is read}\label{sec:summary3}
+
+The form of \eqref{eq:master} is a theorem of the action \eqref{eq:action}
+(\rigR). The action is fixed by one derivation and three readings: the
+single gravitational term (minimality, \rigD), the induced connection
+(\rigD), the coupling of the geometry to the sheets through $\QCD$ alone
+(\rigD, with Proposition~\ref{prop:parity} as its reason), and the
+Riemannian metric with time along the flow (Definition~\ref{def:riemannian}).
+The coupling $\zeta$ is a constant of the theory whose value is derived in
+Section~\ref{sec:warp}; the relation \eqref{eq:a-Phi} between the warp and the dilaton
+is a property of the solutions established there.
