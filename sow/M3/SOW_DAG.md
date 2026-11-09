@@ -1,6 +1,6 @@
 # SOW + DAG v1 — Paper M3: Which axioms survive — an audit of the twenty axioms of the programme against the four
 
-**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** PROPOSED; opens when the PI freezes M2. Written for Claude Code; the first session lists assumptions against this document and waits.
+**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** OPEN — M2 frozen 9 Nov 2026 (Decision Log P11); WP0 not started. Written for Claude Code; the first session lists assumptions against this document and waits.
 
 ## 0. Rulings consumed (Decision Log, 8–9 Nov 2026)
 - **Σ-5 (the Shadow Principle):** attempt its derivation from A1 first; fallback: establish it as the series' one declared axiom with the Gödel-boundary argument (𝓜-4) as justification.

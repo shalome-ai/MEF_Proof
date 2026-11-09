@@ -21,7 +21,7 @@ Then read, in this order: this file; `sow/Mx_Series_SOW.md`; the current paper's
 - **When the architect finds a "contradiction" in a canonical [R] result, the first hypothesis is that the architect's reading is wrong.** Stop and report the reading; do not build a test of the system you think is failing.
 
 ## 3. The canon and the island rule
-- `canon/M1/`, `canon/M2/`, … hold the frozen papers of the series with their certificates. **A paper Mx may cite only M1…M(x−1) and external peer-reviewed results.** No MEF corpus paper (I–XXV, 1–6, GBH, D, U, YM, Tau2) is ever cited; their content is reproduced in-document or placed on a declared Σ-axiom. The old papers are read-only inputs the PI supplies; they are not in this repository as sources.
+- `canon/M1/`, `canon/M2/`, … hold the frozen papers of the series with their certificates. **A paper Mx may cite only M1…M(x−1) and external peer-reviewed results.** No MEF corpus paper (I–XXV, 1–6, GBH, D, U, YM, Tau2) is ever cited; their content is reproduced in-document or placed on a declared Σ-axiom. The old papers are read-only inputs the PI supplies, held locally in `sources/` (their `.tex` files are not tracked by git); they are never cited.
 - The ledger `ledger/M-Derivation-Proof-Ledger.md` is the source of truth for *where* a result lives and at *what rigour*. Ledger first, then the paper.
 - Rigour tags: [R] proved or cited standard theorem · [D] derived from tagged inputs, hypotheses named · [M] mechanism identified, derivation incomplete · [G] open. Verb discipline: prove/derive/compute/show only for [R]/[D]; argue/propose/identify/observe for [M]/[G].
 
@@ -37,9 +37,11 @@ Five numbered readings: M1's four and M2's fifth (positive-definite metric; time
 - `Corpus_Errors_Register.md` — discrepancies found in the old corpus while building; PI banks.
 - `Future_Mx_Register.md` — derivations deferred to a later paper, with the owing paper named.
 - Claude proposes register and ledger entries; the PI banks. Claude never edits `canon/` or the ledger's BANKED rows silently.
+- **The registers and the ledger are edited only in this repository** (Decision Log P13). Claude proposes; the PI banks by commit. Chats do not carry copies: a chat's proposal comes into the repository as a proposal and is banked here.
+- `registers/records/` holds verbatim records the PI directs to be kept (e.g. `2026-11-09_M2-9_modulus_squared.md`).
 
 ## 7. Session discipline
-One work package per session, scoped by the paper's SOW/DAG (the live task list). End every session by writing `papers/Mx/HANDOVER.md`: what was built, what is open, what needs a ruling — and nothing else. **No physics proposals in a handover.** Sub-agents are permitted only when scoped to a single SOW node and returning through the same ⏸ discipline; a paper is never "finished" unattended.
+One work package per session, scoped by the paper's SOW/DAG (the live task list). End every session by writing `papers/Mx/HANDOVER.md`: what was built, what is open, what needs a ruling — and nothing else. **Keep `sow/Mx_Series_SOW.md` current** (Decision Log P14): at the end of every session update its Status column (canon / current / planned / blocked) and its open items. **No physics proposals in a handover.** Sub-agents are permitted only when scoped to a single SOW node and returning through the same ⏸ discipline; a paper is never "finished" unattended.
 
 ## 8. Gates (run on every commit of a paper; a failing gate does not merge)
 1. XeLaTeX three passes, zero errors, zero undefined references.
