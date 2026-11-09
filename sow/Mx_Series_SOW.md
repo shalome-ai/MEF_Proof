@@ -1,6 +1,6 @@
 # The Mx series — order, dependencies, what each paper proves, and its sources
 
-**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 from the M2 build chat · **Status:** PROPOSED (order of M3 onward agreed in discussion; each paper's SOW/DAG is written when the paper is opened). This is not a detailed SOW; it is the spine. Each entry carries the three fields the Canon Reading Map will be written from: *rationale*, *what it proves*, *what peer review is asked*.
+**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 from the M2 build chat · **v1.1, 9 November 2026:** M14–M25 added by PI ruling (amendment accepted; Decision Log P8, P9) · **Status:** RULED order M1–M25; each paper's SOW/DAG is written when the paper is opened. This is not a detailed SOW; it is the spine. Each entry carries the three fields the Canon Reading Map will be written from: *rationale*, *what it proves*, *what peer review is asked*.
 
 **Governing rules.** Mx cites only M1…M(x−1) and external results (island rule). Every paper carries its SOW/DAG, its certificates, its Minimality entries, and goes into `canon/Mx/` when the PI freezes it. Order is forced by consumption: nothing is used before the paper that derives it. The old MEF papers are read-only sources, reproduced not cited.
 
@@ -25,8 +25,20 @@
 | M11 | The Schwarzschild interior from the twelve-dimensional lift | M2 | Selection of the quiescent scalar amplitude by causal completeness; the dichotomy; M3 says whether the completeness axiom is A1 | GBH1 v10 | planned |
 | M12 | Hawking spectra: arithmetic microstructure | M4, M11 | d_odd(n) comb in the Hawking spectrum; ϑ_H effective modulus | Paper 5 | planned |
 | M13 | The gauge couplings and the weak mixing angle | M7, M8 | sin²θ_W derived, iff the cross-sector R̂_c inconsistency (×7, F-100) is resolved; the two-coefficient structure (route b) | Paper 6 §weinberg; Paper XVI; τ₂ programme D4′ | planned — **not writeable until F-100 resolves** |
+| M14 | The fine-structure constant | M13, M4 | α⁻¹(M_c) = topological intersection weight / global flux budget; running to low energy by the SM equations; no free parameter | Paper XVI v7 | Companion of M13; the normalisation constant is the step to test. Shares M13's blocker (R̂_c, F-100) in part |
+| M15 | The geometric Higgs mechanism | M7, M9 | Gauss–Bonnet forbids the naive KK Higgs mass; Mexican hat from bulk tension vs quantised S² flux; μ², λ, v, m_H from the radii | Paper VI v11 | M9 identifies the Higgs field with the dilaton's phase; M15 derives the potential — check the two are one story before writing |
+| M16 | Wavefunction collapse | M2, M4 | Collapse = relaxation of metric tension across the pillowcase; t_coll(Φ) from the stiffness S(Φ) with no free parameter; Born weights from corner geometry | Paper VII v4 | First gradient-active use of ζT^Φ: the kinetic coefficient question (M2-7 convention) must be fixed before this paper |
+| M17 | The dark matter ratio | M5, M10 | Ω_DM/Ω_b ≈ 5.36 from the Spin^c holonomy phase 5π/12 across the ψ-axis acting on the hypercharge line alone | Paper VIII v6 | The phase is also M8's CP phase; derive once in M8, consume here |
+| M18 | Cosmology: S³ space, Sol time, JWST | M10, M17 | L_BAO = e^{−3π/2}√(3/Λ) ≈ 146 Mpc; r_s/d_eq ≈ τ₂ (**note:** Paper X uses 1.86 and the pillowcase ratio; under M7 the fibre ratio is 1.8466 and the pillowcase ratio is dynamical — re-derive); t_align = 2t_dyn from the Anosov coupling | Paper X v5 | Paper X l.533 ("monodromy acts on two directions within ℂP²") already flagged in the τ₂ programme as garbled |
+| M19 | Cristae and compactification | M1, M4 | Crista lumen as a 3D cavity with the pillowcase's proportions; fundamental mode ≈ 822 nm at CCO Peak 2 (1%) | Paper XII v2 | State the falsifier explicitly |
+| M20 | The biocentric fixed point | M5, M19 | Fold = molecular inversion; P₁ = L-sector (SM), shadow = D-sector; P₃ (phase i) the biological fixed point; neurotransmitter architecture on it | Paper XIII v3 | Under M2's corner labelling P₃ = C_i; check Paper XIII's P₃ is the same corner (M1 App. B convention) |
+| M21 | Chirality maintenance and enantiomeric pharmacology | M20, M16 | Homochirality actively maintained by the ZPF in mitochondrial cavities, parameter β_bio (renamed from τ₂^bio per R-τ7); four testable chirality signatures | Paper XIV v2 | Uses the τ₂ programme's rename |
+| M22 | Hilbert's programme and the completion of foundations | M3, M5 | Hilbert worked in the real sector; incompleteness is the shadow of a complete object; the programme carried out in the two-sector setting | Paper XXIV v4 | Written as argument; M23–M25 are its test |
+| M23 | Yang–Mills existence and mass gap | M4, M5, M22 | 4D theory as reduction of the 12D one; OS axioms via d_odd arithmetic; Mock Modular BRST (ξ-operator as nilpotent charge); gap = 1 | Paper XVII v6 | Admitted by PI ruling 9 Nov 2026 |
+| M24 | Navier–Stokes existence and smoothness | M5, M22 | velocity field = holomorphic projection of a smooth harmonic Maass form; Im τ ∝ ν > 0 confined by the fold; smoothness inherited | Paper XVIII v7 | Admitted by PI ruling 9 Nov 2026 |
+| M25 | The Riemann Hypothesis | M5, M22, M1 (Sol) | zeros = projection artefacts of the GL(3) Eisenstein completion at diag(φ², 1, φ⁻²); critical line by the Sol conservation law | Paper XIX v6 | Admitted by PI ruling 9 Nov 2026 |
 
-**Not in the series unless the PI rules otherwise:** the conditional Clay derivations (YM, NS, RH) — archived per project instructions; if admitted they come after M5.
+**Admitted by PI ruling 9 Nov 2026 (P8):** the three Millennium papers as M23–M25, after Hilbert's programme (M22); this supersedes the project's archive rule for the Mx series only.
 
 ---
 
@@ -43,9 +55,14 @@ M1 ─► M2 ─► M3 (audit; sets the remaining targets)
  │             └─► M10 (Λ) 
  │     M2 ─► M11 (BH) ─► M12 (Hawking; also needs M4)
  └──────────────────────► M13 (Weinberg; needs M7, M8; blocked on F-100)
+
+M13 ─► M14            M7, M9 ─► M15
+M2, M4 ─► M16 ─► M21  M5, M10 ─► M17 ─► M18
+M1, M4 ─► M19 ─► M20 ─► M21
+M3, M5 ─► M22 ─► M23, M24, M25   (M23 also M4; M25 also M1's Sol element)
 ```
 
-Critical path for the physics: M2 → M7 → M8 → M9. Critical path for the mathematics: M2 → M4 → M5. M3 gates both by fixing what each must derive.
+Critical path for the physics: M2 → M7 → M8 → M9 → M13. Critical path for the mathematics: M2 → M4 → M5 → M22. M3 gates both by fixing what each must derive. The canon's reading order (P9) is M1–M25 as tabled; the Canon Reading Map follows it.
 
 ---
 
@@ -53,8 +70,15 @@ Critical path for the physics: M2 → M7 → M8 → M9. Critical path for the ma
 
 Each paper's entry in the Map has: **Rationale** (the plain-English question the paper answers and why it comes where it does); **What it proves** (the headline above, in words a first-year reads); **What is asked of peer review** (the specific steps a referee should test — the readings, the minimality choices, the certificates to run). Preface note: the first number the framework ever produced — the weak mixing angle — is the last the canon derives, because it depends on everything else.
 
+## Flags from the 9 Nov reading of the M14–M25 sources (to the Corpus Errors register when each paper opens)
+- Paper VIII, X, XVI, VI all cite `\tau_2 = 1.86` or use the pillowcase ratio for the fibre ratio; all to be re-read under M7 (τ₂ = 1.8466 fibre; ρ_T(t) pillowcase).
+- Paper X l.533 (monodromy on ℂP²) — already F-flagged in the τ₂ programme.
+- Paper XIV uses τ₂^bio — renamed β_bio (R-τ7).
+- Paper VIII's phase 5π/12 = π/12 + π/3 is credited to Paper V §8; under M2 the base contribution is the corner deficit structure — re-derive in M8 and check the fibre term π/3 against the ℤ₃ centre argument.
+
 ## Open items at seeding
 - Freeze of M2 v1 (PI).
-- M3 SOW/DAG (`sow/M3/SOW_DAG.md`) — written with this file.
+- M3 SOW/DAG (`sow/M3/SOW_DAG.md`) — written.
+- Canon Reading Map draft v0.1 (`canon/Reading_Map/`) — written against this order.
 - Register §18: the corpus's "disjoint support" wall picture to be re-expressed in τ's terms wherever consumed (M7, M8, M9).
 - Minimality M2-7 (ζ bracket convention) and M2-9 (square vs modulus in Φ) — PI to fix once, series-wide.

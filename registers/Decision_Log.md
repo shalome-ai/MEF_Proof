@@ -47,3 +47,5 @@ Every PI ruling, with date, paper and node. Written the moment the ruling is mad
 | P5 | One Decision Log for the series. |
 | P6 | M3 = the axiom audit; Σ-5 from A1 attempted first, fallback the one declared axiom with the Gödel-boundary justification; Σ-P/S/T retired to derivation targets (returning to the axiom list only on documented failure). |
 | P7 | Canon published on Zenodo in one go, linked to GitHub; a Canon Reading Map in first-year language fronts it. |
+| P8 | 9 Nov 2026 | The three Millennium papers (YM, NS, RH) admitted to the Mx series as M23–M25, after Hilbert's programme (M22); supersedes the project archive rule for the series only. |
+| P9 | 9 Nov 2026 | The canon's reading order fixed as M1–M25 per `sow/Mx_Series_SOW.md` v1.1; the Canon Reading Map follows it. SOW amendment M14–M25 accepted as tabled. |
