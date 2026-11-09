@@ -25,3 +25,9 @@
 
 ## F-2. Targets registered in the M-Derivation-Proof-Ledger (owing papers M3, M4, M7, M10)
 See `ledger/M-Derivation-Proof-Ledger.md`, section "Targets registered for later papers": the cone-tip spectrum (M4); M1 Prop 8.2's stationarity conditions, Λ₁₂ by solvability, the Sp(1) commutator structure, equal weighting (M7); κ₂² = 2/L from orbifold Gauss–Bonnet (M7/M10); Paper 2 §5.1's Einstein-frame weight (M10); Σ-5 from A1 (M3 → M5); Σ-P, Σ-S, Σ-T as derivation targets (M3 assigns the owing papers).
+
+## F-3. The Higgs field as the dilaton — owed by M9 and M15 (from Paper III l.329 / Paper VI)
+Paper III identifies the MEF Higgs with Φ_QC; M2 §5 finds the coupling extremal at the sheet angle arctan√2, which is the lead. M9 derives the identification from the corner geometry and M15 derives the potential; until then it is a target, not a premise.
+
+## F-4. The imaginary part of ω and the weak mixing angle — lead for M13 (PI, 9 Nov 2026)
+Recorded on the PI's word; a lead, not a premise, not yet examined. The corpus took ω real (ω = ψ + ψ̄ = 2 Re ψ; M2 SOW R1). M2 makes ω quaternion-valued, the unique carrier of the imaginary direction (Decision Log Q17(b); M2 Def ω), and Φ_QC = ω|ψ−ψ̄|² takes its direction from ω (Minimality M2-9; P12). The PI's lead: the imaginary part of ω, absent from the corpus's derivations, may be the missing element in the derivation of the weak mixing angle. Owing paper: M13 (series SOW: not writeable until F-100 resolves). Record: `registers/records/2026-11-09_M2-9_modulus_squared.md` §5.

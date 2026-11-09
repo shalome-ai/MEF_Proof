@@ -35,3 +35,15 @@ Withdrawn 8 Nov 2026: it rested on the architect's error of treating the 4D radi
 
 ## 18. Wall picture vs τ (found 8 Nov 2026)
 The corpus's "disjoint support" (ψ on the Q-wall {θ_ψ = 0}, ψ̄ on the AQ-wall {θ_ψ = L_ψ/2}) is the fold's geometry; M2's sheet exchange τ maps the Q-wall through P₁ to the wall {θ_ω = 0} through P₁ (τ swaps P₂ ↔ P₃). M2 states the two sheets as τ-images (Q15); the "disjoint support" sentence must be re-expressed in τ's terms wherever it is consumed (Paper 6, the Addendum's zero-mode sections, F-58's proof), or the two pictures will read as contradicting.
+
+## 19. Source of Truth v6 l.34 — the square in Φ_QC (ruled 9 Nov 2026; reopened and confirmed the same day)
+The SoT writes Φ_QC = ω(ψ−ψ̄)². Under the literal square (ψ−ψ̄)² = −4(Im ψ)² ≤ 0 in the corner reading, so Φ and Re ω have opposite signs wherever the sheets differ, and no sign convention on ψ can make both positive. The corpus requires both: Φ ≥ 0 (decaying warp a = −ζΦ with Φ = 1 at the far wall, Paper 2 §7.3) and ω ≥ 0 (the one-hump, R1). Hence the corpus was using the modulus squared without writing it. Canon: Φ_QC = ω|ψ−ψ̄|² (M2 Def ω, Prop parity). The cross-wall pairing of Paper III/Addendum survives as the Hermitian pairing term. Action: SoT and all consumers to read |ψ−ψ̄|²; phase formula Φ = +8r³cos ϑ sin²ϑ. (Caught by Claude Code, 9 Nov 2026, before an attempted reversion.)
+
+## 20. CFM Formal Foundations v12 l.1525 — normalisation of ζ (ruled 9 Nov 2026)
+S_Φ = ∫√g[−½ζ|∇Φ|² − V] outside the gravitational bracket gives a coefficient of T^Φ differing from the canonical ζ by 2κ². The canon places the kinetic term inside the 1/2κ² bracket with coefficient ζ (M2 Def action). CFM's form is superseded.
+
+## 21. Paper III Addendum (Sol Monodromy v11) — `\consciousness` macro for ω throughout
+The Addendum writes ω via the `\consciousness` macro (mef_macros l.20, "consciousness coherence field" — forbidden form, cf. entry 14). Action: replace with `\omega` / "Coherent Information Field" when the Addendum's content is reproduced in M9; delete the macro at the next macros revision.
+
+## 22. Paper III l.329 — "the MEF Higgs is the shape-modulus dilaton Φ = ω(ψ−ψ̄)² of Paper VI"
+An identification, not a derivation, and under entry 19 the square is the modulus squared. Entered as a target (Future-Mx F-3) for M9 (Higgs sector) and M15 (Higgs mechanism), not consumed as a premise.
