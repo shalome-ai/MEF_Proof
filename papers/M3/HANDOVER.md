@@ -17,10 +17,14 @@
 
 - **Commits:** `5e9d328` (M2-9 sync), `8627bee` (housekeeping), `abf3e2c` (gates), and the commit carrying this file (canon tracked; P15). Pushed to `origin/main` at the end of the session.
 
+- **`canon/MEF_Academic_Register_Guide.md`** (CLAUDE.md §9) added by the PI and committed.
+
 ## What is open
-1. M3 WP0 (inventory) not started; M3 is the current paper (`sow/M3/SOW_DAG.md`).
+1. **Next session: M3 WP0, the inventory** (PI to start it in a new session from this file). Read order per CLAUDE.md §0: `CLAUDE.md` → `sow/Mx_Series_SOW.md` → `sow/M3/SOW_DAG.md` → `registers/Decision_Log.md` (latest: P12–P15) → this file. WP0 is mechanical (no ruling), per `sow/M3/SOW_DAG.md` §2:
+   - **I.1** — transcribe the twenty axioms verbatim, with their Paper XX locations, into Appendix A of M3 as data, not citation: Σ at ll.335–545, 𝓜 at ll.639–770 of `sources/Paper_XX_New_Axioms_for_Old_Problems_v10.tex` (present locally, untracked).
+   - **I.2** — for each axiom, list the M1/M2 results that touch it, by label, from `ledger/M-Derivation-Proof-Ledger.md`.
+   - After WP0: the WP1–WP4 classifications are the architect's proposals from the M2 chat and are re-verified against the M1/M2 text, item by item, before the PI confirms and before any prose (M3 SOW §6).
 2. The M3 template must set the Lean listing frames inside the text block (P15(b)) so that gate 2 passes.
-3. `canon/MEF_Academic_Register_Guide.md` (CLAUDE.md §9) is not in the repository.
 
 ## What needs a ruling
 Nothing outstanding from this session.
