@@ -49,7 +49,7 @@ One work package per session, scoped by the paper's SOW/DAG (the live task list)
 3. Lint: forbidden ω names; "I " voice outside acknowledgements; US spellings; hard-coded "Section~N"; any `\cite` of a MEF corpus paper; `!` in prose; bullets or boxes in prose.
 4. `lake build` of the paper's certificates under the repository toolchain (Lean 4.29.1, Mathlib present); grep for `sorry` and `^axiom` returns nothing; the certificates import no Mathlib module and must also compile standalone on core Lean.
 5. Every `\texttt{Lx_...}` named in the paper exists as a theorem in the paper's certificates.
-Scripts live in `tools/`.
+Scripts live in `tools/`: run `python3 tools/gates.py Mx` (all five) or `python3 tools/gates.py Mx 3 4 5`; requirements and details in `tools/README.md`.
 
 ## 9. Register of the paper (how to write)
 Per `canon/MEF_Academic_Register_Guide.md`: title a descriptive noun phrase; abstract setting → results → applications → strongest consequence, 100–200 words, no adjectives of praise; §1 opens "The purpose of this paper is…", states results, closes with the organisation map; plain-English opening readable by a first-year student, then the formal register (Hori–Tong connective tissue; Bruinier–Funke for theorem/proof); every load-bearing link derived or reduced to a cited result or a stated reading; a second route where one exists; the smallest case by hand; Lean certificates in an appendix with the build record and the files verbatim; Appendix B the cumulative symbol table of M1…M(x−1) extended; the AI statement exactly once in the acknowledgements in the mandated wording; `mef_macros.tex` inputted, no local symbol redefinitions. The deflationary reading stated where it belongs.
