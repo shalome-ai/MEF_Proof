@@ -68,3 +68,12 @@ In reply to the audit's three missing items (what the light is; where the observ
 
 On ζ, offered by the PI as possibly numerology:
 > "there are three generations, a spin and a warp. the pillowcase adds 3 (the generations) x 2 (the warp) x 2 (the spin) = 12 - now this may be numerology. If there is physics to support this then that is the zeta derivation."
+
+## 14. ζ and the fibres; the count (same day)
+> "re the fibres I understood from Paper I addendum that the sol fibres land on the pillow case each contributing Pi phase shift, there are 12 of them hence 12 pi. Pi is the ratio of circumference to the diameter of a circle, its what gets you back Axiom 1 (? - does this make sense??)"
+
+> "yes, do the count blind to twelve ( and we must rule out why it is not 2, 4 and 6 - because there are '3 generations' it has to be at least 3 x2 = 6, and either the spinc or warp (i think it is the warp) introduces another factor of 2."
+
+> "Or its 4 corners x 3 generations"
+
+The count and its results: `papers/M2/ZETA_COUNT.md`.
