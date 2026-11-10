@@ -1,5 +1,7 @@
 # Future-Mx Register — derivations deferred to a later paper of the series
 
+*M2 v1.0 was withdrawn on 10 November 2026 (Decision Log P41) and is in `superseded/M2_v1/`. Entries below that cite M2, its work packages (`M2_WP…`), its certificates or `papers/M2/…` notes are records of the withdrawn paper: they are not in force and are not premises of the new M2.*
+
 *M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
 
 *Each entry names the result, the paper it was deferred from and why, what the owing paper must contain, its premise set, and its status. Entries are not ledger rows and carry no rigour tag until a canonical site exists. Opened 8 Nov 2026. PI banks.*

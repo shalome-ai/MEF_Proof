@@ -13,12 +13,8 @@
 - The Lean file headers of L1 and L4 still name Latimer–MacDuffee and Atiyah–Bott as inputs in v2's terms; the files are reproduced verbatim in the appendix and were not edited. `M1_L5_vacuum.lean` is in the tree and not part of M1; M7 takes it.
 - Parked, not premises: `GROWTH_LAW_17_20.md`; the v3 draft in `draft_v3/`. Proposed and unbanked from earlier sessions: Corpus Errors entries from the reading notes.
 
-## For the session that reworks M2
-- Scope as the PI set it: rework M2 with the new M1 and the shadow axiom. The premise (record §25): five axioms determine the shape; the shape determines the equation; the equation and the shape determine the series.
-- Read first: this file; `canon/M1/NUMBERING_v2_to_v5.md`; Decision Log P26, P30, P33–P39; `papers/M2/STEP_AUDIT.md`; `sow/M2/SOW_DAG.md`.
-- What M1 now hands to M2: Definition 2.1 (the projection, the shadow, its two clauses); the twist of the fibre (Proposition 7.6) and the corner lift (Corollary 7.7); the step and the time circle (Corollary 7.8).
-- What M2 v1.0 has that no longer matches M1: twenty-seven citations by v2's numbers, two of them of Proposition 8.2, which is gone; "per circuit" for a step; its "fifth reading", now the seventh; its use of the corner lift as an [R] result of M1.
-- Owed by M2: which piece the warp scales and how the display of K₈ is written (Future-Mx F-10; P30, P37).
+## For the session that writes M2
+- M2 v1.0 is withdrawn (Decision Log P41). The brief for the new paper is `papers/M2/HANDOVER.md`.
 
 ## Needs a ruling
 - None.

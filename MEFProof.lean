@@ -119,14 +119,7 @@ import MEFProof.Paper_M1.M1_L4_base
 import MEFProof.Paper_M1.M1_L5_vacuum
 import MEFProof.Paper_M1.M1_L6_twist
 
--- Paper M2
-import MEFProof.Paper_M2.M2_L1_parity
-import MEFProof.Paper_M2.M2_L2_master
-import MEFProof.Paper_M2.M2_L3_zeta
-import MEFProof.Paper_M2.M2_L4_handedness
-import MEFProof.Paper_M2.M2_L5_warp
-import MEFProof.Paper_M2.M2_L6_omega
-import MEFProof.Paper_M2.M2_L7_module
+-- Paper M2: v1.0 withdrawn 10 Nov 2026 (Decision Log P41); its certificates are in superseded/M2_v1/lean/ and are not built
 
 -- Paper M3
 import MEFProof.Paper_M3.M3_L1_lift

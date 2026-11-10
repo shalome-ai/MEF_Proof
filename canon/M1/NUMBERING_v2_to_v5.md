@@ -27,4 +27,4 @@ For every place that cites M1 by number. v2 is `canon/M1/superseded/Paper_M1_Fou
 | Certificates L1–L5, 49 theorems | L1–L4 and L6, 58 theorems | `M1_L5_vacuum.lean` stays in the tree for M7; L1 has one theorem the paper does not use |
 | four numbered choices | six | Def 2.1(i); Def 2.1(ii), (iii); Def 2.3; Def 2.4(i); Def 2.7; Def 2.8 |
 
-**M2 v1.0 cites M1 by v2's numbers** in twenty-seven places (Proposition 7.3 ×7, Definition 2.5 ×3, Theorem 4.2 ×3, Proposition 8.2 ×2, Definition 3.2 ×2, Definition 2.2 ×2, Definition 2.1 ×2, and one each of Theorems 8.1, 7.6, 5.7, Propositions 5.6, 5.2, 4.1, Corollary 7.4). They are not changed here: two of them cite Proposition 8.2, which is no longer in M1, so M2 needs more than a renumbering, and it is the next paper to be reworked.
+**M2 v1.0, which cited M1 by v2's numbers, was withdrawn on 10 November 2026 (Decision Log P41).** The new M2 cites M1 by the numbering of v5.0.

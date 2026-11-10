@@ -1,5 +1,7 @@
 # Verified References — the Mx series
 
+*M2 v1.0 was withdrawn on 10 November 2026 (Decision Log P41) and is in `superseded/M2_v1/`. Entries below that cite M2, its work packages (`M2_WP…`), its certificates or `papers/M2/…` notes are records of the withdrawn paper: they are not in force and are not premises of the new M2.*
+
 *Every external theorem a paper of the series cites, with the statement as used, the source and page, and how it was checked (CLAUDE.md §2a; Decision Log P20). Opened 10 November 2026. A row marked **RECALLED** is quarantined: it may not be cited or used as a premise until it is verified against the published reference and its status changed. Claude proposes; the PI banks.*
 
 **Columns.** # · Statement as used · Source · Wanted by · Status (VERIFIED: how, by whom, date / READ in a corpus paper that cites it / RECALLED) · Notes.

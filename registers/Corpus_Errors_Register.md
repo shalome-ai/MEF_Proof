@@ -1,5 +1,7 @@
 # Corpus Errors and Inconsistencies — findings from the Mx build (delta to `Corpus_Errors_and_Inconsistencies_Register_v2.md`)
 
+*M2 v1.0 was withdrawn on 10 November 2026 (Decision Log P41) and is in `superseded/M2_v1/`. Entries below that cite M2, its work packages (`M2_WP…`), its certificates or `papers/M2/…` notes are records of the withdrawn paper: they are not in force and are not premises of the new M2.*
+
 *M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
 
 *Entries found while building M2, 8 Nov 2026. Numbering continues the PI's register (its last entry is 11). Entry 15 was withdrawn on the day (see note). PI banks.*

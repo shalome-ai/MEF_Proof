@@ -198,3 +198,13 @@ On the proposals (1) to reword the block by the fourth criterion and (2) to take
 
 ## 32. The move to canon (same day, later session)
 > "commit and push, then do the move to canon"
+
+## 33. M2 to be redone on M1 (same day, end of session)
+> "commit and push
+> do the handover for re-doing M2 on paper M1.  Remember that we have to base M2 entirely on M1 with the 5 axioms. We will re-do M2 in a new chat"
+
+## 34. M2 v1.0 scrapped (same day, end of session)
+> "I think it may be better to scrap M2 v1 entirely and start from scratch as if it never existed.  Rather than start with the old version of M2 and adjust.  I think that will lead to the normal LLM errors"
+
+On the five assumptions put by the architect (v1.0 moved, not deleted; the canonical equation a target and not a premise; the PI's statements about the theory stand and the build choices Q1–Q17 are set aside; the handover replaced; done in this session):
+> "1-5 agreed, proceed"

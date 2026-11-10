@@ -43,7 +43,7 @@
 
 *M1 is v5.0 (38 pp., five certificates, 58 theorems). Section 2 numbering: the fifth axiom is Definition 2.1 with Remark 2.2; closure 2.3; growth and decay 2.4; the fibre algebra 2.5; order 2.6; the two levels 2.7; orbits 2.8; drive 2.9. Earlier header notes (v1, v2) are superseded.*
 
-## M2 — The Master Equation from four axioms (`canon/M2/Paper_M2_Master_Equation_v1.tex`, v1.0 canon 9 Nov 2026, L1–L7, 55 theorems) — rows BANKED
+## M2 v1.0 — WITHDRAWN 10 Nov 2026 (Decision Log P41). The rows below are the record of the withdrawn paper (`superseded/M2_v1/`); none is BANKED any longer, none is citable, and the new M2 enters its own rows when it is written
 
 | Result | Site | Rigour | Depends on | Certificate | Status |
 |---|---|---|---|---|---|
@@ -71,7 +71,7 @@
 | ω has a definite sign on the decaying-warp solutions (half-circle); which sign is ψ's convention | M2 §half-circle | [D] | M2-9 | `L6_sign`, `L6_flip` | BANKED |
 | ω's spectral face (GUE maximum) | M2 §omega-hook | [M] | — | — | TARGET (M4) |
 
-## Targets registered for later papers (from M2 and the series SOW)
+## Targets registered for later papers (from the withdrawn M2 v1.0 and the series SOW; to be re-read when the new M2 exists)
 | Result | Owing paper | Lead |
 |---|---|---|
 | Cone-tip Dirac spectrum; λ_n = n, d_odd(n); ζ(s)²(1−2^{−s}); partition function mock Jacobi; bridge field-ω ↔ spectral functional | M4 | Future-Mx §12.1 |

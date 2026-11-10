@@ -1,5 +1,7 @@
 # Definitions Register — the Mx series
 
+*M2 v1.0 was withdrawn on 10 November 2026 (Decision Log P41) and is in `superseded/M2_v1/`. Entries below that cite M2, its work packages (`M2_WP…`), its certificates or `papers/M2/…` notes are records of the withdrawn paper: they are not in force and are not premises of the new M2.*
+
 *M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
 
 *One meaning per term (CLAUDE.md §2d; Decision Log P24). Opened 10 November 2026. Every term is entered with the text that defines it, by file and line. **When reading a paper, read each term as defined here. When writing, use each term as defined here, and enter a new term here before it is used.** If a definition seems to need changing, the first hypothesis is that the wording has drifted in the writing (an error of the kind language models introduce), not that the mathematics or the physics is wrong: stop, show the defining text, and take it to the PI. Claude proposes; the PI banks.*
