@@ -1,6 +1,6 @@
 # SOW + DAG v1 — Paper M3: Which axioms survive — an audit of the twenty axioms of the programme against the four
 
-**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** OPEN — M2 frozen 9 Nov 2026 (Decision Log P11); WP0 not started. Written for Claude Code; the first session lists assumptions against this document and waits.
+**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** OPEN — M2 frozen 9 Nov 2026 (Decision Log P11); WP0 built 10 Nov 2026 (`papers/M3/M3_AppA_axioms.tex`, `papers/M3/M3_WP0_I2_ledger_touch.md`), awaiting the PI's read. Written for Claude Code; the first session lists assumptions against this document and waits.
 
 ## 0. Rulings consumed (Decision Log, 8–9 Nov 2026)
 - **Σ-5 (the Shadow Principle):** attempt its derivation from A1 first; fallback: establish it as the series' one declared axiom with the Gödel-boundary argument (𝓜-4) as justification.
@@ -18,7 +18,7 @@
 ### WP0 — Inventory (mechanical; no ruling)
 | Node | Task | Source |
 |---|---|---|
-| I.1 | Transcribe the twenty axioms verbatim with their Paper XX locations into Appendix A of M3 (as data, not citation) | Paper XX v10 ll.335–545 (Σ), ll.639–770 (𝓜) |
+| I.1 | Transcribe the twenty axioms verbatim with their Paper XX locations into Appendix A of M3 (as data, not citation) | Paper XX v10 ll.335–555 (Σ; corrected from 545, which omitted Σ-T), ll.639–770 (𝓜; the eight axiom environments only) |
 | I.2 | For each, list which M1/M2 results touch it (by label) | `ledger/M-Derivation-Proof-Ledger.md` |
 
 ### WP1 — The theorems already in hand (class T)

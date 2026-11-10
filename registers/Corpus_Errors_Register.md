@@ -47,3 +47,6 @@ The Addendum writes ω via the `\consciousness` macro (mef_macros l.20, "conscio
 
 ## 22. Paper III l.329 — "the MEF Higgs is the shape-modulus dilaton Φ = ω(ψ−ψ̄)² of Paper VI"
 An identification, not a derivation, and under entry 19 the square is the modulus squared. Entered as a target (Future-Mx F-3) for M9 (Higgs sector) and M15 (Higgs mechanism), not consumed as a premise.
+
+## 23. Paper XX v10 l.761 (𝕄-7) — "The Lyapunov exponent is ln φ" (banked by the PI, 10 Nov 2026)
+The same axiom gives the eigenvalues of M = ((2,1),(1,1)) as φ² and φ⁻², which is correct (M1 Thm 4.2; M2 `L4_eigen`). The Lyapunov exponent is the logarithm of the stretching eigenvalue, 2 ln φ = ln φ², as M2 has it (κ = log φ², `canon/M2/M2_WP2_handedness.tex` l.35). PI ruling 10 Nov 2026 (Decision Log P17): the old axiom is incorrect as stated. Action: M3 Appendix A keeps the wording as data with a marked correction; any later paper reproducing a rate "ln φ" from the corpus (Paper XX l.764 repeats it: "all at rate ln φ") re-derives it with κ = log φ².
