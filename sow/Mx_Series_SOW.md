@@ -79,6 +79,7 @@ Each paper's entry in the Map has: **Rationale** (the plain-English question the
 ## Open items (seeded 9 Nov 2026; updated 9 Nov 2026, end of session)
 - ~~Freeze of M2 v1 (PI).~~ Done: M2 canon v1.0 (P11).
 - M3 SOW/DAG (`sow/M3/SOW_DAG.md`) — written; M3 is the current paper. WP0 done and committed (`97f3c87`). WP1–WP4 checked against the M1/M2 text 10 Nov 2026 (`papers/M3/M3_WP1-4_verification.md`): seven classes differ from the SOW's proposals; awaiting the PI's confirmation. Then S.4 (Lean) and WP5 (assembly).
+- From the M3 audit (P22): completeness of the twelve-dimensional geometry, and GBH1's completeness axiom, are owed by M11 (Future-Mx F-8).
 - From the M3 audit: five riders of the old axioms have no owing paper in this table (Future-Mx F-5, proposed); ledger and M2 label corrections (Future-Mx F-6, proposed).
 - Canon Reading Map draft v0.1 (`canon/Reading_Map/`) — written against this order.
 - Register §18: the corpus's "disjoint support" wall picture to be re-expressed in τ's terms wherever consumed (M7, M8, M9).

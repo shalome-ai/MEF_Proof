@@ -280,3 +280,13 @@ Uniqueness is not part of it. "One object, different shadows" is M2's structure 
 **Consequence for the fifth axiom.** For object B, Paper 3 gives exactly the shape of the axiom as ruled (P19): a preimage with the given shadow *exists* (ĥ), and it is determined only up to a holomorphic form — the shadow does not fix the object. That is an instance of existence without uniqueness, resting on one external theorem (V-2) and one declared spectrum.
 
 **Consequence for the classification.** 𝕄-5 → two targets: the genus is quasi-Jacobi and carries d_odd (M4); the cone-tip projection carries the shadow (M5). 𝕄-8's last clause → the same split. 𝕄-6's spectrum statement is not established by either source read: the note gives one coefficient of a genus, Paper 3 takes its link spectrum as given.
+
+---
+
+## 9. Correction after the step audit (10 November 2026; the error was mine)
+
+In §2.1 and §3 (S.2) I wrote that under the fifth reading the twelve-dimensional geometry is geodesically complete and that "in the sense of geodesic incompleteness there are no singularities in M₁₂". The blind check of `STEP_AUDIT.md` §E showed that this does not follow as worded. What holds: the smooth cover of M₁₂ is complete with bounded curvature; M₁₂ itself is an orbifold with a codimension-two cone locus of angle π (the image of the fold's fixed set), which is the image of a regular set of the cover. In §3 (S.3), "the smooth object above it is unique" holds only among double covers branched at the four corners, and does not carry over to M₁₂, which has at least two smooth double covers. The corrected statements, step by step, are in `STEP_AUDIT.md` §§A, B. The verdicts of §5 are unchanged: completeness remains a derived statement at [D], in its corrected form; the fifth axiom asserts existence and not uniqueness (P19).
+
+**Further correction (10 Nov 2026; the error was mine).** In §3 (S.2, gap 1) and §8 I described the jump in the slope of M2's warp as a gap in M2 ("M2's own solution is not smooth"). It is M2's thin-wall profile, exact by design (Decision Log Q16), and no defect; the smoothness requirement belongs to the completeness statement, as its hypothesis. And the PI has confirmed the reading that "singular in 4D, smooth in higher dimensions" refers to the cones seen in the four-dimensional shadow, not to the pillowcase corners, which are cone points of K₈ as M1 Thm 5.7 states. See `STEP_AUDIT.md` §A.
+
+**Amendment to §5 by PI ruling, 10 Nov 2026 (P22).** Completeness is left to M11 and is not stated in M3. In the table of §5: Σ-5 = 𝕄-2 reads "the completion principle I (the declared axiom, existence only); completeness a target owed by M11"; the GBH1 completeness item reads "target, M11; the audit of `STEP_AUDIT.md` §A is its starting point".
