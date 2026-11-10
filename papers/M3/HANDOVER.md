@@ -10,19 +10,21 @@
 ## What is open
 1. **𝕄-8** stays a target (M4, M5) after the read of the twisted-genus note (`M3_WP1-4_verification.md` §7); the fifth axiom is the existence statement (P19, M3-1, banked).
 2. **S.4, the Lean certificates** (`M3_L1_lift`, `M3_L2_count`, `M3_L3_walls`): not started; their content depends on item 1.
-3. **WP5, assembly**: not started. The M3 template (listing frames inside the text block, P15(b)), the bibliography (sixteen external keys from Appendix A, plus Hopf–Rinow and the references of S.2 and S.3 if kept), and the §1 preamble paragraph ruled in P16(l) belong here.
+3. **WP5, assembly**: not started. Under P21 it begins with `papers/M3/STEP_AUDIT.md` for M3's own load-bearing statements (the completeness half of the fifth axiom; S.3). Gates 6 and 7 are not yet in `tools/gates.py`. The M3 template (listing frames inside the text block, P15(b)), the bibliography (sixteen external keys from Appendix A, plus Hopf–Rinow and the references of S.2 and S.3 if kept), and the §1 preamble paragraph ruled in P16(l) belong here.
 4. **Two references in S.2 are from memory and unverified** (Böhm 1998; Besse ch. 12); they must be checked before they are cited.
 5. Appendix A now carries a fifth marked note (𝕄-6: d_odd is the number of odd divisors).
 6. Gate items waiting for the template: four overfull boxes in Appendix A.
 
 ## What needs a ruling
-1. **Which object is "the partition function" of 𝕄-5 and 𝕄-8?** The twisted genus of `sources/twisted_genus_note.tex` is quasi-Jacobi with an algebraic completion and no Zwegers shadow; the old axioms call the partition function mock Jacobi with a Zwegers completion (Corpus Errors 30). Paper XI and Paper 3 were not read.
-2. The ledger corrections of F-6(a) and the M2 erratum of F-6(b): the PI's to make.
-3. Owing papers for the five riders of F-5.
+1. The ledger corrections of F-6(a) and the M2 erratum of F-6(b): the PI's to make.
+2. Owing papers for the five riders of F-5.
+3. `registers/Verified_References.md` rows V-1 to V-5 (proposed): V-1, V-3, V-4 are RECALLED and need the published references before M3 may cite them.
 
-## Ruled on 10 November 2026 (Decision Log P16–P19)
+## Ruled on 10 November 2026 (Decision Log P16–P21)
 - Appendix A: marked notes at Σ-1, Σ-2, Σ-2f and 𝕄-7; "negentropy" and "consciousness" stay in the Σ-3 table; the source note stands.
 - 𝕄-7 stays among the twenty; eigenvalues φ², φ⁻²; exponent 2 ln φ.
 - §1 of M3 will carry a preamble paragraph on the history of the twenty axioms, written after the classification is confirmed, at the strength it supports; the Euler-identity remark confined to τ² = fold (`L4_S_sq_fold`).
 - The classification of `M3_WP1-4_verification.md` §5 confirmed (P18), 𝕄-8 held for discussion; Corpus Errors 24–27, Future-Mx F-5 and F-6 banked.
 - The fifth axiom is the existence statement (P19; Minimality M3-1); Corpus Errors 28–30 banked. The PI directs that Paper XI and Paper 3 be checked for the object 𝕄-5 means.
+- Evidence rules adopted (P20; CLAUDE.md §2a; `registers/Verified_References.md` opened). Two objects were being called the partition function: the twisted genus (quasi-Jacobi, M4) and the cone-tip projection (shadow, M5); Corpus Errors 30 amended. Checks: `papers/M3/checks/mu_check.py`, `paper3_check.py`.
+- Measures against fudging adopted (P21; CLAUDE.md §2b; gates 6–7; `tools/redflags.py`). The four ungrounded steps of Paper 3's shadow derivation parked as Future-Mx F-7, owed by M5. M3 goes no further into Paper 3.

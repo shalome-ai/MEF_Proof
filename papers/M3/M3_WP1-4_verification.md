@@ -237,4 +237,46 @@ Uniqueness is not part of it. "One object, different shadows" is M2's structure 
 
 **Consequence for 𝕄-5 and for the fifth axiom's first test.** 𝕄-5 calls the partition function a mock Jacobi form with a harmonic-Maass completion. For the note's object that is not so. I have not read Paper XI or Paper 3, where a different object (the pillowcase orbifold's own partition function) may be meant. **This is the one point in WP1–WP4 where the corpus is significantly against itself and I cannot tell which document, or which object, is the intended one.**
 
-**Withdrawn.** In discussion I offered Bruinier–Funke's theorem (the ξ-operator is onto and not one-to-one) as the exact counterpart of "identical shadows, different objects". It is a statement about mock modular forms; by the note, the series' twisted genus is not one. It is not to be used for this object unless M4/M5 establishes a genuinely mock object.
+**Correction (10 Nov 2026, after reading Paper XI and Paper 3; the error was mine, twice).** In discussion I offered Bruinier–Funke's theorem as the counterpart of "identical shadows, different objects" before reading any source; I then withdrew it after reading the note alone. Both steps were premature. The position after reading: the theorem does not apply to the twisted elliptic genus (object A below), which is not mock; it does apply to the cone-tip projection of Paper 3 (object B), where Paper 3 itself uses it. The sentence in the previous paragraph, "this is the one point … I cannot tell which document, or which object, is the intended one", is resolved in §8.
+
+---
+
+## 8. Which object is "the partition function"? Paper XI and Paper 3 read (10 November 2026)
+
+**Read (body text, not abstracts).** Paper XI v5: ll.195–238, 421–700. Paper 3 v13: ll.97–144, 241–292, 376–630, 1631–1713, 2233–2266. The twisted-genus note: in full. **Not read:** the rest of both papers; in particular Paper 3's §§4–7 and 9–11 and Paper XI from l.700.
+
+**Two objects.**
+
+| | Object A | Object B |
+|---|---|---|
+| What | the Spin^c-twisted elliptic genus of K₈ | the σ-odd twisted-sector projection of the Spin^c Dirac data at the four cone tips of the pillowcase |
+| Where | Paper XI (12 Jul 2026); the note (28 Sep 2026) | Paper 3 v13 (28 Sep 2026) |
+| 𝕄-5's wording | is Paper XI's sentence | — |
+| Nature | quasi-Jacobi; completion elementary; no shadow | has a shadow, −η(2τ)³ (weight 3/2) |
+
+**Object A — status of each statement.**
+
+- READ: Paper XI and the note use the same function μ (Paper XI l.553; note l.280) and the same components A₀, A₁ (Paper XI ll.476–477 against note Thm l.212 at ℓ = 3).
+- CHECKED (`checks/mu_check.py`): μ is an elementary expression in 𝒥 = (2πi)⁻¹∂_z log ϑ₁, to 10⁻¹⁶ at three points; 𝒥(−1/τ, z/τ) = τ𝒥 + z; adding (z − z̄)/(τ − τ̄) removes the anomaly exactly. The y⁰ coefficients of μ are the numbers of odd divisors (1, 1, 2, 1, 2, 2, 2, 1, 3, …), not their sums.
+- CHECKED by hand: the q¹ coefficient of the genus of ℂP¹ by the note's Riemann–Roch formula is y^{−1/2}(3 + 3y − 3y⁻¹ − 3y²) ≠ 0, so the ℂP¹ factor is not "rigid" as Paper XI l.520 has it. The computation, with the note's formula [q¹]Ell = y^{−d/2} Σ_p (−y)^p χ(Ω^p ⊗ ((1−y)T* + (1−y⁻¹)T)) (note l.196, READ, not independently derived) and χ(𝒪(k)) = k + 1 on ℂP¹, where T = 𝒪(2), T* = Ω¹ = 𝒪(−2): p = 0 gives (1−y)(−1) + (1−y⁻¹)(3) = 2 + y − 3y⁻¹; p = 1 gives −y[(1−y)χ(𝒪(−4)) + (1−y⁻¹)χ(𝒪)] = −y[(1−y)(−3) + (1−y⁻¹)] = 1 + 2y − 3y²; the sum is 3 + 3y − 3y⁻¹ − 3y².
+- Conclusion: for object A, "mock Jacobi form" is a misclassification in Paper XI, corrected by the later note.
+
+**Object B — what Paper 3 establishes, on its own account and on my check.**
+
+| Step (Paper 3) | Status |
+|---|---|
+| The corner-link spectrum μ⁺ = m + 3/2, μ⁻ = −m + 1/2 | **declared input** of the paper ("taken as given", l.1639; listed as declared at l.2243). Not derived there; not checked here |
+| Telescoping: two modes at 1/4 survive per corner; trace −2e^{−t/4} (l.416) | CHECKED (`checks/paper3_check.py` item 1) |
+| Corner sum with phases (−1)^{mn}: bracket 2, total −4e^{−t/4} (l.427) | CHECKED (item 2); the phases are M1 Cor 7.4 |
+| The shadow is −η(2τ)³ = −Σ(−1)^k(2k+1)q^{(2k+1)²/4} (Thm l.451; Lemma l.482) | Jacobi's identity CHECKED to q³⁰ (item 3). **The step from the surviving term to the whole series: see "my reading" below** |
+| A harmonic Maass form ĥ with that shadow exists (l.526) | READ; rests on Bruinier–Funke surjectivity (Verified References V-2, original unchecked) |
+| The geometric completion ẑ equals ĥ up to a holomorphic function; its modular transformation is **not established** (Remark l.545) | READ; the paper's own statement |
+| The full pillowcase genus 2(R₂ + R₃ + R₄) is a weak Jacobi form, no shadow (Thm l.603) | CHECKED numerically (item 4): S exchanges R₂ ↔ R₄ and fixes R₃, T fixes R₂ and exchanges R₃ ↔ R₄, value 6 at z = 0 |
+| Which mock modular form the geometry computes; the decomposition of the σ-odd projection; the relation of the level-64 shadow to the level-36 system | **open**, in the paper's own words (ll.2247, 2263; Remark l.626) |
+| Hypotheses H1–H4 (l.129) | declared; the shadow computation of §3.4 does not consume H1–H3 |
+
+**My reading of one step, reported and not built on (CLAUDE.md §2: the first hypothesis is that my reading is wrong).** The telescoping leaves a single exponential, e^{−t/4}. Theorem l.451 then writes ∂_τ̄ ẑ ∝ −e^{−y/4}/y^{3/2} = g(τ)/√y with g the whole series. For the higher terms (+3q^{9/4}, −5q^{25/4}, …) the proof refers to "the ϑ₂-structure of §theta2 carrying the alternating character in the tower index, fixed independently in Proposition [l.469]"; the proof of that proposition says its support and sign "are read off [the series], whose derivation precedes it"; and the series of §theta2 (l.1635) has all coefficients +1. As I read these three passages, the spectral computation fixes the leading exponent 1/4, the multiplicity and the sign, and the full series with its coefficients (2k+1) is then identified as the weight-3/2 unary theta with that leading term, not computed term by term. The paper's own accounting lists the theorem as "proved in full" (l.2239). I cannot tell whether the gap is in the paper or in my reading; the modes above 1/4 cancelled in the telescoping, and at the physical value y = 1.8466 the second term is 2.5 × 10⁻¹⁰ of the first (item 5), so the leading term is what any numerical statement sees. **This is for the PI, and for M5.**
+
+**Consequence for the fifth axiom.** For object B, Paper 3 gives exactly the shape of the axiom as ruled (P19): a preimage with the given shadow *exists* (ĥ), and it is determined only up to a holomorphic form — the shadow does not fix the object. That is an instance of existence without uniqueness, resting on one external theorem (V-2) and one declared spectrum.
+
+**Consequence for the classification.** 𝕄-5 → two targets: the genus is quasi-Jacobi and carries d_odd (M4); the cone-tip projection carries the shadow (M5). 𝕄-8's last clause → the same split. 𝕄-6's spectrum statement is not established by either source read: the note gives one coefficient of a genus, Paper 3 takes its link spectrum as given.

@@ -20,6 +20,24 @@ Then read, in this order: this file; `sow/Mx_Series_SOW.md`; the current paper's
 - **Check handover and proposal physics against the canonical form before adopting it.** The handover's "Φ_QC is the warp seen from 4D" was adopted unchecked against the 12D display G_{MN}; a day of work was built on it and withdrawn. Every proposal from a handover, a note or a prior session is checked against `canon/` before it becomes a premise.
 - **When the architect finds a "contradiction" in a canonical [R] result, the first hypothesis is that the architect's reading is wrong.** Stop and report the reading; do not build a test of the system you think is failing.
 
+## 2a. Evidence rules, adopted 10 November 2026 (Decision Log P20; apply always)
+The PI is not the subject-matter expert in every area the series touches and relies on what Claude reports. A statement that is offered and then withdrawn is how errors enter the corpus. Therefore:
+- **Read before speaking.** If a source treats the object in question, read the relevant body text before saying anything about it. An abstract, a summary or a heading is not a reading. If the text has not been read, say "not read" and stop there; say which lines were read.
+- **Mark every mathematical statement:** **READ** (file and line), **CHECKED** (computed in this session: a script kept in the repository, a Lean certificate, or a hand computation shown in full) or **RECALLED** (from memory or by analogy).
+- **RECALLED statements are quarantined.** They are listed separately, are never used as premises, and never enter a paper, the ledger or a register until verified against the published reference.
+- **Load-bearing claims get an independent check**, and the script goes in `papers/Mx/checks/`.
+- **A correction says once who was wrong** — Claude or the old text — and what changed. A correction of the corpus must not read like a change of mind.
+- **Every external theorem cited by a paper is entered in `registers/Verified_References.md`** with its statement, source and page, and how it was checked, before it is cited.
+
+## 2b. Measures against unconscious fudging, adopted 10 November 2026 (Decision Log P21; apply always)
+Claude cannot reliably tell from the inside when it is bending an argument towards a wanted answer, and it tends to agree with the document in front of it and with the PI. The protection is therefore procedural. The weak point is the identification step ("this object *is* the shadow, the spectrum, the torsion class"), which no certificate checks.
+1. **Step audit (a gate).** Before a load-bearing theorem is banked, or a corpus result is reproduced, a table is written with every step and its status: verified reference (`registers/Verified_References.md`) · CHECKED (script or Lean named) · DECLARED input · GAP. No step is left unmarked. The audits of a paper live in `papers/Mx/STEP_AUDIT.md`.
+2. **Derive blind to the target.** Where a number will be compared with observation or with the old corpus, the derivation is written and its value recorded before the comparison is looked at.
+3. **Independent check that has not seen the conclusion.** A fresh session or sub-agent is given the steps only and asked whether step n follows from step n−1; it is never asked to confirm a result. For the most critical steps a different model or a human referee is preferred, since a second instance shares the first one's blind spots.
+4. **Red-flag scan (a gate).** Every source is scanned with `python3 tools/redflags.py <file> [lines]` before it is used, and the hits at the steps consumed are entered in the step audit: "∝" or "up to normalisation" where a number appears; a key step that refers forward; "standard, taken as given" for something specific; a rigour label attached to a numerical test; agreement with a known target; a choice made after the answer is known. A hit proves nothing; it says where to look.
+5. **A failure test for every claim.** Each banked result states what computation or observation would show it false, as the Minimality Register already does. A claim with no failure test is flagged.
+Ungrounded steps found in a source are parked in `registers/Future_Mx_Register.md` with the owing paper, and are not premises until grounded or struck.
+
 ## 3. The canon and the island rule
 - `canon/M1/`, `canon/M2/`, … hold the frozen papers of the series with their certificates. **A paper Mx may cite only M1…M(x−1) and external peer-reviewed results.** No MEF corpus paper (I–XXV, 1–6, GBH, D, U, YM, Tau2) is ever cited; their content is reproduced in-document or placed on a declared Σ-axiom. The old papers are read-only inputs the PI supplies, held locally in `sources/` (their `.tex` files are not tracked by git); they are never cited.
 - The ledger `ledger/M-Derivation-Proof-Ledger.md` is the source of truth for *where* a result lives and at *what rigour*. Ledger first, then the paper.
@@ -36,6 +54,7 @@ Five numbered readings: M1's four and M2's fifth (positive-definite metric; time
 - `Minimality_Register.md` — cumulative, per §4.
 - `Corpus_Errors_Register.md` — discrepancies found in the old corpus while building; PI banks.
 - `Future_Mx_Register.md` — derivations deferred to a later paper, with the owing paper named.
+- `Verified_References.md` — every external theorem a paper cites, with statement, source, page and how it was checked (§2a).
 - Claude proposes register and ledger entries; the PI banks. Claude never edits `canon/` or the ledger's BANKED rows silently.
 - **The registers and the ledger are edited only in this repository** (Decision Log P13). Claude proposes; the PI banks by commit. Chats do not carry copies: a chat's proposal comes into the repository as a proposal and is banked here.
 - `registers/records/` holds verbatim records the PI directs to be kept (e.g. `2026-11-09_M2-9_modulus_squared.md`).
@@ -49,6 +68,8 @@ One work package per session, scoped by the paper's SOW/DAG (the live task list)
 3. Lint: forbidden ω names; "I " voice outside acknowledgements; US spellings; hard-coded "Section~N"; any `\cite` of a MEF corpus paper; `!` in prose; bullets or boxes in prose.
 4. `lake build` of the paper's certificates under the repository toolchain (Lean 4.29.1, Mathlib present); grep for `sorry` and `^axiom` returns nothing; the certificates import no Mathlib module and must also compile standalone on core Lean.
 5. Every `\texttt{Lx_...}` named in the paper exists as a theorem in the paper's certificates.
+6. Step audit: every load-bearing theorem of the paper has its table in `papers/Mx/STEP_AUDIT.md`, with no unmarked step (§2b.1). Checked by hand until scripted.
+7. Red-flag scan: every source consumed by the paper has been scanned with `tools/redflags.py` and its hits entered in the step audit (§2b.4). Checked by hand until scripted.
 Scripts live in `tools/`: run `python3 tools/gates.py Mx` (all five) or `python3 tools/gates.py Mx 3 4 5`; requirements and details in `tools/README.md`.
 
 ## 9. Register of the paper (how to write)
