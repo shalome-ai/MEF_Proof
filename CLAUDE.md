@@ -43,6 +43,13 @@ Ungrounded steps found in a source are parked in `registers/Future_Mx_Register.m
 - **Nothing is left to a later paper that the present paper relies on.** A step a paper uses is either closed in that paper or stated there as a declared assumption with its failure test. Deferring it ("the derivation belongs to the sequel") is how the old corpus came to fix early papers with results from late ones.
 - **M1 and M2 were written before §§2a–2b.** They are audited under those rules (step audit, red-flag scan, blind check, deferrals closed) before they are revised and before anything further is built on them.
 
+## 2d. One meaning per term: the Definitions Register (PI, 10 November 2026; Decision Log P24)
+- `registers/Definitions_Register.md` holds every term of the series with the text that defines it, by file and line.
+- **When reading a paper, read each term as the register defines it. When writing, use each term as the register defines it, and enter a new term in the register before using it.**
+- Before reporting a finding about a step, quote the defining text of every term the finding turns on. A finding stated in a loosely used word is not a finding.
+- **If a definition seems to need changing, the first hypothesis is that the wording drifted in the writing, an error of the kind language models introduce, and not that the mathematics or the physics is wrong.** Stop, show the defining text and the place it is used, and take it to the PI.
+- A term used without a definition, or with two meanings, is entered as such (USED UNDEFINED, COLLISION) and is settled before it is used again.
+
 ## 3. The canon and the island rule
 - `canon/M1/`, `canon/M2/`, … hold the frozen papers of the series with their certificates. **A paper Mx may cite only M1…M(x−1) and external peer-reviewed results.** No MEF corpus paper (I–XXV, 1–6, GBH, D, U, YM, Tau2) is ever cited; their content is reproduced in-document or placed on a declared Σ-axiom. The old papers are read-only inputs the PI supplies, held locally in `sources/` (their `.tex` files are not tracked by git); they are never cited.
 - The ledger `ledger/M-Derivation-Proof-Ledger.md` is the source of truth for *where* a result lives and at *what rigour*. Ledger first, then the paper.
@@ -59,6 +66,7 @@ Five numbered readings: M1's four and M2's fifth (positive-definite metric; time
 - `Minimality_Register.md` — cumulative, per §4.
 - `Corpus_Errors_Register.md` — discrepancies found in the old corpus while building; PI banks.
 - `Future_Mx_Register.md` — derivations deferred to a later paper, with the owing paper named.
+- `Definitions_Register.md` — every term of the series with its defining text (§2d).
 - `Verified_References.md` — every external theorem a paper cites, with statement, source, page and how it was checked (§2a).
 - Claude proposes register and ledger entries; the PI banks. Claude never edits `canon/` or the ledger's BANKED rows silently.
 - **The registers and the ledger are edited only in this repository** (Decision Log P13). Claude proposes; the PI banks by commit. Chats do not carry copies: a chat's proposal comes into the repository as a proposal and is banked here.

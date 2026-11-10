@@ -83,3 +83,30 @@ and the identification of that number with the coupling of the field equation is
 5. Affected: every statement that uses the *value* ζ = 12π. In M2 itself: the abstract, §1, Cor 4.2, §4.8 (direction), §5.4 (the sign of ω on "the solutions of §4"), and the certificate descriptions. In the series: the Minimality Register entries M2-6 and M2-8, the ledger rows for §§bps–gb and Thm warp-exponent, and CLAUDE.md §5 ("ζ = 12π is the warp exponent per half-period and the coupling of Φ, one number").
 
 **For the PI.** Under CLAUDE.md §2c the options are: (a) find a derivation of the value of ζ that survives a step audit and a blind check, written blind to the target; (b) state ζ in M2 as a constant of the theory whose value is a declared assumption, with its failure test, until (a) is done. What M2 may not do is carry the present derivation at [R].
+
+---
+
+## 7. Paper I Addendum §3 read (10 November 2026), and the term "kink"
+
+**Read in full:** `sources/Paper_I_Addendum_v3.tex` ll.884–1102 (§3, "The π-per-Flux-Unit Result: Reduced 2D BPS Equation"). The PI directed this reading: ζ "is in Paper I Addendum Section 3".
+
+**It is the same chain.** The Addendum's §3 has the same steps in the same order as Paper 2 §4 and M2 §4, with θ_ψ as the transverse coordinate where Paper 2 has θ_ω (the difference ruled on in Decision Log Q15):
+
+| Step | Addendum line | Its own tag |
+|---|---|---|
+| the 2D action, "after integrating out the internal 6D fibre and 4D spacetime" | l.918 | [D] |
+| the square, "by tuning V(A) to balance the geometric bulk terms (the Randall–Sundrum fine-tuning)" | ll.931–943 | [D] |
+| the first-order equation | l.950 | [R] |
+| the flux density Nπ δ(θ_ψ)δ(θ_ω)/√g₂ | l.964 | [D]; its verification [R] |
+| the slope −k between the fixed points | l.981 | [D] |
+| the kink, by integrating the first-order equation across [−ε, +ε] | ll.989–997 | [D] |
+| κ₂² = 2/L_ψ, "the geometric normalisation connecting the deficit angles to the domain length rigidly fixes" | ll.1025–1028 | [D] |
+| kL = Nπ | l.1047 | [R]; the section is classified "Rigorous" |
+
+So the audit of §2 and the blind check of §5 apply to this text as they stand. Five of its steps carry the Addendum's own tag [D], and the conclusion is tagged [R].
+
+**How the section describes its own origin** (ll.886–892): "The identification ζ = 12π relies on χ(K₈) = 12 units of quantised flux, each contributing exactly π to the warp exponent. This π-per-flux-unit correspondence was originally presented as a heuristic matching to the deficit angle at the orbifold fixed points. This section derives it rigorously". The value was in use before this derivation was written.
+
+**The term "kink", from the texts** (Definitions Register): a discrete jump in the *derivative* of the warp exponent at a point. "Each unit of flux contributes a discrete kink of exactly κ₂²π to the derivative of A" (Addendum ll.996–997); "the jump in the derivative at the origin is [∂A]₀ = A′(0⁺) − A′(0⁻) = −k − (+k) = −2k" (ll.1034–1038). Paper 2 ll.418–424 and M2 `M2_WP4` ll.211–213 say the same. The companion statement the Addendum gives for it is the Israel junction condition ΔA′ = −κ²λ (l.1062).
+
+**The finding at Z5, restated in the defined term.** The definition is consistent across the three texts and I am using it as they do. The difficulty is not in the word but in the line that produces the kink: eq. (kink) obtains a jump in ∂A by integrating, across the point, an equation whose left side is ∂A. Integrating ∂A across the point gives A(ε) − A(−ε), the change in A; a jump in ∂A comes from integrating an equation whose left side is the second derivative. The Addendum's own consistency check (i) names such an equation: the junction condition ΔA′ = −κ²λ. On that reading the *statement* intended at this step may well be a junction condition of the second-order equations, and what does not hold up is the route written down for it (a first-order equation from a completed square). That is for the PI to say; I report what the lines say.
