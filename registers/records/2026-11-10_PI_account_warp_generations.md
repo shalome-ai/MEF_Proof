@@ -37,3 +37,34 @@ The architect's check (`papers/M2/checks/speed_check.py`): for one object, massl
 > "I am using viscosity, mass and momentum these are '4 dimensional' 'human analogies'. the pillowcase is not a viscous medium in the true sense. And this is where definitions matter."
 
 > "The purpose of this discussion was to come back to where in M1 and M2 are we missing axiom 5. And it is axiom 5 that explains the standard model, and unifies gravity to the other 3 forces. And zeta has part to play in it !"
+
+## 9. The name of ψ̄; and the question put to Paper VIII (same day)
+> "psi -bar is the chiral twin of psi"
+
+> "Now we have dark matter and dark energy - we observe the effects of those two and infer dark matter and dark energy. So the shadow does 'effect gravity' but does it effect the other three forces. What does Paper VIII in the sources have to say about this."
+
+## 10. Why the forces are spared; and what ζ couples (same day)
+> "Why the forces are spared the warp. Its because its only gravity that permeates all 12 dimensions and that is why it is so weak because it is over the 12 dimensions. Electromagnetism and weak/strong are confined to CP2 x S2 and are 'local'."
+
+> "Ah zeta couples the pillowcase (t2/z2) to S3 x S1 einstein space time through the fibres. There is no such 'zeta' to couple S3 xs1 to Cp2 xS2"
+
+On the question "where do we stand", the PI: "There is either a good reason to put it in or a good reason not to put it in. This comes back to stop asking me for 'pointless' rulings". The architect decided to put it in: an observer that persists must sit at a point the drive returns to itself, and the drive returns exactly one point (det(M₀ − I) = −1; `L1_one_fixed_point`), which is P₁, the corner at which the fibre algebra is the real numbers.
+
+## 11. ω is not a force (same day)
+The architect had flagged that chapter 8 ¶113 has ω "propagating through the bulk of the full twelve-dimensional manifold", against the PI's "only gravity permeates all 12 dimensions". The PI:
+> "Gravity is the only force that permeates all 12. Omega is not a force !"
+
+There is no conflict: gravity is the only *force* that permeates all twelve dimensions; ω is not a force.
+
+## 12. On the first working draft of M1 with five axioms (same day)
+> "in section 9 you write 'The geometry (1) is now a theorem of four behavioural axioms and a minimality principle,' - what about the fifth axiom !!! It seems the fifth axiom hasn't done anything - that is an issue - as it looks as if you didn't integrate. Do A step audit and blind check of the new section and you will find a gap/ inconsistency"
+
+## 13. The light, the observer, the warp; and a proposal for ζ (same day)
+In reply to the audit's three missing items (what the light is; where the observer stands; what the warp does):
+> "1. Yes the light does move around and the light is phi_QC moving around the pillowcase that's what casts 3 generations of fermions in 4D when there is only a 'hyper-fermion' in nD (n>4) space - 1 + 2 shadows
+> 2. The observer is where omega >0
+> 3. the warp is 'bending' the light so that it shines in different directions hence we see different shadows
+> The question is the light moving or light bending, or both. I think it is both."
+
+On ζ, offered by the PI as possibly numerology:
+> "there are three generations, a spin and a warp. the pillowcase adds 3 (the generations) x 2 (the warp) x 2 (the spin) = 12 - now this may be numerology. If there is physics to support this then that is the zeta derivation."

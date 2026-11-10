@@ -168,3 +168,8 @@ theorem L1_Fib_recursion (X : M2) : (M2.mul X Fib).a = X.a + X.b := by
 /-- tr F = 1, det F = −1: F itself is not in SL(2,Z); its square is the least
     element of SL(2,Z) with trace > 2. -/
 theorem L1_Fib_not_SL2 : M2.det Fib = -1 ∧ M2.tr Fib = 1 ∧ M2.det (M2.mul Fib Fib) = 1 ∧ M2.tr (M2.mul Fib Fib) = 3 := by decide
+
+/-- The drive returns exactly one point of the torus to itself: det(M₀ − I) = −1,
+so M₀ − I is invertible over ℤ and M₀x ≡ x (mod ℤ²) forces x ≡ 0. Added for
+M1 v3 (the place we see from, Definition "shadow, formal"). -/
+theorem L1_one_fixed_point : M2.det ⟨2 - 1, 1, 1, 1 - 1⟩ = -1 := by decide
