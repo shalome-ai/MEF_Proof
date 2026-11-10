@@ -118,3 +118,31 @@ No hit is of the kinds "rigour label on a numerical test" or "agreement with a k
 **A consequence for M1, reported and not acted on (CLAUDE.md §2: the first hypothesis is that my reading is wrong).** M1 l.221 selects "the least \|t\| > 2, which is t = 3", and Theorem 4.2 proves uniqueness among matrices of trace three. The trace −3 matrix −M₀ has the same eigenvalue modulus φ² and therefore the same entropy (`lift_check.py` E2), so criterion (2) of M1 Def 3.2 does not separate M₀ from −M₀. On the pillowcase the two are the same map, so M1's geometry, which is the quotient, is unaffected; the difference is visible only on the smooth cover (B8). As I read it, M1's uniqueness statement is correct for the quotient and silent on the sign for the cover. For the PI: an erratum line or a Minimality Register entry, if the reading is right.
 
 **Observation for M7, extended.** Two facts now point the same way: no non-constant function of the torus coordinates alone is carried round by the drive (CHECKED), and no fixed flat metric on the torus is preserved by the drive (blind check; RECALLED). So neither a warp depending on (θ_ψ, θ_ω) alone nor a fixed aspect ratio of the torus is globally defined on the Sol bundle as it stands; each would have to vary with the flow coordinate. M1 Prop 8.2 fixes the aspect ratio τ₂ as a number; the series SOW already records for M7 that the pillowcase ratio is dynamical. Not built on here.
+
+---
+
+## F. The statements of the draft paper (`Paper_M3_Axiom_Audit_v0.tex`, 10 November 2026)
+
+After P22 the paper contains neither statement A nor the uniqueness part of statement B. Its own statements, step by step:
+
+| Statement in the draft | Step | Status |
+|---|---|---|
+| Thm 2.2 (the classification) | each verdict cites a theorem of M1 or M2 by printed number | **CANON**, read at the lines recorded in `M3_WP1-4_verification.md` §§1–4, 8; confirmed by the PI (P18, amended P22) |
+| | counts 8 + 7 + 2 + 3 = 20; one class each | **CHECKED**: `M3_L2_count` (`L2_class_counts`, `L2_partition`) |
+| | the rule "class of the headline; a block is T only if every clause is proved" | **DECLARED** (Definition 2.1), tagged [D \| minimality] |
+| §1.2, the Euler remark | S² = −I | **CANON** (M2 Prop 2.6, `L4_S_sq_fold`); re-derived, `L3_exchange_squared` |
+| | "a half-turn is multiplication by e^{iπ} = −1 in the complex coordinate" | **CHECKED** (elementary: rotation by π in ℂ is z ↦ −z) |
+| §4, the Dirichlet series of d_odd | each n = md with d odd in d_odd(n) ways; Σ_{d odd} d^{−s} = ζ(s)(1 − 2^{−s}) | **CHECKED** (elementary, shown in the text; coefficients also in `checks/mu_check.py` item 4) |
+| Axiom 5 and Def 5.2 (the fifth axiom) | declared, not derived | **DECLARED** (P19; Minimality M3-1). The words "configuration", "regular", "reduction", "observed configuration" (Def 5.1) are the architect's candidate wording and await the PI |
+| Remark 5.3 (the reduction loses information) | integration over K₈ kills functions of zero mean | **CHECKED** (elementary). Stated for the map on fields only; whether two solutions share a reduction is expressly not claimed |
+| Prop 5.4 (i) cone points are images of regular points | M1 Thm 5.7 and the paragraph after it | **CANON** (M1 ll.355–362) |
+| Prop 5.4 (ii) the fold is two-to-one, not one-to-one | z and −z have the same image; equal only at the half-lattice | **CHECKED**: `L1_four_fixed`, `L1_two_to_one`, `L1_not_injective` (finite model) |
+| Prop 5.4 (iii) other tori lie over the pillowcase | nℤ² ⊂ ℤ², so the identity of ℝ² descends and commutes with z ↦ −z | **CHECKED** (elementary); finite model `L1_second_cover`, `L1_second_cover_fold` |
+| §5.4, the justification | three approaches did not close; "argue", tagged [M] | **DECLARED** as an argument, not a proof |
+| Thm 7.1 (the minimal set) | follows from Thm 2.2 by counting | **CHECKED**: `L2_one_axiom`, `L2_minimal_set`, `L2_inputs`; its three stated limits are in the text |
+
+**No external theorem is cited as a premise in the draft.** The sixteen bibliography entries are the references that occur inside the quoted text of Appendix A; their details were copied from the source's bibliography and have not been verified. Verified References V-1 to V-5 are therefore not consumed by M3.
+
+**Failure tests stated in the draft.** For the axiom: an observed configuration with no regular configuration above it; a later paper needing uniqueness or a named mechanism as a premise (§5.4). For the minimal set: a target that proves not derivable returns to the axiom list (§7).
+
+**Not done for the draft:** an independent blind check of its text (measure 3), and a referee's read. Gate results: 1, 2, 4, 5 pass; gate 3 has one finding, the word "negentropy" in the Σ-3 table of Appendix A, kept by the PI's ruling P16(j).

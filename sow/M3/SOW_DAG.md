@@ -1,6 +1,6 @@
 # SOW + DAG v1 — Paper M3: Which axioms survive — an audit of the twenty axioms of the programme against the four
 
-**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** OPEN — M2 frozen 9 Nov 2026 (Decision Log P11); WP0 built 10 Nov 2026 (`papers/M3/M3_AppA_axioms.tex`, `papers/M3/M3_WP0_I2_ledger_touch.md`), read by the PI; WP1–WP4 checked against the M1/M2 text 10 Nov 2026 (`papers/M3/M3_WP1-4_verification.md`), awaiting the PI's confirmation of the classification; S.4 (Lean) and WP5 not started. Written for Claude Code; the first session lists assumptions against this document and waits.
+**PI:** Dhiren J. Master · **Seeded:** 9 November 2026 · **State:** OPEN — M2 frozen 9 Nov 2026 (Decision Log P11); WP0 built 10 Nov 2026 (`papers/M3/M3_AppA_axioms.tex`, `papers/M3/M3_WP0_I2_ledger_touch.md`), read by the PI; WP1–WP4 checked against the M1/M2 text 10 Nov 2026 (`papers/M3/M3_WP1-4_verification.md`), classification confirmed (P18, amended P22: completeness left to M11); the fifth axiom ruled (P19); WP5 draft v0 assembled 10 Nov 2026 with three certificates, awaiting the PI's read. Written for Claude Code; the first session lists assumptions against this document and waits.
 
 ## 0. Rulings consumed (Decision Log, 8–9 Nov 2026)
 - **Σ-5 (the Shadow Principle):** attempt its derivation from A1 first; fallback: establish it as the series' one declared axiom with the Gödel-boundary argument (𝓜-4) as justification.

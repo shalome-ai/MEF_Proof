@@ -105,6 +105,9 @@ out.append(r"""%%===============================================================
 %%       PI's commentary of 10 Nov 2026 (Sigma-1, Sigma-2, Sigma-2f), the
 %%       correction of the Lyapunov exponent in M-7 (P17), and the correction
 %%       of d_odd in M-6 (number, not sum, of odd divisors).
+%%   (g) layout only: the quoted text is set with extra line-breaking
+%%       tolerance (the group opened after the source note and closed at the
+%%       end of the file), so that no line overruns the text block.
 %% External citation keys needed in M3's bibliography are listed at the end.
 %%=====================================================================
 
@@ -120,10 +123,12 @@ added in M3} is commentary of the present paper and is not part of the earlier
 wording. The twelve creation axioms
 come first ($\Sigma$-3a is a part of $\Sigma$-3), then the eight mathematical
 axioms.
+
+\begingroup\tolerance=3000\emergencystretch=4em
 """)
 
 def src_tag(a, b):
-    return "\\noindent{\\footnotesize Source lines %d--%d.}\\par\\smallskip\n" % (a, b)
+    return "\\noindent{\\small Source lines %d--%d.}\\par\\smallskip\n" % (a, b)
 
 out.append("\n\\subsection*{The creation axioms}\n")
 for key, a, b in SIGMA:
@@ -157,6 +162,7 @@ for n, a, b in MATH:
 text = "\n".join(out)
 keys = sorted(set(re.findall(r"\\cite\{([^}]*)\}", text)))
 assert not any(k.startswith("Paper") for k in keys), keys
+text += "\n\\endgroup\n"
 text += "\n%% External citation keys used above (entries to be carried into M3's bibliography):\n"
 text += "".join("%%   %s\n" % k for k in keys)
 for bad in ("consciousness coherence", "coherence field", r"\ref{", r"\label{ax", "Paper~", "Papers~"):

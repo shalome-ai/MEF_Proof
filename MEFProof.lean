@@ -127,6 +127,11 @@ import MEFProof.Paper_M2.M2_L5_warp
 import MEFProof.Paper_M2.M2_L6_omega
 import MEFProof.Paper_M2.M2_L7_module
 
+-- Paper M3
+import MEFProof.Paper_M3.M3_L1_lift
+import MEFProof.Paper_M3.M3_L2_count
+import MEFProof.Paper_M3.M3_L3_walls
+
 -- Root
 import MEFProof.Basic
 

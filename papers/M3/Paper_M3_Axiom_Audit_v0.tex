@@ -1,0 +1,405 @@
+% ===================================================================
+% Paper M3 — Which axioms survive: an audit of the twenty axioms of the
+% programme against the four.  DRAFT v0, 10 Nov 2026 (architect's draft for
+% the PI's read; not canon).
+% Compile: xelatex (three passes).  Certificates: MEFProof/Paper_M3/*.lean.
+% Premises: M1 and M2 only (island rule).  The earlier statement of the
+% twenty axioms is reproduced in Appendix A as data and is not cited.
+% ===================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=25mm]{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{fontspec}
+\setmonofont{DejaVu Sans Mono}[Scale=0.78]
+\usepackage{listings}
+% Listing frames sit inside the text block (Decision Log P15(b)): the frame is
+% drawn framesep + rule outside the code, so the code is inset by 5pt each side.
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,columns=fullflexible,keepspaces=true,frame=single,framesep=4pt,xleftmargin=5pt,xrightmargin=5pt,extendedchars=true}
+\usepackage[hidelinks]{hyperref}
+\input{mef_macros.tex}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Hquat}{\mathbb{H}}
+\newcommand{\rigR}{[\textup{R}]}
+\newcommand{\rigD}{[\textup{D}]}
+\newcommand{\rigM}{[\textup{M}]}
+\newcommand{\rigG}{[\textup{G}]}
+\newcommand{\Max}[1]{$\mathbb{M}$-#1}
+\newcommand{\Sig}[1]{$\Sigma$-#1}
+
+\title{Which axioms survive: an audit of the twenty axioms of the programme against the four}
+\author{Dhiren J. Master}
+\date{10 November 2026 (draft v0)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The earlier work of the Master Equation programme was stated on twenty axioms: twelve describing a twelve-dimensional geometry and its fields, and eight describing the mathematics by which results were obtained from it. The first two papers of this series derived that geometry and its field equation from four sentences about what is observed, together with a principle of minimality. We audit the twenty against those two papers and classify each as a theorem already proved, a target owed by a named later paper, an axiom, or not an axiom. Eight are theorems of the first two papers, with corrections where the earlier wording does not survive. Seven are targets, and for each the paper that owes it is named. Three are not axioms: a method, a statement about provability, and an interpretation. Two are one statement, and it is the only one that the four axioms do not reach: that what is observed is a shadow, which does not carry all the information of the object that casts it. We state it as a fifth axiom, as an existence statement without uniqueness. The series therefore rests on five sentences, one principle and one measured scale.
+\end{abstract}
+
+\section{What is observed, and what this paper does}\label{sec:intro}
+
+The purpose of this paper is to say how many axioms the series needs. The first paper, M1, began from four observations that need no instrument, took them as axioms, and derived a twelve-dimensional geometry from them. The second, M2, derived the field equation on that geometry from the same four. The programme these papers rebuild was not written that way. It was stated on twenty axioms, and this paper goes through the twenty one at a time and asks of each whether it is still needed.
+
+\subsection{How the twenty arose}\label{sec:history}
+
+The twenty were not chosen at the outset. In the earlier work more than ninety quantitative statements were obtained, across particle physics, cosmology and number theory, and certain patterns kept recurring in the derivations: a fold with four corners, a drive that stretches and squeezes, a field and its mirror image, a singular object that became regular when seen in more dimensions. Each recurring pattern was written down as an axiom, and the list grew to twenty. A list assembled in that way records what was found useful; it does not show which of its entries are independent. The count of statements obtained is given here as history and is not a result of this paper.
+
+The first two papers of the series change the position. If the geometry is derived, every axiom that describes the geometry is a theorem or it is false; if the field equation is derived, every axiom that describes the fields is a theorem or it is false. What remains after that subtraction is the set of statements the four axioms do not reach, and the purpose of the audit is to find that set.
+
+\subsection{The four axioms}\label{sec:four}
+
+We restate the four as M1 did.
+
+\begin{axiom}[closure]\label{ax:A1}
+The universe closes on itself, so that it can be aware of itself.
+\end{axiom}
+
+\begin{axiom}[growth and decay]\label{ax:A2}
+The universe grows and decays as a function of itself.
+\end{axiom}
+
+\begin{axiom}[order]\label{ax:A3}
+The order of events matters, so that each instance is unique and cannot be foretold.
+\end{axiom}
+
+\begin{axiom}[drive]\label{ax:A4}
+The universe is in constant change; it never stands still.
+\end{axiom}
+
+One remark connects the four, and it is a theorem of M2 rather than a decoration. The operation that exchanges growth with decay is a reversal of the drive together with a quarter-turn of the internal fibre (M2 Proposition~2.6). A quarter-turn done twice is a half-turn, and in the complex coordinate of the plane a half-turn is multiplication by $e^{i\pi}=-1$. So two exchanges of growth and decay are one fold of the fibre, and the fold is what makes the pillowcase of M1: the exponential of the second axiom, the turn of the fourth and the angle $\pi$ of the corners meet in the one relation $S^{2}=-I$ (certificate \texttt{L4\_S\_sq\_fold} of M2; re-derived as \texttt{L3\_exchange\_squared}). \rigR
+
+\subsection{The result in plain words}\label{sec:plain}
+
+Of the twenty, eight are already proved in M1 and M2. Seven are statements about spectra, partition functions and the passage between dimensions that later papers of the series must prove, and we name the paper that owes each. Three are not axioms at all. The remaining two are the same statement written twice, once in words and once in mathematics, and it is the one statement the four axioms do not supply.
+
+That statement can be put as plainly as the four. We can see the shadow, but the shadow is missing information about what it is a shadow of. Two shadows can be identical and be cast by different objects; one object can cast shadows that look nothing alike. The four axioms say what the object is. They do not say that everything we observe, including what looks broken or singular, is a shadow of that object. That is the fifth axiom.
+
+\subsection{What this paper proves, and how it is organised}\label{sec:results}
+
+The results are these. The twenty axioms fall into four classes (Definition~\ref{def:classes}), and the class of each is given in Theorem~\ref{thm:classification} with its reason. The fifth axiom is stated in words (Axiom~\ref{ax:A5}) and formally (Definition~\ref{def:A5}), as the existence of a regular twelve-dimensional configuration above every observed one; that the passage down loses information is a remark with its proof (Remark~\ref{rem:loss}), and uniqueness is not asserted. The smallest case, the corner of the pillowcase, is worked by hand (Proposition~\ref{prop:smallest}). The minimal set of the series is stated in one sentence (Theorem~\ref{thm:minimal}).
+
+The paper is organised as follows. Section~\ref{sec:setting} recalls what M1 and M2 established, in the form the audit uses, and defines the classes. Section~\ref{sec:theorems} treats the axioms that are theorems, Section~\ref{sec:targets} those that are targets, Section~\ref{sec:axiom} the fifth axiom, and Section~\ref{sec:notaxioms} those that are not axioms. Section~\ref{sec:result} states the minimal set and the list of targets. Appendix~\ref{app:axioms} reproduces the twenty axioms as they were stated; Appendix~\ref{app:labels} is the cumulative table of symbols; Appendix~\ref{app:lean} contains the certificates. As in M1 and M2, this introduction is intended to be followed by a first-year student; from Section~\ref{sec:setting} the register is that of a formal paper. Rigour is tagged \rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading or under minimality), \rigM\ (motivated) and \rigG\ (open), as in M1.
+
+The deflationary reading is stated here, where it belongs. This paper proves nothing new about the geometry or the field equation. It is bookkeeping: it shows which of the earlier axioms are consequences of results already proved, and it identifies what is left. A verdict of ``theorem'' below is only as strong as the theorem of M1 or M2 it cites, with the readings and the minimal choices that theorem carries. A verdict of ``target'' is a statement that something has not yet been proved in the series.
+
+\section{The setting: what M1 and M2 established, and the classes}\label{sec:setting}
+
+\subsection{The results the audit uses}\label{sec:recall}
+
+M1 formalises the four axioms as conditions on a compact Riemannian geometry $(T\times\Sigma)\times F$ under four numbered readings (M1 Definitions~2.1, 2.2(i), 2.5, 2.6), defines minimality by four criteria applied in order (M1 Definition~3.2), and proves that the minimal geometry is unique (M1 Theorem~8.1):
+\begin{equation}\label{eq:M12}
+\Mtwelve=(S^{1}_{\mathrm{Sol}}\times S^{3})\times\Keight,\qquad
+\Keight=\bigl[(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)\bigr]^{\Spinc},
+\end{equation}
+with monodromy $M_{0}=\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$, determinant line $\Oline{3}$, $\chi(\Keight)=12$, dimension twelve and no continuous modulus, the overall scale being a declared input. The steps used below are: the drive is unique at the least entropy, with eigenvalues $\varphi^{\pm2}$ and entropy $2\log\varphi$ (M1 Theorem~4.2), and fixes one corner while cycling the other three (M1 Proposition~4.4); the fibre algebra is the quaternions (M1 Proposition~5.2); the fibre is a torus folded by $z\mapsto-z$ to the pillowcase, a sphere with four cone points of angle $\pi$ (M1 Proposition~5.5, Theorem~5.7), carrying $\R$, $\mathbb{C}_{i}$, $\mathbb{C}_{j}$, $\mathbb{C}_{k}$ at the corners and $\Hquat$ elsewhere (M1 Proposition~5.6); the dimension is twelve (M1 Theorem~6.1); the base is $\CPtwo\times\Stwo$ with a $\Spinc$ structure forced by $w_{2}(\CPtwo)\neq0$ (M1 Propositions~7.1 to~7.3) and corner lift signs $(-1)^{mn}$ (M1 Corollary~7.4); the spatial factor is $S^{3}$ (M1 Proposition~7.5); the aspect ratio of the fibre is $\tautwo=1.8466$ (M1 Proposition~8.2, whose stationarity conditions are hypotheses owed by a later paper).
+
+M2 adds a fifth reading, that the metric is positive-definite and time is the orbit parameter of the drive (M2 Definition~2.1), and states the standing principle that wherever the axioms leave a choice the minimal option is taken and named. It proves that the two sheets of the growth law are one field $\psi$, a section of the Clifford module $M\cong\Hquat^{32}$, with shadow $\bar\psi=\hat\tau\psi$ (M2 Definition~2.2); that $\omega=\psi+\bar\psi$ and $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$ is the unique lowest-order even scalar vanishing on both degenerate loci (M2 Definition~2.3, Proposition~2.4); that the exchange $\tau$ is the quarter-turn flow reversal with $\tau^{2}$ the fold (M2 Proposition~2.6) and that $\bar\psi$ has the opposite handedness to $\psi$ (M2 Theorem~2.7); that the field equation is
+\begin{equation}\label{eq:master}
+G_{MN}=8\pi G_{\mathrm{eff}}\,T_{MN}+\zeta\,T^{\QCD}_{MN}+\Lambda_{\mathrm{eff}}\,g_{MN}
+\end{equation}
+(M2 Theorem~3.1); that $\zeta=\chi(\Keight)\pi=12\pi$ (M2 Theorem~4.1, Corollary~4.2); and that $\omega$ vanishes at the locked phase and averages to zero at the uncorrelated phase (M2 Propositions~5.1, 5.3).
+
+\subsection{The twenty axioms}\label{sec:twenty}
+
+The earlier statement has two tiers. The first has twelve entries, \Sig{0} to \Sig{8} with \Sig{P}, \Sig{S} and \Sig{T}; \Sig{2} has eight parts, a to h, one for each component of the geometry, and \Sig{3} has a part 3a. The second tier has eight, \Max{1} to \Max{8}. They are reproduced in Appendix~\ref{app:axioms} with their source lines; the count is certified in \texttt{L2\_twenty}. Most entries consist of a headline statement followed by consequences for physics that the headline is said to produce. We call these consequences \emph{riders}.
+
+\begin{definition}[the classes]\label{def:classes}
+An axiom of the earlier statement is of class \textbf{T} if its headline is a theorem of M1 or M2, the theorem being named; of class \textbf{TT} if it is a theorem target, a statement not proved in M1 or M2 and owed by a named later paper of the series; of class \textbf{A} if it is not reached by the four axioms and is declared; and of class \textbf{N} if it is not an axiom: a method, a statement about the theory, or an interpretation. Each axiom has exactly one class. The class is that of the headline; riders are listed with their own status. Where an entry is a single block with no headline, it is of class T only if every assertive clause of it is a theorem of M1 or M2.
+\end{definition}
+
+The rule in the last sentence is the minimal one: it never credits an entry with more than has been proved. \rigD\ (minimality)
+
+\begin{theorem}[the classification]\label{thm:classification}
+Under Definition~\ref{def:classes} the twenty axioms are classified as in Table~\ref{tab:classes}: eight of class T, seven of class TT, two of class A which are one statement, and three of class N.
+\end{theorem}
+
+\begin{table}[t]
+\begin{center}\small
+\caption{The classification of the twenty axioms.}\label{tab:classes}
+\begin{tabular}{@{}p{0.27\textwidth}lp{0.58\textwidth}@{}}
+\toprule
+Axiom & Class & Reason, and where it is argued \\
+\midrule
+\Sig{0} Universal Symmetry & T & M2 Proposition~2.6, Theorem~2.7; exact for the exponent, not for the periods (Section~\ref{sec:sigma0}) \\
+\Sig{1} The Manifold & T & M1 Theorem~8.1 (Section~\ref{sec:shapes}) \\
+\Sig{2} The Fundamental Shapes & T & M1 Theorems~4.2, 5.7, 7.6, 8.1 and Propositions~7.1 to~7.5, part by part (Section~\ref{sec:shapes}) \\
+\Sig{3} The Pillowcase, with 3a & T & in part: M1 Theorem~5.7, Proposition~5.6; M2 Definition~2.2 (Section~\ref{sec:sigma3}) \\
+\Sig{4} The Three Fields & T & M2 Definitions~2.2, 2.3, Proposition~2.4; one field, not three (Section~\ref{sec:sigma4}) \\
+\Sig{5} The Shadow Principle & A & the fifth axiom (Section~\ref{sec:axiom}) \\
+\Sig{6} Shape Determinism & T & M1 Definition~3.2(1), Theorem~8.1; one declared scale (Section~\ref{sec:sigma6}) \\
+\Sig{7} Dimensional Simplicity & N & an interpretation (Section~\ref{sec:notaxioms}) \\
+\Sig{8} The $\omega$-Drive & TT & field-level zeros in M2; spectral statement owed by M4 \\
+\Sig{P} Dimensional Permeability & TT & owed by M8 and M11 \\
+\Sig{S} Shadow Influence & T & headline: M2 Definition~2.2, Theorem~2.7; channels owed by M5, M17 \\
+\Sig{T} Dual Transparency & TT & owed by M8 \\
+\Max{1} Observables as spectral data & TT & owed by M4 \\
+\Max{2} The Shadow Completion & A & the same statement as \Sig{5} \\
+\Max{3} The proof template & N & a method \\
+\Max{4} The G\"odel boundary & N & a statement about provability \\
+\Max{5} The partition function & TT & owed by M4 and M5 \\
+\Max{6} The spectral data & TT & owed by M4 \\
+\Max{7} The Sol monodromy & T & M1 Theorem~4.2, with one correction (Section~\ref{sec:m7}) \\
+\Max{8} The $\Spinc$ twist & TT & first clause M1 Proposition~7.3; the rest owed by M4, M5 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{proof}
+The verdicts are argued one by one in Sections~\ref{sec:theorems} to~\ref{sec:notaxioms}. The counts, and the fact that the classes partition the twenty, are \texttt{L2\_class\_counts} and \texttt{L2\_partition}. \rigD
+\end{proof}
+
+\section{The axioms that are theorems}\label{sec:theorems}
+
+Each verdict in this section cites a theorem of M1 or M2 and inherits its tag. None is unconditional: each rests on the readings and the minimal choices of the theorem cited, and where the earlier wording says more than the theorem, the excess is named and moved to Section~\ref{sec:targets}.
+
+\subsection{The manifold and its shapes: \texorpdfstring{$\Sigma$}{Sigma}-1 and \texorpdfstring{$\Sigma$}{Sigma}-2}\label{sec:shapes}
+
+\Sig{1} states that the universe is twelve-dimensional with the geometry~\eqref{eq:M12}. This is M1 Theorem~8.1, at \rigD. Two clauses of its wording are not part of the theorem. That the additional dimensions are ``vast, not small'' is a statement about the overall scale, which M1 does not derive and declares as its one input; it is neither a theorem nor a further axiom. That every singular phenomenon is regular in the full geometry is \Sig{5}, treated in Section~\ref{sec:axiom}.
+
+\Sig{2} states that the geometry consists of specific components, each necessary, and lists eight. The headline is M1 Theorem~8.1, whose proof names the axiom and the criterion that force each factor. The parts are as follows, each at the tag of the result cited. The plane $\CPtwo$ is M1 Proposition~7.2, the least direct step of M1 and tagged so there. The sphere $\Stwo$ is M1 Proposition~7.1. The torus is M1 Proposition~5.5, and its aspect ratio is fixed with no modulus by M1 Proposition~8.2; the value is $1.8466$, where the earlier statement has $1.86$. The involution is M1 Proposition~5.5 and Theorem~5.7. The warped product is the second axiom itself under M1's second reading, and its exponent is M2 Theorem~4.1. The $\Spinc$ structure is M1 Proposition~7.3. The time circle with its monodromy is M1 Theorem~4.2. The spatial sphere is M1 Proposition~7.5. The Euler characteristic $3\cdot2\cdot2=12$ is M1 Theorem~7.6.
+
+One refinement of M2 must be carried into every later use of these axioms. The earlier statement speaks of ``the $\Ztwo$ involution'' for two operations. The fold $z\mapsto-z$ makes the pillowcase. What separates the field from its shadow is the exchange $\tau$, a quarter-turn with a reversal of the drive, whose square is the fold (M2 Proposition~2.6). On the four corners the fold fixes every corner, the drive fixes $P_{1}$ and cycles the other three, and the exchange fixes $P_{1}$ and $P_{4}$ and swaps $P_{2}$ with $P_{3}$ (\texttt{L3\_fold\_fixes\_corners}, \texttt{L3\_drive\_corners}, \texttt{L3\_exchange\_corners}).
+
+The riders of \Sig{2} identify the components with physics: the isometries of $\CPtwo$ with the strong force, three generations, the weak mixing angle, the Higgs mechanism, the hierarchy, and others. M1 names no gauge group and no particle, and uses Witten's theorem only as a cross-check. These identifications are targets and are listed in Section~\ref{sec:targets}. One clause of the headline, that whether other geometries could produce other universes is undecidable from within, is a statement about the theory and is of the kind treated in Section~\ref{sec:notaxioms}; M1 itself does not claim that a non-minimal geometry fails the axioms.
+
+\subsection{The pillowcase: \texorpdfstring{$\Sigma$}{Sigma}-3 and 3a}\label{sec:sigma3}
+
+Part 3a states that the fibre algebra is non-commutative over a commutative base and reduces to the real numbers at exactly one of the four corners. This is M1 Proposition~5.6 with Proposition~4.4, at \rigD: the algebra is $\R$ at $P_{1}$, a complex line at each of the other three, and $\Hquat$ at every point with trivial stabiliser.
+
+The headline of \Sig{3} states that the base has two walls and an axis of $\omega$, making four sectors. Part of this is in hand: the pillowcase and its four corners (M1 Theorem~5.7), and two sheets $\psi$ and $\bar\psi$ of opposite handedness (M2 Definition~2.2, Theorem~2.7). The rest is not. In M2, $\omega$ is a field, the even part of the sheet field, and not a coordinate axis; the exchange $\tau$ swaps the corners at the $\psi$ and $\omega$ half-periods; and the word ``wall'' is used without a definition. The two-by-two table of sectors is therefore not a structure that M1 or M2 exhibits. We class \Sig{3} as T for what is proved and record the re-expression of its wall picture in terms of $\tau$ as a target without an owner (Table~\ref{tab:unowned}). \rigD
+
+\subsection{The fields: \texorpdfstring{$\Sigma$}{Sigma}-4}\label{sec:sigma4}
+
+\Sig{4} states that there are three fundamental fields, $\omega$, $\psi$ and $\bar\psi$, coupled through $\QCD$. The fields and the coupling are M2 Definitions~2.2 and~2.3 and Proposition~2.4, with two corrections that M2 settles. There is one field and not three: the shadow and $\omega$ are both determined by $\psi$, and the independent parts are its even and odd parts. And the square in the coupling is the modulus squared, $\QCD=\omega\lvert\psi-\bar\psi\rvert^{2}$, since $\omega$ is quaternion-valued.
+
+One rider does not hold as written. The earlier statement asserts that $\QCD$ is non-zero for a topological reason. In M2 the coupling vanishes at the real corner, wherever the sheets are locked (M2 Proposition~5.1), and wherever they coincide; read pointwise the rider is false. What M2 proves is weaker: a non-zero sheet field of definite handedness cannot equal its shadow (M2 Theorem~2.7). The rider needs a precise statement and a proof where it is first used, and is listed in Table~\ref{tab:unowned}.
+
+\subsection{Symmetry: \texorpdfstring{$\Sigma$}{Sigma}-0}\label{sec:sigma0}
+
+\Sig{0} states that the universe is exactly symmetric across the involution and that every asymmetry is an artefact of observation from one side. The exchange $\tau$ exists and is a symmetry of the Sol block (M2 Proposition~2.6), it is the involution of the second axiom (\rigD, a minimal choice of M2), and the two sectors it exchanges have opposite handedness (M2 Theorem~2.7), so that their handedness sums to zero (\texttt{L3\_chirality\_sum}).
+
+The symmetry is exact for the warp exponent and not for the period lengths. M2 shows that the exponent $12\pi$ is the same for either sheet, and that the aspect ratio $\tautwo$ is not a convention: the decay rate differs by $\tautwo$ between the sheets. So the two sides differ in a real quantity, and ``every asymmetry is an artefact'' does not hold as stated. We class \Sig{0} as T with this caveat, at \rigD. Its riders, that total baryon number and total charge vanish across both sides, are not touched by M1 or M2 (Table~\ref{tab:unowned}).
+
+\subsection{No free parameters: \texorpdfstring{$\Sigma$}{Sigma}-6}\label{sec:sigma6}
+
+\Sig{6} states that everything is fixed by the shapes and that there are no free parameters. Its content is the first criterion of minimality, that a minimal geometry has no modulus (M1 Definition~3.2), together with the theorem that the minimal geometry exists and has none (M1 Theorem~8.1, Proposition~8.2). It is therefore a theorem relative to the four axioms with minimality, at \rigD, and not a further axiom. Two qualifications are part of the verdict. There is one dimensionful input, the overall scale, which M1 declares (\texttt{L2\_inputs}). And the stationarity conditions behind the aspect ratio are hypotheses of M1 owed by M7. The rider, that each named physical quantity is an invariant of the geometry, is a target paper by paper.
+
+\subsection{The drive: \texorpdfstring{$\mathbb{M}$}{M}-7}\label{sec:m7}
+
+\Max{7} states the monodromy, its eigenvalues, its Lyapunov exponent, the fixed point of its M\"obius action, and that it is Anosov. All are M1 Theorem~4.2 and Proposition~4.1, at \rigR\ given the second criterion of minimality, with one correction: the eigenvalues are $\varphi^{2}$ and $\varphi^{-2}$, so the exponent is $2\log\varphi$, as M1 states, and not $\log\varphi$ as the earlier axiom has it. The mixing property and the arrow of time are M2 Proposition~5.3 and Theorem~2.7.
+
+\subsection{The shadow sector: \texorpdfstring{$\Sigma$}{Sigma}-S}\label{sec:sigmaS}
+
+The headline of \Sig{S} states that the second sector is not in a different dimension but is the mirror image of the first within the same geometry. This is M2 Definition~2.2 and Theorem~2.7: the shadow is a section of the same module over the same $\Mtwelve$, with the opposite handedness. Of its three channels of influence, the second, through $\omega$, holds by the definition of $\omega$; the first, through gravity, has its form in~\eqref{eq:master}, where the shadow enters the curvature through $\zeta T^{\QCD}$, and its identification with dark matter is owed by M17; the third, through a completion of a modular object, is owed by M5.
+
+\section{The axioms that are targets}\label{sec:targets}
+
+A target is a statement that M1 and M2 do not prove and that a later paper of the series owes. Table~\ref{tab:targets} names the owing paper for each of the seven axioms of class TT and for the riders of the axioms of class T. The assignment follows the order of the series, in which nothing is used before the paper that derives it.
+
+\begin{table}[t]
+\begin{center}\small
+\caption{The targets and the papers that owe them.}\label{tab:targets}
+\begin{tabular}{@{}p{0.47\textwidth}p{0.12\textwidth}p{0.33\textwidth}@{}}
+\toprule
+Statement & Owed by & In hand from M1 and M2 \\
+\midrule
+\Max{6}: the spectrum and its degeneracies $\dodd(n)$ & M4 & nothing \\
+\Max{5}: the partition function and its modular type; its completion & M4, M5 & nothing \\
+\Max{1}: observables as internal spectral data & M4 & nothing \\
+\Max{8}: what the $\Spinc$ twist does to the partition function & M4, M5 & that the twist is forced (M1 Proposition~7.3) \\
+\Sig{8}: $\omega$ as a functional of a spectrum & M4 & the two zeros of $\omega$ and one hump (M2 Propositions~5.1, 5.3) \\
+\Sig{P}: gauge fields confined; punctures & M8, M11 & the metric and $\QCD$ are fields on $\Mtwelve$ (M2 Definition~2.5) \\
+\Sig{T}: exactly two fields cross every boundary & M8 & the two geometric sources in~\eqref{eq:master} \\
+\Sig{S}: the shadow as dark matter; the completion & M17, M5 & the headline (Section~\ref{sec:sigmaS}) \\
+Riders of \Sig{2}: gauge groups, generations, mixing & M8, M9, M13 & the shapes (Section~\ref{sec:shapes}) \\
+Riders of \Sig{2}: hierarchy, vacuum energy & M10 & $\zeta=12\pi$ (M2 Corollary~4.2) \\
+Riders of \Sig{2}: fine-structure constant; Higgs & M14, M15 & nothing \\
+Stationarity conditions behind $\tautwo$ & M7 & the cubic (M1 Proposition~8.2) \\
+Completeness of the geometry; the completeness axiom of the black-hole paper & M11 & nothing stated here \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Three remarks on the table. First, \Sig{8} is one-sided as it was written: it describes low $\omega$ as ordered and high $\omega$ as interconnected and omits the second zero, at the uncorrelated phase, which M2 derives. Any later statement of it must carry both zeros.
+
+Second, the function $\dodd$ of \Max{6} is the number of odd divisors of $n$, and not their sum as the earlier axiom says. The axiom itself fixes this, since it gives the Dirichlet series as $\zeta(s)^{2}(1-2^{-s})$, and
+\[
+\sum_{n\ge1}\frac{\dodd(n)}{n^{s}}
+=\Bigl(\sum_{m\ge1}\frac1{m^{s}}\Bigr)\Bigl(\sum_{d\ \mathrm{odd}}\frac1{d^{s}}\Bigr)
+=\zeta(s)\cdot\zeta(s)\bigl(1-2^{-s}\bigr)
+\]
+when $\dodd$ counts the odd divisors, each $n$ being written as $md$ with $d$ odd in $\dodd(n)$ ways. The smallest case by hand: $6$ has the odd divisors $1$ and $3$, so $\dodd(6)=2$. \rigR
+
+Third, the completeness of the geometry is not stated in this paper. The question whether the completeness assumed in the treatment of the black-hole interior is a consequence of closure is left to the paper that treats it.
+
+\begin{table}[t]
+\begin{center}\small
+\caption{Riders with no owing paper yet named in the series.}\label{tab:unowned}
+\begin{tabular}{@{}p{0.62\textwidth}p{0.30\textwidth}@{}}
+\toprule
+Statement & From \\
+\midrule
+Total baryon number and total charge vanish across both sectors & \Sig{0} \\
+The coupling $\QCD$ is non-zero for a topological reason (precise form and proof) & \Sig{4}; used by \Max{2}, \Max{3} \\
+The two homology generators of the torus as the origin of exactly two transparent fields & \Sig{2}, \Sig{T} \\
+Punctures directed inwards & \Sig{P} \\
+The wall picture and the four sectors re-expressed in terms of $\tau$ & \Sig{3} \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Table~\ref{tab:unowned} lists five statements of the earlier axioms that no paper of the series is yet assigned to. They are targets, not premises.
+
+\section{The fifth axiom}\label{sec:axiom}
+
+\subsection{What the four axioms do not reach}\label{sec:reach}
+
+\Sig{5} and \Max{2} say the same thing: every apparent singularity in a lower-dimensional description is a projection artefact of a regular object on the full geometry, and the completed object is unique. Three assertions are bundled in it. The first is that what is observed is the image of something on $\Mtwelve$ under a passage to fewer dimensions. The second is that this passage loses information. The third is that for everything observed, including what is singular, a regular object above it exists, and that it is unique.
+
+The four axioms and M1 and M2 supply the first of these as a scheme, since M2 obtains four-dimensional statements by integrating over $\Keight$ (M2 Definition~2.5). The second is a remark with a proof, given below. The third is not a consequence of the four axioms: they determine the geometry and the field equation, and they say nothing about which four-dimensional configurations arise. Its existence half is what the earlier work uses, and we declare it. Its uniqueness half we do not declare: it is not needed for the statement, the passage down is many-to-one, and in the series the object is fixed by the four axioms and minimality (M1 Theorem~8.1) and not by its shadow.
+
+\subsection{The axiom}\label{sec:fifth}
+
+\begin{axiom}[shadow]\label{ax:A5}
+We can see the shadow, but the shadow is missing information about what it is a shadow of.
+\end{axiom}
+
+To use the sentence we must say what a shadow is, as M1 did for each of the four.
+
+\begin{definition}[configurations and the reduction]\label{def:reduction}
+A \emph{configuration} is a set of the fields of M2 Definition~2.5 on $\Mtwelve$ --- the metric with its warp, the dilaton $\QCD$, the $\Spinc$ spinor and the connection of the determinant line --- satisfying the field equation~\eqref{eq:master}. It is \emph{regular} if every field is defined at every point of $\Mtwelve$ and is smooth away from the corners and walls of the pillowcase, where M1 admits cone points and M2 admits a jump in the slope of the warp. The \emph{reduction} $\rho$ of a configuration is the four-dimensional data on $S^{1}\times\Sigma$ obtained by integrating over $\Keight$ in the two stages of M2 Definition~2.5. An \emph{observed configuration} is four-dimensional data of the same kind, defined on $S^{1}\times\Sigma$ away from a closed set of measure zero, on which it may fail to be defined or to be bounded.
+\end{definition}
+
+\begin{definition}[shadow, formal]\label{def:A5}
+The geometry satisfies A5 if every observed configuration is the reduction of a regular configuration.
+\end{definition}
+
+The definition is an existence statement. It does not say that the regular configuration is unique, and it does not name a mechanism by which it is found. It is the minimal option among those the earlier wording leaves open, and is recorded as such: the earlier axiom declared existence, uniqueness and two named mechanisms; we declare existence only. \rigD\ (minimality)
+
+\begin{remark}[the reduction loses information]\label{rem:loss}
+The reduction is not one-to-one on fields. Integration over $\Keight$ sends to zero every function on $\Keight$ of zero mean, so two sets of fields that differ by such a function in one component have the same four-dimensional data. \rigR\ This is a statement about the map on fields. Whether two configurations, each satisfying~\eqref{eq:master}, can have the same reduction is a question about the solutions of the field equation, which this paper does not answer; the axiom does not depend on the answer.
+\end{remark}
+
+\subsection{The smallest case by hand}\label{sec:smallest}
+
+The pillowcase is the smallest object of the series that has a singular point and a regular object above it, and every part of the axiom can be seen in it.
+
+\begin{proposition}[the corner of the pillowcase]\label{prop:smallest}
+Let $P=\Ttwo/\Ztwo$ be the pillowcase and $\pi:\Ttwo\to P$ the fold.
+\begin{enumerate}[label=(\roman*),nosep]
+\item $P$ has four cone points of angle $\pi$, at which all of its curvature is concentrated; each is the image under $\pi$ of a point of the torus at which the torus is flat and regular.
+\item The fold is two-to-one away from the four corners and identifies $z$ with $-z$: it is not one-to-one.
+\item The torus is not the only regular surface lying over $P$. For every $n\ge2$ the torus $\R^{2}/n\Z^{2}$ maps onto $\Ttwo=\R^{2}/\Z^{2}$, and hence onto $P$, by a map that commutes with the fold.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) is M1 Theorem~5.7 and the paragraph that follows it there: near a fixed point the fold is the rotation by $\pi$, a disc of angle $2\pi$ is folded to a cone of angle $\pi$, and the torus is flat. (ii) The fold sends $z$ and $-z$ to the same point, and $z\neq-z$ except at the four half-lattice points. (iii) The identity of $\R^{2}$ descends to a map $\R^{2}/n\Z^{2}\to\R^{2}/\Z^{2}$, since $n\Z^{2}\subset\Z^{2}$, and it commutes with $z\mapsto-z$; composing with $\pi$ gives a map onto $P$. The finite content is certified on the grids $(\Z/4)^{2}$ and $(\Z/8)^{2}$: the fold is an involution with exactly four fixed points, the other twelve points fall into six pairs, two distinct points have the same image, every point of the smaller grid has four preimages in the larger, and the reduction commutes with the fold (\texttt{L1\_fold\_involution}, \texttt{L1\_four\_fixed}, \texttt{L1\_two\_to\_one}, \texttt{L1\_not\_injective}, \texttt{L1\_second\_cover}, \texttt{L1\_second\_cover\_fold}). \rigR
+\end{proof}
+
+In the words of the axiom: the corner is singular in the pillowcase and regular in the torus (existence); the pillowcase does not record which of $z$ and $-z$ a point came from (loss of information); and the pillowcase alone does not say which torus was folded (no uniqueness). The proposition is an illustration in dimension two and nothing later rests on it.
+
+\subsection{What justifies declaring it}\label{sec:justify}
+
+The earlier work offered a justification, \Max{4}: that the statement cannot be proved within any single existing formal system, three approaches having each reached an obstruction. We keep the observation and limit what is claimed for it. That three approaches did not close is evidence that the statement is hard; it is not a proof that the statement is undecidable, and nothing in the earlier text exhibits it as independent of a named formal system. We therefore argue, and do not prove, that the statement is to be taken as an axiom, on the same ground as the four: it is an observation in plain words whose content the others do not supply. \rigM
+
+The axiom has a failure test, as every minimal choice of the series has. It fails if an observed configuration is shown to have no regular configuration above it. It is too weak if a later paper needs the uniqueness of the regular configuration, or a named mechanism of completion, as a premise and not as a result; in that case the choice made here is to be flagged and enlarged in the open. The first paper that tests it on a case beyond the pillowcase is M5.
+
+\section{What is not an axiom}\label{sec:notaxioms}
+
+Three of the twenty are of class N.
+
+\Max{3} states that each proof follows one template: identify the shadow, construct the completion, prove a lock, derive the consequence. This is a method. It is not a statement about the universe or about the mathematics, and a method is adopted, not assumed. Two of its four steps rest on statements that are not in hand: the completion, which is the fifth axiom, and the lock, which is the rider of \Sig{4} listed in Table~\ref{tab:unowned}.
+
+\Max{4} states that the Shadow Principle cannot be proved from within. It is a statement about provability and not an axiom of the theory. Its use is confined to Section~\ref{sec:justify}.
+
+\Sig{7} states that complexity is a projection artefact of simplicity. It has no formal statement, no result of the earlier work cites it as a premise, and neither the definition of minimality nor the theorem of the least dimension in M1 asserts it. It is an interpretation, close in spirit to the fifth axiom, and is recorded as such.
+
+Three clauses of other axioms are of the same kind and are not counted separately: the clause of \Sig{2} on the undecidability of other geometries; the clause of \Sig{T} that structured diversity requires two transparent fields, which is an argument; and the choice of unit in the earlier treatment of the warp, which M2 carries as a statement of units. No axiom is a convention as a whole; the conventions of the series are the assignment of two corner labels (M1 Appendix~B), which sheet is called $\psi$, and the overall sign of $\psi$ (M2).
+
+\section{The minimal set, and the list of targets}\label{sec:result}
+
+\begin{theorem}[the minimal set]\label{thm:minimal}
+The series rests on the four axioms of M1, the fifth axiom of this paper, the principle of minimality, and one measured scale; of the twenty axioms of the earlier statement none other is independent.
+\end{theorem}
+
+\begin{proof}
+By Theorem~\ref{thm:classification}, eight of the twenty are theorems of M1 and M2, which rest on the four axioms, the five readings and minimality; seven are targets, which are not premises; three are not axioms; and the remaining two are the one statement declared as A5 (\texttt{L2\_one\_axiom}, \texttt{L2\_minimal\_set}). The scale is the declared input of M1 Theorem~8.1 (\texttt{L2\_inputs}). \rigD
+\end{proof}
+
+The theorem is to be read with its limits. It says that no further axiom is needed to state what M1 and M2 have proved and what the later papers are to prove. It does not say that the targets of Table~\ref{tab:targets} will be reached from five axioms; if one of them proves not to be derivable it returns to the list of axioms, with the failure recorded. The five readings of M1 and M2 are definitions and not axioms, and a reader who takes one of them differently has a different theorem. And the count of ``one measured scale'' is of dimensionful inputs; the claim that there is no dimensionless one rests on the stationarity conditions of M1 Proposition~8.2, which M7 owes.
+
+Tables~\ref{tab:targets} and~\ref{tab:unowned} are the list of what remains. They are the content of the papers that follow: the spectrum and the partition function, the test of the fifth axiom on the pillowcase, the aspect ratio, the masses and mixings, the vacuum energy, the black-hole interior and the couplings.
+
+\section*{Acknowledgements}
+The author used Claude (Anthropic) and Gemini (Google DeepMind) as mathematical development and analytical tools during the preparation of this work. All intellectual content, theoretical framework, and scientific claims are the sole responsibility of the author.
+
+\appendix
+
+\input{M3_AppA_axioms.tex}
+
+\input{M3_AppB.tex}
+
+\section{Machine-verified certificates}\label{app:lean}
+
+Three certificates accompany the paper, each a single Lean~4 file on the core toolchain with no Mathlib dependency, no author axioms and no \texttt{sorry}. They build within the series' proof tree \texttt{MEFProof.Paper\_M3}; the build record is
+\begin{lstlisting}
+Built MEFProof.Paper_M3.M3_L1_lift   (496ms)
+Built MEFProof.Paper_M3.M3_L2_count  (230ms)
+Built MEFProof.Paper_M3.M3_L3_walls  (237ms)
+\end{lstlisting}
+Every certified statement is named at the point in the text where it is used. The certificates fix finite bookkeeping only. No classification is certified: each is argued in the text from a theorem of M1 or M2.
+
+\texttt{M3\_L1\_lift.lean} (Section~\ref{sec:axiom}, 8 theorems): the fold on the grid $(\Z/4)^{2}$ is an involution with exactly four fixed points; it is two-to-one elsewhere; it is not one-to-one; the grid $(\Z/8)^{2}$ lies four-to-one over it compatibly with the fold; a count of assignments on four loops, not used in the text.
+
+\texttt{M3\_L2\_count.lean} (Sections~\ref{sec:setting}, \ref{sec:result}, 6): the twenty axioms; the counts of the four classes and their sum; the two entries of class A as one axiom; the five sentences; the one scale.
+
+\texttt{M3\_L3\_walls.lean} (Section~\ref{sec:theorems}, 7): the action of the fold, the drive and the exchange on the four corners; $S^{2}=-I$; the corner signs with product $-1$; the sum of the two handedness signs.
+
+The three files follow verbatim.
+
+\subsection*{\texttt{M3\_L1\_lift.lean} --- the fold in a finite model}
+\lstinputlisting{../../MEFProof/Paper_M3/M3_L1_lift.lean}
+
+\subsection*{\texttt{M3\_L2\_count.lean} --- the bookkeeping of the classification}
+\lstinputlisting{../../MEFProof/Paper_M3/M3_L2_count.lean}
+
+\subsection*{\texttt{M3\_L3\_walls.lean} --- corners, fold, drive and exchange}
+\lstinputlisting{../../MEFProof/Paper_M3/M3_L3_walls.lean}
+
+\begin{thebibliography}{99}
+\bibitem{Anderson1972} P.~W. Anderson, More is different, \emph{Science} 177 (1972) 393.
+\bibitem{Dirac1928} P.~A.~M. Dirac, The quantum theory of the electron, \emph{Proc. Roy. Soc. A} 117 (1928) 610.
+\bibitem{Einstein1915} A. Einstein, Die Feldgleichungen der Gravitation, \emph{Sitzungsber. Preuss. Akad. Wiss.} (1915) 844.
+\bibitem{Frobenius1877} G. Frobenius, \"Uber lineare Substitutionen und bilineare Formen, \emph{J. Reine Angew. Math.} 84 (1877) 1.
+\bibitem{Gauss1827} C.~F. Gauss, Disquisitiones generales circa superficies curvas, \emph{Comm. soc. reg. sci. Gott. rec.} 6 (1827) 99.
+\bibitem{Hamilton1844} W.~R. Hamilton, On a new species of imaginary quantities, connected with a theory of quaternions, \emph{Proc. Royal Irish Acad.} 2 (1844) 424.
+\bibitem{Hilbert1900} D. Hilbert, Mathematische Probleme, \emph{G\"ottinger Nachrichten} (1900) 253.
+\bibitem{Jacobi1829} C.~G.~J. Jacobi, \emph{Fundamenta Nova Theoriae Functionum Ellipticarum}, Borntr\"ager, K\"onigsberg, 1829.
+\bibitem{Jordan1870} C. Jordan, \emph{Trait\'e des substitutions et des \'equations alg\'ebriques}, Gauthier-Villars, Paris, 1870.
+\bibitem{Kaluza1921} T. Kaluza, Zum Unit\"atsproblem der Physik, \emph{Sitzungsber. Preuss. Akad. Wiss.} (1921) 966.
+\bibitem{Luders1954} G. L\"uders, On the equivalence of invariance under time reversal and under particle-antiparticle conjugation for relativistic field theories, \emph{Danske Mat. Fys. Medd.} 28 (1954) No.~5.
+\bibitem{Pauli1955} W. Pauli, Exclusion principle, Lorentz group and reflection of space-time and charge, in \emph{Niels Bohr and the Development of Physics}, Pergamon Press, London, 1955, p.~30.
+\bibitem{Ramanujan1920} S. Ramanujan, Letter to G.~H. Hardy, 12 January 1920, in \emph{Collected Papers of Srinivasa Ramanujan}, Cambridge University Press, 1927.
+\bibitem{Riemann1868} B. Riemann, \"Uber die Hypothesen welche der Geometrie zu Grunde liegen, \emph{Abh. K\"on. Ges. Wiss. G\"ottingen} 13 (1868) 133.
+\bibitem{Weyl1918} H. Weyl, Gravitation und Elektrizit\"at, \emph{Sitzungsber. Preuss. Akad. Wiss.} (1918) 465.
+\bibitem{Zwegers2002} S.~P. Zwegers, \emph{Mock Theta Functions}, PhD thesis, Utrecht, 2002.
+\end{thebibliography}
+\end{document}

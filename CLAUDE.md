@@ -38,6 +38,11 @@ Claude cannot reliably tell from the inside when it is bending an argument towar
 5. **A failure test for every claim.** Each banked result states what computation or observation would show it false, as the Minimality Register already does. A claim with no failure test is flagged.
 Ungrounded steps found in a source are parked in `registers/Future_Mx_Register.md` with the owing paper, and are not premises until grounded or struck.
 
+## 2c. No paper is frozen until the whole series is consistent (PI, 10 November 2026; Decision Log P23)
+- **No paper is truly frozen until all the papers have been worked through and found consistent with each other.** A paper in `canon/` is the current best version, not a closed one. When an audit or a later paper shows that an earlier paper needs to change, change it (as a new version, with the change recorded in the Decision Log and the ledger) and do not ask whether a "frozen" paper may be reopened.
+- **Nothing is left to a later paper that the present paper relies on.** A step a paper uses is either closed in that paper or stated there as a declared assumption with its failure test. Deferring it ("the derivation belongs to the sequel") is how the old corpus came to fix early papers with results from late ones.
+- **M1 and M2 were written before §§2a–2b.** They are audited under those rules (step audit, red-flag scan, blind check, deferrals closed) before they are revised and before anything further is built on them.
+
 ## 3. The canon and the island rule
 - `canon/M1/`, `canon/M2/`, … hold the frozen papers of the series with their certificates. **A paper Mx may cite only M1…M(x−1) and external peer-reviewed results.** No MEF corpus paper (I–XXV, 1–6, GBH, D, U, YM, Tau2) is ever cited; their content is reproduced in-document or placed on a declared Σ-axiom. The old papers are read-only inputs the PI supplies, held locally in `sources/` (their `.tex` files are not tracked by git); they are never cited.
 - The ledger `ledger/M-Derivation-Proof-Ledger.md` is the source of truth for *where* a result lives and at *what rigour*. Ledger first, then the paper.
