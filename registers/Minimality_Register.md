@@ -32,6 +32,12 @@
 | M2-10 | §3, kinetic form (Q17) | Quadratic forms in ∇Φ for module-valued Φ: one component, trace of the square, square of the trace | the module inner product (trace of the square), weight 32 for a symmetric vacuum | not a choice: covariance — invariant symmetric forms on an irreducible quaternionic-unitary module are one-dimensional [R] | `M2_WP3_master_equation.tex` ¶dilaton term; `M2_L7_module.lean` | a corpus result needing a non-covariant kinetic form | good standing (forced) |
 | M2-7 | §3, convention | Normalisation of ζ: kinetic term inside the gravitational bracket with coefficient ζ vs CFM's −½ζ outside | **inside the bracket, coefficient ζ (PI ruling 9 Nov 2026)**; reproduces the canonical display with no κ² on T^Φ; CFM v12 l.1525 superseded | convention; fixes what "ζ = 12π" multiplies | ¶ Def. action | n/a (convention) | good standing (ruled) |
 
+## M3 — Which axioms survive
+
+| # | Node | Choice space | Minimal option | Criterion | Stated at | Failure test | Status |
+|---|---|---|---|---|---|---|---|
+| M3-1 | WP3, S.2 (P6, P19) | What is declared, of the old Shadow Principle (Σ-5 = 𝕄-2): (a) all of it, including uniqueness of the completion and its named mechanisms; (b) existence and uniqueness of a smooth preimage; (c) existence only | **(c): every admissible observed configuration has a smooth twelve-dimensional preimage under the reduction map.** Completeness of M₁₂ is not declared (derived: A1, R5, Hopf–Rinow). Non-injectivity of the reduction is not declared (a remark with its proof). Uniqueness is not declared (the object is fixed by A1–A4 and minimality, M1 Thm 8.1) | extension of (1): declare the weakest statement that the later papers consume | `papers/M3/M3_WP1-4_verification.md` §3 S.2 and §7; to be stated in M3 §4 | A later paper (M5 first, on the pillowcase) needing uniqueness of the preimage, or a named completion mechanism, as a premise rather than as a result; or an admissible configuration shown to have no smooth preimage | good standing (banked by the PI, 10 Nov 2026) |
+
 ---
 
 *Procedure.* New entries are added at the node where the choice is made, in the same session, before the result is tagged [D | minimality]. When a failure test fires, the entry's status becomes **FAILED (date, where)**, a Corpus Errors entry is opened, and the paper states the failure where it occurs.

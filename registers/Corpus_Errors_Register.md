@@ -50,3 +50,24 @@ An identification, not a derivation, and under entry 19 the square is the modulu
 
 ## 23. Paper XX v10 l.761 (𝕄-7) — "The Lyapunov exponent is ln φ" (banked by the PI, 10 Nov 2026)
 The same axiom gives the eigenvalues of M = ((2,1),(1,1)) as φ² and φ⁻², which is correct (M1 Thm 4.2; M2 `L4_eigen`). The Lyapunov exponent is the logarithm of the stretching eigenvalue, 2 ln φ = ln φ², as M2 has it (κ = log φ², `canon/M2/M2_WP2_handedness.tex` l.35). PI ruling 10 Nov 2026 (Decision Log P17): the old axiom is incorrect as stated. Action: M3 Appendix A keeps the wording as data with a marked correction; any later paper reproducing a rate "ln φ" from the corpus (Paper XX l.764 repeats it: "all at rate ln φ") re-derives it with κ = log φ².
+
+## 24. Paper XX v10 l.387 (Σ-2c) — "τ₂ = L_ω/L_ψ = 1.86" (banked by the PI, 10 Nov 2026)
+The canon's value is 1.8466, the positive root of 6u³ + u² − 72u − 4 = 0 with u = τ₂² (M1 Prop 8.2; M2 `M2_WP4_warp_exponent.tex` l.268). Same discrepancy as flagged in the series SOW for Papers VI, VIII, X, XVI. Action: M3 states 1.8466 with the M1 reference; the stationarity hypotheses remain owed by M7.
+
+## 25. Paper XX v10 l.480 (Σ-4) and ll.651, 726, 939 — "Φ_QC ≠ 0 topologically" (banked by the PI, 10 Nov 2026)
+M2 shows Φ_QC vanishes at the real corner P₁, at the locked phase (Prop 5.1) and where the sheets coincide, so the statement is false pointwise. What M2 proves is that the two sectors are distinct (Thm 2.7), which gives ψ − ψ̄ ≢ 0 for a chiral ψ ≠ 0 and not Φ_QC ≢ 0. The statement is the "topological lock" of 𝕄-2/𝕄-3 (Navier–Stokes, Riemann). Action: to be stated precisely and proved where first consumed (M5 or M22); not a premise until then. See `papers/M3/M3_WP1-4_verification.md` T.2.
+
+## 26. Paper XX v10 ll.476–480 (Σ-4) — "three fundamental geometric degrees of freedom" (banked by the PI, 10 Nov 2026)
+In M2 there is one sheet field ψ; the shadow ψ̄ = τ̂ψ and ω = ψ + ψ̄ are determined by it (Defs 2.2, 2.3; "the two sheets of A2 are therefore one field"). Action: M3 uses M2's wording. Note for a future erratum list: M2 `M2_WP3_master_equation.tex` l.159 says "the fundamental fields are the sheets ψ, ψ̄ and the Coherent Field ω".
+
+## 27. Paper XX v10 ll.520–526 (Σ-8) — the ω-drive stated one-sidedly (banked by the PI, 10 Nov 2026)
+Σ-8 gives low ω as ordered and high ω as interconnected and omits the second zero. M2 derives both zeros (locked, Prop 5.1; uncorrelated, Prop 5.3) with one hump between, in agreement with `canon/omega-definition-usage_v2.md` §2. Action: M3 restates Σ-8 with both zeros.
+
+## 28. Paper XX v10 l.751 (𝕄-6) — d_odd(n) called "the sum of odd divisors of n" (banked by the PI, 10 Nov 2026)
+d_odd(n) is the number of odd divisors. The Dirichlet series the same axiom states, ζ(s)²(1−2⁻ˢ), is that of the count (the sum would give ζ(s)ζ(s−1)(1−2^{1−s})); `sources/twisted_genus_note.tex` Prop. `prop:dodd` (l.288) defines it as the count, with d_odd(6) = 2. The axiom's worked example at l.754, "d_odd(6) = 1 + 3 = 4", is wrong. Action: marked note in M3 Appendix A; M4 states the count.
+
+## 29. Paper XX v10 l.769 (𝕄-8) and l.405 (Σ-2f) — "without [the twist] the partition function would be Liu-rigid … with no q-dependence" (banked by the PI, 10 Nov 2026)
+Contradicted by `sources/twisted_genus_note.tex`: the untwisted genera of ℂP¹ and ℂP² are q-dependent (Prop. `prop:untwisted`(iii), with a second route by Riemann–Roch, `lem:RR`); Liu's rigidity theorems concern the equivariant parameter of a circle action and "say nothing about independence of τ" (`rem:rigidity`, l.206); "the twist does not create the anomaly … it breaks homogeneity of weight" (abstract; `rem:reading`). A₂ = 1 − y + y² is the q → 0 limit (the χ_y-genus), not the whole function. Action: M3 records the clause as not standing; M4 states what the twist does.
+
+## 30. Paper XX v10 l.741 (𝕄-5), l.769 (𝕄-8), l.648 (𝕄-2) — the partition function called a mock Jacobi form completed by the Zwegers completion (banked by the PI, 10 Nov 2026) — **open: which object is meant**
+For the twisted elliptic genus of ℂP² × ℂP¹ × ℂP¹ (the object of `sources/twisted_genus_note.tex`, ℓ = 3 the Spin^c case) the note proves otherwise: it is a quasi-Jacobi form with components of weights 0, −1, −2; its completion is algebraic (𝒥 → 𝒥̂), "not of the harmonic-Maass type"; "no cusp form of weight 3/2 or any other weight is attached" (`rem:reading`, l.262); its Lambert function "should not be confused with the Appell–Lerch sums of Zwegers' theory … no completion by a period integral is involved" (`rem:appell`, l.303). The series SOW's M4 row already says "quasi-Jacobi". Whether 𝕄-5 refers to this object or to another (the pillowcase orbifold's own partition function, Paper XI / Paper 3) has not been checked: those sources were not read. Action: settle at the opening of M4/M5; until then the mock-modular statements are not premises.

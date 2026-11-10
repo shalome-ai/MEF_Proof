@@ -60,6 +60,10 @@ NOTES = {   # per axiom: (end of the source paragraph the note follows, note tex
           "carrier. Time can move forward; without this condition everything would be frozen.")],
 }
 MATH_NOTES = {  # mathematical axiom number -> note (PI ruling, 10 Nov 2026)
+ 6: (r"Here $\dodd(n)$ is the number of odd divisors of $n$, not their sum: the Dirichlet "
+     r"series $\zeta(s)^{2}(1-2^{-s})$ stated in the axiom is that of the count, "
+     r"$\sum_{k\ \mathrm{odd}}q^{k}/(1-q^{k})=\sum_{m\geq1}\dodd(m)\,q^{m}$. "
+     r"For example $\dodd(6)=2$."),
  7: (r"The eigenvalues are as stated: $\phi^{2}$ and $\phi^{-2}$ (M1, Theorem~4.2; M2, "
      r"certificate \texttt{L4\_eigen}). The Lyapunov exponent is therefore "
      r"$\ln\phi^{2}=2\ln\phi$, not $\ln\phi$ as written above; M2 has "
@@ -97,9 +101,10 @@ out.append(r"""%%===============================================================
 %%       axiom environment; the labels of the source are dropped;
 %%   (e) not transcribed: the Example paragraphs after each mathematical
 %%       axiom, and the Fixed-Point Vanishing lemma block (ll.659-718).
-%%   (f) four paragraphs headed "Note added in M3" are not source text: the
-%%       PI's commentary of 10 Nov 2026 (Sigma-1, Sigma-2, Sigma-2f) and the
-%%       correction of the Lyapunov exponent in M-7 (PI ruling, 10 Nov 2026).
+%%   (f) five paragraphs headed "Note added in M3" are not source text: the
+%%       PI's commentary of 10 Nov 2026 (Sigma-1, Sigma-2, Sigma-2f), the
+%%       correction of the Lyapunov exponent in M-7 (P17), and the correction
+%%       of d_odd in M-6 (number, not sum, of odd divisors).
 %% External citation keys needed in M3's bibliography are listed at the end.
 %%=====================================================================
 
@@ -156,6 +161,6 @@ text += "\n%% External citation keys used above (entries to be carried into M3's
 text += "".join("%%   %s\n" % k for k in keys)
 for bad in ("consciousness coherence", "coherence field", r"\ref{", r"\label{ax", "Paper~", "Papers~"):
     assert bad not in text, bad
-assert text.count("Note added in M3.}") == 4
+assert text.count("Note added in M3.}") == 5
 open(sys.argv[2], "w", encoding="utf-8").write(text)
 print(len(text.split("\n")), "lines;", len(keys), "external keys:", " ".join(keys))

@@ -31,3 +31,9 @@ Paper III identifies the MEF Higgs with Φ_QC; M2 §5 finds the coupling extrema
 
 ## F-4. The imaginary part of ω and the weak mixing angle — lead for M13 (PI, 9 Nov 2026)
 Recorded on the PI's word; a lead, not a premise, not yet examined. The corpus took ω real (ω = ψ + ψ̄ = 2 Re ψ; M2 SOW R1). M2 makes ω quaternion-valued, the unique carrier of the imaginary direction (Decision Log Q17(b); M2 Def ω), and Φ_QC = ω|ψ−ψ̄|² takes its direction from ω (Minimality M2-9; P12). The PI's lead: the imaginary part of ω, absent from the corpus's derivations, may be the missing element in the derivation of the weak mixing angle. Owing paper: M13 (series SOW: not writeable until F-100 resolves). Record: `registers/records/2026-11-09_M2-9_modulus_squared.md` §5.
+
+## F-5. Riders of the twenty axioms with no owing paper named — from the M3 audit (banked by the PI, 10 Nov 2026; owing papers to be assigned)
+Found in `papers/M3/M3_WP1-4_verification.md` §6. (1) Total baryon number and total charge zero across both sectors (Σ-0). (2) "Φ_QC ≠ 0 topologically", the lock used by 𝕄-2 and 𝕄-3 (Σ-4; Corpus Errors 25). (3) The two homology generators of T² as the origin of exactly two transparent fields (Σ-2c, Σ-T). (4) Quasars as inward conduits (Σ-P). (5) The wall picture and the four sectors of Σ-3 re-expressed in τ's terms (series SOW open item, no single owner). Each is a target, not a premise.
+
+## F-6. Canon housekeeping found by the M3 audit (banked by the PI, 10 Nov 2026)
+(a) Ledger: the corner three-cycle is M1 Prop 4.4, not 4.3; M1 Thm 4.3 (the Fibonacci drive; `L1_M0_is_Fib_squared`, `L1_Fib_recursion`, `L1_Fib_powers`, `L1_Fib_not_SL2`) has no row; M1 Thm 7.6 is tagged [D] in M1, [R] in the ledger. (b) M2 erratum candidate: `M2_WP4_warp_exponent.tex` l.187 cites "M1 Propositions 4.3, 5.6" for the corner fixed by the fold and the drive; it is Proposition 4.4. (c) The M3 SOW names GBH1 v10; the source held is v9.
