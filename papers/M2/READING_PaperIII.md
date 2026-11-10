@@ -167,3 +167,27 @@ Directed by the PI: "I need you to read all of paper III and all of paper III ad
 | Shadow | "One source object casts one 4D shadow" (Add. l.657) | one thing, three shadows |
 | Lyapunov exponent | ln φ | 2 ln φ (P17, banked) |
 | Free parameters | "zero" and "2" in the same paper | — |
+
+---
+
+## Paper IV v7, §4 "Topological Derivation of ζ = 12π" (ll.307–333), read in its entirety, 10 November 2026
+
+Directed by the PI. Also read for context: §2 (ll.219–254, the manifold, χ, the metric), §3.3 (ll.286–303, τ₂), §5 (ll.334–391, the exponent). Not read: the rest of Paper IV.
+
+**The whole of §4 is twenty-seven lines and two steps.** Its first sentence: "Full details appear in Paper I, §7 and Appendix C."
+
+| Step | The text | Status |
+|---|---|---|
+| 1 (ll.311–317) | "The Chern–Gauss–Bonnet theorem constrains the total flux threading any compact manifold: N_flux = χ(K₈) = 12. This is a consistency condition: any other flux quantum number would leave uncancelled sources (tadpoles)" | **Asserted.** The Chern–Gauss–Bonnet theorem says the integral of the Euler form is χ. It says nothing about flux. No equation of motion, no source, no Bianchi identity is written. (This is the step the audit of M2 §4 marked: the known conditions of this kind carry χ/24, `papers/M2/STEP_AUDIT.md`.) |
+| 2 (ll.319–327) | "When a unit of quantised flux is localised near a ℤ₂ fixed point, it backreacts on the geometry. For a BPS-type flux-brane solution, the warp factor A(ω) acquires Δ(k_ω L_ω) per flux unit = π" | **Asserted.** No solution is exhibited; no equation is solved. The sentence before it recalls that each corner has deficit π, but the π per flux unit is not derived from that deficit. |
+| Result (ll.328–331) | ζ = k_ω L_ω = N_flux × π = 12π | the product of the two assertions |
+
+**So Paper IV §4 is not a derivation. It is a summary of the same argument audited already** (Paper I Addendum §3 = Paper 2 §4 = M2 §4), now seen in a fourth place and in its shortest form. Every paper that uses 12π points to one of these; none contains more.
+
+**Other things on the pages read.**
+- l.238: "χ(T²/ℤ₂) = 2 by the orbifold Gauss–Bonnet formula, where the four ℤ₂ fixed points each contribute a deficit angle δ = π, giving 4 × (π/2π) = 2" (correct; M1 Thm 5.7).
+- l.240: "This single integer – twelve – is the seed from which the cosmological constant, the fermion generation count, the mass hierarchy, the CKM matrix, and the electroweak mixing angle all grow."
+- l.250: the metric with e^{2A} on ℂP² × S² and e^{2ζΦ_QC} on dθ_ω²: the source of the Addendum's l.1415.
+- **τ₂ has three definitions and two values in the corpus:** "τ₂ = R_w/R_c" (IV l.253); "τ₂ = L_ω/L_ψ ≈ 1.86" (IV l.288); "τ₂ = L_ψ/L_ω ≈ 1.861" (III l.291); M1 Prop 8.2: 1.8466 from a cubic. In IV it comes from "the requirement that the SU(3) … and SU(2) … gauge coupling … unify … The tree-level stabilisation condition yields" (ll.290–293), with no condition written.
+- **The Weinberg angle** (l.299): "sin²θ_W = 1/(1 + τ₂²) ≈ 0.224 (observed: 0.231, 3% agreement)". Arithmetic CHECKED: 0.2243 at 1.86; 0.2268 at M1's 1.8466. The formula is stated in a list of "consequences", not derived on the pages read. Not audited.
+- **The suppression e^{−96π}** (ll.379–388): the integral ∫₀^{L} e^{−8kθ}dθ = (1 − e^{−8ζ})/(8k) is dominated by its *other* end and is ≈ 1/(8k); the paper then takes "the warp factor evaluated at the boundary", e^{−8ζ}, as the answer. And it evaluates at the full period (exponent −12π) where Paper III and the Addendum put the far corners at half the period (−6π). With −6π the factor would be e^{−48π}. **Red flag: the number used is not the value of the integral written, and the end point differs between papers.**
