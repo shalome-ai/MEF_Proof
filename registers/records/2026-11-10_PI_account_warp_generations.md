@@ -96,3 +96,8 @@ The count and its results: `papers/M2/ZETA_COUNT.md`.
 > "then check that recollection against the published sources"
 
 (Offered by the PI as a guess. Assessment: `papers/M2/ZETA_LEAD.md`, section "Why three times". The recollection is V-6 of `registers/Verified_References.md`.)
+
+## 18. The odd corner of the twist is a cycled corner (same day)
+> "it is (b). It is a cycled corner, there is a degree of freedom on where it starts - from p1 (that is one) , or from the opposite corner (two) or an adjacent corner (three) - does this make sense ? Or is this just hand waving from me"
+
+((b) is reading (b) of `papers/M1/CORNER_SIGNS.md` §2. Assessment of the second sentence: same file, §6.)

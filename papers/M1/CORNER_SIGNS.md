@@ -48,3 +48,22 @@ So the three in "π × four corners × three" has, for the first time today, a c
 - For (b): if the lifted fold need not be one object on the whole shape, (c) holds and nothing forces three circuits.
 - For the choice of odd corner: M1 ties C_k to P₄ by the lift (l.602). If the physics of M2 onwards never uses *which* corner is odd, (a) is available and the three disappears from this route.
 - Not checked: M1's Atiyah–Bott claim "(−1)^d for odd determinant class" itself. Cited, not read. It is entered as owing in the step audit.
+
+## 6. Ruling (b), and where the odd corner starts (10 November 2026)
+
+**Ruled by the PI: (b)** (Decision Log P28). The odd corner is a cycled corner and the lifted fold is one structure on the whole shape.
+
+**The PI's further statement:** "there is a degree of freedom on where it starts - from p1 (that is one), or from the opposite corner (two) or an adjacent corner (three)".
+
+**Assessment (CHECKED by the short computation recorded here; not blind-checked).** Relative to P₁ = (0,0), the opposite corner is P₄ = (½,½) and the adjacent corners are P₂ and P₃.
+
+| Where the odd corner starts | Under the drive | Under M2's exchange (the quarter-turn S, modulo 2: P₂ ↔ P₃) |
+|---|---|---|
+| P₁ | stays; period one | stays |
+| the opposite corner, P₄ | cycled; period three | **stays** |
+| an adjacent corner, P₂ or P₃ | cycled; period three | exchanged with the other adjacent corner |
+
+1. **The three-way division is real, but it is not made by the drive.** The drive alone sees two kinds: P₁, and the three cycled corners, which it treats alike (opposite → adjacent → adjacent → opposite). "Opposite" against "adjacent" is a distinction made by the exchange S of M2, which leaves P₁ and P₄ where they are and swaps P₂ with P₃. With both the drive and the exchange, the three kinds are exactly the PI's: P₁; the opposite corner; an adjacent corner.
+2. **This gives M1's formula a reason it did not state.** M1's pattern (−1)^{mn} puts the odd corner at the opposite corner, and that is the one cycled pattern the exchange leaves alone. So M1's choice within the class of four is: cycled (ruling (b)), and unchanged by the exchange. That would close the gap of §2 item 1, as a stated choice with a reason.
+3. **Among the three cycled starts, the freedom is the choice of the moment called zero.** The three patterns are one pattern at three successive circuits. After one circuit the exchange that leaves the odd corner alone is no longer S but S carried along by the drive (CHECKED: M₀SM₀⁻¹ fixes P₂; M₀⁻¹SM₀ fixes P₃). So "starts at the opposite corner" is true at one circuit in three, and "starts at an adjacent corner" at the other two: one structure, three phases.
+4. **Not shown:** that the three phases are the three generations (record §13, "1 + 2 shadows"), though the shape is the same: one where the exchange leaves the odd corner alone, and two that the exchange swaps.
