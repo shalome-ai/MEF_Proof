@@ -74,4 +74,13 @@
 
 **Numbering after v4.3.** Section 7: Def 7.4, Lemma 7.5, Prop 7.6 are new; the corner lift is Cor 7.7, the time circle Cor 7.8, Σ = S³ Prop 7.9, the base Thm 7.10.
 
-**Still owed:** pages for the two classical references (V-8, V-9); a Lean certificate for the finite part of Proposition 7.6; a fresh read of §7.4's wording by a blind checker; the renumbering of CLAUDE.md §5's readings and of M2's "fifth reading"; item 21 (how the display of K₈ is written).
+## v4.4 (10 November 2026, last round): certificate, blind read, references, the display (Decision Log P36, P37)
+
+- **`M1_L6_twist.lean`** (eleven theorems): the finite case analysis of Proposition 7.6 over the thirty-five divisors of flux at most three, taking the count of Lemma 7.5(b) as given. Named in the proofs of Lemma 7.5, Proposition 7.6 and Corollary 7.7. Appendix A: six files, sixty-one theorems.
+- **Lemma 7.5(a)** no longer cites Riemann–Roch: the states are counted as even plus odd from the classical facts on ℘ and ℘′ (Whittaker and Watson, 3rd ed., §§20·21, 20·32, 20·51; Verified References V-9, read from the page images).
+- **Blind read of §7.4** (`STEP_AUDIT.md` §8a) applied: the flux and the determinant line related (the integer on the torus is 2d); "structure" of a twist defined, with the remark that the drive is not holomorphic and acts through the corners; the two lifts named and the Proposition stated "for one of the two lifts"; "odd corner" defined; the flux-two step corrected (the structure, not the divisor, is left in place); Lemma 7.5(b), (d) completed; "up to one overall sign" added to Corollary 7.7; the premises of the time-circle argument stated in its proof, and the overall-sign condition in its statement; the paragraph on harmonic spinors says exactly what is and is not used.
+- **Abstract** rewritten within the length limit, with the twist of the fibre; **outlook** names it.
+- **The display of K₈ (P37):** one sentence after the display says the warp symbol records that the product is warped and that which piece is scaled is not fixed in M1; "the warped fibre X of A2" and "the base over which F is warped" made neutral. Future-Mx F-10, owed by M2.
+- 39 pages; 66 edits to canon v2. Gates 1, 2, 4, 5 pass; gate 3: the two first-person sentences, an exception by P36.
+
+**Still owed:** the step audit of the theorems inherited from v2 with their references (`STEP_AUDIT.md` §9, in progress); on acceptance, the move to canon and the renumbering of references to M1 in M2, the registers, the ledger and CLAUDE.md §5.

@@ -46,3 +46,6 @@ Left out of M3. The step audit is at `papers/M3/STEP_AUDIT.md` §A, with the bli
 
 ## F-9. The flux three of the fibre and the three of c₁(ℂP²): one fact or two — banked by the PI, 10 Nov 2026 (P36); owing paper to be named
 M1 v4.3 derives flux three on the fibre torus from the fifth axiom (Prop 7.6) and, separately, c₁(L) = 3h on ℂP² (Prop 7.3). The paper says they are the same integer and that it does not derive one from the other. M1 does not rely on their being one fact. The old corpus treats them as one (Paper XV l.413: the three on the torus "anchored by the hypercharge quantisation"; Paper XIX ll.357, 689). A later paper that uses the identification (hypercharge, the fine-structure constant) must derive it or declare it.
+
+## F-10. Which piece the warp scales, and how the display of K₈ is written — owed by M2 (PI ruling 10 Nov 2026, P37)
+M1 says nothing on the direction of the warp in K₈ = [(ℂP² × S²) ×_w (T²/ℤ₂)]^{Spin^c} and derives nothing that depends on it. M2 must fix it where the warp is given its law, and say how the display is to be read or rewritten. Inputs: P30 (the size of ℂP² × S² varies with position on the pillowcase); the PI's hypothesis that the display's order should be reversed (P37); the usual convention for B ×_w F (function on B, scaling F), which is RECALLED and to be verified against O'Neill before it is used.

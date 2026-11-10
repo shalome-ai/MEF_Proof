@@ -184,3 +184,7 @@ In reply to the twelve numbered items put by the architect:
 > 5. -8. yes please do
 >    9. yes do
 >    10. -12 agreed"
+
+## 30. The display of K₈; the day (same day, later session)
+On the three options for item 21 (state how ×_w is read; swap the order in the display; say nothing in M1 and let M2 settle it):
+> "i prefer option 3 and let M2 settle it..  (my hypothesis is that it is 2 rather than 1) but this is why we need M2.  That is correct way to do this.  We are building Mx series properly.  Today was hard work.  M3 was necessary that the shadow axiom is critical and now we have found a way to incorporate the shadow  - and the result in Paper XV and that is a critical paper."

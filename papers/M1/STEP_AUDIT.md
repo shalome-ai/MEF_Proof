@@ -205,3 +205,24 @@ This supersedes §6's conclusion that the axiom "restricts no member of the fami
 **Failure tests:** as Minimality M1-11 and `SHADOW_TWO_CLAUSES.md` §7.
 
 **Owed:** pages for V-8 and V-9; a Lean certificate for the finite part of Prop 7.6 (the counts 1 + Σ⌊aᵢ/2⌋ for degree ≤ 3 and the periods of the patterns), which the paper at present proves by hand.
+
+### 8a. Blind read of the wording of §7.4 (10 November 2026), and what it changed
+
+A fresh sub-agent read only the section and the background statements it uses, with no word of what was wanted, and recomputed every case.
+
+**Confirmed by its own computation:** the Künneth statement; every count in the proof of Proposition 7.6 (flux one, two, three, both lifts); the corner signs; which patterns the drive leaves in place; the smallest case D = 3P₄ by orders at the four corners; M₀³; the numbers per step. "No arithmetic or counting error was found."
+
+**Corrected in the paper after it:**
+
+| Its finding | Change |
+|---|---|
+| The flux and the determinant-line integer on the torus were not related; read one way, flux three contradicted "even on the torus" | the opening paragraph says the integer on the torus is 2d |
+| "The structure carried by the internal piece" was undefined for a twist; read as the divisor, flux two would meet both clauses | Definition 7.4 defines the structure of a twist (flux with corner signs up to overall sign; holonomy at flux zero) and says the drive, not being holomorphic, acts on structures through the corners |
+| "States on the pillowcase" did not say which lift; with both lifts required the least flux would be four | Definition 7.4 names the two lifts; Proposition 7.6 says "for one of the two lifts", as disclosed in `SHADOW_TWO_CLAUSES.md` §4 |
+| Flux two: "D = 2Pᵢ, which the drive leaves in place" named the wrong object | "whose structure, with the four corner signs alike, the drive leaves in place" |
+| Lemma 7.5(b), second lift, asserted not proved; (d) omitted that a half-turn twist is not trivial | both completed |
+| "No step below depends on it" (harmonic spinors) was contradicted by Corollary 7.7 | the paragraph says what is motivation and names the one fact Corollary 7.7 uses |
+| Corollary 7.7 gave definite signs without "up to overall sign" | added |
+| The time-circle argument rested on unstated premises (time a circle; a whole number of steps; the fibre glued by a power of the drive; the lifted fold one structure on the whole), and the overall-sign condition was only in the proof | the premises are in the proof with their sources (Definition 2.3, Theorem 4.2, the hypothesis of the statement); the condition is in the statement; the paragraph after Definition 2.1 says the internal piece may be carried round time by a map of itself |
+
+**Not changed:** "forced by the fifth axiom" stays as the paper's summary; the Proposition's statement now carries its hypotheses in full (the two clauses, one lift, the least flux).
