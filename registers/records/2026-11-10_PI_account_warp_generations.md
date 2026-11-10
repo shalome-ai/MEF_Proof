@@ -101,3 +101,11 @@ The count and its results: `papers/M2/ZETA_COUNT.md`.
 > "it is (b). It is a cycled corner, there is a degree of freedom on where it starts - from p1 (that is one) , or from the opposite corner (two) or an adjacent corner (three) - does this make sense ? Or is this just hand waving from me"
 
 ((b) is reading (b) of `papers/M1/CORNER_SIGNS.md` §2. Assessment of the second sentence: same file, §6.)
+
+## 19. After the verdict on item 4 (same day)
+In answer to the three questions of `papers/M2/ZETA_ITEM4.md`:
+> "1. let's say phi_Qc runs from 0 to 1.
+> 2. I think that is a dead end
+> 3. papers III and III addendum deal with the cones in the four corners"
+
+(Read and assessed: `papers/M2/ZETA_ITEM4.md`, section "After the PI's three answers".)
