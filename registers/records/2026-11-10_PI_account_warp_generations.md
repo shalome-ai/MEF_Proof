@@ -82,3 +82,10 @@ The count and its results: `papers/M2/ZETA_COUNT.md`.
 > "commit and push; then take the first"
 
 (The first of the four open steps: the last factor of 2. Result: `papers/M2/ZETA_COUNT.md`, second part.)
+
+## 16. Directions given late in the session (same day)
+> "Let's go through each of the axioms and see where the last factor of 2 comes from - and is it in M1 or is this an M2 issue. then test that connection"
+
+> "commit and push; then take that lead"
+
+(Results: `papers/M1/FACTOR_OF_TWO.md`; `papers/M2/ZETA_LEAD.md`.)
