@@ -28,3 +28,16 @@ print("    full turn     I  = (a b)^6         :", word(*([a, b]*6)) == I, "   ->
 print("    the drive    M0  = a b^-1          :", word(a, bi) == M0, "   -> 1 - 1 = 0 shears net")
 print("    so, in shears:  quarter-turn 3,  fold 6,  full turn 12,  drive 0.   One shear = 1/12 of a full turn = pi/6.")
 print("    the count is defined only up to 12, because (a b)^6 = I has 12 letters and is the identity.")
+
+print()
+print("--- The PI's guess: 'the shape itself is a third spin, needs 3 spins to get back to unity' (10 Nov 2026) ---")
+ab = word(a, b)
+mod2 = lambda X: tuple(tuple(x % 2 for x in r) for r in X)
+print("    a b =", ab, "  and modulo 2 it equals the drive modulo 2:", mod2(ab) == mod2(M0))
+print("    so on the four corners (which see only modulo 2) the drive acts exactly as the turn a b")
+third = word(a, b, a, b)
+print("    (a b)^2 =", third, ": a third of a turn, 4 shears;  cubed:", word(third, third, third) == I, "-> 3 x 4 = 12 shears = unity")
+print("    on the pillowcase (where -I is nothing) a b itself has order:", next(n for n in range(1, 13) if word(*([ab]*n)) in (I, F)))
+print("    period of the corner structure under the drive (circuits until every corner is back):",
+      next(n for n in range(1, 13) if mod2(word(*([M0]*n))) == I))
+print("    corner fibres over one such period: 4 corners x 3 circuits =", 4*3, "; at the cone angle pi each: 12 pi")

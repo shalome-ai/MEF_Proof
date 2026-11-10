@@ -89,3 +89,10 @@ The count and its results: `papers/M2/ZETA_COUNT.md`.
 > "commit and push; then take that lead"
 
 (Results: `papers/M1/FACTOR_OF_TWO.md`; `papers/M2/ZETA_LEAD.md`.)
+
+## 17. Why three times: the PI's guess (same day)
+> "Save the commit and push, until after this: the reason why it is x 3generations - is the same reason why M12 gives 3 - this is the reason, the shape itself is a third spin needs 3 spins to get back to unity - that would be my guess"
+
+> "then check that recollection against the published sources"
+
+(Offered by the PI as a guess. Assessment: `papers/M2/ZETA_LEAD.md`, section "Why three times". The recollection is V-6 of `registers/Verified_References.md`.)
