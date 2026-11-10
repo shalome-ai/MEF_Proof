@@ -111,3 +111,31 @@ The two measures agree line by line (arithmetic CHECKED: 6 × π/6 = π; 4 × 6 
 4. **Still open beyond S7:** why the coupling of Φ in the field equation is this quantity; the length of one circuit (R has the unit of a length, ζ is a number); and the fixed corner P₁, which is back after one circuit and is nonetheless counted three times.
 
 **Failure test.** If the period over which the coupling is measured is one circuit, the quantity is 4π; if six, 24π. A derivation of S7 must exclude both.
+
+---
+
+## Is that sufficient, and is P₁ counted three times because of i, j, k? (10 November 2026)
+
+Asked by the PI: "isn't this sufficient? And doesn't P_1 three times have something to do with ijk?"
+
+**Read:** M1 v2.1 ll.125–133 (closure, Def 2.1) and ll.328–346 (Prop 5.6 with its proof, the paragraph after it, and "the order-three automorphism"). **Blind check:** seven steps given without the target; verdicts below.
+
+| # | Step | Blind verdict |
+|---|---|---|
+| T1 | After one circuit P₁ is back and its own algebra ℝ is unchanged, but the quaternions around it have been turned by the drive: what was i is now j (M1 l.329: the drive acts "as the order-three inner automorphism Ad_w") | follows; it is a statement about the frame i, j, k |
+| T2 | So the shape with its named i, j, k is back after three circuits and not before | follows only if "back" means the frame i, j, k is remembered. As an algebra with no names, ℍ is back after one |
+| T3 | On spinors the count is six with M1's w (w³ = −1, M1 l.346) and three with −w, which gives the same turning of i, j, k | follows; "the lift is a choice; nothing in the setting fixes it" |
+| T4 | M1's formal closure (compact, no boundary, a loop that cannot shrink) is already met after one circuit and does not ask the algebra to return | follows |
+| T5 | If closure means the shape with all its structure returns, time's period is three circuits | **an identification, not a deduction.** "The 'if' clause is the whole content" |
+| T6 | P₁ is then counted over three circuits because its relation to the other three corners is back only after three | follows from T5; adds nothing beyond it |
+| T7 | Three and not six or nine, by minimality | a choice; and with M1's w on spinors the least is six |
+
+**Answers.**
+
+1. **Yes, P₁ three times is i, j, k.** P₁ carries ℝ, which is the 1 of the quaternions; the other three corners carry i, j, k (M1 Prop 5.3, Prop 5.6). Each circuit leaves the 1 where it is and turns i to j to k. So the point is back after one circuit; the point *with its three neighbours named* is back after three. That is a true statement of M1's own algebra (T1, T2).
+2. **It is not yet sufficient, and the blind check says exactly what is missing.** One sentence: *closure requires that a circuit of time return the quaternions with their i, j, k, acting on tangent vectors, and the least such period is taken.* With that sentence 12π follows. Without it the one-circuit shape is already closed and gives 4π.
+3. **Where this touches M1.** M1's formal closure (Def 2.1) is weaker than its own sentence, "closes on itself, so that it can be aware of itself": it asks only that no piece has an edge. M1 calls this "the first of the four choices" (l.133). M1 then attaches the quaternions (third axiom) and lets the drive turn them (fourth), and never asks whether its time circle still closes once they are attached. The sentence in 2 would be a strengthening of the first axiom's formal reading. Whether that strengthening is the PI's meaning of the first axiom is the PI's to say; it is not a deduction from M1 as written.
+4. **Two things that could break it.** (a) M1 Def 2.5 says the algebra also acts on spinors, and M1 uses w with w³ = −1; on that reading the period is six and the total 24π. The sign of the lift has to be settled (the same open sign as in `papers/M1/FACTOR_OF_TWO.md` §5). (b) The requirement "the frame must return" is added, since a shape whose algebra is turned on each circuit is a perfectly good closed shape.
+5. **A side finding on M1 Prop 5.6.** The blind check applied the proposition's stated rule ("the subalgebra fixed by the stabiliser", the fold acting as conjugation) and got ℝ at all four corners, not ℂ_i, ℂ_j, ℂ_k. M1 knows this: the paragraph after the proof (l.336) says the fold is read as conjugation at P₁ and as the inner automorphism by the surviving unit at the other three, and that this "is a definition rather than a computation". So the assignment of i, j, k to the three corners is a declared reading in M1 ([D]), not a consequence. The count above leans on it.
+
+**Status.** ζ = 12π now has this form: π at each corner (M1 Thm 5.7) × four corners (Prop 5.3) × three circuits for i, j, k to return (Prop 5.6, with the sentence in 2). Open: the sentence in 2; the sign of the lift; why the coupling of Φ is this quantity; the unit of length.
