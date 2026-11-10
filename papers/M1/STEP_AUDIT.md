@@ -79,3 +79,93 @@ So the inconsistency the PI expected is real: Definition 2.2(i) (a function on o
 ## 5. Position
 
 The first working draft of M1 with five axioms does not integrate the fifth axiom, and its new definition is inconsistent with M1's second axiom and with the axiom's own sentence. The draft is kept as a record of the attempt and is not a candidate to replace M1 v2.1. What has to be supplied, in the PI's terms and not by construction: what a thing and its shadow are; the map by which the shadow depends on what is hidden (the light); which piece carries the growth law's function and which piece it acts on; and where the observer stands.
+
+---
+
+## 6. M1 v4 (working draft) — step audit of the fifth axiom as integrated (10 November 2026)
+
+Scope (Decision Log P32): in M1 the fifth axiom is the statement that there is a seen part and an unseen part, and nothing more. The new material of `Paper_M1_Five_Axioms_v4.tex` is Axiom 5, Definition 2.1 (shadow, formal), Remark 2.2 (what the shadow loses), the paragraph after it, and one clause each in the proof and the deflationary reading of Theorem 8.1. §§1–5 above concern the v3 draft (now in `draft_v3/`) and are superseded for v4.
+
+| # | Step | Status | Note |
+|---|---|---|---|
+| S1 | Axiom 5: "We can see the shadow, but the shadow is missing information about what it is a shadow of" | **DECLARED** (P19) | the PI's sentence, verbatim |
+| S2 | Def 2.1: a geometry is M = (T × Σ) × F, T one-dimensional carrying time, Σ carrying space, F internal; what is seen is the image under π(t,x,f) = (t,x) | **DECLARED** (a reading; the first of the five numbered choices) | the family is canon v2's (ll.117–121), unchanged, T one-dimensional included; what is new is that an axiom states it. "Seen", "carrying time", "carrying space" are readings with no further formal content |
+| S3 | Remark 2.2: π is onto, and one-to-one only if F is a single point | **CHECKED** (by hand, in the remark: (t,x,f) and (t,x,f′) have the same image) | blind check: follows |
+| S4 | Remark 2.2: F is more than a point in every geometry satisfying the other four axioms | **verified in the paper**: Theorem 6.1 (dim F ≥ 8), [D], certificate `L3_dim_ge_twelve` | first written with a one-line argument from the order axiom ("a one-point piece admits only the identity operation"); the blind check found that this depends on how "operations" in Def 2.5 is read; replaced by the reference to Theorem 6.1. Red flag: the remark refers forward to Theorem 6.1; nothing between the remark and the theorem uses the remark |
+| S5 | Remark 2.2: therefore a point of M is not determined by its shadow; a consequence, not part of the axiom | follows from S3, S4 | wording narrowed after the blind check from "the shadow does not determine what it is the shadow of" (which can be read as a claim that T × Σ does not determine F) to the statement about points, which is what is shown |
+| S6 | "The axiom does not say that the whole can be recovered from the shadow" | follows from S2 | the further clause "and nothing below assumes that it can" was removed: the blind check noted it is a claim about every step of the paper and was not shown |
+| S7 | The other four axioms are stated in the terms of the division: closure of each piece (Def 2.3), a tie between pieces (Def 2.4), operations on F (Def 2.5), a flow on T × F (Def 2.9) | **READ** (v2 ll.130, 142, 154, 184) | blind check: follows; it adds that they need only the division, not the projection or the word "seen", and that making the division by an axiom is a choice of exposition. The paper now says "in this paper it is the fifth axiom that makes the division" |
+| S8 | Theorem 8.1, proof: "A5 gives the family (T × Σ) × F in which the other four axioms are stated; it selects nothing within the family" | follows from S2 | blind check: follows, noting that dim T = 1 is part of the family's definition (as in v2), not a selection made by the theorem |
+
+**Does the axiom do work?** In the sense of P32, yes: delete Axiom 5 and Definition 2.1 and Definitions 2.3–2.9 have no T, Σ and F to refer to. It does no other work: it restricts no member of the family, and every selection is made by A1–A4 and minimality. The paper says so in the deflationary reading. That is the role ruled in P32 ("nothing more").
+
+**Blind check (measure 3).** A fresh sub-agent was given the formal definitions of A1–A4 as background and the new material as eight numbered items, with no file access and no word of what was wanted. Its findings that led to changes are in S4, S5, S6, S7. Its findings not acted on, recorded for the PI:
+- The sentence says "missing information"; the formal definition alone does not deliver it (it is satisfied with F a point). It is delivered by the remark. This is as ruled in P19 (the loss of information is a remark with its proof, not part of the axiom).
+- "See" has no formal counterpart in M1: there is no observer and no definition of an observable.
+- The shadow is defined as a set of points. Whether it carries a well-defined geometry of its own when lengths on one piece depend on position in another is not addressed in M1.
+
+**Failure test.** The integration fails if some definition or proof of M1 uses the division (T × Σ) × F in a way Definition 2.1 does not supply, or if a geometry satisfying A1–A4 exists with F a single point (then Remark 2.2 is false for it; Theorem 6.1 excludes this).
+
+**Red-flag scan** (`tools/redflags.py` on the draft, ll.50–150): in the new text, two forward references in Remark 2.2 (see S4). No other hit in the new material.
+
+---
+
+## 7. M1 v4.1 (working draft) — step audit of the second pass (10 November 2026)
+
+Scope: the agreed items 22–25 and 28 of `REWRITE_ASSUMPTIONS.md` (Decision Log P28, P29). New material: the word *step* (§4.1); criterion (2) applied to the step; Corollary 7.4 restated; Corollary 7.5 (the time circle) and the two paragraphs after it; the open point on the sign of the lift (§5.5); Section 8.3 "What this paper does not fix" with Definition 8.2 (declared assumption); the statement of Theorem 8.1; Appendices A and B.
+
+| # | Step | Status | Note |
+|---|---|---|---|
+| P1 | One application of the return map is a *step*; the number of steps in the time circle is not assumed in §4 | **DECLARED** (a term) | Definitions Register, proposed |
+| P2 | Criterion (2) is applied to the step | **DECLARED**; Minimality M1-7 (proposed) | not a minimal option: see P8 |
+| P3 | Cor 7.4, first sentence: the corner signs have product −1; one corner is odd | **verified reference owed**: Atiyah–Bott, cited in v2 and **not read** (`CORNER_SIGNS.md` §5); the count of eight functions and the product **CHECKED** (`L4_four_corner_product`; `checks/corner_sign_check.py`) | carried over from v2 unchanged in content; the reference is to be entered in `Verified_References.md` before M1 is frozen |
+| P4 | The refinement class has four members, one per odd corner; the index does not choose | **CHECKED** (`checks/corner_sign_check.py`; blind check C1–C3 of `CORNER_SIGNS.md`) | |
+| P5 | Cor 7.4, second sentence: the odd corner is a cycled corner | **DECLARED** (P28); Minimality M1-8 (proposed), **flagged: not the minimal option** | the paper says so in the paragraph after the corollary |
+| P6 | Among the three cycled corners the choice is the choice of the first step; (−1)^{mn} is the pattern the quarter-turn S leaves in place | **CHECKED** (`checks/growth_law_check.py` C10: S fixes P₁, P₄ and exchanges P₂, P₃; `CORNER_SIGNS.md` §6) | uses only M1's own S (Thm 4.2), not M2's exchange |
+| P7 | Cor 7.5: the pattern returns after three steps and not before; the time circle is a multiple of three steps; the least is three; M₀³ = ((13,8),(8,5)), trace 18, identity modulo two | **CHECKED** (`L1_M0_mod2_order3`, `L1_Fib_powers`; `checks/three_circuits_check.py`); "the lifted fold is one structure on the whole geometry" **DECLARED** (P28); "the least" Minimality M1-9 (proposed) | blind check C5, Q1 of `CORNER_SIGNS.md` |
+| P8 | Applied to the map once round time with the corners returned, criterion (2) would select trace six, which cycles no corner; excluded by the reading of Cor 7.4, not by minimality | **CHECKED** (by hand: a map that is the identity modulo two has a, d odd and bc divisible by four, so ad ≡ 1 and a + d ≡ 2 modulo four; the least hyperbolic such trace is six, e.g. ((5,2),(2,1)); `checks/three_circuits_check.py` (3)); even trace gives order one or two: M1 Prop 4.4 | |
+| P9 | Per step: stretch φ², entropy 2 log φ; per time circle: φ⁶, 6 log φ | **CHECKED** (`checks/three_circuits_check.py` (1)) | |
+| P10 | The automorphism Ad_w is the same for w and −w; (−w)³ = +1; which element the drive is is left open, nothing in M1 depending on it | **CHECKED** (`checks/lift_sign_check.py`; `LIFT_SIGN.md` §1: M1 "nowhere uses the value of w³") | open point stated, as agreed (item 25) |
+| P11 | Def 8.2: the stationarity conditions fix the aspect ratio | **DECLARED assumption** with its failure test in the text; Minimality M1-10 (proposed) | replaces Proposition 8.2, which leaves M1 (P29). The value 1.8466, the cubic and the quanta (3, 6) are no longer stated in M1 |
+| P12 | "No other statement of the paper depends on it" | **READ**: every remaining occurrence of the aspect ratio in the draft is at l.364 of v2 (the definition of the ratio) and in §8.3; the quadric row of the elimination table no longer cites it | checked by search for `tautwo`, `prop:moduli`, `aspect` in the built file |
+| P13 | Theorem 8.1 as restated: step M₀; time circle of three steps under the reading of Cor 7.4; scale a declared input; aspect ratio under Def 8.2 | follows from P1–P12 | the phrase "no continuous modulus" is gone from the theorem |
+
+**Blind check.** The steps of P3–P7 were given to a blind checker on 10 November (`CORNER_SIGNS.md`); the wording now in the paper has not been checked again. P11–P13 have not been blind-checked.
+
+**Failure tests.** As in Minimality M1-7 to M1-10. In one line each: a trace-six return map carrying everything else M1 derives; a use, from M2 onward, of nothing that depends on which corner is odd; a result needing six or nine steps; stationarity conditions that leave the aspect ratio free.
+
+**Red-flag scan** (`tools/redflags.py` on the draft): no new hit in the second-pass material beyond one forward reference (§4.1 points to Corollary 7.5 for the number of steps; nothing in §§4–6 uses that number).
+
+### 7a. Blind check of the second pass (10 November 2026), and what it changed
+
+A fresh sub-agent was given the second-pass steps as fourteen numbered items with the background results, no file access and no word of what was wanted.
+
+| Step | Blind verdict | Action |
+|---|---|---|
+| P3, P4 (the four patterns; one odd corner; the index does not choose) | follows; adds that the pattern with odd corner P₁ is the one invariant under every symmetry, and the three cycled ones are a single orbit | none |
+| P5 (the odd corner is a cycled corner) | declared; "the sole source of the factor three" | none; the paper already says it is a declared reading |
+| P6 ((−1)^{mn} is the pattern S leaves in place) | follows for the S as written, but S is one of three quarter-turns conjugating M₀ to its inverse; the other two fix P₂ and P₃ | **wording changed**: the paper now says so, and that this is the same statement as "nothing to choose among the three" |
+| P7 (multiple of three; three taken) | "multiple of three" follows; "three" is a choice; **three is not shown to suffice** if the overall sign of the lift counts: with the drive lifted as w, three steps return the pattern with the overall sign reversed (w³ = −1), six would be needed | **wording changed**: Cor 7.5 says divisibility by three is what is forced, that three is taken, and states the condition; §5.5 no longer says nothing depends on the sign of the lift |
+| P8 (criterion (2) on the return map would select trace six, excluded by the reading of Cor 7.4) | **does not follow.** Trace six is indeed the least hyperbolic trace among maps that are the identity modulo two (verified), but (i) a return map need only preserve the pattern, and ((2,3),(1,2)), of trace four, does; (ii) a map that is the identity modulo two preserves every pattern, so the reading does not exclude it | **paragraph withdrawn and replaced** by: the map once round is a power of the step and is not chosen separately; applying criterion (2) to the step is a declared choice. Minimality M1-7 amended. **The architect was wrong here**; the same claim in `CONSEQUENCES_OF_B.md` C1 is wrong in the same way |
+| P9, P10 (numbers per step; w and −w) | follows | none |
+| P11 (declared assumption on the aspect ratio) | declared; the assumption named one parameter while its use ("no modulus besides scale") needs all dimensionless data fixed | **wording changed**: the assumption now says every dimensionless continuous datum |
+
+### 7b. Atiyah–Bott read (10 November 2026): step P3 is not supported by its citation
+
+**Read:** Atiyah and Bott, *Ann. of Math.* 88 (1968), pp. 486–487 by the architect; all of §8 (pp. 479–488) and §9 by a sub-agent with verbatim quotations (`registers/Verified_References.md` V-7).
+
+**What M1 says (v2 l.437, carried into v4.1):** the corner signs have "product −1, the Atiyah–Bott fixed-point index (−1)^d for odd determinant class"; "the Atiyah–Bott input selects the refinement class for odd d".
+
+**What the paper says.** It treats Spin structures, not Spin^c. The sign ε(P, f̂) at a fixed point is defined only up to the choice of lift; the product of the signs at two fixed points depends on f alone; whether two fixed points of an involution have the same sign is decided by the Spin structure, through its class on a loop (Props 8.44, 8.45). There is no formula for the product over all fixed points, no "(−1)^d", no determinant class, and no torus or surface example.
+
+**Status of P3: GAP.** The combinatorial half stands (CHECKED: of the eight corner functions, four have product +1 and four have product −1). What is not supported is the step that puts the lift in the product −1 class "for odd determinant class". Under CLAUDE.md §2 the first hypothesis is that the statement is true and the citation is wrong or incomplete: Proposition 8.45 does make the relative signs depend on the Spin structure, which is the kind of dependence the corollary needs. But the derivation from Proposition 8.45 to "product −1 when c₁(L) is odd" is not in the reference and is not in M1. It has to be supplied, by a different reference or by a proof in the paper, before Corollary 7.4 keeps its [R].
+
+**Not done:** I have not attempted the derivation, and I have not changed the corollary's first sentence or its tag in the draft. For the PI.
+
+### 7c. The derivation attempted for step P3 (10 November 2026): it does not give Corollary 7.4
+
+`CORNER_LIFT_DERIVATION.md`, with `checks/corner_lift_check.py` (K1–K8 pass) and a blind check. For a spin structure on the torus, or any Spin^c structure whose determinant line is trivial along the torus (M1's canonical structure among them), the corner signs of the lifted fold have product +1 and no corner is odd. The product is (−1)ⁿ with n half the degree of the determinant line on the torus; the parity of c₁(L) on ℂP² does not enter. **P3 remains a GAP, and on this computation the first sentence of Cor 7.4 does not hold for the structure M1 constructs.** P5 and P7 (P28, the time circle) start from the one-odd-corner pattern. Nothing in the draft has been changed; for the PI.
+
+### 7d. Proposition 8.2 restored (PI, 10 November 2026)
+
+Row P11 above is superseded. Proposition 8.2 stands as in v2, with one change in its proof: the stationarity conditions are named as a declared assumption with its failure test, in place of "their derivation belongs to the sequel". Theorem 8.1 keeps "no continuous modulus" and names the assumption among its hypotheses. Not re-examined in this pass, and left as in v2: "R_w, R_c … tied by the warp to the two periods" and "one unit per corner-cycled sector".

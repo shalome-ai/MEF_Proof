@@ -68,3 +68,14 @@
 - **17, restated:** the size of ℂP² × S² varies with Φ_QC, that is, with position on the pillowcase. This reverses P26(d). To be re-read in consequence: record §§4 and 10 ("the forces are spared the warp"), M1 ll.107, 172, 317 ("the warped fibre … is the torus"), and `papers/M2/STEP_AUDIT.md` §8.
 - **17 and 20:** most likely one statement (PI); to be tested.
 - **21:** the mirror comment of §22 is withdrawn. Fold = quotient by ℤ₂; twist = Spin^c. How the display is written is still open.
+
+## The PI's fourth replies (10 November 2026, later session; record §24; Decision Log P31)
+- **3, replaced:** the note of 22 February, the block-matrix form and chapter 8 are ignored for the M1 rewrite. The rewrite rests on the five axioms, minimality, the proved mathematics of canon v2, and the PI's rulings; the record of 10 November is usable for rulings only.
+- **17:** its citation of chapter 8 ¶120 is dropped; P30 is the statement.
+- **17 and 20, tested:** `papers/M1/GROWTH_LAW_17_20.md`. Item 20 holds in M1's terms. Item 17 is not the same statement in M1 unless a tie between the size of ℂP² × S² and the lengths of the torus is supplied. Three questions put to the PI there.
+
+## The PI's fifth replies (10 November 2026, later session; record §25; Decision Log P32)
+- **The role of the fifth axiom in M1:** the statement that there is a seen part (T × Σ) and an unseen part (F), the seen being the image of the whole under the map that forgets F. Nothing more.
+- **Struck, as matters for the papers after the shape:** items 10, 12, 13, 16, 17. Item 20's question (whether 17 and 20 are one statement) falls with 17.
+- **Item 9** (the axiom must do work) is met by the role above: delete the axiom and the family of shapes of §2.1 has no warrant.
+- **Item 11** (the observer is where ω > 0): ω is not an object of M1; not used in M1.

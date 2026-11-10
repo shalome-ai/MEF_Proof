@@ -138,3 +138,19 @@ In answer to the three questions of `papers/M2/ZETA_ITEM4.md`:
 > Yes I may be conflating psi and psi-bar as the mirror , ignore my mirror comment - as it is over complicating things"
 
 (The question was: in "the value of ℂP² × S² is warped into the pillowcase and the size of it varies with Φ_QC" (§22), which piece changes size.)
+
+## 24. The three texts and the M1 rewrite (same day, later session)
+Of the note of 22 February 2026, `TPhi_12x12_elements.tex` and chapter 8:
+> "were only to help with the conversation.  I rather that you ignored them for the M1 re-write
+> Revise your 1-6 accordingly as you have ended up getting confused with what was purely guesswork with axioms and rigour"
+
+On the revised assumptions 1–6 (`papers/M1/REWRITE_ASSUMPTIONS.md`, "Fourth replies"):
+> "1-6 agreed; the record stays usable for rulings only"
+
+## 25. What the M1 rewrite is; the role of the fifth axiom in M1 (same day, later session)
+> "We are trying to derive M1 from axioms alone. We did it successfully first time around without all of these questions .  phi_QC is not even in M1 !!!  You are conflating things and this way of doing this is going to force fit things that should not be.
+> I think you have got this the wrong way around again.  i simply asked you to integrate axiom 5 into M1 - and 5 hours later - we are still going around and around in circles discussing m2,  tau2 derivations and re-litigating the entire corpus.
+> The premis was simple.  5 axioms determine the shape. the shape determines the equation. the equation and the shape determine the Mx series.  That is NOT what you are doing"
+
+On the two questions (is the role of the fifth axiom in M1 that there is a hidden piece at all and that what we see is its shadow; are items 10, 12, 13, 16, 17 struck):
+> "1. yes that is the role, nothing more 2. yes strike them"
