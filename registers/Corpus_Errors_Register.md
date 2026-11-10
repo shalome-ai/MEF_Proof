@@ -1,5 +1,7 @@
 # Corpus Errors and Inconsistencies — findings from the Mx build (delta to `Corpus_Errors_and_Inconsistencies_Register_v2.md`)
 
+*M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
+
 *Entries found while building M2, 8 Nov 2026. Numbering continues the PI's register (its last entry is 11). Entry 15 was withdrawn on the day (see note). PI banks.*
 
 ## 13. M1 v2 — refinement of the identification of A2's involution (found 8 Nov 2026, M2 build)
@@ -8,7 +10,7 @@
 
 **Status of M1's statement.** Correct on the pillowcase T²/{±1}, where τ² is trivial and τ is an involution; a refinement on the covering torus, where τ has order four and M1's "ι" is its square. Not an error in any M1 result (no M1 theorem uses more than the fold's action on the pillowcase and the corner lift), but the sentence "the involution ι is the fold" should read "the involution ι is the flow reversal τ, whose square is the fold".
 
-**Consequences noted.** τ fixes exactly the corners P₁ and P₄ on the pillowcase (solutions of Sx ≡ ±x), i.e. the drive-fixed corner and the corner carrying the −1 lift — consistent with M1 Cor 7.4 and App. B without further input. Consistent with the corpus's quarter-turn Spin^c holonomy e^{iπ/2} on the ω-cycle (fossil site Paper I App A → Paper 1 `lem:quarterlift`).
+**Consequences noted.** τ fixes exactly the corners P₁ and P₄ on the pillowcase (solutions of Sx ≡ ±x), i.e. the drive-fixed corner and the corner carrying the −1 lift — consistent with M1 Cor 7.7 and App. B without further input. Consistent with the corpus's quarter-turn Spin^c holonomy e^{iπ/2} on the ω-cycle (fossil site Paper I App A → Paper 1 `lem:quarterlift`).
 
 **Proposed action.** One-sentence erratum in M1 v3 (§2.2 and Prop 5.6 remark); M2 states the refinement in its §2 (handedness subsection) and tags it [D]. PI to adjudicate.
 
@@ -52,7 +54,7 @@ An identification, not a derivation, and under entry 19 the square is the modulu
 The same axiom gives the eigenvalues of M = ((2,1),(1,1)) as φ² and φ⁻², which is correct (M1 Thm 4.2; M2 `L4_eigen`). The Lyapunov exponent is the logarithm of the stretching eigenvalue, 2 ln φ = ln φ², as M2 has it (κ = log φ², `canon/M2/M2_WP2_handedness.tex` l.35). PI ruling 10 Nov 2026 (Decision Log P17): the old axiom is incorrect as stated. Action: M3 Appendix A keeps the wording as data with a marked correction; any later paper reproducing a rate "ln φ" from the corpus (Paper XX l.764 repeats it: "all at rate ln φ") re-derives it with κ = log φ².
 
 ## 24. Paper XX v10 l.387 (Σ-2c) — "τ₂ = L_ω/L_ψ = 1.86" (banked by the PI, 10 Nov 2026)
-The canon's value is 1.8466, the positive root of 6u³ + u² − 72u − 4 = 0 with u = τ₂² (M1 Prop 8.2; M2 `M2_WP4_warp_exponent.tex` l.268). Same discrepancy as flagged in the series SOW for Papers VI, VIII, X, XVI. Action: M3 states 1.8466 with the M1 reference; the stationarity hypotheses remain owed by M7.
+The canon's value is 1.8466, the positive root of 6u³ + u² − 72u − 4 = 0 with u = τ₂² (M1 v2 Prop 8.2 (removed at v5.0); M2 `M2_WP4_warp_exponent.tex` l.268). Same discrepancy as flagged in the series SOW for Papers VI, VIII, X, XVI. Action: M3 states 1.8466 with the M1 reference; the stationarity hypotheses remain owed by M7.
 
 ## 25. Paper XX v10 l.480 (Σ-4) and ll.651, 726, 939 — "Φ_QC ≠ 0 topologically" (banked by the PI, 10 Nov 2026)
 M2 shows Φ_QC vanishes at the real corner P₁, at the locked phase (Prop 5.1) and where the sheets coincide, so the statement is false pointwise. What M2 proves is that the two sectors are distinct (Thm 2.7), which gives ψ − ψ̄ ≢ 0 for a chiral ψ ≠ 0 and not Φ_QC ≢ 0. The statement is the "topological lock" of 𝕄-2/𝕄-3 (Navier–Stokes, Riemann). Action: to be stated precisely and proved where first consumed (M5 or M22); not a premise until then. See `papers/M3/M3_WP1-4_verification.md` T.2.

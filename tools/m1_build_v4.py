@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Build papers/M1/Paper_M1_Five_Axioms_v4.tex from canon/M1/Paper_M1_Four_Axioms_v2.tex.
-Usage: m1_build_v4.py <v2.tex> <v4.tex>.  Every edit must match exactly once.
+"""Build M1 with five axioms from the superseded canon v2.  Since 10 Nov 2026 (Decision Log P39) the output is canon:
+  python3 tools/m1_build_v4.py canon/M1/superseded/Paper_M1_Four_Axioms_v2.tex canon/M1/Paper_M1_Five_Axioms_v5.tex
+Usage: m1_build_v4.py <v2.tex> <out.tex>.  Every edit must match exactly once.
 
 Scope (Decision Log P32): the fifth axiom integrated as the warrant for the family
 M = (T x Sigma) x F, and nothing else.  Sections 3 to 8 are changed only where they count
@@ -15,7 +16,7 @@ def sub(old, new, what):
 
 # ---- header, title, abstract, section 1 ------------------------------------------------
 sub("% Paper M1 — Four axioms and their minimal geometry\n% Base paper of the Master Equation Framework series.  Draft v1, 7 Nov 2026.",
-    "% Paper M1 — Five axioms and their minimal geometry\n% Base paper of the Master Equation Framework series.  v4.3 WORKING DRAFT, 10 Nov 2026\n% (the fifth axiom integrated, with its two clauses; Decision Log P19, P23, P31, P33, P34).  Not canon.",
+    "% Paper M1 — Five axioms and their minimal geometry\n% Base paper of the Master Equation Framework series.  v5.0, canon, 10 Nov 2026\n% (five axioms; the fifth in two clauses; Decision Log P19, P23, P31-P39).  Supersedes v2 (canon/M1/superseded/).",
     "header")
 sub(r"\title{Four axioms and their minimal geometry}", r"\title{Five axioms and their minimal geometry}", "title")
 sub(r"\date{8 November 2026 (v2.1)}", r"\date{10 November 2026 (v4, working draft)}", "date")
@@ -127,7 +128,7 @@ sub("with its coupling to the coherence field, from the same four axioms on the 
     "with its coupling to the Coherent Field, from the same axioms on the geometry derived here;", "l.562")
 
 # ======================= SECOND PASS (P28 time circle; P29 Prop 8.2 leaves M1) ===========
-sub(r"\date{10 November 2026 (v4, working draft)}", r"\date{10 November 2026 (v4.3, working draft)}", "date v4.1")
+sub(r"\date{10 November 2026 (v4, working draft)}", r"\date{10 November 2026 (v5.0, canon)}", "date v4.1")
 
 # ---- the step; criterion (2) applied to the step (Minimality M1-7) ------------------------
 sub("(2) dynamical: the drive of $M$ has the least positive topological entropy;",

@@ -6,36 +6,42 @@
 
 **Status vocabulary.** **BANKED** — in a frozen canon paper, PI-banked. **DRAFT** — in a complete draft awaiting freeze. **PROVISIONAL (old ledger row n / paper)** — imported from `proof_derivation_ledger_v22.md` as a *menu*; may not be cited by any Mx paper until re-derived in-document and flipped to BANKED, or **STRUCK (reason)**. **TARGET (owing paper)** — not yet derived.
 
-**Readings in force.** R1–R4: M1's four (Def 2.1–2.7 and the readings table). R5: M2 Def. riemannian — positive-definite metric; time is the drive's orbit parameter. Minimality entries: `registers/Minimality_Register.md`.
+**Readings in force.** M1 v5.0 has six numbered choices: Def 2.1(i) (what is seen is the image under the projection onto time and space); Def 2.1(ii), (iii) (an object is a state of the internal piece at rest, its shadow what is left when the internal piece is forgotten); Def 2.3 (closure); Def 2.4(i) (growth is in the geometry); Def 2.7 (spinors and tangent vectors); Def 2.8 (orbits are realised). M2's reading (called "the fifth" in M2 v1.0, to be renumbered when M2 is reworked): M2 Def. riemannian — positive-definite metric; time is the drive's orbit parameter. Minimality entries: `registers/Minimality_Register.md`.
 
 ---
 
-## M1 — Four axioms and their minimal geometry (`canon/M1/Paper_M1_Four_Axioms_v2.tex`, 49 theorems, L1–L5) — all rows BANKED
+## M1 — Five axioms and their minimal geometry (`canon/M1/Paper_M1_Five_Axioms_v5.tex`, v5.0, 10 Nov 2026; 38 pp.; certificates L1–L4, L6, 58 theorems) — rows BANKED at v5.0 by the PI's direction to move the paper to canon (Decision Log P36 item 10, P39)
+
+*v5.0 supersedes v2 (`canon/M1/superseded/`). What changed, row by row, is marked "v5" below; the full list is `papers/M1/CHANGES_v4.md`, the audits `papers/M1/STEP_AUDIT.md` §§6–9, the numbering map `canon/M1/NUMBERING_v2_to_v5.md`.*
 
 | Result | Site | Rigour | Depends on | Certificate | Status |
 |---|---|---|---|---|---|
+| **v5 (new).** The fifth axiom, formal: (i) M = (T × Σ) × F with what is seen the image under the projection that forgets F; (ii) the structure carried by the internal piece is not carried to itself by one step of the drive; (iii) the internal piece has two independent states at rest with the same shadow. Remark: the projection is not one-to-one | M1 Def 2.1, Rem 2.2 | declared (axiom); Rem [D] | A5 (P19, P34, P35); two numbered choices | — | BANKED (v5) |
 | A4 ⇔ hyperbolic return map (\|tr\| > 2); trace 2 excluded | M1 Prop 4.1 | [R] | EXT Katok–Hasselblatt | `M1_L1_drive.lean`: `L1_trace3_min` | BANKED |
-| Uniqueness of the trace-3 class: every trace-3 M ∈ SL(2,ℤ) is conjugate to ((2,1),(1,1)); two routes | M1 Thm 4.2 | [R] | EXT Latimer–MacDuffee, Taussky; Gauss | `L1_reduced_disc5`, `L1_cycle_disc5`, `L1_conj_M0_inv` | BANKED |
-| Odd trace ⇔ order 3 mod 2 ⇔ corner 3-cycle; M₀ fixes P₁, cycles P₂P₃P₄ | M1 Prop 4.3 | [R] | — | `L1_odd_trace_iff_order_three`, `L1_M0_mod2_order3` | BANKED |
+| Uniqueness of the trace-3 class: every trace-3 M ∈ SL(2,ℤ) is conjugate to ((2,1),(1,1)); **v5:** three routes, the first a direct descent complete in itself | M1 Thm 4.2 | [R] | none for the first route; EXT Latimer–MacDuffee, Taussky (determinant ±1, ideal classes: V-11); Gauss, Sarnak (V-12) as corroboration | `L1_reduced_disc5`, `L1_cycle_disc5`, `L1_conj_M0_inv` | BANKED |
+| Odd trace ⇔ order 3 mod 2 ⇔ corner 3-cycle; M₀ fixes P₁, cycles P₂P₃P₄ | M1 Prop 4.4 (the Fibonacci drive is Thm 4.3) | [R] | — | `L1_odd_trace_iff_order_three`, `L1_M0_mod2_order3` | BANKED |
 | Division property from A1; 𝒜 = ℍ by Frobenius | M1 Lem 5.1, Prop 5.2 | [D] | A1, A2, A3; EXT Frobenius | `M1_L2_fibre.lean`: `L2_hamilton`, `L2_norm_posdef` | BANKED |
 | Four corners = Q₈/{±1}, V ≅ ℤ₂×ℤ₂ | M1 Prop 5.3 | [R] | — | `L2_corner_count` | BANKED |
 | Commutative fixed subalgebras of V×⟨ι⟩ are ℝ, ℂᵢ, ℂⱼ, ℂₖ | M1 Prop 5.4 | [R] | — | `L2_fix_*`, `L2_iperp_not_closed` | BANKED |
-| Fibre is T² with inversion and linear drive (Franks; 2ⁿ = 4) | M1 Prop 5.5 | [D] | A2–A4, M1-2 (dimension tier); EXT Franks 1970 | `L2_two_torsion` | BANKED |
+| Fibre is T² with inversion and linear drive (Franks; **v5:** the involution by the surface argument) | M1 Prop 5.5 | [D] | A2–A4, M1-2 (dimension tier); EXT Franks 1970 (V-10, secondary only); Thurston (V-16) | `L2_two_torsion` | BANKED |
 | Corner algebras by stabiliser under ⟨ι, M₀⟩; Ad_w cycles i→j→k | M1 Prop 5.6 | [D] | A2, A3, A4; reading: ι on the algebra identified with ι on spinors (M1's one [D] reading); **refined by M2: ι = τ² (fold); A2's involution is τ** (Register §13) | `L2_Ad_w_cycles`, `L2_w_cubed` | BANKED (refinement noted) |
-| Pillowcase: unique Euclidean (2,2,2,2) orbifold; χ_orb = 0; χ = 2 by two routes | M1 Thm 5.7 | [R] | EXT Thurston; Satake/Kawasaki | `L2_chi_orb_zero`, `L2_chi_pillowcase` | BANKED |
-| Dimension: 4 ∣ D; quaternionic dim F ≥ 2 ⇒ D ≥ 12; 4–11 fail; 12 least | M1 Thm 6.1 | [D] | Def 2.5 (v2); M1-2; EXT Salamon | `M1_L3_dimension.lean`: `L3_*` | BANKED |
+| Pillowcase: unique Euclidean (2,2,2,2) orbifold; χ_orb = 0; χ = 2 by two routes | M1 Thm 5.7 | [R] | EXT Thurston (V-16); Satake (V-17) | `L2_chi_orb_zero`, `L2_chi_pillowcase` | BANKED |
+| Dimension: 4 ∣ D; quaternionic dim F ≥ 2 ⇒ D ≥ 12; 4–11 fail; 12 least | M1 Thm 6.1 | [D] | Def 2.7; M1-2 (least dimension, which also makes the time–space block four-dimensional: **v5**, P38) | `M1_L3_dimension.lean`: `L3_*` | BANKED |
 | Split (3,6) unique given dim F ≥ 8; (7,2) excluded | M1 Rem 6.2 | [R] | — | `L3_split_three_six`, `L3_seven_two_meets_congruences` | BANKED |
-| S² = Sp(1)/U(1), sphere of imaginary units | M1 Prop 7.1 | [D] | Def 2.6 (v2) | `M1_L4_base.lean`: `L4_unit_sphere_axes` | BANKED |
-| ℂP² = SU(3)/U(2); χ = 3; c₁ = 3h | M1 Prop 7.2 | [D] | Def 2.6 | `L4_chern_CP2`, `L4_chi_counts` | BANKED |
-| Spin^c necessary (w₂ = h); L odd; canonical L = 𝒪(3); twisting line excluded | M1 Prop 7.3 | [D] | Def 2.5; M1-3; EXT Lawson–Michelsohn | `L4_not_spin_and_congruence`, `L4_odd_lines` | BANKED |
-| Corner lift (−1)^{mn}, product −1 | M1 Cor 7.4 | [R] | EXT Atiyah–Bott | `L4_four_corner_product` | BANKED |
-| Σ = S³ (least \|π₁\|) | M1 Prop 7.5 | [D] | M1-4 | — | BANKED |
-| χ(K₈) = 3·2·2 = 12 | M1 Thm 7.6 | [R] | Künneth | `L3_chi_K8` | BANKED |
-| Minimality theorem (assembly) | M1 Thm 8.1 | [D] | all above; the declared scale | — | BANKED |
-| Scale eliminated to Q_w²(18u+1) = Q_c²u²(6u+1); (3,6) ⇒ 6u³+u²−72u−4 = 0; scale a Hessian saddle | M1 Prop 8.2 | [D]/[R] | M1-5; the stationarity conditions themselves are hypotheses **owed by the sequel (M7)** | `M1_L5_vacuum.lean`: `L5_ratio`, `L5_cubic` | BANKED (hypotheses → TARGET M7) |
-| Witten 1981 recovered (cross-check) | M1 §8.4 | [R] | EXT | — | BANKED |
+| S² = Sp(1)/U(1), sphere of imaginary units | M1 Prop 7.1 | [D] | Def 2.8 | `M1_L4_base.lean`: `L4_unit_sphere_axes` | BANKED |
+| ℂP² = SU(3)/U(2); χ = 3; c₁ = 3h | M1 Prop 7.2 | [D] | Def 2.8 | `L4_chern_CP2`, `L4_chi_counts` | BANKED |
+| Spin^c necessary (w₂ = h); L odd; canonical L = 𝒪(3); twisting line excluded | M1 Prop 7.3 | [D] | Def 2.7; M1-3; EXT Lawson–Michelsohn | `L4_not_spin_and_congruence`, `L4_odd_lines` | BANKED |
+| **v5 (new).** States of the fibre for a twist of flux d: d of them; 1 + Σ⌊aᵢ/2⌋ kept by the first lift of the fold; which corner patterns the drive leaves in place; a half-turn twist has none | M1 Def 7.4, Lemma 7.5 | [R] | EXT Whittaker–Watson (V-9) | `M1_L6_twist.lean`: `L6_fixed_patterns`, `L6_return_three` | BANKED (v5) |
+| **v5 (new).** The twist of the fibre: the least flux meeting clauses (ii) and (iii) of the fifth axiom, with the states counted on the pillowcase for one lift, is three; one odd corner, a cycled one; two states kept, one removed by the fold | M1 Prop 7.6 | [D] | A5 (Def 2.1(ii), (iii)); M1-11 (least flux) | `L6_flux_one`, `L6_flux_two`, `L6_flux_three_states`, `L6_flux_three_one_odd`, `L6_flux_three_cycled`, `L6_least_flux`, `L6_smallest_case` | BANKED (v5) |
+| Corner lift (−1)^{mn} up to one overall sign, product −1; the odd corner a cycled one. **v5:** rests on Prop 7.6; was [R] on a citation of Atiyah–Bott that does not contain the statement (V-7) | M1 Cor 7.7 (was Cor 7.4) | [D] | Prop 7.6 | `L4_four_corner_product`, `L6_corner_product` | BANKED (v5) |
+| **v5 (new).** The time circle is three steps of the drive; M₀³ = ((13,8),(8,5)); the drive's numbers are per step. Open: the sign of the lift (w or −w) bears on three against six | M1 Cor 7.8 | [D] | Cor 7.7; P28; M1-7, M1-9 | `L1_M0_mod2_order3`, `L1_Fib_powers` | BANKED (v5) |
+| Σ = S³: the least fundamental group, and the Poincaré theorem (**v5**, P38) | M1 Prop 7.9 (was Prop 7.5) | [D] | M1-4; EXT Morgan–Tian Cor 0.2 (V-24) | — | BANKED (v5) |
+| χ(K₈) = 3·2·2 = 12 | M1 Thm 7.10 (was Thm 7.6) | [R] | Künneth | `L3_chi_K8` | BANKED |
+| Minimality theorem (assembly). **v5:** five axioms; step M₀ and a time circle of three steps; flux three on the fibre with one odd corner; the overall scale and the aspect ratio of the fibre held by a declared sector; no claim about moduli | M1 Thm 8.1 | [D] | all above; the declared input (M1-10) | — | BANKED (v5) |
+| ~~Scale eliminated to Q_w²(18u+1) = Q_c²u²(6u+1); (3,6) ⇒ 6u³+u²−72u−4 = 0~~ | ~~M1 Prop 8.2~~ | — | — | `M1_L5_vacuum.lean` (kept in the tree for M7) | **REMOVED from M1 at v5.0 (P38, P29): owed by M7** |
+| Cross-check: Witten 1981 (seven is the least dimension with SU(3) × SU(2) × U(1) symmetry; ℂP² × S² × S¹ is one such manifold) | M1 §8.3 (was §8.4) | [R] | EXT Witten (V-18) | — | BANKED (v5) |
 
-*Ledger header correction carried: M1 is v2 (26 pp., 49 theorems); the old ledger's "v1 / 16 pp. / 45" is superseded. M1 v2 §2 numbering: readings are Definitions 2.5 (spinors/tangent) and 2.6 (orbits), A4 formal is 2.7.*
+*M1 is v5.0 (38 pp., five certificates, 58 theorems). Section 2 numbering: the fifth axiom is Definition 2.1 with Remark 2.2; closure 2.3; growth and decay 2.4; the fibre algebra 2.5; order 2.6; the two levels 2.7; orbits 2.8; drive 2.9. Earlier header notes (v1, v2) are superseded.*
 
 ## M2 — The Master Equation from four axioms (`canon/M2/Paper_M2_Master_Equation_v1.tex`, v1.0 canon 9 Nov 2026, L1–L7, 55 theorems) — rows BANKED
 
@@ -43,7 +49,7 @@
 |---|---|---|---|---|---|
 | Fifth reading: positive-definite metric; time = orbit parameter of the drive | M2 Def riemannian | reading R5 | PI ruling Q8; M2-4 | — | BANKED |
 | Standing principle of minimality (series rule) | M2 §readings | principle | PI ruling 8 Nov | — | BANKED |
-| ψ, ψ̄ sections of the Clifford module M ≅ ℍ³² (Cl(0,12) ≅ ℍ(32)); shadow ψ̄ = τ̂ψ; corner reading in 𝒞 | M2 Def ψ | [D] | A3 (M1 Def 2.5, Prop 7.3); EXT Bott periodicity; R-F1(Φ) adopted (Q17) | `M2_L7_module.lean`: `L7_bott`, `L7_module_dims` | BANKED |
+| ψ, ψ̄ sections of the Clifford module M ≅ ℍ³² (Cl(0,12) ≅ ℍ(32)); shadow ψ̄ = τ̂ψ; corner reading in 𝒞 | M2 Def ψ | [D] | A3 (M1 Def 2.7, Prop 7.3); EXT Bott periodicity; R-F1(Φ) adopted (Q17) | `M2_L7_module.lean`: `L7_bott`, `L7_module_dims` | BANKED |
 | ω = ψ + τ̂ψ (even), ψ − τ̂ψ (odd); ω quaternion-valued, unique carrier of the imaginary direction; Φ_QC = ω|ψ−ψ̄|² (modulus squared, P10) | M2 Def ω; Prop parity remark | [R] | R1 (ruled), Q17(b) | `L7_imaginary_square_real` | BANKED |
 | Parity theorem: lowest τ̂-even invariant vanishing on both degenerate loci is degree 3, exponents (1,2): Φ = ω(ψ−ψ̄)² up to constant and factor order | M2 Prop parity | [R] given the two vanishing conditions (inputs: R1; motivated condition) | — | `M2_L1_parity.lean`: `L1_unique`, `L1_vanish_Im`, `L1_vanish_Re`, `L1_table_*`, `L1_sign_mul` | BANKED |
 | Sol block = suspension of M₀; Sol metric is A2's law with κ = log φ²; sheets = eigen-directions | M2 §handedness | [D] | M1 Thm 4.2; EXT Thurston | `M2_L4_handedness.lean`: `L4_eigen` | BANKED |
@@ -56,7 +62,7 @@
 | Flow components: T_ss = ½⟨Φ̇,Φ̇⟩, T_ii = −½⟨Φ̇,Φ̇⟩; stiff reading along the flow | M2 Prop stiff | [R]; reading R5 | — | `L2_flow_components`, `L2_trace` | BANKED |
 | Base restriction eq:2D is Paper 2's Σ-2 system; a = −ζΦ with ΔΦ = 1 per half-period the solution relation | M2 §base-restriction, §base-system | [D] | EXT O'Neill; Paper 2 §7.3 reproduced | — | BANKED |
 | Axiom attribution: Einstein = A1 + A3; extra term = A2; two-ness/arrow = A4 | M2 §3 after thm:master; §1 | [D] | all above | — | BANKED |
-| χ(pillowcase) = 2 two routes; 4π total, π per corner; χ(K₈) = 12; tadpole N = 12 on the base cycle | M2 Props chi-*, flux | [R]/[D] | M1 Thm 5.7, 7.6; weak (c) Q14; Addendum §4.6 reason reproduced | `M2_L3_zeta.lean`; `M2_L5_warp.lean`: `L5_chi_pillowcase`, `L5_deficit`, `L5_chi_K8` | BANKED |
+| χ(pillowcase) = 2 two routes; 4π total, π per corner; χ(K₈) = 12; tadpole N = 12 on the base cycle | M2 Props chi-*, flux | [R]/[D] | M1 Thm 5.7, 7.10; weak (c) Q14; Addendum §4.6 reason reproduced | `M2_L3_zeta.lean`; `M2_L5_warp.lean`: `L5_chi_pillowcase`, `L5_deficit`, `L5_chi_K8` | BANKED |
 | BPS completion; flux density at P₁; FD check; exact kink [∂a] = −κ₂²Nπ; constant slope (boundary condition); κ₂² = 2/L (normalisation, [D]) | M2 §§bps–gb | [R] (jump) / [D] (slope, κ₂²) | M2-6; Q16 | `L5_FD_check`, `L5_balance` | BANKED |
 | **kL = Nπ; ζ = χ(K₈)π = 12π** | M2 Thm warp-exponent, Cor zeta | [R] given the [D] inputs above | Q15 (direction-blind; τ₂ the physical remnant) | `L5_zeta`, `L5_single_flux`, `L5_tau_corners` | BANKED |
 | ω = 0 at the locked phase (τ̂ψ = −ψ) | M2 Prop locked | [R] | R1 | — | BANKED |
@@ -69,7 +75,7 @@
 | Result | Owing paper | Lead |
 |---|---|---|
 | Cone-tip Dirac spectrum; λ_n = n, d_odd(n); ζ(s)²(1−2^{−s}); partition function mock Jacobi; bridge field-ω ↔ spectral functional | M4 | Future-Mx §12.1 |
-| Stationarity conditions of M1 Prop 8.2 derived from the reduced action; Λ₁₂ by solvability (R-τ8 as theorem or refuted); equal weighting via the module trace; τ₂ = 1.8466 | M7 | M1 proof of Prop 8.2; Q17(3) |
+| Stationarity conditions for the aspect ratio (formerly M1 Prop 8.2, removed from M1 at v5.0, P38) derived from the reduced action; Λ₁₂ by solvability (R-τ8 as theorem or refuted); equal weighting via the module trace; τ₂ = 1.8466 | M7 | M1 v2 proof of Prop 8.2 (`canon/M1/superseded/`); Q17(3) |
 | The Sp(1) structure of the commutator remainder in Φ's degree-three invariant; the S² flux | M7 | M2 Prop parity remark |
 | κ₂² = 2/L from orbifold Gauss–Bonnet with warped weights ([D] → [R]) | M7 or M10 | M2 §gb |
 | Paper 2 §5.1 Einstein-frame weight "+2" (e^{−96π}) | M10 | Register §15 (withdrawn) note |

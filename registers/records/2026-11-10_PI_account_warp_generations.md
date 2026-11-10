@@ -195,3 +195,6 @@ On the four-dimensional block, the two phrases of Proposition 8.2 and the refere
 
 On the proposals (1) to reword the block by the fourth criterion and (2) to take Proposition 8.2 out again:
 > "1. agreed 2. agreed do we need \"“What this paper does not fix\", proceed"
+
+## 32. The move to canon (same day, later session)
+> "commit and push, then do the move to canon"

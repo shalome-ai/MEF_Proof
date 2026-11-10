@@ -1,5 +1,7 @@
 # Future-Mx Register — derivations deferred to a later paper of the series
 
+*M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
+
 *Each entry names the result, the paper it was deferred from and why, what the owing paper must contain, its premise set, and its status. Entries are not ledger rows and carry no rigour tag until a canonical site exists. Opened 8 Nov 2026. PI banks.*
 
 ## F-1. ω as a spectral coherence functional on the pillowcase — owed by M4 (deferred from M2)
@@ -16,7 +18,7 @@
 
 **Premise set.** M1 (geometry) and M2 (field content and equation) as citable premises; EXT spectral theory of cone manifolds and random-matrix rigidity. No other MEF paper.
 
-**Dependencies.** M2 published or at least frozen (ω's definition and the parity theorem); M1 Cor 7.4.
+**Dependencies.** M2 published or at least frozen (ω's definition and the parity theorem); M1 Cor 7.7.
 
 **Status.** Registered; not scheduled. Owner: PI.
 
@@ -24,7 +26,7 @@
 
 
 ## F-2. Targets registered in the M-Derivation-Proof-Ledger (owing papers M3, M4, M7, M10)
-See `ledger/M-Derivation-Proof-Ledger.md`, section "Targets registered for later papers": the cone-tip spectrum (M4); M1 Prop 8.2's stationarity conditions, Λ₁₂ by solvability, the Sp(1) commutator structure, equal weighting (M7); κ₂² = 2/L from orbifold Gauss–Bonnet (M7/M10); Paper 2 §5.1's Einstein-frame weight (M10); Σ-5 from A1 (M3 → M5); Σ-P, Σ-S, Σ-T as derivation targets (M3 assigns the owing papers).
+See `ledger/M-Derivation-Proof-Ledger.md`, section "Targets registered for later papers": the cone-tip spectrum (M4); M1 v2 Prop 8.2 (removed at v5.0)'s stationarity conditions, Λ₁₂ by solvability, the Sp(1) commutator structure, equal weighting (M7); κ₂² = 2/L from orbifold Gauss–Bonnet (M7/M10); Paper 2 §5.1's Einstein-frame weight (M10); Σ-5 from A1 (M3 → M5); Σ-P, Σ-S, Σ-T as derivation targets (M3 assigns the owing papers).
 
 ## F-3. The Higgs field as the dilaton — owed by M9 and M15 (from Paper III l.329 / Paper VI)
 Paper III identifies the MEF Higgs with Φ_QC; M2 §5 finds the coupling extremal at the sheet angle arctan√2, which is the lead. M9 derives the identification from the corner geometry and M15 derives the potential; until then it is a target, not a premise.
@@ -36,7 +38,7 @@ Recorded on the PI's word; a lead, not a premise, not yet examined. The corpus t
 Found in `papers/M3/M3_WP1-4_verification.md` §6. (1) Total baryon number and total charge zero across both sectors (Σ-0). (2) "Φ_QC ≠ 0 topologically", the lock used by 𝕄-2 and 𝕄-3 (Σ-4; Corpus Errors 25). (3) The two homology generators of T² as the origin of exactly two transparent fields (Σ-2c, Σ-T). (4) Quasars as inward conduits (Σ-P). (5) The wall picture and the four sectors of Σ-3 re-expressed in τ's terms (series SOW open item, no single owner). Each is a target, not a premise.
 
 ## F-6. Canon housekeeping found by the M3 audit (banked by the PI, 10 Nov 2026)
-(a) Ledger: the corner three-cycle is M1 Prop 4.4, not 4.3; M1 Thm 4.3 (the Fibonacci drive; `L1_M0_is_Fib_squared`, `L1_Fib_recursion`, `L1_Fib_powers`, `L1_Fib_not_SL2`) has no row; M1 Thm 7.6 is tagged [D] in M1, [R] in the ledger. (b) M2 erratum candidate: `M2_WP4_warp_exponent.tex` l.187 cites "M1 Propositions 4.3, 5.6" for the corner fixed by the fold and the drive; it is Proposition 4.4. (c) The M3 SOW names GBH1 v10; the source held is v9.
+(a) Ledger: the corner three-cycle is M1 Prop 4.4, not 4.3; M1 Thm 4.3 (the Fibonacci drive; `L1_M0_is_Fib_squared`, `L1_Fib_recursion`, `L1_Fib_powers`, `L1_Fib_not_SL2`) has no row; M1 Thm 7.10 is tagged [D] in M1, [R] in the ledger. (b) M2 erratum candidate: `M2_WP4_warp_exponent.tex` l.187 cites "M1 Propositions 4.3, 5.6" for the corner fixed by the fold and the drive; it is Proposition 4.4. (c) The M3 SOW names GBH1 v10; the source held is v9.
 
 ## F-7. Ungrounded steps in the shadow derivation of Paper 3 v13 — owed by M5 (banked by the PI, 10 Nov 2026)
 Parked by the PI's direction: to be grounded elsewhere in Paper 3 or the corpus, or struck, when M5 opens; not premises until then. Found in the reading recorded at `papers/M3/M3_WP1-4_verification.md` §8. (1) **The corner-link spectrum** μ⁺ = m + 3/2, μ⁻ = −m + 1/2 at each cone tip: "taken as given" (l.1639), a declared input (l.2243). (2) **Existence of a harmonic Maass form with the computed shadow** (l.526): rests on Bruinier–Funke surjectivity, original reference unchecked (Verified References V-2). (3) **The geometric completion** agrees with that form only up to a holomorphic function, and its modular transformation is "not established" (l.545). (4) **From the surviving term to the whole series** (Theorem l.451): as the architect reads ll.451–480 and l.1635, the spectral computation fixes the leading term, sign and multiplicity, and the series −η(2τ)³ is identified, not computed term by term; the paper lists the theorem as proved in full (l.2239). Red-flag scan of ll.376–480: see `tools/redflags.py`. M3 does not consume any of these (island rule).
