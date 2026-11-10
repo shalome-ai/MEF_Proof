@@ -109,3 +109,32 @@ In answer to the three questions of `papers/M2/ZETA_ITEM4.md`:
 > 3. papers III and III addendum deal with the cones in the four corners"
 
 (Read and assessed: `papers/M2/ZETA_ITEM4.md`, section "After the PI's three answers".)
+
+## 20. τ₂; and the state of the work (same day)
+> "we are still missing a re-write of M1 with axiom 5 - the zeta derivation has become a rabbit hole"
+
+> "tau_2 is derived in /home/dhiren/MEF_Proof/sources/Paper6_Tau2_Derivation.tex   all other derivations of tau_2 are incorrect"
+
+## 21. Replies to the M1 rewrite assumption list (same day)
+> "20. I think its one structure.  let's see if that resolves
+> 21. Ah ! I didn't realise that so the canonical K_8 means the warp is on Cp2xS2 even though it is written on T2/Z2  - the torus is folded, mirrored and twisted - how does one write that ?
+> 28- agreed in the Mx series SOW tau_2 doesn't come until much later
+> I also don't understand why we are talking about zeta in M1 this is a M2 issue after M1 is defined.  I am confused as to why you are reading other papers."
+
+(Items are those of `papers/M1/REWRITE_ASSUMPTIONS.md`.)
+
+## 22. The display of K₈; the mirror; replies to the remaining items (same day)
+> "Ah on 21 -  I agree - what happens is that the value of CP2 x S2 is warped into the pillowcase and the size of it varies with Phi_QC - so my wording was incorrect earlier. … The fold and Twist is as you say  The mirroring is the psi, Psi-bar chiral walls. so everything is in the pillow case.
+> Does the above clear things up especially 17
+> 1-16 agreed
+> 18-19 agreed
+> 22-25 agreed
+> 26-28 are not M1 issues so i am not ruling
+> 29-31 agreed"
+
+## 23. Which piece changes size; the mirror comment withdrawn (same day)
+> "It" is ℂP² × S².  - i know this is against my earlier ruling. but i was in error - LOL!
+> Items 17 and 20 may be the same statement. - yes agreed most likely
+> Yes I may be conflating psi and psi-bar as the mirror , ignore my mirror comment - as it is over complicating things"
+
+(The question was: in "the value of ℂP² × S² is warped into the pillowcase and the size of it varies with Φ_QC" (§22), which piece changes size.)
