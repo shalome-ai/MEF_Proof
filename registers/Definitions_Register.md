@@ -42,6 +42,18 @@
 | **Coherent Field** (ω) | ω ≡ ψ + ψ̄ | M2 Def 2.3 (`M2_WP0` ll.138–152); naming per `canon/omega-definition-usage_v2.md` | DEFINED |
 | **dilaton** (Φ_QC) | Φ_QC = ω\|ψ − ψ̄\|², component by component in M | M2 Prop 2.4 (ll.167–181) | DEFINED |
 
+## Terms of the PI's account not yet formalised (PI statements of 10 Nov 2026; `registers/records/2026-11-10_PI_account_warp_generations.md`)
+
+**Standing caution from the PI (10 Nov 2026):** "I am using viscosity, mass and momentum these are '4 dimensional' 'human analogies'. the pillowcase is not a viscous medium in the true sense. And this is where definitions matter." The terms *viscosity*, *mass*, *momentum*, *speed*, *slower*, *faster* below are four-dimensional analogies for what is seen; none of them is a property of the pillowcase itself. No formal statement of the series may use them as if they were; each needs its twelve-dimensional definition entered here before it is used in a paper.
+
+| Term | Definition (the PI's words) | Defined at | Notes |
+|---|---|---|---|
+| **the warp** (reference meaning) | "The warp is on the pillowcase"; it is a function of position on the pillowcase through Φ; it does not act on ℂP² × S² | record §4 | Supersedes, for the series, M2's e^{2a(θ)} on ℂP² × S² and the sentence at `TPhi_12x12_elements.tex` ll.107–112 |
+| **viscosity** (of a sector) | what the warp gives each of the four sectors of the pillowcase: "as Φ traverses the pillowcase it slows down and speeds up" | record §4 | the PI's word; formal counterpart not yet fixed |
+| **generation** | "Gen I, II and III are the same object but we see different shadows … there is only a single fermion" | record §5 | three shadows in four dimensions of one object "moving at different speeds in a higher dimension" |
+| **mass** (as seen in four dimensions) | "mass is how we interpret the slowing up and speeding up"; "the mass goes up in gen III because it is moving slower - and because of the momentum conservation we interpret it as mass is higher" | record §5 | Settled 10 Nov 2026 (record §7): the two are "the same phenomenon interpreted in two different ways". At fixed energy, for an object massless in the full space, mass seen in four dimensions = hidden momentum; as it rises the visible speed and the hidden wave speed both fall and the hidden wavelength shortens (`papers/M2/checks/speed_check.py`). "Speed along the pillowcase" means the speed of the wave pattern, not the object's rate of travel round the hidden direction |
+| **the forces** | carried by ℂP² × S²; "not effected" by the warp | record §4 | Whether the twist contributes to any force is **not assumed**: the PI withdrew reliance on chapter 8 ¶99 on 10 Nov 2026; to be proved later if at all |
+
 ## Terms introduced in the audit draft (the architect's wording; not yet banked)
 
 | Term | Definition | Defined at | Notes |
