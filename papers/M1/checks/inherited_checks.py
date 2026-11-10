@@ -68,4 +68,32 @@ for _ in range(60): u = u - f(u) / (18 * u * u + 2 * u - 72)
 Qw, Qc = 6, 3
 report("I10", abs(f(u)) < 1e-9 and abs(u ** 0.5 - 1.8466) < 5e-5 and abs(Qw**2 * (18*u + 1) - Qc**2 * u**2 * (6*u + 1)) < 1e-6,
        f"the cubic has the positive root u = {u:.6f}, sqrt = {u**0.5:.4f}, and satisfies the constraint at (3, 6)")
+# --- I11 (Theorem 4.2, the descent): conjugation by T^k and S alone carries every trace-three element to M0 ------
+def descend(A, cap=200):
+    a, b, c, d = A; steps = 0
+    while steps < cap:
+        steps += 1
+        if c == 0 or b == 0: return None, steps                 # impossible for trace three, determinant one
+        k = round((3 - 2 * a) / (2 * c)); A = conj((1, k, 0, 1), A); a, b, c, d = A      # now |2a - 3| <= |c|
+        if abs(2 * a - 3) > abs(c): return None, steps
+        if abs(c) == 1:
+            k = (2 - a) if c == 1 else (a - 1); A = conj((1, k, 0, 1), A)                 # a = 2 (c = 1) or a = 1 (c = -1)
+            if A == M0: return A, steps
+            if A == inv(M0): return conj(S, inv(M0)) if conj(S, inv(M0)) == M0 else None, steps
+            # c = -1 normalised the other way round: one quarter-turn and repeat
+            A = conj(S, A); a, b, c, d = A; continue
+        if abs(c) % 2 == 0 or abs(b) >= abs(c): return None, steps      # c is always odd, and |b| < |c| after the shift
+        A = conj(S, A); a, b, c, d = A                                    # the lower-left entry becomes -b: smaller
+    return None, steps
+import random
+random.seed(3)
+big = []
+for _ in range(400):                                   # random conjugates of M0 with large entries
+    A = M0
+    for _ in range(random.randint(5, 40)): A = conj(random.choice((S, T, Ti)), A)
+    big.append(A)
+res = [descend(A) for A in allt3 + big]
+report("I11", all(r[0] == M0 for r in res),
+       f"the descent of M1 Thm 4.2 (shift a by T^k until |2a-3| <= |c|, then a quarter-turn) reaches M0 from all {len(allt3)} small and {len(big)} large trace-three matrices; longest run {max(r[1] for r in res)} steps")
+report("I12", all((a * a - 3 * a + 1) % 2 == 1 for a in range(-50, 51)), "a^2 - 3a + 1 is odd for every integer a: b and c are odd, and |c| = 2 never occurs")
 print("ALL PASS" if ok else "SOME FAILED")

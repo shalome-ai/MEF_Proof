@@ -258,25 +258,35 @@ sub("and it is the odd determinant class that puts the lift in the refinement cl
 
 # ---- Theorem 8.1 ---------------------------------------------------------------------------
 sub("the minimality principle of Section~\\ref{sec:minimal}, and one declared input;",
-    "the minimality principle of Section~\\ref{sec:minimal}, one declared input and one declared assumption;", "l.488 hypotheses")
+    "the minimality principle of Section~\\ref{sec:minimal}, and one declared input;", "l.488 hypotheses")
 sub("with the overall scale stabilised by a declared sector, the minimal geometry",
-    "with the overall scale stabilised by a declared sector and the stationarity conditions of Proposition~\\ref{prop:moduli} assumed, the minimal geometry", "Thm 8.1: the declared assumption named")
+    "with the overall scale and the aspect ratio of the fibre held by a declared sector, the minimal geometry", "Thm 8.1: the declared input")
+sub("$\\chi(\\Keight)=12$, dimension twelve, and no continuous modulus.", "$\\chi(\\Keight)=12$ and dimension twelve.", "Thm 8.1: no claim about moduli")
 sub("with monodromy $\\bigl(\\begin{smallmatrix}2&1\\\\1&1\\end{smallmatrix}\\bigr)$, determinant line",
     "with step $\\bigl(\\begin{smallmatrix}2&1\\\\1&1\\end{smallmatrix}\\bigr)$ and a time circle of three steps, flux three on the fibre with one odd corner (Proposition~\\ref{prop:twist}), determinant line", "Thm 8.1 statement: step and time circle")
 sub("The moduli are treated in Proposition~\\ref{prop:moduli}.",
-    "Corollaries~\\ref{cor:lift} and~\\ref{cor:timecircle} give the time circle. The moduli are treated in Proposition~\\ref{prop:moduli}.", "Thm 8.1 proof")
+    "Corollaries~\\ref{cor:lift} and~\\ref{cor:timecircle} give the time circle.", "Thm 8.1 proof")
 
 
-# ---- Section 8.3: Proposition 8.2 stays (PI, 10 Nov 2026); its stationarity conditions are the declared assumption
-sub("The stationarity conditions themselves are the Euler--Lagrange equations of the energy and enter as hypotheses here; their derivation belongs to the sequel.",
-    "The stationarity conditions themselves are the Euler--Lagrange equations of the energy. They are not derived in this paper: they enter as a declared assumption, the one named in Theorem~\\ref{thm:main}. The assumption would be shown false by a derivation of the Euler--Lagrange equations of the energy functional that gives different conditions, or conditions that leave the aspect ratio free; the selection made in this paper would then have to be revisited at criterion~(1).",
-    "Prop 8.2 proof: the stationarity conditions as the declared assumption, with its failure test")
-sub("the corner lift has product $-1$ (Corollary~\\ref{cor:lift}); the aspect ratio",
-    "the corner lift has product $-1$ (Corollary~\\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\\ref{cor:timecircle}); the aspect ratio", "l.560: the time circle")
+# ---- Section 8.3: Proposition 8.2 leaves M1 (PI, 10 Nov 2026, P38; P29): the block and its worked cases are removed
+_a = t.index("\\subsection{No continuous modulus}"); _b = t.index("\\subsection{Cross-check}")
+t = t[:_a] + t[_b:]; log.append("Section 8.3 (Proposition 8.2 and its worked cases) removed")
+sub("it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale.",
+    "it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale or the aspect ratio of the fibre. That these two are fixed is the declared input of the theorem; it would fail if the stationarity conditions of the geometry's energy left either free, and the geometry would then not meet criterion~(1).",
+    "deflationary reading: what is not derived, with its failure test")
+sub("(its Euler characteristic, its flux quanta, the coefficients of the polynomial fixing its aspect ratio) lie in", "(its Euler characteristic, its flux quanta) lie in", "Def 3.2: criterion (3) without the aspect-ratio polynomial")
+sub("its aspect ratio $\\tautwo=L_{\\omega}/L_{\\psi}$, whose fate is settled in Section~\\ref{sec:theorem}.",
+    "its aspect ratio $\\tautwo=L_{\\omega}/L_{\\psi}$, which this paper does not fix.", "l.364")
+sub("and the final theorem states the size as the one input the axioms do not supply.",
+    "and the final theorem states the size, with the aspect ratio of the internal fibre, as the input the axioms do not supply.", "l.191: scale and aspect ratio")
+sub("& no $\\mathrm{Sp}(1)/U(1)$ factor; $\\tautwo$ unfixed & Prop.~\\ref{prop:S2}, Prop.~\\ref{prop:moduli} & \\rigD\\",
+    "& no $\\mathrm{Sp}(1)/U(1)$ factor & Proposition~\\ref{prop:S2} & \\rigD\\", "elimination table: quadric row")
+sub("the corner lift has product $-1$ (Corollary~\\ref{cor:lift}); the aspect ratio is a root of an integer cubic (Proposition~\\ref{prop:moduli}).",
+    "the corner lift has product $-1$ (Corollary~\\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\\ref{cor:timecircle}).", "l.560: the time circle; the cubic removed")
 
 # ---- appendices ----------------------------------------------------------------------------
 sub("Five files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \\texttt{sorry}; forty-nine theorems.",
-    "Six files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \\texttt{sorry}; sixty-one theorems.", "appendix count")
+    "Five files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \\texttt{sorry}; fifty-eight theorems.", "appendix count")
 sub("and $F\\notin\\mathrm{SL}_{2}(\\Z)$.\n", "and $F\\notin\\mathrm{SL}_{2}(\\Z)$; $\\det(M_{0}-I)=-1$ (not used in the text).\n", "appendix L1 description")
 
 
@@ -285,10 +295,10 @@ sub("these are different structures and distinguish different corners, and the d
     "these are different structures and distinguish different corners. The drive carries the lift's odd corner $P_{4}\\to P_{2}\\to P_{3}\\to P_{4}$, so that the sign pattern returns after three steps and the time circle is three steps (Corollary~\\ref{cor:timecircle}); the dictionary gives the pattern at the step called the first.",
     "Appendix B l.602")
 
-sub("specialisation at $(3,6)$ to $6u^{3}+u^{2}-72u-4=0$.\n\n",
-    "specialisation at $(3,6)$ to $6u^{3}+u^{2}-72u-4=0$.\n\n\\texttt{M1\\_L6\\_twist.lean} (Section~\\ref{sec:twist}): for the thirty-five divisors of flux at most three on the four corners, with the count of states of Lemma~\\ref{lem:states}(b) taken as given: the product of the corner signs is $(-1)^{d}$; the patterns the drive leaves in place; flux one fails clause~(iii); flux two cannot meet both clauses; flux three meets clause~(iii) always, has one odd corner, and meets clause~(ii) exactly when that corner is not $P_{1}$; the least flux meeting both is three; the case $D=3P_{4}$.\n\n", "appendix: L6 description")
-sub("The five files follow verbatim.", "The six files follow verbatim.", "appendix: six files")
-sub("\\lstinputlisting{M1_lean/M1_L5_vacuum.lean}\n", "\\lstinputlisting{M1_lean/M1_L5_vacuum.lean}\n\n\\subsection*{\\texttt{M1\\_L6\\_twist.lean} --- the twist of the fibre}\n\\lstinputlisting{M1_lean/M1_L6_twist.lean}\n", "appendix: L6 listing")
+sub("\\texttt{M1\\_L5\\_vacuum.lean} (Section~\\ref{sec:theorem}): elimination of the scale to $Q_{w}^{2}(18u+1)=Q_{c}^{2}u^{2}(6u+1)$; specialisation at $(3,6)$ to $6u^{3}+u^{2}-72u-4=0$.\n\n",
+    "\\texttt{M1\\_L6\\_twist.lean} (Section~\\ref{sec:twist}): for the thirty-five divisors of flux at most three on the four corners, with the count of states of Lemma~\\ref{lem:states}(b) taken as given: the product of the corner signs is $(-1)^{d}$; the patterns the drive leaves in place; flux one fails clause~(iii); flux two cannot meet both clauses; flux three meets clause~(iii) always, has one odd corner, and meets clause~(ii) exactly when that corner is not $P_{1}$; the least flux meeting both is three; the case $D=3P_{4}$.\n\n", "appendix: L5 description replaced by L6")
+sub("The five files follow verbatim.", "The five files follow verbatim. The certificate of the earlier version on the aspect ratio is not part of this paper.", "appendix: five files")
+sub("\\subsection*{\\texttt{M1\\_L5\\_vacuum.lean} --- the moduli}\n\\lstinputlisting{M1_lean/M1_L5_vacuum.lean}\n", "\\subsection*{\\texttt{M1\\_L6\\_twist.lean} --- the twist of the fibre}\n\\lstinputlisting{M1_lean/M1_L6_twist.lean}\n", "appendix: L5 listing replaced by L6")
 sub("\\bibitem{Witten1981}", "\\bibitem{WhittakerWatson} E.~T. Whittaker and G.~N. Watson, \\emph{A Course of Modern Analysis}, 3rd ed., Cambridge University Press, 1920, \\S\\S20.21, 20.32, 20.51.\n\\bibitem{Witten1981}", "bibliography: Whittaker and Watson")
 # abstract and outlook
 sub("and the geometry carries a $\\Spinc$ structure with determinant line $\\Oline{3}$.",
@@ -298,7 +308,46 @@ sub("the determinant line is odd and the corner lift has product $-1$ (Corollary
 
 # ---- abstract rewritten to stay within 200 words (CLAUDE.md section 9), same content plus the twist of the fibre
 _a = t.index("\\begin{abstract}") + len("\\begin{abstract}"); _b = t.index("\\end{abstract}")
-t = t[:_a] + "\n" + r"""A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms on a compact Riemannian geometry $(T\times\Sigma)\times F$, each behavioural word given its meaning in a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose step is the square of the Fibonacci matrix, and a three-step time circle; the internal fibre is the pillowcase orbifold, its four cone points carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$, with $\Spinc$ determinant line $\Oline{3}$. The fifth axiom fixes the twist of the fibre: three units of flux and one odd corner. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. Witten's minimal gauge manifold is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the programme is derived rather than postulated.""" + "\n" + t[_b:]; log.append("abstract: within 200 words, with the twist of the fibre")
+t = t[:_a] + "\n" + r"""A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms on a compact Riemannian geometry $(T\times\Sigma)\times F$, each behavioural word given its meaning in a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose step is the square of the Fibonacci matrix, and a three-step time circle; the internal fibre is the pillowcase orbifold, its four cone points carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$, with $\Spinc$ determinant line $\Oline{3}$. The fifth axiom fixes the twist of the fibre: three units of flux and one odd corner. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. A minimal gauge manifold of Witten is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the programme is derived rather than postulated.""" + "\n" + t[_b:]; log.append("abstract: within 200 words, with the twist of the fibre")
+
+# ======================= CORRECTIONS FROM THE AUDIT OF THE INHERITED THEOREMS (STEP_AUDIT section 9) ==========
+# Each makes the text say what its source says, or replaces an unsupported step by a proof.  The old text was wrong in each case.
+sub("On any compact shape there is always a shortest closed path \\cite{LyusternikFet};",
+    "On any compact shape there is always a closed geodesic, a closed path that is as straight as the shape allows \\cite{LyusternikFet};", "audit: Lyusternik-Fet gives a closed geodesic, not a shortest path")
+sub("the uncertainties in measuring them together are bounded below by half the size of their commutator \\cite{Robertson1929},",
+    "the product of the uncertainties in measuring them is bounded below by half the size of the mean of their commutator \\cite{Robertson1929},", "audit: Robertson's inequality stated as it is")
+sub("locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ \\cite{Salamon1982}, whose restriction",
+    "locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ (the local form of the coefficient bundle of \\cite{Salamon1982}), whose restriction", "audit: what Salamon is cited for")
+sub("An almost-quaternionic structure exists only in real dimension $4n$ \\cite{Salamon1982}, so $4\\mid D$.",
+    "An almost-quaternionic structure makes each tangent space a module over the quaternions, so the real dimension is divisible by four: $4\\mid D$.", "audit: the dimension statement is elementary, not a cited theorem")
+sub("An involution of $T^{n}$ with only isolated fixed points is conjugate to an affine map $x\\mapsto Ax+c$ with $A^{2}=I$ and no eigenvalue one, i.e.\\ $A=-I$, with $\\lvert\\det(I-A)\\rvert=2^{n}$ fixed points by the Lefschetz formula; four fixed points force $n=2$ (\\texttt{L2\\_two\\_torsion}) and $\\iota$ is inversion. On a three-torus the count is eight, excluding $\\dim X=3$ \\cite{FranksNewhouse}.",
+    "An involution of a surface with isolated fixed points is a half-turn near each of them, so it preserves orientation. For the torus the quotient $Q$ is then an orbifold with $k$ cone points of order two and $0=\\chi(\\Ttwo)=2(\\chi(Q)-k/2)$, so $Q$ is a sphere with four cone points, the orbifold $(2,2,2,2)$, which is unique \\cite{Thurston}; its double cover by the torus is unique, and $\\iota$ is inversion. Inversion of $T^{n}$ has $2^{n}$ fixed points (\\texttt{L2\\_two\\_torsion}), so four corners agree with $n=2$.",
+    "audit: Prop 5.5, the involution; the uncited general claim and the misplaced citation replaced by the surface argument")
+sub("$2\\pi\\chi=\\int K+\\sum_{\\alpha}\\mathrm{deficit}_{\\alpha}=0+4\\pi$ \\cite{Satake,Kawasaki1978}, so", "$2\\pi\\chi=\\int K+\\sum_{\\alpha}\\mathrm{deficit}_{\\alpha}=0+4\\pi$ \\cite{Satake}, so", "audit: Gauss-Bonnet for orbifolds is Satake's; Kawasaki's paper is the signature theorem")
+sub("Witten's theorem \\cite{Witten1981} states that the lowest-dimensional compact manifold admitting $SU(3)\\times SU(2)\\times U(1)$ as isometries is $\\CPtwo\\times\\Stwo\\times S^{1}=SU(3)/U(2)\\times SU(2)/U(1)\\times U(1)$.",
+    "Witten \\cite{Witten1981} observes that seven is the least dimension of a manifold with $SU(3)\\times SU(2)\\times U(1)$ symmetry, and that $\\CPtwo\\times\\Stwo\\times S^{1}=SU(3)/U(2)\\times SU(2)/U(1)\\times U(1)$ is one of the seven-dimensional manifolds that have it.", "audit: Witten says seven is the least dimension and that this manifold is not the only one")
+sub("The two proofs are independent in kind, one through ideal classes and one through reduced forms,",
+    "The three proofs are independent in kind, a direct descent, one through ideal classes and one through reduced forms,", "audit: Thm 4.2, three routes")
+sub("Two routes. First, by the theorem of Latimer and MacDuffee \\cite{LatimerMacDuffee1933} as sharpened by Taussky \\cite{Taussky1949}, the $\\mathrm{SL}_{2}(\\Z)$-conjugacy classes of integer matrices with characteristic polynomial $p$ are in bijection with the narrow ideal classes of the order $\\Z[\\lambda]$, $\\lambda$ a root of $p$.",
+    "Three routes. The first is a direct descent and is complete in itself. Let $A=\\bigl(\\begin{smallmatrix}a&b\\\\c&d\\end{smallmatrix}\\bigr)$ have determinant one and trace three, so that $4bc=5-(2a-3)^{2}$. The right side is congruent to four modulo eight, so $b$ and $c$ are odd. Conjugation by $\\bigl(\\begin{smallmatrix}1&k\\\\0&1\\end{smallmatrix}\\bigr)$ replaces $a$ by $a+kc$ and leaves $c$ unchanged; choose $k$ so that $\\lvert2a-3\\rvert\\leq\\lvert c\\rvert$. If $\\lvert c\\rvert\\geq3$ then $(2a-3)^{2}\\geq9$, since otherwise $\\lvert bc\\rvert=1$; so $4\\lvert b\\rvert\\lvert c\\rvert=(2a-3)^{2}-5<c^{2}$ and $\\lvert b\\rvert<\\lvert c\\rvert$. Conjugation by the quarter-turn $S=\\bigl(\\begin{smallmatrix}0&1\\\\-1&0\\end{smallmatrix}\\bigr)$ puts $-b$ in the place of $c$. Repeating, we reach $\\lvert c\\rvert=1$, where $2a-3=\\pm1$ and $b=c$. A last shift of $a$ gives $M_{0}$ when $c=1$ and $M_{0}^{-1}$ when $c=-1$, and $SM_{0}S^{-1}=M_{0}^{-1}$. There is a single class.\n\nSecond, by the theorem of Latimer and MacDuffee \\cite{LatimerMacDuffee1933} as sharpened by Taussky \\cite{Taussky1949}, the classes of integer matrices with characteristic polynomial $p$, under conjugation by integer matrices of determinant $\\pm1$, are in bijection with the ideal classes of the order $\\Z[\\lambda]$, $\\lambda$ a root of $p$.",
+    "audit: Thm 4.2, a direct descent added as the first route; Latimer-MacDuffee-Taussky stated as it is (determinant +-1, ideal classes)")
+sub("the ring of integers of $\\Q(\\sqrt5)$, which has class number one; its fundamental unit $\\phi$ has norm $-1$, so the narrow class number is also one. There is a single class.",
+    "the ring of integers of $\\Q(\\sqrt5)$, which has class number one. There is a single class under conjugation of determinant $\\pm1$. Conjugation by $\\bigl(\\begin{smallmatrix}1&0\\\\0&-1\\end{smallmatrix}\\bigr)$ carries $M_{0}$ to $\\bigl(\\begin{smallmatrix}2&-1\\\\-1&1\\end{smallmatrix}\\bigr)$, which the descent carries back to $M_{0}$, so there is a single class under $\\mathrm{SL}_{2}(\\Z)$ as well.",
+    "audit: Thm 4.2, from determinant +-1 to determinant one")
+sub("Second, by Gauss \\cite{Gauss1801} (modern statement in \\cite{Sarnak1982}), $M=\\bigl(\\begin{smallmatrix}a&b\\\\c&d\\end{smallmatrix}\\bigr)\\mapsto cx^{2}+(d-a)xy-by^{2}$ carries conjugacy classes of trace $t$ bijectively to equivalence classes of binary quadratic forms of discriminant $t^{2}-4$.",
+    "Third, by the classical correspondence between hyperbolic conjugacy classes in $\\mathrm{SL}_{2}(\\Z)$ and classes of indefinite binary quadratic forms \\cite{Gauss1801,Sarnak1982}, under which $M=\\bigl(\\begin{smallmatrix}a&b\\\\c&d\\end{smallmatrix}\\bigr)$ of trace $t$ corresponds to the form $cx^{2}+(d-a)xy-by^{2}$ of discriminant $t^{2}-4$.",
+    "audit: Thm 4.2, the third route stated as a correspondence")
+
+# ---- the four-dimensional block and Sigma = S^3 stated by criterion (4) (PI, 10 Nov 2026, P38)
+sub("The time--space block $T\\times\\Sigma$ carries the quaternionic structure with the drive along $T$; its natural model is $\\Hquat^{\\times}=\\R_{>0}\\times S^{3}$, of dimension four, and this is the block's dimension (Section~\\ref{sec:base} fixes $\\Sigma$). Hence $\\dim F=D-4$.",
+    "The time--space block $T\\times\\Sigma$ carries the quaternionic structure with the drive along $T$, so its dimension is a positive multiple of four. Criterion~(4) takes the least total dimension, and a larger block only raises the total: the block has dimension four, that of $\\Hquat^{\\times}=\\R_{>0}\\times S^{3}$ (Section~\\ref{sec:base} fixes $\\Sigma$). Hence $\\dim F=D-4$.",
+    "Thm 6.1: the block is four-dimensional by criterion (4), not by a 'natural model'")
+sub("The time--space block $T\\times\\Sigma$ of Theorem~\\ref{thm:dim} is modelled on $\\Hquat^{\\times}=\\R_{>0}\\times S^{3}$, so $\\Sigma=S^{3}/\\Gamma$ for a finite $\\Gamma\\subset\\mathrm{Sp}(1)$; every such quotient is rigid, and the last clause of criterion~(4) selects $\\Gamma$ trivial, $\\Sigma=S^{3}=\\mathrm{Sp}(1)$. \\rigD",
+    "The spatial piece $\\Sigma$ of the four-dimensional block of Theorem~\\ref{thm:dim} is a compact connected three-dimensional manifold without boundary (Definition~\\ref{def:A1}). The last clause of criterion~(4) takes the least fundamental group, the trivial one; and a closed, simply connected three-manifold is the three-sphere \\cite{MorganTian}. So $\\Sigma=S^{3}=\\mathrm{Sp}(1)$, the unit quaternions, and the block is modelled on $\\Hquat^{\\times}=\\R_{>0}\\times S^{3}$. \\rigD",
+    "Prop (Sigma = S^3): by the least fundamental group and the Poincare theorem")
+sub("The quotients by $\\Z_{2}$ and $\\Z_{3}$ pass criteria (1)--(3) and are removed only by the least-$\\pi_{1}$ clause,",
+    "The quotients of the sphere by $\\Z_{2}$ and $\\Z_{3}$ pass criteria (1)--(3) and are removed only by the least-$\\pi_{1}$ clause,", "after Prop (Sigma = S^3)")
+sub("\\bibitem{Robertson1929}", "\\bibitem{MorganTian} J.~W. Morgan and G. Tian, \\emph{Ricci Flow and the Poincar\\'e Conjecture}, Clay Mathematics Monographs 3, American Mathematical Society, 2007 (arXiv:math/0607607), Corollary~0.2.\n\\bibitem{Robertson1929}", "bibliography: Morgan and Tian")
 
 # ---- the display of K_8 (PI, 10 Nov 2026, P37): M1 says nothing on which piece the warp scales; M2 settles it
 sub("it appears as a piece of the base over which $F$ is warped.", "it appears as a piece of the base over which $F$ sits.", "Def orbits: no direction of the warp asserted")

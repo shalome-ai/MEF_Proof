@@ -226,3 +226,122 @@ A fresh sub-agent read only the section and the background statements it uses, w
 | The time-circle argument rested on unstated premises (time a circle; a whole number of steps; the fibre glued by a power of the drive; the lifted fold one structure on the whole), and the overall-sign condition was only in the proof | the premises are in the proof with their sources (Definition 2.3, Theorem 4.2, the hypothesis of the statement); the condition is in the statement; the paragraph after Definition 2.1 says the internal piece may be carried round time by a map of itself |
 
 **Not changed:** "forced by the fifth axiom" stays as the paper's summary; the Proposition's statement now carries its hypotheses in full (the two clauses, one lift, the least flux).
+
+---
+
+## 9. The theorems M1 inherits from v2: step audit and references (10 November 2026; Decision Log P36 item 9)
+
+**How this was done.** Every proof of Sections 4 to 8 was read in the text (v2 ll.205–556, READ this session). Each external citation was checked against the source's own text by a sub-agent with instructions not to rely on memory; I then read the Taussky, Witten and Whittaker–Watson passages myself. Results by reference are in `registers/Verified_References.md` V-10 to V-23. Independent computations: `checks/inherited_checks.py` (I1–I12, all pass). Numbering is that of the built draft.
+
+**Statuses:** verified reference (V-n, READ) · CHECKED (script or Lean) · DECLARED · GAP · NOT READ (the source could not be obtained; the statement is standard and RECALLED).
+
+### 9.1 What the reference check found, and what was changed (the old text was wrong in each case)
+
+| # | Where | v2 said | The source says | Change made |
+|---|---|---|---|---|
+| R1 | Thm 4.2, first route | Latimer–MacDuffee and Taussky give "SL₂(ℤ)-conjugacy classes … in bijection with the narrow ideal classes" | conjugation by integer matrices of **determinant ±1**, and **ordinary** ideal classes (V-11, READ) | the route is stated as it is; one sentence takes it from determinant ±1 to determinant one by an explicit conjugation. **A direct descent is added as the first route, complete in itself** (CHECKED I11, I12) |
+| R2 | Thm 4.2, second route | Sarnak: M ↦ cx² + (d−a)xy − by² "carries conjugacy classes of trace t bijectively to … forms of discriminant t² − 4" | not read; a secondary source gives Sarnak's Prop. 1.4 as a bijection between **primitive** forms and **primitive hyperbolic** classes in PSL₂(ℤ), with t² − du² = 4 (V-12, SECONDARY) | now the third route, stated as "the classical correspondence"; its finite part is certified (`L1_reduced_disc5`, `L1_cycle_disc5`). It is corroboration, not the proof |
+| R3 | Thm 6.1; Def 2.7 | Salamon: "an almost-quaternionic structure exists only in real dimension 4n"; the I, J, K definition | the I, J, K basis is given for quaternionic Kähler manifolds; "almost quaternionic" is defined by its structure group; dimension 4n is built into the definitions, not a theorem (V-13, READ) | the dimension statement is now the elementary one (each tangent space is a module over the quaternions); Salamon is cited for the local form of the coefficient bundle |
+| R4 | Prop 5.5 | "An involution of Tⁿ with only isolated fixed points is conjugate to an affine map …" (uncited); "On a three-torus the count is eight, excluding dim X = 3" citing Franks 1969 and Newhouse | Franks 1969 Thm 1 is about Anosov diffeomorphisms of tori under two hypotheses; neither paper is about involutions (V-14, READ / SECONDARY) | replaced by the argument in dimension two, which is all the proposition uses: an involution of a surface with isolated fixed points preserves orientation; the count of Euler characteristics gives a sphere with four cone points; the orbifold (2,2,2,2) is unique (Thurston, V-16, READ). CHECKED I6 |
+| R5 | Thm 5.7 | orbifold Gauss–Bonnet cited to Satake and Kawasaki | Satake's Theorem 2 is the Gauss–Bonnet theorem for V-manifolds (V-17, READ); Kawasaki's paper is "The signature theorem for V-manifolds" (not obtained) | cited to Satake alone |
+| R6 | §8.5 | "Witten's theorem … the lowest-dimensional compact manifold admitting SU(3) × SU(2) × U(1) … is ℂP² × S² × S¹" | "seven dimensions is in fact the minimum dimensionality … although ℂP² × S² × S¹ is not the only seven-dimensional manifold with this symmetry" (V-18, READ by the architect) | the sentence and the abstract now say what Witten says |
+| R7 | §2.2 | Lyusternik–Fet: "there is always a shortest closed path" | existence of a closed geodesic, by a minimax argument, not a shortest path (V-19, SECONDARY) | "a closed geodesic" |
+| R8 | §2.4 | Robertson: "the uncertainties … are bounded below by half the size of their commutator" | "the product of the uncertainties … is not less than half the absolute value of the mean of their commutator" (V-20, READ) | reworded to that |
+
+### 9.2 Step tables
+
+**Proposition 4.1 (A4 is hyperbolicity).** [R]
+
+| Step | Status |
+|---|---|
+| characteristic polynomial λ² − tλ + 1 | CHECKED by hand |
+| \|t\| < 2: finite order, entropy zero | CHECKED on a sample (I3) |
+| \|t\| = 2: a shear, entropy zero | by hand |
+| \|t\| > 2: Anosov, entropy log\|λ\|, periodic points the rational points, no fixed points of the flow on the mapping torus | **NOT READ**: Katok–Hasselblatt (V-23); standard |
+| the drive "acts on T² by its return map, an element of SL₂(ℤ)" | **DECLARED** in the text (the fibre is a torus by Prop 5.5; linear up to topological conjugacy by Franks, V-10 SECONDARY) |
+
+**Theorem 4.2 (the drive).** [R]
+
+| Step | Status |
+|---|---|
+| first route, the descent: 4bc = 5 − (2a−3)², b and c odd; shift a until \|2a−3\| ≤ \|c\|; then \|b\| < \|c\| for \|c\| ≥ 3; a quarter-turn; termination at \|c\| = 1; M₀ or M₀⁻¹ | **CHECKED**: by hand in the paper; I11 (80 small and 400 large matrices), I12 |
+| S M₀ S⁻¹ = M₀⁻¹ | CHECKED `L1_conj_M0_inv`, I2 |
+| second route: classes under determinant ±1 ↔ ideal classes of ℤ[λ] | verified reference V-11 (READ: Taussky by the architect; Latimer–MacDuffee by the sub-agent) |
+| ℤ[φ] is the ring of integers of ℚ(√5) and has class number one | **RECALLED**, standard; not checked against a reference. The first route does not use it |
+| from determinant ±1 to determinant one | CHECKED by hand (conjugation by diag(1, −1), then the descent) |
+| third route: reduced forms of discriminant five, one cycle | CHECKED `L1_reduced_disc5`, `L1_cycle_disc5`; the correspondence itself V-12 (SECONDARY) |
+| eigenvalues φ^{±2}, entropy 2 log φ | CHECKED I4 |
+
+**Theorem 4.3, Proposition 4.4.** [R] All steps CHECKED: `L1_M0_is_Fib_squared`, `L1_Fib_recursion`, `L1_Fib_powers`, `L1_Fib_not_SL2`, `L1_odd_trace_iff_order_three`, `L1_M0_mod2_order3`; the half-lattice evaluations by hand.
+
+**Lemma 5.1, Proposition 5.2 (𝒜 = ℍ).** [D]
+
+| Step | Status |
+|---|---|
+| N(a) = aa* is fixed by *; circle or hyperbola according as u² = ∓1 | CHECKED by hand |
+| "A1 requires every factor, the corner fibres included, to be compact", hence the norm form is positive-definite | **DECLARED** (the reading that carries the [D]; stated in the text before the proposition) |
+| a finite-dimensional associative real division algebra is ℝ, ℂ or ℍ | verified reference V-15 (Frobenius, READ) |
+| Hamilton's relations, non-commutativity, positive-definiteness | CHECKED `L2_hamilton`, `L2_noncomm`, `L2_norm_posdef` |
+
+**Propositions 5.3, 5.4.** [R] CHECKED: `L2_corner_count`, `L2_fix_conj`, `L2_fix_Ad_i/j/k`, `L2_fix_conj_Ad_i`, `L2_iperp_not_closed`.
+
+**Proposition 5.5 (the fibre is a torus).** [D]
+
+| Step | Status |
+|---|---|
+| an Anosov diffeomorphism of a compact surface lives on T² and is conjugate to a hyperbolic linear automorphism | **SECONDARY ONLY** (V-10): Franks 1970 not obtained; a survey attributes the classification on surfaces to it. Standard |
+| the involution preserves orientation; the quotient is a sphere with four cone points; unique; ι is inversion | CHECKED I6; Thurston V-16 (READ); V-4 |
+| least dimension by criterion (4) | DECLARED (Minimality) |
+
+**Proposition 5.6 (the corner algebras).** [D] The reading (the local form of ι at the corners) is **DECLARED** in the text as "a definition rather than a computation". `L2_Ad_w_cycles`, `L2_w_cubed` CHECKED.
+
+**Theorem 5.7 (the pillowcase).** [R]
+
+| Step | Status |
+|---|---|
+| orbifold Euler characteristic 2 − 4·½ = 0; Euclidean; (2,2,2,2) unique among the seventeen | Thurston V-16 (READ: formula 13.3.4, Theorem 13.3.6); `L2_chi_orb_zero`; I5 |
+| χ(X/σ) = ½(χ(X) + χ(Fix σ)) | **PARTIAL** (V-21: Bredon, a snippet only); the second route does not use it |
+| orbifold Gauss–Bonnet | Satake V-17 (READ) |
+
+**Theorem 6.1 (the dimension), Remark 6.2.** [D]
+
+| Step | Status |
+|---|---|
+| 4 ∣ D | CHECKED by hand (elementary, R3 above) |
+| "The time–space block T × Σ carries the quaternionic structure with the drive along T; its natural model is ℍ^× = ℝ_{>0} × S³, of dimension four, and this is the block's dimension" | **DECLARED, and not numbered among the paper's choices.** It is an identification: nothing before it forces the block to be four-dimensional. See 9.3 |
+| on a four-manifold the three structures span Λ²₊ and carry no information; so dim F ≥ 8 | standard (Sp(1)Sp(1) = SO(4)); RECALLED, elementary |
+| the arithmetic: D ≥ 12; four to eleven fail; the split (3, 6) | CHECKED `L3_*`; I7, I8 |
+
+**Propositions 7.1, 7.2, 7.3.** [D]
+
+| Step | Status |
+|---|---|
+| the units form a two-sphere; Sp(1)/U(1) | by hand; `L4_unit_sphere_axes` |
+| Def 2.8 (orbits are realised) | DECLARED (a numbered choice) |
+| ℂP²: complexification and "directions rather than vectors" | **DECLARED**; the text names both readings and calls the proposition "the least direct" |
+| c(Tℂℙ²) = (1+h)³ | CHECKED I9, `L4_chern_CP2`; Griffiths–Harris not read (standard) |
+| spinors iff w₂ = 0 or w₂ lifts; canonical Spin^c structure with determinant K⁻¹ | **NOT READ**: Lawson–Michelsohn (V-22) |
+| criterion (1) removes the twisting line | DECLARED (Minimality M1-3) |
+
+**Proposition 7.9 (Σ = S³).** [D] "modelled on ℍ^×" is the same identification as in Theorem 6.1 (**DECLARED**, unnumbered); "every such quotient is rigid" is **uncited** (standard for spherical space forms; RECALLED); least \|π₁\| DECLARED (Minimality M1-4).
+
+**Theorem 7.10 (the base).** χ multiplicative by Künneth (Hatcher; standard, not read); `L3_chi_K8`; I5.
+
+**Proposition 8.2 (the moduli).** [D] As recorded in §7d: the stationarity conditions are a declared assumption; the algebra is CHECKED (`L5_ratio`, `L5_cubic`, I10); the choice of quanta is Minimality M1-5. Two phrases remain as in v2 and unexamined: the radii "tied by the warp to the two periods" (which now sits beside P37, under which M1 says nothing on what the warp scales), and "one unit per corner-cycled sector".
+
+**§8.5 (cross-check).** Not a premise. Witten V-18 (READ), corrected as R6.
+
+### 9.3 Left for the PI
+
+1. **The four-dimensional time–space block** (Theorem 6.1, Proposition 7.9). The proof says the block's "natural model is ℍ^× … and this is the block's dimension". This is an identification on which the dimension twelve and S³ rest, and it is not one of the paper's numbered choices. I have not changed it. It should either be numbered as a choice, with its failure test, or derived.
+2. **Proposition 8.2's two phrases** (above). The first is in tension with P37.
+3. **References not obtained**, all for standard statements: Franks 1970, Katok–Hasselblatt, Lawson–Michelsohn, Bredon (in part), Kawasaki, Sarnak, Lyusternik–Fet (the last two read only in secondary sources). They need a library copy before their pages can be entered.
+4. The Lean file headers of L1 and L4 still name Latimer–MacDuffee, Atiyah–Bott and others as the inputs; the files are reproduced verbatim and were not edited.
+
+### 9.4 The three points of §9.3 settled (10 November 2026; Decision Log P38)
+
+1. **The four-dimensional block.** Theorem 6.1 now says: the block carries the quaternionic structure, so its dimension is a positive multiple of four, and criterion (4) takes the least total dimension. Proposition 7.9 now says: Σ is a compact connected three-manifold without boundary (Definition 2.3); the least fundamental group is the trivial one; a closed, simply connected three-manifold is the three-sphere (V-24, READ). Steps: the multiple of four, by hand; the least, **DECLARED** (Minimality M1-2, M1-4, already banked); the Poincaré theorem, **verified reference V-24**. No "natural model" remains as a premise; ℍ^× is named as what results.
+2. **Proposition 8.2** is out of M1 (P38), with its worked cases and its certificate. The rows on it in §9.2 and §7d no longer apply. Theorem 8.1 names the scale and the aspect ratio as held by a declared sector: **DECLARED**, with its failure test in the deflationary reading (Minimality M1-10).
+3. **References not obtained** remain owed as housekeeping (V-10, V-12, V-19, V-21, V-22, V-23): not a matter for the PI.
+
+**Failure test for point 1:** Σ is not S³ if the series later needs a spatial piece with a non-trivial fundamental group; the block is not four-dimensional if a later paper needs a larger seen part.

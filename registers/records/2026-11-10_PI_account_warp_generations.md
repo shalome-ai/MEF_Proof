@@ -188,3 +188,10 @@ In reply to the twelve numbered items put by the architect:
 ## 30. The display of K₈; the day (same day, later session)
 On the three options for item 21 (state how ×_w is read; swap the order in the display; say nothing in M1 and let M2 settle it):
 > "i prefer option 3 and let M2 settle it..  (my hypothesis is that it is 2 rather than 1) but this is why we need M2.  That is correct way to do this.  We are building Mx series properly.  Today was hard work.  M3 was necessary that the shadow axiom is critical and now we have found a way to incorporate the shadow  - and the result in Paper XV and that is a critical paper."
+
+## 31. The three points left by the audit (same day, later session)
+On the four-dimensional block, the two phrases of Proposition 8.2 and the references not obtained:
+> "Why do we have to have any of these in M1 ?  It makes no sense"
+
+On the proposals (1) to reword the block by the fourth criterion and (2) to take Proposition 8.2 out again:
+> "1. agreed 2. agreed do we need \"“What this paper does not fix\", proceed"

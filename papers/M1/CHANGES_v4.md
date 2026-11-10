@@ -83,4 +83,29 @@
 - **The display of K₈ (P37):** one sentence after the display says the warp symbol records that the product is warped and that which piece is scaled is not fixed in M1; "the warped fibre X of A2" and "the base over which F is warped" made neutral. Future-Mx F-10, owed by M2.
 - 39 pages; 66 edits to canon v2. Gates 1, 2, 4, 5 pass; gate 3: the two first-person sentences, an exception by P36.
 
-**Still owed:** the step audit of the theorems inherited from v2 with their references (`STEP_AUDIT.md` §9, in progress); on acceptance, the move to canon and the renumbering of references to M1 in M2, the registers, the ledger and CLAUDE.md §5.
+## v4.5 (10 November 2026): corrections from the audit of the inherited theorems (`STEP_AUDIT.md` §9)
+
+Eight places where v2 attributed to a source something the source does not say. In each the old text was wrong; the mathematics of the paper is unchanged except that Theorem 4.2 gains a proof that needs no citation.
+
+| Where | Change |
+|---|---|
+| Thm 4.2 | **a direct descent added as the first route** (conjugation by shifts and the quarter-turn alone); Latimer–MacDuffee–Taussky stated as it is (determinant ±1, ideal classes) with one sentence taking it to determinant one; the reduced-forms route stated as a correspondence |
+| Thm 6.1; Def 2.7 | the dimension is divisible by four for an elementary reason, not by a theorem of Salamon; Salamon cited for the local form of the coefficient bundle |
+| Prop 5.5 | the uncited claim about involutions of Tⁿ and the misplaced citation replaced by the surface argument (orientation, Euler characteristics, uniqueness of the orbifold (2,2,2,2)) |
+| Thm 5.7 | orbifold Gauss–Bonnet cited to Satake alone |
+| §8.5; abstract | Witten: seven is the least dimension, and ℂP² × S² × S¹ is one of the manifolds that have the symmetry |
+| §2.2 | Lyusternik–Fet: "a closed geodesic", not "a shortest closed path" |
+| §2.4 | Robertson's inequality stated as it is |
+
+39 pages; 77 edits to canon v2. Gates 1, 2, 4, 5 pass; gate 3 an exception (P36).
+
+## v4.6 (10 November 2026): after the audit (Decision Log P38)
+
+- **Theorem 6.1 and Proposition 7.9** no longer rest on a "natural model": the block is four-dimensional as the least multiple of four (criterion (4)); Σ has the least fundamental group and is the three-sphere by the Poincaré theorem (Morgan–Tian, Corollary 0.2; V-24).
+- **Proposition 8.2 leaves M1** (P38; P29), with §8.3, its worked cases and the certificate `M1_L5_vacuum.lean` (kept in the tree for the τ₂ paper). Everything in the v4.2 and v4.5 notes above about the proposition being kept is superseded. Theorem 8.1 says "with the overall scale and the aspect ratio of the fibre held by a declared sector" and makes no claim about moduli; the deflationary reading says neither is derived and what would show the assumption false. Criterion (3) no longer names the aspect-ratio polynomial; the outlook no longer cites the cubic.
+- Appendix A: five files (L1–L4, L6), fifty-eight theorems.
+- 38 pages; 87 edits to canon v2. Gates 1, 2, 4, 5 pass; gate 3 an exception (P36).
+
+**Numbering after v4.6.** Section 8: Theorem 8.1 only; §8.2 the elimination table; §8.3 the cross-check.
+
+**Still owed:** pages for the references not obtained (V-10, V-12, V-19, V-21, V-22, V-23); on acceptance, the move to canon and the renumbering of references to M1 in M2, the registers, the ledger and CLAUDE.md §5.

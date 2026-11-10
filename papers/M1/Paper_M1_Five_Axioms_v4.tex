@@ -50,7 +50,7 @@
 \maketitle
 
 \begin{abstract}
-A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms on a compact Riemannian geometry $(T\times\Sigma)\times F$, each behavioural word given its meaning in a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose step is the square of the Fibonacci matrix, and a three-step time circle; the internal fibre is the pillowcase orbifold, its four cone points carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$, with $\Spinc$ determinant line $\Oline{3}$. The fifth axiom fixes the twist of the fibre: three units of flux and one odd corner. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. Witten's minimal gauge manifold is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the programme is derived rather than postulated.
+A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms on a compact Riemannian geometry $(T\times\Sigma)\times F$, each behavioural word given its meaning in a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose step is the square of the Fibonacci matrix, and a three-step time circle; the internal fibre is the pillowcase orbifold, its four cone points carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$, with $\Spinc$ determinant line $\Oline{3}$. The fifth axiom fixes the twist of the fibre: three units of flux and one odd corner. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. A minimal gauge manifold of Witten is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the programme is derived rather than postulated.
 \end{abstract}
 
 \section{What is observed, and the five axioms}\label{sec:intro}
@@ -170,7 +170,7 @@ For a shape, ``closes on itself'' means two things. First, no piece goes on for 
 A geometry satisfies A1 if $T$, $\Sigma$ and $F$ are compact, connected and without boundary, and the fundamental group of $M$ is non-trivial.
 \end{definition}
 
-The fundamental group is the collection of loops in $M$ up to continuous deformation; ``non-trivial'' means some loop does not deform to a point. We ask this of the whole shape, not of each piece: the time circle already supplies such a loop, and the space and internal pieces are free to have none of their own. On any compact shape there is always a shortest closed path \cite{LyusternikFet}; we ask for more, a loop that is topologically stuck, and that is the third of the six choices.
+The fundamental group is the collection of loops in $M$ up to continuous deformation; ``non-trivial'' means some loop does not deform to a point. We ask this of the whole shape, not of each piece: the time circle already supplies such a loop, and the space and internal pieces are free to have none of their own. On any compact shape there is always a closed geodesic, a closed path that is as straight as the shape allows \cite{LyusternikFet}; we ask for more, a loop that is topologically stuck, and that is the third of the six choices.
 
 \subsection{Growth and decay}\label{sec:A2}
 
@@ -198,12 +198,12 @@ The \emph{fibre algebra} $\mathcal{A}$ of a geometry is the collection of operat
 A geometry satisfies A3 if its fibre algebra is non-commutative: there are operations $a$ and $b$ with $ab\neq ba$.
 \end{definition}
 
-Two things follow at once and are not extra assumptions. Because $F$ sits over a compact piece, there are only finitely many independent operations: $\mathcal{A}$ is finite-dimensional. Because ``and then'' is how operations are combined, doing $a$ then $b$ then $c$ is the same whether one groups it as $(ab)c$ or $a(bc)$: $\mathcal{A}$ is associative. What the axiom does \emph{not} say is that every operation can be undone; that it can will be a consequence of closure (Section~\ref{sec:fibre}), and it is that consequence, together with a classical theorem of Frobenius \cite{Frobenius1878}, that will force $\mathcal{A}$ to be the quaternions, the four-dimensional number system with units $1,i,j,k$ and $i^{2}=j^{2}=k^{2}=ijk=-1$, in which $ij=k$ but $ji=-k$. The second half of the sentence is a consequence of the first: for two observables that fail to commute, the uncertainties in measuring them together are bounded below by half the size of their commutator \cite{Robertson1929}, so ``cannot be foretold'', in the quantum sense, is a theorem of ``order matters''. Unpredictability in the other sense, of a system whose future is sensitive to its present, belongs to the fourth axiom.
+Two things follow at once and are not extra assumptions. Because $F$ sits over a compact piece, there are only finitely many independent operations: $\mathcal{A}$ is finite-dimensional. Because ``and then'' is how operations are combined, doing $a$ then $b$ then $c$ is the same whether one groups it as $(ab)c$ or $a(bc)$: $\mathcal{A}$ is associative. What the axiom does \emph{not} say is that every operation can be undone; that it can will be a consequence of closure (Section~\ref{sec:fibre}), and it is that consequence, together with a classical theorem of Frobenius \cite{Frobenius1878}, that will force $\mathcal{A}$ to be the quaternions, the four-dimensional number system with units $1,i,j,k$ and $i^{2}=j^{2}=k^{2}=ijk=-1$, in which $ij=k$ but $ji=-k$. The second half of the sentence is a consequence of the first: for two observables that fail to commute, the product of the uncertainties in measuring them is bounded below by half the size of the mean of their commutator \cite{Robertson1929}, so ``cannot be foretold'', in the quantum sense, is a theorem of ``order matters''. Unpredictability in the other sense, of a system whose future is sensitive to its present, belongs to the fourth axiom.
 
 Two further definitions say \emph{where} the fibre algebra acts, and these are the fifth and sixth choices. A shape has at every point its tangent directions, and, if it is the right kind of shape, also its spinors, the objects that carry the half-integer spin of a fermion. The order axiom will be read as saying that the non-commutative algebra is the algebra of the shape's own tangent directions and spinors, not an abstract bookkeeping device.
 
 \begin{definition}[the algebra acts on spinors and on tangent vectors]\label{def:levels}
-The fibre algebra acts on the geometry at two levels: at the spinor level, as the algebra generated by the Clifford action on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$, a rank-three subbundle of $\operatorname{End}(TM)$ locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ \cite{Salamon1982}, whose restriction to $F$ carries the full algebra.
+The fibre algebra acts on the geometry at two levels: at the spinor level, as the algebra generated by the Clifford action on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$, a rank-three subbundle of $\operatorname{End}(TM)$ locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ (the local form of the coefficient bundle of \cite{Salamon1982}), whose restriction to $F$ carries the full algebra.
 \end{definition}
 
 An almost-complex structure $I$ is a rule that rotates every tangent direction by a quarter-turn, $I^{2}=-1$, the way multiplication by $i$ rotates the complex plane; a quaternionic structure is three such rules $I,J,K$ obeying the quaternion relations. The reader need only hold on to the picture: the shape carries, at every point, a copy of the quaternion multiplication table acting on its directions.
@@ -228,7 +228,7 @@ The flow is placed on time together with the internal piece, not on time alone, 
 
 \subsection{What has been chosen}\label{sec:scope}
 
-The five sentences have been turned into five conditions, and in doing so six choices were made and numbered: that what is seen is the image of the whole under the projection onto time and space (Definition~\ref{def:A5}(i)); that an object is a state of the internal piece at rest, and its shadow what is left of it when the internal piece is forgotten (Definition~\ref{def:A5}(ii),~(iii)); that self-reference means a loop that cannot be shrunk (Definition~\ref{def:A1}); that growth is in the geometry (Definition~\ref{def:A2}(i)); that the non-commutative algebra is the algebra of the shape's own spinors and tangent directions (Definition~\ref{def:levels}); and that the sphere of alternatives is part of the shape (Definition~\ref{def:orbits}). Every result below that depends on one of these says so. Nothing in the five conditions mentions a gauge group, a particle, a generation or a coupling constant, and nothing names a factor of the manifold that will be derived. One quantity is not constrained by any axiom: the overall size of the shape. The definition of minimality in the next section is made independent of size, and the final theorem states the size as the one input the axioms do not supply.
+The five sentences have been turned into five conditions, and in doing so six choices were made and numbered: that what is seen is the image of the whole under the projection onto time and space (Definition~\ref{def:A5}(i)); that an object is a state of the internal piece at rest, and its shadow what is left of it when the internal piece is forgotten (Definition~\ref{def:A5}(ii),~(iii)); that self-reference means a loop that cannot be shrunk (Definition~\ref{def:A1}); that growth is in the geometry (Definition~\ref{def:A2}(i)); that the non-commutative algebra is the algebra of the shape's own spinors and tangent directions (Definition~\ref{def:levels}); and that the sphere of alternatives is part of the shape (Definition~\ref{def:orbits}). Every result below that depends on one of these says so. Nothing in the five conditions mentions a gauge group, a particle, a generation or a coupling constant, and nothing names a factor of the manifold that will be derived. One quantity is not constrained by any axiom: the overall size of the shape. The definition of minimality in the next section is made independent of size, and the final theorem states the size, with the aspect ratio of the internal fibre, as the input the axioms do not supply.
 
 \section{Minimality}\label{sec:minimal}
 
@@ -237,7 +237,7 @@ A \emph{modulus} of a geometry satisfying A1--A5 is a continuous parameter of it
 \end{definition}
 
 \begin{definition}[minimal]\label{def:minimal}
-Among geometries satisfying A1--A5, $M$ is \emph{minimal} if it is selected by the following criteria applied in order, each used only to break ties left by the previous ones: (1) parametric: $M$ has no modulus; (2) dynamical: one step of the drive of $M$ (Section~\ref{sec:drive}) has the least positive topological entropy; (3) arithmetic: the topological integers of $F$ (its Euler characteristic, its flux quanta, the coefficients of the polynomial fixing its aspect ratio) lie in $\{2^{a}3^{b}\}$, the prime five entering only through the drive; (4) dimensional: $M$ has least total dimension, and then least $\lvert\pi_{1}(\Sigma)\rvert$.
+Among geometries satisfying A1--A5, $M$ is \emph{minimal} if it is selected by the following criteria applied in order, each used only to break ties left by the previous ones: (1) parametric: $M$ has no modulus; (2) dynamical: one step of the drive of $M$ (Section~\ref{sec:drive}) has the least positive topological entropy; (3) arithmetic: the topological integers of $F$ (its Euler characteristic, its flux quanta) lie in $\{2^{a}3^{b}\}$, the prime five entering only through the drive; (4) dimensional: $M$ has least total dimension, and then least $\lvert\pi_{1}(\Sigma)\rvert$.
 \end{definition}
 
 Criterion~(1) is the statement that a geometry with a dial would admit two universes differing only by that dial. Criterion~(2) selects the gentlest drive that still drives; it is of the same character as the last clause of~(4), the smallest fundamental group, and both express the instinct that the geometry carries no unforced structure. Criterion~(3) is a filter whose content is shown in Section~\ref{sec:theorem} to be an output of the selection rather than an input. Overall scale is exempt by construction.
@@ -266,22 +266,42 @@ If $\lvert t\rvert>2$ the eigenvalues are real, $\lambda$ and $\lambda^{-1}$ wit
 
 Criterion~(2) of Definition~\ref{def:minimal}, which is applied to the step, selects the least entropy, hence the least $\lvert t\rvert>2$, which is $t=3$ (certificate \texttt{L1\_trace3\_min}). The content of the section is that this selection is unique.
 
-The selection is not that trace three is the only hyperbolic trace, which is false, but that it is the least, and that at the least trace there is nothing to choose: the theorem says that the gentlest drive which still drives is a single object up to relabelling the torus. The two proofs are independent in kind, one through ideal classes and one through reduced forms, and they are followed by the explicit relabellings that show the uniqueness at work.
+The selection is not that trace three is the only hyperbolic trace, which is false, but that it is the least, and that at the least trace there is nothing to choose: the theorem says that the gentlest drive which still drives is a single object up to relabelling the torus. The three proofs are independent in kind, a direct descent, one through ideal classes and one through reduced forms, and they are followed by the explicit relabellings that show the uniqueness at work.
 
 \begin{theorem}[the drive]\label{thm:drive}
 Every $M\in\mathrm{SL}_{2}(\Z)$ of trace three is conjugate in $\mathrm{SL}_{2}(\Z)$ to $M_{0}=\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$. Consequently the minimal drive is unique; its eigenvalues are $\phi^{\pm2}$ with $\phi=(1+\sqrt5)/2$, its entropy is $2\log\phi$, its splitting field is $\Q(\sqrt5)$, and the time factor of a minimal geometry is the Sol torus bundle $S^{1}_{\Sol}$ with this map as its step. \rigR
 \end{theorem}
 
 \begin{proof}
-Two routes.
+Three routes.
 
-First, by the theorem of Latimer and MacDuffee \cite{LatimerMacDuffee1933} as sharpened by Taussky \cite{Taussky1949}, the $\mathrm{SL}_{2}(\Z)$-conjugacy classes of integer matrices with characteristic polynomial $p$ are in bijection with the narrow ideal classes of the order $\Z[\lambda]$, $\lambda$ a root of $p$.
+The first is a direct descent and is complete in itself.
 
-Here $p=\lambda^{2}-3\lambda+1$ with root $\phi^{2}=\phi+1$, so $\Z[\phi^{2}]=\Z[\phi]$, the ring of integers of $\Q(\sqrt5)$, which has class number one; its fundamental unit $\phi$ has norm $-1$, so the narrow class number is also one.
+Let $A=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)$ have determinant one and trace three, so that $4bc=5-(2a-3)^{2}$.
+
+The right side is congruent to four modulo eight, so $b$ and $c$ are odd.
+
+Conjugation by $\bigl(\begin{smallmatrix}1&k\\0&1\end{smallmatrix}\bigr)$ replaces $a$ by $a+kc$ and leaves $c$ unchanged; choose $k$ so that $\lvert2a-3\rvert\leq\lvert c\rvert$.
+
+If $\lvert c\rvert\geq3$ then $(2a-3)^{2}\geq9$, since otherwise $\lvert bc\rvert=1$; so $4\lvert b\rvert\lvert c\rvert=(2a-3)^{2}-5<c^{2}$ and $\lvert b\rvert<\lvert c\rvert$.
+
+Conjugation by the quarter-turn $S=\bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)$ puts $-b$ in the place of $c$.
+
+Repeating, we reach $\lvert c\rvert=1$, where $2a-3=\pm1$ and $b=c$.
+
+A last shift of $a$ gives $M_{0}$ when $c=1$ and $M_{0}^{-1}$ when $c=-1$, and $SM_{0}S^{-1}=M_{0}^{-1}$.
 
 There is a single class.
 
-Second, by Gauss \cite{Gauss1801} (modern statement in \cite{Sarnak1982}), $M=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)\mapsto cx^{2}+(d-a)xy-by^{2}$ carries conjugacy classes of trace $t$ bijectively to equivalence classes of binary quadratic forms of discriminant $t^{2}-4$.
+Second, by the theorem of Latimer and MacDuffee \cite{LatimerMacDuffee1933} as sharpened by Taussky \cite{Taussky1949}, the classes of integer matrices with characteristic polynomial $p$, under conjugation by integer matrices of determinant $\pm1$, are in bijection with the ideal classes of the order $\Z[\lambda]$, $\lambda$ a root of $p$.
+
+Here $p=\lambda^{2}-3\lambda+1$ with root $\phi^{2}=\phi+1$, so $\Z[\phi^{2}]=\Z[\phi]$, the ring of integers of $\Q(\sqrt5)$, which has class number one.
+
+There is a single class under conjugation of determinant $\pm1$.
+
+Conjugation by $\bigl(\begin{smallmatrix}1&0\\0&-1\end{smallmatrix}\bigr)$ carries $M_{0}$ to $\bigl(\begin{smallmatrix}2&-1\\-1&1\end{smallmatrix}\bigr)$, which the descent carries back to $M_{0}$, so there is a single class under $\mathrm{SL}_{2}(\Z)$ as well.
+
+Third, by the classical correspondence between hyperbolic conjugacy classes in $\mathrm{SL}_{2}(\Z)$ and classes of indefinite binary quadratic forms \cite{Gauss1801,Sarnak1982}, under which $M=\bigl(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\bigr)$ of trace $t$ corresponds to the form $cx^{2}+(d-a)xy-by^{2}$ of discriminant $t^{2}-4$.
 
 At $t=3$ the discriminant is five, squarefree, so all forms are primitive, and a form is reduced when $0<b<\sqrt5$ and $\sqrt5-b<2\lvert a\rvert<\sqrt5+b$.
 
@@ -420,9 +440,11 @@ Let the fibre $X$ that carries the involution of A2 be compact and connected, wi
 \begin{proof}
 If $\dim X=2$, Franks' theorem \cite{Franks1970} states that every Anosov diffeomorphism of a compact surface lives on $\Ttwo$ and is topologically conjugate to a hyperbolic linear automorphism.
 
-An involution of $T^{n}$ with only isolated fixed points is conjugate to an affine map $x\mapsto Ax+c$ with $A^{2}=I$ and no eigenvalue one, i.e.\ $A=-I$, with $\lvert\det(I-A)\rvert=2^{n}$ fixed points by the Lefschetz formula; four fixed points force $n=2$ (\texttt{L2\_two\_torsion}) and $\iota$ is inversion.
+An involution of a surface with isolated fixed points is a half-turn near each of them, so it preserves orientation.
 
-On a three-torus the count is eight, excluding $\dim X=3$ \cite{FranksNewhouse}.
+For the torus the quotient $Q$ is then an orbifold with $k$ cone points of order two and $0=\chi(\Ttwo)=2(\chi(Q)-k/2)$, so $Q$ is a sphere with four cone points, the orbifold $(2,2,2,2)$, which is unique \cite{Thurston}; its double cover by the torus is unique, and $\iota$ is inversion.
+
+Inversion of $T^{n}$ has $2^{n}$ fixed points (\texttt{L2\_two\_torsion}), so four corners agree with $n=2$.
 
 Criterion~(4) of Definition~\ref{def:minimal} selects the least dimension; the selection is unconditional, resting on Franks' theorem at the minimal case, while the non-existence of exotic Anosov manifolds in dimension four and above, an open conjecture, is not needed.
 \end{proof}
@@ -504,7 +526,7 @@ A closed two-orbifold with four cone points of order two on a sphere has orbifol
 
 If the underlying surface were not a sphere the characteristic would be negative.
 
-For $\chi$, two routes: the quotient formula $\chi(X/\sigma)=\tfrac12(\chi(X)+\chi(\Fix\sigma))=\tfrac12(0+4)=2$ \cite{Bredon}; and orbifold Gauss--Bonnet with the flat metric, $2\pi\chi=\int K+\sum_{\alpha}\mathrm{deficit}_{\alpha}=0+4\pi$ \cite{Satake,Kawasaki1978}, so $\chi=2$ (\texttt{L2\_chi\_pillowcase}).
+For $\chi$, two routes: the quotient formula $\chi(X/\sigma)=\tfrac12(\chi(X)+\chi(\Fix\sigma))=\tfrac12(0+4)=2$ \cite{Bredon}; and orbifold Gauss--Bonnet with the flat metric, $2\pi\chi=\int K+\sum_{\alpha}\mathrm{deficit}_{\alpha}=0+4\pi$ \cite{Satake}, so $\chi=2$ (\texttt{L2\_chi\_pillowcase}).
 \end{proof}
 
 \emph{The cone, by hand.} Near a fixed point $z\mapsto-z$ is rotation by $\pi$ about the point, so a small disc of angle $2\pi$ is folded to a cone of angle $\pi$ with deficit $\pi$.
@@ -513,7 +535,7 @@ Four such deficits sum to $4\pi=2\pi\cdot2$, which is the Gauss--Bonnet count fo
 
 The alternative count, half the Euler characteristic of the torus plus half the number of fixed points, gives $\tfrac12(0+4)=2$ with no metric at all; that the two agree is the first consistency check between the metric and the combinatorial pictures of the fibre.
 
-The four cone points are the geometry of Proposition~\ref{prop:collapse}: each is a point of angle deficit $\pi$ at which the fibre algebra has collapsed to a commutative line, the deficit being the trace of the identification $z\sim-z$ that produced the line. In the covering torus with periods $(L_{\psi},L_{\omega})$ any two distinct corners are at distance at least $\tfrac12\min(L_{\psi},L_{\omega})$: the corners are separated by the periods, and the ratio of the periods is the one continuous datum of the fibre, its aspect ratio $\tautwo=L_{\omega}/L_{\psi}$, whose fate is settled in Section~\ref{sec:theorem}.
+The four cone points are the geometry of Proposition~\ref{prop:collapse}: each is a point of angle deficit $\pi$ at which the fibre algebra has collapsed to a commutative line, the deficit being the trace of the identification $z\sim-z$ that produced the line. In the covering torus with periods $(L_{\psi},L_{\omega})$ any two distinct corners are at distance at least $\tfrac12\min(L_{\psi},L_{\omega})$: the corners are separated by the periods, and the ratio of the periods is the one continuous datum of the fibre, its aspect ratio $\tautwo=L_{\omega}/L_{\psi}$, which this paper does not fix.
 
 \section{Dimension twelve}\label{sec:dimension}
 
@@ -522,9 +544,11 @@ Under Definition~\ref{def:levels} a geometry satisfying A1--A5 has dimension div
 \end{theorem}
 
 \begin{proof}
-An almost-quaternionic structure exists only in real dimension $4n$ \cite{Salamon1982}, so $4\mid D$.
+An almost-quaternionic structure makes each tangent space a module over the quaternions, so the real dimension is divisible by four: $4\mid D$.
 
-The time--space block $T\times\Sigma$ carries the quaternionic structure with the drive along $T$; its natural model is $\Hquat^{\times}=\R_{>0}\times S^{3}$, of dimension four, and this is the block's dimension (Section~\ref{sec:base} fixes $\Sigma$).
+The time--space block $T\times\Sigma$ carries the quaternionic structure with the drive along $T$, so its dimension is a positive multiple of four.
+
+Criterion~(4) takes the least total dimension, and a larger block only raises the total: the block has dimension four, that of $\Hquat^{\times}=\R_{>0}\times S^{3}$ (Section~\ref{sec:base} fixes $\Sigma$).
 
 Hence $\dim F=D-4$.
 
@@ -822,10 +846,10 @@ Through $\Stwo$, which is spin, $Q_{w}$ is even, and the least even quantum comp
 \subsection{The spatial factor}
 
 \begin{proposition}[$\Sigma=S^{3}$]\label{prop:S3}
-The time--space block $T\times\Sigma$ of Theorem~\ref{thm:dim} is modelled on $\Hquat^{\times}=\R_{>0}\times S^{3}$, so $\Sigma=S^{3}/\Gamma$ for a finite $\Gamma\subset\mathrm{Sp}(1)$; every such quotient is rigid, and the last clause of criterion~(4) selects $\Gamma$ trivial, $\Sigma=S^{3}=\mathrm{Sp}(1)$. \rigD
+The spatial piece $\Sigma$ of the four-dimensional block of Theorem~\ref{thm:dim} is a compact connected three-dimensional manifold without boundary (Definition~\ref{def:A1}). The last clause of criterion~(4) takes the least fundamental group, the trivial one; and a closed, simply connected three-manifold is the three-sphere \cite{MorganTian}. So $\Sigma=S^{3}=\mathrm{Sp}(1)$, the unit quaternions, and the block is modelled on $\Hquat^{\times}=\R_{>0}\times S^{3}$. \rigD
 \end{proposition}
 
-The quotients by $\Z_{2}$ and $\Z_{3}$ pass criteria (1)--(3) and are removed only by the least-$\pi_{1}$ clause, which is recorded as the reason; a stronger principle, that the geometry carries no unforced topology, would remove them without the clause and is not adopted.
+The quotients of the sphere by $\Z_{2}$ and $\Z_{3}$ pass criteria (1)--(3) and are removed only by the least-$\pi_{1}$ clause, which is recorded as the reason; a stronger principle, that the geometry carries no unforced topology, would remove them without the clause and is not adopted.
 
 \begin{theorem}[the base]\label{thm:base}
 The base of a minimal geometry is $\CPtwo\times\Stwo$, its $\Spinc$ determinant line is $\Oline{3}$, its spatial factor is $S^{3}$, and the Euler characteristic of the internal factor is $\chi(\Keight)=\chi(\CPtwo)\,\chi(\Stwo)\,\chi(\Ttwo/\Ztwo)=3\cdot2\cdot2=12$. \rigD
@@ -843,14 +867,14 @@ The identity $12=1+3+8=\dim\Mtwelve$ holds and is recorded, not used.
 
 \subsection{Statement and proof}
 
-The theorem collects the four sections into one statement. Its hypotheses are the five axioms, the six readings of Section~\ref{sec:axioms}, the minimality principle of Section~\ref{sec:minimal}, one declared input and one declared assumption; its conclusion names every factor and every discrete datum of the geometry. What a referee should check is that no factor is named before it is forced, and the proof is written so that each clause points to the section that forces it.
+The theorem collects the four sections into one statement. Its hypotheses are the five axioms, the six readings of Section~\ref{sec:axioms}, the minimality principle of Section~\ref{sec:minimal}, and one declared input; its conclusion names every factor and every discrete datum of the geometry. What a referee should check is that no factor is named before it is forced, and the proof is written so that each clause points to the section that forces it.
 
 \begin{theorem}[minimality]\label{thm:main}
-Among geometries $(T\times\Sigma)\times F$ satisfying A1--A5 under the readings of Definitions~\ref{def:A5}, \ref{def:A1}, \ref{def:A2}(i), \ref{def:levels} and~\ref{def:orbits}, with the overall scale stabilised by a declared sector and the stationarity conditions of Proposition~\ref{prop:moduli} assumed, the minimal geometry in the sense of Definition~\ref{def:minimal} is unique and is
+Among geometries $(T\times\Sigma)\times F$ satisfying A1--A5 under the readings of Definitions~\ref{def:A5}, \ref{def:A1}, \ref{def:A2}(i), \ref{def:levels} and~\ref{def:orbits}, with the overall scale and the aspect ratio of the fibre held by a declared sector, the minimal geometry in the sense of Definition~\ref{def:minimal} is unique and is
 \[
 \Mtwelve=(S^{1}_{\Sol}\times S^{3})\times\bigl[(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)\bigr]^{\Spinc},
 \]
-with step $\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$ and a time circle of three steps, flux three on the fibre with one odd corner (Proposition~\ref{prop:twist}), determinant line $\Oline{3}$, $\chi(\Keight)=12$, dimension twelve, and no continuous modulus. The primes two, three and five of its topological integers are outputs of the selection.
+with step $\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$ and a time circle of three steps, flux three on the fibre with one odd corner (Proposition~\ref{prop:twist}), determinant line $\Oline{3}$, $\chi(\Keight)=12$ and dimension twelve. The primes two, three and five of its topological integers are outputs of the selection.
 \end{theorem}
 
 \begin{proof}
@@ -866,14 +890,12 @@ A3 with Definition~\ref{def:orbits} gives $\Stwo$ and $\CPtwo$, with $\Spinc$ ne
 
 Corollaries~\ref{cor:lift} and~\ref{cor:timecircle} give the time circle.
 
-The moduli are treated in Proposition~\ref{prop:moduli}.
-
 The primes: two enters through the involution of A2 and $\chi(\Stwo)$; three through the three imaginary units, $\chi(\CPtwo)=3=c_{1}$; five through $\phi$ on the drive alone.
 
 Criterion~(3) therefore removes nothing that the other criteria had not removed, and is an output.
 \end{proof}
 
-The deflationary reading. The fifth axiom enters the theorem twice: as the division of the shape into the part that is seen and the part that is not, and, through its two further clauses, as the twist of the fibre. The second rests on a reading, that an object is a state of the internal piece at rest and that its shadow is what is left when the internal piece is forgotten. A reader who does not take that reading keeps the division and loses Proposition~\ref{prop:twist} and Corollaries~\ref{cor:lift} and~\ref{cor:timecircle}. The theorem asserts uniqueness among minimal realisations under the stated readings; it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale. The readings are definitions, not results: a reader who takes Definition~\ref{def:orbits} in its fibrewise form, under which the sphere of units exists over each point but is not a factor, will not obtain Propositions~\ref{prop:S2} and~\ref{prop:CP2}, and the base is then determined among products only. Proposition~\ref{prop:CP2} is the least direct step and is tagged \rigD\ with its two readings named.
+The deflationary reading. The fifth axiom enters the theorem twice: as the division of the shape into the part that is seen and the part that is not, and, through its two further clauses, as the twist of the fibre. The second rests on a reading, that an object is a state of the internal piece at rest and that its shadow is what is left when the internal piece is forgotten. A reader who does not take that reading keeps the division and loses Proposition~\ref{prop:twist} and Corollaries~\ref{cor:lift} and~\ref{cor:timecircle}. The theorem asserts uniqueness among minimal realisations under the stated readings; it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale or the aspect ratio of the fibre. That these two are fixed is the declared input of the theorem; it would fail if the stationarity conditions of the geometry's energy left either free, and the geometry would then not meet criterion~(1). The readings are definitions, not results: a reader who takes Definition~\ref{def:orbits} in its fibrewise form, under which the sphere of units exists over each point but is not a factor, will not obtain Propositions~\ref{prop:S2} and~\ref{prop:CP2}, and the base is then determined among products only. Proposition~\ref{prop:CP2} is the least direct step and is tagged \rigD\ with its two readings named.
 
 \subsection{The elimination table}
 
@@ -895,57 +917,19 @@ $T^{4}/\Z_{2}$, K3 as internal factor & $16$ and $0$ corners; $D=8$ & Prop.~\ref
 $S^{3}/\Z_{2}$, $S^{3}/\Z_{3}$ & least $\lvert\pi_{1}(\Sigma)\rvert$ & Proposition~\ref{prop:S3} & \rigD\\
 spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & $\Spinc$ unforced; no $\Stwo$ factor & Props.~\ref{prop:spinc}, \ref{prop:S2} & \rigD\\
 bases with moduli: $\CPtwo\times T^{2}$, $T^{6}$ & criterion (1) & Definition~\ref{def:minimal} & \rigR\\
-irreducible bases: the quadric $Q^{3}$ & no $\mathrm{Sp}(1)/U(1)$ factor; $\tautwo$ unfixed & Prop.~\ref{prop:S2}, Prop.~\ref{prop:moduli} & \rigD\\
+irreducible bases: the quadric $Q^{3}$ & no $\mathrm{Sp}(1)/U(1)$ factor & Proposition~\ref{prop:S2} & \rigD\\
 $\Oline{1}$, $\Oline{5}$ & unforced twisting line & Proposition~\ref{prop:spinc} & \rigD\\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\subsection{No continuous modulus}
-
-\begin{proposition}[moduli]\label{prop:moduli}
-Write $u=\tautwo^{2}=R_{w}^{2}/R_{c}^{2}$ for the square of the fibre aspect ratio and $x=R_{c}^{2}$ for the scale, with $R_{w},R_{c}$ the radii of $\Stwo$ and $\CPtwo$ tied by the warp to the two periods, and $Q_{w},Q_{c}$ the flux quanta through the two base factors. The stationarity conditions of the flux-plus-curvature energy are equivalent to $Q_{w}^{2}=2ux(6u+1)$ and $Q_{c}^{2}u=2x(18u+1)$; the scale is eliminated to the single constraint $Q_{w}^{2}(18u+1)=Q_{c}^{2}u^{2}(6u+1)$; with $(Q_{c},Q_{w})=(3,6)$, the least odd and the least even quanta compatible with Proposition~\ref{prop:spinc} and with one unit per corner-cycled sector, this is the integer cubic $6u^{3}+u^{2}-72u-4=0$, whose unique positive root fixes $\tautwo=1.8466$. No dimensionless modulus survives. The scale $x$ is fixed in the units of the energy but is a saddle of it, and is held by a sector the axioms do not supply; it is the declared input of Theorem~\ref{thm:main}. \rigD
-\end{proposition}
-
-\begin{proof}
-The elimination of $x$ and the specialisation to the cubic are the identities \texttt{L5\_ratio} and \texttt{L5\_cubic}.
-
-An irreducible base has one radius and one flux quantum; the system then has a single equation after scale elimination and fixes nothing about $u$, so $\tautwo$ is a flat direction: this is the second route by which irreducible bases fail criterion~(1), independent of Proposition~\ref{prop:S2}.
-
-The stationarity conditions themselves are the Euler--Lagrange equations of the energy.
-
-They are not derived in this paper: they enter as a declared assumption, the one named in Theorem~\ref{thm:main}.
-
-The assumption would be shown false by a derivation of the Euler--Lagrange equations of the energy functional that gives different conditions, or conditions that leave the aspect ratio free; the selection made in this paper would then have to be revisited at criterion~(1).
-\end{proof}
-
-\subsection{Worked cases}\label{sec:theorem-worked}
-
-\emph{The elimination of the scale.} The first stationarity condition is
-\[
--12R_{w}^{2}-2R_{c}^{2}+Q_{w}^{2}R_{c}^{2}/R_{w}^{2}=0 ;
-\]
-multiply by $R_{w}^{2}$ and substitute $R_{w}^{2}=ux$, $R_{c}^{2}=x$. This gives $-12u^{2}x^{2}-2ux^{2}+Q_{w}^{2}x=0$, that is $Q_{w}^{2}=2ux(6u+1)$. The second, $-24R_{c}^{2}+Q_{c}^{2}-Q_{w}^{2}R_{c}^{4}/R_{w}^{4}=0$, becomes $Q_{c}^{2}=24x+Q_{w}^{2}/u^{2}=24x+2x(6u+1)/u=2x(18u+1)/u$. Dividing, $x$ cancels: $(Q_{w}/Q_{c})^{2}=u^{2}(6u+1)/(18u+1)$. At $(3,6)$ the left side is four and clearing denominators gives $6u^{3}+u^{2}-72u-4=0$.
-
-\emph{The root.} $f(u)=6u^{3}+u^{2}-72u-4$ has $f(0)=-4$, $f(3)=-46$, $f(4)=108$; it is increasing for $u>2$ and has one positive root, bracketed by $f(3.409867)<0<f(3.409868)$.
-
-So $u^{*}=3.409868$, $\tautwo=\sqrt{u^{*}}=1.8466$, and $1/(1+u^{*})=0.22676$.
-
-\emph{The flux table.} For $Q_{c}=3$ and the parity-admissible $Q_{w}\in\{2,4,6,8\}$ the constraint gives $u=1.103,\ 2.256,\ 3.410,\ 4.564$ respectively.
-
-Each is a zero-modulus geometry; the selection of $Q_{w}=6$ among them is one canonical unit per sector of the corner three-cycle, three units of $\chi(\Stwo)=2$, and is stated as such rather than argued from data.
-
-\emph{The scale.} With $u^{*}$ fixed, $x=Q_{w}^{2}/(2u^{*}(6u^{*}+1))=36/(2\cdot3.4099\cdot21.459)\approx0.246$ in the units of the energy functional; this is a stationary value but, by the signature $(+,-)$ of the Hessian, a saddle along the scale direction.
-
-The scale is held by the declared sector and is the one measured input, the absolute pitch of a construction whose every ratio is fixed.
-
 \subsection{Cross-check}
 
-Witten's theorem \cite{Witten1981} states that the lowest-dimensional compact manifold admitting $SU(3)\times SU(2)\times U(1)$ as isometries is $\CPtwo\times\Stwo\times S^{1}=SU(3)/U(2)\times SU(2)/U(1)\times U(1)$. Propositions~\ref{prop:S2} and~\ref{prop:CP2} produce $\mathrm{Sp}(1)/U(1)$ and $SU(3)/U(2)$ from the three imaginary units with no reference to a gauge group. The two routes are logically independent and land on the same base; Witten's result is used only as this confirmation, never as a premise.
+Witten \cite{Witten1981} observes that seven is the least dimension of a manifold with $SU(3)\times SU(2)\times U(1)$ symmetry, and that $\CPtwo\times\Stwo\times S^{1}=SU(3)/U(2)\times SU(2)/U(1)\times U(1)$ is one of the seven-dimensional manifolds that have it. Propositions~\ref{prop:S2} and~\ref{prop:CP2} produce $\mathrm{Sp}(1)/U(1)$ and $SU(3)/U(2)$ from the three imaginary units with no reference to a gauge group. The two routes are logically independent and land on the same base; Witten's result is used only as this confirmation, never as a premise.
 
 \section{Applications and outlook}\label{sec:outlook}
 
-The geometry~\eqref{eq:M12} is now a theorem of five axioms and a minimality principle, and the derivation fixes more than the manifold. The four corners of the pillowcase are cone points of angle $\pi$, each the locus where the quaternionic algebra has collapsed to a commutative line, with the drive fixing one and cycling the other three (Propositions~\ref{prop:collapse}, \ref{prop:threecycle}); the determinant line is odd; the fibre carries three units of flux, with two states on the pillowcase and one removed by the fold (Proposition~\ref{prop:twist}); the corner lift has product $-1$ (Corollary~\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\ref{cor:timecircle}); the aspect ratio is a root of an integer cubic (Proposition~\ref{prop:moduli}). These are the data that the papers of the programme consume in deriving the lepton and quark mixing structure from cone deficits and corner walks, and the present paper fixes their origin. We do not pursue those consequences here. \rigM
+The geometry~\eqref{eq:M12} is now a theorem of five axioms and a minimality principle, and the derivation fixes more than the manifold. The four corners of the pillowcase are cone points of angle $\pi$, each the locus where the quaternionic algebra has collapsed to a commutative line, with the drive fixing one and cycling the other three (Propositions~\ref{prop:collapse}, \ref{prop:threecycle}); the determinant line is odd; the fibre carries three units of flux, with two states on the pillowcase and one removed by the fold (Proposition~\ref{prop:twist}); the corner lift has product $-1$ (Corollary~\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\ref{cor:timecircle}). These are the data that the papers of the programme consume in deriving the lepton and quark mixing structure from cone deficits and corner walks, and the present paper fixes their origin. We do not pursue those consequences here. \rigM
 
 The sequel derives the field equation of the programme, with its coupling to the Coherent Field, from the same axioms on the geometry derived here; the two sheets of the involution of A2 and the non-commutative structure of A3 are the variables in which that equation is written.
 
@@ -956,7 +940,7 @@ The author used Claude (Anthropic) and Gemini (Google DeepMind) as mathematical 
 
 \section{Machine-verified certificates}\label{app:lean}
 
-Six files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \texttt{sorry}; sixty-one theorems. The files were compiled independently on two toolchains, the core toolchain used in drafting and the author's Lean project, with identical results; no proof depends on the default simplifier set of a particular Lean version. Classical theorems (Franks, Frobenius, Thurston, Latimer--MacDuffee, Lawson--Michelsohn, Salamon, Atiyah--Bott) are named in file headers and are never Lean axioms; the certificates establish the finite and arithmetic content those theorems consume.
+Five files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \texttt{sorry}; fifty-eight theorems. The files were compiled independently on two toolchains, the core toolchain used in drafting and the author's Lean project, with identical results; no proof depends on the default simplifier set of a particular Lean version. Classical theorems (Franks, Frobenius, Thurston, Latimer--MacDuffee, Lawson--Michelsohn, Salamon, Atiyah--Bott) are named in file headers and are never Lean axioms; the certificates establish the finite and arithmetic content those theorems consume.
 
 \texttt{M1\_L1\_drive.lean} (Section~\ref{sec:drive}): $M_{0}\in\mathrm{SL}_{2}(\Z)$ of trace three; $SM_{0}S^{-1}=M_{0}^{-1}$; $t^{2}>4$, $t>0\Rightarrow t\geq3$; reduced forms of discriminant five are $(\pm1,1,\mp1)$, one cycle; odd trace $\Leftrightarrow$ order three in $\mathrm{SL}_{2}(\mathbb{F}_{2})$, by finite check; $\bar M_{0}$ of order three; $M_{0}=F^{2}$ with $F$ the Fibonacci matrix, the Fibonacci recursion in the entries, and $F\notin\mathrm{SL}_{2}(\Z)$; $\det(M_{0}-I)=-1$ (not used in the text).
 
@@ -966,11 +950,9 @@ Six files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \t
 
 \texttt{M1\_L4\_base.lean} (Section~\ref{sec:base}): integer points of the unit sphere of $\ImH$ are the three axes; $(1+h)^{3}$ coefficients; $3\bmod2=1$ and the congruence; odd lines $3+2e$; flux parity; four-corner product $-1$; $\chi(\CPtwo)=3$ as a count.
 
-\texttt{M1\_L5\_vacuum.lean} (Section~\ref{sec:theorem}): elimination of the scale to $Q_{w}^{2}(18u+1)=Q_{c}^{2}u^{2}(6u+1)$; specialisation at $(3,6)$ to $6u^{3}+u^{2}-72u-4=0$.
-
 \texttt{M1\_L6\_twist.lean} (Section~\ref{sec:twist}): for the thirty-five divisors of flux at most three on the four corners, with the count of states of Lemma~\ref{lem:states}(b) taken as given: the product of the corner signs is $(-1)^{d}$; the patterns the drive leaves in place; flux one fails clause~(iii); flux two cannot meet both clauses; flux three meets clause~(iii) always, has one odd corner, and meets clause~(ii) exactly when that corner is not $P_{1}$; the least flux meeting both is three; the case $D=3P_{4}$.
 
-The six files follow verbatim.
+The five files follow verbatim. The certificate of the earlier version on the aspect ratio is not part of this paper.
 
 \subsection*{\texttt{M1\_L1\_drive.lean} --- the drive}
 \lstinputlisting{M1_lean/M1_L1_drive.lean}
@@ -983,9 +965,6 @@ The six files follow verbatim.
 
 \subsection*{\texttt{M1\_L4\_base.lean} --- the base}
 \lstinputlisting{M1_lean/M1_L4_base.lean}
-
-\subsection*{\texttt{M1\_L5\_vacuum.lean} --- the moduli}
-\lstinputlisting{M1_lean/M1_L5_vacuum.lean}
 
 \subsection*{\texttt{M1\_L6\_twist.lean} --- the twist of the fibre}
 \lstinputlisting{M1_lean/M1_L6_twist.lean}
@@ -1009,6 +988,7 @@ The four corners are named by position, $P_{1}=(0,0)$, $P_{2}=(\tfrac12,0)$, $P_
 \bibitem{LatimerMacDuffee1933} C.~G. Latimer and C.~C. MacDuffee, A correspondence between classes of ideals and classes of matrices, \emph{Ann. of Math.} 34 (1933) 313--316.
 \bibitem{LawsonMichelsohn} H.~B. Lawson and M.-L. Michelsohn, \emph{Spin Geometry}, Princeton University Press, 1989.
 \bibitem{LyusternikFet} L. Lyusternik and A. Fet, Variational problems on closed manifolds, \emph{Dokl. Akad. Nauk SSSR} 81 (1951) 17--18.
+\bibitem{MorganTian} J.~W. Morgan and G. Tian, \emph{Ricci Flow and the Poincar\'e Conjecture}, Clay Mathematics Monographs 3, American Mathematical Society, 2007 (arXiv:math/0607607), Corollary~0.2.
 \bibitem{Robertson1929} H.~P. Robertson, The uncertainty principle, \emph{Phys. Rev.} 34 (1929) 163--164.
 \bibitem{Salamon1982} S. Salamon, Quaternionic K\"ahler manifolds, \emph{Invent. Math.} 67 (1982) 143--171.
 \bibitem{Sarnak1982} P. Sarnak, Class numbers of indefinite binary quadratic forms, \emph{J. Number Theory} 15 (1982) 229--247.
