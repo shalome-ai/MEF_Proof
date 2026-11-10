@@ -77,3 +77,8 @@ On ζ, offered by the PI as possibly numerology:
 > "Or its 4 corners x 3 generations"
 
 The count and its results: `papers/M2/ZETA_COUNT.md`.
+
+## 15. "take the first" (same day)
+> "commit and push; then take the first"
+
+(The first of the four open steps: the last factor of 2. Result: `papers/M2/ZETA_COUNT.md`, second part.)
