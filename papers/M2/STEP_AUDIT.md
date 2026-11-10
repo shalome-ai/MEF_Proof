@@ -110,3 +110,34 @@ So the audit of §2 and the blind check of §5 apply to this text as they stand.
 **The term "kink", from the texts** (Definitions Register): a discrete jump in the *derivative* of the warp exponent at a point. "Each unit of flux contributes a discrete kink of exactly κ₂²π to the derivative of A" (Addendum ll.996–997); "the jump in the derivative at the origin is [∂A]₀ = A′(0⁺) − A′(0⁻) = −k − (+k) = −2k" (ll.1034–1038). Paper 2 ll.418–424 and M2 `M2_WP4` ll.211–213 say the same. The companion statement the Addendum gives for it is the Israel junction condition ΔA′ = −κ²λ (l.1062).
 
 **The finding at Z5, restated in the defined term.** The definition is consistent across the three texts and I am using it as they do. The difficulty is not in the word but in the line that produces the kink: eq. (kink) obtains a jump in ∂A by integrating, across the point, an equation whose left side is ∂A. Integrating ∂A across the point gives A(ε) − A(−ε), the change in A; a jump in ∂A comes from integrating an equation whose left side is the second derivative. The Addendum's own consistency check (i) names such an equation: the junction condition ΔA′ = −κ²λ. On that reading the *statement* intended at this step may well be a junction condition of the second-order equations, and what does not hold up is the route written down for it (a first-order equation from a completed square). That is for the PI to say; I report what the lines say.
+
+---
+
+## 8. The PI's own account read, and a first departure of M2 from it (10 November 2026)
+
+**Read:** *The Master Field Equations*, the PI's handwritten note of 22 February 2026 (four pages, the fourth blank; read as images); `TPhi_12x12_elements.tex` (18 July 2026, 540 lines, in full); *The Shape of Becoming*, chapter 8 (v2, 25 June 2026, 155 paragraphs, in full). Under CLAUDE.md §0a these are the reference.
+
+**What the reference says about the shape of the equation.**
+
+- The note of 22 Feb 2026: one symmetric tensor equation, Ḡ + Λ̄ḡ = (8πG/c⁴) T̄ + (coefficient) K̄, with K̄ the "consciousness tensor"; Λ̄ a cosmological *tensor* with "a special value of Λ for four-dimensional spacetime". Its second page lays the indices out in four sectors, Space, Time, Universe, Consciousness, and says: "in addition to Space × Time there are five other spaces, S×U, T×U, S×K, T×K and U×K", which "have their own unique geometries".
+- The block-matrix form of 18 Jul 2026: T^Φ_MN = ∂_MΦ ∂_NΦ − ½ g_MN |∇Φ|², laid out in blocks E (external, 4), C (ℂP², 4), S (S², 2), P (pillowcase, 2); ten block classes, four diagonal and six cross-blocks; the cross-block elements are "pure correlations" ∂_MΦ ∂_NΦ, non-zero exactly when Φ varies along both directions. **The metric is g = g_E ⊕ g_ℂP² ⊕ g_S² ⊕ w² g_P, "with the warp w a function on the base ℂP² × S²"** (ll.107–112): the warp multiplies the *pillowcase*.
+- Chapter 8: the same 12 × 12 matrix in a 3 × 3 pattern; "the diagonal is the spine … everything else is couplings" (¶136); the single cell g_ωω = e^{2ζΦ} (¶120).
+
+**The departure, from the texts.** In a warped product written B ×_w F, the base is B, the fibre is F, and the warp w is a function on the base multiplying the fibre's metric (the standard convention; RECALLED, O'Neill ch. 7, not verified against the page). The series' display is K₈ = [(ℂP² × S²) ×_w (T²/ℤ₂)].
+
+| Source | Base | Fibre | What the warp multiplies, and what it depends on |
+|---|---|---|---|
+| The display, read by the standard convention | ℂP² × S² | T²/ℤ₂ | the pillowcase; a function on ℂP² × S² |
+| The PI's block-matrix form, ll.107–112 | ℂP² × S² | T²/ℤ₂ | "w² g_P", "w a function on the base ℂP² × S²" |
+| M1 l.107, l.172, l.317 | "the base over which the fibre sits is the sphere … together with the space of their complex directions"; "a piece of the base over which F is warped" | "the warped fibre X of A2 … is the torus" | the torus fibre (M1 gives no formula) |
+| **M2** `M2_WP0` ll.243, 249–251; `M2_WP3` l.320 | "the pillowcase base T²/ℤ₂" | "the six-dimensional fibre ℂP² × S²" | **the six-dimensional ℂP² × S²**, by e^{2a(θ)}, "depending on the base coordinates (θ_ψ, θ_ω)" |
+| Paper 2 Σ-1 (ll.173–179); Paper I Addendum §3 | the pillowcase | ℂP² × S² | as M2 |
+
+**M2 has the base and the fibre the other way round from M1, from the display, and from the PI's block-matrix form.** M2 took this from Paper 2 and the Addendum. The whole of M2 §4 (a warp profile across the pillowcase, falling from one wall to the other, with a kink at the flux) is built on that assignment.
+
+**What follows from it, as far as I can say now.**
+
+1. This is an inconsistency between M1 and M2 that can be read off the two texts without reference to anything else.
+2. It bears on two observations recorded earlier. With the warp a function on ℂP² × S² multiplying the torus, the objection that no non-constant function of the torus coordinates is carried round by the drive (`papers/M3/STEP_AUDIT.md` §A) does not arise: the warp does not depend on the torus coordinates.
+3. It does not by itself say what replaces M2 §4. The PI's own texts are not yet uniform on the warp: the block-matrix form has w on ℂP² × S²; chapter 8 has g_ωω = e^{2ζΦ}, a factor on the ω direction of the pillowcase depending on Φ, with Φ rising along the pillowcase (¶¶75, 100, 120). Both put the warp on the pillowcase; they differ on what it depends on. For the PI.
+4. M2's metric has no cross-blocks; the PI's account has six, with their own geometries. In the block-matrix form the cross-block parts of T^Φ are non-zero whenever Φ varies along two blocks at once, and by the field equation the corresponding parts of the Einstein tensor are then non-zero too, which a block-diagonal metric with a warp depending on one block alone does not in general supply. Not worked out here.

@@ -6,6 +6,13 @@
 > *Verify-first is on. I will list assumptions and wait. I am not the SME; you direct.*
 Then read, in this order: this file; `sow/Mx_Series_SOW.md`; the current paper's `sow/Mx/SOW_DAG.md`; `registers/Decision_Log.md` (latest entries); the current paper's `HANDOVER.md` if present.
 
+## 0a. Which account is the reference (PI, 10 November 2026; Decision Log P25) — read this before anything else
+- **The PI's own account of the shape and of the equation is the reference.** It is in the PI's own writing: the original note of 22 February 2026 (*The Master Field Equations*), the block-matrix form (`TPhi_12x12_elements.tex`, 18 July 2026), and *The Shape of Becoming*, chapter 8. M1 and M2 were written afterwards by AI sessions formalising that account. **Where M1 or M2 disagrees with the PI's account, the error is in M1 or M2**, and it is an error of reading: a misreading of M₁₂ and of how its shapes interact (the pillowcase, its walls, the warp, the Spin^c twist, the spacetime block, and the couplings between blocks).
+- **The fifth axiom (the shadow) is the centre, not an addition.** It is the principle that explains the phenomena the series is about. That M1 and M2 were derived without it is therefore not a result; it is the symptom of the misreading. Wherever M1 or M2 reaches a conclusion without the fifth axiom, look for what was put in its place: a constructed device, a normalisation, a reading tagged [D].
+- **The task that follows:** take the PI's account as correct and find where, and how, M1 and M2 departed from it. Do not audit the PI's account against M1 and M2.
+- This does not make the pure mathematics of M1 false (the quaternions, the trace-three drive, the four corners of the fold). The departures are to be looked for in the identifications and readings.
+- Claude still does not simply agree: where the PI's own texts disagree with each other, or a statement cannot be supported from them, say so plainly with the lines.
+
 ## 1. Non-negotiable behavioural rules
 - **State the plan before acting; list assumptions; wait.** Before any judgement, derivation, corpus claim or decision: a numbered list of every assumption, each sourced to a file and location or to a PI statement, unsourced items marked **UNVERIFIED — guess**, then the literal line **⏸ WAITING FOR CONFIRMATION — not proceeding.** The turn ends there. Exceptions: mechanical tasks (a named edit, a compile, a grep, reading a named file).
 - **No self-generated work loops.** The SOW sets scope. When a node is done, stop and report.
