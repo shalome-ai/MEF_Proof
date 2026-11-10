@@ -1,7 +1,7 @@
 % ===================================================================
 % Paper M1 — Five axioms and their minimal geometry
-% Base paper of the Master Equation Framework series.  v4 WORKING DRAFT, 10 Nov 2026
-% (the fifth axiom integrated; Decision Log P19, P23, P31, P32).  Not canon.
+% Base paper of the Master Equation Framework series.  v4.3 WORKING DRAFT, 10 Nov 2026
+% (the fifth axiom integrated, with its two clauses; Decision Log P19, P23, P31, P33, P34).  Not canon.
 % Compile: xelatex (three passes).  Certificates: M1_lean/*.lean, Lean 4.15.0 core.
 % ===================================================================
 \documentclass[11pt,a4paper]{article}
@@ -44,13 +44,13 @@
 
 \title{Five axioms and their minimal geometry}
 \author{Dhiren J. Master}
-\date{10 November 2026 (v4.1, working draft)}
+\date{10 November 2026 (v4.3, working draft)}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms and formalised as conditions on a compact Riemannian geometry $(T\times\Sigma)\times F$, with every point at which a behavioural word acquires a mathematical meaning isolated as a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose drive is, at each step, the square of the Fibonacci matrix, so that the golden ratio is its growth rate, and whose time circle is three steps; the internal fibre is the pillowcase orbifold with four cone points of angle $\pi$ carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$; and the geometry carries a $\Spinc$ structure with determinant line $\Oline{3}$. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. As an application the minimal gauge manifold of Witten is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the Master Equation programme is derived rather than postulated.
+A unified theory must explain what is observed. We begin from five characteristics of the universe that need no instrument to recognise: it is aware of itself and closes on itself; it grows and decays; the order of its events matters; it never stands still; and what is seen of it is less than what is there. Taken as axioms on a compact Riemannian geometry $(T\times\Sigma)\times F$, each behavioural word given its meaning in a numbered definition, and with a lexicographic notion of minimality, they force a unique geometry. The time factor is the Sol torus bundle whose step is the square of the Fibonacci matrix, and a three-step time circle; the internal fibre is the pillowcase orbifold, its four cone points carrying the subalgebras $\R,\C_i,\C_j,\C_k$ of the quaternions; the dimension is twelve; the base is $\CPtwo\times\Stwo$, with $\Spinc$ determinant line $\Oline{3}$. The fifth axiom fixes the twist of the fibre: three units of flux and one odd corner. The constants $\pi$, $e$, $\phi$ and the primes two, three and five are outputs. Witten's minimal gauge manifold is recovered as a corollary. The principal consequence is that the twelve-dimensional manifold of the programme is derived rather than postulated.
 \end{abstract}
 
 \section{What is observed, and the five axioms}\label{sec:intro}
@@ -69,7 +69,7 @@ There are cycles. Winter is followed by spring, summer, autumn and winter again;
 
 The order in which things are done matters, and a different order gives a different result. Anyone who has followed a recipe knows this: mix the ingredients and then cook them, and you have a cake; cook them and then mix, and you have something else. What has been done cannot be undone by doing it again in another order.
 
-A thing and its shadow are not the same. A shadow on the ground tells a good deal about what casts it, but not everything: the shadow is flat and the thing is not, and two quite different things can cast the same shadow. What is seen of the world is of this kind. There is more to the world than the part of it that is seen, and what is seen does not by itself say what it is the shadow of.
+A thing and its shadow are not the same. A shadow on the ground tells a good deal about what casts it, but not everything: the shadow is flat and the thing is not. Two quite different things can cast the same shadow, and one thing can cast quite different shadows. What is seen of the world is of this kind. There is more to the world than the part of it that is seen, and what is seen does not by itself say what it is the shadow of.
 
 \subsection{The five axioms}\label{sec:fouraxioms}
 
@@ -92,10 +92,10 @@ The universe is in constant change; it never stands still.
 \end{axiom}
 
 \begin{axiom}[shadow]\label{ax:A5}
-We can see the shadow, but the shadow is missing information about what it is a shadow of.
+We can see the shadow, but the shadow is missing information about what it is a shadow of. The same shadow can be describing two different objects, and a single object can have multiple shadows.
 \end{axiom}
 
-Closure carries the cycles and the self-awareness; growth and decay carries the seed and the leaf; order carries the recipe; drive carries the weather and the mountains; shadow carries the thing and what is seen of it. That no cycle repeats exactly is not a further axiom but a consequence of the first and the fourth together, as Section~\ref{sec:drive} shows. The fifth axiom differs in kind from the other four. They say how the universe behaves; it says that the universe has a part that is seen and a part that is not, and it is in those terms that the other four are made precise.
+Closure carries the cycles and the self-awareness; growth and decay carries the seed and the leaf; order carries the recipe; drive carries the weather and the mountains; shadow carries the thing and what is seen of it. That no cycle repeats exactly is not a further axiom but a consequence of the first and the fourth together, as Section~\ref{sec:drive} shows. The fifth axiom differs in kind from the other four. They say how the universe behaves; it says that the universe has a part that is seen and a part that is not, and it is in those terms that the other four are made precise. It says also how the hidden part shows: one thing in several shadows, and several things in one.
 
 \subsection{Four numbers}\label{sec:numbers}
 
@@ -118,7 +118,7 @@ The result is that the five axioms, together with a stated principle of minimali
 \end{equation}
 In words: time is a circle along which a two-dimensional internal fibre is stretched and squeezed by the Fibonacci drive; the fibre, folded in half by the growth-and-decay exchange, is a pillowcase with four cone points carrying the four pieces of the quaternion algebra of the order axiom; the whole has twelve dimensions, every smaller number failing the order axiom; and the base over which the fibre sits is the sphere of the three imaginary quaternion units together with the space of their complex directions. Every discrete datum of~\eqref{eq:M12}, and the three primes two, three and five that appear in its arithmetic, are outputs.
 
-Section~\ref{sec:axioms} turns the five sentences into mathematics, at a level intended to be followed by a first-year mathematics graduate, and isolates as numbered definitions the five points at which a behavioural word has to be given a mathematical meaning. Section~\ref{sec:minimal} defines minimality. Sections~\ref{sec:drive} to~\ref{sec:base} derive the time factor, the fibre, the dimension and the base; Section~\ref{sec:theorem} assembles the theorem; Section~\ref{sec:outlook} says what the geometry dictates for the physics. From Section~\ref{sec:drive} onward the register is that of a formal mathematics paper: every load-bearing step is proved or reduced to a cited classical theorem, the smallest case is worked by hand, and the finite and arithmetic parts are certified in Lean (Appendix~\ref{app:lean}). Rigour is tagged \rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading) and \rigM\ (motivated).
+Section~\ref{sec:axioms} turns the five sentences into mathematics, at a level intended to be followed by a first-year mathematics graduate, and isolates as numbered definitions the six points at which a behavioural word has to be given a mathematical meaning. Section~\ref{sec:minimal} defines minimality. Sections~\ref{sec:drive} to~\ref{sec:base} derive the time factor, the fibre, the dimension and the base; Section~\ref{sec:theorem} assembles the theorem; Section~\ref{sec:outlook} says what the geometry dictates for the physics. From Section~\ref{sec:drive} onward the register is that of a formal mathematics paper: every load-bearing step is proved or reduced to a cited classical theorem, the smallest case is worked by hand, and the finite and arithmetic parts are certified in Lean (Appendix~\ref{app:lean}). Rigour is tagged \rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading) and \rigM\ (motivated).
 
 \section{The five axioms as mathematics}\label{sec:axioms}
 
@@ -126,14 +126,16 @@ This section is written to be followed without specialist background. Each axiom
 
 \subsection{Shadow, and the shapes we consider}\label{sec:A5}
 
-The sentence is: \emph{we can see the shadow, but the shadow is missing information about what it is a shadow of}.
+The axiom has two sentences: \emph{we can see the shadow, but the shadow is missing information about what it is a shadow of}; and \emph{the same shadow can be describing two different objects, and a single object can have multiple shadows}.
 
-For a shape the sentence says two things. First, there is more to the shape than the part along which we see: besides time and space it has a part that is not directly seen. Second, what is seen is what is left of the whole when that part is forgotten, the way the shadow of a solid thing on the ground is what is left of it when its height is forgotten.
+For a shape the first sentence says two things. There is more to the shape than the part along which we see: besides time and space it has a part that is not directly seen. And what is seen is what is left of the whole when that part is forgotten, the way the shadow of a solid thing on the ground is what is left of it when its height is forgotten. This is clause~(i) of the definition below.
+
+The second sentence names the two ways in which a shadow fails to tell what casts it, and each becomes a clause. That a single object can have multiple shadows is clause~(ii). That the same shadow can be describing two different objects is clause~(iii).
 
 A \emph{geometry} here is a smooth shape, of some number of dimensions, on which lengths and angles can be measured, and which is allowed to have a few isolated sharp points (cone points, like the tip of a paper cone).
 
 \begin{definition}[shadow, formal]\label{def:A5}
-A geometry satisfies A5 if it is a product of three pieces,
+A geometry satisfies A5 if (i) it is a product of three pieces,
 \begin{equation}\label{eq:family}
 M \;=\; (T \times \Sigma) \times F ,
 \end{equation}
@@ -141,16 +143,22 @@ where $T$ is a one-dimensional piece carrying time, $\Sigma$ is a piece carrying
 \[
 \pi\colon M\to T\times\Sigma,\qquad \pi(t,x,f)=(t,x),
 \]
-that forgets $F$. The image under $\pi$ of a point or of a subset of $M$ is its \emph{shadow}.
+that forgets $F$, the image under $\pi$ of a point or of a subset of $M$ being its \emph{shadow}; and
+
+(ii) the structure carried by the internal piece is not carried to itself by one step of the drive of the fourth axiom, so that what is seen of one thing is not the same at every step; and
+
+(iii) the internal piece has at least two independent states at rest with the same shadow: states that differ only in the internal piece.
 \end{definition}
 
-A product of pieces means, as for a rectangle made of two intervals, that a point of $M$ is a point of each piece at once. Writing $M$ this way is only a way of naming the pieces: the way lengths are measured may tie the pieces together, and the second axiom will insist that it does. That the part along which we see is time and space, and that seeing is the projection $\pi$, is the first of the five choices this section records.
+Clauses (ii) and~(iii) are the two halves of the axiom's second sentence, taken in turn. The words \emph{step} and \emph{state at rest} are made exact where they are used, in Sections~\ref{sec:drive} and~\ref{sec:base} (Definition~\ref{def:states}), and it is there that the two clauses do their work (Proposition~\ref{prop:twist}).
+
+A product of pieces means, as for a rectangle made of two intervals, that a point of $M$ is a point of each piece at once. Writing $M$ this way is only a way of naming the pieces. The way lengths are measured may tie the pieces together, and the second axiom will insist that it does; and the internal piece may be carried round time by a map of itself, as Section~\ref{sec:drive} finds. That the part along which we see is time and space, and that seeing is the projection $\pi$, is the first of the six choices this section records. That an object, in clauses (ii) and~(iii), is a state of the internal piece at rest, and its shadow what is left of it when the internal piece is forgotten, is the second.
 
 \begin{remark}[what the shadow loses]\label{rem:loss}
 The projection $\pi$ is onto, and it is one-to-one only if $F$ is a single point: if $f\neq f'$ are two points of $F$, then $(t,x,f)$ and $(t,x,f')$ are different points of $M$ with the same shadow $(t,x)$. The internal piece of a geometry satisfying the other four axioms is more than a point: Theorem~\ref{thm:dim} shows that it has dimension at least eight. In every such geometry, therefore, a point of $M$ is not determined by its shadow. This is the second half of the sentence, and it is a consequence and not a further assumption. The axiom does not say that the whole can be recovered from the shadow. \rigD
 \end{remark}
 
-The fifth axiom is what the other four stand on. Closure will be asked of each of the three pieces; the growth law will be a tie between pieces; the order axiom will speak of operations on $F$; and the drive will be a flow on $T$ together with $F$. None of these can be stated for a shape that has not first been divided into pieces, and in this paper it is the fifth axiom that makes the division, into what is seen and what is not.
+The fifth axiom is what the other four stand on. Closure will be asked of each of the three pieces; the growth law will be a tie between pieces; the order axiom will speak of operations on $F$; and the drive will be a flow on $T$ together with $F$. None of these can be stated for a shape that has not first been divided into pieces, and in this paper it is the fifth axiom that makes the division, into what is seen and what is not. It also constrains the shape: its second and third clauses fix the twist of the internal fibre (Section~\ref{sec:base}).
 
 \subsection{Closure}\label{sec:A1}
 
@@ -162,7 +170,7 @@ For a shape, ``closes on itself'' means two things. First, no piece goes on for 
 A geometry satisfies A1 if $T$, $\Sigma$ and $F$ are compact, connected and without boundary, and the fundamental group of $M$ is non-trivial.
 \end{definition}
 
-The fundamental group is the collection of loops in $M$ up to continuous deformation; ``non-trivial'' means some loop does not deform to a point. We ask this of the whole shape, not of each piece: the time circle already supplies such a loop, and the space and internal pieces are free to have none of their own. On any compact shape there is always a shortest closed path \cite{LyusternikFet}; we ask for more, a loop that is topologically stuck, and that is the second of the five choices.
+The fundamental group is the collection of loops in $M$ up to continuous deformation; ``non-trivial'' means some loop does not deform to a point. We ask this of the whole shape, not of each piece: the time circle already supplies such a loop, and the space and internal pieces are free to have none of their own. On any compact shape there is always a shortest closed path \cite{LyusternikFet}; we ask for more, a loop that is topologically stuck, and that is the third of the six choices.
 
 \subsection{Growth and decay}\label{sec:A2}
 
@@ -174,7 +182,7 @@ The sentence is: \emph{the universe grows and decays as a function of itself}.
 A geometry satisfies A2 if: (i) at least one product in~\eqref{eq:family} is a warped product, with a smooth function $w$ on one piece, $\nabla w\neq0$, entering the lengths measured on another; (ii) along the warping direction $\mathrm{d}w/\mathrm{d}s=\kappa\,w$ for a constant $\kappa\neq0$, so that $w=w_{0}e^{\kappa s}$; (iii) there is an involution $\iota$ of the warped piece with $\iota^{*}\kappa=-\kappa$.
 \end{definition}
 
-An involution is a symmetry that undoes itself when applied twice, like a reflection. Clause~(i) is the third of the five choices: the growth is in the geometry rather than in a field placed on it. The involution $\iota$ is not identified here; Section~\ref{sec:fibre} will find that it is the fold that halves the internal piece and, on the algebra of the next axiom, the operation of conjugation.
+An involution is a symmetry that undoes itself when applied twice, like a reflection. Clause~(i) is the fourth of the six choices: the growth is in the geometry rather than in a field placed on it. The involution $\iota$ is not identified here; Section~\ref{sec:fibre} will find that it is the fold that halves the internal piece and, on the algebra of the next axiom, the operation of conjugation.
 
 \subsection{Order}\label{sec:A3}
 
@@ -192,7 +200,7 @@ A geometry satisfies A3 if its fibre algebra is non-commutative: there are opera
 
 Two things follow at once and are not extra assumptions. Because $F$ sits over a compact piece, there are only finitely many independent operations: $\mathcal{A}$ is finite-dimensional. Because ``and then'' is how operations are combined, doing $a$ then $b$ then $c$ is the same whether one groups it as $(ab)c$ or $a(bc)$: $\mathcal{A}$ is associative. What the axiom does \emph{not} say is that every operation can be undone; that it can will be a consequence of closure (Section~\ref{sec:fibre}), and it is that consequence, together with a classical theorem of Frobenius \cite{Frobenius1878}, that will force $\mathcal{A}$ to be the quaternions, the four-dimensional number system with units $1,i,j,k$ and $i^{2}=j^{2}=k^{2}=ijk=-1$, in which $ij=k$ but $ji=-k$. The second half of the sentence is a consequence of the first: for two observables that fail to commute, the uncertainties in measuring them together are bounded below by half the size of their commutator \cite{Robertson1929}, so ``cannot be foretold'', in the quantum sense, is a theorem of ``order matters''. Unpredictability in the other sense, of a system whose future is sensitive to its present, belongs to the fourth axiom.
 
-Two further definitions say \emph{where} the fibre algebra acts, and these are the fourth and fifth choices. A shape has at every point its tangent directions, and, if it is the right kind of shape, also its spinors, the objects that carry the half-integer spin of a fermion. The order axiom will be read as saying that the non-commutative algebra is the algebra of the shape's own tangent directions and spinors, not an abstract bookkeeping device.
+Two further definitions say \emph{where} the fibre algebra acts, and these are the fifth and sixth choices. A shape has at every point its tangent directions, and, if it is the right kind of shape, also its spinors, the objects that carry the half-integer spin of a fermion. The order axiom will be read as saying that the non-commutative algebra is the algebra of the shape's own tangent directions and spinors, not an abstract bookkeeping device.
 
 \begin{definition}[the algebra acts on spinors and on tangent vectors]\label{def:levels}
 The fibre algebra acts on the geometry at two levels: at the spinor level, as the algebra generated by the Clifford action on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$, a rank-three subbundle of $\operatorname{End}(TM)$ locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ \cite{Salamon1982}, whose restriction to $F$ carries the full algebra.
@@ -204,7 +212,7 @@ An almost-complex structure $I$ is a rule that rotates every tangent direction b
 A homogeneous space $G/H$ formed from the symmetry group $G$ of the fibre algebra and the stabiliser $H$ of a structure selected on it is \emph{realised} by the geometry: it appears as a piece of the base over which $F$ is warped.
 \end{definition}
 
-The picture here is simpler than the words. The quaternions have a symmetry group, the rotations of the three imaginary units $i,j,k$ among themselves. If something in the geometry picks out one unit, say $i$, then the set of all units it \emph{could} have picked is a sphere, and the definition says that this sphere is part of the shape, not merely a list of alternatives. That is the fifth choice, and it is what produces the two-sphere and the complex projective plane of Section~\ref{sec:base}, where the other possible reading is set out.
+The picture here is simpler than the words. The quaternions have a symmetry group, the rotations of the three imaginary units $i,j,k$ among themselves. If something in the geometry picks out one unit, say $i$, then the set of all units it \emph{could} have picked is a sphere, and the definition says that this sphere is part of the shape, not merely a list of alternatives. That is the sixth choice, and it is what produces the two-sphere and the complex projective plane of Section~\ref{sec:base}, where the other possible reading is set out.
 
 \subsection{Drive}\label{sec:A4}
 
@@ -220,7 +228,7 @@ The flow is placed on time together with the internal piece, not on time alone, 
 
 \subsection{What has been chosen}\label{sec:scope}
 
-The five sentences have been turned into five conditions, and in doing so five choices were made and numbered: that what is seen is the image of the whole under the projection onto time and space (Definition~\ref{def:A5}); that self-reference means a loop that cannot be shrunk (Definition~\ref{def:A1}); that growth is in the geometry (Definition~\ref{def:A2}(i)); that the non-commutative algebra is the algebra of the shape's own spinors and tangent directions (Definition~\ref{def:levels}); and that the sphere of alternatives is part of the shape (Definition~\ref{def:orbits}). Every result below that depends on one of these says so. Nothing in the five conditions mentions a gauge group, a particle, a generation or a coupling constant, and nothing names a factor of the manifold that will be derived. One quantity is not constrained by any axiom: the overall size of the shape. The definition of minimality in the next section is made independent of size, and the final theorem states the size as the one input the axioms do not supply.
+The five sentences have been turned into five conditions, and in doing so six choices were made and numbered: that what is seen is the image of the whole under the projection onto time and space (Definition~\ref{def:A5}(i)); that an object is a state of the internal piece at rest, and its shadow what is left of it when the internal piece is forgotten (Definition~\ref{def:A5}(ii),~(iii)); that self-reference means a loop that cannot be shrunk (Definition~\ref{def:A1}); that growth is in the geometry (Definition~\ref{def:A2}(i)); that the non-commutative algebra is the algebra of the shape's own spinors and tangent directions (Definition~\ref{def:levels}); and that the sphere of alternatives is part of the shape (Definition~\ref{def:orbits}). Every result below that depends on one of these says so. Nothing in the five conditions mentions a gauge group, a particle, a generation or a coupling constant, and nothing names a factor of the manifold that will be derived. One quantity is not constrained by any axiom: the overall size of the shape. The definition of minimality in the next section is made independent of size, and the final theorem states the size as the one input the axioms do not supply.
 
 \section{Minimality}\label{sec:minimal}
 
@@ -611,28 +619,134 @@ The $\Stwo$ factor is spin and the pillowcase is flat, so neither obstructs.
 The flux parity, $Q_{c}$ odd on $\CPtwo$ and $Q_{w}$ even on $\Stwo$, is the same congruence on the flux side (\texttt{L4\_flux\_parity}).
 \end{proof}
 
-\begin{corollary}[the corner lift]\label{cor:lift}
-With $c_{1}(L)$ odd the lift of $\iota$ to the spinor bundle acts at the four corners by signs whose product is $-1$, the Atiyah--Bott fixed-point index $(-1)^{d}$ for odd determinant class \cite{AtiyahBott}: one corner carries the sign opposite to that of the other three. For even $L$ the product would be $+1$. \rigR
+\subsection{The twist of the fibre}\label{sec:twist}
 
-Which corner is the odd one is not fixed by the index. We take it to be one of the three corners cycled by the drive, and name the corners so that the sign at $C_{m,n}=(\tfrac m2,\tfrac n2)$ is $(-1)^{mn}$: the odd corner is $P_{4}$. \rigD
+Proposition~\ref{prop:spinc} fixes the determinant line on $\CPtwo$ and says nothing of the fibre. The second cohomology of $\CPtwo\times\Stwo\times\Ttwo$ is one integer for each factor, with no mixed term, because the first cohomology of $\CPtwo\times\Stwo$ vanishes \cite{Hatcher}. The determinant line of a $\Spinc$ structure therefore carries three independent integers, odd on $\CPtwo$ and even on the other two, and the canonical structure has zero on the torus. A twist of the fibre by a line of degree $d$ on the torus multiplies the determinant line by the square of that line, so that the integer on the torus becomes $2d$. Whether the fibre is twisted, and by how much, is decided by the fifth axiom.
+
+Let $E$ be the covering torus of the pillowcase with a complex structure for which the fold is $\iota(z)=-z$, and let $P_{1},\dots,P_{4}$ be the four corners. The counts below do not depend on which such complex structure is taken.
+
+\begin{definition}[flux and states]\label{def:states}
+A \emph{twist of the fibre} of \emph{flux} $d\geq1$ is the line $\mathcal{O}(D)$ on $E$ of a divisor $D=\sum a_{i}P_{i}$ on the corners, with $a_{i}\geq0$ and $\sum a_{i}=d$. A twist of flux zero is a flat line with holonomy $\pm1$: the trivial one, or one of the three \emph{half-turn twists}.
+
+A \emph{state of the fibre at rest} is a holomorphic section of the twist: for $d\geq1$, a function $f$ on $E$ whose poles are bounded by $D$. The fold acts on states by $f(z)\mapsto f(-z)$ or by $f(z)\mapsto-f(-z)$, its two lifts, called here the first and the second. A \emph{state on the pillowcase}, for a given lift, is a state that the lift leaves unchanged. Which lift is called the first depends on the divisor chosen for a line, and the statements below speak of one lift or the other.
+
+The \emph{corner sign} of the twist at $P_{i}$ is $(-1)^{a_{i}}$, the action of the first lift on the fibre of $\mathcal{O}(D)$ there. The four signs are taken up to one overall sign. A corner is \emph{odd} if its sign differs from that of the other three.
+
+The \emph{structure} of a twist is its flux together with its corner signs up to the overall sign or, for flux zero, its holonomy. It is this that clause~(ii) of Definition~\ref{def:A5} speaks of. The drive is not a holomorphic map of $E$; it acts on structures through its action on the corners.
+
+Two states of the fibre at rest have the same shadow: they differ only in the internal piece. This is the reading of Definition~\ref{def:A5}(iii).
+\end{definition}
+
+For the canonical $\Spinc$ structure the states at rest are the harmonic spinors of the fibre. We use this as motivation for the definition of a state, and the counts below do not depend on it. One fact about spinors is used, in Corollary~\ref{cor:lift}: on the untwisted spinors of the fibre, the functions and the $(0,1)$-forms on $E$, the fold acts by $+1$ and by $-1$ at every corner alike, since $\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$. The corner signs of the spinors, up to the overall sign, are therefore those of the twist.
+
+\begin{lemma}[states, the fold and the drive]\label{lem:states}
+Let $D$ be a divisor of degree $d\geq1$ on the corners. (a) There are exactly $d$ linearly independent states. (b) Under the first lift the number of states on the pillowcase is $1+\sum_{i}\lfloor a_{i}/2\rfloor$; under the second it is $d$ less that number. (c) The corner signs are carried to themselves by one step of the drive if and only if the four are alike or the odd one is at $P_{1}$; otherwise they return after three steps and not before. (d) A half-turn twist has no state at rest, and the drive carries the three half-turn twists round a cycle of three. \rigR
+\end{lemma}
+
+\begin{proof}
+(b) An even elliptic function is a rational function of the Weierstrass function $\wp$ \cite{WhittakerWatson}, that is, a function on the quotient sphere $E/\iota$, and its order at a corner is twice its order at the image point.
+
+An even state is therefore a function on the sphere with a pole of order at most $\lfloor a_{i}/2\rfloor$ at the image of $P_{i}$.
+
+Such functions form a space of dimension $1+\sum_{i}\lfloor a_{i}/2\rfloor$, by partial fractions.
+
+(a) The first lift is an involution of the states, so every state is the sum of an even state and an odd one; the second lift keeps the odd ones.
+
+An odd state is $\wp'$ times an even function $g$, and $\wp'$ has a triple pole at $P_{1}$ and a simple zero at each of $P_{2},P_{3},P_{4}$ \cite{WhittakerWatson}.
+
+So $g$ is a function on the sphere with a pole of order at most $\lceil a_{i}/2\rceil$ at the image of $P_{i}$ for $i=2,3,4$, and of order at most $\lceil a_{1}/2\rceil-2$ at the image of $P_{1}$, a negative bound meaning a zero of at least that order.
+
+Such functions form a space of dimension $\sum_{i}\lceil a_{i}/2\rceil-1$.
+
+The two dimensions add up to $\sum_{i}a_{i}=d$.
+
+(c) The drive fixes $P_{1}$ and cycles $P_{2}\to P_{3}\to P_{4}$ (Proposition~\ref{prop:threecycle}).
+
+A pattern with all four signs alike, or with the odd sign at $P_{1}$, is unchanged.
+
+A pattern with one odd sign at a cycled corner, or with two signs of each kind, is moved, and returns when the corners do (\texttt{L6\_fixed\_patterns}, \texttt{L6\_return\_three}).
+
+(d) A section of a line of degree zero has no zeros, so it trivialises the line; a half-turn twist is not trivial, its holonomy being $-1$ on some loop, so it has no section.
+
+The three half-turn twists are the three non-trivial characters of the lattice modulo two, which the drive permutes as it permutes the three cycled corners.
+\end{proof}
+
+\begin{proposition}[the twist of the fibre]\label{prop:twist}
+Let the fibre satisfy clauses (ii) and~(iii) of Definition~\ref{def:A5}, the states of clause~(iii) being states on the pillowcase for one of the two lifts of the fold, and let the flux be the least that does so. Then the flux is three. The corner signs are three alike and one odd, and the odd corner is one of the three that the drive cycles. For that lift the fibre has two states on the pillowcase, and the fold removes a third.
+
+Taken singly, clause~(ii) is met with least flux by a half-turn twist of flux zero, for which the fibre has no state at rest; and clause~(iii) is met with least flux by flux two with the four corner signs alike, a structure the drive leaves in place. \rigD
+\end{proposition}
+
+\begin{proof}
+Flux zero.
+
+The trivial line is carried to itself by the drive and fails clause~(ii).
+
+A half-turn twist meets clause~(ii) and has no state (Lemma~\ref{lem:states}(d)), so it fails clause~(iii).
+
+Flux one.
+
+There is one state (Lemma~\ref{lem:states}(a)).
+
+Clause~(iii) fails (\texttt{L6\_flux\_one}).
+
+Flux two.
+
+For $D=2P_{i}$ the first lift keeps two states and the corner signs are alike.
+
+For $D=P_{i}+P_{j}$ with $i\neq j$ each lift keeps one state (Lemma~\ref{lem:states}(b)).
+
+Clause~(iii) therefore forces $D=2P_{i}$, whose structure, with the four corner signs alike, the drive leaves in place (Lemma~\ref{lem:states}(c)).
+
+Clause~(ii) fails (\texttt{L6\_flux\_two}).
+
+Flux three.
+
+For $D=3P_{i}$ and for $D=2P_{i}+P_{j}$ the first lift keeps two states and removes one; for $D=P_{i}+P_{j}+P_{k}$ the second lift does.
+
+Clause~(iii) holds in every case.
+
+The corner signs have one odd corner: $P_{i}$, $P_{j}$ and the fourth corner respectively.
+
+Clause~(ii) holds exactly when the odd corner is not $P_{1}$ (Lemma~\ref{lem:states}(c)).
+
+The case analysis is certified, taking the count of Lemma~\ref{lem:states}(b) as given (\texttt{L6\_flux\_three\_states}, \texttt{L6\_flux\_three\_one\_odd}, \texttt{L6\_flux\_three\_cycled}, \texttt{L6\_least\_flux}).
+
+The single clauses are the cases of flux zero and flux two above.
+\end{proof}
+
+\emph{The smallest case, by hand.} Take $D=3P_{4}$, and write $\wp$ for the Weierstrass function of $E$ and $e_{4}=\wp(P_{4})$.
+
+The three states are $1$, $1/(\wp-e_{4})$ and $\wp'/(\wp-e_{4})^{2}$.
+
+The first two are even and the third is odd.
+
+The corner signs are $(+,+,+,-)$ (\texttt{L6\_smallest\_case}).
+
+Three remarks. That the least flux is taken is a minimal choice, of the same character as criterion~(1). The twisting line that criterion~(1) removes in Proposition~\ref{prop:spinc} is a line on $\CPtwo$ that nothing forces; the twist of the fibre is forced by the fifth axiom. And the flux three found here and the three of $c_{1}(\CPtwo)$ are the same integer, but this paper does not derive one from the other.
+
+\begin{corollary}[the corner lift]\label{cor:lift}
+With the twist of Proposition~\ref{prop:twist} the lift of $\iota$ to the spinors of the fibre acts at the four corners by signs whose product is $-1$: one corner carries the sign opposite to that of the other three, and it is one of the three corners cycled by the drive. Naming the corners so that it is $P_{4}$, the sign at $C_{m,n}=(\tfrac m2,\tfrac n2)$ is $(-1)^{mn}$, up to one overall sign. For an even flux the product would be $+1$. \rigD
 \end{corollary}
 
 \begin{proof}
-The eight functions $(\Z_{2})^{2}\to\Z_{2}$ vanishing at the origin split into the four characters, with product $+1$, and the four quadratic refinements of the intersection pairing, with product $-1$; the Atiyah--Bott input selects the refinement class for odd $d$.
+The product of the corner signs of $\mathcal{O}(D)$ is $\prod_{i}(-1)^{a_{i}}=(-1)^{d}$ (\texttt{L6\_corner\_product}), and the untwisted spinors contribute the same sign at every corner.
+
+The rest is Proposition~\ref{prop:twist}.
+
+The eight functions $(\Z_{2})^{2}\to\Z_{2}$ vanishing at the origin split into the four characters, with product $+1$, and the four quadratic refinements of the intersection pairing, with product $-1$.
+
+An even flux gives a character and an odd flux a refinement.
 
 The sign table is \texttt{L4\_four\_corner\_product}.
-
-The class has four members, one for each corner as the odd one, the overall sign being a convention.
-
-The index does not choose among them.
 \end{proof}
 
-The second sentence of the corollary is a reading and not a computation, and it is not the option that minimality would take. The drive fixes $P_{1}$ and cycles the other three corners (Proposition~\ref{prop:threecycle}). It therefore leaves in place the pattern whose odd corner is $P_{1}$, and it carries each of the other three patterns to the next: the odd corner moves $P_{4}\to P_{2}\to P_{3}\to P_{4}$. The pattern with odd corner $P_{1}$ is the simpler structure, since the drive does nothing to it. We take a cycled corner, as a declared reading, and state it here as such.
+That the odd corner is a cycled one is clause~(ii) of the fifth axiom at work. With the odd corner at $P_{1}$ the drive would leave the structure in place, and one thing would have one shadow.
 
 Among the three cycled corners there is nothing further to choose. The three patterns are one pattern at three successive steps, and to name one of them is to say which step is called the first. The pattern $(-1)^{mn}$ is the one of the three that the quarter-turn $S$, as written in Theorem~\ref{thm:drive}, leaves in place: $S$ fixes $P_{1}$ and $P_{4}$ and exchanges $P_{2}$ and $P_{3}$. The quarter-turns $M_{0}SM_{0}^{-1}$ and $M_{0}^{-1}SM_{0}$ leave the other two patterns in place in the same way, which is the same statement: nothing distinguishes the three but the step at which one starts.
 
 \begin{corollary}[the time circle]\label{cor:timecircle}
-Under the reading of Corollary~\ref{cor:lift} the corner signs are carried to themselves by $n$ steps of the drive if and only if three divides $n$. The lifted fold being one structure on the whole geometry, the time circle $T$ is a whole number of steps divisible by three. We take the least, three. Once round $T$ the fibre is then carried to itself by $M_{0}^{3}=\bigl(\begin{smallmatrix}13&8\\8&5\end{smallmatrix}\bigr)$, of trace eighteen, which leaves every corner in place. \rigD
+With the corner signs of Corollary~\ref{cor:lift}, the signs are carried to themselves by $n$ steps of the drive if and only if three divides $n$. The lifted fold being one structure on the whole geometry, the time circle $T$ is a whole number of steps divisible by three. We take the least, three, the corner signs being counted up to one overall sign. Once round $T$ the fibre is then glued to itself by $M_{0}^{3}=\bigl(\begin{smallmatrix}13&8\\8&5\end{smallmatrix}\bigr)$, of trace eighteen, which leaves every corner in place. \rigD
 \end{corollary}
 
 \begin{proof}
@@ -640,7 +754,9 @@ One step moves the odd corner from $P_{4}$ to $P_{2}$, a second from $P_{2}$ to 
 
 The reduction of $M_{0}$ modulo two has order three (\texttt{L1\_M0\_mod2\_order3}), so the pattern returns after three steps and not before.
 
-A structure defined on the whole geometry, carried once round the time circle, returns to itself.
+Time is a circle (Definition~\ref{def:A1}), and the time factor is the torus bundle whose step is $M_{0}$ (Theorem~\ref{thm:drive}): once round $T$ the fibre is glued to itself by a power of the drive, the number of steps in $T$.
+
+A structure defined on the whole geometry, carried once round the time circle, returns to itself; that the lifted fold is such a structure is the hypothesis of the statement.
 
 The number of steps in $T$ is therefore a multiple of three.
 
@@ -695,7 +811,7 @@ The four characters $q=am+bn$ have $\sum q=2(a+b)\equiv0$ and corner product $+1
 
 For $q=mn$: values $0,0,0,1$ at $(0,0),(1,0),(0,1),(1,1)$, signs $+,+,+,-$.
 
-Three corners carry $+1$ and one carries $-1$, and it is the odd determinant class that puts the lift in the refinement class.
+Three corners carry $+1$ and one carries $-1$, and it is the odd flux of the fibre that puts the lift in the refinement class (Proposition~\ref{prop:twist}).
 
 \emph{Flux parity.} The flux quantum through a closed surface $S$ is $Q_{S}=\int_{S}c_{1}(L)\equiv\langle w_{2},[S]\rangle$ mod two.
 
@@ -727,18 +843,18 @@ The identity $12=1+3+8=\dim\Mtwelve$ holds and is recorded, not used.
 
 \subsection{Statement and proof}
 
-The theorem collects the four sections into one statement. Its hypotheses are the five axioms, the five readings of Section~\ref{sec:axioms}, the minimality principle of Section~\ref{sec:minimal}, the reading of Corollary~\ref{cor:lift}, one declared input and one declared assumption; its conclusion names every factor and every discrete datum of the geometry. What a referee should check is that no factor is named before it is forced, and the proof is written so that each clause points to the section that forces it.
+The theorem collects the four sections into one statement. Its hypotheses are the five axioms, the six readings of Section~\ref{sec:axioms}, the minimality principle of Section~\ref{sec:minimal}, one declared input and one declared assumption; its conclusion names every factor and every discrete datum of the geometry. What a referee should check is that no factor is named before it is forced, and the proof is written so that each clause points to the section that forces it.
 
 \begin{theorem}[minimality]\label{thm:main}
 Among geometries $(T\times\Sigma)\times F$ satisfying A1--A5 under the readings of Definitions~\ref{def:A5}, \ref{def:A1}, \ref{def:A2}(i), \ref{def:levels} and~\ref{def:orbits}, with the overall scale stabilised by a declared sector and the stationarity conditions of Proposition~\ref{prop:moduli} assumed, the minimal geometry in the sense of Definition~\ref{def:minimal} is unique and is
 \[
 \Mtwelve=(S^{1}_{\Sol}\times S^{3})\times\bigl[(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)\bigr]^{\Spinc},
 \]
-with step $\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$ and a time circle of three steps under the reading of Corollary~\ref{cor:lift}, determinant line $\Oline{3}$, $\chi(\Keight)=12$, dimension twelve, and no continuous modulus. The primes two, three and five of its topological integers are outputs of the selection.
+with step $\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$ and a time circle of three steps, flux three on the fibre with one odd corner (Proposition~\ref{prop:twist}), determinant line $\Oline{3}$, $\chi(\Keight)=12$, dimension twelve, and no continuous modulus. The primes two, three and five of its topological integers are outputs of the selection.
 \end{theorem}
 
 \begin{proof}
-A5 gives the family $(T\times\Sigma)\times F$ in which the other four axioms are stated (Definition~\ref{def:A5}); it selects nothing within the family.
+A5 gives the family $(T\times\Sigma)\times F$ in which the other four axioms are stated (Definition~\ref{def:A5}) and, through its clauses (ii) and~(iii), the twist of the fibre and the corner signs (Proposition~\ref{prop:twist}, Corollary~\ref{cor:lift}).
 
 A4 with criterion~(2) gives the drive (Theorem~\ref{thm:drive}).
 
@@ -757,7 +873,7 @@ The primes: two enters through the involution of A2 and $\chi(\Stwo)$; three thr
 Criterion~(3) therefore removes nothing that the other criteria had not removed, and is an output.
 \end{proof}
 
-The deflationary reading. The fifth axiom enters the theorem once, as the division of the shape into the part that is seen and the part that is not; every selection within that division is made by the other four axioms and by minimality. The theorem asserts uniqueness among minimal realisations under the stated readings; it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale. The readings are definitions, not results: a reader who takes Definition~\ref{def:orbits} in its fibrewise form, under which the sphere of units exists over each point but is not a factor, will not obtain Propositions~\ref{prop:S2} and~\ref{prop:CP2}, and the base is then determined among products only. Proposition~\ref{prop:CP2} is the least direct step and is tagged \rigD\ with its two readings named.
+The deflationary reading. The fifth axiom enters the theorem twice: as the division of the shape into the part that is seen and the part that is not, and, through its two further clauses, as the twist of the fibre. The second rests on a reading, that an object is a state of the internal piece at rest and that its shadow is what is left when the internal piece is forgotten. A reader who does not take that reading keeps the division and loses Proposition~\ref{prop:twist} and Corollaries~\ref{cor:lift} and~\ref{cor:timecircle}. The theorem asserts uniqueness among minimal realisations under the stated readings; it does not assert that a non-minimal geometry, one of dimension sixteen or with a lens-space spatial factor, fails the axioms, and it does not derive the overall scale. The readings are definitions, not results: a reader who takes Definition~\ref{def:orbits} in its fibrewise form, under which the sphere of units exists over each point but is not a factor, will not obtain Propositions~\ref{prop:S2} and~\ref{prop:CP2}, and the base is then determined among products only. Proposition~\ref{prop:CP2} is the least direct step and is tagged \rigD\ with its two readings named.
 
 \subsection{The elimination table}
 
@@ -829,7 +945,7 @@ Witten's theorem \cite{Witten1981} states that the lowest-dimensional compact ma
 
 \section{Applications and outlook}\label{sec:outlook}
 
-The geometry~\eqref{eq:M12} is now a theorem of five axioms and a minimality principle, and the derivation fixes more than the manifold. The four corners of the pillowcase are cone points of angle $\pi$, each the locus where the quaternionic algebra has collapsed to a commutative line, with the drive fixing one and cycling the other three (Propositions~\ref{prop:collapse}, \ref{prop:threecycle}); the determinant line is odd and the corner lift has product $-1$ (Corollary~\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\ref{cor:timecircle}); the aspect ratio is a root of an integer cubic (Proposition~\ref{prop:moduli}). These are the data that the papers of the programme consume in deriving the lepton and quark mixing structure from cone deficits and corner walks, and the present paper fixes their origin. We do not pursue those consequences here. \rigM
+The geometry~\eqref{eq:M12} is now a theorem of five axioms and a minimality principle, and the derivation fixes more than the manifold. The four corners of the pillowcase are cone points of angle $\pi$, each the locus where the quaternionic algebra has collapsed to a commutative line, with the drive fixing one and cycling the other three (Propositions~\ref{prop:collapse}, \ref{prop:threecycle}); the determinant line is odd; the fibre carries three units of flux, with two states on the pillowcase and one removed by the fold (Proposition~\ref{prop:twist}); the corner lift has product $-1$ (Corollary~\ref{cor:lift}); the time circle is three steps of the drive (Corollary~\ref{cor:timecircle}); the aspect ratio is a root of an integer cubic (Proposition~\ref{prop:moduli}). These are the data that the papers of the programme consume in deriving the lepton and quark mixing structure from cone deficits and corner walks, and the present paper fixes their origin. We do not pursue those consequences here. \rigM
 
 The sequel derives the field equation of the programme, with its coupling to the Coherent Field, from the same axioms on the geometry derived here; the two sheets of the involution of A2 and the non-commutative structure of A3 are the variables in which that equation is written.
 
@@ -840,7 +956,7 @@ The author used Claude (Anthropic) and Gemini (Google DeepMind) as mathematical 
 
 \section{Machine-verified certificates}\label{app:lean}
 
-Five files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \texttt{sorry}; fifty theorems. The files were compiled independently on two toolchains, the core toolchain used in drafting and the author's Lean project, with identical results; no proof depends on the default simplifier set of a particular Lean version. Classical theorems (Franks, Frobenius, Thurston, Latimer--MacDuffee, Lawson--Michelsohn, Salamon, Atiyah--Bott) are named in file headers and are never Lean axioms; the certificates establish the finite and arithmetic content those theorems consume.
+Six files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \texttt{sorry}; sixty-one theorems. The files were compiled independently on two toolchains, the core toolchain used in drafting and the author's Lean project, with identical results; no proof depends on the default simplifier set of a particular Lean version. Classical theorems (Franks, Frobenius, Thurston, Latimer--MacDuffee, Lawson--Michelsohn, Salamon, Atiyah--Bott) are named in file headers and are never Lean axioms; the certificates establish the finite and arithmetic content those theorems consume.
 
 \texttt{M1\_L1\_drive.lean} (Section~\ref{sec:drive}): $M_{0}\in\mathrm{SL}_{2}(\Z)$ of trace three; $SM_{0}S^{-1}=M_{0}^{-1}$; $t^{2}>4$, $t>0\Rightarrow t\geq3$; reduced forms of discriminant five are $(\pm1,1,\mp1)$, one cycle; odd trace $\Leftrightarrow$ order three in $\mathrm{SL}_{2}(\mathbb{F}_{2})$, by finite check; $\bar M_{0}$ of order three; $M_{0}=F^{2}$ with $F$ the Fibonacci matrix, the Fibonacci recursion in the entries, and $F\notin\mathrm{SL}_{2}(\Z)$; $\det(M_{0}-I)=-1$ (not used in the text).
 
@@ -852,7 +968,9 @@ Five files, Lean 4.15.0, core library only, no Mathlib, no author axioms, zero \
 
 \texttt{M1\_L5\_vacuum.lean} (Section~\ref{sec:theorem}): elimination of the scale to $Q_{w}^{2}(18u+1)=Q_{c}^{2}u^{2}(6u+1)$; specialisation at $(3,6)$ to $6u^{3}+u^{2}-72u-4=0$.
 
-The five files follow verbatim.
+\texttt{M1\_L6\_twist.lean} (Section~\ref{sec:twist}): for the thirty-five divisors of flux at most three on the four corners, with the count of states of Lemma~\ref{lem:states}(b) taken as given: the product of the corner signs is $(-1)^{d}$; the patterns the drive leaves in place; flux one fails clause~(iii); flux two cannot meet both clauses; flux three meets clause~(iii) always, has one odd corner, and meets clause~(ii) exactly when that corner is not $P_{1}$; the least flux meeting both is three; the case $D=3P_{4}$.
+
+The six files follow verbatim.
 
 \subsection*{\texttt{M1\_L1\_drive.lean} --- the drive}
 \lstinputlisting{M1_lean/M1_L1_drive.lean}
@@ -868,6 +986,9 @@ The five files follow verbatim.
 
 \subsection*{\texttt{M1\_L5\_vacuum.lean} --- the moduli}
 \lstinputlisting{M1_lean/M1_L5_vacuum.lean}
+
+\subsection*{\texttt{M1\_L6\_twist.lean} --- the twist of the fibre}
+\lstinputlisting{M1_lean/M1_L6_twist.lean}
 
 \section{The labelling of the corners}\label{app:labels}
 
@@ -894,6 +1015,7 @@ The four corners are named by position, $P_{1}=(0,0)$, $P_{2}=(\tfrac12,0)$, $P_
 \bibitem{Satake} I. Satake, The Gauss--Bonnet theorem for V-manifolds, \emph{J. Math. Soc. Japan} 9 (1957) 464--492.
 \bibitem{Taussky1949} O. Taussky, On a theorem of Latimer and MacDuffee, \emph{Canad. J. Math.} 1 (1949) 300--302.
 \bibitem{Thurston} W.~P. Thurston, \emph{The Geometry and Topology of Three-Manifolds}, Princeton lecture notes, 1980, Chapter 13.
+\bibitem{WhittakerWatson} E.~T. Whittaker and G.~N. Watson, \emph{A Course of Modern Analysis}, 3rd ed., Cambridge University Press, 1920, \S\S20.21, 20.32, 20.51.
 \bibitem{Witten1981} E. Witten, Search for a realistic Kaluza--Klein theory, \emph{Nucl. Phys. B} 186 (1981) 412--428.
 \end{thebibliography}
 

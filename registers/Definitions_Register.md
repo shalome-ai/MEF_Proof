@@ -71,11 +71,16 @@
 | **reduction** (ρ) | the four-dimensional data obtained by integrating over K₈ in the two stages of M2 Def 2.5(iii) | audit draft Def 5.1 | candidate wording; awaits the PI |
 | **regular configuration** | fields defined at every point of M₁₂ and smooth away from the corners and walls of the pillowcase | audit draft Def 5.1 | candidate wording; depends on "wall", which is undefined |
 
-### Proposed 10 November 2026 (second session), from M1 v4 working draft; awaiting the PI. These replace the v3-draft wording of the rows "seen", "projection", "shadow" above; "regular" is withdrawn (not used in v4).
+### From M1 v4 working draft, 10 November 2026 (second session). **Banked by the PI, 10 Nov 2026 (P36).** These replace the v3-draft wording of the rows "seen", "projection", "shadow" above; "regular" is withdrawn (not used in v4).
 | Term | Definition | Defined at | Notes |
 |---|---|---|---|
-| **seen** | T × Σ, the pieces carrying time and space: "what is seen is the image of M under the projection π … that forgets F" | M1 v4 Def 2.1 | PROPOSED. A reading; the first of M1's five numbered choices |
-| **projection** (π) | π: M → T × Σ, π(t,x,f) = (t,x) | M1 v4 Def 2.1 | PROPOSED |
-| **shadow** (sense of the fifth axiom) | "the image under π of a point or of a subset of M" | M1 v4 Def 2.1 | PROPOSED. The only sense in which M1 uses the word (P26(c)) |
-| **step** | "One application of this map [the return map of the drive on the torus] is a step of the drive" | M1 v4.1 §4.1 | PROPOSED (agreed as item 23). The drive's numbers (φ², 2 log φ) are per step |
-| **time circle** | the circle T; three steps of the drive under the reading of Cor 7.4 | M1 v4.1 Cor 7.5 | PROPOSED (agreed as item 23; P28). M2's "circuit" is used for a step: COLLISION, to be settled when M2 is revised |
+| **seen** | T × Σ, the pieces carrying time and space: "what is seen is the image of M under the projection π … that forgets F" | M1 v4 Def 2.1 | BANKED (P36). A reading; the first of M1's five numbered choices |
+| **projection** (π) | π: M → T × Σ, π(t,x,f) = (t,x) | M1 v4 Def 2.1 | BANKED (P36) |
+| **shadow** (sense of the fifth axiom) | "the image under π of a point or of a subset of M" | M1 v4 Def 2.1 | BANKED (P36). The only sense in which M1 uses the word (P26(c)) |
+| **step** | "One application of this map [the return map of the drive on the torus] is a step of the drive" | M1 v4.1 §4.1 | BANKED (P36) (agreed as item 23). The drive's numbers (φ², 2 log φ) are per step |
+| **time circle** | the circle T; three steps of the drive under the reading of Cor 7.4 | M1 v4.1 Cor 7.5 | BANKED (P36) (agreed as item 23; P28). M2's "circuit" is used for a step: COLLISION, to be settled when M2 is revised |
+| **twist of the fibre**; **flux** d | "the line 𝒪(D) on E of a divisor D = Σ aᵢPᵢ on the corners … Σ aᵢ = d"; flux zero: a flat line with holonomy ±1 | M1 v4.3 Def 7.4 | BANKED (P36) (P34) |
+| **half-turn twist** | one of the three non-trivial flat lines of flux zero on the covering torus | M1 v4.3 Def 7.4 | BANKED (P36). The corpus's "Möbius" sectors (Paper XV ll.395–405) |
+| **state of the fibre at rest**; **state on the pillowcase** | "a holomorphic section of the twist"; one "that the lifted fold leaves unchanged" | M1 v4.3 Def 7.4 | BANKED (P36). The reading that these are the "objects" of the fifth axiom is the second of M1's six numbered choices |
+| **corner sign** | "(−1)^{aᵢ}, the action of the first lift on the fibre of 𝒪(D)" at Pᵢ; the four taken up to one overall sign | M1 v4.3 Def 7.4 | BANKED (P36) |
+| **shadow** (of a state) | "Two states of the fibre at rest have the same shadow: they differ only in the internal piece" | M1 v4.3 Def 2.1(iii), Def 7.4 | BANKED (P36); extends the row *shadow* above from points to states |

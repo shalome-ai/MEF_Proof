@@ -55,4 +55,23 @@
 
 **Not changed, and open:** Corollary 7.4's first sentence and tag. Atiyah–Bott does not contain it (Verified References V-7), and the derivation attempted on 10 November gives the opposite sign for the structure M1 constructs (`CORNER_LIFT_DERIVATION.md`). Corollary 7.5 depends on it.
 
-**Still owed:** the PI's decision on Corollary 7.4; the renumbering of CLAUDE.md §5's readings and of M2's "fifth reading"; item 21 (how the display of K₈ is written).
+## v4.3 (10 November 2026, later): the fifth axiom's two clauses; the twist of the fibre (Decision Log P33, P34)
+
+| Where | Change | Source |
+|---|---|---|
+| §1.1, §1.2 | the fifth observation and the paragraph on the axiom say both things a shadow does: several things in one shadow, one thing in several | PI, record §26 |
+| Axiom 5 and §2.1 | the axiom is the PI's two sentences; §2.1 says which clause formalises which half (P35) | P35 |
+| Def 2.1 | gains clause (ii) (the structure carried by the internal piece is not carried to itself by one step of the drive) and clause (iii) (the internal piece has at least two independent states at rest with the same shadow); a paragraph says where the words are made exact | P34 |
+| §2 | six numbered choices (was five): the new one, second, is that an object is a state of the internal piece at rest and its shadow what is left when the internal piece is forgotten | P34 |
+| **new §7.4 "The twist of the fibre"** | Definition 7.4 (flux, states, corner sign); Lemma 7.5 (states, the fold and the drive); **Proposition 7.6: the least flux meeting both clauses is three, with one odd corner, a cycled one; two states on the pillowcase, one removed by the fold**; the smallest case by hand; three remarks | `SHADOW_TWO_CLAUSES.md` |
+| Cor 7.7 (the corner lift; was 7.4) | rests on Proposition 7.6; tagged [D]; no longer cites Atiyah–Bott | Verified References V-7; `CORNER_LIFT_DERIVATION.md` |
+| after Cor 7.7 | the paragraph "a reading … not the option minimality would take" is replaced: the cycled odd corner is clause (ii) at work | P34 |
+| Cor 7.8 (the time circle; was 7.5) | "with the corner signs of Corollary 7.7" | follows |
+| Thm 8.1 | "flux three on the fibre with one odd corner"; six readings; the proof and the deflationary reading say the fifth axiom enters twice, and what is lost without the reading | P34 |
+| worked case (the eight corner functions) | "the odd flux of the fibre" in place of "the odd determinant class" | follows |
+
+36 pages; 56 edits to canon v2. Gates 1, 2, 4, 5 pass; gate 3 as before. Step audit: `STEP_AUDIT.md` §8.
+
+**Numbering after v4.3.** Section 7: Def 7.4, Lemma 7.5, Prop 7.6 are new; the corner lift is Cor 7.7, the time circle Cor 7.8, Σ = S³ Prop 7.9, the base Thm 7.10.
+
+**Still owed:** pages for the two classical references (V-8, V-9); a Lean certificate for the finite part of Proposition 7.6; a fresh read of §7.4's wording by a blind checker; the renumbering of CLAUDE.md §5's readings and of M2's "fifth reading"; item 21 (how the display of K₈ is written).

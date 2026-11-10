@@ -154,3 +154,33 @@ On the revised assumptions 1–6 (`papers/M1/REWRITE_ASSUMPTIONS.md`, "Fourth re
 
 On the two questions (is the role of the fifth axiom in M1 that there is a hidden piece at all and that what we see is its shadow; are items 10, 12, 13, 16, 17 struck):
 > "1. yes that is the role, nothing more 2. yes strike them"
+
+## 26. The shadow axiom and the twists of the fibre (same day, later session)
+On Corollary 7.4, after the derivation and the reading of the corpus:
+> "it should follow from the axioms - same three carried to the fibre -and does it ?"
+
+> "I think it is the shadow axiom. To hide something you have to turn it away - the twist does the hiding - let's discuss.  At the moment the shadow axiom is doing absolutely nothing in M1 for the m12 manifold. And yet the shadow results in all of the exotic maths - and that is what we have been circling and I think that is the issue with your proofs"
+
+> "We had a \"A flat half-turn twist (a Möbius twist; three of them)\"  and \"Flux of odd degree, e.g. three units\" exactly in paper XV .  Yes exactly - and i think it is the shadow axiom that generates them.  Because the shadow does two things.  The same shadow can be describing two different objects, and a single object can have multiple shadows.  One twist causes one of the phenomenon, and the other twist the other"
+
+(Tested: `papers/M1/SHADOW_TWO_CLAUSES.md`.)
+
+## 27. The two clauses confirmed and written into M1 (same day, later session)
+On the three questions of `papers/M1/SHADOW_TWO_CLAUSES.md` §8 (are Clauses I and II what is meant by the two things the shadow does; is the pillowcase the right place to count the states; shall it be written into the M1 draft):
+> "1. yes 2. yes 3. yes, write it into M1"
+
+## 28. The axiom to be written about the two kinds of shadow (same day, later session)
+> "1. Is it necessary to show this - to be congruent to Paper XV
+> 2. Shouldn't we show that these clauses are the axiom - it will need the axiom to be written specifically about two different kinds of shadows which i wrote earlier : \"  The same shadow can be describing two different objects, and a single object can have multiple shadows.   Two types of twists could cause these two different phenomena :  One twist causes one of the phenomenon, and the other twist the other\""
+
+(Question 1 refers to "that this three is the three of ℂP²". Answered in the session; Future-Mx F-9 proposed.)
+
+## 29. What is left to complete M1 (same day, later session)
+In reply to the twelve numbered items put by the architect:
+> "1. read all good
+> 2. keep as is - an exception
+> 3. banked all  3
+> 4. what is this ?
+> 5. -8. yes please do
+>    9. yes do
+>    10. -12 agreed"

@@ -169,3 +169,39 @@ A fresh sub-agent was given the second-pass steps as fourteen numbered items wit
 ### 7d. Proposition 8.2 restored (PI, 10 November 2026)
 
 Row P11 above is superseded. Proposition 8.2 stands as in v2, with one change in its proof: the stationarity conditions are named as a declared assumption with its failure test, in place of "their derivation belongs to the sequel". Theorem 8.1 keeps "no continuous modulus" and names the assumption among its hypotheses. Not re-examined in this pass, and left as in v2: "R_w, R_c … tied by the warp to the two periods" and "one unit per corner-cycled sector".
+
+---
+
+## 8. M1 v4.3 (working draft) — the fifth axiom's two clauses and the twist of the fibre (10 November 2026; Decision Log P33, P34)
+
+This supersedes §6's conclusion that the axiom "restricts no member of the family", and rows P3–P5 of §7 together with §§7b–7c: Corollary 7.4 no longer rests on Atiyah–Bott or on a separate reading. Numbers below are those of the built v4.3 (Section 7: Def 7.4, Lemma 7.5, Prop 7.6, Cor 7.7 the corner lift, Cor 7.8 the time circle).
+
+| # | Step | Status | Note |
+|---|---|---|---|
+| A1 | Def 2.1(ii): the structure carried by the internal piece is not carried to itself by one step of the drive | **DECLARED** (the axiom's first further clause; P34) | forward reference: "step" is defined in §4, the structure in §7 |
+| A2 | Def 2.1(iii): the internal piece has at least two independent states at rest with the same shadow | **DECLARED** (P34) | forward reference to Def 7.4 |
+| A3 | The reading: an object is a state of the internal piece at rest; its shadow is what is left when the internal piece is forgotten | **DECLARED**: the second of the paper's six numbered choices; confirmed by the PI (P34 (1)) | the identification step; no computation checks it. The paper's deflationary reading says what is lost without it |
+| A4 | The determinant line of a Spin^c structure on ℂP² × S² × T² has three independent integers, odd, even, even; the canonical one has zero on the torus | **CHECKED** by hand (Künneth; H¹(ℂP² × S²) = 0; w₂ = h mod 2) | cites Hatcher for Künneth, as v2 does |
+| A5 | Def 7.4: twist, flux, state, state on the pillowcase, corner sign | **DECLARED** | states are defined as holomorphic sections; that they are the harmonic spinors is given as motivation and is not a step |
+| A6 | On the untwisted spinors the fold acts alike at every corner | **CHECKED** by hand (ι*dz̄ = −dz̄); `corner_lift_check.py` K4 | |
+| A7 | Lemma 7.5(a): d independent states | **verified reference** V-8 (statement RECALLED; **CHECKED** numerically for every case used, Z2) | page of the reference owed |
+| A8 | Lemma 7.5(b): 1 + Σ⌊aᵢ/2⌋ states kept by the first lift | proof in the paper (even functions live on the quotient sphere; partial fractions), resting on V-9; **CHECKED** for all 70 divisors up to degree four (Z3, Z4); blind check derived the same formula | |
+| A9 | Lemma 7.5(c): which corner patterns the drive leaves in place | **CHECKED** (Z5; K8); from M1 Prop 4.4 | blind check agrees |
+| A10 | Lemma 7.5(d): a half-turn twist has no state; the three are cycled | proof in the paper (a section of a degree-zero line has no zeros); **CHECKED** Z1, K8 | |
+| A11 | Prop 7.6: least flux meeting both clauses on the pillowcase is three; one odd, cycled corner; two states kept, one removed | proof by cases in the paper (flux 0, 1, 2, 3); **CHECKED** Z6, Z7; **blind derivation**: "R1 and R2 together: least degree 3" | "least flux": Minimality M1-11 (proposed). Depends on A3, on counting on the pillowcase (P34 (2)), and on the freedom of the lift: see `SHADOW_TWO_CLAUSES.md` §4 |
+| A12 | The smallest case: D = 3P₄, states 1, 1/(℘ − e₄), ℘′/(℘ − e₄)² | **CHECKED** by orders at the four corners; the blind checker gave the same basis | V-9 |
+| A13 | Cor 7.7 (the corner lift): product of the corner signs (−1)^d = −1; the odd corner cycled; (−1)^{mn} with it named P₄ | follows from A6, A11 | replaces "the Atiyah–Bott fixed-point index (−1)^d for odd determinant class", which the reference does not contain (V-7) |
+| A14 | Cor 7.8 (the time circle): three steps | as §7 P7, now from A13 | the open sign of the lift (w or −w) still bears on three against six |
+| A15 | Theorem 8.1: "flux three on the fibre with one odd corner"; the fifth axiom enters twice | follows | |
+
+**Not shown, and said in the paper:** that the flux three and the three of c₁(ℂP²) are one fact and not two.
+
+**Disclosure.** The target (three, one odd corner) was known before the computation. The count on the covering torus was looked at first and gives two; the count on the pillowcase gives three; the PI has ruled the pillowcase (P34 (2)). The blind checker was given the problem with no target and no context.
+
+**Blind check of the new text of the paper:** not done; the mathematics was derived blind (`SHADOW_TWO_CLAUSES.md` §5), the wording of §7.4 has not been read by a fresh checker.
+
+**Red flags:** two forward references in Definition 2.1 (clauses (ii), (iii) use "step" and "state at rest", defined in §4 and §7). Nothing between uses the clauses.
+
+**Failure tests:** as Minimality M1-11 and `SHADOW_TWO_CLAUSES.md` §7.
+
+**Owed:** pages for V-8 and V-9; a Lean certificate for the finite part of Prop 7.6 (the counts 1 + Σ⌊aᵢ/2⌋ for degree ≤ 3 and the periods of the patterns), which the paper at present proves by hand.
