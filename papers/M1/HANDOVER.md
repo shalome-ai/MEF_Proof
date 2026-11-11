@@ -67,12 +67,28 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - Proposed, for the PI to bank by commit: V-25; the v6.1 note in the ledger; the amended Minimality rows M1-1 and M1-3.
 - Nothing is committed.
 
+## v6.2 (11 November 2026; Decision Log P57–P60)
+- The PI directed a test of the sign of the lift, then ruled: three steps, the drive's element on spinors −w, by clauses (b) and (c).
+- The test: `LIFT_SIGN.md` §7; `checks/lift_sign_all.py` and the blind `checks/lift_sign_all_blind.py`. Sixteen assignments, eight for three steps in a group of 12, eight for six steps in a group of 48.
+- Serre, *Trees*, Ch. I §4, read from pages the PI supplied; Verified References V-26.
+- `canon/M1/Paper_M1_Six_Axioms_v6_2.tex` and `.pdf` (43 pp.), built from v6.1 by `tools/m1_build_v6_2.py` (7 edits). v6.1 is in `canon/M1/superseded/`. Audit: `STEP_AUDIT.md` §10.6.
+- Proposed, for the PI to bank by commit: V-26; Minimality M1-14; the v6.2 note in the ledger.
+- Not committed (the commit of v6.1 is d91f7d6).
+
+## v6.3 (11 November 2026; Decision Log P61–P64)
+- The PI directed a test of whether A3 or A4 supplies the orientation-keeping hypothesis of clause (a); protocol agreed before it ran. Record: `ORIENTATION_AND_TIME.md`; `checks/orientation_time_check.py`, blind `checks/orientation_time_blind.py`.
+- Result: the hypothesis has two parts, both needed (a mirror image is another drive; a drive run backwards is another drive); M1 supplies neither. Trace three is unaffected.
+- The PI ruled that "only one drive" stays the main reason, with both parts declared. `canon/M1/Paper_M1_Six_Axioms_v6_3.tex` and `.pdf` (44 pp.), built from v6.2 by `tools/m1_build_v6_3.py` (9 edits). v6.2 is in `canon/M1/superseded/`. Audit: `STEP_AUDIT.md` §10.7.
+- Proposed, for the PI to bank by commit: the amended Minimality M1-12; the v6.3 note in the ledger.
+- Item 3 of the PI's list (P65): the three symbols that printed as blanks in the Lean listings are printed in v6.3 (typesetting only), and gate 1 now fails on a missing character.
+- Committed with v6.2 by the PI's direction (P65).
+
 ## Open
-- The sign of the lift (w or −w): unanswered mathematics; three steps or six (`LIFT_SIGN.md`; M1 Cor 7.8).
-- That relabellings of the torus keep orientation is a hypothesis of clause (a), not derived from the axioms; since P55 the selection of trace three rests on it (Minimality M1-12).
-- V-25: the original paper of 1931 was not read; its publication data are RECALLED.
-- Three symbols in the Lean listings of L3 and L4 print as blanks in the appendix (the listing font lacks them); in v5.0 and v6.0 as well.
-- The items under "Open, carried" and "Open, new" above.
+- For the PI, found on the way: M1 does not define when two geometries are the same.
+- The two parts of the count of clause (a) are declared and not derived (Minimality M1-12).
+- Applying clause (b) to the group of assigned elements is a flagged reading (`STEP_AUDIT.md` §10.6, S6).
+- V-25: Gödel's paper of 1931 was not read; its publication data are RECALLED. V-26: Serre's publisher and year are RECALLED. V-12 (Gauss): pages still owed.
+- The items under "Open, carried" and "Open, new" above; the sign of the lift there is closed by P58.
 
 ## Next
-- M2 opens on M1 v6.1. Its first act is the read-back, one by one, of the drafts in `registers/Rulings_In_Force.md` §4 (P52).
+- M2 opens on M1 v6.3. Its first act is the read-back, one by one, of the drafts in `registers/Rulings_In_Force.md` §4 (P52).

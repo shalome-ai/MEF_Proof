@@ -1,5 +1,7 @@
 # tools/ — the paper gates (CLAUDE.md §8)
 
+*Gate 1 also fails on a missing character since 11 November 2026 (Decision Log P65): a symbol the font lacks prints as a blank, and XeLaTeX reports it only as a line in the log.*
+
 ```bash
 python3 tools/gates.py M3          # all five gates on paper M3
 python3 tools/gates.py M3 3 4 5    # lint, Lean, names only (no TeX needed)

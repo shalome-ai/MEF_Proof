@@ -30,3 +30,24 @@ v6.1 is `Paper_M1_Six_Axioms_v6_1.tex`, built from v6.0 (`superseded/Paper_M1_Si
 | Proposition 7.3: "Spin^c is the least such structure"; the proof's sentence on the larger structure groups, uncited | "A Spin^c structure exists, and clause (b) admits no structure group larger than is needed"; no claim about the larger groups |
 | Gödel's theorem named | the first incompleteness theorem stated and cited (Verified References V-25) |
 | five certificates, 58 theorems; 40 pp. | six certificates, 66 theorems; 42 pp. |
+
+## v6.1 against v6.2 (11 November 2026; Decision Log P58, P60)
+
+v6.2 is `Paper_M1_Six_Axioms_v6_2.tex`, built from v6.1 (`superseded/Paper_M1_Six_Axioms_v6_1.tex`) by `tools/m1_build_v6_2.py` (7 edits). No result is renumbered.
+
+| v6.1 | v6.2 |
+|---|---|
+| Corollary 7.8: three steps, "the corner signs being counted up to one overall sign"; which of w and −w the drive is, left open | Corollary 7.8: three steps; on spinors the drive is −w, of cube +1, by clauses (b) and (c); six steps a consistent alternative that is declined |
+| — | the proof lists the sixteen assignments of unit quaternions to the symmetries of the torus; Serre, *Trees*, cited (V-26) |
+| 42 pp. | 43 pp. |
+
+## v6.2 against v6.3 (11 November 2026; Decision Log P61–P64)
+
+v6.3 is `Paper_M1_Six_Axioms_v6_3.tex`, built from v6.2 (`superseded/Paper_M1_Six_Axioms_v6_2.tex`) by `tools/m1_build_v6_3.py` (9 edits). No result is renumbered.
+
+| v6.2 | v6.3 |
+|---|---|
+| Definition 3.2(a): the step is the only one of its trace "up to a relabelling of the torus that keeps its orientation" | "two steps being counted as the same when a relabelling of the torus that keeps its orientation carries one to the other, and only then"; the remark after the definition states the two parts of the count (a mirror image is another step; a step run backwards is another step) and that neither is derived |
+| Proposition 4.5: "under relabellings of the torus that keep its orientation" | "with drives counted as in clause (a)"; the proof uses both parts; two paragraphs after the proof give the four counts and what M1 does and does not supply |
+| three symbols of the Lean listings (∣, ∤, 𝒪) print as blanks | printed (typesetting only; P65). Line numbers of the source are two higher than in v6.2 |
+| 43 pp. | 44 pp. |

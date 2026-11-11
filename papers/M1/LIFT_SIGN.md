@@ -54,3 +54,21 @@ Under the condition, "three spins to get back to unity" holds for spinors as wel
 ## 6. Failure test
 
 If some symmetry of the torus that fixes all four corners is shown to act non-trivially on i, j, k (for instance through M2's exchange τ or the Spin^c corner signs of Cor 7.4, where three corners carry +1 and one −1), the condition fails and the period on spinors may be six. Cor 7.4's signs are the first place to test this: they are signs attached to corners, which is exactly what the condition forbids for i, j, k.
+
+## 7. Every assignment listed (11 November 2026; Decision Log P57)
+
+Directed by the PI: "3 - test it first". Protocol fixed in the header of `checks/lift_sign_all.py` before it ran. Blind check: a fresh sub-agent, given the steps and not the results, wrote `checks/lift_sign_all_blind.py`; it agrees on every count.
+
+**Hypotheses of the list (not derived in M1).** (h1) Every symmetry of the torus, not only the fold and the drive, is assigned a unit quaternion, compatibly with composition. (h2) The assignment permutes the three lines C_i, C_j, C_k as the symmetry permutes the corners P₂, P₃, P₄; signs are free. (h3) S and U with S⁴ = 1, S² = U³ present SL₂(ℤ): **RECALLED** (the checker recalls Serre, *Trees*, Ch. I §4.2; not read), so that every pair listed is a homomorphism.
+
+| Step | Statement | Status |
+|---|---|---|
+| A0 | A unit quaternion whose rotation keeps the set of three lines is one of 48 (the binary octahedral group) | CHECKED, both scripts; argued by the checker |
+| A1 | There are 16 assignments. 8 have d³ = +1 (three steps), rotations forming a group of 6, quaternions a group of 12. 8 have d³ = −1 (six steps), groups of 24 and 48. The fold goes to −1 in all 16 | CHECKED, both scripts |
+| A2 | The condition of §4 ("a symmetry that leaves every corner in place leaves i, j, k alone") holds exactly for the 8 with three steps | CHECKED; the equivalence with "group of rotations of order 6" argued by the checker |
+| A3 | The link "each symmetry carries the unit at a corner to the unit at the corner it moves to, up to one overall sign", with any of the four corner sign patterns, carried or fixed, is met by 2 assignments each time, all with three steps | CHECKED, both scripts |
+| A4 | The link implies the condition of §4; the converse is false | argued by the checker; CHECKED |
+
+**What it shows.** Both turns exist as assignments; neither is excluded by M1. The corner signs of Cor 7.7 do not make the condition of §4 fail: the failure test of §6 does not fire under the link of A3. But the link is the condition of §4 in a stronger form (A4), so A3 is not independent evidence for three. **The sign is not decided by M1's axioms and definitions; it is a choice between an assignment in a group of 12 with three steps and one in a group of 48 with six.**
+
+**Failure test.** A later paper that needs a symmetry fixing every corner to act on i, j, k; or a reason that only the fold and the drive are assigned elements (h1 dropped), in which case the two signs differ by nothing but the number of steps.

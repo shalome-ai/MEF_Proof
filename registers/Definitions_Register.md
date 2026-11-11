@@ -8,7 +8,7 @@
 
 | Term | Defining text | Where |
 |---|---|---|
-| **minimal**; **satisfies A6** | "A geometry satisfying A1–A5 satisfies A6, and is called *minimal*, if it is selected by the following three clauses applied in order, each applied among the geometries that the previous ones leave": (a) nothing is left to be chosen; (b) nothing is present that is not needed; (c) what is needed is least. Replaces the four criteria of v5.0 | `canon/M1/Paper_M1_Six_Axioms_v6_1.tex` Def 3.2, ll.259–267 |
+| **minimal**; **satisfies A6** | "A geometry satisfying A1–A5 satisfies A6, and is called *minimal*, if it is selected by the following three clauses applied in order, each applied among the geometries that the previous ones leave": (a) nothing is left to be chosen; (b) nothing is present that is not needed; (c) what is needed is least. Replaces the four criteria of v5.0 | `canon/M1/Paper_M1_Six_Axioms_v6_3.tex` Def 3.2, ll.261–269 |
 | **clause (a), (b), (c)** | the three clauses of Definition 3.2. Not the clauses (i), (ii), (iii) of the fifth axiom (Definition 2.1) | same |
 | **everything** (in the sixth axiom) | PI's usage, confirmed (P47(1)): everything that can be observed or spoken of | Decision Log P47 |
 | **my musings:** | PI's usage, confirmed (P53): opens narrative for the architect to translate; not a ruling, not a premise, enters no paper | Decision Log P53 |

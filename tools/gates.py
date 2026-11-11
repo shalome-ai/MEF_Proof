@@ -4,7 +4,7 @@ r"""The five gates of CLAUDE.md §8 for one paper of the Mx series.
 Usage:  python3 tools/gates.py M2            # all five gates
         python3 tools/gates.py M2 3 4 5      # selected gates (2 needs 1's build)
 
-Gate 1  XeLaTeX, three passes; zero errors; zero undefined references.
+Gate 1  XeLaTeX, three passes; zero errors; zero undefined references; zero missing characters.
 Gate 2  Zero overfull boxes; margin scan clean (25 mm; only footer page numbers
         outside). The scan renders each page and flags ink more than 1 mm into the
         side or top margins, or more than 2 mm below the text block (the last
@@ -172,7 +172,8 @@ def gate1(pid):
     txt = unwrap_log(read(log))
     errors = [l for l in txt.split("\n") if re.match(r"^\S+?\.tex:\d+: ", l) or l.startswith("! ")]
     undef = re.findall(r"(Reference|Citation) [`'‘]([^'’]+)['’] on page \d+\s*undefined", txt)
-    ok = not errors and not undef and pdf.exists()
+    missing = re.findall(r"Missing character: There is no (\S+) ", txt)
+    ok = not errors and not undef and not missing and pdf.exists()
     pages = re.search(r"Output written on .*?\((\d+) pages?", txt)
     notes.append(f"XeLaTeX: {x}  (build mirror: {work})")
     notes.append(f"output: {pages.group(1) + ' pages' if pages else 'NO PDF'}; "
@@ -186,6 +187,10 @@ def gate1(pid):
                      f"({'matches' if n == int(pages.group(1)) else 'DIFFERS'})")
     notes += [f"error: {e}" for e in errors]
     notes += [f"undefined {k.lower()}: {name}" for k, name in sorted(set(undef))]
+    if missing:
+        from collections import Counter as _C
+        notes.append("missing characters (the font lacks them; they print as blanks): "
+                     + ", ".join(f"{ch} x{n}" for ch, n in sorted(_C(missing).items())))
     if "Label(s) may have changed" in txt:
         notes.append("warning: labels still changing after three passes")
     return ok, notes

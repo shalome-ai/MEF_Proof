@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build M1 v6.1 from v6.0 (Decision Log P55, P56).
-  python3 tools/m1_build_v6_1.py canon/M1/superseded/Paper_M1_Six_Axioms_v6.tex canon/M1/Paper_M1_Six_Axioms_v6_1.tex
+  python3 tools/m1_build_v6_1.py canon/M1/superseded/Paper_M1_Six_Axioms_v6.tex canon/M1/superseded/Paper_M1_Six_Axioms_v6_1.tex
 Every edit must match exactly once.
 
 Scope: (1) clause (a), one drive, is the ground of trace three and clause (c), least entropy, agrees (P55);

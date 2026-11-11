@@ -24,7 +24,7 @@
 
 ## 3. In force for M1
 
-M1 is v6.1, six axioms, in canon since 11 November 2026 (P54, P56).
+M1 is v6.3, six axioms, in canon since 11 November 2026 (P54, P56, P60, P64).
 
 | Ruling | Source |
 |---|---|
@@ -35,7 +35,8 @@ M1 is v6.1, six axioms, in canon since 11 November 2026 (P54, P56).
 | Clause (a) is written for two data only: a dial, and the class of the drive among those of its trace. Clause (c) names the quantities it applies to (entropy, dimension, flux, steps) and is applied after clause (b) | P49(1) |
 | "Everything" in the sixth axiom is everything that can be observed or spoken of | P47(1) |
 | ω, ψ, ψ̄ and Φ_QC do not enter M1 | P43(1) |
-| The ground of trace three is clause (a): at trace three there is one drive, and at every larger trace at least two. That it is also the least entropy, clause (c), is true and is not the ground | P44; P55, confirmed P56 |
+| The ground of trace three is clause (a): at trace three there is one drive, and at every larger trace at least two. That it is also the least entropy, clause (c), is true and is not the ground. The count of drives in clause (a) is declared, not derived: a mirror image is another drive, and a drive run backwards is another drive | P44; P55, confirmed P56; P63, P64 |
+| On spinors the drive is the element of cube +1 (−w, the long way round) and the time circle is three steps, by clauses (b) and (c). Six steps is a consistent alternative that the sixth axiom declines | P58 |
 | The overall size of the shape has no meaning; only proportions do. The aspect ratio of the fibre is the declared input of M1's theorem | P45(3), P46(2) |
 | The sixth axiom gives that nothing is absolute; the fifth gives that the inside view is incomplete; together they resemble Gödel's theorem. An analogy, tagged [M]; nothing is derived from it | P47(2) |
 
@@ -71,7 +72,7 @@ Dropped from the briefing (P50, C1): that the PI's three earlier texts are the r
 
 ## 6. Leads
 
-Leads are recorded in the Decision Log and are not premises: P42 (the object moving in the ω field; the time frames; the several light sources; the four-quadrant figure), P46(4) and P53: the sixth axiom as what helps to explain the collapse of the wavefunction and Schrödinger's question of what life is (P53(3)); the fifth axiom as what helps to define "the zeta term / Phi_QC" (P53(4), to be taken with the M2 drafts).
+Leads are recorded in the Decision Log and are not premises: P42 (the object moving in the ω field; the time frames; the several light sources; the four-quadrant figure), P46(4), P63 and P64 (block time: every frame exists, a rule connects them, and the sequence is how it is experienced) and P53: the sixth axiom as what helps to explain the collapse of the wavefunction and Schrödinger's question of what life is (P53(3)); the fifth axiom as what helps to define "the zeta term / Phi_QC" (P53(4), to be taken with the M2 drafts).
 
 A statement the PI opens with "my musings:" is narrative for the architect to translate. It is not a ruling or a premise and stays out of the papers (P53(6)).
 
