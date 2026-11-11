@@ -106,3 +106,16 @@ s is the coordinate round the time circle, r = e^{κs}, (S³) the lengths on the
 **Blindness (CLAUDE.md §5), recorded at the PI's remark of this date.** The PI gave as a reason for form a that the universe is observed to expand. A reading chosen for that reason is chosen with the target in view. If form a is taken, the expansion of space is an input of M2 and cannot later be counted as something M2 derives.
 
 **Forms b and c compared (CHECKED).** Write (K) for the lengths of the internal piece and (B) = κ²ds² + (S³). Form b is e^{2κs}·(B) + (K). Form c, with the whole internal piece shrinking as time advances, is (B) + e^{−2κs}·(K). Then b = e^{2κs}·c: at each moment the two have every proportion in common, and they differ only by a change of unit that depends on the time. They are not the same lengths (in b the block is flat, in c it is a cylinder), so whether they count as one shape depends on whether a unit may be chosen afresh at each moment. M1 says only that overall size has no meaning (l.255); it does not say whether that holds moment by moment. Not settled.
+
+## The integer on S² (P85)
+**Ruled: two.** Entry for the audit:
+| Step | Mark |
+|---|---|
+| M1's rule: the structure of the shape's own complex structure, no further datum; any other needs a twisting line that clause (b) removes | READ, M1 ll.693, 712, 918 |
+| The rule applied to S² gives the sphere's own winding | DECLARED (confirmed reading, P85) |
+| The sphere's own winding is two | **GAP — RECALLED.** By the sequence M1 uses for CP² (l.683) written for the projective line, (1 + h)² with h² = 0 gives 2h; to be read at source (N2) |
+| States on the sphere for a further line of flux e: the functions on the sphere with a pole of order at most e at one point | CHECKED, by M1's count (l.739): polynomials of degree at most e, so e + 1 for e ≥ 0; for e = −1 a function with no pole and a forced zero, so none |
+| The integer n on S² and the further line: n = 2 + 2e (M1 l.712, the twist by a line of degree d adds 2d) | READ |
+| So n = 0, 2, 4 give none, one, two states on the sphere | CHECKED from the two rows above |
+| The states at rest on the whole internal piece are counted by the product over CP², S² and the fibre | **GAP — RECALLED**; N2 |
+| One state on CP² for the canonical structure | **GAP — RECALLED**; N2 |

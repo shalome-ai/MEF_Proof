@@ -15,6 +15,7 @@ This file is a plan. It holds no result. Line numbers are those of canon M1 v6.3
 | R7 | The integer of the determinant line on S² is owed; the vector-field lead is withdrawn; M2 from M1 v6.3 alone, the PI asked where a reading has to be chosen | P77; P78 |
 | R8 | The field is on the shape, satisfies all six axioms at once, and creates the growth and decay | P79 |
 | R9 | The growth runs along time; a circuit later the shape is larger by a fixed factor and is the same shape; what grows as time advances, (a) space or (b) time and space together, is an unknown for the equation. M1 is not changed | P81; P84 |
+| R10 | The integer of the determinant line on S² is two: M1's rule applied, no further twisting line | P85 |
 | R6 | For M2 the sixth axiom speaks of a shape and one field; N3 says what the field is. ω does not enter M1; the musing on ω is withdrawn | P76; P75 |
 
 **Flagged, not resolved (P76):** step 4 of P69 has the functional "built from the shape alone"; with R6 the one object is the shape with its field, and whether the field is itself built from the shape is not ruled.
@@ -62,7 +63,7 @@ N0 ──► N1 ──► N3 ──► N4 ──► N5 ──► N6 ──► N7
 
 Not a datum: overall size (ll.255, 271). Fixed by M1: every piece, the twist and the integers the theorem names (ll.967–971).
 
-**Amended after the independent check (P77):** rows 7 and 8 widened as shown. **Owed (P77):** one whole number is not stated in M1, the integer of the determinant line on S², of which M1 says only "even" (ll.707, 712, 938, 971).
+**Amended after the independent check (P77):** rows 7 and 8 widened as shown. **Owed (P77), now ruled to be two (P85):** one whole number is not stated in M1, the integer of the determinant line on S², of which M1 says only "even" (ll.707, 712, 938, 971).
 
 ## What M2 owes M1
 - The warp's law (l.127).

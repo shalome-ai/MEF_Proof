@@ -25,7 +25,7 @@ Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3 and 
 | P74, P77 | The odd places in M1 are noted and carried. M1 is not changed |
 | P75 | ω does not enter M1. The PI's musing on ω is withdrawn |
 | P76 | For M2 the sixth axiom speaks of a shape and one field |
-| P77 | The integer of the determinant line on S² is not in M1 v6.3 and is owed. **To be discussed with the PI when required; "it will be important to get right" (P79)** |
+| P77, P85 | The integer of the determinant line on S² is not in M1 v6.3. **Ruled: two** (P85): M1's own rule applied, the sphere carrying the winding of its own complex structure and no further twisting line. M1 is not edited. Rests on two RECALLED facts that N2 must read at source: the sphere's own winding is two; the counts of states multiply across CP², S² and the fibre |
 | P78 | The vector-field lead is withdrawn. M2 from M1 v6.3 alone, with external theorems cited |
 | P79, P82 | The field is on the shape, satisfies all six axioms at once, and creates the growth and decay |
 | P81 | A shape and the same shape a circuit of time later, larger by the factor of that circuit, are the same shape |
@@ -40,7 +40,7 @@ Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3 and 
 - `papers/M2/STEP_AUDIT.md`: entries owed before derivation; red-flag scan of M1; hand computations; the independent check of N0; the examination of where the growth can sit.
 - `papers/M2/N1_what_varies.md`: draft of N1. Not reviewed by the PI.
 - `papers/M2/N3_field_and_functional.md`: first half of N3. What the field is; a proposed meaning for "the field satisfies" each axiom; nine requirements any functional must meet, fixed before a functional is looked at. Not reviewed by the PI.
-- Decision Log P71–P84. The M2 Status cell of the series plan.
+- Decision Log P71–P85. The M2 Status cell of the series plan.
 
 Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2/` is still to be created). Nothing was committed.
 
@@ -60,7 +60,6 @@ Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2
 - The six proposed meanings of "the field satisfies A*n*" (N3 §3).
 
 ## Needs a ruling or a direction
-1. **The integer on S²**, 0 or 2. It is needed to name the bundle the field is a section of. To be discussed, not decided by the architect.
 2. **Review of N1 and of N3 first half** by the PI, in particular N3 §3 (the six meanings) and §4 (the nine requirements).
 3. **What selects the functional if several pass Q1–Q9.** M1's clause (a) can exclude and cannot pick (l.271).
 4. **Whether a unit may be chosen afresh at each moment** (decides whether (b) and "the internal piece shrinks" are one option).
@@ -72,7 +71,7 @@ Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2
 - **Minimality Register:** P76 as a numbered choice of M2; later, the six meanings of N3 §3.
 - **Definitions Register:** shape, admissible relabelling, the same, small movement (N1 §2); the field, at rest (N3).
 - **Corpus Errors Register, M1 v6.3,** each marked "reading may be wrong; no finding of M1 depends on it" unless said: Def 2.3 with Def 2.2; "the warped piece"; the aspect ratio as one number; f–k of the step audit (j, l.578, is a slip in a worked example); the place of the "w" in the display (l.125), which M1 says is not fixed.
-- **Future-Mx Register:** M2 owes M1 the warp's law (l.127), the functional (ll.258, 992), the discharge of the declared input (l.992). M1 owes the integer on S².
+- **Future-Mx Register:** M2 owes M1 the warp's law (l.127), the functional (ll.258, 992), the discharge of the declared input (l.992). The integer on S² (two, P85) is stated in M2 as M1's rule applied.
 
 ## Open
 - N2, as scoped above.
