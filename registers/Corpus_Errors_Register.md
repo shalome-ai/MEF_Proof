@@ -102,3 +102,5 @@ Source: `papers/M1/STEP_AUDIT.md` §11 (the architect's table, two blind readers
 (o) **Definition 2.7, its two levels** (l.214): on one tangent space the tangent-level I, J, K, acting on spinors through the Clifford action, do not obey the quaternion relations and generate an algebra of dimension 30 (CHECKED twice, `papers/M1/COMMUTANT_LEAD.md` §4). "Acts through" for "acts … as" would be consistent. With the PI.
 
 **Action.** One new version of M1 when J2–J11 are ruled (P92(3)). Items (b), (h)–(n) are wording and are corrected in it; (c)–(f) and (o) wait for their rulings.
+
+**Note, 11 Nov 2026 (P97).** Since this entry was written the PI has ruled on J10 in principle: the unnumbered readings become numbered choices, the list to be drawn up when J10 is taken.

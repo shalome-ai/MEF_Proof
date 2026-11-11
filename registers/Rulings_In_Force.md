@@ -40,6 +40,8 @@ M1 is v6.3, six axioms, in canon since 11 November 2026 (P54, P56, P60, P64).
 | On spinors the drive is the element of cube +1 (−w, the long way round) and the time circle is three steps, by clauses (b) and (c). Six steps is a consistent alternative that the sixth axiom declines | P58 |
 | The overall size of the shape has no meaning; only proportions do. The aspect ratio of the fibre is the declared input of M1's theorem | P45(3), P46(2) |
 | The sixth axiom gives that nothing is absolute; the fifth gives that the inside view is incomplete; together they resemble Gödel's theorem. An analogy, tagged [M]; nothing is derived from it | P47(2) |
+| The spinor bundle of Definition 2.7 is the complex spinor bundle, and data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in ℂ ⊗ Im ℍ ≅ ℂ³. The tenth numbered choice of M1; a declared choice, not shown to be selected by the sixth axiom. Not yet stated in canon: it goes into the new version | P92; Minimality M1-15 |
+| The integer of the determinant line on S² is two, and the new version of M1 states it. Not yet stated in canon | P97(1) (first confirmed for M2 in P85); Minimality M1-16 |
 
 ## 4. Drafts for M2: not rulings
 

@@ -484,6 +484,8 @@ The table is a list of examples. It is not exhaustive and the proof does not use
 
 **What would show this table wrong (failure test of the audit).** T3: a line of M1 that derives "Anosov, commuting with ι, with a return map" from Def 2.9 before l.501. T5: a line that applies least dimension to the fibre by a named clause. T7: an order of Props 7.1–7.3 in which each rests only on what precedes it. T14: a passage that checks M₁₂ against Defs 2.1–2.9.
 
+*(There is no §11.2: the numbering runs 11.1, 11.3.)*
+
 ### 11.3 Blind reader B: the fourteen competitors (returned 11 November 2026)
 
 **What it was given.** Canon M1 v6.3 ll.58–119 and 131–947 with line numbers, and nothing else: ll.120–130 (the summary of results), ll.948–end (Theorem 7.10, Section 8 with the theorem and the table, the outlook, the appendices), the abstract and the title page were withheld. It was given the fourteen competitors and the result named against each, without the "Fails at" column and without the tags, and was asked whether the text excludes each, by what, on what hypotheses, and with what tag. It was not told the architect's verdicts. Standing: model output, as §11.1 is. Its arithmetic script is kept as `checks/thm81_blindB_chk.py` and was re-run here.
@@ -609,3 +611,64 @@ The table is a list of examples. It is not exhaustive and the proof does not use
 - **Flagged in P92:** no argument that the sixth axiom selects complex over real or quaternionic spinors. **Failure test (P92):** a later paper needs spinors that are real or quaternionic and not complex; or the complex-valued units of (b) cannot be what the complex spinors carry.
 - **Correction to §11.5, "Not done".** Of the three statements RECALLED by the readers, the one on the Clifford algebra in dimension twelve is now CHECKED (`COMMUTANT_LEAD.md` §4). The genus-three example and the flag manifold remain RECALLED.
 - **Independent check of the handover** (a fresh reader, given the handover and the files it cites under the M2 reading limits): 26 findings, corrected in `HANDOVER.md`, in the note of the M2 handover, in Decision Log P90 and here.
+
+### 11.8 Findings on M1 v6.3 carried from the notes of the second start of M2 (11 November 2026; Decision Log P95)
+
+M2 is to be started from scratch on the new version of M1 and its files are sealed (P95). The findings below are about M1 and were made while reading M1 for M2; they are copied here so that the new version of M1 is built with them. **Sources, all read by the writing session and all now sealed or off the reading list:** `superseded/M2_second_start/STEP_AUDIT.md`, "Independent check of N0" (rows a–k); Decision Log P71, P74, P77, P85; that start's handover. The marks are the sources'. **The column "Meets" is the architect's mapping.** M1's definition of growth and decay (l.190) is Definition 2.4 by the count of the source file; the M2 notes and rows call it "Def 2.3". The first hypothesis in each is that the reading is wrong.
+
+| # | Finding | Mark in the source | Meets |
+|---|---|---|---|
+| M-a | The integer of the determinant line on S² is not stated: "even" only (ll.707, 712, 938); the theorem names 𝒪(3) on ℂP² and flux three on the fibre and gives no value on S² (l.971) | READ (row a; P77) | T10. The PI confirmed the reading "two" for M2: P85, "Agreed, 2 - record it and proceed. I can't see any reason to change it". **Ruled (P97): the new M1 states two** (Minimality M1-16) |
+| M-d | The measure for which the periodic points have "measure zero" is not named (ll.229, 232, 290) | READ (row d) | J2 |
+| M-e | Cross terms between the pieces are not excluded (l.163) | READ (row e) | J4 |
+| M-f | Definition 2.4(iii), l.190: "ι*κ = −κ" for "a constant κ". The pull-back of a constant is the same constant, so κ = 0, against κ ≠ 0 | CHECKED, one line (row f; P77) | J3 |
+| M-g | Definition 2.4(i), l.190, asks for a warped product "in (2.1)", which has two products, T × Σ and (T × Σ) × F; the display (l.125) writes both plain and puts the warp inside F | READ (row g) | J3; T13 |
+| M-h | "The base over which F sits" (ll.209, 220) against F = base × fibre, dim F = 8 (ll.617, 650). Wording | READ (row h) | Corpus Errors entry 32, item (n) |
+| M-i | The elimination table excludes bases with moduli by clause (a) with tag [R] (l.1013), while the functional that defines a modulus is not defined (l.258), and the fibre torus keeps its own shape parameter by a declared input | READ (row i) | J4; J8 (row E12) |
+| M-j | The worked example of a trivial stabiliser, l.578. The point (1/3, 0) is fixed by ι∘M₀²: M₀² = (5 3; 3 2), M₀²(1/3, 0) = (5/3, 1) ≡ (2/3, 0), and ι sends that to (1/3, 0). Every rational point is periodic (l.290), so none has trivial stabiliser. By the rule of Proposition 5.6 (l.521) the algebra at (1/3, 0) is then what conjugation composed with Ad_w² fixes: a + v with −Rv = v, R a turn of order three, which has no eigenvalue −1, so v = 0 and the algebra is ℝ, not ℍ. P77: "the worked example at l.578 is wrong as written" | CHECKED (row j; P77) | **not among J1–J11: a new item** |
+| M-k | The block "modelled on ℝ_{>0} × S³" (ll.615, 943) against a compact time circle (l.178) | READ (row k) | J3 |
+| M-P74(i) | Definition 2.4 (l.190) with Definition 2.3 (l.178): a smooth w on a compact piece without boundary cannot have dw/ds = κw with one constant κ ≠ 0 throughout. The computation, as P74 has it: at the maximum of w the gradient vanishes, so κw = 0 there and the maximum is 0; likewise the minimum; so w ≡ 0, against ∇w ≠ 0. Clause (iii) suggests that κ changes sign; the text does not say where | CHECKED by hand (P74) | J3; found again by both blind readers of §11 |
+| M-P74(ii) | "The warped piece" has two readings. P74 cites ll.190(iii) and 193; the phrase is at l.190(iii), and l.193 speaks of "the fold that halves the internal piece" | READ; "noted only" (P74) | J3 |
+| M-P74(iii) | The aspect ratio (l.602). As P74 has it: a flat torus has two shape parameters and not one (four for a lattice, less rotation and scale); and no flat shape of the torus is kept by a step of the drive: if M₀ᵀgM₀ = cg then c = 1 and M₀ would have eigenvalues of modulus one; they are φ^{±2} (M1 agrees at ll.344, 723) | CHECKED by hand (P74) | J4; the second half found again by both blind readers |
+| M-sector | "Declared sector" (l.967) occurs once in M1 and is not defined | READ (P74) | J4; T15 |
+| M-w | The place of "×_w" in the display (l.125); M1 itself says nothing derived depends on it (l.127) | READ (the second start's handover, its list for the Corpus Errors Register) | T13 |
+| M-list | **The continuous data M1 v6.3 leaves unfixed, eight rows** (P71, with the amendments of P74 and P77; this is what §11.1 T15 calls "seven other continuous data" besides the aspect ratio): (1) the flat shape of the fibre, named in M1 as the aspect ratio (ll.602, 239, 967, 992): two parameters, and how it is carried round time; (2) the warp: which piece is scaled and by a function on which (ll.127, 190); (3) the warp's constants κ and w₀ (l.190); (4) the relative sizes of T, S³, ℂP², S² and the fibre (M1 silent; ll.239, 255); (5) the metric on each piece (M1 silent; ll.55, 143); (6) the length of the time circle and the parametrisation of the flow (ll.232, 277, 837); (7) the almost-quaternionic structure as a subbundle, with the spinor bundle and the Clifford action (l.214); (8) the connection on the Spin^c line and on the twist, with their Hermitian metrics and the forms that carry the flux (ll.693–703, 717, 934–938) | READ, each row (P71, P77). **Completeness is not proved:** "the architect's reading … marked UNVERIFIED" (P71); found independently by a second reader (the source's "Agreement" paragraph) | J4 |
+
+**Not carried:** the readings confirmed for M2 (P72, P76, P79, P81, P84), which are about M2; the report's RECALLED statements.
+
+### 11.9 Reader A's list of readings not among the nine numbered choices, in full (for J10; Decision Log P97(2))
+
+Reader A's report is kept in no file of its own; §11.4 quotes parts of it by A's own numbering ("its 4.1–4.28", "its 7.10", and so on). Its item 4 is copied here from the report as returned, because P97(2) has the list for J10 drawn from it. Lines are of canon M1 v6.3; the words in quotation marks are M1's. The nine numbered choices are at ll.163, 181, 193, 211, 223, 239, 247. Standing: a reader's list, model output; each item is put to the PI before it is numbered, since some may prove to be consequences and not choices (P97(2)).
+
+| A's # | Line | The meaning, identification or selection |
+|---|---|---|
+| 4.1 | l.143 | "A geometry here is a smooth shape … on which lengths and angles can be measured, and which is allowed to have a few isolated sharp points": the class of objects |
+| 4.2 | l.163 | "Writing M this way is only a way of naming the pieces … the internal piece may be carried round time by a map of itself": "product" in Definition 2.1(i) is thereby not a product |
+| 4.3 | l.150 | "T is a one-dimensional piece carrying time"; exactly three pieces |
+| 4.4 | ll.175, 178 | "'closes on itself' means two things. First, no piece goes on for ever and no piece has an edge: each is compact". The third numbered choice (l.181) is only the loop that cannot be shrunk |
+| 4.5 | l.187 | "'As a function of itself' is the law of natural growth"; "'Grows and decays' says that both signs of κ occur … there is a symmetry of the shape that swaps κ for −κ". Only clause (i) is numbered (l.193) |
+| 4.6 | ll.199–202, 209 | "The axiom says that the operations the universe performs on its internal piece fail to commute. To make this precise we must say what those operations are": Definition 2.5 is not numbered. "Two things follow at once and are not extra assumptions … 𝒜 is finite-dimensional" |
+| 4.7 | ll.229, 235 | "'Never stands still' means the flow has no fixed points. 'Constant change' means more than motion … we take the axiom to exclude that"; entropy; periodic points of measure zero; "The flow is placed on time together with the internal piece". No part of Definition 2.9 is numbered |
+| 4.8 | l.258 | Definition 3.1: "survives the stationarity conditions of the geometry's energy functional" |
+| 4.9 | l.277 | "The drive of A4 acts on T² by its return map, an element M ∈ SL₂(ℤ)"; "One application of this map is a step" |
+| 4.10 | l.295 | "The trace is taken positive. This is an input and not a selection" |
+| 4.11 | l.300 | "the time factor of a minimal geometry is the Sol torus bundle" |
+| 4.12 | l.449 | "Let ι act on the fibre algebra 𝒜 as an anti-involution a ↦ a* (the algebraic image of exchanging growth and decay: composition run backwards)" |
+| 4.13 | ll.458, 467 | "A1 requires every factor, the corner fibres included, to close" |
+| 4.14 | ll.501, 513 | "the fibre X that carries the involution of A2 … the drive of A4 acting as an Anosov diffeomorphism commuting with ι"; clause (c) applied to dim X |
+| 4.15 | l.516 | "the fixed points of ι are the points at which the algebra reduces" |
+| 4.16 | ll.521, 525, 529 | "let the algebra at a point be the subalgebra of ℍ fixed by the stabiliser of that point, ι acting as conjugation and the drive as the order-three inner automorphism Ad_w"; "The principle is A4 read on A3: order has nothing to act on where nothing moves"; "the local form of ι at such a point is the inner automorphism by the surviving unit". Acknowledged as "a definition rather than a computation" (l.536), not numbered |
+| 4.17 | ll.613, 619, 621 | "The time–space block T × Σ carries the quaternionic structure with the drive along T"; "A3 places the full algebra with its four corners on F"; "A3 would carry no information on F" used as a ground of exclusion |
+| 4.18 | ll.653, 712 | "F = base × T²/ℤ₂"; "ℂP² × S² × T²": the base is the product of the two orbits and nothing else |
+| 4.19 | ll.661, 693 | "If a Spin^c structure selects one unit i"; "the almost-complex structure of A3's selected unit" |
+| 4.20 | ll.677, 685 | "Let the three imaginary units be made complex-valued by the Spin^c line … and let the symmetry preserving the induced Hermitian form and the Spin^c phase be U(3)"; "Two readings enter and are named: that complexification is forced …; and that the geometry records directions rather than vectors". Named, not numbered. (The first is now the tenth choice, P92.) |
+| 4.21 | l.712 | "the canonical structure has zero on the torus" |
+| 4.22 | ll.717–725 | Definition 7.4: a twist is 𝒪(D) "of a divisor D = Σ aᵢPᵢ on the corners, with aᵢ ≥ 0"; "A state of the fibre at rest is a holomorphic section of the twist"; "The structure of a twist is its flux together with its corner signs up to the overall sign … It is this that clause (ii) of Definition 2.1 speaks of"; "This is the reading of Definition 2.1(iii)". The second numbered choice says only that an object is "a state of the internal piece at rest" (l.163) |
+| 4.23 | l.763 | "the states of clause (iii) being states on the pillowcase for one of the two lifts of the fold" |
+| 4.24 | ll.817, 536 | "Naming the corners so that it is P₄"; "The labelling of which cycled corner carries which unit is a convention" |
+| 4.25 | ll.837, 847, 865, 873, 887 | "The lifted fold being one structure on the whole geometry"; "that every symmetry is given one is a hypothesis of this paragraph"; "We ask that the assignment move the three lines … with no condition on signs"; "The larger group is an object that nothing requires" |
+| 4.26 | l.894 | "That the clause is applied to the step is a choice of what the clause is applied to, and is recorded as such." |
+| 4.27 | l.943 | "the loop of Definition 2.3 is supplied by the time circle"; "Σ = S³ = Sp(1), the unit quaternions, and the block is modelled on ℍ^×" |
+| 4.28 | ll.264, 271 | the count of drives ("Neither part is derived … both are declared here"). Inside clause (a), so arguably inside the seventh choice; listed for completeness |
+
+**A's list of terms used and not defined in ll.58–947 (its 7.10):** "energy functional", "stationarity conditions", "structure data", "orbifold data", "flux integers" (l.258); "Sol", "S¹_Sol" (l.300); "corner fibres" (l.458); "the base" (first at l.220); "scale-freeness of A3" (l.685); "Spin^c phase" (l.677); "A3's selected unit" (l.693); "Q_c", "Q_w" (l.707, before l.934); "ψ", "ω" as names of the periods (l.602); "M" for both the manifold (l.148) and the return map (l.277).

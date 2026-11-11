@@ -1,5 +1,7 @@
 # M1 — brief for the version with six axioms (11 November 2026)
 
+**A session starting here (CLAUDE.md §1): go first to "The next session" at the end of this file. Its reading list and its lists "Do not read" and "Sealed" govern everything else, including the rest of this file.**
+
 ## The task
 Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in canon since 11 November 2026 (P54); see the last three sections.** As the task stood: canon M1 v5.0 is unchanged until the PI accepts the new version; M2 is not started until the new M1 is in canon.
 
@@ -93,11 +95,11 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - V-25: Gödel's paper of 1931 was not read; its publication data are RECALLED. V-26: Serre's publisher and year are RECALLED. V-12 (Gauss): pages still owed.
 - The items under "Open, carried" and "Open, new" above; the sign of the lift there is closed by P58.
 
-## Next
-- M2 opens on M1 v6.3 from `papers/M2/HANDOVER.md` (rewritten 11 November, P67): the PI opens with a "my musings:" statement, then the drafts of `registers/Rulings_In_Force.md` §4 are read back one by one (P52).
+## Next (superseded: see "The next session" at the end of this file; M2 is restarted from scratch after the new M1, P95)
+- As written at the time: M2 opens on M1 v6.3 from `papers/M2/HANDOVER.md` (rewritten 11 November, P67): the PI opens with a "my musings:" statement, then the drafts of `registers/Rulings_In_Force.md` §4 are read back one by one (P52).
 
 ## Audit of Theorem 8.1 (11 November 2026, third session of the date; Decision Log P88)
-**This section is a summary. Where it and `STEP_AUDIT.md` §11 differ, the file is right.** It and the two sections after it were checked by the architect and then by an independent reader given the handover and the files it cites, under the reading limits of the M2 handover (26 findings, corrected here and in the notes).
+**This section is a summary. Where it and `STEP_AUDIT.md` §11 differ, the file is right.** It and the section on J1 were checked by the architect and then by an independent reader given the handover and the files it cites, under the reading limits then in the M2 handover (26 findings, corrected here and in the notes). The last two sections were rewritten after P95–P97 and then tested by a dry run (see there).
 
 - **Built:** `STEP_AUDIT.md` §11 (§11.1 the architect's step table T1–T19 and E1–E14, fixed before the readers were launched; §11.3 blind reader B on the fourteen competitors; §11.4 blind reader A on the assembly; §11.5 the comparison, J1–J11). `checks/thm81_blindA_chk.py`, `checks/thm81_blindB_chk.py` (the readers' own scripts, re-run; A's outputs were not compared line by line with its report, and B's function `classes` is relied on for nothing). Decision Log P88. The M1 Status cell of the series plan.
 - **Read:** canon M1 v6.3 ll.1–1023 and Appendix B (l.1075). Not read: ll.1024–1105 except l.1075; the Lean files.
@@ -113,7 +115,7 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 
 ### Registers: banked by the PI's direction (P94: "Everything else bank the proposed register entries")
 - **Corpus Errors Register, entry 32** (items (a)–(o)), written from this proposal: **M1 v6.3**, the first hypothesis in each being that the reading is wrong: J1 (since closed by a choice, P92; the row would record the wording of ll.661, 677, 685 as it stands in v6.3), J2, J5, J6, J9; the tags of rows E2, E3, E8, E9, E12 of the elimination table (J8); l.531 against Appendix B; l.533 ("Definition 2.9(iii)"); l.685's attribution to Proposition 7.3; l.235 ("is not assumed"); l.349 against l.357; l.725 against l.763 (the wording of the reading of clause (iii)); and from §11.4: Proposition 5.6, statement against proof (ll.521, 529); l.166; the [R] tags of Theorem 4.2 and Proposition 4.5; the double uses of "F", "the time factor" and "M".
-- **Not banked, a question for the PI:** whether the unnumbered readings of J10 become numbered choices (Minimality Register).
+- **Ruled since (P97(2)):** the unnumbered readings of J10 become numbered choices; the list is drawn up when J10 is taken (`STEP_AUDIT.md` §11.9).
 - **Not for any register until verified:** two statements RECALLED by the readers: the genus-three example and the flag manifold. The third of §11.5's list, on the Clifford algebra in dimension twelve, has since been CHECKED (`COMMUTANT_LEAD.md` §4).
 
 ## J1 taken up and closed (same session; Decision Log P89–P92)
@@ -147,24 +149,96 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - **Minimality Register, M1-15:** the tenth choice, with P92's wording, its failure test and the flag on the sixth axiom. Its status cell: the tag does not go on until the new version states it.
 - **Verified References, V-27:** Atiyah, Bott and Shapiro, "Clifford modules", *Topology* 3 Suppl. 1 (1964) 3–38: pp. 11–12 READ from a scanned copy; the rest not read.
 - **Definitions Register:** "complex spinor bundle", entered in the section "Terms of M1 v6.0" before the new version uses the term (CLAUDE.md §6). The wording is the architect's.
-- **Not banked:** the proposals of the M2 handover ("Proposed for the registers" there). The PI's direction was read as covering the M1 proposals of this session only.
+- **Not banked (P95):** the proposals in the handover of M2's second start. M2 is restarted from scratch; the findings about M1 among them are carried to `STEP_AUDIT.md` §11.8.
 
-## The next session (written 11 November 2026)
-**M2 waits until the new version of M1 (PI, P94), so the next sessions are on J2–J11. Recommended work package: J2 only; when it is done, stop and report. That it is J2 is the architect's recommendation; the PI has not ruled on the order. The PI's standing words on order: "Let's go through J1–J11 one at a time, start with J1" (P89).**
+## The next session (rewritten 11 November 2026 after P95–P98)
+**Checked twice:** by an independent reader against its sources (33 findings), and by a dry run in which a fresh reader followed CLAUDE.md and this file cold (its findings corrected here; those that need the PI are in item 12).
 
-1. **Start.** CLAUDE.md §1 as changed (P93) has a session read CLAUDE.md and then the current paper's handover. The current paper is M2: `papers/M2/HANDOVER.md`, whose note of 11 November sends the session here, and whose lists "Do not read" and "Sealed" stay in force. (That the M2 handover is opened first and this file second is this handover's arrangement, not P93's.)
-2. **Read:** this file from "Audit of Theorem 8.1" to the end; `STEP_AUDIT.md` ll.328–348 (§§9.3, 9.4) and §11 (from the heading "## 11." to the end of the file); `COMMUTANT_LEAD.md`; canon `Paper_M1_Six_Axioms_v6_3.tex` in full; `registers/Rulings_In_Force.md` ll.1–43 only; Decision Log rows P88 onward, by `grep '^| P\(8[89]\|9[0-9]\) ' registers/Decision_Log.md`. The next number is **P95**.
-3. **Do not read:** the series plan (its Status cell for M1 is edited at the end by a targeted replacement, without reading, as the M2 handover's item 4 has it for M2); anything in the M2 handover's sealed list; the rest of the Decision Log.
-4. **J2, as the audit has it** (`STEP_AUDIT.md` §11.1 rows T3 and T19; §11.3, question A; §11.4, row T3; §11.5):
-   - the torus is obtained by assuming the drive "an Anosov diffeomorphism commuting with ι" (l.501) and Anosov is derived only on the torus (l.277);
+**Where things stand.** M1 is the current paper. Its version 6.3 is in canon and has been audited (`STEP_AUDIT.md` §11). The audit found nothing certified false and eleven findings, J1–J11, on how the main theorem joins its cited results. J1 is closed. One new version of M1 is built when the rest are ruled. There were two earlier attempts at M2 (a withdrawn "v1.0" and a "second start"); both are sealed, M2 is begun afresh after the new M1 (P95, P96), and nothing about either is needed for the work here. "The writing session" below means the chat that wrote this file.
+
+**Recommended work package: J2 only.** That it is J2 is the architect's recommendation; the PI has not ruled on the order. The PI's words: "Let's go through J1–J11 one at a time, start with J1" (P89); M2 is a fresh start "once we have completed J2-J11" (P96).
+**"Done" means:** J2 has been put to the PI as J1 was (item 4, "Method") and the PI has ruled which it is: a misreading, a wording to correct, a step to close in M1, or an assumption to declare. The ruling is in the Decision Log, register entries are proposed, and this section is rewritten. No text of a new version of M1 is drafted (P92(3)). Then stop and report; start no other item.
+
+1. **Start.** Read CLAUDE.md from the file on disk (its §1 was changed on 11 November, P93), then this file, beginning at this section. The reading list is a whitelist: what is not on it is not read, with the one exception in item 2, last bullet. Run every command below from the repository root.
+2. **Read:**
+   - this file from the heading "## Audit of Theorem 8.1" to the end. Everything above that heading is the history of v6.0–v6.3; the writing session read it and found nothing sealed in it; it is not needed;
+   - `papers/M1/STEP_AUDIT.md` §11, from the heading "## 11." to the end of the file (it has no §11.2);
+   - `papers/M1/COMMUTANT_LEAD.md`;
+   - `canon/M1/Paper_M1_Six_Axioms_v6_3.tex`, ll.1–1105. The writing session read ll.1–1023 and l.1075. Lines 1024–1072 are the outlook and the list of certificates; the outlook speaks of the field equation as "the sequel" in M1's own words, with no display;
+   - `registers/Rulings_In_Force.md` ll.1–45 only (its §§1–3; two rows were added at the end of §3 on 11 November, P98; the heading of §4 is at l.46 and nothing from it on is read);
+   - Decision Log rows P88 onward: `grep '^| P\(8[89]\|9[0-9]\) ' registers/Decision_Log.md`. The next number is **P99**. Row format: `| Pnn | date | **Title (PI).** text, the PI's words verbatim in quotation marks | tags |`;
+   - Corpus Errors Register, entry 32 only: `sed -n '/^## 32\./,$p' registers/Corpus_Errors_Register.md`;
+   - Verified References, three rows: `grep '^| V-\(10\|14\|23\) ' registers/Verified_References.md`. **V-10** is Franks 1970 on surfaces and its row says "SECONDARY ONLY … Exact statement and hypotheses not read". **V-23** is Katok–Hasselblatt (entropy and periodic points of a hyperbolic automorphism of the torus) and its row says "NOT READ: no copy obtained … RECALLED". V-14 is a theorem on Anosov diffeomorphisms of tori that M1 no longer cites;
+   - **as the work needs, and nothing else:** other files under `papers/M1/` (the earlier sections of `STEP_AUDIT.md`, the notes, `checks/`), `canon/M1/`, `MEFProof/Paper_M1/` and `tools/`, **except `papers/M1/LIFT_SIGN.md` §5, which is sealed.** The writing session did not read all of these. They are files of M1.
+3. **Do not read:**
+   - the series plan, `sow/Mx_Series_SOW.md`. At the end of the session its Status cell for M1 is edited without reading the file: the cell contains, once in the file, the string `J2–J11 open; one new version to be built when all are ruled; canon unchanged**`; replace that string by a script;
+   - Rulings in Force from l.46 on; the rest of the Decision Log;
+   - every other register and register row, and the ledger. (The architect's instruction; its reason is the breach of P94.) To write to a register, append a row in its format: Minimality, eight cells, `| # | Node | Choice space | Minimal option | Criterion | Stated at | Failure test | Status |`; Verified References, six cells, `| # | Statement as used | Source | Wanted by | Status | Notes |`; Definitions, three cells, `| **term** | definition | source |`; Corpus Errors, a new `## 33.` section at the end. CLAUDE.md §6 asks that a term be used as the Definitions Register defines it: for J2 quote M1's own defining text instead, and ask the PI before opening that register;
+   - `papers/M3/`, `sow/M3/` and `canon/omega-definition-usage_v2.md` (the architect's additions: the first two were drafted against the withdrawn M2; the third is named in the sealed list);
+   - anything in the sealed list.
+4. **J2, as the audit has it** (`STEP_AUDIT.md` §11.1 row T3; §11.3, question A; §11.4, row T3; §11.5):
+   - the torus is obtained by assuming the drive "an Anosov diffeomorphism commuting with ι" (Proposition 5.5, l.501), and Section 4 treats the drive only on the torus (l.277), where Proposition 4.1 (ll.279–291) gets hyperbolicity for a linear map;
    - Definition 2.9 (l.232) asks neither Anosov, nor a return map on one fibre, nor commutation with ι;
    - l.235 says the strong form "is not assumed";
-   - Franks gives topological conjugacy to a linear map (l.505), where the statement has the drive an element of SL₂(ℤ) (l.501); return maps that are not linear, and negative traces, are not excluded;
-   - clause (a) on the drive presupposes the torus, which Proposition 5.5 gets by clause (c) (T19; J5).
+   - Franks gives topological conjugacy to a linear map (l.505), where the statement has the drive an element of SL₂(ℤ) (l.501); return maps that are not linear are not excluded; on negative traces M1 has l.295 ("The trace is taken positive. This is an input and not a selection");
+   - the measure for which the periodic points have "measure zero" is not named (ll.229, 232, 290; §11.8, M-d);
+   - row T19 (clause (a) on the drive presupposes the torus, which Proposition 5.5 gets by clause (c)) belongs to J5 and is taken there; it is named here only because it touches the torus.
    - Failure test of T3: "a line of M1 that derives 'Anosov, commuting with ι, with a return map' from Def 2.9 before l.501".
    - Reader B's example, RECALLED and to be verified or dropped before anything rests on it: a surface of genus three, a double cover of the torus branched at four points, with a pseudo-Anosov map commuting with an involution that has exactly four fixed points.
-   - Method as for J1: the texts quoted, numbered assumptions, then wait.
-   - Sources: Franks 1970 and Katok–Hasselblatt are among "References not obtained" (`STEP_AUDIT.md` §9.3 item 3; §9.4 item 3 calls them "owed as housekeeping … not a matter for the PI"). Franks is Verified References V-10 (the first line of its row was seen); the row for Katok–Hasselblatt was not identified. The M2 handover, item 8, quotes the PI, "I won't be able to access any more than I have", and gives the consequence: an outside statement not read at source is closed by hand or declared as an assumption with its failure test.
-5. **After J2: the architect's recommendation, not ruled, and it departs from "one at a time" in numerical order.** J5, J6, J9 need work of the kind J1 did. J7, J8, J10, J11 are lighter; J11 turns on P34(2), a sealed row, which the PI would have to state. The architect recommended (P93) that J3 and J4 not be taken in a chat that has read the barred rows of the series plan, because they concern the warp, the functional and the unfixed proportions, which M2 derives. J6 and J1 touch the base and the Spin^c line that M2's `N2_sources.md` counts states on; J1 was ruled in such a chat (the disclosure above). The PI decides the order at the start of the next session.
-6. **A further breach, disclosed (P94).** In writing the register entries the architect printed the headings of entries 13–31 of the Corpus Errors Register, the first paragraph of entry 13 and the last lines of entry 31. Entries 13–22 are of the M2 build of 8–9 November and their headings name items of the withdrawn M2. That register is not on the M2 handover's sealed list by name. The next session appends to it without reading it.
-7. **Commit state:** see `git log`. At the time of writing, uncommitted: this file, `STEP_AUDIT.md` §11.6 on, `COMMUTANT_LEAD.md`, three scripts in `checks/`, Decision Log P89–P93, CLAUDE.md, the M1 Status cell, the note in the M2 handover. The PI directed that they be committed and pushed once the independent reader's findings were corrected.
+   - **Method, as for J1** (see P89 and `STEP_AUDIT.md` §11.6): the texts quoted; numbered assumptions, each sourced; then wait. A lead is tested blind before it is used, with the protocol and a prediction written first (`COMMUTANT_LEAD.md` is the pattern). CLAUDE.md §5 applies: the step audit, the red-flag scan of every source used, an independent check by a fresh sub-agent.
+5. **Everything the new version of M1 has to take in** (nothing of it is drafted until all of J2–J11 are ruled, P92(3)):
+   - J2–J11 as they are ruled (`STEP_AUDIT.md` §11.5);
+   - J1: the tenth numbered choice stated (P92; Minimality M1-15), with ll.661, 677, 685 and row E11 reworded;
+   - the integer two on S² stated, with the mark for the sphere's own winding (P97(1); Minimality M1-16);
+   - the unnumbered readings numbered, from the list of `STEP_AUDIT.md` §11.9 as the PI rules on each (P97(2)); the places that count the choices change with them (ll.129, 163, 181, 193, 211, 223, 239, 247, 964, and the theorem's own list at l.967);
+   - the findings carried from the M2 notes (`STEP_AUDIT.md` §11.8). That they are items for the new version is the architect's consequence drawn in P95, not the PI's words. **M-j, the worked example at l.578, is not among J1–J11;**
+   - the finding on the two levels of Definition 2.7 (`COMMUTANT_LEAD.md` §4; Corpus Errors 32(o)): the architect's addition; no ruling makes it a condition of the build;
+   - the wording items of Corpus Errors entry 32.
+6. **Order after J2: the architect's recommendation, not ruled.** J5, J6, J9 need work of the kind J1 did; J7, J8, J10, J11 are lighter. J11 turns on a ruling known here only through one sentence of the earlier audit (`STEP_AUDIT.md` §8, "Disclosure": the PI "has ruled the pillowcase (P34 (2))"); P34 is a sealed row and the PI would have to state it. J3 and J4 concern the warp, the functional and the unfixed proportions, which the new M2 will derive; the architect recommended (P93) that they not be taken in a chat that has read the barred rows of the series plan. The PI decides whether that still applies.
+7. **Sources.** The PI: "can't obtain further sources" (P97). Franks 1970 and Katok–Hasselblatt are not read (item 2, V-10 and V-23). The consequence, the architect's and from CLAUDE.md §6: a statement of theirs that M1 relies on is closed by hand in M1, or declared there as an assumption with its failure test. Whether the session may itself look for an openly hosted copy on the web is not ruled; the writing session did so once, for Atiyah–Bott–Shapiro, through a sub-agent and with nothing of the project in the request. Ask the PI before doing it again.
+8. **Tools (from the writing session's own experience).** `pdftoppm` is not installed. PyMuPDF (`import fitz`) is in the user's Python packages; pages of a scanned PDF are rendered to PNG by a short script and read with the Read tool.
+9. **Ruled on 11 November after the audit (P97).**
+   - **The new version of M1 states the integer of the determinant line on S², and it is two** (Minimality M1-16). The PI's words answer whether the new M1 states it ("yes"). The value and its read-back were confirmed for M2 in P85, a sealed row whose content on this point P97 repeats; no separate read-back was made for M1 (flagged by the dry run). Owed in the new version: the mark for "the sphere's own winding is two"; with no further sources that means CHECKED by hand.
+   - **The unnumbered readings become numbered choices.** The principle is ruled. The list is `STEP_AUDIT.md` §11.9 with §11.1 rows T1, T4, T11; each item is put to the PI with its wording before it is numbered, since some may prove to be consequences and not choices.
+   - **No further sources** (item 7).
+10. **An M1 session is not blind for M2.** Rows P88–P98, and `STEP_AUDIT.md` §11 (rows T10, T13, T15, §11.8), name in outline, and in places in full, what the sealed second start of M2 stood on; P97 repeats the content of the sealed row P85. This is deliberate: the M1 findings had to be kept. The consequences are the architect's and are flagged in P96, not ruled: a chat that has read them is not the chat that writes the new M2, and the new M2 session's reading list, written when M2 opens, keeps them from it.
+11. **Breaches and readings of the writing session, disclosed (P88, P94, P98).** It read: `sow/Mx_Series_SOW.md` ll.1–87; the headings of entries 13–31 of the Corpus Errors Register, the first paragraph of entry 13 and the last lines of entry 31; the handover of M2's second start in full; of that start's step audit, the section "Independent check of N0" and the opening of the section after it; a few lines of its SOW/DAG printed by a search; the first lines of several rows of the Minimality, Verified References and Definitions registers printed while matching formats. It did no M2 work. P92 and P97 were ruled in it.
+12. **For the PI at the start of the next session** (points the dry run could not settle from the text):
+    - whether the session may look on the web for Franks 1970 or Katok–Hasselblatt (item 7);
+    - whether it may open the Definitions Register's section for M1 (item 3);
+    - whether P97(1), the integer on S² for M1, wants its own read-back (item 9);
+    - the order after J2, and whether J3 and J4 are held back (item 6).
+13. **Labels that come from sealed files and are not needed:** N0–N3 (notes of M2's second start); R-a, R-b (readings discussed there); "handover item i" in `STEP_AUDIT.md` §11.1 row E12 is finding M-i of §11.8; "M2 steps 1–3", "the third M2 session" (that start's work package and this chat). Minimality rows named by number in `STEP_AUDIT.md` (M1-3, M1-4, M1-10, M1-12) are entries of a register that is not read; M1-15 and M1-16 are described in this file. Reader A's own numbering ("its 4.1–4.28", "7.10") is in `STEP_AUDIT.md` §11.9; the rest of A's report is in no file.
+14. **Commit state:** see `git log` and `git status`. Everything since 3e3b86f (P95–P98, the move of the M2 files, the register entries, this file) was committed together after the dry run's findings were corrected; the PI's word for it was "Bank the above" (P97, P98).
+
+## Sealed: not to be read until the new M2 is written and recorded
+**Carried word for word from the handover of M2's second start, which is itself now sealed:**
+
+- `superseded/M2_v1/` (the withdrawn M2 v1.0, its certificates, plan and audit notes).
+- **`registers/Decision_Log.md`: every row above P40**, that is, the section of 8 November and the rows P1–P39. If a later row is needed, the PI names it.
+- **`registers/records/2026-11-11_M2_opening_musing_SEALED.md` and its figure.**
+- **`registers/Rulings_In_Force.md` §§4–6.** (§7 was not read either.)
+- The ledger's section on M2 v1.0 and the section of targets after it.
+- The rows headed "M2 v1.0" in `registers/Minimality_Register.md`.
+- Definitions Register rows that cite `M2_WP…`; Verified References rows that cite M2, its work packages or `papers/M2/…` notes.
+- The display of the Master Equation in `canon/omega-definition-usage_v2.md` (its §6a may be read).
+- `papers/M1/LIFT_SIGN.md` §5.
+- The series plan's rows for M6, M7, M9, M10 and M16. Only the Status cell of the M2 row is edited.
+- `sow/M3/` was not opened; it may carry wording from the withdrawn paper.
+- Do not search the ledger, the registers or the Decision Log for "M2".
+
+When the derivation and its results are written and recorded, and only then, they are compared with the sealed material and with the canonical form of the Master Equation. That comparison is a consistency check and not a test.
+
+**Notes on the carried list (the architect's; some of its lines were written for an M2 session and are stale here):**
+- "Only the Status cell of the M2 row is edited": for the next session it is the Status cell of the **M1** row (item 3).
+- "`papers/M2/…` notes": that folder no longer exists; the path survives only as text inside register rows.
+- "(§7 was not read either.)": said of M2's second session.
+- "`canon/omega-definition-usage_v2.md` (its §6a may be read)": for an M1 session the whole file is not read (item 3).
+- The closing paragraph ("When the derivation and its results are written and recorded …") speaks of the new M2 and has no bearing on an M1 session.
+- `sow/M2/` no longer exists either.
+
+**Added 11 November 2026 (PI, P95: "seal the current M2 notes"):**
+- `superseded/M2_second_start/` (the handover of the second start, its SOW/DAG, its step audit, and the notes N1, N2 (two files) and N3). The M1 findings in them are copied to `STEP_AUDIT.md` §11.8 and are read there.
+
+**Added 11 November 2026 (PI, P96: "I agree P71-P87 be sealed.  Should not be read, to make M2 a true fresh start once we have completed J2-J11"):**
+- Decision Log rows P71–P87, for every session. What they hold about M1 is in `STEP_AUDIT.md` §11.8.
