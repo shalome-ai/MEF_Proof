@@ -22,6 +22,8 @@
 !canon/**/*.pdf
 !papers/**/*.tex
 !papers/**/*.pdf
+# Copies of published sources, kept locally for reading and not redistributed (Decision Log P102)
+papers/*/sources/
 
 # Internal working documents — not referee-facing
 *_workflow.md
