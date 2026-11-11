@@ -1,5 +1,7 @@
 # M2 — brief for a new paper, written from scratch on M1 (10 November 2026)
 
+> **Note of 11 November 2026 (Decision Log P42, P43).** M2 is not started until M1 has been redone with the sixth axiom ("There is only one thing, and that one thing is everything") and is in canon; brief `papers/M1/HANDOVER.md`. Where this file says "five axioms" and "M1 v5.0", read the new M1 when it exists. M2's starting point (P42(c)): call the one thing ω, and attempt to define ω from M1; if that fails, this attempt at the series fails. What the PI supplies is the axioms and direction; the old corpus and the PI's three texts are not used to derive M2 and are compared with afterwards (P43). **Do not read before the derivation is written and recorded:** `superseded/M2_v1/`; the ledger's section on M2 v1.0; the Definitions Register rows that cite `M2_WP…`; the display of the Master Equation in `canon/omega-definition-usage_v2.md`. The series plan's rows for M6, M7, M10 and M16 also carry wording from the withdrawn paper. Do not search the ledger or the registers for "M2" (a search of that kind is how the session of 11 November broke blindness).
+
 ## The task
 Write M2, the field equation on the geometry of M1, **from scratch, based entirely on M1 v5.0 with the five axioms, as if no earlier M2 had existed** (Decision Log P40, P41). The premise (record §25): five axioms determine the shape; the shape determines the equation; the equation and the shape determine the series.
 
