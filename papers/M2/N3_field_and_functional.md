@@ -27,7 +27,7 @@ Ground, all READ:
 What M1 fixes of that bundle (READ): a Spin^c structure exists and its line is O(3) on CP² (l.693); on the fibre the twist has flux three with one odd corner (l.763); the states at rest are the holomorphic sections of the twist, three of them, of which the fold keeps two (ll.719, 731, 763).
 
 What M1 does not fix:
-- **The integer on S².** Not in M1. **Ruled: two (P85)**, M1's own rule applied: the sphere carries the winding of its own complex structure and no further twisting line. With it the bundle is named: the canonical Spin^c structure of the base, O(3) on CP² and O(2) on S², with the twist of flux three on the fibre. That the sphere's own winding is two is RECALLED until N2.
+- **The integer on S².** Not in M1. **Ruled: two (P85)**, M1's own rule applied: the sphere carries the winding of its own complex structure and no further twisting line. With it the bundle is named: the canonical Spin^c structure of the base, O(3) on CP² and O(2) on S², with the twist of flux three on the fibre. That the sphere's own winding is two is CHECKED (`N2_sources.md` §3).
 - That states are spinors. M1 says "for the canonical Spin^c structure the states at rest are the harmonic spinors of the fibre. We use this as motivation … and the counts below do not depend on it" (l.728). M2 would rest on it, so M2 owes it: read at source and entered in Verified References (node N2).
 - The quaternions act at the tangent level too (l.214). A field at that level is the alternative to this identification. M1 defines an object as a state (l.163), which is why the spinor level is taken.
 
@@ -62,9 +62,11 @@ M1 defines what it is for a *geometry* to satisfy each axiom. For the field M2 n
 
 ## 5. What is not done here
 - The functional is not chosen and no candidate is named.
-- No external theorem is used. The ones a candidate would need (the operator the quaternions' action defines on the field; that its fields at rest on the fibre are the holomorphic sections) are for node N2.
+- No external theorem is used in this note. Those read since are in `N2_sources.md`. The ones a candidate would need (the operator the quaternions' action defines on the field; that its fields at rest on the fibre are the holomorphic sections) are for node N2.
 - The six meanings of §3 are proposals. None is entered in a register.
 
-## 6. RECALLED (used nowhere above)
+**Added 11 Nov 2026 after N2 (P86).** Q4 is established only where the internal piece carries Kähler lengths for its complex structure; within those the count does not depend on the lengths (Hitchin 1974, p. 16, Remark (1), READ, said there of the spin case; for the rest the architect's inference, `N2_sources.md` §9 item 4). For other lengths the number of fields at rest is not known. The hypothesis is named wherever Q4 is used. N3 depends on N2 for this.
+
+## 6. RECALLED when this note was written (used nowhere above). Since N2: the first is READ in part (`N2_sources.md` §§2, 9), the second CHECKED (§3)
 - On a surface with a complex structure, the harmonic spinors of the canonical Spin^c structure twisted by a line are the holomorphic sections of that line together with a second space that vanishes when the degree is positive.
 - The first Chern number of the tangent bundle of S² is two.

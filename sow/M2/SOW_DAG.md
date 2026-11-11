@@ -12,9 +12,9 @@ This file is a plan. It holds no result. Line numbers are those of canon M1 v6.3
 | R3 | The list of unfixed continuous data is the eight rows of N0 | P71 |
 | R4 | A small movement is a small change of the shape itself, modulo diffeomorphism and overall scale | P72 |
 | R5 | The three odd places in M1 are noted and carried; no change to M1 now | P74 |
-| R7 | The integer of the determinant line on S² is owed; the vector-field lead is withdrawn; M2 from M1 v6.3 alone, the PI asked where a reading has to be chosen | P77; P78 |
+| R7 | The vector-field lead is withdrawn; M2 from M1 v6.3 alone; the architect proceeds and stops only where a reading has to be chosen or defined, the rule of numbered assumptions and waiting applying at those points | P78; P86 |
 | R8 | The field is on the shape, satisfies all six axioms at once, and creates the growth and decay | P79 |
-| R9 | The growth runs along time; a circuit later the shape is larger by a fixed factor and is the same shape; what grows as time advances, (a) space or (b) time and space together, is an unknown for the equation. M1 is not changed | P81; P84 |
+| R9 | The growth runs along time; a circuit later the shape is larger by a fixed factor and is the same shape; what grows as time advances, (a) space or (b) time and space together, is an unknown for the equation. The reading under consideration, examined and not confirmed, is R-b of the step audit: the growth sits in the block of time and space. M1 is not changed | P81; P83; P84; P86 |
 | R10 | The integer of the determinant line on S² is two: M1's rule applied, no further twisting line | P85 |
 | R6 | For M2 the sixth axiom speaks of a shape and one field; N3 says what the field is. ω does not enter M1; the musing on ω is withdrawn | P76; P75 |
 
@@ -27,16 +27,16 @@ This file is a plan. It holds no result. Line numbers are those of canon M1 v6.3
 | A2 | The unknowns of the field equation are among the eight rows | none | **UNVERIFIED — guess**; N1 settles it |
 | A3 | The functional M1 names (ll.258, 992) is the one whose stationarity is the equation of M2 | P69 step 3 | An identification; M1 does not say so; step audit |
 | A4 | The functional is built from the shape and the one field, and from nothing else | P69 step 4 with P76 | PI's direction; the tension between "the shape alone" and the field is flagged in P76 |
-| A5 | Stationary means no change to first order under small movements | P69 step 5 | RECALLED; N2 |
+| A5 | Stationary means no change to first order under small movements | P69 step 5 | RECALLED; the calculus of variations is the part of N2 not started, and is read when the functional is known |
 | A6 | The start is independent of the withdrawn M2 | — | **Not shown** (P69 flag iii, P70(3)); step audit |
 
 ## Nodes
 | Node | Work | Depends on | Closes when | Status |
 |---|---|---|---|---|
 | **N0** | The list of continuous data M1 leaves unfixed | canon M1 | List confirmed by the PI; independent check of completeness | List confirmed (P71, P74); independent check returned; amendments confirmed (P77) |
-| **N1** | What varies, and when two geometries are the same | N0, R4 | A definition, in M2, of the space of shapes the movements run over and of sameness; each of the eight rows placed as an unknown, as fixed by another row, or as no datum | drafted: `papers/M2/N1_what_varies.md`, for the PI |
+| **N1** | What varies, and when two geometries are the same | N0, R4 | A definition, in M2, of the space of shapes the movements run over and of sameness; each of the eight rows placed as an unknown, as fixed by another row, or as no datum | drafted: `papers/M2/N1_what_varies.md`. Owed: which option the sixth axiom selects in N1-a and N1-b (GAP); an independent check; the two suppositions of its §4 |
 | **N2** | Outside results read at source: what a state is (spinors of a complex structure), the counts of states, the calculus of variations | — | The theorems used are read at source and proposed for Verified References | sources read as far as the PI can supply them (`papers/M2/N2_sources.md` §§8–9); three items to be closed by hand or declared; the calculus of variations not yet started |
-| **N3** | What the one field is (P76, P79); the functional, built from the shape and the field and nothing else. First half drafted: `papers/M2/N3_field_and_functional.md` (the field, what it means for it to satisfy each axiom, the requirements on the functional). The functional itself is not chosen | N1 | The functional stated; the identification with M1 ll.258, 992 entered in the step audit; every choice entered in the Minimality Register before its tag | open |
+| **N3** | What the one field is (P76, P79); the functional, built from the shape and the field and nothing else. First half drafted: `papers/M2/N3_field_and_functional.md` (the field, what it means for it to satisfy each axiom, the requirements on the functional). The functional itself is not chosen | N1, N2 | The functional stated; the identification with M1 ll.258, 992 entered in the step audit; every choice entered in the Minimality Register before its tag | open |
 | **N4** | The stationarity conditions: the field equation | N2, N3 | The equation derived, hypotheses named | open |
 | **N5** | What the equation fixes | N4 | The warp's law (owed by M1 l.127): what grows as time advances, candidates (a) and (b) of P84, and its rate; the flat shape of the fibre (M1 l.992); the proportions of the pieces | open |
 | **N6** | Whether a modulus survives | N5 | Clause (a) of M1 Def 3.2 met or shown to fail; a failure test for every banked result | open |
@@ -45,9 +45,18 @@ This file is a plan. It holds no result. Line numbers are those of canon M1 v6.3
 
 ```
 N0 ──► N1 ──► N3 ──► N4 ──► N5 ──► N6 ──► N7 ──► N8
-                     ▲
-                 N2 ─┘
+              ▲      ▲
+          N2 ─┴──────┘
 ```
+N2 feeds N3 (requirement Q4 and the identification of the field rest on the sources) and N4 (the calculus of variations). Corrected 11 Nov 2026 (P86).
+
+## Order of work (the architect's, P86)
+1. **Close N1:** argue which option the sixth axiom selects in N1-a and N1-b, and give N1-c a failure test; say of the two suppositions of N1 §4 whether each is removed or declared; say whether V, Q and ∇ can be placed at N1 (assumption A2) or pass to N4, and amend N1's closing condition if they pass; an independent check of N1 by a fresh sub-agent given the steps and not the conclusion.
+2. **Close what is left of N2:** by hand, or declared with a failure test: the first cohomology of the twist on the fibre; the degree of a line and of the canonical line; that a line of negative degree has no section; the citation of Nicolaescu (hosted version read, print not seen). Write out, with every hypothesis, the combination that gives the states at rest of the whole twisted internal piece: the connection on the twist is that of a holomorphic structure; each piece is projective and the twist holomorphic; the pillowcase, which no source read covers.
+3. **Close the first half of N3:** put to the PI, each with its alternative and a recommendation, the identification of the field (spinor level or tangent level), the swap on the whole shape, and the three alternatives N3 §3 leaves open; the Minimality argument for each; an independent check of Q1–Q9. For each of N1–N3: the red-flag hits at the M1 lines consumed, and a step table, entered in the step audit.
+4. **The second half of N3:** the functional. Candidates are named only now, and each is tested against Q1–Q9 fixed beforehand. The calculus of variations (assumption A5; step audit 0.3) is read at source once the functional is known, before N4.
+5. N4 to N8 as in the table.
+Steps 1–3 are one work package; step 4 is the next.
 
 ## N0 — the list (all READ; confirmed P71, row 1 reworded P74)
 | # | Datum | What M1 says | Lines |
@@ -72,5 +81,5 @@ Not a datum: overall size (ll.255, 271). Fixed by M1: every piece, the twist and
 
 ## Failure tests fixed before any derivation
 - If the stationarity conditions leave any row of N0 free, modulo diffeomorphism and overall scale, the geometry does not meet clause (a) and M1's theorem loses its declared input (M1 l.992).
-- If the functional needs an ingredient that is not built from the shape, A4 fails.
-- If no functional built from the shape has M1's geometry as a stationary point, steps 3–4 of P69 fail.
+- If the functional needs an ingredient that is not built from the shape and the one field (A4, P76), A4 fails.
+- If no functional built from the shape and the one field has M1's geometry as a stationary point, steps 3–4 of P69 fail.

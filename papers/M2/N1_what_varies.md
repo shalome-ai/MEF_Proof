@@ -3,7 +3,7 @@
 **Working note, 11 November 2026. Not paper text. Nothing here is banked.** Line numbers are those of canon M1 v6.3. Every definition below is DECLARED and is the architect's proposal; the PI banks. Marks: READ (line), CHECKED (hand computation given), RECALLED (listed apart in §6, used nowhere).
 
 ## 1. What is held (READ)
-- The manifold with every piece, the twist and every whole number (ll.967–971; P72).
+- The manifold with every piece, the twist and every whole number (ll.967–971; P72). (Added: one whole number is not stated in M1, the integer of the determinant line on S² (P77); ruled two (P85).)
 - The division into what is seen and what is not, and the projection π (ll.146–154).
 - The fold ι and its four corners (ll.501, 583); the step M₀ and the three-step time circle, glued once round by M₀³ (ll.300, 837).
 - The classes of the Spin^c line and of the twist (ll.693, 763).
