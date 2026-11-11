@@ -113,9 +113,9 @@ s is the coordinate round the time circle, r = e^{κs}, (S³) the lengths on the
 |---|---|
 | M1's rule: the structure of the shape's own complex structure, no further datum; any other needs a twisting line that clause (b) removes | READ, M1 ll.693, 712, 918 |
 | The rule applied to S² gives the sphere's own winding | DECLARED (confirmed reading, P85) |
-| The sphere's own winding is two | **GAP — RECALLED.** By the sequence M1 uses for CP² (l.683) written for the projective line, (1 + h)² with h² = 0 gives 2h; to be read at source (N2) |
+| The sphere's own winding is two | CHECKED (`N2_sources.md` §3): dz has a double pole at the remaining point and no zero, so K has degree −2 and K⁻¹ degree 2. Uses, not read at source: degree = zeros less poles of a meromorphic section |
 | States on the sphere for a further line of flux e: the functions on the sphere with a pole of order at most e at one point | CHECKED, by M1's count (l.739): polynomials of degree at most e, so e + 1 for e ≥ 0; for e = −1 a function with no pole and a forced zero, so none |
 | The integer n on S² and the further line: n = 2 + 2e (M1 l.712, the twist by a line of degree d adds 2d) | READ |
 | So n = 0, 2, 4 give none, one, two states on the sphere | CHECKED from the two rows above |
-| The states at rest on the whole internal piece are counted by the product over CP², S² and the fibre | **GAP — RECALLED**; N2 |
-| One state on CP² for the canonical structure | **GAP — RECALLED**; N2 |
+| The states at rest on the whole internal piece are counted by the product over CP², S² and the fibre | READ in part (`N2_sources.md` S8, EGA III 6.7.8, algebraic). GAPs: the passage to holomorphic bundles (GAGA); the first cohomology on the fibre. Holds for Kähler product lengths only |
+| One state on CP² for the canonical structure; one on S² with integer two; none with integer nought | READ (`N2_sources.md` S7, EGA III 2.1.12–2.1.13), with S1–S6 (Nicolaescu) for what a state is |

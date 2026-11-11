@@ -11,7 +11,7 @@ Replaces the fourth version. Written at the end of the session that opened M2. T
    - `canon/M1/Paper_M1_Six_Axioms_v6_3.tex`, in full;
    - `registers/Rulings_In_Force.md` **§§1–3 only** (ll.1–43).
 3. **Do not read:** the Decision Log, the series plan, Rulings in Force §§4–7, or anything in the sealed list below. This overrides the general reading order of CLAUDE.md §1, by P69 and P70. The rulings of P71–P84 are carried below.
-4. **Work package: node N2**, scoped by N3: read at source, and propose for Verified References, the two things `N3_field_and_functional.md` §2 and §5 say M2 would rest on (that M1's states are the harmonic spinors of the fibre; the operator that the quaternions' action defines on the field). Nothing further. The functional is chosen only after that, and with the PI.
+4. **Work package: close the gaps of node N2** listed in `papers/M2/N2_sources.md` §1 and §5 (GAGA; the first cohomology on the fibre; Hitchin 1974; the pages of Serre 1955, Sampson–Washnitzer and Kaup the architect could not read; the print numbering of Nicolaescu), or have the PI decide which may be declared instead. Read `N2_sources.md` with the other notes. Nothing further. The functional is chosen only after that, and with the PI. **The machine cannot render PDF pages** (`pdftoppm` missing): scanned sources need `poppler-utils` installed, which the PI must do.
 5. **How to work (PI, P78):** proceed without asking; ask where a text allows more than one reading and one has to be chosen or defined. **And (PI, P83):** call something a conflict only if two statements cannot both hold; a reading that refines M1 for M2 is not a conflict. Say first whether any proof or finding of M1 changes. M1 is not changed from M2.
 
 ## The task
@@ -25,7 +25,7 @@ Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3 and 
 | P74, P77 | The odd places in M1 are noted and carried. M1 is not changed |
 | P75 | ω does not enter M1. The PI's musing on ω is withdrawn |
 | P76 | For M2 the sixth axiom speaks of a shape and one field |
-| P77, P85 | The integer of the determinant line on S² is not in M1 v6.3. **Ruled: two** (P85): M1's own rule applied, the sphere carrying the winding of its own complex structure and no further twisting line. M1 is not edited. Rests on two RECALLED facts that N2 must read at source: the sphere's own winding is two; the counts of states multiply across CP², S² and the fibre |
+| P77, P85 | The integer of the determinant line on S² is not in M1 v6.3. **Ruled: two** (P85): M1's own rule applied, the sphere carrying the winding of its own complex structure and no further twisting line. M1 is not edited. The two facts it rested on are now CHECKED or READ in the main (`N2_sources.md` §§3–4), with gaps named there; the ruling stands |
 | P78 | The vector-field lead is withdrawn. M2 from M1 v6.3 alone, with external theorems cited |
 | P79, P82 | The field is on the shape, satisfies all six axioms at once, and creates the growth and decay |
 | P81 | A shape and the same shape a circuit of time later, larger by the factor of that circuit, are the same shape |
@@ -39,6 +39,7 @@ Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3 and 
 - `sow/M2/SOW_DAG.md`: nodes N0–N8, rulings, assumptions, failure tests.
 - `papers/M2/STEP_AUDIT.md`: entries owed before derivation; red-flag scan of M1; hand computations; the independent check of N0; the examination of where the growth can sit.
 - `papers/M2/N1_what_varies.md`: draft of N1. Not reviewed by the PI.
+- `papers/M2/N2_sources.md`: outside results read at source this session, with what is still a gap. No row written to Verified References.
 - `papers/M2/N3_field_and_functional.md`: first half of N3. What the field is; a proposed meaning for "the field satisfies" each axiom; nine requirements any functional must meet, fixed before a functional is looked at. Not reviewed by the PI.
 - Decision Log P71–P85. The M2 Status cell of the series plan.
 
