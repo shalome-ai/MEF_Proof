@@ -1,4 +1,4 @@
-# M2 — handover (written 11 November 2026, fifth version)
+# M2 — handover (written 11 November 2026, sixth version)
 
 Replaces the fourth version. Written at the end of the session that opened M2. That session read CLAUDE.md, the second handover, canon M1 v6.3 in full, Rulings in Force §§1–3 (ll.1–43), and the last three rows of the Decision Log as it then stood (P68–P70), to match its format. It read nothing sealed. It derived no equation and chose no functional.
 
@@ -11,7 +11,8 @@ Replaces the fourth version. Written at the end of the session that opened M2. T
    - `canon/M1/Paper_M1_Six_Axioms_v6_3.tex`, in full;
    - `registers/Rulings_In_Force.md` **§§1–3 only** (ll.1–43).
 3. **Do not read:** the Decision Log, the series plan, Rulings in Force §§4–7, or anything in the sealed list below. This overrides the general reading order of CLAUDE.md §1, by P69 and P70. The rulings of P71–P84 are carried below.
-4. **Work package: close the gaps of node N2** listed in `papers/M2/N2_sources.md` §1 and §5 (GAGA; the first cohomology on the fibre; Hitchin 1974; the pages of Serre 1955, Sampson–Washnitzer and Kaup the architect could not read; the print numbering of Nicolaescu), or have the PI decide which may be declared instead. Read `N2_sources.md` with the other notes. Nothing further. The functional is chosen only after that, and with the PI. **The machine cannot render PDF pages** (`pdftoppm` missing): scanned sources need `poppler-utils` installed, which the PI must do.
+4. **Work package: the PI's review of `N1_what_varies.md` and of `N3_field_and_functional.md` §3 (the six meanings) and §4 (the nine requirements), item by item; then, with the PI, the second half of N3: the functional.** Nothing further. Read `N2_sources.md` and `N2_refs_from_chat.md` with the other notes.
+   **State of N2.** Read at source by the architect: Nicolaescu (hosted version), EGA III, Serre 1955, Serre 1956 (GAGA), Sampson–Washnitzer 1959, Hitchin 1974. Kaup corrected and withdrawn. **The PI has said (11 Nov 2026): "I won't be able to access any more than I have."** So three items cannot be read at source and must each be closed by hand in M2 or declared there as an assumption with its failure test (CLAUDE.md §6); which, is not yet decided: (i) the first cohomology of the twist on the fibre vanishes; (ii) the degree of a line as zeros less poles, and the degree of the canonical line; (iii) the page and statement numbers of Nicolaescu's printed edition. Also still the architect's combination and not one published statement: states at rest as cohomology for the whole twisted internal piece (`N2_sources.md` §2, §9). The calculus of variations is not started; what it needs depends on the functional. The machine cannot render PDF pages (`pdftoppm` missing); page images already in a PDF's text layer can be extracted.
 5. **How to work (PI, P78):** proceed without asking; ask where a text allows more than one reading and one has to be chosen or defined. **And (PI, P83):** call something a conflict only if two statements cannot both hold; a reading that refines M1 for M2 is not a conflict. Say first whether any proof or finding of M1 changes. M1 is not changed from M2.
 
 ## The task
@@ -43,7 +44,7 @@ Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3 and 
 - `papers/M2/N3_field_and_functional.md`: first half of N3. What the field is; a proposed meaning for "the field satisfies" each axiom; nine requirements any functional must meet, fixed before a functional is looked at. Not reviewed by the PI.
 - Decision Log P71–P85. The M2 Status cell of the series plan.
 
-Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2/` is still to be created). Nothing was committed.
+Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2/` is still to be created). All of the above is committed and pushed.
 
 ## What was found (each with its mark in the files named)
 - A shape has four parts: g (how lengths are measured), V (the flow), Q (the quaternionic structure, spinors and Clifford action), ∇ (connections and Hermitian metrics on the two lines). M1 states no relation between g and the others. (N1)
@@ -75,7 +76,7 @@ Nothing was compiled; no gate was run; no certificate exists (`MEFProof/Paper_M2
 - **Future-Mx Register:** M2 owes M1 the warp's law (l.127), the functional (ll.258, 992), the discharge of the declared input (l.992). The integer on S² (two, P85) is stated in M2 as M1's rule applied.
 
 ## Open
-- N2, as scoped above.
+- N2: the three items and the combination named in the work package above.
 - N1's two suppositions: that the fibre is flat at every time; that there is no cross term with time.
 - That a part of the internal piece alone might grow as time advances is excluded by no argument (P84).
 - References not read at source for M1: Gödel 1931; the pages of Gauss and of five other references that need a library copy.
