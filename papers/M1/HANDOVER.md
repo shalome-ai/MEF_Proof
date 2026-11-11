@@ -94,4 +94,4 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - The items under "Open, carried" and "Open, new" above; the sign of the lift there is closed by P58.
 
 ## Next
-- M2 opens on M1 v6.3. Its first act is the read-back, one by one, of the drafts in `registers/Rulings_In_Force.md` §4 (P52).
+- M2 opens on M1 v6.3 from `papers/M2/HANDOVER.md` (rewritten 11 November, P67): the PI opens with a "my musings:" statement, then the drafts of `registers/Rulings_In_Force.md` §4 are read back one by one (P52).

@@ -1,57 +1,63 @@
-# M2 — brief for a new paper, written from scratch on M1 (10 November 2026)
+# M2 — handover for the session that starts M2 (written 11 November 2026)
 
-> **Note of 11 November 2026, last (Decision Log P54).** M1 v6.3, with six axioms, is in canon: `canon/M1/Paper_M1_Six_Axioms_v6_3.tex` (44 pp.; certificates L1–L4, L6, L7; P54–P64). Clause (a) declares its count of drives: a mirror image is another drive and a drive run backwards is another drive (P63). The sign of the lift is settled by ruling: on spinors the drive is −w and the time circle is three steps (Cor 7.8; P58). Where this file says "M1 v5.0", "five axioms" or "six numbered choices", read v6.3, six axioms and nine numbered choices; the numbering of results is unchanged, and Axiom 6, Definition 3.2 in three clauses and Proposition 4.5 are new (`canon/M1/NUMBERING_v5_to_v6.md`). Theorem 8.1 now has one declared input, the aspect ratio of the fibre; overall size has no meaning. M2 is no longer blocked. Its first act, after the handshake, is the read-back of the drafts of `registers/Rulings_In_Force.md` §4, one by one.
+Rewritten from zero at the PI's direction (Decision Log P67). It replaces the brief of 10 November and its layered notes; the earlier text is in git history.
 
-> **Note of 11 November 2026, later (Decision Log P52).** The statements listed below as "the PI's rulings on the theory that stand for the new M2" are, by the PI's ruling of P52, drafts and not rulings: each is discussed and agreed one by one, through the read-back rule, at the start of M2. See `registers/Rulings_In_Force.md` §4.
-
-> **Note of 11 November 2026 (Decision Log P42, P43).** M2 is not started until M1 has been redone with the sixth axiom ("There is only one thing, and that one thing is everything") and is in canon; brief `papers/M1/HANDOVER.md`. Where this file says "five axioms" and "M1 v5.0", read the new M1 when it exists. M2's starting point (P42(c)): call the one thing ω, and attempt to define ω from M1; if that fails, this attempt at the series fails. What the PI supplies is the axioms and direction; the old corpus and the PI's three texts are not used to derive M2 and are compared with afterwards (P43). **Do not read before the derivation is written and recorded:** `superseded/M2_v1/`; the ledger's section on M2 v1.0; the Definitions Register rows that cite `M2_WP…`; the display of the Master Equation in `canon/omega-definition-usage_v2.md`. The series plan's rows for M6, M7, M10 and M16 also carry wording from the withdrawn paper. Do not search the ledger or the registers for "M2" (a search of that kind is how the session of 11 November broke blindness).
+## How the session starts
+1. The handshake and the reading order of CLAUDE.md §1.
+2. **The PI opens the chat with a "my musings:" statement** of how the PI reads the six axioms and what that means for M2 (P67). A statement opened that way is narrative to be translated: not a ruling, not a premise (CLAUDE.md §3; P53). The session returns the translation, with where a physicist or a mathematician would hear something else, and waits.
+3. Then the drafts of `registers/Rulings_In_Force.md` §4 are taken **one by one** through the read-back rule. **They are drafts and not rulings** (P52). None is a premise until the PI confirms its read-back.
+4. Only then: the assumption list for the paper and its SOW/DAG (`sow/M2/SOW_DAG.md`, not yet written), shown to the PI before any derivation.
 
 ## The task
-Write M2, the field equation on the geometry of M1, **from scratch, based entirely on M1 v5.0 with the five axioms, as if no earlier M2 had existed** (Decision Log P40, P41). The premise (record §25): five axioms determine the shape; the shape determines the equation; the equation and the shape determine the series.
+Write M2, the field equation on the geometry of M1, from scratch on M1 v6.3, as if no earlier M2 existed (P40, P41, P43). The PI supplies the axioms and direction; M2 is derived from M1; the old corpus and the PI's earlier texts are not used to derive and are compared with afterwards.
+
+## The PI's direction on method (P67), in the PI's words, not yet read back
+- "M2 must be derived as we first derived M2 looking at small movements around the shapes".
+- "My musing: 'you are creating a vector field'".
+
+Both are for the read-back at the start of the session. Two points the architect has put to the PI and that are **not settled**:
+- "As we first derived M2" names the method of the withdrawn M2 v1.0, which this session must not read (below). The method is therefore to be stated by the PI in words; it is not to be looked up.
+- "Small movements around the shapes" allows two meanings: moving the points of the shape along the shape, and changing the shape itself. Which is meant is asked, not inferred.
 
 ## What exists
-- **M1, canon v5.0**: `canon/M1/Paper_M1_Five_Axioms_v5.tex` (38 pp.; certificates L1–L4, L6). It is the only paper M2 may cite, besides external peer-reviewed results (CLAUDE.md §3).
-- **No M2.** There is no draft, no SOW/DAG and no assumption list. The first act of the new session, after the handshake and the reading order of CLAUDE.md §0, is the assumption list for the paper and its SOW/DAG (`sow/M2/SOW_DAG.md`, to be written).
+- **M1 v6.3 in canon:** `canon/M1/Paper_M1_Six_Axioms_v6_3.tex` and `.pdf` (44 pp.; six axioms; nine numbered choices; certificates L1–L4, L6, L7 in `MEFProof/Paper_M1/`). The only paper M2 may cite, besides external peer-reviewed results. Numbering maps: `canon/M1/NUMBERING_v2_to_v5.md`, `NUMBERING_v5_to_v6.md`.
+- **No M2:** no draft, no SOW/DAG, no assumption list, no certificates (`MEFProof/Paper_M2/` is to be created).
+- **Rulings in force for M1:** `registers/Rulings_In_Force.md` §§1–3.
 
-## What must not be read until the new derivation is written and recorded
-`superseded/M2_v1/` holds the withdrawn M2 v1.0, its certificates, its build plan and the audit notes on it (see its README). None of it is a premise or a starting text. The new M2 is derived without it. When the derivation and its results are written down and recorded, and only then, they are compared with the withdrawn paper and with the canonical form of the Master Equation (CLAUDE.md §2b.2).
+## What must not be read until the new derivation is written and recorded (P41, P43)
+- `superseded/M2_v1/` (the withdrawn M2 v1.0, its certificates, plan and audit notes).
+- The ledger's section on M2 v1.0 and the section of targets after it.
+- The rows headed "M2 v1.0" in `registers/Minimality_Register.md`.
+- Definitions Register rows that cite `M2_WP…`; Verified References rows that cite M2, its work packages or `papers/M2/…` notes.
+- The display of the Master Equation in `canon/omega-definition-usage_v2.md` (its §6a, the forbidden names for ω, may be read).
+- `papers/M1/LIFT_SIGN.md` §5 (it speaks of the old ζ count).
+- The series plan's rows for M6, M7, M10 and M16 carry wording from the withdrawn paper.
+- Do not search the ledger or the registers for "M2": a search of that kind broke blindness on 11 November.
 
-The old corpus in `sources/` is, as for M1, read only to look for a datum when a step does not follow, and never cited.
+When the derivation and its results are written and recorded, and only then, they are compared with the withdrawn paper and with the canonical form of the Master Equation.
 
-## What M1 v5.0 provides (M1's numbering)
-- The five axioms and six numbered choices (Def 2.1(i); Def 2.1(ii), (iii); Def 2.3; Def 2.4(i); Def 2.7; Def 2.8).
-- Def 2.1: M = (T × Σ) × F; what is seen is the image under the projection that forgets F; the shadow; clause (ii), the structure carried by the internal piece is not carried to itself by one step of the drive; clause (iii), two independent states at rest with the same shadow. Rem 2.2.
+The old corpus in `sources/` is read only to look for a datum when a step does not follow, and is never cited.
+
+## What M1 v6.3 provides (M1's numbering)
+- Six axioms. Nine numbered choices: Def 2.1(i); Def 2.1(ii), (iii); Def 2.3; Def 2.4(i); Def 2.7; Def 2.8; and clauses (a), (b), (c) of Def 3.2.
+- Def 2.1: M = (T × Σ) × F; what is seen is the image under the projection that forgets F; the shadow, with its clauses (ii) and (iii). Rem 2.2.
 - Def 2.4: the growth law, a warped product with dw/ds = κw and an involution exchanging κ and −κ. M1 does not say which piece is scaled or on which piece the function lives (P37).
-- The drive: one step is M₀ = ((2,1),(1,1)); eigenvalues φ^{±2}; 2 log φ per step (Thm 4.2, Thm 4.3, Prop 4.4).
+- Def 3.2: the sixth axiom made formal as minimality: (a) nothing is left to be chosen, (b) nothing is present that is not needed, (c) what is needed is least. Clause (a) declares its count of drives: a mirror image is another drive, and a drive run backwards is another drive; neither is derived (P63, P66).
+- The drive: one step is M₀ = ((2,1),(1,1)), trace three by clause (a), with least entropy agreeing; eigenvalues φ^{±2}; 2 log φ per step (Thm 4.2, Thm 4.3, Prop 4.4, Prop 4.5).
 - The fibre: the quaternions; the torus with the fold; the four corners with algebras ℝ, ℂ_i, ℂ_j, ℂ_k; the pillowcase with four cone points of angle π (§5).
 - Dimension twelve; the four-dimensional time–space block; the split (3, 6) (Thm 6.1, Rem 6.2).
-- The base ℂP² × S²; the Spin^c structure with determinant line 𝒪(3) (Props 7.1–7.3).
-- The twist of the fibre: flux three; one odd, cycled corner; two states on the pillowcase and one removed by the fold (Def 7.4, Lemma 7.5, Prop 7.6). The corner lift (Cor 7.7). The time circle of three steps, with the sign of the lift open (Cor 7.8).
+- The base ℂP² × S²; a Spin^c structure with determinant line 𝒪(3) (Props 7.1–7.3).
+- The twist of the fibre: flux three; one odd, cycled corner (Def 7.4, Lemma 7.5, Prop 7.6). The corner lift (Cor 7.7). The time circle of three steps, the drive on spinors being −w, of cube +1 (Cor 7.8; P58).
 - Σ = S³; χ(K₈) = 12 (Prop 7.9, Thm 7.10).
-- Thm 8.1: the shape, with the overall scale and the aspect ratio of the fibre held by a declared sector.
+- Thm 8.1: the shape. Overall size has no meaning; the aspect ratio of the fibre is the one declared input.
+- ω, ψ, ψ̄ and Φ_QC do not appear in M1 (P43(1)).
 
-## The PI's rulings on the theory that stand for the new M2 (Decision Log P41)
-- Φ_QC = ω|ψ − ψ̄|², with the modulus squared (P10(b), P12).
-- The metric is positive-definite; time is the orbit parameter of the drive (Q8).
-- ψ̄ is the chiral twin of ψ; the word "shadow" is used only in the sense of the fifth axiom (P26(c)).
-- The ζ term is the shadow's contribution to gravity (P26(a)).
-- ζ couples the pillowcase to spacetime S³ × S¹ through the fibres (P27(a)).
-- Spacetime is not warped (P26(b)).
-- The size of ℂP² × S² varies with Φ_QC, that is, with position on the pillowcase (P30).
-- The fifth axiom is written about the two kinds of shadow and generates the twists of the fibre (P33–P35).
-- ω is named only as `canon/omega-definition-usage_v2.md` allows (CLAUDE.md §5).
-
-## Set aside with M2 v1.0 (Decision Log P41)
-The choices ruled while v1.0 was being built (Q1–Q7 and Q9–Q17 of 8 November 2026, and the Minimality entries M2-1 to M2-10) were answers to questions the old derivation raised. They are not in force. If the new derivation reaches the same fork, the question is put to the PI again.
-
-## Owed by M2
-- Which piece the warp scales, and how the display of K₈ is read or written (Future-Mx F-10; P30, P37; the PI's hypothesis that the order in the display should be reversed is recorded in P37 and is not a ruling).
-
-## Process (CLAUDE.md, as written)
-- §1: the plan and the assumption list first; wait. §2a: read before speaking; READ, CHECKED, RECALLED. §2b: a step audit, a derivation blind to the target, an independent check, a red-flag scan and a failure test for every claim. §2c: nothing the paper relies on is left to a later paper. §2d: every term entered in the Definitions Register before it is used.
-- Every external citation is read in its source before it is used.
-- §9: the register of the paper, and the layout adopted on 10 November.
-- §8: the gates; §10: one certificate file per load-bearing block, in `MEFProof/Paper_M2/` (the directory is to be created).
+## Open, carried into M2
+- **Owed by M2:** which piece the warp scales, and how the display of K₈ is read or written (Future-Mx F-10; P30, P37; the PI's hypothesis that the order in the display should be reversed is recorded in P37 and is not a ruling).
+- **For the PI, found while finishing M1:** M1 does not define when two geometries are the same (`papers/M1/ORIENTATION_AND_TIME.md` §4).
+- **Declared in M1 and not derived:** the mirror half of the count of clause (a); that every symmetry of the torus is given an element on spinors (Cor 7.8).
+- **References not read at source:** Gödel 1931 (V-25); the pages of Gauss (V-12) and of five other references that need a library copy (V-10, V-19, V-21, V-22, V-23).
+- Leads, never premises: Decision Log P42, P46(4), P53, P63–P65, P67.
 
 ## Needs a ruling
-- None before the assumption list is written.
+- None before the PI's opening statement and the read-back of the drafts.
