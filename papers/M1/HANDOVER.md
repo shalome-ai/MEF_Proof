@@ -97,21 +97,72 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - M2 opens on M1 v6.3 from `papers/M2/HANDOVER.md` (rewritten 11 November, P67): the PI opens with a "my musings:" statement, then the drafts of `registers/Rulings_In_Force.md` §4 are read back one by one (P52).
 
 ## Audit of Theorem 8.1 (11 November 2026, third session of the date; Decision Log P88)
-**This section is a summary. Where it and `STEP_AUDIT.md` §11 differ, the file is right.** It was checked by the architect against §11 and not by an independent reader.
+**This section is a summary. Where it and `STEP_AUDIT.md` §11 differ, the file is right.** It and the two sections after it were checked by the architect and then by an independent reader given the handover and the files it cites, under the reading limits of the M2 handover (26 findings, corrected here and in the notes).
 
-- **Built:** `STEP_AUDIT.md` §11 (§11.1 the architect's step table T1–T19 and E1–E14, fixed before the readers were launched; §11.3 blind reader B on the fourteen competitors; §11.4 blind reader A on the assembly; §11.5 the comparison, J1–J11). `checks/thm81_blindA_chk.py`, `checks/thm81_blindB_chk.py` (the readers' own scripts, re-run). Decision Log P88. The M1 Status cell of the series plan.
-- **Read:** canon M1 v6.3 ll.1–1023 and Appendix B (l.1075). Not read: ll.1024–1072, the Lean files.
+- **Built:** `STEP_AUDIT.md` §11 (§11.1 the architect's step table T1–T19 and E1–E14, fixed before the readers were launched; §11.3 blind reader B on the fourteen competitors; §11.4 blind reader A on the assembly; §11.5 the comparison, J1–J11). `checks/thm81_blindA_chk.py`, `checks/thm81_blindB_chk.py` (the readers' own scripts, re-run; A's outputs were not compared line by line with its report, and B's function `classes` is relied on for nothing). Decision Log P88. The M1 Status cell of the series plan.
+- **Read:** canon M1 v6.3 ll.1–1023 and Appendix B (l.1075). Not read: ll.1024–1105 except l.1075; the Lean files.
 - **Red flags:** 16 hits, none in ll.964–1018; those at lines the proof consumes are listed in §11.
-- **Found:** no certificate and no CHECKED computation is found false. The findings are on the joins of the assembly: §11.5, J1–J11. The theorem does not pass gate 6 as written.
-- **Not changed:** canon, the ledger, every register other than the Decision Log. Nothing is committed.
+- **Found:** in the words of §11.5, "No Lean certificate, no computation and no statement of Sections 4–7 marked CHECKED in §§8–10 was found wrong by either reader" (the Lean files were not opened). The findings are in §11.5, J1–J11: ten on the joins of the assembly, and J9, a gap inside a cited result (Proposition 5.2), outside the scope and recorded. Further points found by reader A are in §11.4, items 1–8. The theorem does not pass gate 6 as written.
+- **Not changed:** canon, the ledger, every register other than the Decision Log. Committed and pushed as 18a2707.
 
 ### Open, for the PI
-1. Each of J1–J11: whether it is a misreading, a wording to correct, a step to close in M1, or an assumption to declare with its failure test (CLAUDE.md §6). No proposal is made here.
+1. Each of J2–J11 (J1 is closed, below): whether it is a misreading, a wording to correct, a step to close in M1, or an assumption to declare with its failure test (CLAUDE.md §6). No proposal is made here.
 2. J11 rests on P34(2), a sealed row of the Decision Log, known here only through `STEP_AUDIT.md` §8.
-3. CLAUDE.md §1 tells every session to read the series plan; the M2 handover (item 4) bars it. One of the two needs changing.
-4. Whether the third M2 session's reading of the series plan (P88) bars that chat from M2 work. The architect's recommendation, given in the session: yes.
+3. ~~CLAUDE.md §1 tells every session to read the series plan; the M2 handover (item 4) bars it.~~ Settled: CLAUDE.md §1 changed (P93).
+4. Whether the third M2 session's reading of the series plan (P88) bars that chat from M2 work: **not ruled, and now moot.** The PI's words in P88 ("All confirmed - audit is the whole session, proceed") confirm the scope; that chat did no M2 work. It did go on, at the PI's direction (P89), to take up J1.
 
 ### Proposed for the registers (the PI banks by commit; none was written)
-- **Corpus Errors Register, M1 v6.3**, the first hypothesis in each being that the reading is wrong: J1, J2, J5, J6, J9; the tags of rows E2, E3, E8, E9, E12 of the elimination table (J8); l.531 against Appendix B; l.533 ("Definition 2.9(iii)"); l.685's attribution to Proposition 7.3; l.235 ("is not assumed"); l.349 against l.357; l.725 against l.763 (the wording of the reading of clause (iii)).
+- **Corpus Errors Register, M1 v6.3**, the first hypothesis in each being that the reading is wrong: J1 (since closed by a choice, P92; the row would record the wording of ll.661, 677, 685 as it stands in v6.3), J2, J5, J6, J9; the tags of rows E2, E3, E8, E9, E12 of the elimination table (J8); l.531 against Appendix B; l.533 ("Definition 2.9(iii)"); l.685's attribution to Proposition 7.3; l.235 ("is not assumed"); l.349 against l.357; l.725 against l.763 (the wording of the reading of clause (iii)); and from §11.4: Proposition 5.6, statement against proof (ll.521, 529); l.166; the [R] tags of Theorem 4.2 and Proposition 4.5; the double uses of "F", "the time factor" and "M".
 - **Minimality Register:** whether the unnumbered readings of J10 become numbered choices is for the PI.
-- **Not for any register until verified:** the three statements RECALLED by the readers (§11.5, "Not done").
+- **Not for any register until verified:** two statements RECALLED by the readers: the genus-three example and the flag manifold. The third of §11.5's list, on the Clifford algebra in dimension twelve, has since been CHECKED (`COMMUTANT_LEAD.md` §4).
+
+## J1 taken up and closed (same session; Decision Log P89–P92)
+**A summary. Where it and the files it cites differ, the files are right: Decision Log P89–P92, which hold the PI's words; `STEP_AUDIT.md` §§11.6, 11.7; `COMMUTANT_LEAD.md`.** The session was confirmed as the audit only (P88); the PI then widened it: "Let's go through J1–J11 one at a time, start with J1" (P89).
+
+- **J1** (`STEP_AUDIT.md` §11.5): Propositions 7.1–7.3 each take a hypothesis from another.
+- **The order the PI confirmed as intended (P89, assumptions 2 and 5: "2 and 5 confirmed - verify 4 at source first").** As put: on the ground M1 gives at l.685 the order *would be* linear: spinors (Definition 2.7) → complex data → ℂP² (Proposition 7.2) → not spin, so Spin^c (Proposition 7.3) → its canonical structure fixes a unit → the sphere (Proposition 7.1). Nothing in M1 says what selects the unit; in that order it would come from ℂP²'s own complex structure through Proposition 7.3. Marked by the architect as its reconstruction and not something M1 states in order. Not in a paper.
+- **Verified (P89; `STEP_AUDIT.md` §11.6).**
+  - READ, Atiyah–Bott–Shapiro 1964, pp. 11–12 only (Table 1; the periodicity; Proposition 5.4): C₁₂ ≅ ℍ(32) and C⁰₁₂ ≅ ℍ(16) ⊕ ℍ(16), "by the two quoted statements, no more".
+  - CHECKED, `checks/spinor_type_check.py`: the half-spin representations of Spin(12) are of quaternionic type. That a spinor in twelve dimensions is not complex of itself rests on this check.
+  - Not read and not checked: that Spin(k) lies in C⁰_k and that the half-spin spaces are its irreducible modules; that the commutant of ℍ(m) on ℍ^m is ℍ (RECALLED).
+  - Failure test: the script prints "COMPLEX" or "REAL" at n = 12, and Table 1 with the periodicity does not give ℍ(32).
+- **A lead tested and failed (P90; `COMMUTANT_LEAD.md`).** The PI: "Option 2 - test the lead first".
+  - The object, as the note defines it: ℍ_c, all real-linear maps of the twelve-dimensional spinor space that commute with the Clifford action; on each half-spin space the maps commuting with Spin(12) are again a copy of ℍ.
+  - The lead: that ℍ_c is M1's fibre algebra. Protocol, criteria and the architect's prediction were fixed first (§§1–3). `checks/commutant_lead_check.py` and a blind reader's `checks/commutant_lead_blind.py` agree.
+  - K1, K2, K3 fail (CHECKED). K4 holds (by construction for the architect; proved by the blind reader).
+  - Not tested: the drive; anything about bundles over M₁₂ (the model is one tangent space); other almost-quaternionic structures on ℝ¹² than the standard one (assumption 3 of the note, RECALLED).
+  - Failure test of the verdict: a non-real element of ℍ_c written as a real combination of products of gammas; or an element of Spin(12) that does not commute with J.
+- **The choice of how to close it (P91).** The PI: "Option 1 - declare the choice". J1 is closed in M1 by a new numbered choice and not by an assumption of the theorem. **Correction recorded there (the architect was wrong):** option 1 was first put as "the spinors are taken complex, which selects a unit". The unit so selected belongs to ℍ_c, which is not the copy of the quaternions that M1's Sections 5 and 7 speak of; the words "which selects a unit" are dropped.
+- **The ruling (P92), a confirmed read-back ("1-3 confirmed"). The tenth numbered choice of M1, the seventh of Section 2:** (a) the spinor bundle of Definition 2.7 is the complex spinor bundle; (b) data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in ℂ ⊗ Im ℍ ≅ ℂ³.
+  - Ground: (a) is a choice by the check above; (b) is M1's own named reading at l.685.
+  - What rests on it: Proposition 7.2 in place of "the Spin^c line of Proposition 7.3 below" (l.677); through it Propositions 7.3 and 7.1, Theorems 7.10 and 8.1, row E11 of the elimination table.
+  - Failure test: a later paper needs spinors that are real or quaternionic and not complex; or the complex-valued units of (b) cannot be what the complex spinors carry.
+  - The other hearings of the words are in P92.
+- **Flagged in P92 and not resolved:** no argument is made that the sixth axiom selects complex over real or quaternionic spinors (CLAUDE.md §6). Until one is, it is a declared choice and not one the axiom selects.
+- **No new version of M1 is built yet (P92(3)).** J2–J11 are gone through first and one version is built from all the rulings. Owed, in P92's words: "the Minimality Register entry (proposed for the PI to bank); the rewording of ll.677, 685, 661 and of row E11 in the new version". The architect adds, not in any ruling: the choice has to be stated in the text, and the places that count the choices change (ll.129, 163, 181, 193, 239, 964 say "six"; l.247 names the seventh to ninth). How the ordinals run is settled at the build.
+- **Disclosure.** P92 was ruled in the chat that P88 records as having read the barred rows of the series plan. The architect sees no line of those rows that bears on complex spinors; the PI may judge otherwise.
+- **Found on the way, for the PI, beside J10 and not part of J1** (`COMMUTANT_LEAD.md` §4): on one tangent space the tangent-level I, J, K, acting on spinors through the Clifford action, do not obey the quaternion relations and generate an algebra of dimension 30; so the two levels of Definition 2.7 do not give the same algebra and the spinor-level one is not ℍ. CHECKED by both. The first hypothesis is that "acts … as" is misread.
+
+### Proposed for the registers (the PI banks by commit; none was written)
+- **Minimality Register:** the tenth choice, M1, with P92's wording, its failure test and the flag on the sixth axiom.
+- **Verified References:** Atiyah, Bott and Shapiro, "Clifford modules", *Topology* 3 Suppl. 1 (1964) 3–38: pp. 11–12 READ from a scanned copy; the rest not read.
+- **Definitions Register:** "complex spinor bundle", to be entered before the new version uses the term (CLAUDE.md §6). The architect's proposal; P92 does not mention it.
+
+## The next session (written 11 November 2026)
+**Recommended work package: J2 only; when it is done, stop and report. This is the architect's recommendation. The PI directed the handover and did not rule on what the next session does (P93). The PI's standing words on order: "Let's go through J1–J11 one at a time, start with J1" (P89).**
+
+1. **Start.** CLAUDE.md §1 as changed (P93) has a session read CLAUDE.md and then the current paper's handover. The current paper is M2: `papers/M2/HANDOVER.md`, whose note of 11 November sends the session here, and whose lists "Do not read" and "Sealed" stay in force. (That the M2 handover is opened first and this file second is this handover's arrangement, not P93's.)
+2. **Read:** this file from "Audit of Theorem 8.1" to the end; `STEP_AUDIT.md` ll.328–348 (§§9.3, 9.4) and §11 (from the heading "## 11." to the end of the file); `COMMUTANT_LEAD.md`; canon `Paper_M1_Six_Axioms_v6_3.tex` in full; `registers/Rulings_In_Force.md` ll.1–43 only; Decision Log rows P88 onward, by `grep '^| P\(8[89]\|9[0-9]\) ' registers/Decision_Log.md`. The next number is **P94**.
+3. **Do not read:** the series plan (its Status cell for M1 is edited at the end by a targeted replacement, without reading, as the M2 handover's item 4 has it for M2); anything in the M2 handover's sealed list; the rest of the Decision Log.
+4. **J2, as the audit has it** (`STEP_AUDIT.md` §11.1 rows T3 and T19; §11.3, question A; §11.4, row T3; §11.5):
+   - the torus is obtained by assuming the drive "an Anosov diffeomorphism commuting with ι" (l.501) and Anosov is derived only on the torus (l.277);
+   - Definition 2.9 (l.232) asks neither Anosov, nor a return map on one fibre, nor commutation with ι;
+   - l.235 says the strong form "is not assumed";
+   - Franks gives topological conjugacy to a linear map (l.505), where the statement has the drive an element of SL₂(ℤ) (l.501); return maps that are not linear, and negative traces, are not excluded;
+   - clause (a) on the drive presupposes the torus, which Proposition 5.5 gets by clause (c) (T19; J5).
+   - Failure test of T3: "a line of M1 that derives 'Anosov, commuting with ι, with a return map' from Def 2.9 before l.501".
+   - Reader B's example, RECALLED and to be verified or dropped before anything rests on it: a surface of genus three, a double cover of the torus branched at four points, with a pseudo-Anosov map commuting with an involution that has exactly four fixed points.
+   - Method as for J1: the texts quoted, numbered assumptions, then wait.
+   - Sources: Franks 1970 and Katok–Hasselblatt are among "References not obtained" (`STEP_AUDIT.md` §9.3 item 3; §9.4 item 3 calls them "owed as housekeeping … not a matter for the PI"). Franks is Verified References V-10 (the first line of its row was seen); the row for Katok–Hasselblatt was not identified. The M2 handover, item 8, quotes the PI, "I won't be able to access any more than I have", and gives the consequence: an outside statement not read at source is closed by hand or declared as an assumption with its failure test.
+5. **After J2: the architect's recommendation, not ruled, and it departs from "one at a time" in numerical order.** J5, J6, J9 need work of the kind J1 did. J7, J8, J10, J11 are lighter; J11 turns on P34(2), a sealed row, which the PI would have to state. The architect recommended (P93) that J3 and J4 not be taken in a chat that has read the barred rows of the series plan, because they concern the warp, the functional and the unfixed proportions, which M2 derives. J6 and J1 touch the base and the Spin^c line that M2's `N2_sources.md` counts states on; J1 was ruled in such a chat (the disclosure above). The PI decides the order at the start of the next session.
+6. **Commit state:** see `git log`. At the time of writing, uncommitted: this file, `STEP_AUDIT.md` §11.6 on, `COMMUTANT_LEAD.md`, three scripts in `checks/`, Decision Log P89–P93, CLAUDE.md, the M1 Status cell, the note in the M2 handover. The PI directed that they be committed and pushed once the independent reader's findings were corrected.

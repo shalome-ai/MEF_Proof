@@ -579,3 +579,33 @@ The table is a list of examples. It is not exhaustive and the proof does not use
 **Failure test of this section.** As at the end of §11.1. In addition, J1 is wrong if M1 somewhere gives a ground for the selected unit, or for complexification, that does not pass through ℂP²; J9 is wrong if the text restricts the anti-involution before Lemma 5.1.
 
 **Not done.** ll.1024–1105 of M1 were not read except Appendix B (l.1075). The Lean files were not opened. No claim RECALLED by a reader (the genus-three example; the flag manifold; the Clifford algebra in dimension twelve) was verified, and none enters a register or a paper until it is. Gate 6 for Theorem 8.1 is this section; it is complete as an audit and the theorem does not pass it as written.
+
+### 11.6 J1 taken up with the PI (11 November 2026; Decision Log P89): are spinors in twelve dimensions complex of themselves?
+
+**Why asked.** The way out of the circle of J1 that M1's own l.685 points to is that the data are complex because they are spinor-valued (Definition 2.7), not because of the Spin^c line. The PI confirmed that order as the one intended and directed that the statement about spinors be verified at source first.
+
+**Read at source.** Atiyah, Bott and Shapiro, "Clifford modules", *Topology* 3, Suppl. 1 (1964) 3–38, pp. 11 and 12, read as page images from a scanned copy (webhomes.maths.ed.ac.uk/~v1ranick/papers/abs.pdf). Only those two pages were read.
+- p. 11, Table 1, column C_k, k = 1…8: "C, H, H ⊕ H, H(2), C(4), R(8), R(8) ⊕ R(8), R(16)". (C_1 ≅ C shows the generators square to −1.)
+- p. 11: "C_{k+8} ≅ C_k ⊗ C_8; further C_8 ≅ R(16), whence if C_k ≅ F(m) then, C_{k+8} ≅ F(16m)."
+- p. 12, Proposition (5.4): "Let φ: R^k → C⁰_{k+1} be defined by φ(e_i) = e_i e_{k+1}, i = 1, …, k. Then φ extends to yield an isomorphism C_k ≅ C⁰_{k+1}."
+
+**What follows (by the two quoted statements, no more).** C_12 ≅ C_4 ⊗ R(16) ≅ H(32). Its even part is C⁰_12 ≅ C_11 ≅ C_3 ⊗ R(16) ≅ H(16) ⊕ H(16). Both are matrix algebras over the quaternions.
+
+**CHECKED independently, no table assumed:** `checks/spinor_type_check.py`. It builds the gamma matrices, restricts the generators of Spin(n) to a half-spin space S⁺, and solves for an antilinear map commuting with them. Output: n = 2, 6, 10 none (complex type); n = 8 one, squaring to +1 (real type); **n = 4 and n = 12 one, squaring to −1 (quaternionic type)**; S⁺ irreducible in every case (commutant of dimension one); dim S⁺ = 32 at n = 12.
+
+**Answer.** No. In twelve dimensions a spinor is not complex of itself: each half-spin space carries a quaternionic structure that commutes with Spin(12). A complex structure on it is one more datum, and the complex structures that commute with Spin(12) are the units of those quaternions.
+
+**Not read and not checked.** That Spin(k) lies in C⁰_k and that the half-spin spaces are its irreducible modules (elsewhere in the same paper). That the commutant of H(m) on H^m is H (elementary; RECALLED). Whether the quaternions that commute with Spin(12) on spinors are the fibre algebra of M1: **an identification, and no certificate checks it** (CLAUDE.md §5). It was noticed after the difficulty of J1 was seen and with the wanted outcome (a selected unit) in view, so it is a lead and a premise of nothing.
+
+**Bearing on J1.** The reconstruction "spinors → complex data → ℂP²" does not go through as "spinors are complex": that step is a choice. What the source gives in its place is that choosing to treat the spinors as complex *is* choosing a unit among quaternions. Whether that closes J1, and how, is with the PI.
+
+**Failure test.** The answer is wrong if a half-spin representation of Spin(12) admits no invariant quaternionic structure; the script would then print "COMPLEX" or "REAL" at n = 12, and Table 1 with the periodicity would not give H(32).
+
+**The lead tested (Decision Log P90).** `COMMUTANT_LEAD.md`: protocol and prediction fixed first; the architect's script and a blind reader agree. The quaternions that commute with Spin(12) on spinors are not M1's fibre algebra: three of four criteria taken from M1's own lines fail. J1 is not closed by the lead. Found on the way: the two levels of Definition 2.7 give different algebras on one tangent space (CHECKED), the point of the readers' 7.7.
+
+### 11.7 J1 closed by a numbered choice (Decision Log P91, P92); corrections to §11.5
+
+- **J1 is closed** by the PI's ruling of P92, a confirmed read-back: the tenth numbered choice of M1, the seventh of Section 2, in two parts: (a) the spinor bundle of Definition 2.7 is the complex spinor bundle; (b) data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in ℂ ⊗ Im ℍ ≅ ℂ³. With it the order of P89 runs without a circle. In the table of §11.5, J1's mark becomes **DECLARED (P92); GAP in v6.3 as it stands**, until the new version carries the choice and the rewording of ll.661, 677, 685 and row E11.
+- **Flagged in P92:** no argument that the sixth axiom selects complex over real or quaternionic spinors. **Failure test (P92):** a later paper needs spinors that are real or quaternionic and not complex; or the complex-valued units of (b) cannot be what the complex spinors carry.
+- **Correction to §11.5, "Not done".** Of the three statements RECALLED by the readers, the one on the Clifford algebra in dimension twelve is now CHECKED (`COMMUTANT_LEAD.md` §4). The genus-three example and the flag manifold remain RECALLED.
+- **Independent check of the handover** (a fresh reader, given the handover and the files it cites under the M2 reading limits): 26 findings, corrected in `HANDOVER.md`, in the note of the M2 handover, in Decision Log P90 and here.

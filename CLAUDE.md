@@ -6,7 +6,7 @@ This file holds standing rules only. Current state is in the paper's `HANDOVER.m
 
 ## 1. Every session
 - Post first: *Verify-first is on. I will list assumptions and wait. I am not the SME; you direct.*
-- Then read: this file; the series plan; the current paper's handover, and its SOW/DAG if there is one; the latest Decision Log entries; the rulings in force.
+- Then read, in this order: this file; the current paper's handover. The handover's reading list and its sealed list govern everything after it: the series plan, the SOW/DAG, the Decision Log and the rulings in force are read only as far as the handover allows.
 - One work package per session, set by the handover. When it is done, stop and report. Start nothing further unasked.
 - End by writing the paper's handover (what was built, what is open, what needs a ruling; no physics proposals) and by updating the Status column of the series plan.
 
