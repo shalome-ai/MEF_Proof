@@ -36,6 +36,7 @@ M1 is v6.3, six axioms, in canon since 11 November 2026 (P54, P56, P60, P64).
 | "Everything" in the sixth axiom is everything that can be observed or spoken of | P47(1) |
 | ω, ψ, ψ̄ and Φ_QC do not enter M1 | P43(1) |
 | The ground of trace three is clause (a): at trace three there is one drive, and at every larger trace at least two. That it is also the least entropy, clause (c), is true and is not the ground. The count of drives in clause (a) is declared, not derived: a mirror image is another drive, and a drive run backwards is another drive | P44; P55, confirmed P56; P63, P64 |
+| The direction of the rule that links the frames is part of the universe: "A makes B" and "B makes A" are different universes. The order in which the frames are experienced is not part of it. A confirmed reading, made after the result was known and flagged as such | P66 |
 | On spinors the drive is the element of cube +1 (−w, the long way round) and the time circle is three steps, by clauses (b) and (c). Six steps is a consistent alternative that the sixth axiom declines | P58 |
 | The overall size of the shape has no meaning; only proportions do. The aspect ratio of the fibre is the declared input of M1's theorem | P45(3), P46(2) |
 | The sixth axiom gives that nothing is absolute; the fifth gives that the inside view is incomplete; together they resemble Gödel's theorem. An analogy, tagged [M]; nothing is derived from it | P47(2) |

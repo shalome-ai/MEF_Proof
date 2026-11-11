@@ -83,6 +83,9 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - Item 3 of the PI's list (P65): the three symbols that printed as blanks in the Lean listings are printed in v6.3 (typesetting only), and gate 1 now fails on a missing character.
 - Committed with v6.2 by the PI's direction (P65).
 
+## After the commit a810568 (Decision Log P66)
+- The PI confirmed a reading: the direction of the rule is part of the universe, so a drive run backwards is another drive. It makes the time half of the count of clause (a) a confirmed reading; flagged as confirmed after the result was known. Entered in the Decision Log, Rulings in Force, Minimality M1-12 and the Definitions Register. M1 v6.3 is unchanged. Not committed.
+
 ## Open
 - For the PI, found on the way: M1 does not define when two geometries are the same.
 - The two parts of the count of clause (a) are declared and not derived (Minimality M1-12).
