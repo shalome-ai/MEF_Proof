@@ -672,3 +672,15 @@ Reader A's report is kept in no file of its own; §11.4 quotes parts of it by A'
 | 4.28 | ll.264, 271 | the count of drives ("Neither part is derived … both are declared here"). Inside clause (a), so arguably inside the seventh choice; listed for completeness |
 
 **A's list of terms used and not defined in ll.58–947 (its 7.10):** "energy functional", "stationarity conditions", "structure data", "orbifold data", "flux integers" (l.258); "Sol", "S¹_Sol" (l.300); "corner fibres" (l.458); "the base" (first at l.220); "scale-freeness of A3" (l.685); "Spin^c phase" (l.677); "A3's selected unit" (l.693); "Q_c", "Q_w" (l.707, before l.934); "ψ", "ω" as names of the periods (l.602); "M" for both the manifold (l.148) and the return map (l.277).
+
+### 11.10 Why the integer on S² is two: the sphere's own winding, by hand (Decision Log P97(1), P99)
+
+The PI (P99): "there was already a read back - we could write as to why it is 2". The reason, for the new version of M1.
+
+1. **M1's rule (READ).** On ℂP² the structure taken is the one the complex structure gives, with determinant line the anticanonical line K⁻¹ and "no further datum" (ll.693, 703, 918); on the torus the same rule gives zero (l.712); every other choice is this one twisted by a line E, "an object that nothing requires", which clause (b) removes.
+2. **The rule applied to S².** The sphere is the complex projective line. Its anticanonical line K⁻¹ is its holomorphic tangent line. So the integer M1's rule gives is the degree of the tangent line of the sphere.
+3. **That degree is two (CHECKED, by hand, in full).** Cover the sphere by the coordinate z and the coordinate w = 1/z. Take the vector field ∂/∂z. In the z-chart it has no zero and no pole. In the w-chart, since dw/dz = −1/z² = −w², it is ∂/∂z = (dw/dz) ∂/∂w = −w² ∂/∂w: holomorphic, with a zero of order two at w = 0 and no other. A holomorphic section with exactly two zeros, counted with their order, and no poles: the degree is two. Cross-check: the same count for ℂP² is c₁ = 3 (l.683), and two is the Euler characteristic of the sphere, which M1 uses at l.949.
+4. **The other candidates.** Zero would be K⁻¹ ⊗ E² with E of degree −1: a twisting line. Four would need E of degree +1. Each adds an object; clause (b) removes it. Hence two.
+5. **What is taken as known and not read at source:** that the degree of a holomorphic line on the sphere is the number of zeros less the number of poles of any of its meromorphic sections; and that the canonical Spin^c structure of a complex manifold has determinant K⁻¹, which M1 already cites (l.703; Lawson–Michelsohn and Friedrich, not obtained: `STEP_AUDIT.md` §9.3). With no further sources (P97(3)), the new version declares these two as standard facts with their citations, or closes the first by hand.
+
+**Failure test.** A holomorphic vector field on the sphere with a number of zeros other than two; or a later paper that needs no flux through S².
