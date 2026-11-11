@@ -6,7 +6,7 @@
 
 **Status vocabulary.** **BANKED** — in a frozen canon paper, PI-banked. **DRAFT** — in a complete draft awaiting freeze. **PROVISIONAL (old ledger row n / paper)** — imported from `proof_derivation_ledger_v22.md` as a *menu*; may not be cited by any Mx paper until re-derived in-document and flipped to BANKED, or **STRUCK (reason)**. **TARGET (owing paper)** — not yet derived.
 
-**Readings in force.** M1 v5.0 has six numbered choices: Def 2.1(i) (what is seen is the image under the projection onto time and space); Def 2.1(ii), (iii) (an object is a state of the internal piece at rest, its shadow what is left when the internal piece is forgotten); Def 2.3 (closure); Def 2.4(i) (growth is in the geometry); Def 2.7 (spinors and tangent vectors); Def 2.8 (orbits are realised). M2's reading (called "the fifth" in M2 v1.0, to be renumbered when M2 is reworked): M2 Def. riemannian — positive-definite metric; time is the drive's orbit parameter. Minimality entries: `registers/Minimality_Register.md`.
+**Readings in force.** M1 v6.0 (canon, 11 Nov 2026; P54) has nine numbered choices: the six of v5.0 listed next, and clauses (a), (b), (c) of Definition 3.2 (the sixth axiom, formal) as the seventh, eighth and ninth. M1 v5.0 has six numbered choices: Def 2.1(i) (what is seen is the image under the projection onto time and space); Def 2.1(ii), (iii) (an object is a state of the internal piece at rest, its shadow what is left when the internal piece is forgotten); Def 2.3 (closure); Def 2.4(i) (growth is in the geometry); Def 2.7 (spinors and tangent vectors); Def 2.8 (orbits are realised). M2's reading (called "the fifth" in M2 v1.0, to be renumbered when M2 is reworked): M2 Def. riemannian — positive-definite metric; time is the drive's orbit parameter. Minimality entries: `registers/Minimality_Register.md`.
 
 ---
 
@@ -41,7 +41,21 @@
 | ~~Scale eliminated to Q_w²(18u+1) = Q_c²u²(6u+1); (3,6) ⇒ 6u³+u²−72u−4 = 0~~ | ~~M1 Prop 8.2~~ | — | — | `M1_L5_vacuum.lean` (kept in the tree for M7) | **REMOVED from M1 at v5.0 (P38, P29): owed by M7** |
 | Cross-check: Witten 1981 (seven is the least dimension with SU(3) × SU(2) × U(1) symmetry; ℂP² × S² × S¹ is one such manifold) | M1 §8.3 (was §8.4) | [R] | EXT Witten (V-18) | — | BANKED (v5) |
 
-*M1 is v5.0 (38 pp., five certificates, 58 theorems). Section 2 numbering: the fifth axiom is Definition 2.1 with Remark 2.2; closure 2.3; growth and decay 2.4; the fibre algebra 2.5; order 2.6; the two levels 2.7; orbits 2.8; drive 2.9. Earlier header notes (v1, v2) are superseded.*
+### M1 v6.0 (`canon/M1/Paper_M1_Six_Axioms_v6.tex`, 11 Nov 2026; 40 pp.; certificates L1–L4, L6, 58 theorems) — moved to canon by the PI's direction (Decision Log P54); v5.0 in `canon/M1/superseded/`
+
+*No proof of v5.0 changed and no result was renumbered. In the rows above read "clause" for "criterion" by `canon/M1/NUMBERING_v5_to_v6.md`, and "six axioms" in the row of Theorem 8.1. The rows below are new or restated at v6.0. Audit: `papers/M1/STEP_AUDIT.md` §10.*
+
+| Result | Where | Tag | Inputs | Certificate | Status |
+|---|---|---|---|---|---|
+| **v6 (new).** The sixth axiom, formal: a geometry satisfying A1–A5 is minimal if selected by (a) nothing is left to be chosen (no modulus; the step of the drive the only one of its trace, up to a relabelling of the torus that keeps its orientation); (b) nothing is present that is not needed; (c) what is needed is least (entropy of one step, total dimension, flux of the twist, steps of the time circle), applied in that order. Each clause is a reading and a numbered choice | M1 Axiom 6; Def 3.2 | reading | P42, P45, P46, P47(1), P49(1) | — | BANKED (v6) |
+| **v6 (new).** One drive at trace three only: for t ≥ 4 the matrix ((t,−1),(1,0)) is not SL₂(ℤ)-conjugate to its inverse, so there are at least two classes of trace t; at t = 3 there is one (Thm 4.2). Orientation-keeping is a hypothesis: a relabelling of determinant −1 conjugates the two | M1 Prop 4.5 | [R] | Thm 4.2; a descent on p² + tpq + q² = −1 | none; `papers/M1/checks/sixth_axiom_check.py`, `sixth_axiom_blind_classes.py` | BANKED (v6) |
+| **v6 (restated).** Trace three both ways: clause (c), least entropy, and clause (a), one drive. Which is the ground is not ruled (P44). The positive trace is an input, not a selection | M1 §4.2 | [D] | Def 3.2 (a), (c); Thm 4.2; Prop 4.5 | `L1_trace3_min` (positive trace assumed) | BANKED (v6) |
+| **v6 (restated).** Minimality theorem (assembly): six axioms; overall size has no meaning; the aspect ratio of the fibre is the one declared input | M1 Thm 8.1 | [D] | all above; M1-10 | — | BANKED (v6) |
+| **v6 (new).** The sixth axiom gives that nothing is absolute, the fifth that the inside view is incomplete; a resemblance to Gödel's theorem. Nothing is derived from it; no reference is cited | M1 outlook | [M] | P47(2) | — | BANKED (v6) as [M] |
+
+*v6.1 (`canon/M1/Paper_M1_Six_Axioms_v6_1.tex`, 11 Nov 2026; 42 pp.; six certificates L1–L4, L6, L7, 66 theorems; Decision Log P55, P56; v6.0 in `canon/M1/superseded/`). Changes to the rows above: Proposition 4.5 has the certificate `M1_L7_onedrive.lean` (`L7_descent`, `L7_no_int_solution`, `L7_not_conj_inverse`, `L7_det_of_intertwiner`, `L7_flip`, `L7_trace3_solution`); the ground of trace three is clause (a), and clause (c) agrees (P55); Gödel's first incompleteness theorem is cited (V-25); in the row of Proposition 7.3 "Spin^c is the least such structure" is withdrawn and the result reads "a Spin^c structure exists, and clause (b) admits no structure group larger than is needed". Proposed with the move to canon; the PI banks by commit.*
+
+*M1 v5.0 was 38 pp., five certificates, 58 theorems. Section 2 numbering: the fifth axiom is Definition 2.1 with Remark 2.2; closure 2.3; growth and decay 2.4; the fibre algebra 2.5; order 2.6; the two levels 2.7; orbits 2.8; drive 2.9. Earlier header notes (v1, v2) are superseded.*
 
 ## M2 v1.0 — WITHDRAWN 10 Nov 2026 (Decision Log P41). The rows below are the record of the withdrawn paper (`superseded/M2_v1/`); none is BANKED any longer, none is citable, and the new M2 enters its own rows when it is written
 

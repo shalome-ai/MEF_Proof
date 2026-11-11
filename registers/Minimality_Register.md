@@ -8,7 +8,7 @@
 
 ---
 
-## M1 — Five axioms and their minimal geometry (M1's own instances; cited by the numbering of v5.0, `canon/M1/NUMBERING_v2_to_v5.md`)
+## M1 — Five axioms and their minimal geometry (M1's own instances; cited by the numbering of v5.0, `canon/M1/NUMBERING_v2_to_v5.md`; v6.0 keeps that numbering, `NUMBERING_v5_to_v6.md`)
 
 | # | Node | Choice space | Minimal option | Criterion | Stated at | Failure test | Status |
 |---|---|---|---|---|---|---|---|
@@ -23,6 +23,27 @@
 | M1-9 | Cor 7.5 (v4.1 draft; **BANKED by the PI, 10 Nov 2026**) | The number of steps in the time circle: any multiple of three | **three** | least, of the same character as the last clause of criterion (4) | M1 Cor 7.8 | a result requiring six or nine steps (for instance from the sign of the lift, `papers/M1/LIFT_SIGN.md`) | banked 10 Nov 2026 |
 | M1-10 | §8.3 (v4.1 draft; **BANKED by the PI, 10 Nov 2026**) | Not a minimality choice: **declared assumption** that the stationarity conditions fix the aspect ratio of the fibre (no dimensionless modulus survives), needed for criterion (1) once Prop 8.2 has left M1 (P29) | declared, not derived; the value is not stated in M1 | — | M1 Thm 8.1 and its deflationary reading | a derivation of the stationarity conditions that leaves a one-parameter family of aspect ratios | banked 10 Nov 2026; M1-5 (the quanta (3, 6)) leaves M1 with Prop 8.2 and is owed by the τ₂ paper **Amended 10 Nov 2026 (PI: "proposition 8.2 yes"):** Proposition 8.2 stays in M1 as in v2. The declared assumption is now its stationarity conditions (the Euler–Lagrange equations of the flux-plus-curvature energy), stated in the proof of Prop 8.2 with the failure test: a derivation that gives different conditions, or conditions that leave the aspect ratio free. M1-5 stays with M1. **Amended again 10 Nov 2026 (P38):** Proposition 8.2 has left M1. What M1 now declares is that the overall scale and the aspect ratio of the fibre are held by a declared sector (Theorem 8.1), with the failure test in the deflationary reading: stationarity conditions that leave either free, in which case the geometry does not meet criterion (1). |
 | M1-11 | Prop 7.6 (v4.3 draft; **BANKED by the PI, 10 Nov 2026, P36**) | The flux of the twist of the fibre, among those meeting clauses (ii) and (iii) of the fifth axiom with the states counted on the pillowcase: three, four, five, … | **three**, the least | least flux; of the same character as criterion (1) (no unforced datum) | M1 Prop 7.6 and the remarks after it | a result of a later paper that needs flux four or more on the fibre; or a requirement that the states be counted on the covering torus (then two units and no odd corner); or a fixed lift of the fold that keeps one state at flux three | banked 10 Nov 2026. Two readings carry it and are stated in the paper as the second of its six numbered choices: an object is a state of the internal piece at rest; its shadow is what is left when the internal piece is forgotten |
+
+**M1 v6.0 (canon, 11 Nov 2026; Decision Log P54): the criteria are now the clauses of Definition 3.2, the sixth axiom made formal.** The entries above stand, with their failure tests; the "Criterion" column is read as follows (`canon/M1/NUMBERING_v5_to_v6.md`).
+
+| # | Clause of Def 3.2 at v6.0 |
+|---|---|
+| M1-1 | (a), the one drive of its trace (M1-12): **the ground** (PI, P55). (c), least entropy of one step, agrees and is not the ground |
+| M1-2 | (c), least total dimension |
+| M1-3 | (b), no twisting line. v6.1: the structure group is "no larger than is needed" under (b); that Spin^c is the least such group is no longer claimed |
+| M1-4 | (b), no class of loops that A1–A5 do not require |
+| M1-5 | not in M1 since v5.0 |
+| M1-6 | (a), no modulus |
+| M1-7 | a declared choice of what clause (c) is applied to: the step |
+| M1-8 | not a minimality choice since v4.3 (Prop 7.6) |
+| M1-9 | (c), least number of steps |
+| M1-10 | a declared input: the aspect ratio of the fibre. The overall size is no longer declared: it has no meaning (P45(3)) |
+| M1-11 | (c), least flux, applied after (b) |
+
+| # | Node | Choice space | Minimal option | Criterion | Stated at | Failure test | Status |
+|---|---|---|---|---|---|---|---|
+| M1-12 | Def 3.2 (a); Prop 4.5 (v6.0) | The class of the step of the drive among the SL₂(ℤ)-classes of its trace, t ≥ 3 | trace three, the only trace with one class | (a) nothing is left to be chosen; up to a relabelling of the torus that keeps its orientation (a hypothesis of the clause, not derived from the axioms) | M1 §3, §4.2, Prop 4.5 | a trace t ≥ 4 with a single SL₂(ℤ)-class; or a reason from the axioms to admit relabellings that reverse orientation, under which traces 4, 5, 9, 21 also have one class (CHECKED to trace 60, `papers/M1/checks/sixth_axiom_check.py`) and clause (a) no longer selects three | proposed 11 Nov 2026 with v6.0; the PI banks by commit |
+| M1-13 | Def 3.2 (v6.0) | What the sixth axiom means for a shape | the three clauses (a), (b), (c), in that order; (c) for the four quantities it names | a reading of the axiom, not a consequence of its words (`papers/M1/SIXTH_AXIOM_MINIMALITY.md` §6): numbered choices seven to nine | M1 §3 | a derivation of M1's selections from the words of the axiom with no reading; or a later paper needing a selection the clauses exclude | proposed 11 Nov 2026 with v6.0; the PI banks by commit |
 
 ## M2 v1.0 — withdrawn 10 Nov 2026 (P41); the entries M2-1 to M2-10 are set aside and are not in force
 

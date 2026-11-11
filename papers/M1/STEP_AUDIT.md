@@ -345,3 +345,50 @@ A fresh sub-agent read only the section and the background statements it uses, w
 3. **References not obtained** remain owed as housekeeping (V-10, V-12, V-19, V-21, V-22, V-23): not a matter for the PI.
 
 **Failure test for point 1:** Σ is not S³ if the series later needs a spatial piece with a non-trivial fundamental group; the block is not four-dimensional if a later paper needs a larger seen part.
+
+## 10. M1 v6.0 (canon since 11 November 2026, P54) — the sixth axiom (11 November 2026; Decision Log P42–P47)
+
+Source of the edits: `papers/M1/SIXTH_AXIOM_MINIMALITY.md` (its own step audit is its §7; blind check its §6). Built by `tools/m1_build_v6.py` (51 edits). No proof of v5.0 is changed; no theorem of v5.0 is renumbered; Proposition 4.5 is new.
+
+### 10.1 Definition 3.2 (oneness, formal; minimal)
+
+| Step | Statement | Status |
+|---|---|---|
+| O1 | "Everything" is everything that can be observed or spoken of | DECLARED (PI, P47(1)) |
+| O2 | Clause (a), nothing is left to be chosen | DECLARED reading (PI, P45, P46); numbered as the seventh choice. Not a consequence of the words of the axiom (note §6.1) |
+| O3 | Clause (b), nothing is present that is not needed | DECLARED reading (PI, P45, P46); the eighth choice |
+| O4 | Clause (c), what is needed is least | DECLARED reading (PI, P46(1)); the ninth choice. The note found no ground for it in the words of the axiom (note §6) |
+| O5 | Clause (a) is written for two data only (a modulus; the class of the drive at its trace) | the architect's wording, **confirmed by the PI (P49)**: a general clause "no choice among inequivalent options" would exclude every option wherever more than one is admitted, including the one taken (note §6.1, blind check) |
+| O6 | Clause (c) names four quantities and is applied after clause (b) | the architect's wording, **confirmed by the PI (P49)**: without the order, "least" would give 𝒪(1) and not 𝒪(3) (note §6.3) |
+| O7 | Overall size has no meaning; only proportions | follows from the axiom by the note's test (note §3 row 2, §6); PI, P45(3), P46(2). The blind check's proviso: nothing in the shape ties a length to an integer |
+| O8 | Which former criterion each use now cites: (1) on moduli → (a); (1) on the twisting line, Spin^c, and the least π₁ → (b); (2) → (a) and (c); (4) on dimension → (c); least flux, least steps → (c); (3) dropped as an output | note §6, last table. Least π₁ under (b) and not (c): the note's verdict (N-object) |
+
+### 10.2 Proposition 4.5 (one drive at trace three only)
+
+| Step | Statement | Status |
+|---|---|---|
+| Q1 | PA_t = A_t⁻¹P forces r = tp + q, s = −p, det P = −(p² + tpq + q²) | CHECKED by hand (note §6); blind checker's derivation, independent |
+| Q2 | A solution of p² + tpq + q² = −1 has pq < 0 and can be put as x² − txy + y² = −1, x ≥ y ≥ 1 | CHECKED by hand |
+| Q3 | Descent: x > y gives a smaller solution (y, x′), x′ = ty − x = (y² + 1)/x ≤ y | CHECKED by hand; (y² + 1)/(y + 1) ≤ y for y ≥ 1 |
+| Q4 | x = y forces x = 1, t = 3 | CHECKED by hand |
+| Q5 | Numerical agreement: one class at trace 3; at least two at traces 4–60; no solution of the equation for t = 4..8 in a box | CHECKED: `checks/sixth_axiom_check.py` (S1, S2, S4, S6), `checks/sixth_axiom_blind_classes.py` |
+| Q6 | P = ((1,0),(t,−1)) has determinant −1 and conjugates A_t to its inverse | CHECKED by hand (both products equal ((t,−1),(t²−1,−t))) |
+| Q7 | "Clause (a) selects trace three" | follows from Q1–Q4, Thm 4.2 and Def 3.2(a), given positive trace and orientation-keeping relabellings, both stated as inputs. **GAP, declared:** that relabellings keep orientation is not derived from the axioms |
+| Q8 | −M is M followed by the fold; same entropy; same map of the pillowcase | CHECKED (S7) for M₀; the general statement is that −1 acts on the torus as z ↦ −z |
+
+**v6.1 (11 Nov 2026):** Q1, Q3, Q4 and Q6 are now also certified in Lean, `MEFProof/Paper_M1/M1_L7_onedrive.lean` (eight theorems; Lean 4.29.1, core only): Q1 `L7_det_of_intertwiner`; Q2–Q4 for every t ≥ 4 `L7_descent`, `L7_no_nat_solution`, `L7_no_int_solution`, `L7_not_conj_inverse`; the solution at t = 3 `L7_trace3_solution`; Q6 `L7_flip`. Not certified, and the text's: Q7 (that the classes are the drives, and the orientation hypothesis). Since P55 clause (a) is the ground of trace three, so Q7's declared gap is load-bearing. **Failure test:** a trace above three with one class under SL₂(ℤ); or an axiom-level reason that relabellings may reverse orientation.
+
+### 10.3 Red-flag scan of the draft
+`tools/redflags.py` on `Paper_M1_Six_Axioms_v6.tex`: the hits of v5.0 and no new class of hit at the edited lines (counts in the handover).
+
+### 10.4 Owed (still open after the move to canon, P54; the PI accepted the paper as it stands)
+- Gödel's theorem is named in the outlook (P47(2)) without a citation; a published reference read and entered in Verified References, or the sentence reworded.
+- The sentence at v5.0 l.637 ("the larger ones reduce to it when w₂ lifts integrally") carries no citation (note §3 row 4).
+
+### 10.5 v6.1 (11 November 2026; Decision Log P55, P56)
+- **The ground of trace three** is clause (a) (P55); the paragraph of §4.2, the remark after Definition 3.2, the assembly of Theorem 8.1 and the table of §8 are reordered. No step changes.
+- **Gödel** (10.4, first item): closed. Statement read in a secondary source and entered as Verified References V-25; the original not read, its publication data RECALLED. The sentence now states the theorem and says it is not applied.
+- **The uncited sentence** (10.4, second item): closed by rewording. v6.0 claimed that Spin^c "has the least structure group lifting a non-zero w₂, and the larger ones reduce to it when w₂ lifts integrally"; no reference was found or read for that, and the architect could not support it. v6.1 claims only what the proof shows (a Spin^c structure exists) and what clause (b) does (no larger structure group than is needed). The statement of Proposition 7.3 changed accordingly: "Spin^c is the least such structure" is no longer claimed. **Status: the word "least" is withdrawn, not proved false.**
+- **Lean certificate for Proposition 4.5:** written, 10.2.
+- Red-flag scan of v6.1: 16 hits, the same as v6.0. Gates 1, 2, 4, 5 pass; 3 fails on the P36 exception only.
+- Found on the way, not new: the listings of `M1_L3_dimension.lean` and `M1_L4_base.lean` contain three symbols (∣, ∤, 𝒪) that the listing font lacks; they print as blanks in the appendix (12 places), in v5.0 and v6.0 as well. No gate checks it.

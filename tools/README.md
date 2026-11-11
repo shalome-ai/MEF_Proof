@@ -20,3 +20,13 @@ The paper is `papers/Mx/` if that folder holds a main `.tex`, otherwise `canon/M
 **PyMuPDF.** `python3 -m pip install --user pymupdf`.
 
 **Known results on the frozen papers (9 Nov 2026), accepted by the PI (P15).** M1 and M2 pass gates 1, 4, 5 (gate 1's page counts match the stored PDFs: 26 and 30). Gate 2 finds, in both, only the Lean listing frames of Appendix A, 4.6 pt into the right margin; they stay as frozen, and from M3 on the template sets the frames inside the text block. Gate 3 finds four items in M1, kept as they stand (l.562 "coherence field"; l.58 "I" voice ×2; l.139 "toward"), and none in M2.
+
+## `redflags.py` — the red-flag scan (gate 7)
+
+```bash
+python3 tools/redflags.py <file> [lines]
+```
+
+Moved here from CLAUDE.md §2b.4 on 11 November 2026 (Decision Log P49, P50), word for word:
+
+**Red-flag scan (a gate).** Every source is scanned with `python3 tools/redflags.py <file> [lines]` before it is used, and the hits at the steps consumed are entered in the step audit: "∝" or "up to normalisation" where a number appears; a key step that refers forward; "standard, taken as given" for something specific; a rigour label attached to a numerical test; agreement with a known target; a choice made after the answer is known. A hit proves nothing; it says where to look.

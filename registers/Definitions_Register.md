@@ -2,7 +2,16 @@
 
 *M2 v1.0 was withdrawn on 10 November 2026 (Decision Log P41) and is in `superseded/M2_v1/`. Entries below that cite M2, its work packages (`M2_WP…`), its certificates or `papers/M2/…` notes are records of the withdrawn paper: they are not in force and are not premises of the new M2.*
 
-*M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`.*
+*M1 is cited by the numbering of v5.0 (canon, 10 Nov 2026). Line numbers of M1 quoted in entries made before that date are lines of v2 (`canon/M1/superseded/`); the map is `canon/M1/NUMBERING_v2_to_v5.md`. **M1 is v6.0 since 11 Nov 2026 (P54); it keeps the numbering of v5.0 and adds Axiom 6 and Proposition 4.5 (`canon/M1/NUMBERING_v5_to_v6.md`).***
+
+## Terms of M1 v6.0 (proposed 11 Nov 2026 with the move to canon; the PI banks by commit)
+
+| Term | Defining text | Where |
+|---|---|---|
+| **minimal**; **satisfies A6** | "A geometry satisfying A1–A5 satisfies A6, and is called *minimal*, if it is selected by the following three clauses applied in order, each applied among the geometries that the previous ones leave": (a) nothing is left to be chosen; (b) nothing is present that is not needed; (c) what is needed is least. Replaces the four criteria of v5.0 | `canon/M1/Paper_M1_Six_Axioms_v6_1.tex` Def 3.2, ll.259–267 |
+| **clause (a), (b), (c)** | the three clauses of Definition 3.2. Not the clauses (i), (ii), (iii) of the fifth axiom (Definition 2.1) | same |
+| **everything** (in the sixth axiom) | PI's usage, confirmed (P47(1)): everything that can be observed or spoken of | Decision Log P47 |
+| **my musings:** | PI's usage, confirmed (P53): opens narrative for the architect to translate; not a ruling, not a premise, enters no paper | Decision Log P53 |
 
 *One meaning per term (CLAUDE.md §2d; Decision Log P24). Opened 10 November 2026. Every term is entered with the text that defines it, by file and line. **When reading a paper, read each term as defined here. When writing, use each term as defined here, and enter a new term here before it is used.** If a definition seems to need changing, the first hypothesis is that the wording has drifted in the writing (an error of the kind language models introduce), not that the mathematics or the physics is wrong: stop, show the defining text, and take it to the PI. Claude proposes; the PI banks.*
 
