@@ -424,3 +424,158 @@ Source: `ORIENTATION_AND_TIME.md` (protocol agreed by the PI before it ran; blin
 
 **Failure test (in the paper).** A symmetry of the geometry that mirrors the fibre torus; or a later paper that must count a state and the same state run backwards as one.
 **Found on the way:** M1 has no definition of when two geometries are the same (the blind checker's words: "a notion of isomorphism of geometries"). Not added to the paper; for the PI.
+
+## 11. Theorem 8.1 (minimality) as it stands in v6.3: audit of the assembly (11 November 2026, third session of the date)
+
+**Direction (PI):** "Do the blind audit of M1's main theorem first"; scope and design confirmed ("All confirmed - audit is the whole session, proceed"). **Scope:** canon M1 v6.3 ll.964–992 (statement, proof, the deflationary reading) and the elimination table ll.994–1018. For each clause of the proof: does the cited result, as stated at its own lines, deliver what the clause claims, and does "unique" follow. The cited results are not re-proved; their own tables are §§8–10 above.
+
+**Read for this section:** canon M1 v6.3 ll.1–1023 (ll.1024–1105 not read); this file's headings, ll.306–348 and 384–387, and the lines a search for "Theorem 8.1" and "blind" printed.
+
+**Disclosure.** The architect is not blind: it read the theorem's conclusion before writing this table, and carries from the M2 handover and Decision Log P71–P87 the odd places found there (Def 2.3; the eight unfixed data; the integer on S²; l.1013). Rows that repeat those are marked "known". §11.1 is the architect's own table and **was written before either blind reader was launched**; their verdicts are in §11.3 and §11.4.
+
+**Red-flag scan (gate 7).** `python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v6_3.tex`: 16 hits, at ll.110, 129, 139, 209, 229, 239, 340, 596, 677, 714, 719, 723, 728 (two), 806, 1049. **None lies in ll.964–1018.** Hits at lines the proof consumes through its citations: l.677 (Prop 7.2 cites Prop 7.3 "below": see T7); ll.719, 723, 728 (Def 7.4, behind Prop 7.6: "the statements below speak of one lift or the other"; signs "up to the overall sign"); l.1049 (the certificate takes the count of Lemma 7.5(b) as given, as l.801 says).
+
+### 11.1 The architect's step table (fixed before the blind readers reported)
+
+Marks as CLAUDE.md §5. "First hypothesis" in every GAP row: the reading is wrong.
+
+| # | Step of the assembly | Mark | Note |
+|---|---|---|---|
+| T1 | Hypotheses: "A1–A5 under the readings of Definitions 2.1, 2.3, 2.4(i), 2.7, 2.8" (l.967) | DECLARED, **incomplete as a list** | The proof also rests on Def 2.5 (fibre algebra), Def 2.9 (drive: positive entropy, periodic points of measure zero; l.229 "we take the axiom to exclude that") and Def 7.4 (flux, states, structure), which give words their meaning and are not among the six numbered choices of l.239 |
+| T2 | "A5 gives the family (T × Σ) × F" (l.975) | DECLARED (Def 2.1(i)) | dim T = 1 is part of the family |
+| T3 | "A4 with clause (a) gives the drive" (l.977) → Thm 4.2, Prop 4.5 | Thm 4.2, Prop 4.5: CHECKED (§9.2, §10.2). **The passage from Def 2.9 to them: GAP** | Thm 4.2 and Prop 4.1 are for a linear map of a torus (l.277). The torus comes from Prop 5.5, whose hypothesis is that the drive "act[s] as an Anosov diffeomorphism commuting with ι" (l.501). Def 2.9 asks a flow with no fixed points, positive entropy and periodic points of measure zero; nothing read derives "Anosov" from that on a fibre not yet known to be a torus, nor "commuting with ι", nor that the flow has a return map on one fibre |
+| T4 | "A1–A4 with clause (c) give the fibre, its algebra, its corners and the pillowcase (Section 5)" (l.979) | Thm 5.7 CHECKED; Prop 5.2, 5.5, 5.6 [D]. **Two identifications unnumbered: DECLARED-in-text, not among the nine choices** | (i) l.449: ι acts on the algebra as an anti-involution, "the algebraic image of exchanging growth and decay"; (ii) l.467: A1's compactness of the pieces is read as compactness of the unit groups of the corner subalgebras; (iii) l.516: "exactly four isolated fixed points" of ι is Prop 5.3 "read geometrically" |
+| T5 | Clause (c) in Prop 5.5: "selects the least dimension" of the fibre X (l.513) | **GAP (identification)** | Clause (c) names four quantities (l.268); the dimension it names is the total dimension of M. The least dimension of the fibre X is not one of them. With D = 12 fixed, dim X = 2 follows only if the base is already six-dimensional |
+| T6 | "A3 with clause (c) gives dimension twelve and the split (3, 6)" (l.981) → Thm 6.1, Rem 6.2 | [D]; DECLARED steps as §9.2, §9.4 | "The time–space block carries the quaternionic structure … so its dimension is a positive multiple of four" (l.613) and "A3 would carry no information on F" (l.621) are readings beyond Def 2.7 as written. Rem 6.2 presupposes F = base × T²/ℤ₂ |
+| T7 | "A3 with Definition 2.8 gives S² and ℂP², with Spin^c necessary" (l.983) → Props 7.1–7.3 | **GAP: the three propositions presuppose one another** | Prop 7.1 is conditional: "If a Spin^c structure selects one unit" (l.661). Prop 7.2 takes "the Spin^c line of Proposition 7.3 below" (l.677). Prop 7.3 gets Spin^c from "a geometry whose base contains ℂP²" (l.693). So ℂP² rests on the Spin^c line and the Spin^c line on ℂP². l.685 offers another ground ("spinor-valued data are complex"); that is not what l.677 states |
+| T8 | Prop 7.2 against Def 2.8 | **GAP (identification)** | Def 2.8 realises G/H with G "the symmetry group of the fibre algebra" (l.220). In Prop 7.2 the group is U(3), "the symmetry preserving the induced Hermitian form and the Spin^c phase" (l.677), introduced by "let". U(3) is not the symmetry group of ℍ. The paper tags the proposition [D] and "least direct" |
+| T9 | The base is the product ℂP² × S² and nothing more | **GAP** | No cited statement says that the realised orbits are exactly these two, or that the base is their product. The dimension count 4 + 2 = 6 agrees with the split and is not an argument for it |
+| T10 | "L = 𝒪(3) and Σ = S³ by clause (b)" (l.983) | Prop 7.3, 7.9 [D]; DECLARED (Minimality M1-3, M1-4) | "Determinant line 𝒪(3)" names the integer on ℂP² only. Known (P77, P85): the integer on S² is not stated; l.964 says the conclusion "names … every discrete datum" |
+| T11 | "Corollaries 7.7 and 7.8 give the time circle … least number of steps by clause (c)" (l.985) | [D]; hypothesis named in the text ("the lifted fold being one structure on the whole geometry", l.837); §10.6 | l.894: applying the entropy of clause (c) to the step and not to the map once round "is recorded as such": a choice, not among the nine |
+| T12 | "flux three on the fibre with one odd corner (Proposition 7.6)" | [D]; §8 A11; target known before the computation (§8 "Disclosure") | hypothesis: the states of clause (iii) are states on the pillowcase for one lift (l.763) |
+| T13 | ×_w in the display | **Not derived by the proof; DECLARED (Def 2.4(i)) as a hypothesis** | No clause of the proof speaks of the warp. Known: l.127 (which piece is unfixed); P74(i) (Def 2.4(ii) cannot hold on a closed piece, CHECKED in the M2 step audit) |
+| T14 | Existence: "the geometry that satisfies A6 … is unique and is M₁₂" | **GAP** | Every clause of the proof argues that a factor is forced. No clause shows that M₁₂ satisfies A1–A5 as defined, in particular Def 2.4(ii), (iii), Def 2.9 on T × F with F eight-dimensional, and clause (a) |
+| T15 | Clause (a), "M has no modulus", for M₁₂ | DECLARED (the declared input; Minimality M1-10), **narrower than what is needed** | The energy functional of Def 3.1 is not defined, so no datum can be tested. One proportion is declared (the aspect ratio). Known (P71): seven other continuous data are left unfixed, among them the relative sizes of the pieces, which l.255 says are the only things that mean anything. "Declared sector" (l.967) is not defined (known, P74) |
+| T16 | "unique" | **GAP (undefined term)** | No definition of when two geometries are the same (known: §10.7; P71) |
+| T17 | χ(K₈) = 12 | CHECKED (`L3_chi_K8`); Künneth not read (§9.2) | — |
+| T18 | The primes (ll.987–989) | DECLARED; "topological integers" is not defined | Cannot be marked CHECKED until the list of integers is given. M₀³ has entries 13, 8, 8, 5 (l.837); whether entries count is not said |
+| T19 | Order of the clauses: "(a), (b), (c) applied in order, each among the geometries the previous ones leave" (l.262) | **GAP against the proof's order** | Clause (a) on the drive presupposes the torus, which Prop 5.5 gets by clause (c). The proof applies (c) before (a) there |
+
+**Elimination table (ll.1002–1015), the architect's verdicts, fixed before the blind reader B reported.**
+
+| Row | Competitor | Verdict | Tag in M1 | Architect |
+|---|---|---|---|---|
+| E1 | non-warped product | excluded by definition | [D] | agrees |
+| E2 | D ≢ 0 (4) | excluded given Def 2.7 | [R] | the cited Thm 6.1 is [D]; [R] only for "almost-quaternionic ⇒ 4 ∣ D" |
+| E3 | D = 4, 8 | D = 8 excluded by the reading "A3 vacuous on F" and a four-dimensional block | [R] | **overstated: [D]** |
+| E4 | D = 16, 20, … | clause (c) | [D] | agrees |
+| E5 | trace 2 | entropy zero | [R] | agrees |
+| E6 | trace ≥ 4 | at least two classes: CHECKED; the exclusion needs the declared count | [R] | [R] for the count of classes; the exclusion is [D] |
+| E7 | M₂(ℝ) | Prop 5.2 | [D] | agrees, with T4(ii) |
+| E8 | Tⁿ, n ≠ 2 | 2ⁿ ≠ 4: CHECKED; that the fibre has four fixed points is T4(iii) | [R] | **overstated: [D]** (Prop 5.5 is itself [D]) |
+| E9 | T⁴/ℤ₂, K3 | 16 corners CHECKED; "D = 8" rests on Thm 6.1 | [R] | **overstated: [D]** |
+| E10 | S³/ℤ₂, S³/ℤ₃ | clause (b) | [D] | agrees |
+| E11 | spin bases S² × S² × S², ℂP³, S⁶ | "Spin^c unforced; no S² factor" | [D] | **GAP.** S² × S² × S² has S² factors. "Spin^c unforced" is not a failure of an axiom: Def 2.7 asks a spinor bundle, a spin base supplies one with less, and clause (b) would prefer it. What excludes a spin base is that ℂP² must be realised (Def 2.8), which is T7 |
+| E12 | bases with moduli: ℂP² × T², T⁶ | clause (a) | [R] | **not [R]** (known, handover item i): the functional is undefined; and the fibre's own modulus is admitted "held by a declared sector" while the base's torus is excluded for having one. Both lack an S² factor or a ℂP² factor and would fall to Def 2.8 at [D] |
+| E13 | the quadric Q³ | no Sp(1)/U(1) factor | [D] | agrees, under Def 2.8 |
+| E14 | 𝒪(1), 𝒪(5) | clause (b) | [D] | agrees |
+
+The table is a list of examples. It is not exhaustive and the proof does not use it; uniqueness rests on T3–T12.
+
+**What would show this table wrong (failure test of the audit).** T3: a line of M1 that derives "Anosov, commuting with ι, with a return map" from Def 2.9 before l.501. T5: a line that applies least dimension to the fibre by a named clause. T7: an order of Props 7.1–7.3 in which each rests only on what precedes it. T14: a passage that checks M₁₂ against Defs 2.1–2.9.
+
+### 11.3 Blind reader B: the fourteen competitors (returned 11 November 2026)
+
+**What it was given.** Canon M1 v6.3 ll.58–119 and 131–947 with line numbers, and nothing else: ll.120–130 (the summary of results), ll.948–end (Theorem 7.10, Section 8 with the theorem and the table, the outlook, the appendices), the abstract and the title page were withheld. It was given the fourteen competitors and the result named against each, without the "Fails at" column and without the tags, and was asked whether the text excludes each, by what, on what hypotheses, and with what tag. It was not told the architect's verdicts. Standing: model output, as §11.1 is. Its arithmetic script is kept as `checks/thm81_blindB_chk.py` and was re-run here.
+
+| Row | Competitor | Tag in M1 | Architect (§11.1) | Blind reader B | Agree? |
+|---|---|---|---|---|---|
+| E1 | no warping | [D] | agrees | excluded by Def 2.4(i); [D] | yes |
+| E2 | D ≢ 0 (4) | [R] | [D], with [R] only for the module step | [D]: "an elementary consequence of a declared reading; the theorem is itself tagged [D]" | yes; both below M1's tag |
+| E3 | D = 4, 8 | [R] | overstated: [D] | D = 4: [D]. **D = 8: [M]**: the excluding step is "a requirement not found in any definition or numbered choice" (l.621, "A3 would carry no information on F") | both below M1's tag; B is lower than the architect |
+| E4 | D = 16, 20, … | [D] | agrees | **[M] on the text as given**: "least" needs a twelve-dimensional geometry that survives clauses (a) and (b), and that is asserted (l.625) and not shown; [D] once existence is supplied | B adds the dependence on existence (T14) |
+| E5 | trace 2 | [R] | agrees | [R] within the torus setting of l.277; the setting itself [D]. Notes that at \|t\| = 2 the proof says "M is a shear" and ±1 is not one; the conclusion stands | yes |
+| E6 | trace ≥ 4 | [R] | [R] for the count, [D] for the exclusion | [D]: "the arithmetic is [R], but the exclusion holds only under the declared count". Thm 4.2 excludes nothing at trace ≥ 4. Adds: what is excluded is a *step* of trace ≥ 4; the same bundle read as one step of trace eighteen is excluded only by the choice of l.894 with Cor 7.8 | yes; B adds the point on trace eighteen |
+| E7 | M₂(ℝ) | [D] | agrees, with T4(ii) | **[M]**. Two identifications undeclared (compact pieces ⇒ compact unit groups; the anti-involution is quaternion conjugation). **Counter-example to the step as worded, CHECKED:** on M₂(ℝ) with a* the transpose, the only line ℝ ⊕ ℝu with u* = −u is spanned by J, J² = −1, with compact unit group; the hypotheses of Lemma 5.1 hold and M₂(ℝ) is not a division algebra. Lemma 5.1 gives N "values in the fixed set of *", and a⁻¹ = a*/N(a) needs N real | **B found more.** Re-checked by the architect by hand: transpose is an anti-involution; skew matrices are the multiples of J; the unit group of ℝ ⊕ ℝJ is the circle. The first hypothesis stands: the text may intend * as the conjugation of an algebra already of quaternion type (l.471), and that is then an unstated premise |
+| E8 | Tⁿ, n ≠ 2 | [R] | overstated: [D] | [D]: "arithmetic under a declared identification; the proposition is [D]". Notes l.513 against l.268 (T5) | yes |
+| E9 | T⁴/ℤ₂, K3 | [R] | overstated: [D] | T⁴/ℤ₂: [D]. **K3: [M]**, resting on the D = 8 step alone; Prop 5.3 "by itself excludes neither: it counts subalgebras of ℍ" | both below M1's tag; B lower on K3 |
+| E10 | S³/ℤ₂, S³/ℤ₃ | [D] | agrees | [D] | yes |
+| E11 | spin bases | [D] | GAP, by T7 | **[M]**. "Spin^c is forced" does not exclude a spin base: it "presupposes the ℂP² that excludes them". Finds the circle of Props 7.1–7.3 independently; finds that l.685 attributes to Prop 7.3 a statement ("spinor-valued data are complex") that ll.692–707 do not contain; finds U(3) outside Def 2.8 as worded; notes that clause (b) "would, if anything, favour a base needing no determinant line" | **yes, independently, on T7, T8 and E11** |
+| E12 | bases with moduli | [R] | not [R] | **[M]**: "the test in Def 3.1 cannot be carried out on the text, because the functional it refers to is not given". On question B: the treatment of the base's torus and of the fibre's aspect ratio is "not consistent" on the text as given; consistent only if the undefined stationarity conditions fix the one and not the other, and "the text given supplies neither half" | **yes, independently** |
+| E13 | the quadric Q³ | [D] | agrees | [D]; notes that l.223 promises "the other possible reading is set out" in Section 7 and it is not found in ll.656–947 (the architect: it is at l.992, in the withheld part) | yes |
+| E14 | 𝒪(1), 𝒪(5) | [D] | agrees | [D]; notes that the sign of the selected unit (𝒪(3) against 𝒪(−3)) is declared and not derived | yes |
+
+**Question A (does excluding the fourteen leave one geometry?). B: no.** Its list of what is not excluded or not shown, each checked here against §11.1:
+- existence of the survivor (T14), and that it has no modulus (T15); the other proportions unfixed (T15, known);
+- fibres that are not tori: Def 2.9 does not ask Anosov (T3). **B's example, RECALLED and not verified:** a surface of genus three, a double cover of the torus branched at four points, with a pseudo-Anosov map commuting with an involution that has exactly four fixed points;
+- return maps that are not linear, and negative traces (T3);
+- least dimension of the fibre is not what clause (c) names (T5);
+- other six-dimensional bases holding both orbits: Def 2.8 says "piece", Props 7.1, 7.2 read "factor" (T9). **B's example, RECALLED:** the flag manifold of ℂ³, an S²-bundle over ℂP²;
+- the integer of the determinant line on S² (T10, known);
+- the metric on each factor (not in §11.1; within the known list of P71);
+- **not in §11.1:** Def 2.7 speaks of "the algebra generated by the Clifford action on a spinor bundle over M", which in dimension twelve is not ℍ (RECALLED by B); the text does not reconcile this with Prop 5.2;
+- **not in §11.1:** l.235 says the strong form of the drive "is not assumed; Section 4 derives it", while Prop 5.5 assumes Anosov; B reads "is not assumed" as too strong as worded.
+
+**On Def 2.4, found by B without being asked:** on a compact piece no single-valued smooth w has ∇w nowhere zero. This is the point of P74(i) (CHECKED there), found a third time independently. B gives three readings under which the definition could hold and notes that ll.131–947 exhibit no product of the derived geometry as warped (T13).
+
+**Where B and the architect differ.** In no row does B rate an exclusion higher than the architect. B is lower at E3 (D = 8), E4, E7 and E9 (K3). B did not raise T19 (the order of the clauses).
+
+**On the script.** Re-run here: no solution of p² + tpq + q² = −1 for t = 4…12 in the box; the intertwiner identities; the entropies 0.962, 1.317, 1.567, 1.763; J² = −1; the three conjugators of ll.353–355. Its function `classes` (a count of classes among small matrices) prints 1, 2, 2, 1, 0, 0 for traces 3–8: it is a search in a bounded box, B did not report it, and it is relied on for nothing.
+
+### 11.4 Blind reader A: the assembly (returned 11 November 2026)
+
+**What it was given.** The same text as B (ll.58–119, 131–947), and no list of competitors. It was asked to assemble for itself what the stated results determine, taking each result as true as stated; to list the hypotheses of each and where the text discharges them; the order of dependence; readings not among the nine numbered; what is left free; and whether existence and uniqueness are shown. It was not given the theorem, the display of the geometry, Theorem 7.10 or the architect's table. Standing: model output. Its script is kept as `checks/thm81_blindA_chk.py` and was re-run here (it runs; its outputs were not compared line by line with A's report).
+
+| §11.1 row | Blind reader A | Agree? |
+|---|---|---|
+| T1 (hypotheses incomplete) | Lists twenty-eight places (its 4.1–4.28) where a meaning, identification or selection enters that is not among the nine numbered. Among them: no part of Def 2.9 is numbered; Def 2.5; l.187 ("'As a function of itself' is the law of natural growth") where only clause (i) is numbered; Def 3.1; l.277 (return map in SL₂(ℤ)); l.295 (positive trace); Def 7.4 | yes; A's list is longer |
+| T3 (Def 2.9 to the drive) | Its 2.1, 2.6(d), 3.3. "Def A4 … does not ask Anosov, nor that the flow be the suspension of a diffeomorphism of a fibre." **Calls it a circle:** l.277 says the torus "is proved in Section 5 … and nothing in the present section is used there"; l.235 says the strong form "is not assumed; Section 4 derives it"; Section 4 derives it only on the torus. "The two sentences l.235 and l.277 cannot both be the case unless Anosov is an independent assumption in Prop [5.5], which l.235 denies." Also: Franks gives topological conjugacy to a linear map (l.505), the statement says the drive *is* an element of SL₂(ℤ) (l.501) | **yes, independently** |
+| T4 (unnumbered identifications) | Its 2.4, 2.5, 2.6(a)–(c), 3.4, 3.5. Adds: that the involution of A2 sits on the same fibre as the drive is nowhere established (Def 2.4(iii) puts it on "the warped piece" and no result says which piece is warped); Prop 5.2 uses "the corner fibres" before any corner exists; the four fixed points rest on Prop 5.3 "read geometrically" and "the next proposition", which assumes the torus (a near-circle) | yes; A adds |
+| T5 (clause (c) on the fibre's dimension) | Its 3.7(iii): "not one the clause's wording covers … no step shows that a larger X gives a larger total" | **yes, independently** |
+| T6 (Thm 6.1) | Its 2.8: Def 2.7 "does not say that T × Σ and F are separately invariant under I, J, K"; restated as a hypothesis in Rem 6.2 and not established there | yes |
+| T7 (Props 7.1–7.3 presuppose one another) | Its 3.2: "Circle: Prop CP2 ↔ Prop spinc." Without ℂP² the remaining pieces are spin (l.705), "so nothing in the text forces a Spin^c structure, and then nothing selects a unit." Its consistent reading: a Spin^c structure with a selected unit is posited independently, and then "the selected unit is an unsourced input". l.685's attribution to Prop 7.3 is not in l.693 | **yes, independently (all three readers)** |
+| T8 (U(3) against Def 2.8) | Its 2.11(iii): "what Def orbits literally asks and what Prop CP2 assumes are not the same thing"; "scale-freeness of A3" (l.685) appears nowhere else | **yes, independently** |
+| T9 (the base as a product) | Its 1.22: "Not a datum determined by any result in the lines given"; used as known at ll.653, 712 | **yes, independently** |
+| T10 (integer on S²) | Its 5.6: "even" only; "not acknowledged as open" | yes (known) |
+| T11 (time circle; the step) | Its 2.14, 3.8. Adds: l.277 calls one application of the *return map* a step; once round T the return map is M₀³, of trace eighteen, where Prop 4.5 gives at least two classes and the entropy is 6 log φ. Def 2.1(ii) and the hypothesis of Cor 7.8 are compatible only with the later meaning of "step". And in Cor 7.8 clause (c) is applied before clause (b) (ll.863, 865) | yes; A adds |
+| T12 (flux three) | Its 2.12. **The integer turns on a reading.** Def 7.4 says "Two states of the fibre *at rest* have the same shadow … This is the reading of Definition 2.1(iii)" (l.725); Prop 7.6 assumes "states on the pillowcase for one of the two lifts" (l.763). CHECKED by A from Lemma 7.5 as stated, and re-checked here by hand: at flux two with D = P_i + P_j there are two states at rest (7.5(a)) and the signs are two of each kind, moved by one step (7.5(c), l.755), so clauses (ii) and (iii) both hold; on the pillowcase each lift keeps one (7.5(b)) and clause (iii) fails. Least flux two on the words of l.725, three on the hypothesis of l.763 | **Known and ruled:** §8, "Disclosure" (l.199 of this file): "The count on the covering torus … gives two; the count on the pillowcase gives three; the PI has ruled the pillowcase (P34 (2))". P34 is a sealed row and was not read. What A adds is that l.725 words the reading of clause (iii) in states at rest, not in states on the pillowcase |
+| T13 (the warp) | Its 5.5, 6(a): "no warp is constructed anywhere" | yes |
+| T14 (existence) | Its 6(a), clause by clause. Shown: A1; A5(ii), (iii) under Def 7.4; a Spin^c structure; clause (a) for the drive; A4 on the torus. Not shown: A2(i)–(iii); the almost-quaternionic structure of Def 2.7 on the twelve-dimensional product ("D = 12 is admissible" is "the divisibility test only"); that ℍ is the algebra of operations on the fibres of the candidate; "no modulus". **Cannot hold as written: Def 2.4 with Def 2.3**, computed in full (maximum and minimum of w), with three readings under which it could | **yes, independently.** The Def 2.4 point is P74(i), now found by four readings |
+| T15 (no modulus) | Its 3.7(i), 5.3, 5.15, 6(a): the first part of clause (a) is applied nowhere in ll.58–947; l.239 "One proportion is not derived" implies the others are, and none is | **yes, independently** |
+| T16 ("unique") | Its 6(b): "No notion of sameness of two geometries is defined" | yes (known) |
+| T17, T18 | Not reached: Theorem 7.10 and ll.987–989 were withheld | — |
+| T19 (order of the clauses) | Its 3.7(ii), (iv): "a use of (c) precedes the first use of (a)"; Thm 6.1 applies (c) before any use of (b), which is harmless "only if a twelve-dimensional geometry survives (a) and (b)" | **yes, independently** |
+
+**Found by A and not in §11.1** (each checked here against the text; the first hypothesis in each is that the reading is wrong):
+1. **Prop 5.6, statement against proof (ll.521, 529).** The statement has "ι acting as conjugation"; with that alone Prop 5.4 gives ℝ at all four corners. The proof uses "the local form of ι at such a point is the inner automorphism by the surviving unit". READ; l.536 acknowledges the reading and calls it "a definition rather than a computation". The statement's hypothesis does not say that conjugation is meant at P₁ only.
+2. **The corner labels against the cycle.** l.531: "ℂ_i ↦ ℂ_j ↦ ℂ_k exactly as P₂ → P₃ → P₄". Appendix B (l.1075, read here; withheld from A) has P₂ = C_j, P₃ = C_i, P₄ = C_k, and l.578 the same. Under that dictionary P₂ → P₃ → P₄ is ℂ_j → ℂ_i → ℂ_k, which is Ad_w run backwards (Ad_w sends j to k). CHECKED by hand from ll.403, 531, 1075. Appendix B calls the assignment of j and k "a convention [that] carries no content"; l.531 as worded does not agree with the dictionary. Since w⁻¹ has the same cube as w, the choice of −w in Cor 7.8 is not touched (CHECKED: (w⁻¹)³ = (w³)⁻¹ = −1).
+3. **Cross-references that do not resolve.** l.533 cites "Definition 2.9(iii)"; Def 2.9 has no numbered clauses (READ l.232). l.685 as in T7. l.166 says Theorem 6.1 holds for "a geometry satisfying the other four axioms"; its hypothesis is Def 2.7 and A1–A5.
+4. **l.349 against l.357.** "any A … is S M₀ S⁻¹" and "S A S⁻¹ = M₀": the three displayed pairs satisfy the second (CHECKED by both readers); the first holds for the second pair only. Wording; no effect.
+5. **Tags.** Thm 4.2 is [R] and its "Consequently" speaks of "the minimal drive" and "a minimal geometry"; Prop 4.5 is [R] and ends "the clause selects it". The [R] content is the conjugacy statements.
+6. **Names.** "F" is both the eight-dimensional internal piece (l.150) and what sits over the base (ll.202, 220, 277); "the time factor" is one-dimensional at l.150 and the three-dimensional torus bundle at l.300; "M" is the manifold (l.148) and the return map (l.277). A's list of terms used and not defined: its 7.10.
+7. **Def 2.7 against Prop 5.2** (also B): the algebra generated by the Clifford action on spinors over M is not ℍ in dimension twelve (RECALLED by both; not verified). A's consistent reading: "acts as" means "acts through".
+8. **The aspect ratio and the drive** (A's 7.6; B's last remark): no flat metric on the fibre is kept by a step. This is P74(iii), found again independently.
+
+### 11.5 What the three readings agree on, and the standing of the theorem
+
+**Nothing certified is found false.** No Lean certificate, no computation and no statement of Sections 4–7 marked CHECKED in §§8–10 was found wrong by either reader; both re-derived parts of them (Prop 4.5's descent, the conjugators, M₀³, the sixteen assignments, the flux table of Prop 7.6 on the pillowcase) and agree with the paper.
+
+**What is found concerns the joins.** Marked by how many of the three readings (architect, A, B) found it independently:
+
+| # | Finding | Found by | Mark |
+|---|---|---|---|
+| J1 | Props 7.1, 7.2, 7.3 each take a hypothesis from another: ℂP² from the Spin^c line, the Spin^c line from ℂP². As written, nothing excludes a spin base | all three | GAP |
+| J2 | The torus is obtained from "Anosov" (Prop 5.5) and "Anosov" from the torus (Section 4); Def 2.9 asks neither Anosov nor a return map; l.235 says the strong form is not assumed | all three | GAP |
+| J3 | Existence: no passage shows that M₁₂ satisfies Defs 2.1–2.9 and 3.2; Def 2.4 with Def 2.3 cannot hold as written (P74(i)) | all three | GAP |
+| J4 | Clause (a), "no modulus", is applied nowhere; the functional is undefined; one proportion is declared and the others are neither fixed nor declared; the base's torus is excluded for a datum of the kind the fibre is allowed | all three | DECLARED, narrower than needed; row E12 not [R] |
+| J5 | Clause (c) is applied to the fibre's dimension, which it does not name, and before clause (a), against l.262 | architect, A; B notes the first half | GAP |
+| J6 | U(3) is not the group Def 2.8 names; that the base is the product of the two orbits and nothing more is asserted | all three | GAP |
+| J7 | "Unique" has no definition of sameness behind it | all three (known) | GAP |
+| J8 | Tags of the table: E2, E3, E8, E9, E12 carry [R] and rest on results tagged [D] or on undeclared steps; E11 rests on J1 | architect, B | overstated |
+| J9 | Prop 5.2: the hypotheses of Lemma 5.1 as worded are met by M₂(ℝ) with the transpose | B; re-checked by hand | GAP inside a cited result (outside the scope of §11; recorded) |
+| J10 | Readings not among the nine numbered choices: A's list of twenty-eight | architect, A, B in part | DECLARED in the text, unnumbered |
+| J11 | The least flux is two or three according to the reading of clause (iii) | A | known; ruled (P34(2), per §8) |
+
+**Failure test of this section.** As at the end of §11.1. In addition, J1 is wrong if M1 somewhere gives a ground for the selected unit, or for complexification, that does not pass through ℂP²; J9 is wrong if the text restricts the anti-involution before Lemma 5.1.
+
+**Not done.** ll.1024–1105 of M1 were not read except Appendix B (l.1075). The Lean files were not opened. No claim RECALLED by a reader (the genus-three example; the flag manifold; the Clifford algebra in dimension twelve) was verified, and none enters a register or a paper until it is. Gate 6 for Theorem 8.1 is this section; it is complete as an audit and the theorem does not pass it as written.

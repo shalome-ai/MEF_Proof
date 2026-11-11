@@ -4,6 +4,11 @@ Replaces the sixth version. The PI asked for that version to be read afresh; it 
 
 **This handover is a summary. Where it and a file it cites differ, the file is right and the difference is reported to the PI.**
 
+**Note added 11 November 2026 by the third M2 session (Decision Log P88). The rest of this handover is unchanged and its work package (steps 1–3) is not started.**
+- By the PI's direction that session audited M1's Theorem 8.1 and did nothing on M2: `papers/M1/STEP_AUDIT.md` §11; summary in `papers/M1/HANDOVER.md`, last section. No proof, certificate or computation of M1 was found false; eleven findings on the joins of the theorem (J1–J11) are with the PI. Several meet M2's nodes: J3 and J4 (Definition 2.4; the undefined functional; the unfixed proportions) are the points of P71 and P74 found again; J1 and J6 concern the base and the Spin^c line that `N2_sources.md` counts states on.
+- **Read the handover before anything else.** That session read the series plan in the order of CLAUDE.md §1 before reaching item 4 below, and so read the barred rows. The next number in the Decision Log is **P89**, not P88 as item 3 says; the grep of item 3 prints P88 as well.
+- The definition this handover calls "Definition 2.3" (growth and decay, l.190) is Definition 2.4 by the count of the source (Remark 2.2 takes a number); closure (l.178) is Definition 2.3. Not checked against the PDF.
+
 ## The session that wrote it
 The second M2 session: the fresh one of P71. The first was stopped as contaminated (P68, P69). What this session read:
 - CLAUDE.md; the handover it was given; canon M1 v6.3 in full (ll.1–1105); Rulings in Force ll.1–43 (§§1–3).

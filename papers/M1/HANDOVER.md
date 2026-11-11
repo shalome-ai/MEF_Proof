@@ -95,3 +95,23 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 
 ## Next
 - M2 opens on M1 v6.3 from `papers/M2/HANDOVER.md` (rewritten 11 November, P67): the PI opens with a "my musings:" statement, then the drafts of `registers/Rulings_In_Force.md` §4 are read back one by one (P52).
+
+## Audit of Theorem 8.1 (11 November 2026, third session of the date; Decision Log P88)
+**This section is a summary. Where it and `STEP_AUDIT.md` §11 differ, the file is right.** It was checked by the architect against §11 and not by an independent reader.
+
+- **Built:** `STEP_AUDIT.md` §11 (§11.1 the architect's step table T1–T19 and E1–E14, fixed before the readers were launched; §11.3 blind reader B on the fourteen competitors; §11.4 blind reader A on the assembly; §11.5 the comparison, J1–J11). `checks/thm81_blindA_chk.py`, `checks/thm81_blindB_chk.py` (the readers' own scripts, re-run). Decision Log P88. The M1 Status cell of the series plan.
+- **Read:** canon M1 v6.3 ll.1–1023 and Appendix B (l.1075). Not read: ll.1024–1072, the Lean files.
+- **Red flags:** 16 hits, none in ll.964–1018; those at lines the proof consumes are listed in §11.
+- **Found:** no certificate and no CHECKED computation is found false. The findings are on the joins of the assembly: §11.5, J1–J11. The theorem does not pass gate 6 as written.
+- **Not changed:** canon, the ledger, every register other than the Decision Log. Nothing is committed.
+
+### Open, for the PI
+1. Each of J1–J11: whether it is a misreading, a wording to correct, a step to close in M1, or an assumption to declare with its failure test (CLAUDE.md §6). No proposal is made here.
+2. J11 rests on P34(2), a sealed row of the Decision Log, known here only through `STEP_AUDIT.md` §8.
+3. CLAUDE.md §1 tells every session to read the series plan; the M2 handover (item 4) bars it. One of the two needs changing.
+4. Whether the third M2 session's reading of the series plan (P88) bars that chat from M2 work. The architect's recommendation, given in the session: yes.
+
+### Proposed for the registers (the PI banks by commit; none was written)
+- **Corpus Errors Register, M1 v6.3**, the first hypothesis in each being that the reading is wrong: J1, J2, J5, J6, J9; the tags of rows E2, E3, E8, E9, E12 of the elimination table (J8); l.531 against Appendix B; l.533 ("Definition 2.9(iii)"); l.685's attribution to Proposition 7.3; l.235 ("is not assumed"); l.349 against l.357; l.725 against l.763 (the wording of the reading of clause (iii)).
+- **Minimality Register:** whether the unnumbered readings of J10 become numbered choices is for the PI.
+- **Not for any register until verified:** the three statements RECALLED by the readers (§11.5, "Not done").
