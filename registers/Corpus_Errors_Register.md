@@ -109,6 +109,8 @@ Source: `papers/M1/STEP_AUDIT.md` §11 (the architect's table, two blind readers
 
 **Note, 12 Nov 2026 (P129).** Item (e) no longer waits: J6 is ruled (Decision Log P126–P128; `papers/M1/STEP_AUDIT.md` §11.15; write-up log M1-W019 to M1-W021 (M1-W021 retired M1-W018 with the same meaning, P131; pointer changed 12 Nov 2026, P133)). **Correction to item (e) (the architect was wrong):** it says that the base being the product of the two orbits is "not stated as a result"; Theorem 7.10 (l.949) states "The base of a minimal geometry is ℂP² × S²", with the proof "Propositions … supply the factors" (l.953). What the text lacks is a sentence saying why the base has nothing further. The wording stands in v6.3 until the new version; the lines that change are in the note on entry 33.
 
+**Note, 12 Nov 2026 (P135).** Item (m) is ruled: J11 (Decision Log P134; `papers/M1/STEP_AUDIT.md` §11.16; write-up log M1-W022, M1-W023). The states of clause (iii) are counted on the pillowcase; the two paragraphs of Definition 7.4 at ll.719 and 725 are reworded; Proposition 7.6 and Definition 2.1(iii) are unchanged. **On the head of this entry:** it says that J11 is "not entered here", while item (m) is the wording J11 turns on (noted in P130); item (m) stands. The wording stands in v6.3 until the new version; the lines that change are in the note on entry 33.
+
 ## 33. M1 v6.3 — wording that the rulings on J2, J5 and J9 change (banked by the PI, 12 Nov 2026, P123)
 Source: `papers/M1/STEP_AUDIT.md` §§11.12, 11.13, 11.14; `papers/M1/WRITE_LOG.md`, where the statements that replace these lines are entered in full. Lines are of canon M1 v6.3. These are places where the printed words do not carry what was meant, or carry a clause that a ruling removes; **no certificate and no computation marked CHECKED was found wrong.** The statements are not restated here.
 
@@ -130,3 +132,8 @@ Source: `papers/M1/STEP_AUDIT.md` §§11.12, 11.13, 11.14; `papers/M1/WRITE_LOG.
 (k) **l.685:** "the scale-freeness of A3" occurs once and is explained nowhere; what was meant is the absence of an overall size; that the phase of a complex-valued unit is not recorded is not said to be a choice (P127; M1-W019).
 (l) **Theorem 7.10, proof** (l.953): "Propositions … supply the factors", with no sentence saying why the base has no further factor; the ground is clause (b) (P128; M1-W020).
 (m) **l.223, cross-reference, changed by no ruling:** "Section 7, where the other possible reading is set out"; the other reading of Definition 2.8 is at l.992, in Section 8.
+
+**Note, 12 Nov 2026 (P135): wording that the ruling on J11 changes, added to this entry.** Source: `papers/M1/STEP_AUDIT.md` §11.16; write-up log M1-W022, M1-W023. No certificate and no computation marked CHECKED was found wrong.
+
+(n) **Definition 7.4** (l.719): the name "state of the fibre at rest" is given to a function on $E$, "the covering torus of the pillowcase" (l.714), where the fibre is the pillowcase (ll.127, 583, 653); in the new version such a function is "a state at rest" and the states of the fibre at rest are its states on the pillowcase (P134; M1-W022).
+(o) **Definition 7.4** (l.725): "Two states of the fibre at rest have the same shadow … This is the reading of Definition 2.1(iii)", where Proposition 7.6 (l.763) has "the states of clause (iii) being states on the pillowcase for one of the two lifts of the fold"; reworded to say so (P134; M1-W023).

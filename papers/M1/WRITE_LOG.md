@@ -21,7 +21,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W022**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W024**.
 
 ## Entries
 
@@ -260,3 +260,25 @@ A homogeneous space $G/H$ formed from the symmetry group $G$ of the fibre algebr
 - **Failure test:** as M1-W018: a later paper that needs the symmetries of Definition 2.8 to keep the products of the units; or a result of M1 that uses the base as a piece that is not a factor of a product.
 - **Confirmed:** Decision Log P131, 12 November 2026 (the reading of "symmetry" remains provisional in the PI's words, P126).
 - **Retires / retired by:** retires M1-W018 (it supersedes canon v6.3 l.220 when the new version is built).
+
+### M1-W022 · active
+- **Statement (as it will be printed):**
+```tex
+A \emph{state at rest} is a holomorphic section of the twist: for $d\geq1$, a function $f$ on the covering torus $E$ whose poles are bounded by $D$. The fold acts on states at rest by $f(z)\mapsto f(-z)$ or by $f(z)\mapsto-f(-z)$, its two lifts, called here the first and the second. A \emph{state on the pillowcase}, for a given lift, is a state at rest that the lift leaves unchanged. The fibre is the pillowcase (Theorem~\ref{thm:fibre}), and the states of the fibre at rest are its states on the pillowcase: a state at rest on $E$ that the lift does not leave unchanged is not a state of the fibre. Which lift is called the first depends on the divisor chosen for a line, and the statements below speak of one lift or the other.
+```
+- **Rests on:** the PI's ruling that the states of clause (iii) are counted on the pillowcase (Decision Log P134; the earlier audit, `STEP_AUDIT.md` l.199, records the same as ruled in P34(2), a sealed row, not read); canon v6.3 l.583 ("The quotient $\Ttwo/\iota$ is the pillowcase orbifold"), l.127 ("the fibre, folded in half by the growth-and-decay exchange, is a pillowcase with four cone points"), l.653 ("$F=\text{base}\times\Ttwo/\Ztwo$"), l.714 ("Let $E$ be the covering torus of the pillowcase"). It replaces the second paragraph of Definition 7.4 as printed at canon v6.3 l.719: the name "state of the fibre at rest" passes from the functions on $E$ to those a lift leaves unchanged; the functions on $E$ are called "states at rest"; the sentence beginning "The fibre is the pillowcase" is added; the first, second and last sentences are otherwise those of canon.
+- **Mark:** DECLARED (part of a definition; Definition 7.4 is not among the paper's numbered choices, reader A's 4.22, and its numbering is J10 and is not taken here). READ: canon ll.127, 583, 653, 714, 719. Not in this entry and not claimed by it: why the states are those of one lift and not of both (canon l.763, "for one of the two lifts"; reader A's 4.23; J10). With it, at the build, the other lines of canon that say "state" or "state at rest" are read again: l.728 ("the states at rest are the harmonic spinors of the fibre"), Lemma 7.5 (l.731: "exactly $d$ linearly independent states"; "A half-turn twist has no state at rest") and l.765 ("for which the fibre has no state at rest"). The PI saw the statement word for word, and the marks and the failure test in short form; not the "Rests on" line.
+- **Failure test:** a later paper that needs the states of the fibre to be counted on the covering torus and not on the pillowcase; the least flux meeting both clauses is then two, with two corner signs of each kind and no odd corner.
+- **Confirmed:** Decision Log P134, 12 November 2026 (read-back R12).
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.719 when the new version is built).
+
+### M1-W023 · active
+- **Statement (as it will be printed):**
+```tex
+Two states on the pillowcase, for the same lift of the fold, have the same shadow: they differ only in the internal piece. The states at rest of Definition~\ref{def:A5}(iii) are states on the pillowcase for one of the two lifts of the fold. This is the reading of Definition~\ref{def:A5}(iii).
+```
+- **Rests on:** M1-W022 (the states of the fibre at rest are its states on the pillowcase); the second numbered choice (canon v6.3 l.163: "That an object, in clauses (ii) and~(iii), is a state of the internal piece at rest, and its shadow what is left of it when the internal piece is forgotten, is the second."); Definition 2.1(iii) (canon l.158), unchanged; canon l.763 ("the states of clause~(iii) being states on the pillowcase for one of the two lifts of the fold"), unchanged; the PI's ruling (Decision Log P134). It replaces the last paragraph of Definition 7.4 as printed at canon v6.3 l.725.
+- **Mark:** DECLARED (the reading of Definition 2.1(iii)). READ: canon ll.158, 161, 163, 725, 763, 785; `MEFProof/Paper_M1/M1_L6_twist.lean` ll.45–46 ("Clause (iii): two states on the pillowcase, for one of the two lifts."). CHECKED by hand, from Lemma 7.5 as stated at canon l.731, for why the sentence is needed: at flux two with $D=P_{i}+P_{j}$, $i\neq j$, there are two states at rest (7.5(a)); the first lift keeps $1+\lfloor1/2\rfloor+\lfloor1/2\rfloor=1$ and the second $2-1=1$ (7.5(b)); the corner signs are two of each kind, which one step of the drive moves (canon l.755); so with the states of clause (iii) counted on $E$ both clauses are met at flux two, and counted on the pillowcase clause (iii) fails there and the least flux is three (Proposition 7.6; certificate \texttt{L6\_least\_flux}). Disclosed in the note behind the proposition (`SHADOW_TWO_CLAUSES.md` §4, READ): the count on the covering torus was looked at first and gave two, and the pillowcase was counted after; the ground that does not depend on the answer is that the paper's fibre is the pillowcase (M1-W022).
+- **Failure test:** as M1-W022; or a result of M1 that uses two states at rest on $E$ that no lift of the fold leaves unchanged as the two objects of clause (iii).
+- **Confirmed:** Decision Log P134, 12 November 2026 (read-back R12).
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.725 when the new version is built).
