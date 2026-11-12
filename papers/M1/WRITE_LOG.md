@@ -21,7 +21,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W010**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W014**.
 
 ## Entries
 
@@ -36,7 +36,7 @@ A step of the drive keeps the handedness that Definition~\ref{def:levels} fixes 
 - **Confirmed:** Decision Log P109, 12 November 2026.
 - **Retires / retired by:** none.
 
-### M1-W002 · active
+### M1-W002 · retired
 - **Statement (as it will be printed):**
 ```tex
 (c) what is needed is least: one step of the drive of $M$ has the least positive topological entropy; $M$ has the least total dimension; the fibre of $F$ carrying the drive has the least number of handles; the twist of its fibre has the least flux; and its time circle has the least number of steps.
@@ -45,14 +45,16 @@ A step of the drive keeps the handedness that Definition~\ref{def:levels} fixes 
 - **Mark:** DECLARED (a clause of a definition; one of the paper's numbered choices of meaning).
 - **Failure test:** a later paper that needs a fibre with more handles than the least; or a case in which the items of clause (c) cannot all be least at once.
 - **Confirmed:** Decision Log P110 (the clause) and P115 (the read-back R1 in words), 12 November 2026.
-- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.268 when the new version is built).
+- **Retires / retired by:** retired by M1-W010 (Decision Log P116, 12 November 2026): clause (c) gains the item on the dimension of the fibre. Kept as the record of clause (c) as it stood after P110. Entries that rest on it: M1-W003, flagged there.
 
 ### M1-W003 · active
 - **Statement (as it will be printed):**
 ```tex
 Let $X$ be a compact connected surface without boundary that carries a handedness, and let $\iota$ be an involution of $X$ that keeps the handedness and has exactly four fixed points, each isolated. Then $X/\iota$ is a compact connected surface without boundary. Take a triangulation of $X/\iota$ having the images of the four fixed points among its vertices: every cell of it is the image of two cells of $X$, except those four vertices, each of which is the image of one. Hence $\chi(X)=2\chi(X/\iota)-4$. Since $\chi(X/\iota)\le2$, with equality only when $X/\iota$ is a sphere, $\chi(X)\le0$: $X$ is not a sphere, and $\chi(X)=0$ exactly when $X/\iota$ is a sphere. A compact connected surface without boundary that carries a handedness and has $\chi=0$ is the torus $\Ttwo$, which has one handle, and every other such surface with $\chi<0$ has more than one. The torus $\Ttwo=\R^{2}/\Z^{2}$ carries such an involution: $z\mapsto-z$ fixes exactly the four points with $2z\in\Z^{2}$. Under clause~(c) of Definition~\ref{def:minimal} the fibre is therefore the torus.
 ```
-- **Rests on:** M1-W002 (clause (c), least number of handles); Definition 2.7 (the handedness of the internal piece, canon v6.3 l.442); the hypothesis "exactly four isolated fixed points" (canon v6.3 ll.501, 516; audit row T4(iii), not part of J2); that the fibre is a surface (audit item J5, not taken here).
+- **Flag (P116):** M1-W002, on which this entry rested, is retired by M1-W010. This entry now rests on M1-W010, which keeps the item on handles ("at that dimension, the least number of handles"), and on M1-W011 for the fibre being a surface. The statement is unchanged.
+- **Flag (P118):** M1-W011 is retired by M1-W013. For the fibre being a surface this entry now rests on M1-W013. The statement is unchanged. Noted by the fresh reader and not acted on: this statement says "an involution of $X$" and does not say that it is continuous.
+- **Rests on:** M1-W010 (clause (c), least number of handles; formerly M1-W002); Definition 2.7 (the handedness of the internal piece, canon v6.3 l.442); the hypothesis "exactly four isolated fixed points" (canon v6.3 ll.501, 516; audit row T4(iii), not part of J2); that the fibre is a surface (M1-W013, formerly M1-W011; when this entry was written, audit item J5, not then taken).
 - **Mark:** CHECKED by hand: the count $2(V-4)+4-2E+2F=2\chi(X/\iota)-4$; the four fixed points of $z\mapsto-z$. Taken as known and **not read at source** (to be entered in Verified References before the paper prints them): that $X/\iota$ is a surface and has such a triangulation; that a compact connected surface without boundary has $\chi\le2$ with equality only for the sphere; that the orientable ones are classified by the number of handles $g$ with $\chi=2-2g$. The count does not use Bredon's formula (V-21, PARTIAL); it agrees with it (canon v6.3 l.593).
 - **Failure test:** a closed surface other than the torus, with no more handles, carrying an involution with exactly four isolated fixed points; or a later paper that needs a fibre with more handles.
 - **Confirmed:** Decision Log P110 (the clause) and P115 (the read-back R1 in words), 12 November 2026.
@@ -123,3 +125,47 @@ Time is a circle, and the internal piece is carried round it by a map of itself.
 - **Failure test:** a line of M1 or a later paper under which the internal piece is carried round time by maps that are not powers of one map.
 - **Confirmed:** Decision Log P114, 12 November 2026.
 - **Retires / retired by:** none.
+
+### M1-W010 · active
+- **Statement (as it will be printed):**
+```tex
+(c) what is needed is least: one step of the drive of $M$ has the least positive topological entropy; $M$ has the least total dimension; the fibre of $F$ carrying the drive has the least dimension and, at that dimension, the least number of handles; the twist of its fibre has the least flux; and its time circle has the least number of steps.
+```
+- **Rests on:** the sixth axiom, third meaning (canon v6.3 l.253: "The third: what is needed is least."); the PI's ruling that the least dimension of the fibre is an item of clause (c) of its own, and not a consequence of the least total dimension (Decision Log P116); the PI's ruling on handles (P110), carried from M1-W002. It replaces clause (c) of Definition 3.2 as printed at canon v6.3 l.268, adding the two items on the fibre and changing nothing else.
+- **Mark:** DECLARED (a clause of a definition; one of the paper's numbered choices of meaning).
+- **Failure test:** a later paper that needs a fibre of more than two dimensions, or needs the fibre's dimension to follow from the total; a later paper that needs a fibre with more handles than the least (carried from M1-W002); or a case in which the items of clause (c) cannot all be least at once.
+- **Confirmed:** Decision Log P116, 12 November 2026.
+- **Retires / retired by:** retires M1-W002 (it supersedes canon v6.3 l.268 when the new version is built; with it "the fewest dimensions" and "the quantities to which it applies are the four it names" at canon l.271 are reworded).
+
+### M1-W011 · retired
+- **Statement (as it will be printed):**
+```tex
+Let the fibre $X$ of $F$ carrying the drive be compact, connected and without boundary, and let the fold $\iota$ be an involution of $X$ with exactly four fixed points, each isolated. If $X$ is a point, $\iota$ has one fixed point. If $X$ is a circle and $\iota$ fixes a point $p$, then $\iota$ maps the open arc $X\setminus\{p\}$ to itself; if it is increasing there it is the identity, since $\iota(x)>x$ would give $x=\iota(\iota(x))>\iota(x)$, and its fixed points are not isolated; if it is decreasing it fixes exactly one point of the arc; so $\iota$ has no fixed point or exactly two. No such $X$ has dimension less than two, and the torus $\Ttwo$ with $z\mapsto-z$ is one of dimension two. Under clause~(c) of Definition~\ref{def:minimal} the fibre is a surface.
+```
+- **Rests on:** M1-W010 (clause (c), least dimension of the fibre); the hypothesis of the statement that the fibre $X$ is compact, connected and without boundary (canon v6.3 l.178 says this of $T$, $\Sigma$ and $F$, and l.501 says "compact and connected" of $X$; that the fibre of $F$ is without boundary is said of $X$ in no line of canon and is a hypothesis here, not a citation); the hypothesis "exactly four isolated fixed points" (canon v6.3 ll.501, 516; audit row T4(iii), not part of J5); for the torus, the four fixed points of $z\mapsto-z$ (canon v6.3 ll.511, 572).
+- **Mark:** CHECKED by hand in full (the statement is the computation): a point; the circle, by the open arc. In the circle argument two steps are used as evident and are part of the hand check: a one-to-one continuous map of an open arc onto itself is increasing or decreasing; a decreasing one fixes exactly one point (the difference $\iota(x)-x$ is decreasing and changes sign). Taken as known and **not read at source** (to be entered in Verified References before the paper prints it): that a compact connected one-dimensional manifold without boundary is a circle. **Found by a fresh reader after the PI confirmed the statement, and not yet corrected in it (the architect's wording was incomplete; a corrected statement is put to the PI and, if confirmed, is a new entry that retires this one):** the statement uses and does not state that $\iota$ is continuous and that $X$ is a manifold (a connected one of dimension zero being a point); in the increasing case it writes only $\iota(x)>x$, the case $\iota(x)<x$ being the same step mirrored; and "no fixed point or exactly two" leaves out the identity, which is excluded because its fixed points are not isolated. The reader found each written step correct.
+- **Failure test:** a compact connected piece without boundary, of dimension less than two, carrying an involution with exactly four isolated fixed points; or a later paper that needs a fibre of more than two dimensions.
+- **Confirmed:** Decision Log P116, 12 November 2026.
+- **Retires / retired by:** retired by M1-W013 (Decision Log P118, 12 November 2026), which states the hypotheses and the two half-steps this statement left unstated; the argument and the conclusion are unchanged. Kept as the record of the statement the PI confirmed in P116. Entries that rest on it: M1-W003, flagged there. (When this entry was written: none; with it the sentence of canon v6.3 l.513 that begins "Clause~(c) of Definition~\ref{def:minimal} selects the least dimension;" is replaced when the new version is built).
+
+### M1-W012 · active
+- **Statement (as it will be printed):**
+```tex
+A geometry satisfying A1--A5 satisfies A6, and is called \emph{minimal}, if it is selected by the following three clauses. Each is applied wherever the derivation reaches a datum of which it speaks. Where two clauses would select differently, clause~(a) prevails over clause~(b), and clause~(b) over clause~(c).
+```
+- **Rests on:** the PI's ruling that "applied in order" is an order of priority (Decision Log P117); canon v6.3 l.271 ("it is applied after clause (b), so that it does not replace a structure that needs no further object by one with a smaller integer"), which is the paper's own reason for clause (b) before clause (c). It replaces the opening sentence of Definition 3.2 as printed at canon v6.3 l.262 and changes none of the three clauses.
+- **Mark:** DECLARED (the opening of a definition). READ, for the places at which the paper says that two clauses select alike: canon v6.3 l.271 ("On the drive clause (a) makes the selection, and clause (c) agrees with it"), l.440 ("In every one of the four counts the least trace with a single drive is three"), l.865 ("Clause (b) makes the same selection when every symmetry of the torus, and not only the fold and the drive, is given an element; that every symmetry is given one is a hypothesis of this paragraph"). Not in this entry and not claimed by it: that at Theorem 6.1, where clause (c) is used before any use of clause (b), clause (b) would not select differently; no line of canon says so, and the point is carried to J3 (P117). The paper gives no reason for clause (a) before clause (b), and no place where the two meet was found.
+- **Failure test:** a place in M1 or in a later paper where two clauses select differently and the lower one was followed.
+- **Confirmed:** Decision Log P117, 12 November 2026.
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.262 when the new version is built; "it is applied after clause (b)" at l.271 is reworded with it).
+
+### M1-W013 · active
+- **Statement (as it will be printed):**
+```tex
+Let the fibre $X$ of $F$ carrying the drive be a compact connected manifold without boundary, and let the fold $\iota$ be a continuous involution of $X$ with exactly four fixed points, each isolated. If $X$ has dimension zero it is a point, and $\iota$ has one fixed point. If $X$ has dimension one it is a circle. Suppose $\iota$ fixes a point $p$ of it. Then $\iota$ maps the open arc $X\setminus\{p\}$ to itself, one-to-one and continuously, and so is increasing or decreasing there. If it is increasing it is the identity, since $\iota(x)>x$ would give $x=\iota(\iota(x))>\iota(x)$ and $\iota(x)<x$ would give $x=\iota(\iota(x))<\iota(x)$; its fixed points are then not isolated, which the hypothesis excludes. If it is decreasing it fixes exactly one point of the arc, and $\iota$ has exactly two fixed points. So $\iota$ has no fixed point or exactly two, and not four. No such $X$ has dimension less than two, and the torus $\Ttwo$ with $z\mapsto-z$ is one of dimension two. Under clause~(c) of Definition~\ref{def:minimal} the fibre is a surface.
+```
+- **Rests on:** M1-W010 (clause (c), least dimension of the fibre); the hypotheses of the statement that the fibre $X$ is a compact connected manifold without boundary and that the fold $\iota$ is continuous (canon v6.3 l.178 says "compact, connected and without boundary" of $T$, $\Sigma$ and $F$, and l.501 says "compact and connected" of $X$; that the fibre is a manifold without boundary and the fold continuous are hypotheses here, not citations); the hypothesis "exactly four isolated fixed points" (canon v6.3 ll.501, 516; audit row T4(iii), not part of J5); for the torus, the four fixed points of $z\mapsto-z$ (canon v6.3 ll.511, 572).
+- **Mark:** CHECKED by hand in full (the statement is the computation): dimension zero; dimension one, by the open arc. Two steps are used as evident and are part of the hand check: a one-to-one continuous map of an open arc to itself is increasing or decreasing; a decreasing one that maps the arc onto itself fixes exactly one point (the difference $\iota(x)-x$ is decreasing and changes sign). Taken as known and **not read at source** (to be entered in Verified References before the paper prints them): that a compact connected one-dimensional manifold without boundary is a circle; that a connected manifold of dimension zero is a point. The statement is that of M1-W011 with what the fresh reader found unstated written in (continuity; manifold; the case $\iota(x)<x$; the identity excluded by the hypothesis); the argument and the conclusion are those of M1-W011. This entry was not itself checked by a fresh reader.
+- **Failure test:** a compact connected manifold without boundary, of dimension less than two, carrying a continuous involution with exactly four isolated fixed points; or a later paper that needs a fibre of more than two dimensions.
+- **Confirmed:** Decision Log P118, 12 November 2026.
+- **Retires / retired by:** retires M1-W011 (with it the sentence of canon v6.3 l.513 that begins "Clause~(c) of Definition~\ref{def:minimal} selects the least dimension;" is replaced when the new version is built).

@@ -196,6 +196,7 @@
 | **Measure zero** | A set that can be covered by pieces of total size as small as you like. | Negligible: there, but taking up no room. |
 | **Orbifold** | A space that is locally a manifold divided by a finite group. | A smooth shape with a few sharp points or folds. |
 | **Orbit (flow line)** | For a flow $\varphi_t$ and a point $x$: the curve $t \mapsto \varphi_t(x)$. | The path one point traces as time passes. |
+| **Open arc** | A circle with one point removed; it can be laid out as an interval of the line without its end points, so its points have an order. | A loop of string cut at one place and pulled straight: now it has a left and a right. |
 | **Orientation (handedness)** | A consistent choice, over a whole surface or space, of which way round is "anticlockwise". A map preserves it if it carries anticlockwise to anticlockwise; a linear map does so exactly when its determinant is positive. | The difference between a left glove and a right glove. A map that keeps handedness never turns the glove inside out. |
 | **Periodic point** | A point $x$ with $f^n(x) = x$ for some $n \ge 1$. | A point that comes back to exactly where it started after some number of moves. |
 | **Pillowcase** | The torus divided by $z \mapsto -z$: a sphere with four cone points of angle $\pi$. | A donut folded in half and sewn: a pillow with four corners. |
