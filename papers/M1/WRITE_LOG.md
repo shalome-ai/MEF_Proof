@@ -21,7 +21,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W014**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W017**.
 
 ## Entries
 
@@ -169,3 +169,36 @@ Let the fibre $X$ of $F$ carrying the drive be a compact connected manifold with
 - **Failure test:** a compact connected manifold without boundary, of dimension less than two, carrying a continuous involution with exactly four isolated fixed points; or a later paper that needs a fibre of more than two dimensions.
 - **Confirmed:** Decision Log P118, 12 November 2026.
 - **Retires / retired by:** retires M1-W011 (with it the sentence of canon v6.3 l.513 that begins "Clause~(c) of Definition~\ref{def:minimal} selects the least dimension;" is replaced when the new version is built).
+
+### M1-W014 · active
+- **Statement (as it will be printed):**
+```tex
+Let $\mathcal{A}$ be an associative real algebra with unit, and let $\iota$ act on it as an anti-involution $a\mapsto a^{*}$ (the algebraic image of exchanging growth and decay: composition run backwards) whose fixed elements are exactly the real multiples of $1$. Then every $a\in\mathcal{A}$ is $x+u$ with $x$ real and $u^{*}=-u$; for every such $u$ the square $u^{2}$ is real; and $N(a)=aa^{*}=a^{*}a=x^{2}-u^{2}$ is real. Moreover $N(a)>0$ for every $a\neq0$ if and only if, for every $u\neq0$ with $u^{*}=-u$, the unit group $\{x+yu:\,x^{2}-u^{2}y^{2}=1\}$ of $\R\oplus\R u$ is compact.
+```
+- **Rests on:** the PI's rulings that the flip leaves the ordinary numbers alone and reverses every other direction of the algebra (R7) and that closure is asked of every reversed direction, no table being assumed (R8-(i)) (Decision Log P119); canon v6.3 l.193 ("on the algebra of the next axiom, the operation of conjugation"), l.489 ("Let $\iota$ act on $\Hquat$ as conjugation $q\mapsto\bar q$"), ll.546–550 (the worked case, which computes $N(x+yu)=x^{2}-u^{2}y^{2}$ on every line). It replaces Lemma 5.1 as printed at canon v6.3 l.449; its tag is \rigR. The hypothesis that $\mathcal{A}$ has a unit is written in here; canon l.209 says "finite-dimensional" and "associative" and does not say it.
+- **Mark:** CHECKED by hand in full: with $x=(a+a^{*})/2$ and $u=(a-a^{*})/2$, $x^{*}=x$, so $x$ is real, and $u^{*}=-u$; $(u^{2})^{*}=u^{*}u^{*}=(-u)(-u)=u^{2}$, so $u^{2}$ is fixed and therefore real; $x$ is real and commutes with $u$, so $aa^{*}=(x+u)(x-u)=x^{2}-u^{2}$ and $a^{*}a=(x-u)(x+u)=x^{2}-u^{2}$; the set $x^{2}-u^{2}y^{2}=1$ in the plane of $(x,y)$ is an ellipse if $u^{2}<0$, the two lines $x=\pm1$ if $u^{2}=0$ and a hyperbola if $u^{2}>0$, so it is compact exactly when $u^{2}<0$; if $u^{2}<0$ for every $u\neq0$ with $u^{*}=-u$ then $N(a)=x^{2}-u^{2}>0$ unless $x=0$ and $u=0$; conversely $N(u)=-u^{2}>0$ gives $u^{2}<0$. DECLARED: that $\iota$ acts on the fibre algebra as such an anti-involution (the reading of canon l.449's parenthesis; audit row T4(i); its numbering is J10 and is not taken here). **Found by a fresh reader after the PI confirmed the statement, and not corrected in it (the architect's wording was incomplete; a corrected statement is put to the PI and, if confirmed, is a new entry that retires this one):** the statement uses and does not state that $a\mapsto a^{*}$ is real-linear (the hand check takes $(a\pm a^{*})/2$ and $a^{*}=x^{*}+u^{*}$), "anti-involution" being defined neither here nor in canon; smaller, that $1\neq0$, so that the real numbers sit in $\mathcal{A}$; that for $u\neq0$ with $u^{*}=-u$ the elements $1$ and $u$ are independent (if $u=r\cdot1$ then $u^{*}=u$, so $u=-u=0$), so that $x+yu$ is a plane with coordinates $(x,y)$; and that "compact" is said of the unit group as a subset of that plane. The reader found each written step correct.
+- **Failure test:** an associative real algebra with unit and an anti-involution fixing exactly the real multiples of $1$ in which some $u^{2}$, $u^{*}=-u$, is not real, or in which $N>0$ fails although every such unit group is compact; a later paper that needs the flip to leave some direction other than the ordinary numbers unchanged.
+- **Confirmed:** Decision Log P119 (R7 in the PI's words; R8-(i) taken by the architect from the PI's choice "Q2 becomes (i) not (ii)") and P121 (the wording, word for word), 12 November 2026.
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.449 and its proof, ll.453–455, when the new version is built; canon ll.458, 471 and 546–552, which speak of "corners" and of the split quaternions, are reworded with it).
+
+### M1-W015 · active
+- **Statement (as it will be printed):**
+```tex
+A1 requires every factor to close, and this is read as asking that the unit group of $\R\oplus\R u$ be compact for every $u\neq0$ of $\mathcal{A}$ with $u^{*}=-u$. By Lemma~\ref{lem:norm}, $N(a)>0$ for every $a\neq0$, and $a\cdot a^{*}/N(a)=a^{*}/N(a)\cdot a=1$: every non-zero element of $\mathcal{A}$ has an inverse, and $\mathcal{A}$ is a division algebra.
+```
+- **Rests on:** M1-W014; Definition 2.3 (canon v6.3 l.178: "$T$, $\Sigma$ and $F$ are compact, connected and without boundary"); the PI's ruling that closure is asked of every reversed direction (R8-(i), Decision Log P119). It replaces the sentence of the proof of Proposition 5.2 at canon v6.3 l.467. The statement of Proposition 5.2 (l.461) and the step by Frobenius (l.469; Verified References V-15, READ per `STEP_AUDIT.md` l.283) are unchanged.
+- **Mark:** DECLARED: that A1's closure of the pieces is read as compactness of the unit group of every such line (audit row T4(ii); its numbering is J10 and is not taken here). CHECKED by hand: $a\cdot a^{*}/N(a)=N(a)/N(a)=1$ and $a^{*}/N(a)\cdot a=N(a)/N(a)=1$, $N(a)=aa^{*}=a^{*}a$ being a real number by M1-W014. Noted by the fresh reader and not acted on: the sentence uses $*$ and $N$ without saying that they are those of the anti-involution of A2 (canon l.467 has "the norm form of A2's anti-involution").
+- **Failure test:** a reversed direction of the fibre algebra whose line the closure of A1 does not reach; a later paper that needs a fibre algebra with a non-zero element that has no inverse.
+- **Confirmed:** Decision Log P119 (R8-(i), taken by the architect from the PI's choice "Q2 becomes (i) not (ii)") and P121 (the wording, word for word), 12 November 2026.
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.467 when the new version is built; "the corner fibres included" at ll.458, 467 goes with it).
+
+### M1-W016 · active
+- **Statement (as it will be printed):**
+```tex
+The fibre algebra acts on the geometry at two levels: at the spinor level, on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$, a rank-three subbundle of $\operatorname{End}(TM)$ locally spanned by anticommuting almost-complex structures $I,J,K$ with $IJ=K$ (the local form of the coefficient bundle of \cite{Salamon1982}), whose restriction to $F$ carries the full algebra.
+```
+- **Rests on:** the third axiom as read at canon v6.3 l.211 ("the non-commutative algebra is the algebra of the shape's own tangent directions and spinors"); the PI's ruling that the phrase "as the algebra generated by the Clifford action" is removed (Decision Log P120). It replaces Definition 2.7 as printed at canon v6.3 l.214, removing those words and changing nothing else.
+- **Mark:** DECLARED (a definition; the fifth numbered choice of the paper). READ: the phrase removed occurs once in canon v6.3, at l.214; the spinor half of the definition is used at l.693 ("Under Definition 2.7 a spinor bundle exists on $M$") and canon speaks of elements acting on spinors at ll.536, 566, 728, 837 (l.536 calls the identification of the lift on spinors with the reading on the algebra "a definition rather than a computation"; l.865 states as a hypothesis "that every symmetry is given one"; ll.566 and 728 state no hypothesis); the tangent half at ll.442, 607, 611, 619. Not in this entry and not claimed by it: how the fibre algebra acts on spinors, or that the quaternion relations hold there (`COMMUTANT_LEAD.md` §4: through the Clifford action, on one tangent space, they do not; CHECKED). The tenth choice (P92: the spinor bundle is the complex spinor bundle) is not written into this entry; it has no entry yet.
+- **Failure test:** a result of M1 whose proof uses the removed phrase; a later paper that needs the fibre algebra to be the algebra the Clifford action generates.
+- **Confirmed:** Decision Log P120 and P121 (the wording), 12 November 2026.
+- **Retires / retired by:** none in this log (it supersedes canon v6.3 l.214 when the new version is built).
