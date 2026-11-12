@@ -162,9 +162,11 @@
 
 | The Pure Math Jargon | Your Freshman Translation | The Plain English Intuition |
 | --- | --- | --- |
+| **Almost every (typical)** | A statement holds for almost every point if the points where it fails form a set of measure zero. | True for every point you would ever hit by chance; the exceptions exist but take up no room. |
 | **Almost-quaternionic structure** | Three almost complex structures $I, J, K$ on the tangent spaces, given locally, with $IJ = K = -JI$. | A copy of the quaternion multiplication table acting on the directions at every point. |
 | **Anti-involution** | A map $a \mapsto a^*$ of an algebra with $(ab)^* = b^*a^*$ and $a^{**} = a$. | A flip that also reverses the order in which things are done. |
 | **Branch point** | A point of the base of a ramified covering over which the sheets come together. | The central shaft of the parking garage: the one place where the two floors are the same point. |
+| **Closed surface** | A compact two-dimensional manifold without boundary. | A skin with no edge and no puncture: a ball's skin, a donut's skin, a pretzel's skin. |
 | **Commute** | Two maps $f$, $g$ commute if $fg = gf$. | Two moves that give the same result whichever is done first. |
 | **Cone point** | A point of an orbifold whose neighbourhood is a disc folded by a rotation of order $n$; the angle round it is $2\pi/n$. | The tip of a paper cone. |
 | **Conjugate (matrices, group elements)** | $B = SAS^{-1}$ for an invertible $S$ of the allowed kind. | The same move, described in relabelled coordinates. |
@@ -178,23 +180,30 @@
 | **Euler characteristic** | Vertices − edges + faces (and so on) of any triangulation; for a closed orientable surface, $2 - 2g$. | A single whole number that does not change however the shape is cut into pieces: 2 for a ball, 0 for a donut. |
 | **Fixed point** | A point $x$ with $f(x) = x$. | A point that the move leaves where it is. |
 | **Flow** | A family of maps $\varphi_t$, one for each time $t$, with $\varphi_{s+t} = \varphi_s \varphi_t$. | A rule that carries every point along as time passes. |
+| **First homology of the torus (the action on loops)** | The group $H_1(T^2) = \mathbb{Z}^2$: a loop on the torus is recorded by two whole numbers, how often it winds each way round. A map of the torus to itself moves these pairs by a $2\times2$ whole-number matrix. | Every loop on a donut skin has two winding counts. Any redrawing of the skin changes the counts by a fixed table of four whole numbers, however much it wobbles the skin locally. |
 | **Genus** | For a closed orientable surface, the number of handles $g$. | How many holes the donut has: 0 for a ball, 1 for a donut, 3 for a three-holed pretzel. |
 | **GL₂(ℤ) and SL₂(ℤ)** | $2\times2$ integer matrices with determinant $\pm1$ (GL), or exactly $+1$ (SL). | The ways of relabelling a square grid onto itself. SL keeps handedness; GL may flip it. |
 | **Homeomorphism** | A continuous bijection with a continuous inverse. | Morphing a rubber sheet without tearing or gluing. Creases and kinks are allowed (in a *diffeomorphism* they are not). |
 | **Fibonacci matrix** | The matrix with rows $(1,1)$, $(1,0)$; it sends a pair of consecutive Fibonacci numbers to the next pair. Determinant $-1$; eigenvalues $\phi$ and $-1/\phi$. | One move of the Fibonacci rule "add the last two". It stretches by the golden ratio and flips handedness. |
 | **Hyperbolic matrix** | An integer matrix with no eigenvalue of modulus one. In $\mathrm{SL}_2(\mathbb{Z})$: trace of size greater than 2. | A matrix that genuinely stretches one direction and squeezes another, with no direction merely turned or left alone. |
+| **Homotopic maps** | Two maps $f$, $g$ joined by a continuous family of maps $f_s$ with $f_0 = f$, $f_1 = g$. Homotopic maps of the torus have the same matrix on loops. | Two redrawings that can be slid into one another without tearing: the same in the large, different in the detail. |
 | **Involution** | A map $\sigma$ with $\sigma\sigma = $ identity. | A flip: do it twice and you are back where you started. |
 | **Lebesgue measure** | The ordinary notion of length, area or volume. | Size as a ruler would measure it. |
 | **Lift (of a map through a covering)** | A map $\tilde f$ upstairs with $p\tilde f = f p$, where $p$ is the covering. | Doing the same move on the parking garage that was done on the ground plan beneath it. |
 | **Line bundle; its degree** | A complex line attached to each point. On a surface its degree (first Chern class) is the number of zeros minus the number of poles of any of its sections. | A twisting line over the shape, and a whole number saying how many times it twists. |
 | **Mapping torus (suspension)** | From a map $f$ of $X$: the space $X \times [0,1]$ with $(x,1)$ glued to $(f(x),0)$. It carries a flow whose return map is $f$. | Turn a move into a movie: go once round a circle of time, and what comes back is the shape after one move. |
+| **Measure** | A rule giving each (measurable) set a size $\ge 0$, the size of a union of separate pieces being the sum of their sizes. Length, area, volume and probability are measures. | A way of saying how much room a set of points takes up. Different rulers can give different answers, so one must say which ruler. |
 | **Measure zero** | A set that can be covered by pieces of total size as small as you like. | Negligible: there, but taking up no room. |
 | **Orbifold** | A space that is locally a manifold divided by a finite group. | A smooth shape with a few sharp points or folds. |
+| **Orbit (flow line)** | For a flow $\varphi_t$ and a point $x$: the curve $t \mapsto \varphi_t(x)$. | The path one point traces as time passes. |
+| **Orientation (handedness)** | A consistent choice, over a whole surface or space, of which way round is "anticlockwise". A map preserves it if it carries anticlockwise to anticlockwise; a linear map does so exactly when its determinant is positive. | The difference between a left glove and a right glove. A map that keeps handedness never turns the glove inside out. |
 | **Periodic point** | A point $x$ with $f^n(x) = x$ for some $n \ge 1$. | A point that comes back to exactly where it started after some number of moves. |
 | **Pillowcase** | The torus divided by $z \mapsto -z$: a sphere with four cone points of angle $\pi$. | A donut folded in half and sewn: a pillow with four corners. |
 | **Pseudo-Anosov map** | A homeomorphism of a surface with two crossing families of leaves, one stretched by $\lambda$ and the other shrunk by $1/\lambda$, except at finitely many points where three or more leaves meet. | A taffy-puller that works everywhere except at a few pinch points. |
 | **Quaternions ($\mathbb{H}$)** | The four-dimensional number system with units $1, i, j, k$ and $i^2 = j^2 = k^2 = ijk = -1$. | Numbers for which the order of multiplying matters: $ij = k$ but $ji = -k$. |
+| **Rational point (of the torus)** | A point of $\mathbb{R}^2/\mathbb{Z}^2$ both of whose coordinates are fractions $p/q$. | A point of the donut skin whose two angles are both exact fractions of a full turn. |
 | **Return map (Poincaré map)** | For a flow that keeps crossing a slice: the map sending a point of the slice to where it next crosses. | Photograph the flow once per lap; the return map takes each photograph to the next. |
+| **Riemannian volume (area)** | The measure that a Riemannian metric defines: the size of a region computed from the lengths the metric gives. On a surface it is the area. | The amount of room a region takes up when measured with the shape's own ruler. |
 | **Riemann–Hurwitz count** | For a cover of degree $d$ of surfaces: $\chi(\text{cover}) = d\,\chi(\text{base}) -$ (number of sheets lost at the branch points). | The bookkeeping that tells how many holes the parking garage has, from the ground plan and the number of shafts. |
 | **Smooth** | Differentiable as many times as you like. | No kinks or creases anywhere, however closely you look. |
 | **Spectral radius** | The largest modulus of an eigenvalue. | The strongest stretch the matrix performs. |
@@ -202,6 +211,8 @@
 | **Spinor** | An element of a space on which the Clifford algebra, and so the Spin group, acts. | The kind of object that must be turned twice round to return to itself. |
 | **Stiefel–Whitney class $w_2$** | A class in $H^2(M;\mathbb{Z}_2)$ of an oriented manifold; it vanishes exactly when the manifold is spin. | The yes/no test for whether spinors can live on a shape. |
 | **Topological entropy** | The exponential rate at which the number of orbit segments that can be told apart grows with their length. For a hyperbolic integer matrix on the torus: the logarithm of the spectral radius. | How fast the system manufactures unpredictability. Zero means the far future can be read off from the present. |
+| **Torus ($T^2$)** | The product of two circles, $S^1 \times S^1$; equally, the plane with points identified when they differ by whole numbers, $\mathbb{R}^2/\mathbb{Z}^2$. A surface: two dimensions. | The skin of a donut. A point on it is given by two angles. |
+| **Torus bundle over the circle** | A three-dimensional space built from $T^2 \times [0,1]$ by gluing the torus at the end to the torus at the start by a map $f$ of the torus: the mapping torus of $f$. When $f$ is a hyperbolic matrix it is a "Sol" torus bundle. | A ring of donut skins, one for each moment round a circle; going once round, the skin comes back redrawn by the map. |
 | **Trace** | For a $2\times2$ matrix, $a + d$: the sum of the eigenvalues. | A single number that, with the determinant, tells how strongly the matrix stretches. |
 | **Unit quaternions ($\mathrm{Sp}(1)$)** | The quaternions of length one; as a shape, the three-sphere $S^3$. | The rotations of three-dimensional space, each counted twice. |
 | **Warped product** | $B \times F$ with the metric $g_B + w^2 g_F$, $w$ a positive function on $B$. | Two shapes multiplied together, where the size of the second depends on where you stand in the first, as circles of latitude shrink towards the poles. |
