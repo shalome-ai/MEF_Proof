@@ -4,6 +4,8 @@
 
 **How it is used.** Claude answers as it normally does. When the PI writes **"Please Rosetta Translate x"**, Claude re-states x in the three columns below, term by term and then sentence by sentence, without changing what x says.
 
+**How it grows (CLAUDE.md §3).** When a term of jargon is used with the PI and is not here, Claude adds a row to Part B in that session and says so in its end-of-session report.
+
 **What it is not.**
 - It is not a source. The entries are written from memory and are not checked against a text. Nothing here is cited, and nothing here enters a paper, a register or a premise (CLAUDE.md §4).
 - It is not the Definitions Register. Where M1 gives a word its own meaning (minimal, clause (a), modulus, drive, step, shadow, state at rest), the Definitions Register and the paper govern, not this file.
@@ -163,6 +165,7 @@
 | **Almost-quaternionic structure** | Three almost complex structures $I, J, K$ on the tangent spaces, given locally, with $IJ = K = -JI$. | A copy of the quaternion multiplication table acting on the directions at every point. |
 | **Anti-involution** | A map $a \mapsto a^*$ of an algebra with $(ab)^* = b^*a^*$ and $a^{**} = a$. | A flip that also reverses the order in which things are done. |
 | **Branch point** | A point of the base of a ramified covering over which the sheets come together. | The central shaft of the parking garage: the one place where the two floors are the same point. |
+| **Commute** | Two maps $f$, $g$ commute if $fg = gf$. | Two moves that give the same result whichever is done first. |
 | **Cone point** | A point of an orbifold whose neighbourhood is a disc folded by a rotation of order $n$; the angle round it is $2\pi/n$. | The tip of a paper cone. |
 | **Conjugate (matrices, group elements)** | $B = SAS^{-1}$ for an invertible $S$ of the allowed kind. | The same move, described in relabelled coordinates. |
 | **Countable** | A set whose elements can be listed $1, 2, 3, \dots$ | Infinitely many, perhaps, but so sparse that a dart thrown at random never hits one. |
@@ -178,6 +181,7 @@
 | **Genus** | For a closed orientable surface, the number of handles $g$. | How many holes the donut has: 0 for a ball, 1 for a donut, 3 for a three-holed pretzel. |
 | **GL₂(ℤ) and SL₂(ℤ)** | $2\times2$ integer matrices with determinant $\pm1$ (GL), or exactly $+1$ (SL). | The ways of relabelling a square grid onto itself. SL keeps handedness; GL may flip it. |
 | **Homeomorphism** | A continuous bijection with a continuous inverse. | Morphing a rubber sheet without tearing or gluing. Creases and kinks are allowed (in a *diffeomorphism* they are not). |
+| **Fibonacci matrix** | The matrix with rows $(1,1)$, $(1,0)$; it sends a pair of consecutive Fibonacci numbers to the next pair. Determinant $-1$; eigenvalues $\phi$ and $-1/\phi$. | One move of the Fibonacci rule "add the last two". It stretches by the golden ratio and flips handedness. |
 | **Hyperbolic matrix** | An integer matrix with no eigenvalue of modulus one. In $\mathrm{SL}_2(\mathbb{Z})$: trace of size greater than 2. | A matrix that genuinely stretches one direction and squeezes another, with no direction merely turned or left alone. |
 | **Involution** | A map $\sigma$ with $\sigma\sigma = $ identity. | A flip: do it twice and you are back where you started. |
 | **Lebesgue measure** | The ordinary notion of length, area or volume. | Size as a ruler would measure it. |

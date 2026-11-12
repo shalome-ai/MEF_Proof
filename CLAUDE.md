@@ -22,6 +22,8 @@ This file holds standing rules only. Current state is in the paper's `HANDOVER.m
 - Keep three things apart: what the PI said, what was confirmed, and leads (recorded, never premises).
 - A statement the PI opens with "my musings:" is narrative to be translated. It is not a ruling or a premise and enters no paper. Return the translation, with where a physicist would hear something else; record it as a lead if it is to be kept.
 - Claude's own reading of a text is not a ruling, even when the PI agrees with it. Ask for a ruling only when one is needed.
+- **"Please Rosetta Translate x".** When the PI writes this, restate x in the three columns of `tools/ROSETTA_STONE.md`: the jargon, a first-year translation, the plain-English intuition; first the terms, then sentence by sentence, without changing what x says. At all other times answer in the usual way. The file is a communication aid: it is not a source and not a register, and nothing in it enters a paper.
+- **Keeping the Rosetta stone.** When a term of mathematical jargon is used with the PI, in any paper or session, and it is not in `tools/ROSETTA_STONE.md`, add a row for it to Part B in that session, and say in the end-of-session report which rows were added.
 
 ## 4. Evidence
 - Read the body text of a source before speaking about it. Say which lines were read, or "not read".
@@ -68,6 +70,15 @@ A paper is not committed with a failing gate. Gates 1–5: `python3 tools/gates.
 5. Every certificate named in the paper exists.
 6. Step audit complete (by hand).
 7. Red-flag scan entered in the audit (by hand).
+8. For a paper built from a write-up log (§10): `python3 tools/writelog_check.py Mx <paper.tex>`; every active statement is in the paper word for word.
 
 ## 9. Lean
 Library `MEFProof` at the repository root; modules `MEFProof.Paper_Mx.Mx_Ln_name`; `MEFProof.lean` imports every certificate. One file per load-bearing block, with a header saying what is certified and what is not.
+
+## 10. The write-up log
+Each paper under development has `papers/Mx/WRITE_LOG.md`: the mathematics, one statement to an entry, in the words in which it will be printed.
+- An entry is written at the moment the PI confirms a read-back, not afterwards from memory. Before each commit, check that every item confirmed since the last commit has its entry.
+- An entry holds: the statement in full, with every hypothesis; what it rests on (an axiom, a clause, an earlier entry, a verified reference); its mark; what would show it false; its status, active or retired.
+- Before an entry goes in, read it against every active entry of the paper. If it contradicts one, the PI decides which stands, usually the newer. The other is retired: kept, never deleted, and every entry that rests on it is flagged.
+- The first draft of the paper is the active entries, verbatim. The second pass adds connecting English and corrects grammar and punctuation; it does not change a logged statement (gate 8).
+- The Decision Log keeps the PI's words and the process; the write-up log keeps the mathematics. A Decision Log row points to the entry and does not restate it.
