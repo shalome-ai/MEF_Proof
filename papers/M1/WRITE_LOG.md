@@ -44,7 +44,7 @@ A step of the drive keeps the handedness that Definition~\ref{def:levels} fixes 
 - **Rests on:** the sixth axiom, third meaning (canon v6.3 l.253: "The third: what is needed is least."); the PI's ruling that the least number of handles belongs to clause (c) (Decision Log P110). It replaces clause (c) of Definition 3.2 as printed at canon v6.3 l.268, adding the item on handles and changing nothing else.
 - **Mark:** DECLARED (a clause of a definition; one of the paper's numbered choices of meaning).
 - **Failure test:** a later paper that needs a fibre with more handles than the least; or a case in which the items of clause (c) cannot all be least at once.
-- **Confirmed:** Decision Log P110, 12 November 2026.
+- **Confirmed:** Decision Log P110 (the clause) and P115 (the read-back R1 in words), 12 November 2026.
 - **Retires / retired by:** none in this log (it supersedes canon v6.3 l.268 when the new version is built).
 
 ### M1-W003 · active
@@ -55,7 +55,7 @@ Let $X$ be a compact connected surface without boundary that carries a handednes
 - **Rests on:** M1-W002 (clause (c), least number of handles); Definition 2.7 (the handedness of the internal piece, canon v6.3 l.442); the hypothesis "exactly four isolated fixed points" (canon v6.3 ll.501, 516; audit row T4(iii), not part of J2); that the fibre is a surface (audit item J5, not taken here).
 - **Mark:** CHECKED by hand: the count $2(V-4)+4-2E+2F=2\chi(X/\iota)-4$; the four fixed points of $z\mapsto-z$. Taken as known and **not read at source** (to be entered in Verified References before the paper prints them): that $X/\iota$ is a surface and has such a triangulation; that a compact connected surface without boundary has $\chi\le2$ with equality only for the sphere; that the orientable ones are classified by the number of handles $g$ with $\chi=2-2g$. The count does not use Bredon's formula (V-21, PARTIAL); it agrees with it (canon v6.3 l.593).
 - **Failure test:** a closed surface other than the torus, with no more handles, carrying an involution with exactly four isolated fixed points; or a later paper that needs a fibre with more handles.
-- **Confirmed:** Decision Log P110, 12 November 2026.
+- **Confirmed:** Decision Log P110 (the clause) and P115 (the read-back R1 in words), 12 November 2026.
 - **Retires / retired by:** none in this log (with it the hypothesis "Anosov" and the citation of Franks leave Proposition 5.5, canon v6.3 ll.501, 505, 513, when the new version is built).
 
 ### M1-W004 · active

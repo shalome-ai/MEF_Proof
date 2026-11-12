@@ -716,14 +716,14 @@ The PI (P99): "there was already a read back - we could write as to why it is 2"
 
 **Not part of J2 and not marked here:** the hypothesis "exactly four isolated fixed points" (l.501, l.516), which is row T4(iii); row T19, which is J5; Burns–Rapoport p. 255 ("Since φ preserves a lattice and is orthogonal, it is of finite order", READ in the text layer), which bears on M-P74(iii) and so on J4.
 
-### 11.12 J2: outcomes with the PI (12 November 2026; Decision Log P109–P114)
+### 11.12 J2: outcomes with the PI (12 November 2026; Decision Log P109–P115)
 
 Each part ends as one of the three outcomes of P104. The statements are in `WRITE_LOG.md` and are not restated here.
 
 | Part | Outcome | Where |
 |---|---|---|
 | J2-a | Restored from the paper for the one map repeated (canon ll.163, 175, 235, 277, 845), confirmed by the PI. For the rest of the internal piece: the ground stated by the PI, a declared choice | P114, M1-W009; P111, M1-W004 |
-| J2-b | The ground stated by the PI: the torus by the least number of handles, clause (c) with an item added. "Anosov" is no longer a hypothesis of Proposition 5.5 | P110; M1-W002, M1-W003 |
+| J2-b | The ground stated by the PI: the torus by the least number of handles, clause (c) with an item added. "Anosov" is no longer a hypothesis of Proposition 5.5 | P110, P115 (R1 confirmed in words); M1-W002, M1-W003 |
 | J2-c | Restored from the paper (canon ll.127, 187, 295) with one hand step, confirmed by the PI. "Commuting with ι" is no longer a hypothesis of Proposition 5.5 | P114; M1-W008 |
 | J2-d1 | The citation of Franks at l.505 is no longer a premise of the torus | P110 |
 | J2-d2(i) | The ground stated by the PI: the step is the linear map, a declared choice | P112; M1-W005 |
@@ -731,6 +731,6 @@ Each part ends as one of the three outcomes of P104. The statements are in `WRIT
 | J2-d2(iii) | Restored, nothing to change; the "against" of §11.11 was a misreading (the architect was wrong); confirmed by the PI | P114 |
 | J2-e | The ground stated by the PI: M1 does not speak of measure; the clause leaves Definition 2.9; the periodic points are stated exactly | P113; M1-W006, M1-W007 |
 
-**Marks of the new steps.** M1-W001: DECLARED (a step keeps the handedness), determinants CHECKED by hand. M1-W002: DECLARED. M1-W003: CHECKED by hand (the count of cells); three facts on surfaces taken as known and not read at source, to be entered in Verified References before the paper prints them. M1-W004, M1-W005: DECLARED. M1-W006: DECLARED, with READ (canon ll.286, 288) that Proposition 4.1 does not use the clause removed. M1-W007: CHECKED by hand (§11.11, proof (ii)). M1-W008: READ, with the step to fι = ιf CHECKED by hand. M1-W009: READ. Bredon's formula (V-21, PARTIAL) is not used by M1-W003.
+**Marks of the new steps.** M1-W001: DECLARED (a step keeps the handedness), determinants CHECKED by hand, READ canon l.389 for the name of the certificate. M1-W002: DECLARED. M1-W003: CHECKED by hand (the count of cells); three facts on surfaces taken as known and not read at source, to be entered in Verified References before the paper prints them. M1-W004, M1-W005: DECLARED. M1-W006: DECLARED, with READ (canon ll.286, 288) that Proposition 4.1 does not use the clause removed. M1-W007: CHECKED by hand (§11.11, proof (ii)). M1-W008: READ, with the step to fι = ιf CHECKED by hand. M1-W009: READ. Bredon's formula (V-21, PARTIAL) is not used by M1-W003.
 
 **Leads, entering nothing (RECALLED, unread):** that an Anosov map of the torus is the linear map of its matrix after a continuous relabelling (Franks; Manning); that no map of the torus with a given matrix on its loops has less entropy than the linear one (Manning); that each handle of a surface adds two classes of loops.
