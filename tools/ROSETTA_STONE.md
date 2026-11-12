@@ -2,7 +2,7 @@
 
 **What this is.** A working aid for the PI and Claude to understand each other. First drafted by the PI; reviewed and edited by Claude on 12 November 2026.
 
-**How it is used.** Claude answers as it normally does. When the PI writes **"Please Rosetta Translate x"**, Claude re-states x in the three columns below, term by term and then sentence by sentence, without changing what x says.
+**How it is used.** Claude answers as it normally does. When the PI writes **"Please Rosetta Translate x"**, Claude re-states x in three parts, without changing what x says: first **"In a nutshell"**, at most four sentences saying what x claims and what it asks of the PI; then the terms, in the three columns below; then x sentence by sentence in plain English. The nutshell is a summary for orientation only: nothing is argued from it and it is entered nowhere.
 
 **How it grows (CLAUDE.md §3).** When a term of jargon is used with the PI and is not here, Claude adds a row to Part B in that session and says so in its end-of-session report.
 
