@@ -35,7 +35,10 @@ This file holds standing rules only. Current state is in the paper's `HANDOVER.m
 The weak point is the identification step ("this object is that one"), which no certificate checks.
 - **Step audit.** Before a load-bearing result is banked, a table in `papers/Mx/STEP_AUDIT.md` marks every step: verified reference, CHECKED, DECLARED or GAP.
 - **Blind.** Record a derived value, and fix every reading, before looking at the target. A reading introduced after the target is seen is tuning.
-- **Independent check.** A fresh sub-agent, scoped to one node, is given the steps and never the wanted conclusion.
+- **Context first.** Whether a step of a paper holds is judged with the whole paper and the axioms in view, never from a part. Before a step is called a gap: search the whole canon paper and the axioms for the paper's own answer and show those lines in full; then ask the PI, in plain English, what was meant. Each item ends as one of three: the sentence is restored from elsewhere in the paper; the ground is stated by the PI and written in full; the item is open.
+- **Counter-examples.** A counter-example is looked for only when the PI asks for one explicitly, naming the statement. Confirmation of a list of assumptions is not such a request. Neither Claude nor a sub-agent is given an open brief to find what is wrong with a result. A counter-example the PI has asked for is tested against all six axioms and the readings of the whole paper, never against one definition alone. If something that looks like a counter-example is noticed in passing, it is reported in a sentence with the lines, and not pursued.
+- **Independent check.** A fresh sub-agent, never given the wanted conclusion. For a computation it is scoped to that computation and blind. For whether a step holds it is given the whole paper and the axioms.
+- **In full.** A mathematical statement is quoted, or stated with every hypothesis. It is never summarised: in a paper, a register, a handover or a report.
 - **Red flags.** Run `python3 tools/redflags.py <file>` on every source used; the hits at the steps consumed go into the audit.
 - **Failure test.** Every banked result says what would show it false.
 - Agreement with the old corpus is a consistency check and not a test.
