@@ -21,7 +21,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W043**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W044**.
 
 ## Entries
 
@@ -517,7 +517,7 @@ $T^{4}/\Z_{2}$, K3 as internal factor & $16$ and $0$ corners; $D=8$ & Prop.~\ref
 
 ---
 
-### M1-W042 · active
+### M1-W042 · retired
 - **Statement (as it will be printed):**
 ```tex
 spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & no $\CPtwo$ factor: the two orbits are not realised & Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b) & \rigD\\
@@ -526,4 +526,17 @@ spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & no $\C
 - **Mark:** DECLARED (the PI's confirmation, P153; the ground is that of M1-W030, ruled at P140). READ: canon l.1012; `STEP_AUDIT.md` §11.1 row E11 ("$S^{2}\times S^{2}\times S^{2}$ has $S^{2}$ factors. … What excludes a spin base is that ℂP² must be realised (Def 2.8)"). CHECKED by hand: if $B=\CPtwo\times X$ then $\chi(B)=\chi(\CPtwo)\chi(X)=3\chi(X)$, a multiple of three; $\chi(S^{2}\times S^{2}\times S^{2})=2\cdot2\cdot2=8$, $\chi(\mathbb{CP}^{3})=4$, $\chi(S^{6})=2$; none is a multiple of three, so none of the three has a $\CPtwo$ factor. Taken as known and **not read at source:** that the Euler characteristic of a product is the product (canon l.955 cites Hatcher for it; not read, `STEP_AUDIT.md` §9.2); $\chi(S^{2})=2$, $\chi(S^{6})=2$, $\chi(\mathbb{CP}^{3})=4$, $\chi(\CPtwo)=3$ (the last certified as a count, canon l.681); the first three and the product rule are entered as owed in Verified References V-33 (P155). **Noted by a fresh reader after the PI confirmed the statement, and not corrected in it (P156):** the hand check shows that none of the three has a $\CPtwo$ factor; the printed words "the two orbits are not realised", copied from M1-W030, say more than that if heard as "neither orbit", $S^{2}\times S^{2}\times S^{2}$ having $S^{2}$ factors (`STEP_AUDIT.md` §11.1, row E11); a corrected wording is put to the PI. Not claimed by this entry: that these three are the only spin bases; that the table is exhaustive. The PI saw the row word for word, with the hand check and the facts taken as known (P153).
 - **Failure test:** one of the three bases written as a product with a $\CPtwo$ factor; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised (as M1-W030).
 - **Confirmed:** Decision Log P153, 13 November 2026.
-- **Retires / retired by:** none.
+- **Retires / retired by:** retired by M1-W043 (Decision Log P157, 13 November 2026), which cuts the reason of the row back to "no $\CPtwo$ factor", what the hand check shows; the ground column and the tag are unchanged. Kept as the record of the row the PI confirmed at P153. Entries that rest on it: none.
+
+---
+
+### M1-W043 · active
+- **Statement (as it will be printed):**
+```tex
+spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & no $\CPtwo$ factor & Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b) & \rigD\\
+```
+- **Rests on:** as M1-W042: the PI's confirmation at Decision Log P153 of the ground of the row, and at P157 of this wording; M1-W020 (the base is $\CPtwo\times\Stwo$ and nothing further, by Definition 2.8 and clause (b)), M1-W021 (a realised space is a factor of the base), M1-W019 with M1-W035 (the tenth choice); M1-W030 for the form of the ground column. It replaces row E11 of the elimination table at canon v6.3 l.1012, which reads "spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & $\Spinc$ unforced; no $\Stwo$ factor & Props.~\ref{prop:spinc}, \ref{prop:S2} & \rigD". Against canon, column by column: the first is copied; "$\Spinc$ unforced; no $\Stwo$ factor" becomes "no $\CPtwo$ factor"; "Props.~\ref{prop:spinc}, \ref{prop:S2}" becomes "Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b)"; the tag is unchanged. Against M1-W042: the words ": the two orbits are not realised" leave the second column; nothing else changes.
+- **Mark:** DECLARED (the PI's confirmation, P153 and P157; the ground is that of M1-W030, ruled at P140). READ: canon l.1012; `STEP_AUDIT.md` §11.1 row E11 ("$S^{2}\times S^{2}\times S^{2}$ has $S^{2}$ factors. … What excludes a spin base is that ℂP² must be realised (Def 2.8)"). CHECKED by hand: if $B=\CPtwo\times X$ then $\chi(B)=\chi(\CPtwo)\chi(X)=3\chi(X)$, a multiple of three; $\chi(S^{2}\times S^{2}\times S^{2})=2\cdot2\cdot2=8$, $\chi(\mathbb{CP}^{3})=4$, $\chi(S^{6})=2$; none is a multiple of three, so none of the three has a $\CPtwo$ factor. Taken as known and **not read at source** (entered as owed in Verified References V-33): that the Euler characteristic of a product is the product (canon l.955 cites Hatcher for it; not read, `STEP_AUDIT.md` §9.2); $\chi(S^{2})=2$, $\chi(S^{6})=2$, $\chi(\mathbb{CP}^{3})=4$; $\chi(\CPtwo)=3$ is certified as a count (canon l.681). Not claimed by this entry: anything about $\Stwo$ factors of the three bases; that these three are the only spin bases; that the table is exhaustive. The statement is that of M1-W042 with what the fresh reader found wider than the hand check cut back to what is shown (P156). The PI saw the row word for word (P157). This entry was not itself checked by a fresh reader.
+- **Failure test:** one of the three bases written as a product with a $\CPtwo$ factor; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised (as M1-W030).
+- **Confirmed:** Decision Log P157, 13 November 2026.
+- **Retires / retired by:** retires M1-W042.
