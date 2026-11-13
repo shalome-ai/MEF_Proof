@@ -478,7 +478,7 @@ $D=4$, $D=8$ & $F$ of quaternionic dimension $<2$ & Theorem~\ref{thm:dim} & \rig
 
 ---
 
-### M1-W039 · active
+### M1-W039 · retired
 - **Statement (as it will be printed):**
 ```tex
 trace $\geq4$ & several drives; least entropy & Thm.~\ref{thm:drive}, Prop.~\ref{prop:onedrive} & \rigD\\
@@ -487,7 +487,7 @@ trace $\geq4$ & several drives; least entropy & Thm.~\ref{thm:drive}, Prop.~\ref
 - **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1007 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
 - **Failure test:** a derivation of the count of drives of clause (a) from the first five axioms.
 - **Confirmed:** Decision Log P153, 13 November 2026.
-- **Retires / retired by:** none.
+- **Retires / retired by:** retired at the PI's direction (Decision Log P154, 13 November 2026: "Keep the four and the reworded row; undo the fifth"). No entry replaces it: row E6 of the elimination table stands as canon v6.3 l.1007 prints it, with \rigR. Kept as the record of the row the PI confirmed at P153, which was put to the PI as one line of a table of codes and not in plain English (the architect's fault). Entries that rest on it: none.
 
 ---
 
