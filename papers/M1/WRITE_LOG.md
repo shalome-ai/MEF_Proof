@@ -21,7 +21,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W035**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W043**.
 
 ## Entries
 
@@ -424,3 +424,106 @@ The mirror image of a geometry, and a geometry run backwards, are therefore othe
 - **Failure test:** a later paper that must count a geometry and its mirror image, or a geometry and itself run backwards, as one where no relabelling of Definition~\ref{def:same} joins them; for the second sentence, the step, the lengths of M1-W026 or the corner signs of $\Mtwelve$ not carried to themselves by the quarter-turn with time run backwards.
 - **Confirmed:** Decision Log P149, 13 November 2026.
 - **Retires / retired by:** retires M1-W033.
+---
+
+### M1-W035 · active
+- **Statement (as it will be printed):**
+```tex
+The spinor bundle of Definition~\ref{def:levels} is the complex spinor bundle, and data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in $\C\otimes\ImH\cong\C^{3}$.
+```
+- **Rests on:** the PI's ruling at Decision Log P92, a confirmed read-back ("1-3 confirmed"), whose two parts are these words: "(a) the spinor bundle of Definition 2.7 is the complex spinor bundle; (b) data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in ℂ ⊗ Im ℍ ≅ ℂ³"; canon v6.3 l.685 for part (b) ("that complexification is forced, which is Proposition~\ref{prop:spinc}'s statement that spinor-valued data are complex", the paper's own named reading, whose attribution to Proposition 7.3 is Corpus Errors 32(b)); M1-W016 (Definition 2.7). It is the tenth choice, which M1-W019 names. It is a new sentence; canon v6.3 does not state it. Its place in the text, and the rewording of canon ll.661, 677, 685 that P92 owes, are for the build.
+- **Mark:** DECLARED (the PI's ruling, P92). READ and CHECKED at P89 for why it is a choice and not a property of spinors: Atiyah–Bott–Shapiro pp. 11–12 (V-27) and `papers/M1/checks/spinor_type_check.py` (the half-spin representations of Spin(12) are of quaternionic type; `STEP_AUDIT.md` §11.6); the script was not re-run this session. **Not in this entry and not claimed by it:** that the sixth axiom selects complex over real or quaternionic spinors (flagged in P92 and not resolved); that the complex-valued units are what the complex spinors carry (the second half of P92's failure test); anything about a unit being selected (P91: the words "which selects a unit" were dropped). The PI saw the statement word for word, with the mark, what is not claimed and the failure test (P153).
+- **Failure test:** as P92: a later paper needs spinors that are real or quaternionic and not complex; or the complex-valued units cannot be what the complex spinors carry.
+- **Confirmed:** Decision Log P92 (the ruling), 11 November 2026; the wording as an entry, P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W036 · active
+- **Statement (as it will be printed):**
+```tex
+On $\Stwo$ the canonical structure has the integer two. The sphere is the complex projective line, and its anticanonical line is its tangent line; in the coordinate $w=1/z$ the vector field $\partial/\partial z$ is $-w^{2}\,\partial/\partial w$, which has one zero, of order two, and no pole. Zero or four would need a twisting line, which clause~(b) of Definition~\ref{def:minimal} removes.
+```
+- **Rests on:** the PI's ruling at Decision Log P97(1) ("The integer of the determinant line on S² is two, and the new version of M1 states it"; the PI, P99: "there was already a read back - we could write as to why it is 2"); `STEP_AUDIT.md` §11.10, from which the reason is taken; canon v6.3 l.712 ("The determinant line of a $\Spinc$ structure therefore carries three independent integers, odd on $\CPtwo$ and even on the other two, and the canonical structure has zero on the torus"), ll.693, 918 for the rule on $\CPtwo$ ("The canonical structure has $L=K^{-1}=\Oline{3}$ and no further datum"; "the twisting line is an object that nothing requires"); clause (b) of Definition 3.2 (canon l.266). It is a new sentence, for the paragraph of canon l.712; canon v6.3 says only "even" of this integer (ll.707, 712, 938).
+- **Mark:** DECLARED: that the structure taken on $\Stwo$ is the one its complex structure gives, the rule of canon ll.693, 918 (P97(1); clause (b)). CHECKED by hand in full (`STEP_AUDIT.md` §11.10, item 3, re-done 13 November): with $w=1/z$, $\mathrm{d}w/\mathrm{d}z=-1/z^{2}=-w^{2}$, so $\partial/\partial z=(\mathrm{d}w/\mathrm{d}z)\,\partial/\partial w=-w^{2}\,\partial/\partial w$; in the $z$-chart the field has no zero and no pole; in the $w$-chart it has a zero of order two at $w=0$ and no other. Zero is the anticanonical line twisted by the square of a line of degree $-1$, and four by the square of a line of degree $+1$ (canon l.703: the structures differ by $L\mapsto L\otimes E^{2}$). Taken as known and **not read at source** (to be entered in Verified References, or the first closed by hand, before the paper prints them): that the degree of a holomorphic line on the sphere is the number of zeros less the number of poles of any of its meromorphic sections; that the canonical $\Spinc$ structure of a complex manifold has determinant the anticanonical line (canon l.703 cites Lawson–Michelsohn and Friedrich for it; not obtained, `STEP_AUDIT.md` §9.3). **Not in this entry and not claimed by it:** that $\Stwo$, which Proposition 7.1 obtains as the sphere of units $\mathrm{Sp}(1)/U(1)$, carries a complex structure selected by the axioms; the statement takes the sphere as the complex projective line. The PI saw the statement word for word, with the mark, the two facts taken as known and the failure test (P153).
+- **Failure test:** as P97(1): the sphere's own winding is not two; or a later paper needs no flux through $\Stwo$.
+- **Confirmed:** Decision Log P97(1) (the ruling), 11 November 2026; the wording, P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W037 · active
+- **Statement (as it will be printed):**
+```tex
+$D\not\equiv0\ (4)$ & no quaternionic structure & Theorem~\ref{thm:dim} & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153 of the tags of the elimination table (J8; `STEP_AUDIT.md` §11.21). Theorem~6.1 (canon l.607), which the row cites and which is printed \rigD: it holds "Under Definition~\ref{def:levels}", the fifth numbered choice. It replaces row E2 of the elimination table at canon v6.3 l.1003. Against canon, column by column: the first three columns are copied unchanged; the tag \rigR\ becomes \rigD.
+- **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1003 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
+- **Failure test:** a proof that the dimension of a geometry satisfying A1--A5 is divisible by four which uses no reading of the third axiom.
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W038 · active
+- **Statement (as it will be printed):**
+```tex
+$D=4$, $D=8$ & $F$ of quaternionic dimension $<2$ & Theorem~\ref{thm:dim} & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153 of the tags of the elimination table (J8; `STEP_AUDIT.md` §11.21). Theorem~6.1 (canon l.607, \rigD), with canon ll.619, 621 and the first sentence of M1-W031 for $D=8$. It replaces row E3 of the elimination table at canon v6.3 l.1004. Against canon, column by column: the first three columns are copied unchanged; the tag \rigR\ becomes \rigD.
+- **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1004 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
+- **Failure test:** a proof excluding $D=4$ and $D=8$ which uses no reading of the third axiom.
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W039 · active
+- **Statement (as it will be printed):**
+```tex
+trace $\geq4$ & several drives; least entropy & Thm.~\ref{thm:drive}, Prop.~\ref{prop:onedrive} & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153 of the tags of the elimination table (J8; `STEP_AUDIT.md` §11.21). Theorem~4.2 and Proposition~4.5 (canon ll.300, 409), each printed \rigR; the exclusion of a trace is the selection of clause (a) of Definition~3.2, a reading, with the count of drives declared (canon l.271; Rulings in Force l.38). The \rigR\ of the two results is for their conjugacy statements (the pick on Corpus Errors 32(h), confirmed in the same row of the Decision Log). It replaces row E6 of the elimination table at canon v6.3 l.1007. Against canon, column by column: the first three columns are copied unchanged; the tag \rigR\ becomes \rigD.
+- **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1007 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
+- **Failure test:** a derivation of the count of drives of clause (a) from the first five axioms.
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W040 · active
+- **Statement (as it will be printed):**
+```tex
+$T^{n}$, $n\neq2$, as fibre & $2^{n}\neq4$ corners & Proposition~\ref{prop:surface} & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153 of the tags of the elimination table (J8; `STEP_AUDIT.md` §11.21). Proposition~5.5 (canon l.501), which the row cites and which is printed \rigD; the count $2^{n}$ is certified (\texttt{L2\_two\_torsion}, canon l.511); that the fold has exactly four fixed points is the hypothesis of canon ll.501, 516, on which M1-W003 and M1-W013 also rest. It replaces row E8 of the elimination table at canon v6.3 l.1009. Against canon, column by column: the first three columns are copied unchanged; the tag \rigR\ becomes \rigD.
+- **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1009 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
+- **Failure test:** a proof that the fold has exactly four fixed points which uses no reading.
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W041 · active
+- **Statement (as it will be printed):**
+```tex
+$T^{4}/\Z_{2}$, K3 as internal factor & $16$ and $0$ corners; $D=8$ & Prop.~\ref{prop:corners}, Thm.~\ref{thm:dim} & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153 of the tags of the elimination table (J8; `STEP_AUDIT.md` §11.21). Proposition~5.3 (canon l.479, \rigR) and Theorem~6.1 (canon l.607, \rigD); the row carries the lower of the two tags. It replaces row E9 of the elimination table at canon v6.3 l.1010. Against canon, column by column: the first three columns are copied unchanged; the tag \rigR\ becomes \rigD.
+- **Mark:** DECLARED (a tag; the PI's confirmation, P153, of the architect's reading that a row of the table carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129: "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading)"). READ: canon l.1010 and the printed tags of the results cited. Not claimed by this entry: anything about the exclusion itself, which is unchanged; that the table is exhaustive.
+- **Failure test:** a proof excluding these internal factors which uses neither Theorem~6.1 nor the hypothesis of four fixed points.
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.
+
+---
+
+### M1-W042 · active
+- **Statement (as it will be printed):**
+```tex
+spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & no $\CPtwo$ factor: the two orbits are not realised & Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b) & \rigD\\
+```
+- **Rests on:** the PI's confirmation at Decision Log P153; M1-W020 (the base is $\CPtwo\times\Stwo$ and nothing further, by Definition 2.8 and clause (b)), M1-W021 (a realised space is a factor of the base), M1-W019 with M1-W035 (the tenth choice, by which $\CPtwo$ no longer rests on the $\Spinc$ line; P92: "row E11 of the elimination table" rests on it and its rewording is owed); M1-W030, from which the words "the two orbits are not realised" and the form of the ground column are copied. It replaces row E11 of the elimination table at canon v6.3 l.1012, which reads "spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & $\Spinc$ unforced; no $\Stwo$ factor & Props.~\ref{prop:spinc}, \ref{prop:S2} & \rigD". Against canon, column by column: the first is copied; "$\Spinc$ unforced; no $\Stwo$ factor" becomes "no $\CPtwo$ factor: the two orbits are not realised"; "Props.~\ref{prop:spinc}, \ref{prop:S2}" becomes "Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b)"; the tag is unchanged.
+- **Mark:** DECLARED (the PI's confirmation, P153; the ground is that of M1-W030, ruled at P140). READ: canon l.1012; `STEP_AUDIT.md` §11.1 row E11 ("$S^{2}\times S^{2}\times S^{2}$ has $S^{2}$ factors. … What excludes a spin base is that ℂP² must be realised (Def 2.8)"). CHECKED by hand: if $B=\CPtwo\times X$ then $\chi(B)=\chi(\CPtwo)\chi(X)=3\chi(X)$, a multiple of three; $\chi(S^{2}\times S^{2}\times S^{2})=2\cdot2\cdot2=8$, $\chi(\mathbb{CP}^{3})=4$, $\chi(S^{6})=2$; none is a multiple of three, so none of the three has a $\CPtwo$ factor. Taken as known and **not read at source:** that the Euler characteristic of a product is the product (canon l.955 cites Hatcher for it; not read, `STEP_AUDIT.md` §9.2); $\chi(S^{2})=2$, $\chi(S^{6})=2$, $\chi(\mathbb{CP}^{3})=4$, $\chi(\CPtwo)=3$ (the last certified as a count, canon l.681). Not claimed by this entry: that these three are the only spin bases; that the table is exhaustive. The PI saw the row word for word, with the hand check and the facts taken as known (P153).
+- **Failure test:** one of the three bases written as a product with a $\CPtwo$ factor; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised (as M1-W030).
+- **Confirmed:** Decision Log P153, 13 November 2026.
+- **Retires / retired by:** none.

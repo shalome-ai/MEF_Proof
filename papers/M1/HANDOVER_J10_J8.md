@@ -1,5 +1,7 @@
 # Handover: complete J10 and J8, together
 
+**Note, 13 November 2026 (P153): this brief is spent. J10 and J8 are closed (Decision Log P151–P153; `papers/M1/STEP_AUDIT.md` §§11.20, 11.21; `papers/M1/WRITE_LOG.md` M1-W035 to M1-W042; `papers/M1/HANDOVER.md` item 24). Its numbers are those before that session: the next Decision Log row is now P154 and the next entry M1-W043. It is kept as the record.**
+
 **Written 13 November 2026 at the PI's direction, at the end of the session that closed J7 (Decision Log P147–P149). It is the brief for one chat and one work package: J10 and then J8, taken together (PI, P148: "The order  should be J10 then J8  - we could do them together"). It does not replace `papers/M1/HANDOVER.md`, which is the paper's handover and holds the history; this file is the working brief and says which parts of that file are read. `papers/M1/HANDOVER_J7.md` is the record of the brief before this one and is not needed.**
 
 **Checked** by a fresh reader given this file, CLAUDE.md and the sources it names; the findings are corrected here. See §13.

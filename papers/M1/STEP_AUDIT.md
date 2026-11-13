@@ -914,3 +914,96 @@ Each part ends as one of the three outcomes of P104. The statements are in `WRIT
 **Fresh reader (13 November 2026, after P147 and the banking; Decision Log P148).** Given CLAUDE.md, the two handovers, this file ll.413–427 and from §11, canon, the write-up log, Decision Log P104, P105 and P140–P147, Rulings in Force ll.1–54, the Definitions section for M1, Corpus Errors from entry 34, the script and the diff; asked to check the record against its sources and the hand computation as a computation, and not whether any result holds. Eighteen findings and four observations on the printed statements, each verified against the files by the architect before being acted on. It found the tex of the two statements in agreement with what P147 records, every canon quotation in the two entries word for word at its line, the counts right, and the hand computation and W3, W4 correct. **One to be put to the PI:** the second sentence of M1-W033 says without qualification that a relabelling of the new definition carries M₁₂ run backwards to M₁₂, where row S7 above marks "every datum" a declared gap; the statement was confirmed word for word and is not changed by the architect. **Corrected here, in the entries' marks, in the registers and in the handovers:** l.964 listed as a line where "unique" is said (above); the gloss in row J7-c (above); the mark of M1-W033 on the labels $C_j$, $C_i$, which canon's sentence on the convention does not name; the attribution of the list of a geometry's data to P140 (Q4) alone; a hypothesis dropped from the Rulings row; a sentence of the Definitions row "unique" without its source; stale numbers and ranges in the handovers. **Recorded in P148, since P147 is not edited:** P147's list of what is not claimed lacks S7, and its list of lines cited by number (ll.509, 583, 943) is shorter than this section's (ll.55, 509, 583, 943, 971), which is the right one. The corrections were not checked again.
 
 **After the reader (P149).** The corrected wording of the remark was put to the PI and confirmed: it is M1-W034, which retires M1-W033; its second sentence now claims only what rows S4–S6 show and says that row S7 is not shown, and its third says "the torus". **In the tables above read M1-W034 for M1-W033**, and row S7 is no longer a gap declared against the statement: the statement itself says it is not shown. M1-W034 was not itself checked by a fresh reader. `WRITE_LOG.md`: 34 entries, 28 active, 6 retired.
+
+### 11.20 J10: outcomes with the PI (13 November 2026; Decision Log P151, P152, P153)
+
+**Method:** P104, with the sense check protocol of CLAUDE.md §11. The task was repeated back; fourteen numbered assumptions and the six opening questions of `papers/M1/HANDOVER_J10_J8.md` §12 were put and confirmed (P151). The list was drawn up from §11.9 (reader A's 4.1 to 4.28 and 7.10), §11.1 rows T1, T4, T11, §11.4 row T1, the "Carried forward" bullets of `papers/M1/HANDOVER.md` items 16 to 23, the marks of the active entries of the write-up log, P92 and P97(1). **Read:** the whitelist of the brief, in full; of the Minimality Register the first two cells of the rows beginning "M1-" (P151 discloses that in its second table the second cell is a phrase on the choice). No counter-example was looked for and no reader was launched on whether a step holds. The statements are in `WRITE_LOG.md` and are not restated here.
+
+**What was ruled (P152).** The architect reported its picks under two readings of its own (the test of canon l.133, "whenever a word has to be given a meaning that is a choice rather than a consequence, we say so and number the choice as a definition", with P97(2); one number to a definition, on the precedent of canon ll.239, 271 and P92) and listed seven "new choices", A to G. The PI asked where they came from and directed a check. The check (READ) found each of A to F stated in canon or in a confirmed entry and used by a named result, and G used by none. The PI: "These choices are forced. I don't care whether they are numbered or not numbered. Numbering or not numbering does not change the paper … Yes we need A-F." **A to F stay as stated and no wording changes. G, and the architect's proposal of seven new numbers, are withdrawn (the architect was wrong).**
+
+| | The reading | Stated at | Used by | Outcome |
+|---|---|---|---|---|
+| A | what the operations of the order axiom are | canon Definition 2.5 (l.201) | the proof of Proposition 5.2 (l.465, the only line that cites it) | needed; stays (P152) |
+| B | the drive: Definition 2.9; a step keeps the handedness; it moves only the fibre that carries it; it is the linear map of its matrix | M1-W006, M1-W001, M1-W004, M1-W005 (P109, P111, P112, P113) | Proposition 4.1, Theorems 4.2 and 4.3, M1-W007, M1-W026 | needed; stays (P152) |
+| C | how the fold acts on the fibre algebra | M1-W017 (canon ll.193, 449, 489; P119, P122) | Lemma 5.1, Proposition 5.2 | needed; stays (P152) |
+| D | closure asked of every reversed direction of the algebra | M1-W015 (canon ll.458, 467; P119, P122) | Proposition 5.2 | needed; stays (P152) |
+| E | the algebra at a point, and the four fixed points of the fold as the four corners | M1-W029 (canon ll.516, 521, 536; P140, Q6) | Proposition 5.6; canon l.873 | needed; stays (P152) |
+| F | the phase of a complex-valued unit is not recorded | M1-W019 (P127) | Proposition 7.2 | needed; stays (P152) |
+| G | "everything" (canon l.245; P47(1)) | canon l.245, the only line with the phrase | no result | withdrawn as an item of J10; the sentence of canon is not touched |
+
+**The architect's picks on the rest of the list.** Reported to the PI; neither confirmed item by item nor overturned; with P152 they are not put again. They are readings, change no word of the paper, and are recorded for the build, which settles how the choices are counted in the text (P151(1)).
+
+| Item | Pick | Ground |
+|---|---|---|
+| A's 4.2 (l.163), 4.3 (l.150) | part of the first choice | canon l.239 gives it as "(Definition 2.1(i))"; M1-W009 |
+| A's 4.4 (ll.175, 178) | part of the third | canon ll.239, 967 cite Definition 2.3 whole |
+| A's 4.5 (l.187); Definition 2.4(ii), (iii); where the growth sits (M1-W025, M1-W026) | stays as stated; canon ll.193, 239, 967 give clause (i) alone as the fourth choice, and the placement is "a declared reading, not forced by the axiom" (Rulings l.48) | P152 |
+| A's 4.22, 4.23 (Definition 7.4; "for one of the two lifts"); M1-W023, M1-W024 | part of the second | canon l.161 ("made exact"), l.723, l.725 ("This is the reading of Definition 2.1(iii)") |
+| A's 4.17 (ll.613, 619, 621); the first sentence of M1-W031 | part of the fifth | canon l.619 cites Definition 2.7 |
+| M1-W016; M1-W021 with its sentence on symmetry (provisional) | the fifth; the sixth | their marks |
+| A's 4.8 (Definition 3.1, M1-W027); A's 4.28 (the count of drives) | part of the seventh | canon l.264 ("$M$ has no modulus"); l.271 ("The way of counting drives is part of the clause"); Rulings l.38 |
+| A's 4.21 (zero on the torus); the integer two on S² (M1-W036); A's 4.25 at l.887 | part of the eighth | clause (b), canon l.266; ll.693, 918 |
+| A's 4.14 (M1-W010); A's 4.26 and row T11 (l.894) | part of the ninth | Rulings l.35; canon l.268 ("one step of the drive") |
+| M1-W012 | the opening of Definition 3.2 | canon l.262 |
+| A's 4.20, complexification | the tenth (M1-W035) | P92 |
+| A's 4.6, second half; 4.10; 4.11; 4.18 (M1-W020); 4.19; 4.20 (the size); 4.27; M1-W003, W007, W008, W009, W013, W034 | consequences, restored | canon ll.209, 295, 300, 181; P114, P128, P89; the entries' marks |
+| A's 4.24 | a convention | canon l.1075; P147 |
+| M1-W028 | the theorem's one declared input | canon l.964 |
+| M1-W031 (the structure on the whole of M₁₂); the hypothesis of Corollary 7.8 (canon ll.837, 865; A's 4.25) | stay where they are stated, each with its failure test; the hypotheses of Theorem 8.1 do not name them | taken by the architect from P152 and reported |
+| A's 4.1 ("a geometry", l.143); M1-W032 | definitions of the paper's terms | taken by the architect from P152 and reported |
+| A's 7.10 (terms used and not defined) | for the Definitions Register at the build | several have left by ruling (P127, P140) |
+
+**Step table of the two new entries (CLAUDE.md §5).**
+
+| # | Step | Mark | Note |
+|---|---|---|---|
+| S1 | The spinor bundle of Definition 2.7 is the complex one; the units are complex-valued (M1-W035) | DECLARED (P92) | not shown to be selected by the sixth axiom |
+| S2 | In twelve dimensions a spinor is not complex of itself | READ (V-27, pp. 11–12), CHECKED (`checks/spinor_type_check.py`, §11.6) | not re-run this session; not printed in the entry |
+| S3 | On S² the structure taken is the one the complex structure gives (M1-W036) | DECLARED (P97(1); clause (b)) | that the sphere of units carries a complex structure selected by the axioms is not claimed |
+| S4 | $\partial/\partial z=-w^{2}\,\partial/\partial w$: one zero, of order two, no pole | CHECKED by hand (§11.10, re-done) | — |
+| S5 | The degree of a line on the sphere is its zeros less its poles; the canonical structure has determinant the anticanonical line | taken as known, **not read** | owed to Verified References or closed by hand (P97(3)) |
+
+**Red flags (gate 7).** Canon: 16 hits, at ll.110, 129, 139, 209, 229, 239, 340, 596, 677, 714, 719, 723, 728 (two), 806, 1049 (re-run this session). Of the lines used for J10: l.229 ("read off", beside "we take the axiom to exclude that", reading B); l.239 ("Every result below"); l.677 (the forward reference that the tenth choice removes). `WRITE_LOG.md` (re-run after M1-W042): 29 hits.
+
+**Failure tests.** As in the entries. Of this section: a result of M1 whose proof uses none of A to F and yet reaches the same conclusion; a result that uses the reading G.
+
+**Carried to the build, no proposal made.** How the choices are counted and where each is stated (canon ll.129, 163, 181, 193, 211, 223, 239, 247, 964, 967); the places of M1-W035 and M1-W036; the rewording of canon ll.661, 677, 685 (P92); the two facts of S5; the mark of M1-W006, which calls Definition 2.9 "one of the paper's numbered choices of meaning" where canon l.239 does not list it; the word "input" at canon l.295; canon l.181, which names only the loop as the third choice.
+
+### 11.21 J8: outcomes with the PI (13 November 2026; Decision Log P153)
+
+**Method:** as §11.20. All fourteen rows were taken (P151(5)), with Corpus Errors 32(h) (P151(4)). The architect's reading, confirmed with the table: a row carries the tag of the lowest-tagged result on which its exclusion rests, the tags being those of canon l.129, "\rigR\ (proved, or a cited classical theorem), \rigD\ (derived under a stated reading) and \rigM\ (motivated)" (P151, assumption 11). Reader B's lower verdicts in §11.3 ([M] at E3 for $D=8$, E4, E7, E9 for K3, E11, E12) rested on text withheld from it or on points since ruled (existence, P140 Q1; the functional, P140 Q4; the flip, P119; the tenth choice, P92) and were not taken further (P105).
+
+| Row | Cites, with its printed tag | Tag in canon | Outcome | Where |
+|---|---|---|---|---|
+| E1 | Definition 2.4 | [D] | stands | — |
+| E2 | Theorem 6.1 [D] | [R] | [D]: the ground stated by the PI | M1-W037 |
+| E3 | Theorem 6.1 [D] | [R] | [D] | M1-W038 |
+| E4 | Definition 3.2(c) | [D] | stands | — |
+| E5 | Proposition 4.1 [R] | [R] | stands | — |
+| E6 | Theorem 4.2 [R], Proposition 4.5 [R] | [R] | [D]: the exclusion is the selection of clause (a) | M1-W039 |
+| E7 | Proposition 5.2 [D] | [D] | stands; the word "corner" is for the build | — |
+| E8 | Proposition 5.5 [D] | [R] | [D] | M1-W040 |
+| E9 | Proposition 5.3 [R], Theorem 6.1 [D] | [R] | [D] | M1-W041 |
+| E10 | Proposition 7.9 [D] | [D] | stands | — |
+| E11 | Propositions 7.3, 7.1 [D] | [D] | tag stands; the ground becomes that of row E12 | M1-W042 |
+| E12 | M1-W030 | [R] in canon; [D] in M1-W030 | stands as M1-W030 | P143, P145 |
+| E13 | Proposition 7.1 [D] | [D] | stands | — |
+| E14 | Proposition 7.3 [D] | [D] | stands | — |
+| 32(h) | Theorem 4.2 "Consequently …" (l.300); Proposition 4.5 "the clause selects it" (l.409) | [R] | the [R] is for the conjugacy statements; the selecting sentence is [D]; no text changes; where the two tags are printed is for the build | P153 |
+
+**Step table of M1-W042.**
+
+| # | Step | Mark | Note |
+|---|---|---|---|
+| S1 | The base is ℂP² × S² and nothing further | DECLARED (P128; M1-W020) | — |
+| S2 | A product ℂP² × X has χ = 3χ(X) | CHECKED by hand, given the product rule | the product rule (Künneth) taken as known, not read (§9.2) |
+| S3 | χ = 8, 4, 2 for S² × S² × S², ℂP³, S⁶ | taken as known, **not read** | — |
+| S4 | None is a multiple of three, so none has a ℂP² factor | CHECKED by hand | — |
+
+**Red flags (gate 7).** Canon: 16 hits as in §11.20; none in ll.994–1018.
+
+**Failure tests.** As in the entries. Of this table: a row whose exclusion rests on a result with a lower tag than the row prints.
+
+**Carried to the build, no proposal made.** Where the two tags of Theorem 4.2 and Proposition 4.5 are printed; row E7's "corner unit groups" (with M1-W015, M1-W017); rows E8 and E9, whose "Where" columns still cite Proposition 5.5 and "corners" as canon has them, the torus being now by clause (c) (M1-W003, M1-W010, M1-W013); the facts of S2 and S3.
+
+**Not done.** No fresh reader has checked §§11.20 and 11.21, the entries M1-W035 to M1-W042 or the handover; the session was committed at the PI's direction without one.
