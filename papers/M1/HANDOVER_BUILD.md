@@ -270,7 +270,7 @@ Rulings in force (`registers/Rulings_In_Force.md` §3, ll.25–56). All of §3 i
 
 | Thing | Value |
 |---|---|
-| Next Decision Log row | **P164** (P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
+| Next Decision Log row | **P167** (P166 the ruling on canon l.127; P165 records the first session of the build, Pass A to Pass C; P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
 | Next write-up log entry | **M1-W044** |
 | Write-up log | 43 entries, 35 active, 8 retired |
 | Next Corpus Errors section | **`## 37.`** |
@@ -343,3 +343,35 @@ This file and its check are recorded at Decision Log **P158**. **Disclosed (the 
 A fresh reader was given this file, CLAUDE.md, `papers/M1/HANDOVER.md` from `## Audit of Theorem 8.1`, §5 of `papers/M1/HANDOVER_J10_J8.md`, `papers/M1/STEP_AUDIT.md` §11, the write-up log, canon, Decision Log rows P88 onward, Rulings in Force ll.1–56, Corpus Errors from entry 32, the Definitions section for M1, the row numbers of Verified References with V-10, V-14, V-23, V-32 and V-33 in full, the four files of `tools/` named in §8, directory listings, the commit log and status, and a run of `tools/writelog_check.py` on canon; and asked to check every claim, quotation, line number, count and pointer in it against those sources, and to report what a reader of this file alone could not do. It found the map of §4 exact (thirty-five rows, the thirty-five active entries, each place agreeing with the entry and with canon), about seventy-five line references of §5 holding what is said, and the counts right. Twenty-three findings, four to be fixed before use, all the architect's: Corpus Errors 32(h) had no instruction; stage 1 could not be done literally for the entries that are not one-for-one replacements; `papers/M1/HANDOVER.md` did not point to this file; and seven items that the J-sessions carried to the build were missing from §§5 and 7. All are corrected here and recorded in P158. **It could not verify from its list:** the Status string of the series plan; the heading of §4 of Rulings in Force at l.58; that Minimality rows M1-15 to M1-20 all say that the tag waits (seen for M1-15 and M1-17 through `HANDOVER.md`); the contents of V-15, V-21 and V-27 to V-31; anything about the Lean files; what the gates find on v6.3; that `canon/MEF_Academic_Register_Guide.md` holds nothing sealed. The corrections were not checked a second time.
 
 **After the check (P159).** The PI set the process by which the build is made (Pass A to Pass E, with two error logs and two stop rules) and accepted four modifications put by the architect. §§1, 2, 3 and 15 were rewritten for it, and the stages of the first draft of this file are gone: there is no change list for the PI, the architect deletes or copies and does not compose, a sentence that has to be composed is marked and shown to the PI only at the end, and the checks are made by scripts and fresh readers. The PI also ruled that the statement of Theorem 8.1 lists the integer two on S². §§4 to 14 are as the fresh reader checked them, apart from the few words that named a stage. The rewritten sections were then checked by a fresh reader together with CLAUDE.md as amended at P161 and with `tools/Paper_assembly_protocol.md` (P162): it found CLAUDE.md word for word as P161 records, and eight things to fix, among them lines of this file left from its first draft (a question already ruled; "reworded"; "stage"; a quotation of a bullet of CLAUDE.md that P161 replaced), and places where the process was underspecified (how errors are identified and counted; what a kind-1 error does; which stops there are). All are corrected here and in the protocol. **The corrections were not checked a second time.** CLAUDE.md §§2 and 10 as they now stand are part of the rules of the build: read them from disk.
+
+---
+
+## 17. State after the first session of the build (13 November 2026; Decision Log P165)
+
+**Read this section first in the second session; then §§0 to 16 as they stand.** No physics is proposed here.
+
+**Built, all in `papers/M1/build_v7/` unless said:**
+- `tools/m1_build_v7_0.py` (stages A, B, C; every edit named and matching once; statements taken from the log by number) and `tools/gates_on_pass.sh` (runs the gates on a pass: `tools/gates_on_pass.sh M1 papers/M1/build_v7/passC.tex`).
+- `passA.tex`: canon v6.3 with the thirty-five active entries, 29 edits. `passB.tex`: `passA.tex` with `edits_B.py`, 33 edits. `passC.tex`: `passB.tex` with `edits_C.py`, 4 edits. **`passC.tex` is the working file and the text that Passes D and E are measured against.** Gate 8 passes on all three; each compiles (46 pages); gates 2, 4, 5 pass; gate 3 finds on each the two items it finds on canon v6.3 (the "I" voice of l.66).
+- `CHECK_BRIEF.md` (fixed before Check A) and `RULINGS_LIST.md` (Corpus Errors 32 to 36 and §5 of this file, copied by script, with the canon lines they cite quoted).
+- `ERROR_LOG_A.md`: 27 errors (29 findings of the reader, 2 rejected). `ERROR_LOG_B.md`: 4 errors (7 findings, 3 rejected), all four not in log A, none introduced by Pass B; **the first stop rule fired**; the PI directed Pass C (P165). Each log holds its reader's report whole.
+- `COMPOSED.md`: **twelve composed sentences**, each marked in `passC.tex`. None has been shown to the PI in plain English yet; that is for the end report after Pass E.
+
+**Open, and needing the PI:**
+1. ~~Error B-2~~ **Closed (P166):** the PI confirmed the read-back of the musing with "(a)": the two sentences on the symbol $\times_{w}$ (canon l.127) stand as canon has them. Nothing is owed on it; Pass D does not reword them (they state mathematics).
+2. **The twelve composed sentences**, at the end (§2). Numbers 10 (Proposition 7.1), 11 (the hypotheses of Theorem 8.1) and 12 (the conclusion of Proposition 5.5) stand inside statements.
+3. **Two confirmed rows:** M1-W030 still prints "the two orbits are not realised", the words that M1-W043 dropped from the row above it (P157); noted by the reader of Pass B (its D.13). A confirmed entry is not changed by the architect.
+
+**Held for the end report, not errors under the five kinds** (the two readers' lists "Register items still standing that fit none of the three kinds" and "Other", in the appendices of the two logs): among them the wording items of §5 changed by no ruling (ll.116, 163, 166, 349, 531, the names used for two things, ll.615 and 943, l.295, "determined among products only"); the bare word "state" outside Definition 7.4; "relabellings that reverse the orientation"; that the hypothesis of four fixed points and the unit of the algebra are as before; the items of §7.
+**From the Lean check of §12:** the header of `MEFProof/Paper_M1/M1_L2_fibre.lean` (l.7) names "Franks 1970 (Anosov diffeomorphisms of surfaces)" and not Lemma 5.1; the file is printed in Appendix A; not changed. No `\cite` of Franks remains in Pass C; the two bibliography items and the mention in Appendix A stand.
+
+**The work package of the second session** is Pass D to the final check (§2), from `passC.tex`. Before Pass D: the script that confirms every mathematical sentence of C unchanged in D is written and kept in `tools/`.
+
+**Two things learnt in this session, for the next:**
+- A `% COMPOSED` or `% LINK` marker must stand alone on its line: text after it on the same line is a comment and is not printed, and no gate catches that. The reader's check of the markers on Pass C is the model.
+- The two readers, on one brief, filed the same canon sentences differently (register item against error); that, and not Pass B, fired the stop. The brief is fixed and was not changed.
+
+**Disclosed:** `canon/MEF_Academic_Register_Guide.md` (on the reading list, §8) prints at its §5.2 a display of the Master Equation with a gloss of its terms. An M1 chat is not blind for M2; the M2 brief's reading list should take account of it.
+
+**Committed and pushed at the PI's direction (P166); see `git log`.** The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P165) was written.
+
