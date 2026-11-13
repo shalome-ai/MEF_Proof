@@ -26,3 +26,17 @@ print("W4", ok(S@M0@np.linalg.inv(S),np.linalg.inv(M0)))
 print("W5", ok(S@S,-np.eye(2)))
 print("W6", all(ok((-np.eye(2)).T@G(s,k)@(-np.eye(2)),G(s,k)) for s in (-.7,.3)))
 print("coords: S(x v1 + y v2) = -y v1 + x v2:", ok(S@(0.3*v1+0.8*v2), -0.8*v1+0.3*v2))
+
+# --- Added 13 Nov 2026 for J3-a: is the Sol frame invariant under the join? ---
+# E0 = d/ds, E1 = e^{-ks} v1, E2 = e^{+ks} v2 are unit for G(s).  The join carries
+# the fibre at s+L to the fibre at s by v -> M0 v.  W7 asks whether the frame is
+# carried to itself, and at which rate.  W8 asks what the fold does to it.
+print("--- J3-a ---")
+for name,k in (("k=2log(phi)/L",2*np.log(phi)/L),("k=log(phi)/L",np.log(phi)/L),("k=-2log(phi)/L",-2*np.log(phi)/L)):
+    inv=[]
+    for s in (-.7,0,.3,2.1):
+        E1_top=np.exp(-k*(s+L))*v1; E2_top=np.exp(k*(s+L))*v2      # frame at s+L
+        E1_bot=np.exp(-k*s)*v1;     E2_bot=np.exp(k*s)*v2          # frame at s
+        inv.append(ok(M0@E1_top,E1_bot) and ok(M0@E2_top,E2_bot))
+    print("W7 frame carried to itself,",name,all(inv))
+print("W8 the fold v -> -v sends E1,E2 to -E1,-E2 and fixes E0:", ok((-np.eye(2))@v1,-v1) and ok((-np.eye(2))@v2,-v2))

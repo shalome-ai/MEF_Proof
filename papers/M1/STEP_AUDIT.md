@@ -855,3 +855,26 @@ Each part ends as one of the three outcomes of P104. The statements are in `WRIT
 **Carried, no proposal made.** To J7: what a geometry's data are, which J3 and J4 were to say; the data are now the factors, the discrete data, and the continuous data covered by the one declared input. To J10: the reading of M1-W025 and M1-W026 (where the growth sits), the reading of M1-W017's parenthesis ("composition run backwards", said of the fold, which is the swap applied twice), and the readings of §11.9 as before. To J8: the tag of row E12. To the build: canon l.190, l.127 (from "The symbol ×_w records"), the displays at ll.125 and 969, ll.258, 239, 967, 992, 602, 521, 533, 578, 1013 and 163; the printed wording of Definition 3.1, of the theorem's hypotheses, of Proposition 5.6 and of row E12, each owed to the PI; and the item left open at J3-a.
 
 **Disclosure.** The architect noticed the likeness between the growth law and the drive's regluing of the torus, and wrote it under its own Question 2, before the PI's musing of P137; P137 says so. The architect's first wording of option (A) introduced a second flip and said that Section 5 would change; the PI directed that the whole context be checked, and the correction is P139: there is one flip, ι, and the second flip is withdrawn.
+
+### 11.18 The one item left open by P140 (Q1): the almost-quaternionic structure on the whole shape (13 November 2026; Decision Log P142)
+
+**Direction.** The PI: "a) try to close it by hand". The attempt did not close it; what it established, and what it did not, is below. Everything here is at the architect's hand unless a certificate is named.
+
+| # | Statement | Mark | Ground |
+|---|---|---|---|
+| Q1-i | The Sol frame $E_0=\partial_s$, $E_1=e^{-\kappa s}v_1$, $E_2=e^{\kappa s}v_2$ is carried to itself by the join exactly when $e^{\kappa L}=\phi^2$ | CHECKED | `checks/j3_warp_check.py` W7, and by hand. Corroborates M1-W026 by a second route |
+| Q1-ii | The frame does not descend to the pillowcase: the fold sends $E_1,E_2$ to $-E_1,-E_2$ and fixes $E_0$ | CHECKED | `checks/j3_warp_check.py` W8 |
+| Q1-iii | $T\times\Sigma$ carries the structure globally: $\Sigma=S^3=\mathrm{Sp}(1)$ is parallelised by left translation; with the time direction this frames the block | CHECKED by hand | canon l.943 ($\Sigma=S^3$), l.615 ("modelled on $\Hquat^{\times}=\R_{>0}\times S^{3}$"), l.613 |
+| Q1-iv | Under the grouping of the internal piece into $\CPtwo$ and $\Stwo\times(\Ttwo/\Ztwo)$, the two triples of canon l.621 cannot be matched: the obstruction is $w_2$, and $\CPtwo$ is not spin while $\Stwo\times(\Ttwo/\Ztwo)$ is | CHECKED by hand | canon l.699 (certificate `L4_not_spin_and_congruence`), l.705 |
+| Q1-v | Whether some structure exists that respects no such grouping | **GAP, declared** | the obstruction computation in dimension twelve was not done; the standard facts it needs are RECALLED by the architect and unread (CLAUDE.md §4), and P97(3) forbids obtaining further sources |
+| Q1-vi | In dimension two there is no almost-quaternionic structure: the only $J$ with $J^2=-1$ on $\R^2$ are $\pm J_0$, which commute | CHECKED by hand | used only to report that the literal reading of the PI's first statement was not available |
+
+**Outcome (P142, R14).** The item is not closed and is **DECLARED** in the new version with its failure test, through write-up log M1-W031, which states why the paper does not need it closed: the structure carries information in exactly one place, the pillowcase, being automatic on the four-dimensional blocks and not constructed on the eight-dimensional internal piece. This is the first step of M1 declared because it could not be closed rather than because a choice was made.
+
+**Red flags.** Not re-run: no new source was read for this item; the lines consumed (canon ll.520, 613, 615, 621, 699, 705, 943, 955, 969) are within the scan of §11.1.
+
+**Failure tests.** Of M1-W031, as in the entry. Of this table: a construction of an almost-quaternionic structure on $\CPtwo\times\Stwo\times(\Ttwo/\Ztwo)$; a proof that none exists on $\Mtwelve$; a grouping of the eight dimensions under which the triples do match.
+
+**Noticed in passing, reported in a sentence and not pursued (CLAUDE.md §5).** The obstruction at Q1-iv is the same non-spinness of $\CPtwo$ that forces $\Spinc$ at Proposition 7.3; the two are consistent and not in conflict.
+
+**Disclosure.** The architect wrote "$\Stwo\times_{w}(\Ttwo/\Ztwo)$" in putting the clauses to the PI. Canon l.969 has $(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)$: the base of the warp is the whole six-dimensional base. The subscript was constructed and not copied, the fault recorded at P139 repeated; the PI found it. The grouping of the eight dimensions into two fours is likewise the architect's and appears nowhere in canon; clause (iii) of R14 says so, and l.955 makes the clause independent of where the warp sits.
