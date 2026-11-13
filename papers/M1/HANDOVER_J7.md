@@ -1,5 +1,7 @@
 # Handover: complete J7
 
+**J7 is done (13 November 2026; Decision Log P147).** Every part has its outcome: `papers/M1/STEP_AUDIT.md` §11.19; write-up log M1-W032 and M1-W034 (M1-W033 retired, P149); `papers/M1/HANDOVER.md` item 23. This file is kept as the record of the brief. Its numbers are those before the session: the next Decision Log row is now P150 and the next write-up log entry M1-W035; the series plan's Status string of §5 has been replaced. Its §11 gives the order after J7 as J8 then J10, where `papers/M1/HANDOVER.md` item 6 has J10 then J8; the PI ruled J10 then J8, and that they may be taken together (P148). Since the session one Rulings row, three Definitions rows and Corpus Errors entry 35 were banked (P148): Rulings in Force §3 now ends at l.54 with §4 at l.56, the Definitions section for M1 is ll.7–30, and the next Corpus Errors section is `## 36.`.
+
 **Written 13 November 2026 at the PI's direction, at the end of the session that completed J3 and J4 (Decision Log P137–P145). It is the brief for one chat and one work package: J7. It does not replace `papers/M1/HANDOVER.md`, which is the paper's handover and holds the history; this file is the working brief and says which parts of that file are read.**
 
 **Checked** by a fresh reader given this file, CLAUDE.md and the sources it names; the findings are corrected here. See §12.
