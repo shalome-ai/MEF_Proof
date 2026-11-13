@@ -82,3 +82,13 @@ Each paper under development has `papers/Mx/WRITE_LOG.md`: the mathematics, one 
 - Before an entry goes in, read it against every active entry of the paper. If it contradicts one, the PI decides which stands, usually the newer. The other is retired: kept, never deleted, and every entry that rests on it is flagged.
 - The first draft of the paper is the active entries, verbatim. The second pass adds connecting English and corrects grammar and punctuation; it does not change a logged statement (gate 8).
 - The Decision Log keeps the PI's words and the process; the write-up log keeps the mathematics. A Decision Log row points to the entry and does not restate it.
+
+## 11. The sense check protocol
+It is applied to the report of an audit, a fresh read or a red team, and to nothing else. A red team finds real errors and also makes errors of its own, from reading a part without the whole paper and the axioms; this protocol removes the second kind before anything reaches the PI. In ordinary derivation work there is no such report, and the method is §§2, 3 and 5 as they stand.
+- An audit, a fresh read or a red team reports on what is written, never with an open brief to find what is wrong (§5). Its report becomes a numbered list of findings, and each finding the questions it raises.
+- **Reduce before asking.** Take the questions in turn. For each, search the paper for its own answer (§5, "Context first"), then apply the six axioms and the clauses of the sixth axiom for the shape (M1 Definition 3.2), and pick the option they select. Carry each pick forward: every later pick is consistent with the earlier ones, and the report says which rests on which.
+- **Clear, or not sure.** A pick is made only when a clause or an axiom names the quantity and one option survives with the lines shown. Otherwise the answer is "not sure", and the question goes to the PI.
+- **What reaches the PI.** The questions marked not sure; those where two clauses pull different ways; those whose answer would change an axiom's reading, a definition or a theorem; and those where the paper's own lines conflict. Three or four, not twenty.
+- **A pick is a reading.** It is reported as Claude's, with its ground. It becomes a ruling only when the PI confirms it, and the PI may overturn any pick.
+- **Before any wording is put to the PI,** read every line of the paper and every active entry of the write-up log that uses the terms in it, and make the English consistent with them. Words are copied, not reconstructed.
+- **Repeat the task back** before running the protocol.
