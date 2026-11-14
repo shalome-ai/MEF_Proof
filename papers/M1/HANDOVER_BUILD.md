@@ -270,7 +270,7 @@ Rulings in force (`registers/Rulings_In_Force.md` §3, ll.25–56). All of §3 i
 
 | Thing | Value |
 |---|---|
-| Next Decision Log row | **P167** (P166 the ruling on canon l.127; P165 records the first session of the build, Pass A to Pass C; P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
+| Next Decision Log row | **P168** (P167 records the second session of the build, Pass D to the final check; P166 the ruling on canon l.127; P165 records the first session of the build, Pass A to Pass C; P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
 | Next write-up log entry | **M1-W044** |
 | Write-up log | 43 entries, 35 active, 8 retired |
 | Next Corpus Errors section | **`## 37.`** |
@@ -375,3 +375,31 @@ A fresh reader was given this file, CLAUDE.md, `papers/M1/HANDOVER.md` from `## 
 
 **Committed and pushed at the PI's direction (P166); see `git log`.** The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P165) was written.
 
+---
+
+## 18. State after the second session of the build (14 November 2026; Decision Log P167)
+
+**Read this section first in the third session; then §17; then §§0 to 16 as they stand.** No physics is proposed here.
+
+**Built, all in `papers/M1/build_v7/` unless said:**
+- `tools/passD_check.py`, the script of Pass D, written before Pass D: every sentence of the measured pass stands unchanged in the later pass (white space apart), nothing is added but marked linking sentences, the composed sentences and their markers are unchanged, and a link holds no mathematics. It is stricter than the fence: it checks every sentence, not only those that state mathematics. `tools/m1_build_v7_0.py` has the stages D and E.
+- `passD.tex`: `passC.tex` with `edits_D.py`, 15 named edits: one reordering (the five opening paragraphs of Section 4); paragraph breaks at sentence ends in seven proof paragraphs and two in the paragraph of the deflationary reading; five linking sentences marked `% LINK n: begin` / `% LINK n: end`. No sentence reworded.
+- `MEANING_CHECK_D.md`: the first fresh reader's report, whole. 16 differences: 12 SAME, 2 MOVED, 2 NOT SURE.
+- `passE.tex`: `passD.tex` with `edits_E.py`, 6 named edits: everything the reader marked MOVED or NOT SURE put back from Pass C by copying (the reordering undone; the two breaks in the deflationary reading removed; the link at the head of Section 6 removed). **`passE.tex` is now the working file.** It differs from `passC.tex` in exactly this: 25 paragraph breaks at sentence ends in seven proof paragraphs (the proofs of Propositions 4.1, 5.2, 5.5 (three paragraphs), 7.3 and Theorem 7.10, numbers of v6.3), and four linking sentences (the openings of Sections 4, 5 and 7, and "We return to the second axiom." before the proposition of M1-W026).
+- `FINAL_CHECK_E.md`: the final check. Gate 8 passes on Pass D and Pass E (35 active; 0 failing); the script of Pass D passes on both against Pass C (872 sentences each; 12 composed sentences); a second fresh reader, who saw neither Pass D nor the first report, found 11 differences between E and C, all SAME. **The second stop rule did not fire.** Gates 1, 2, 4, 5 pass on Pass D and Pass E (47 pages); gate 3 finds the two "I" voice items of l.66 that it finds on canon v6.3.
+
+**Departures from the letter of the protocol, the architect's, disclosed:** (1) the protocol's final reader is "on whatever differs between D and E"; the reader was given the whole of E against C, which covers it. (2) A reader's NOT SURE was treated as MOVED and put back. (3) Item 16 of the first report, SAME by itself, was put back with item 15, of which it is part.
+
+**Open, and needing the PI (unchanged from §17):** the twelve composed sentences, at the end report; the two confirmed rows M1-W030 and M1-W043 (§17, item 3).
+
+**Held for the end report, added by this session (noticed in passing, not pursued; none is an error under the five kinds as the logs stand, and the error logs' appendices were not read this session, so some may be there already):**
+- Pass E l.129 says that Section 2 "isolates as numbered definitions the six points"; l.211 calls Definitions 2.7 and 2.8 "the fifth and sixth choices" and the sentence of composed sentence 2, which calls the choice of M1-W035 "the seventh of this section", is printed between them.
+- In the worked case "The order-three automorphism" (Pass E, the paragraph beginning "This is the algebraic image of the corner three-cycle") the word "This" stands two paragraphs after the sentence on $\Ad_{w}$ that it appears to refer to. It is as canon has it; Pass D did not move it, since a move would change what a pronoun points at.
+- From the two readers, each the same in Pass C and Pass E: the letter $F$ names the Fibonacci matrix in M1-W001 and the internal piece elsewhere in the same subsection (§5, "Names used for two things"); M1-W007 stands at the end of the proof of Proposition 4.1 as a statement with no argument given for it there; the proposition of M1-W026 has no proof environment after it.
+- The reordering of the opening of Section 4 that Pass D tried and Pass E undid: the reader's ground was that "step" would be used before the sentence that defines it. If the PI wants that order, it is the PI's to say.
+
+**The work package of the third session** is what follows Pass E (§2, "After Pass E"; `tools/Paper_assembly_protocol.md`, "After Pass E"): gates 1 to 5 and 8 on `passE.tex`; the one reader with the whole paper and the six axioms (P104, point 5), given the list of §7, its report taken by CLAUDE.md §11; the step audit of the new version and the red-flag scan (gates 6 and 7); then the end report to the PI with the twelve composed sentences, each in plain English and then as printed. Any change to the text after the final check is made by delete or copy and followed by gate 8, `tools/passD_check.py` and a fresh reader on the passages changed. The move into `canon/` is at the PI's word, with the leave asked at §15.
+
+**Read this session:** this file whole; `tools/Paper_assembly_protocol.md`; `passC.tex` whole; `COMPOSED.md`; `CHECK_BRIEF.md`; `tools/PAPER_FORMAT.md`, `tools/README.md`, `tools/writelog_check.py`, `tools/gates_on_pass.sh`, `tools/m1_build_v7_0.py`, `edits_C.py`; `canon/MEF_Academic_Register_Guide.md`; Decision Log P159 to P166; the head of the write-up log and M1-W001, the other statements by script only. **Not read** (assumption 14, confirmed by the PI): the rest of the list of §8. The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P167) was written. No row was added to `tools/ROSETTA_STONE.md`: no new term of jargon was used with the PI.
+
+**Not committed:** committing is at the PI's word.

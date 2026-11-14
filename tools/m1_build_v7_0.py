@@ -5,6 +5,8 @@ by tools/Paper_assembly_protocol.md (Decision Log P159-P162; papers/M1/HANDOVER_
   python3 tools/m1_build_v7_0.py A     # canon v6.3            -> papers/M1/build_v7/passA.tex
   python3 tools/m1_build_v7_0.py B     # passA.tex + edits B   -> papers/M1/build_v7/passB.tex
   python3 tools/m1_build_v7_0.py C     # passB.tex + edits C   -> papers/M1/build_v7/passC.tex
+  python3 tools/m1_build_v7_0.py D     # passC.tex + edits D   -> papers/M1/build_v7/passD.tex
+  python3 tools/m1_build_v7_0.py E     # passD.tex + edits E   -> papers/M1/build_v7/passE.tex
 
 Run from the repository root.  Rules:
 - A statement of the write-up log is never typed here: it is taken from the log by its number, W(n).
@@ -13,6 +15,9 @@ Run from the repository root.  Rules:
   (HANDOVER_BUILD section 4); nothing else of v6.3 is touched.
 - Passes B and C: delete or copy, never compose.  The edits are in
   papers/M1/build_v7/edits_B.py and edits_C.py, each tied to an error of the log before it.
+- Pass D: flow, fenced (edits_D.py): paragraphs reordered, paragraph breaks, marked linking
+  sentences; no sentence reworded (tools/passD_check.py).  Pass E: what the meaning check of
+  D against C puts back, by copying (edits_E.py).
 """
 import importlib.util, re, sys
 from pathlib import Path
@@ -144,6 +149,10 @@ def main():
         t, dst = later_pass("passA.tex", "edits_B"), "passB.tex"
     elif stage == "C":
         t, dst = later_pass("passB.tex", "edits_C"), "passC.tex"
+    elif stage == "D":
+        t, dst = later_pass("passC.tex", "edits_D"), "passD.tex"
+    elif stage == "E":
+        t, dst = later_pass("passD.tex", "edits_E"), "passE.tex"
     else:
         sys.exit(__doc__)
     (OUT / dst).write_text(t.s, encoding="utf-8")
