@@ -402,4 +402,4 @@ A fresh reader was given this file, CLAUDE.md, `papers/M1/HANDOVER.md` from `## 
 
 **Read this session:** this file whole; `tools/Paper_assembly_protocol.md`; `passC.tex` whole; `COMPOSED.md`; `CHECK_BRIEF.md`; `tools/PAPER_FORMAT.md`, `tools/README.md`, `tools/writelog_check.py`, `tools/gates_on_pass.sh`, `tools/m1_build_v7_0.py`, `edits_C.py`; `canon/MEF_Academic_Register_Guide.md`; Decision Log P159 to P166; the head of the write-up log and M1-W001, the other statements by script only. **Not read** (assumption 14, confirmed by the PI): the rest of the list of §8. The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P167) was written. No row was added to `tools/ROSETTA_STONE.md`: no new term of jargon was used with the PI.
 
-**Not committed:** committing is at the PI's word.
+**Committed and pushed at the PI's direction ("commit and push"), commit `193f1cb`; see `git log`.**
