@@ -2,8 +2,7 @@
 # M1 — Certificate L4: the base, the Spin^c twist, the determinant line (Section 7)
 Core toolchain, Lean 4.15.0, no Mathlib, no author axioms, zero `sorry`.
 External inputs named, never Lean axioms: Lawson–Michelsohn (Spin^c criterion
-c₁(L) ≡ w₂ mod 2); the Euler sequence on ℂP²; Atiyah–Bott (four-corner
-product = (−1)^d).
+c₁(L) ≡ w₂ mod 2); the Euler sequence on ℂP².
 -/
 
 /-- The sphere of imaginary units: a + b i + c j + d k with a = 0 and

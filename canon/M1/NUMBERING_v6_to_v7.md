@@ -23,3 +23,7 @@ For every place that cites M1 by number. v6.3 is `canon/M1/superseded/Paper_M1_S
 | Certificates: six files, sixty-six theorems | the same | |
 
 Line numbers of v6.3 quoted in the registers, the Decision Log and the handovers ("canon l.N") are lines of `superseded/Paper_M1_Six_Axioms_v6_3.tex`.
+
+## v7.0 against v7.1 (14 November 2026; Decision Log P173)
+
+v7.1 is `Paper_M1_Six_Axioms_v7_1.tex`; v7.0 is in `superseded/`. No result is renumbered and no statement or proof is changed. The Lean listings of Appendix A have their headers brought into line with the paper; Appendix A's list of classical theorems loses Franks and Atiyah–Bott; four uncited bibliography items are deleted (46 pages against 47).

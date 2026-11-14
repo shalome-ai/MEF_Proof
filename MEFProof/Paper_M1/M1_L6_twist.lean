@@ -1,7 +1,7 @@
 /-!
 # M1 — Certificate L6: the twist of the fibre (Section 7.4)
 
-Paper M1, "Five axioms and their minimal geometry".  Core Lean, no Mathlib,
+Paper M1, "Six axioms and their minimal geometry".  Core Lean, no Mathlib,
 no author axioms, zero `sorry`.
 
 External input named here and never used as a Lean axiom: the classical

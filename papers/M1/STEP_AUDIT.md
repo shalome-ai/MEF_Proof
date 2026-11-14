@@ -1033,3 +1033,5 @@ Each part ends as one of the three outcomes of P104. The statements are in `WRIT
 **The whole-paper reader** (P104, point 5): brief `papers/M1/build_v7/WHOLE_PAPER_READER_BRIEF.md`, report `WHOLE_PAPER_READER_REPORT.md`, its report taken by CLAUDE.md §11 in `SENSE_CHECK_WHOLE_PAPER.md`: four questions to the PI, the rest reduced by the paper's own lines or already on record as ruled or held.
 
 **Failure test of the audit.** A row of the table whose quoted mark is not in the entry or the audit line it names; a step of the proof of Theorem 8.1 with no row.
+
+**v7.1 (14 November 2026; P173).** No step of the table changes: v7.1 differs from v7.0 in the Lean listings' headers, one list of names in Appendix A and four bibliography items. The four changes after Pass E (P170–P172: M1-W044, M1-W045, the moved sentence of the proof of Proposition 5.5, M1-W046) are after the table was collated; rows V94, V80 and V87 to V93 are to be read with those entries. Red-flag scan of `canon/M1/Paper_M1_Six_Axioms_v7_1.tex`: 15 hits, the same.

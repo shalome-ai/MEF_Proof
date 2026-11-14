@@ -4,7 +4,7 @@
 Core toolchain, Lean 4.15.0, no Mathlib, no author axioms, zero `sorry`.
 External inputs named, never Lean axioms: Frobenius 1878 (finite-dimensional
 associative real division algebras are ℝ, ℂ, ℍ); Thurston (Euclidean
-2-orbifolds); Franks 1970 (Anosov diffeomorphisms of surfaces).
+2-orbifolds).
 
 Certified: the Hamilton relations in an integer quaternion model; the fixed
 subalgebras of conjugation and of the inner automorphisms Ad_i, Ad_j, Ad_k;

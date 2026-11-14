@@ -1,6 +1,6 @@
 # M1 — brief for the version with six axioms (11 November 2026)
 
-**As of 14 November 2026 M1 v7.0 is in canon (Decision Log P172). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
+**As of 14 November 2026 M1 v7.1 is in canon (Decision Log P172, P173). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
 
 **A session starting here (CLAUDE.md §1): go first to "The next session" at the end of this file. Its reading list and its lists "Do not read" and "Sealed" govern everything else, including the rest of this file.**
 
@@ -38,10 +38,9 @@ Redo M1 with the sixth axiom (Decision Log P42, P43). **Done: M1 v6.0 is in cano
 - Process: a grep of the Minimality Register printed one truncated row of the withdrawn M2 v1.0 (M2-5); it was not used. The M2 rows of that register should be added to the bar of P43(4).
 
 ## Open, carried from the handover of 10 November
-- Pages for six references that need a library copy (Verified References V-10, V-12, V-19, V-21, V-22, V-23), and the publication data of V-24.
-- The sign of the lift (w or −w), stated in M1 as open; it bears on whether the time circle is three steps or six (`LIFT_SIGN.md`; M1 Cor 7.8).
+- *(Two items removed at the PI's word, 14 November 2026, P173: the library pages for seven references, a non-issue; the sign of the lift, closed.)*
 - Not derived, and said in M1: that the flux three of the fibre and the three of c₁(ℂP²) are one fact (Future-Mx F-9, owing paper to be named).
-- The Lean file headers of L1 and L4 still name Latimer–MacDuffee and Atiyah–Bott as inputs in v2's terms. `M1_L5_vacuum.lean` is in the tree and not part of M1; M7 takes it.
+- *(Done 14 November 2026, P173, v7.1: the Lean headers are brought into line with the paper.)* `M1_L5_vacuum.lean` is in the tree and not part of M1; M7 takes it.
 - Parked, not premises: `GROWTH_LAW_17_20.md`; the v3 draft in `draft_v3/`. Proposed and unbanked from earlier sessions: Corpus Errors entries from the reading notes.
 
 ## Open, new
@@ -559,4 +558,12 @@ No physics is proposed here.
 **Read this session, and not read:** `papers/M1/HANDOVER_BUILD.md` §§20, 21. The reading list of the build was not read in full by the architect (disclosed there).
 
 **Numbers:** next Decision Log row **P173**; next write-up log entry **M1-W059**; next Corpus Errors section `## 37.`.
+
+### After the move: v7.1 and the old open list (14 November 2026; Decision Log P173)
+
+- **Canon is now `canon/M1/Paper_M1_Six_Axioms_v7_1.tex`** (46 pp.): v7.0 with the Lean headers brought into line (five files), "Franks" and "Atiyah–Bott" gone from Appendix A's list, and the four uncited bibliography items gone. No statement, proof or logged sentence changed. v7.0 is in `superseded/`. In item 6 above, "Franks in the bibliography, in Appendix A and in the header of `M1_L2_fibre.lean`" is discharged.
+- **The old list "Open, carried from the handover of 10 November" / "Open, new" (this file, near l.41) was gone through with the PI.** Removed: the library pages; the sign of the lift. Stands: the flux three and the three of $c_{1}(\CPtwo)$ (the sentence after Proposition 7.6 stays: the three of $c_{1}$ is in the paper; Future-Mx F-9, owing paper to be named). The series plan's "five axioms" line: left until M2 is complete, at the PI's word.
+- **Corpus Errors Register:** entry 31 is still "PROPOSED … PI to bank"; entries 13, 14, 16, 17, 18, 21, 22 carry no mark of banking. Entry 14's macro `\consciousness` is still in `mef_macros.tex` l.20 (unused by the paper).
+- **Directed by the PI and not yet done: a glossary.** "There has to be a definitions / naming/glossary section in this paper - this is where the corners are named and it becomes canonical. Each Mx paper carries the Glossary from the Mx-1 paper, follows the same naming convention and then adds any new terms introduced by that Mx paper". It is a new section of M1 (a new version), and a standing rule for the series (CLAUDE.md, `tools/PAPER_FORMAT.md`, the M2 brief). **Needs the PI first:** which pairing of the cycled corners with $\C_{i},\C_{j},\C_{k}$ is canonical (the paper has two: Appendix B and the worked case, against the proof of Proposition 5.6), and the PI's four-quadrant figure, which the architect has not seen.
+- Next Decision Log row **P174**.
 

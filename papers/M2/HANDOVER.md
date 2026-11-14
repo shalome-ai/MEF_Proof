@@ -185,7 +185,7 @@ All of CLAUDE.md applies. These are the ones the fortnight on M1 showed to matte
 
 | # | Blank | Filled by | Value |
 |---|---|---|---|
-| 1 | M1 in canon: the file | the M1 build | `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` (PDF beside it; 47 pp.) |
+| 1 | M1 in canon: the file | the M1 build | `canon/M1/Paper_M1_Six_Axioms_v7_1.tex` (PDF beside it; 46 pp.; v7.1 is v7.0 with the Lean headers and the reference list brought into line, no statement changed; P173) |
 | 2 | The numbering table, v6.3 to v7.0: the file | the M1 build | `canon/M1/NUMBERING_v6_to_v7.md` |
 | 3 | The failure tests of M1 v7.0: a file made by script from the "Failure test" lines of the active entries of M1's write-up log, with nothing else of the log in it | the M1 build | `papers/M2/M1_v7_0_failure_tests.md` (48 active entries) |
 | 4 | What M1 leaves owed by M2: **a file, not words written here**, holding it in the words in which it is owed and nothing else of the register it comes from. The PI reads the file before M2 opens and says that it carries nothing of an earlier M2 | the M1 build, with the PI | `papers/M2/OWED_BY_M2_FROM_M1.md` (one item, from Future-Mx F-10). **Not yet read by the PI** |

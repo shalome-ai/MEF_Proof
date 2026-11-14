@@ -1,7 +1,7 @@
 /-!
 # M1 — Certificate L1: the drive (Section 4)
 
-Paper M1, "Four axioms and their minimal geometry".  Core toolchain,
+Paper M1, "Six axioms and their minimal geometry".  Core toolchain,
 Lean 4.15.0, no Mathlib, no author axioms, zero `sorry`.
 
 External inputs named here and never used as Lean axioms:

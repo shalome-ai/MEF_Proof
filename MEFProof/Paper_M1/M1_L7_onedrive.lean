@@ -1,7 +1,7 @@
 /-!
 # M1 — Certificate L7: one drive at trace three only (Proposition 4.5)
 
-Paper M1, "Six axioms and their minimal geometry", v6.1.  Core library only,
+Paper M1, "Six axioms and their minimal geometry".  Core library only,
 no Mathlib, no author axioms, zero `sorry`.  Written for Lean 4.29.1; it uses
 the core tactics `omega`, `grind` and `push_cast`.
 

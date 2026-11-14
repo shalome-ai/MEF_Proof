@@ -92,6 +92,8 @@
 | **v7.** Minimality theorem (restated: the tenth choice among the readings; one declared input, the continuous data the paper does not derive held fixed; the integer two on S² among the data) | M1 Thm 8.1 | [D] | all above; M1-W028, M1-W047, M1-W057, M1-W054, M1-W055; Minimality M1-20 | — | proposed (v7.0) |
 | **v7.** The elimination table: rows E2, E3, E8, E9, E11, E12 restated; row E6 unchanged | M1 §8.2 | as printed in each row | M1-W037, M1-W038, M1-W040, M1-W041, M1-W043, M1-W046 | — | proposed (v7.0) |
 
+*v7.1 (`canon/M1/Paper_M1_Six_Axioms_v7_1.tex`, 14 Nov 2026; 46 pp.; certificates unchanged in what they certify; Decision Log P173; v7.0 in `canon/M1/superseded/`). No row above changes: the headers of five Lean files are brought into line with the paper (the title; Franks, Atiyah–Bott and "v6.1" deleted), Appendix A's list of classical theorems loses Franks and Atiyah–Bott, and four uncited bibliography items are deleted. Proposed with the move to canon; the PI banks by commit.*
+
 *Open at v7.0 and named in `papers/M1/HANDOVER.md`: whether the geometry has a symmetry that mirrors the torus (declared open in the paper); facts taken as known and not read at source (V-23, V-28 to V-33); the items of `papers/M1/HANDOVER_BUILD.md` §7 that the paper is silent on.*
 
 ---
