@@ -94,6 +94,8 @@
 
 *v7.1 (`canon/M1/Paper_M1_Six_Axioms_v7_1.tex`, 14 Nov 2026; 46 pp.; certificates unchanged in what they certify; Decision Log P173; v7.0 in `canon/M1/superseded/`). No row above changes: the headers of five Lean files are brought into line with the paper (the title; Franks, Atiyah–Bott and "v6.1" deleted), Appendix A's list of classical theorems loses Franks and Atiyah–Bott, and four uncited bibliography items are deleted. Proposed with the move to canon; the PI banks by commit.*
 
+*v7.2 (`canon/M1/Paper_M1_Six_Axioms_v7_2.tex`, 14 Nov 2026; 49 pp.; certificates unchanged; Decision Log P173–P176; v7.1 in `canon/M1/superseded/`). No result above changes. The corners are named one way throughout: Appendix B now has $P_{2}=C_{i}$, $P_{3}=C_{j}$ (write-up log M1-W059, M1-W060, M1-W061; `papers/M1/checks/corner_labels_check.py`), and Appendix B is "Names and glossary", with thirty-four terms copied from the body. Proposed with the move to canon; the PI banks by commit.*
+
 *Open at v7.0 and named in `papers/M1/HANDOVER.md`: whether the geometry has a symmetry that mirrors the torus (declared open in the paper); facts taken as known and not read at source (V-23, V-28 to V-33); the items of `papers/M1/HANDOVER_BUILD.md` §7 that the paper is silent on.*
 
 ---

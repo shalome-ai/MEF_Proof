@@ -14,3 +14,11 @@ Per `canon/MEF_Academic_Register_Guide.md`: title a descriptive noun phrase; abs
 - `\emergencystretch` 4em so that certificate names in `\texttt` do not run into the margin (gate 2 still applies);
 - dense proofs written as one paragraph are not acceptable: if a proof has more than one step, the steps are visibly separate.
 The preamble lines and the sentence-splitting pass are in `tools/m1_build_v4.py` (the block headed "typesetting"); reuse them, or the template built from them, for M2 onward.
+
+## Glossary
+
+**Glossary (PI, 14 November 2026, Decision Log P173–P175).** The PI: "There has to be a definitions / naming/glossary section in this paper - this is where the corners are named and it becomes canonical.  Each Mx paper carries the Glossary from the Mx-1 paper, follows the same naming convention and then adds any new terms introduced by that Mx paper". Every paper of the series ends, before the bibliography, with the appendix "Names and glossary", as M1 v7.2 has it (Appendix B):
+- first the names that are conventions of the series (in M1: the four corners, their positions and their algebras); they are canonical from the paper that fixes them, and a later paper does not rename them;
+- then the terms: each entry is the term, the words of the paper that define it, copied as they stand, and the place where they stand. The entries are made by script from the body of the paper, each by exact match, so that the glossary cannot drift from the text (the model is `papers/M1/build_v7/edits_v7_2.py`);
+- Mx carries the entries of M(x−1) unchanged, each citing M(x−1) as its place, and adds its own;
+- a term the body uses and does not define is listed for the PI; no definition is written for it at the assembly.

@@ -1,6 +1,6 @@
 # M1 — brief for the version with six axioms (11 November 2026)
 
-**As of 14 November 2026 M1 v7.1 is in canon (Decision Log P172, P173). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
+**As of 14 November 2026 M1 v7.2 is in canon (Decision Log P172, P173, P176). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
 
 **A session starting here (CLAUDE.md §1): go first to "The next session" at the end of this file. Its reading list and its lists "Do not read" and "Sealed" govern everything else, including the rest of this file.**
 
@@ -567,3 +567,12 @@ No physics is proposed here.
 - **Directed by the PI and not yet done: a glossary.** "There has to be a definitions / naming/glossary section in this paper - this is where the corners are named and it becomes canonical. Each Mx paper carries the Glossary from the Mx-1 paper, follows the same naming convention and then adds any new terms introduced by that Mx paper". It is a new section of M1 (a new version), and a standing rule for the series (CLAUDE.md, `tools/PAPER_FORMAT.md`, the M2 brief). **Needs the PI first:** which pairing of the cycled corners with $\C_{i},\C_{j},\C_{k}$ is canonical (the paper has two: Appendix B and the worked case, against the proof of Proposition 5.6), and the PI's four-quadrant figure, which the architect has not seen.
 - Next Decision Log row **P174**.
 
+### v7.2: one naming of the corners, and the glossary (14 November 2026; Decision Log P174–P176)
+
+- **Canon is now `canon/M1/Paper_M1_Six_Axioms_v7_2.tex`** (49 pp.). The log has 61 entries, 50 active, 11 retired; next **M1-W062**. v7.1 is in `superseded/`.
+- **The corners are named one way** (the PI: "pick one, and make it canonical"): $P_{1}=C_{0}$, $P_{2}=C_{i}$, $P_{3}=C_{j}$, $P_{4}=C_{k}$. Appendix B was brought into line with the proof of Proposition 5.6 (CHECKED, `checks/corner_labels_check.py`). In item 6 of the list above, "the corner labels" is discharged. The PI's four-quadrant figure was not seen by the architect.
+- **The glossary** is Appendix B, "Names and glossary": the corners, then thirty-four terms, each copied from the body by `build_v7/edits_v7_2.py`. The rule for every paper is in CLAUDE.md §6 and `tools/PAPER_FORMAT.md`. **Reported to the PI and not changed:** some quoted definitions, read alone, use a symbol they do not introduce (for example "shadow" uses $\pi$ and $M$; "step" says "this map"); the fresh reader's list is in Decision Log P176 by reference and in the session's report.
+- **The flux three and the three of $c_{1}(\CPtwo)$:** attempted at the PI's direction; not derived from M1 as it stands; `papers/M1/FLUX_THREE_AND_C1.md` holds the attempt and one lead (the three states of the fibre as the three complex-valued units), which is not a premise. **With the PI:** whether the sentence after Proposition 7.6 stays, goes, or the lead is taken up.
+- **Corpus Errors Register:** entries 13 to 31 deleted at the PI's word (P175); 32 to 36 remain; next entry 37.
+- **Not changed:** the header of `M1_L6_twist.lean` says "the states of the fibre"; `M1_L5_vacuum.lean` is in the tree and not part of M1; `mef_macros.tex` l.20 still has the macro `\consciousness` (unused by the paper).
+- Next Decision Log row **P177**.

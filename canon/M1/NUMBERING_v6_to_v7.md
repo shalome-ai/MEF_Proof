@@ -27,3 +27,7 @@ Line numbers of v6.3 quoted in the registers, the Decision Log and the handovers
 ## v7.0 against v7.1 (14 November 2026; Decision Log P173)
 
 v7.1 is `Paper_M1_Six_Axioms_v7_1.tex`; v7.0 is in `superseded/`. No result is renumbered and no statement or proof is changed. The Lean listings of Appendix A have their headers brought into line with the paper; Appendix A's list of classical theorems loses Franks and Atiyah–Bott; four uncited bibliography items are deleted (46 pages against 47).
+
+## v7.1 against v7.2 (14 November 2026; Decision Log P173–P176)
+
+v7.2 is `Paper_M1_Six_Axioms_v7_2.tex`; v7.1 is in `superseded/`. No result is renumbered. Appendix B is retitled "Names and glossary" (it was "The labelling of the corners"; the label `app:labels` is kept). **The corner dictionary changes:** v6.3 to v7.1 had $P_{3}=C_{i}$, $P_{2}=C_{j}$; v7.2 has $P_{2}=C_{i}$ (the $\psi$ half-period), $P_{3}=C_{j}$ (the $\omega$ half-period), as the proof of Proposition 5.6 always had; $P_{1}=C_{0}$ and $P_{4}=C_{k}$ are unchanged. Any text that cites the letters of the earlier versions needs the same exchange.

@@ -23,7 +23,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W059**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W062**.
 
 ## Entries
 
@@ -653,7 +653,8 @@ A point that neither the fold nor one step of the drive leaves in place has noth
 - **Confirmed:** Decision Log P171, 14 November 2026.
 - **Retires / retired by:** none.
 
-### M1-W053 · active
+### M1-W053 · retired
+- **Retired (P175, 14 November 2026):** by M1-W059, which gives the algebras at $P_{2},P_{3},P_{4}$ as $\C_{i},\C_{j},\C_{k}$, the one naming of the corners. Kept as the record of the statement the PI confirmed at P171.
 - **Statement (as it will be printed):**
 ```tex
 \emph{The algebra at a point.} $P_{1}$ is left in place by $\iota$ and by $M_{0}$, and its algebra is $\Fix(\text{conj})\cap\Fix(\Ad_{w})=\R$; $P_{2},P_{3},P_{4}$ are left in place by $\iota$ and not by $M_{0}$, and their algebras are $\C_{j},\C_{i},\C_{k}$ (Appendix~\ref{app:labels}); a point such as $(\tfrac13,0)$ is moved by $\iota$ to $(\tfrac23,0)$ and by $M_{0}$ to $(\tfrac23,\tfrac13)$, is left in place by neither, and carries $\Hquat$.
@@ -723,5 +724,41 @@ Under clause~(c) of Definition~\ref{def:minimal} the fibre is the torus $\Ttwo$,
 - **Mark:** DECLARED and CHECKED as M1-W003 and M1-W013 have the torus; that $\iota$ is inversion rests on the step of the proof that cites Thurston, as in v6.3 (not read at source); that the drive is hyperbolic rests on Proposition 4.1. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
 - **Failure test:** as M1-W003; and a fold of the torus with four isolated fixed points that no relabelling carries to inversion.
 - **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W059 · active
+- **Statement (as it will be printed):**
+```tex
+\emph{The algebra at a point.} $P_{1}$ is left in place by $\iota$ and by $M_{0}$, and its algebra is $\Fix(\text{conj})\cap\Fix(\Ad_{w})=\R$; $P_{2},P_{3},P_{4}$ are left in place by $\iota$ and not by $M_{0}$, and their algebras are $\C_{i},\C_{j},\C_{k}$ (Appendix~\ref{app:labels}); a point such as $(\tfrac13,0)$ is moved by $\iota$ to $(\tfrac23,0)$ and by $M_{0}$ to $(\tfrac23,\tfrac13)$, is left in place by neither, and carries $\Hquat$.
+```
+- **Place:** Section 5, "Worked cases", the last worked case; it replaces M1-W053 there. Composed sentence 7.
+- **Rests on:** M1-W053, of which it keeps every word but the order of "$\C_{j},\C_{i}$"; the proof of Proposition 5.6 ("$\C_{i}\mapsto\C_{j}\mapsto\C_{k}$ exactly as $P_{2}\to P_{3}\to P_{4}$"); M1-W060.
+- **Mark:** CHECKED, `papers/M1/checks/corner_labels_check.py` (exact arithmetic): $M_{0}$ carries $P_{2}\to P_{3}\to P_{4}\to P_{2}$; $\Ad_{w}$ carries $i\to j\to k\to i$; the pairing $P_{2}=C_{i}$, $P_{3}=C_{j}$, $P_{4}=C_{k}$ is carried by $M_{0}$ as $\Ad_{w}$ carries the units, and the pairing $P_{2}=C_{j}$, $P_{3}=C_{i}$ is so carried only with $\Ad_{w}^{-1}$. The two evaluations at $(\tfrac13,0)$ as M1-W053.
+- **Failure test:** as M1-W053, its first half.
+- **Confirmed:** Decision Log P175, 14 November 2026 (the naming: P174).
+- **Retires / retired by:** retires M1-W053.
+
+### M1-W060 · active
+- **Statement (as it will be printed):**
+```tex
+Throughout the programme the dictionary is: $P_{1}=C_{0}$ (fixed by the drive; $\iota$ acts as conjugation); $P_{2}=C_{i}$ (the $\psi$ half-period); $P_{3}=C_{j}$ (the $\omega$ half-period); $P_{4}=C_{k}$ (the corner at which the $\Spinc$ lift carries the sign $-1$).
+```
+- **Place:** Appendix B, "The four corners", the dictionary sentence; it replaces the sentence of v7.1 that had "$P_{3}=C_{i}$ (the $\omega$ half-period); $P_{2}=C_{j}$ (the $\psi$ half-period)".
+- **Rests on:** the PI's direction that the paper names the corners one way and that Appendix B is where they are named (Decision Log P173, P174); the proof of Proposition 5.6.
+- **Mark:** DECLARED (a naming; "the dictionary"). CHECKED, `papers/M1/checks/corner_labels_check.py` (exact arithmetic): $M_{0}$ carries $P_{2}\to P_{3}\to P_{4}\to P_{2}$; $\Ad_{w}$ carries $i\to j\to k\to i$; the pairing $P_{2}=C_{i}$, $P_{3}=C_{j}$, $P_{4}=C_{k}$ is carried by $M_{0}$ as $\Ad_{w}$ carries the units, and the pairing $P_{2}=C_{j}$, $P_{3}=C_{i}$ is so carried only with $\Ad_{w}^{-1}$. Said to the PI: the unit $i$ now goes with the $\psi$ half-period and $j$ with the $\omega$ half-period; no proof of M1 changes; a later paper that used the letters of v7.1 needs the same exchange.
+- **Failure test:** a line of M1 that pairs a corner with another algebra; a later paper for which the pairing is not a convention.
+- **Confirmed:** Decision Log P175, 14 November 2026 (the naming: P174).
+- **Retires / retired by:** none.
+
+### M1-W061 · active
+- **Statement (as it will be printed):**
+```tex
+The assignment of $i$ and $j$ between $P_{2}$ and $P_{3}$ is the orientation of the three-cycle, which Theorem~\ref{thm:drive} shows to be a single conjugacy class and which no equivariant invariant can detect: it is a convention and carries no content.
+```
+- **Place:** Appendix B, "The four corners", the last sentence; it replaces the sentence of v7.1 that had "The assignment of $j$ and $k$ between $P_{2}$ and $P_{3}$".
+- **Rests on:** M1-W060 (the units at $P_{2}$ and $P_{3}$ are $i$ and $j$); the rest of the sentence is that of v6.3, unchanged.
+- **Mark:** DECLARED as in v6.3 ("it is a convention and carries no content"); the two letters corrected, put to the PI as a slip of v6.3. CHECKED, `papers/M1/checks/corner_labels_check.py` (exact arithmetic): $M_{0}$ carries $P_{2}\to P_{3}\to P_{4}\to P_{2}$; $\Ad_{w}$ carries $i\to j\to k\to i$; the pairing $P_{2}=C_{i}$, $P_{3}=C_{j}$, $P_{4}=C_{k}$ is carried by $M_{0}$ as $\Ad_{w}$ carries the units, and the pairing $P_{2}=C_{j}$, $P_{3}=C_{i}$ is so carried only with $\Ad_{w}^{-1}$. That "no equivariant invariant can detect" it is as v6.3 has it and was not checked at this entry.
+- **Failure test:** an invariant of the geometry that tells the two pairings apart.
+- **Confirmed:** Decision Log P175, 14 November 2026 (the naming: P174).
 - **Retires / retired by:** none.
 
