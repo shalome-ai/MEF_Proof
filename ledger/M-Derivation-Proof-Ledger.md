@@ -61,6 +61,41 @@
 
 *M1 v5.0 was 38 pp., five certificates, 58 theorems. Section 2 numbering: the fifth axiom is Definition 2.1 with Remark 2.2; closure 2.3; growth and decay 2.4; the fibre algebra 2.5; order 2.6; the two levels 2.7; orbits 2.8; drive 2.9. Earlier header notes (v1, v2) are superseded.*
 
+### M1 v7.0 (`canon/M1/Paper_M1_Six_Axioms_v7_0.tex`, 14 Nov 2026; 47 pp.; six certificates L1–L4, L6, L7, 66 theorems, unchanged) — moved to canon by the PI's direction (Decision Log P169, P172); v6.3 in `canon/M1/superseded/`
+
+*Built from v6.3 and the write-up log `papers/M1/WRITE_LOG.md` by `tools/Paper_assembly_protocol.md` (Decision Log P159–P171): 48 active entries, every one in the paper word for word (gate 8). **The statements are not restated here: each row points to the entry that holds the statement in full**, with its mark and its failure test. Numbering: `canon/M1/NUMBERING_v6_to_v7.md` (Remark 6.2 of v6.3 is Remark 6.3; Definition 3.3, Remark 3.4, Proposition 5.8 and Remark 6.2 are new). Ten numbered choices: the nine of v6.0 and the tenth (complex spinors). Audit: `papers/M1/STEP_AUDIT.md` §§11, 12. Rows of the sections above that are not listed below stand as they are. Proposed with the move to canon; the PI banks by commit.*
+
+| Result | Where | Tag | Inputs | Certificate | Status |
+|---|---|---|---|---|---|
+| **v7.** Growth and decay, formal (restated) | M1 Def 2.4 | reading | M1-W025; Minimality M1-19 | — | proposed (v7.0) |
+| **v7.** The two levels (restated: the words on the Clifford action leave) | M1 Def 2.7 | reading | M1-W016 | — | proposed (v7.0) |
+| **v7.** The tenth choice: the spinor bundle is the complex spinor bundle (new in the text) | M1 §2.4, after Def 2.7; §2.6 | reading | M1-W035, M1-W048, M1-W049; Minimality M1-15 | — | proposed (v7.0) |
+| **v7.** Orbits are realised (restated: "factor"; what a symmetry is) | M1 Def 2.8 | reading | M1-W021 | — | proposed (v7.0) |
+| **v7.** Drive, formal (restated: no clause on measure) | M1 Def 2.9 | reading | M1-W006 | — | proposed (v7.0) |
+| **v7.** Modulus (restated) | M1 Def 3.1 | reading | M1-W027; Minimality M1-20 | — | proposed (v7.0) |
+| **v7.** The sixth axiom, formal (restated: the clauses in an order of priority; clause (c) gains the dimension of the fibre and its number of handles) | M1 Def 3.2 | reading | M1-W012, M1-W010, M1-W050; Minimality M1-17 | — | proposed (v7.0) |
+| **v7.** The same geometry; unique (new) | M1 Def 3.3 | reading | M1-W032 | — | proposed (v7.0) |
+| **v7.** Mirror image and run backwards (new) | M1 Remark 3.4 | [D]; two points declared not shown | M1-W034 | — | proposed (v7.0) |
+| **v7.** The setting of the drive: a step keeps the handedness; the drive moves only the fibre that carries it; the step is the linear map of its matrix; the internal piece is carried round time by a whole number of steps (new in the text) | M1 §4.1 | declared choices, and READ from the paper | M1-W001, M1-W004, M1-W005, M1-W009 | `L1_Fib_not_SL2` for the determinants | proposed (v7.0) |
+| **v7.** The points that return are the rational points (replaces a citation) | M1 Prop 4.1, proof | [R]; hand proof `STEP_AUDIT.md` §11.11 | M1-W007 | — | proposed (v7.0) |
+| **v7.** The norm form (restated, with its proof) | M1 Lemma 5.1 | [R] | M1-W017, M1-W051 | — | proposed (v7.0) |
+| **v7.** The fibre algebra is the quaternions (two steps of the proof restated or added) | M1 Prop 5.2 | [D] | M1-W045, M1-W015; EXT Frobenius (V-15) | `L2_hamilton`, `L2_noncomm`, `L2_norm_posdef` | proposed (v7.0) |
+| **v7.** The fibre is a surface, and the torus (restated: by clause (c); "Anosov" and Franks leave) | M1 Prop 5.5 | [D] | M1-W013, M1-W003, M1-W008, M1-W058; Minimality M1-17; V-28, V-29, V-30 (not read at source) | `L2_two_torsion` | proposed (v7.0) |
+| **v7.** The corner algebras (restated: "left in place" for "stabiliser"; the local form of the fold in the statement) | M1 Prop 5.6 | [D] | M1-W044, M1-W052, M1-W053 | `L2_Ad_w_cycles`, `L2_w_cubed` | proposed (v7.0) |
+| **v7.** The geometry satisfies A2 (new) | M1 Prop 5.8 | [D] | M1-W026; Minimality M1-19 | none; `papers/M1/checks/j3_warp_check.py` | proposed (v7.0) |
+| **v7.** Where the quaternionic structure carries information (new); that the structure exists on the whole of M₁₂ is assumed and not shown | M1 Remark 6.2 | declared | M1-W031 | — | proposed (v7.0) |
+| **v7.** The two-sphere (restated: "is selected") | M1 Prop 7.1 | [D] | M1-W056 | `L4_unit_sphere_axes` | proposed (v7.0) |
+| **v7.** The projective plane (restated) | M1 Prop 7.2 | [D] | M1-W019; the tenth choice; V-31 (not read at source) | `L4_chi_counts`, `L4_chern_CP2` | proposed (v7.0) |
+| **v7.** The integer two on S² (new in the text) | M1 §7.4 | [D] | M1-W036; Minimality M1-16; V-32 (not read at source) | — | proposed (v7.0) |
+| **v7.** Flux and states (restated: second and last paragraphs) | M1 Def 7.4 | reading | M1-W024, M1-W023 | — | proposed (v7.0) |
+| **v7.** The base has no further factor (new step of the proof) | M1 Thm 7.10 | [D] | M1-W020; Minimality M1-18 | `L3_chi_K8` | proposed (v7.0) |
+| **v7.** Minimality theorem (restated: the tenth choice among the readings; one declared input, the continuous data the paper does not derive held fixed; the integer two on S² among the data) | M1 Thm 8.1 | [D] | all above; M1-W028, M1-W047, M1-W057, M1-W054, M1-W055; Minimality M1-20 | — | proposed (v7.0) |
+| **v7.** The elimination table: rows E2, E3, E8, E9, E11, E12 restated; row E6 unchanged | M1 §8.2 | as printed in each row | M1-W037, M1-W038, M1-W040, M1-W041, M1-W043, M1-W046 | — | proposed (v7.0) |
+
+*Open at v7.0 and named in `papers/M1/HANDOVER.md`: whether the geometry has a symmetry that mirrors the torus (declared open in the paper); facts taken as known and not read at source (V-23, V-28 to V-33); the items of `papers/M1/HANDOVER_BUILD.md` §7 that the paper is silent on.*
+
+---
+
 ## M2 v1.0 — WITHDRAWN 10 Nov 2026 (Decision Log P41). The rows below are the record of the withdrawn paper (`superseded/M2_v1/`); none is BANKED any longer, none is citable, and the new M2 enters its own rows when it is written
 
 | Result | Site | Rigour | Depends on | Certificate | Status |

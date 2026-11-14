@@ -444,3 +444,41 @@ A fresh reader was given this file, CLAUDE.md, `papers/M1/HANDOVER.md` from `## 
 Replace it by script without reading the file (§9).
 
 **Numbers:** next Decision Log row **P169**; next write-up log entry **M1-W044**; next Corpus Errors section `## 37.`; last commit before this section `98d0bc0`.
+
+---
+
+## 20. State after Parts 1 and 2 of the third session (14 November 2026; Decision Log P169)
+
+**Read this section first; then §19.** No physics is proposed here.
+
+**The PI's direction (P169, verbatim there):** the PDF of Pass E is read and no change is wanted; M1 goes into canon once the checks are over; the M2 brief's blanks are then filled. Thirteen assumptions were put and confirmed ("All assumptions agreed and verified"), among them: one stop before canon for the twelve composed sentences and the row M1-W030; leave to read the ledger's rows for M1, the Minimality Register's rows for M1, the Definitions row at its l.107 and Future-Mx F-10.
+
+**Done (Part 1), all in `papers/M1/build_v7/` unless said:**
+- Gates on `passE.tex`: 1, 2, 4, 5 pass (47 pages); gate 8 passes (35 active, 0 failing); gate 3 finds the two "I" voice items of l.66, as on canon v6.3.
+- The whole-paper reader: `WHOLE_PAPER_READER_BRIEF.md` (fixed before it ran), `WHOLE_PAPER_READER_REPORT.md` (whole), `SENSE_CHECK_WHOLE_PAPER.md` (CLAUDE.md §11: four questions to the PI).
+- Gate 6: `STEP_TABLE_v7_0.md` (151 rows, a collation of marks on record, brief `STEP_TABLE_BRIEF.md`), entered at `papers/M1/STEP_AUDIT.md` §12. Gate 7: `REDFLAGS_passE.txt`, 15 hits, entered at §12.
+- For the M2 brief: `M1_v7_0_failure_tests.md` (blank 3, by script, 35 lines). The numbering, by script from the label files of v6.3 and Pass E: Remark 6.2 (the split) becomes Remark 6.3; new are Definition 3.3, Remark 3.4, Proposition 5.8, Remark 6.2; every other number stands.
+
+**Put to the PI at the end report (Part 2), and waiting:** the twelve composed sentences as read-backs; the row M1-W030; the four questions of the sense check; the list of what is held.
+
+**Not done:** Part 3 (changes, if the PI's answers ask for any, by delete or copy, with gate 8, `tools/passD_check.py` and a fresh reader on the passages changed); Part 4 (the move into canon: ledger first, then the paper; v6.3 to `canon/M1/superseded/`; `canon/M1/NUMBERING_v6_to_v7.md`; the registers proposed; the Lean header; the seven blanks of `papers/M2/HANDOVER.md` §9, of which blank 4 needs the PI to read a file; the paper's handover; the Status cell; commit and push).
+
+**Disclosed, the architect's:** the reading list of §8 was not read in full, against assumption 8 as confirmed: it does not fit in one chat with the work. Read whole by the architect: this file, CLAUDE.md, `tools/Paper_assembly_protocol.md`, `passE.tex`, `COMPOSED.md`, the write-up log to l.280 and five further entries by script, Decision Log P104, P157, P168, `papers/M2/HANDOVER.md` §9. The two sub-agents read `passE.tex`, the write-up log and (the collation) `STEP_AUDIT.md` §§8–11 whole. Not read by anyone this session: `papers/M1/HANDOVER.md`, the Decision Log rows otherwise, Rulings in Force, the Corpus Errors Register, the error logs' appendices, the Definitions section, Verified References, the register guide, `COMMUTANT_LEAD.md`. The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P169) was written. No row was added to `tools/ROSETTA_STONE.md`.
+
+**Numbers:** next Decision Log row **P170**; next write-up log entry **M1-W044**. Nothing committed this session.
+
+---
+
+## 21. The build is finished: M1 v7.0 is in canon (14 November 2026; Decision Log P170, P171, P172)
+
+**This file is spent.** The paper's handover is `papers/M1/HANDOVER.md`, section "M1 v7.0 in canon"; read that. Kept here for the record:
+
+- **The PI's answers** (P170, P171, verbatim there): the fuller statement of Proposition 5.6; a sentence in the proof of Proposition 5.2; what the fold is, left; the sentence on orientation moved up in the proof of Proposition 5.5; the twelve composed sentences confirmed; the words cut from row E12.
+- **The log:** M1-W044 to M1-W058 entered; M1-W029 and M1-W030 retired; 58 entries, 48 active, 10 retired; next **M1-W059**.
+- **The changed text:** `build_v7/passE_r1.tex` (four named edits on `passE.tex`); gate 8, `tools/passD_check.py` and a fresh reader (`build_v7/FRESH_READER_R1.md`).
+- **Canon:** `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` and PDF (47 pp.); v6.3 in `superseded/`; `canon/M1/NUMBERING_v6_to_v7.md`. `tools/m1_build_v7_0.py` still names v6.3 at its old place in `canon/M1/` and would have to be pointed at `superseded/` to be run again.
+- **Correction to §20:** the failure-test file is `papers/M2/M1_v7_0_failure_tests.md` (48 lines, remade after the new entries), not the path given there.
+- **Disclosed:** to find one row the architect printed the section headings of the Definitions Register outside the section for M1 ("Geometry", "The warp", "Fields" and three others); nothing under them was read.
+
+Next Decision Log row **P173**.
+

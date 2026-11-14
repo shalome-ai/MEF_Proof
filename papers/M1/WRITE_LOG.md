@@ -23,7 +23,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W044**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W059**.
 
 ## Entries
 
@@ -347,7 +347,8 @@ with the continuous data of the geometry that this paper does not derive held fi
 
 ---
 
-### M1-W029 · active
+### M1-W029 · retired
+- **Retired (P171, 14 November 2026):** by M1-W044. The statement gains the fuller wording of the paragraph after the proof (Decision Log P170, P171). Kept as the record of the statement the PI confirmed.
 - **Statement (as it will be printed):**
 ```tex
 Let $\iota$ and $M_{0}$ act on $\Ttwo$ with $\iota$ inversion and $M_{0}$ the drive of Theorem~\ref{thm:drive}, and let the algebra at a point be the subalgebra of $\Hquat$ fixed by those of the fold and one step of the drive that leave the point in place, $\iota$ acting as conjugation and the drive as the order-three inner automorphism $\Ad_{w}$, $w=\tfrac12(1+i+j+k)$. Then the algebra is $\R$ at $P_{1}$, $\C_{i}$, $\C_{j}$, $\C_{k}$ at the three other fixed points of $\iota$, permuted cyclically by the drive, and $\Hquat$ at every other point. \rigD
@@ -360,7 +361,8 @@ Let $\iota$ and $M_{0}$ act on $\Ttwo$ with $\iota$ inversion and $M_{0}$ the dr
 
 ---
 
-### M1-W030 · active
+### M1-W030 · retired
+- **Retired (P171, 14 November 2026):** by M1-W046. The words ": the two orbits are not realised" are cut, as in M1-W043 (Decision Log P171). Kept as the record of the statement the PI confirmed.
 - **Statement (as it will be printed):**
 ```tex
 other six-dimensional bases: $\CPtwo\times T^{2}$, $T^{6}$ & no $\Stwo$ factor, and for $T^{6}$ no $\CPtwo$ either: the two orbits are not realised & Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b) & \rigD\\
@@ -542,3 +544,184 @@ spin bases: $S^{2}\times S^{2}\times S^{2}$, $\mathbb{CP}^{3}$, $S^{6}$ & no $\C
 - **Failure test:** one of the three bases written as a product with a $\CPtwo$ factor; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised (as M1-W030).
 - **Confirmed:** Decision Log P157, 13 November 2026.
 - **Retires / retired by:** retires M1-W042.
+
+### M1-W044 · active
+- **Statement (as it will be printed):**
+```tex
+Let $\iota$ and $M_{0}$ act on $\Ttwo$ with $\iota$ inversion and $M_{0}$ the drive of Theorem~\ref{thm:drive}, and let the algebra at a point be the subalgebra of $\Hquat$ fixed by those of the fold and one step of the drive that leave the point in place, the local form of $\iota$ being conjugation at the drive-fixed corner and the inner automorphism by the surviving unit at the three cycled corners, and the drive acting as the order-three inner automorphism $\Ad_{w}$, $w=\tfrac12(1+i+j+k)$. Then the algebra is $\R$ at $P_{1}$, $\C_{i}$, $\C_{j}$, $\C_{k}$ at the three other fixed points of $\iota$, permuted cyclically by the drive, and $\Hquat$ at every other point. \rigD
+```
+- **Place:** Section 5, the statement of Proposition 5.6 (`prop:collapse`); it replaces M1-W029 there.
+- **Rests on:** M1-W029, every word of which it keeps but "$\iota$ acting as conjugation"; the paragraph after the proof of the proposition, from which the new words are copied ("that the local form of $\iota$ is conjugation at the drive-fixed corner and the inner automorphism by the surviving unit at the three cycled corners"); the step of the proof "the local form of $\iota$ at such a point is the inner automorphism by the surviving unit, and its fixed subalgebra is the corresponding complex line"; the PI's direction (Decision Log P170: "the fuller statement").
+- **Mark:** DECLARED (a reading; the proposition keeps its \rigD; the paper says of it "the identification of the one with the other is a definition rather than a computation"). The word "acting" after "the drive" is the architect's, put so that the sentence reads; it was shown to the PI as such. Said to the PI with the read-back and not in the statement: "the surviving unit" is named before the conclusion says which unit survives at which corner, so that the hypothesis nearly contains the conclusion at the three cycled corners. The marks of M1-W029 stand for what is unchanged. Not checked by a fresh reader as an entry; the passage changed in the paper was read by a fresh reader (the build handover, §21).
+- **Failure test:** as M1-W029; and a result of M1 or a later paper that needs the fold to act on the algebra as conjugation at a cycled corner.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** retires M1-W029.
+
+### M1-W045 · active
+- **Statement (as it will be printed):**
+```tex
+The fibre algebra has a unit $1\neq0$, and $\iota$ acts on it as an anti-involution $a\mapsto a^{*}$ whose fixed elements are exactly the real multiples of $1$. This is a reading and is not derived.
+```
+- **Place:** Section 5, the proof of Proposition 5.2 (`prop:H`), after its first sentence ("By Definition~\ref{def:fibrealg} $\mathcal{A}$ is finite-dimensional and associative.") and before M1-W015.
+- **Rests on:** Lemma 5.1 (M1-W017), whose hypotheses these are, in its words; the mark of M1-W017 ("DECLARED: that $\iota$ acts on the fibre algebra as such an anti-involution"); the PI's direction (Decision Log P170: "add a sentence saying the algebra has these properties").
+- **Mark:** DECLARED (a reading, said to be one in the statement). Said to the PI with the read-back and not in the statement: that the unit could be argued and is here declared with the other two; that the reading carries no number among the choices (P152, P154: numbering is presentation). The rulings of P119 on which M1-W017 rests were not re-read at this entry.
+- **Failure test:** a fibre algebra without a unit; or a direction other than the ordinary numbers that the flip leaves unchanged.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W046 · active
+- **Statement (as it will be printed):**
+```tex
+other six-dimensional bases: $\CPtwo\times T^{2}$, $T^{6}$ & no $\Stwo$ factor, and for $T^{6}$ no $\CPtwo$ either & Definition~\ref{def:orbits}, Definition~\ref{def:minimal}(b) & \rigD\\
+```
+- **Place:** Section 8, the elimination table, the row on other six-dimensional bases; it replaces M1-W030 there.
+- **Rests on:** M1-W030, of which it keeps every word but ": the two orbits are not realised"; M1-W043 and Decision Log P157, where the same words were cut from the row above because they can be heard as "neither of the two is there"; here $\CPtwo\times T^{2}$ contains $\CPtwo$.
+- **Mark:** DECLARED (the ground and the tag are those of M1-W030, ruled at P140 and P153). The cut was put to the PI as a choice between keeping and cutting the named words; the row as TeX was not shown.
+- **Failure test:** as M1-W030.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** retires M1-W030.
+
+### M1-W047 · active
+- **Statement (as it will be printed):**
+```tex
+the integer two on $\Stwo$,
+```
+- **Place:** Section 8, the statement of Theorem 8.1, in the list of discrete data, after "determinant line $\Oline{3}$,". Composed sentence 1 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W036 ("On $\Stwo$ the canonical structure has the integer two."); the PI's ruling that the statement lists it (P159, "yes list it").
+- **Mark:** DECLARED and CHECKED as M1-W036 has the datum. Said to the PI: "the integer" is bare here, and the proof of the theorem has no clause pointing to the place where it is found. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W036.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W048 · active
+- **Statement (as it will be printed):**
+```tex
+This is the tenth choice of this paper, and the seventh of this section.
+```
+- **Place:** Section 2, after M1-W035 and before Definition 2.8. Composed sentence 2 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** Decision Log P92 ("the tenth choice of M1, the seventh of Section 2"); M1-W019, which says "(the tenth choice)".
+- **Mark:** DECLARED (a count of the choices; presentation under P152, P154). Said to the PI: the paper still says, in Section 1, that Section 2 isolates "the six points". Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** a count of the numbered choices of the paper under which the choice of M1-W035 is not the tenth, or not the seventh of Section 2.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W049 · active
+- **Statement (as it will be printed):**
+```tex
+; and that the spinor bundle of Definition~\ref{def:levels} is the complex spinor bundle, and data of the fibre algebra carried by spinors are complex-valued.
+```
+- **Place:** Section 2, "What has been chosen", at the end of the list of the choices. Composed sentence 3 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W035, from "spinor bundle" to "complex-valued".
+- **Mark:** DECLARED (it repeats M1-W035 in the list). Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W035.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W050 · active
+- **Statement (as it will be printed):**
+```tex
+Clause~(b) prevails over clause~(c), so that clause~(c) does not replace a structure that needs no further object by one with a smaller integer.
+```
+- **Place:** Section 3, in the paragraph after Definition 3.2, after "Clause~(b) removes what nothing forces." Composed sentence 4 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W012 ("clause~(b) over clause~(c)"); canon v6.3 l.271 ("so that it does not replace a structure that needs no further object by one with a smaller integer").
+- **Mark:** DECLARED (the reason the paper gives for the order of clauses (b) and (c)). Said to the PI: "a smaller integer" does not say of what; the paper's case is the determinant line of Proposition 7.3. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W012.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W051 · active
+- **Statement (as it will be printed):**
+```tex
+With $x=(a+a^{*})/2$ and $u=(a-a^{*})/2$, by linearity and $(a^{*})^{*}=a$, $x^{*}=x$, so $x$ is real, and $u^{*}=-u$, and $a^{*}=x-u$; $(u^{2})^{*}=u^{*}u^{*}=(-u)(-u)=u^{2}$, so $u^{2}$ is fixed and therefore real; $x$ is real and commutes with $u$, so $aa^{*}=(x+u)(x-u)=x^{2}-u^{2}$ and $a^{*}a=(x-u)(x+u)=x^{2}-u^{2}$; if $u=r\cdot1$ for a real $r$ then $u^{*}=u$, so $u=-u$ and $u=0$, hence for $u\neq0$ the elements $1$ and $u$ are independent and $(x,y)\mapsto x+yu$ is one-to-one; the curve $x^{2}-u^{2}y^{2}=1$ is an ellipse if $u^{2}<0$, the two lines $x=\pm1$ if $u^{2}=0$ and a hyperbola if $u^{2}>0$, so it is compact (closed and bounded in the plane) exactly when $u^{2}<0$; if $u^{2}<0$ for every $u\neq0$ with $u^{*}=-u$ then $N(a)=x^{2}-u^{2}>0$ unless $x=0$ and $u=0$; conversely $N(u)=-u^{2}>0$ gives $u^{2}<0$.
+```
+- **Place:** Section 5, the proof of Lemma 5.1, whole. Composed sentence 5 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W017, of whose Mark it is the hand check, word for word.
+- **Mark:** CHECKED by hand in full (the mark of M1-W017). Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W017.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W052 · active
+- **Statement (as it will be printed):**
+```tex
+A point that neither the fold nor one step of the drive leaves in place has nothing fixed and carries $\Hquat$.
+```
+- **Place:** Section 5, the last step of the proof of Proposition 5.6. Composed sentence 6 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W044 (formerly M1-W029), "those of the fold and one step of the drive that leave the point in place"; canon v6.3 l.533 ("has nothing fixed and carries $\Hquat$").
+- **Mark:** DECLARED with M1-W044 (it is the proposition's reading at a point that nothing leaves in place). Said to the PI and not in the statement: that one step of the drive leaves only $P_{1}$ in place is not said in the proof; Appendix A names $\det(M_{0}-I)=-1$ as certified and "not used in the text". `STEP_AUDIT.md` §12, row V98: no mark was on record before this entry. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** a point of the torus, other than the four corners, that the fold or one step of the drive leaves in place.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W053 · active
+- **Statement (as it will be printed):**
+```tex
+\emph{The algebra at a point.} $P_{1}$ is left in place by $\iota$ and by $M_{0}$, and its algebra is $\Fix(\text{conj})\cap\Fix(\Ad_{w})=\R$; $P_{2},P_{3},P_{4}$ are left in place by $\iota$ and not by $M_{0}$, and their algebras are $\C_{j},\C_{i},\C_{k}$ (Appendix~\ref{app:labels}); a point such as $(\tfrac13,0)$ is moved by $\iota$ to $(\tfrac23,0)$ and by $M_{0}$ to $(\tfrac23,\tfrac13)$, is left in place by neither, and carries $\Hquat$.
+```
+- **Place:** Section 5, "Worked cases", the last worked case. Composed sentence 7 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** canon v6.3 l.578 for the computation; M1-W044 for "left in place"; Appendix B for which corner carries which algebra.
+- **Mark:** CHECKED by hand, 14 November 2026: $-(\tfrac13,0)\equiv(\tfrac23,0)$; $M_{0}(\tfrac13,0)=(\tfrac23,\tfrac13)$; neither is $(\tfrac13,0)$. Said to the PI: the algebras at $P_{2},P_{3},P_{4}$ are given as Appendix B has them, $\C_{j},\C_{i},\C_{k}$, where the proof of Proposition 5.6 pairs $\C_{i},\C_{j},\C_{k}$ with $P_{2},P_{3},P_{4}$; the paper calls the orientation a convention. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** an error in the two evaluations; or a later paper for which the pairing of the cycled corners with $\C_{i},\C_{j},\C_{k}$ is not a convention.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W054 · active
+- **Statement (as it will be printed):**
+```tex
+That the continuous data of the geometry that this paper does not derive are held fixed is the one declared input of the theorem; it would fail if a continuous datum of the geometry that this paper does not derive were not held fixed, and the geometry would then not meet clause~(a).
+```
+- **Place:** Section 8, the paragraph "The deflationary reading", after the sentence on non-minimal geometries. Composed sentence 8 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W028, its statement and its "Failure test" line; canon v6.3 l.992 ("and the geometry would then not meet clause~(a)").
+- **Mark:** DECLARED (the declared input of Theorem 8.1, with its failure test, as CLAUDE.md §6 asks). Said to the PI: the failure test nearly restates the input; Remark 6.2 also assumes something, the structure on the whole of $\Mtwelve$, while the theorem says "one declared input". Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W028.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W055 · active
+- **Statement (as it will be printed):**
+```tex
+the torus $\Ttwo$ as the fibre of $F$ carrying the drive,
+```
+- **Place:** Section 8, the paragraph "The deflationary reading", in the list of what a reader who does not take clause (c) has as least and not as only. Composed sentence 9 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W003 ("the fibre is therefore the torus"); M1-W010 ("the fibre of $F$ carrying the drive").
+- **Mark:** DECLARED (it follows M1-W010: clause (c) now selects the fibre). Said to the PI: the list is of "least admissible values" and a torus is not a value. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** a reading of clause (c) under which the fibre is not among the things it selects.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W056 · active
+- **Statement (as it will be printed):**
+```tex
+If one unit $i$ is selected, its stabiliser is $U(1)$ and the orbit of $i$ is $\mathrm{Sp}(1)/U(1)=\Stwo$.
+```
+- **Place:** Section 7, the statement of Proposition 7.1, its second sentence. Composed sentence 10 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** canon v6.3 l.661, with "a $\Spinc$ structure selects" deleted and "is selected" put in its place (Corpus Errors 32(a); P92).
+- **Mark:** DECLARED. Said to the PI: the sentence no longer says what selects the unit, and nothing in the paper is named as selecting it. The stabiliser and the orbit are as the proof of the proposition has them (not re-checked at this entry). Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** a later paper that needs the unit to be selected by a $\Spinc$ structure, or by nothing.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W057 · active
+- **Statement (as it will be printed):**
+```tex
+and the tenth choice,
+```
+- **Place:** Section 8, the statement of Theorem 8.1, in the list of readings, after "and~\ref{def:orbits}". Composed sentence 11 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W019 ("(the tenth choice)"); Decision Log P92, under which the theorem rests on the tenth choice.
+- **Mark:** DECLARED (a hypothesis named). Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** a proof of Theorem 8.1 that does not use the tenth choice.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+
+### M1-W058 · active
+- **Statement (as it will be printed):**
+```tex
+Under clause~(c) of Definition~\ref{def:minimal} the fibre is the torus $\Ttwo$, on which $\iota$ is inversion $z\mapsto-z$ and the drive is a hyperbolic element of $\mathrm{SL}_{2}(\Z)$.
+```
+- **Place:** Section 5, the statement of Proposition 5.5, its conclusion. Composed sentence 12 of `papers/M1/build_v7/COMPOSED.md`.
+- **Rests on:** M1-W003 ("Under clause~(c) of Definition~\ref{def:minimal} the fibre is therefore the torus", without "therefore"); canon v6.3 l.501 from "$\Ttwo$, on which"; Proposition 4.1 for "hyperbolic".
+- **Mark:** DECLARED and CHECKED as M1-W003 and M1-W013 have the torus; that $\iota$ is inversion rests on the step of the proof that cites Thurston, as in v6.3 (not read at source); that the drive is hyperbolic rests on Proposition 4.1. Composed at the assembly; confirmed by the PI after a read-back in plain English and then as printed.
+- **Failure test:** as M1-W003; and a fold of the torus with four isolated fixed points that no relabelling carries to inversion.
+- **Confirmed:** Decision Log P171, 14 November 2026.
+- **Retires / retired by:** none.
+

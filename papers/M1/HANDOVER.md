@@ -1,5 +1,7 @@
 # M1 — brief for the version with six axioms (11 November 2026)
 
+**As of 14 November 2026 M1 v7.0 is in canon (Decision Log P172). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
+
 **A session starting here (CLAUDE.md §1): go first to "The next session" at the end of this file. Its reading list and its lists "Do not read" and "Sealed" govern everything else, including the rest of this file.**
 
 ## The task
@@ -532,3 +534,29 @@ When the derivation and its results are written and recorded, and only then, the
 
 **Added 11 November 2026 (PI, P96: "I agree P71-P87 be sealed.  Should not be read, to make M2 a true fresh start once we have completed J2-J11"):**
 - Decision Log rows P71–P87, for every session. What they hold about M1 is in `STEP_AUDIT.md` §11.8.
+
+---
+
+## M1 v7.0 in canon (14 November 2026; Decision Log P169–P172)
+
+No physics is proposed here.
+
+**What was built.** `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` and its PDF, 47 pages, from v6.3 and the write-up log by `tools/Paper_assembly_protocol.md`. The log, `papers/M1/WRITE_LOG.md`, has 58 entries, 48 active and 10 retired; every active statement is in the paper word for word (gate 8); the next number is **M1-W059**. Gates 1, 2, 4, 5 pass; gate 3 finds the two "I" voice items of the opening (accepted); gates 6 and 7 are `STEP_AUDIT.md` §12 (the step table is `build_v7/STEP_TABLE_v7_0.md`, a collation of marks on record, of which the architect checked five rows). v6.3 is in `canon/M1/superseded/`; numbering in `canon/M1/NUMBERING_v6_to_v7.md` (one result renumbered: Remark 6.2 of v6.3 is Remark 6.3). The record of the build is `papers/M1/HANDOVER_BUILD.md` (spent) and `papers/M1/build_v7/`.
+
+**Proposed with the move, banked by the PI's commit, and not shown to the PI row by row:** the ledger's section "M1 v7.0"; the notes on Minimality rows M1-15 to M1-20; in the Definitions Register the rows "minimal" and "symmetry" rewritten, three rows added, one older row marked superseded.
+
+**What is open (none needs a ruling to use v7.0 as it stands; each is the PI's to take up or leave):**
+1. **Declared open in the paper:** whether the geometry has a symmetry that mirrors the torus (v7.0, the paragraph after Proposition 4.5, with its failure test); that the almost-quaternionic structure exists on the whole of $M_{12}$ (Remark 6.2: "assumed here and is not shown"; no failure test is printed with it, and Theorem 8.1 speaks of "one declared input").
+2. **The paper is silent** (the whole-paper reader, `build_v7/WHOLE_PAPER_READER_REPORT.md`, Part C; `build_v7/SENSE_CHECK_WHOLE_PAPER.md`): the proof of Theorem 8.1 does not join two minimal geometries by a relabelling of Definition 3.3, and shows no axiom for $M_{12}$ but A2 (Proposition 5.8); that Definition 3.3 applied to the step alone is the count of clause (a); that nothing else on the fibre is free; that clause (b) would not select differently at Theorem 6.1; how the fibre algebra acts on spinors; that "symmetry" in Definition 2.8 is provisional (P126); that a unit and a complex direction are the only structures selected; what selects the complex direction. M1-W003 says "an involution of $X$" without "continuous".
+3. **Facts used and not read at source** (Verified References V-23, V-28 to V-33; P97(3)): they stand in the paper as taken, not closed by hand there and not declared there with a failure test. Verified References was not touched at the move.
+4. **Printed without a proof:** M1-W007 at the end of the proof of Proposition 4.1; Proposition 5.8. The proof of Proposition 5.6 does not say that one step of the drive leaves only $P_{1}$ in place (Appendix A has $\det(M_{0}-I)=-1$ certified and "not used in the text"). The proof of Theorem 8.1 has no clause for the integer two on $S^{2}$.
+5. **What the fold is** is said two ways (Definition 2.4 and Proposition 5.8: the exchange applied twice; the opening and Lemma 5.1: the exchange). **Left as printed by the PI (P170).** Not to be reopened unasked.
+6. **Wording of v6.3 that no ruling changed, still standing:** the corner labels (the proof of Proposition 5.6 against the worked case and Appendix B); "$A$ is $SM_{0}S^{-1}$" against "$SAS^{-1}=M_{0}$" in Section 4.3; "the six points" in Section 1.5 against the seventh choice of Section 2; "the base is then determined among products only"; letters used for two things ($F$, $M$, $S$, $w$, $E$, $D$); "one place in this section where the proposition is [D]" after Proposition 5.6, against the reading now declared in the proof of Proposition 5.2; Franks in the bibliography, in Appendix A and in the header of `M1_L2_fibre.lean`, cited nowhere in the text.
+7. **Registers not touched at the move:** the Corpus Errors Register (entries 32 to 36 were written for the build; which of their items v7.0 discharges has not been entered; the next section is `## 37.`); Verified References; Future-Mx (F-10 stands, owed by M2).
+
+**For M2.** The seven blanks of `papers/M2/HANDOVER.md` §9 are filled. **The PI has yet to read `papers/M2/OWED_BY_M2_FROM_M1.md`** and say that it carries nothing of an earlier M2 (blank 4). The chat that built M1 is not the chat that opens M2. The sealed list of this file stands until the new M2 is written and recorded.
+
+**Read this session, and not read:** `papers/M1/HANDOVER_BUILD.md` §§20, 21. The reading list of the build was not read in full by the architect (disclosed there).
+
+**Numbers:** next Decision Log row **P173**; next write-up log entry **M1-W059**; next Corpus Errors section `## 37.`.
+

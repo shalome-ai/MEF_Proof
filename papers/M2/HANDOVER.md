@@ -185,13 +185,13 @@ All of CLAUDE.md applies. These are the ones the fortnight on M1 showed to matte
 
 | # | Blank | Filled by | Value |
 |---|---|---|---|
-| 1 | M1 in canon: the file | the M1 build | *(empty: to be `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` if the name stands)* |
-| 2 | The numbering table, v6.3 to v7.0: the file | the M1 build | *(empty)* |
-| 3 | The failure tests of M1 v7.0: a file made by script from the "Failure test" lines of the active entries of M1's write-up log, with nothing else of the log in it | the M1 build | *(empty)* |
-| 4 | What M1 leaves owed by M2: **a file, not words written here**, holding it in the words in which it is owed and nothing else of the register it comes from. The PI reads the file before M2 opens and says that it carries nothing of an earlier M2 | the M1 build, with the PI | *(empty)* |
-| 5 | The date v7.0 went into canon, and the Decision Log row | the M1 build | *(empty)* |
-| 6 | The section of the Definitions Register that holds the terms of M1 as v7.0 uses them: the command that prints it | the M1 build | *(empty)* |
-| 7 | The format of a ledger row | the M1 build, with the PI's leave to read the ledger's rows for M1 | *(empty)* |
+| 1 | M1 in canon: the file | the M1 build | `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` (PDF beside it; 47 pp.) |
+| 2 | The numbering table, v6.3 to v7.0: the file | the M1 build | `canon/M1/NUMBERING_v6_to_v7.md` |
+| 3 | The failure tests of M1 v7.0: a file made by script from the "Failure test" lines of the active entries of M1's write-up log, with nothing else of the log in it | the M1 build | `papers/M2/M1_v7_0_failure_tests.md` (48 active entries) |
+| 4 | What M1 leaves owed by M2: **a file, not words written here**, holding it in the words in which it is owed and nothing else of the register it comes from. The PI reads the file before M2 opens and says that it carries nothing of an earlier M2 | the M1 build, with the PI | `papers/M2/OWED_BY_M2_FROM_M1.md` (one item, from Future-Mx F-10). **Not yet read by the PI** |
+| 5 | The date v7.0 went into canon, and the Decision Log row | the M1 build | 14 November 2026; Decision Log P172 (the PI's word: P169) |
+| 6 | The section of the Definitions Register that holds the terms of M1 as v7.0 uses them: the command that prints it | the M1 build | `sed -n '/^## Terms of M1/,/^## Geometry/p' registers/Definitions_Register.md` (the section is headed "Terms of M1 v6.0"; a note under the heading says what was rewritten at v7.0; proposed rows, banked by the PI's commit) |
+| 7 | The format of a ledger row | the M1 build, with the PI's leave to read the ledger's rows for M1 | The ledger's own line of columns: "Result · Site (paper, label) · Rigour · Depends on (readings R1–R5; Minimality entries Mx-n; external results EXT) · Certificate (file: theorem names) · Status", printed in the tables of M1 as `\| Result \| Where \| Tag \| Inputs \| Certificate \| Status \|`; a row does not restate a statement, it points to the write-up log entry (the section "M1 v7.0" of the ledger is the model) |
 
 Blanks 1 and 2 were in the proposal the PI agreed (P163). **Blanks 3 to 7 are additions of the chat that wrote this file**, so that an M2 chat need not open M1's workshop or the older parts of a register. If the PI strikes one, the line of §4 that names it goes with it.
 
