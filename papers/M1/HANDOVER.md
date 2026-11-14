@@ -1,6 +1,6 @@
 # M1 — brief for the version with six axioms (11 November 2026)
 
-**As of 14 November 2026 M1 v7.2 is in canon (Decision Log P172, P173, P176). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
+**As of 14 November 2026 M1 v7.3 is in canon (Decision Log P172, P173, P176, P178). A session on M1 starts at the last section of this file, "M1 v7.0 in canon"; the sections before it are the history of v6.0 to v6.3 and of the audit, and their sealed list still governs.**
 
 **A session starting here (CLAUDE.md §1): go first to "The next session" at the end of this file. Its reading list and its lists "Do not read" and "Sealed" govern everything else, including the rest of this file.**
 
@@ -576,3 +576,15 @@ No physics is proposed here.
 - **Corpus Errors Register:** entries 13 to 31 deleted at the PI's word (P175); 32 to 36 remain; next entry 37.
 - **Not changed:** the header of `M1_L6_twist.lean` says "the states of the fibre"; `M1_L5_vacuum.lean` is in the tree and not part of M1; `mef_macros.tex` l.20 still has the macro `\consciousness` (unused by the paper).
 - Next Decision Log row **P177**.
+
+### v7.3: the PI's sentence after Proposition 7.6; the glossary fixed (14 November 2026; Decision Log P177, P178)
+
+**This is the state of M1 at the close of the session. No physics is proposed here.**
+
+- **Canon: `canon/M1/Paper_M1_Six_Axioms_v7_3.tex`** and its PDF, 50 pp. Gates 1, 2, 4, 5, 8 pass; gate 3 finds the two accepted items; gates 6 and 7 at `STEP_AUDIT.md` §12. The log has 62 entries, 51 active, 11 retired; next **M1-W063**. Earlier versions, v7.0 to v7.2 among them, are in `canon/M1/superseded/`.
+- **The flux three and the three of $c_{1}(\CPtwo)$: closed for M1.** The paper says, in the PI's words, "There may be a relationship, but that has not been found in this paper." (M1-W062). The attempt and its one lead are in `papers/M1/FLUX_THREE_AND_C1.md`; the lead is not a premise.
+- **The glossary of M1 is fixed from v7.3 and is not revised (PI, P177).** The discipline for every paper: the architect defines a term at its first use; it goes into the glossary; it is canonical; later uses refer to it; M(x+1) carries it and adds its own terms; no backwards revision (CLAUDE.md §6; `tools/PAPER_FORMAT.md`, "Glossary"). Its script is `build_v7/edits_v7_3.py`. The sentences that stand only in the glossary are listed at P178.
+- **M2 may open** from `papers/M2/HANDOVER.md`, in a new chat, to make the SOW/DAG: its seven blanks are filled and the PI has read `papers/M2/OWED_BY_M2_FROM_M1.md` (P177).
+- **Still open, as listed above in this section's parent:** items 1 to 4 and 7 of "What is open" (the symmetry that mirrors the torus; what the paper is silent on; facts not read at source; what is printed without a proof; registers not touched), less what the notes on v7.1 and v7.2 discharge. Not changed: the header of `M1_L6_twist.lean` ("the states of the fibre"); `M1_L5_vacuum.lean`; the macro `\consciousness` in `mef_macros.tex`.
+- **Rosetta stone:** no row added this session; the terms used with the PI were already in it.
+- Next Decision Log row **P179**.

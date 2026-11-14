@@ -96,6 +96,8 @@
 
 *v7.2 (`canon/M1/Paper_M1_Six_Axioms_v7_2.tex`, 14 Nov 2026; 49 pp.; certificates unchanged; Decision Log P173–P176; v7.1 in `canon/M1/superseded/`). No result above changes. The corners are named one way throughout: Appendix B now has $P_{2}=C_{i}$, $P_{3}=C_{j}$ (write-up log M1-W059, M1-W060, M1-W061; `papers/M1/checks/corner_labels_check.py`), and Appendix B is "Names and glossary", with thirty-four terms copied from the body. Proposed with the move to canon; the PI banks by commit.*
 
+*v7.3 (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, 14 Nov 2026; 50 pp.; certificates unchanged; Decision Log P177, P178; v7.2 in `canon/M1/superseded/`). No result above changes. After Proposition 7.6 the paper adds "There may be a relationship, but that has not been found in this paper." (write-up log M1-W062; the attempt is `papers/M1/FLUX_THREE_AND_C1.md`). The glossary of Appendix B is remade once, thirty-three terms in the order of first use, and is fixed from this version (P177). Proposed with the move to canon; the PI banks by commit.*
+
 *Open at v7.0 and named in `papers/M1/HANDOVER.md`: whether the geometry has a symmetry that mirrors the torus (declared open in the paper); facts taken as known and not read at source (V-23, V-28 to V-33); the items of `papers/M1/HANDOVER_BUILD.md` §7 that the paper is silent on.*
 
 ---

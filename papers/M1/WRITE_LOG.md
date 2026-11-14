@@ -23,7 +23,7 @@
     - **Confirmed:** Decision Log Pnn, with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M1-W062**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M1-W063**.
 
 ## Entries
 
@@ -760,5 +760,17 @@ The assignment of $i$ and $j$ between $P_{2}$ and $P_{3}$ is the orientation of 
 - **Mark:** DECLARED as in v6.3 ("it is a convention and carries no content"); the two letters corrected, put to the PI as a slip of v6.3. CHECKED, `papers/M1/checks/corner_labels_check.py` (exact arithmetic): $M_{0}$ carries $P_{2}\to P_{3}\to P_{4}\to P_{2}$; $\Ad_{w}$ carries $i\to j\to k\to i$; the pairing $P_{2}=C_{i}$, $P_{3}=C_{j}$, $P_{4}=C_{k}$ is carried by $M_{0}$ as $\Ad_{w}$ carries the units, and the pairing $P_{2}=C_{j}$, $P_{3}=C_{i}$ is so carried only with $\Ad_{w}^{-1}$. That "no equivariant invariant can detect" it is as v6.3 has it and was not checked at this entry.
 - **Failure test:** an invariant of the geometry that tells the two pairings apart.
 - **Confirmed:** Decision Log P175, 14 November 2026 (the naming: P174).
+- **Retires / retired by:** none.
+
+### M1-W062 · active
+- **Statement (as it will be printed):**
+```tex
+There may be a relationship, but that has not been found in this paper.
+```
+- **Place:** Section 7.4, the paragraph "Three remarks" after the worked case of Proposition 7.6, directly after "And the flux three found here and the three of $c_{1}(\CPtwo)$ are the same integer, but this paper does not derive one from the other."
+- **Rests on:** the PI's wording (Decision Log P177); the attempt of `papers/M1/FLUX_THREE_AND_C1.md`, which found no derivation from M1 as it stands.
+- **Mark:** DECLARED (a statement of what the paper has not found; it claims no result and carries no tag). READ: the sentence it follows is that of v6.3, unchanged; the two threes are at Proposition 7.2 ("$c_{1}=3h$") and Proposition 7.6 ("the flux is three").
+- **Failure test:** a derivation of one of the two integers from the other, in this paper or a later one; the sentence is then replaced by the derivation.
+- **Confirmed:** Decision Log P177, 14 November 2026 (the PI's own words, read back and confirmed).
 - **Retires / retired by:** none.
 

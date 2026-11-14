@@ -31,3 +31,7 @@ v7.1 is `Paper_M1_Six_Axioms_v7_1.tex`; v7.0 is in `superseded/`. No result is r
 ## v7.1 against v7.2 (14 November 2026; Decision Log P173–P176)
 
 v7.2 is `Paper_M1_Six_Axioms_v7_2.tex`; v7.1 is in `superseded/`. No result is renumbered. Appendix B is retitled "Names and glossary" (it was "The labelling of the corners"; the label `app:labels` is kept). **The corner dictionary changes:** v6.3 to v7.1 had $P_{3}=C_{i}$, $P_{2}=C_{j}$; v7.2 has $P_{2}=C_{i}$ (the $\psi$ half-period), $P_{3}=C_{j}$ (the $\omega$ half-period), as the proof of Proposition 5.6 always had; $P_{1}=C_{0}$ and $P_{4}=C_{k}$ are unchanged. Any text that cites the letters of the earlier versions needs the same exchange.
+
+## v7.2 against v7.3 (14 November 2026; Decision Log P177, P178)
+
+v7.3 is `Paper_M1_Six_Axioms_v7_3.tex`; v7.2 is in `superseded/`. No result is renumbered and no statement or proof is changed. One sentence is added after Proposition 7.6. The glossary of Appendix B is remade (thirty-three terms, in the order of first use) and is fixed from this version: later papers carry it and add to it.
