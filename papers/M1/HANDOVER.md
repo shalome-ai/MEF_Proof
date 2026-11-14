@@ -588,3 +588,4 @@ No physics is proposed here.
 - **Still open, as listed above in this section's parent:** items 1 to 4 and 7 of "What is open" (the symmetry that mirrors the torus; what the paper is silent on; facts not read at source; what is printed without a proof; registers not touched), less what the notes on v7.1 and v7.2 discharge. Not changed: the header of `M1_L6_twist.lean` ("the states of the fibre"); `M1_L5_vacuum.lean`; the macro `\consciousness` in `mef_macros.tex`.
 - **Rosetta stone:** no row added this session; the terms used with the PI were already in it.
 - Next Decision Log row **P179**.
+- **The handover for M2** is `papers/M2/HANDOVER.md`, brought up to date and checked by a fresh reader (Decision Log P179). Next Decision Log row **P180**.

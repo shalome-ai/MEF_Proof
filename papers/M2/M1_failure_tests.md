@@ -1,6 +1,6 @@
-# M1 v7.0: the failure tests
+# M1 in canon (v7.3): the failure tests
 
-Made by script from the "Failure test" lines of the active entries of `papers/M1/WRITE_LOG.md` (blank 3 of `papers/M2/HANDOVER.md` §9), 14 November 2026. It holds the entry number and the line, word for word, and nothing else of the log. One line to an active entry; "as M1-Wnnn" in a line points to the line of that entry (a retired entry's line is given at the end).
+Made by script from the "Failure test" lines of the active entries of `papers/M1/WRITE_LOG.md` (blank 3 of `papers/M2/HANDOVER.md` §9), 14 November 2026, at v7.3: 51 active entries. It holds the entry number and the line, word for word, and nothing else of the log. Where a line says "as M1-Wnnn" and that entry is retired, its line is given at the end.
 
 - **M1-W001.** a geometry meeting Definition 2.7 whose drive reverses the handedness of the fibre.
 - **M1-W003.** a closed surface other than the torus, with no more handles, carrying an involution with exactly four isolated fixed points; or a later paper that needs a fibre with more handles.
@@ -44,16 +44,22 @@ Made by script from the "Failure test" lines of the active entries of `papers/M1
 - **M1-W050.** as M1-W012.
 - **M1-W051.** as M1-W017.
 - **M1-W052.** a point of the torus, other than the four corners, that the fold or one step of the drive leaves in place.
-- **M1-W053.** an error in the two evaluations; or a later paper for which the pairing of the cycled corners with $\C_{i},\C_{j},\C_{k}$ is not a convention.
 - **M1-W054.** as M1-W028.
 - **M1-W055.** a reading of clause (c) under which the fibre is not among the things it selects.
 - **M1-W056.** a later paper that needs the unit to be selected by a $\Spinc$ structure, or by nothing.
 - **M1-W057.** a proof of Theorem 8.1 that does not use the tenth choice.
 - **M1-W058.** as M1-W003; and a fold of the torus with four isolated fixed points that no relabelling carries to inversion.
+- **M1-W059.** as M1-W053, its first half.
+- **M1-W060.** a line of M1 that pairs a corner with another algebra; a later paper for which the pairing is not a convention.
+- **M1-W061.** an invariant of the geometry that tells the two pairings apart.
+- **M1-W062.** a derivation of one of the two integers from the other, in this paper or a later one; the sentence is then replaced by the derivation.
 
-Lines of retired entries that an active line points to:
+Lines of retired entries that a line above points to:
 
-- **M1-W029 (retired).** a point of the torus other than the four corners at which the fold, or one step of the drive, leaves the point in place; a line of canon that requires the algebra at a point to be what every power of the drive fixes.
-- **M1-W030 (retired).** a derivation of the two orbits from clause (a) alone; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised.
+- **M1-W002 (retired).** a later paper that needs a fibre with more handles than the least; or a case in which the items of clause (c) cannot all be least at once.
 - **M1-W014 (retired).** an associative real algebra with unit and an anti-involution fixing exactly the real multiples of $1$ in which some $u^{2}$, $u^{*}=-u$, is not real, or in which $N>0$ fails although every such unit group is compact; a later paper that needs the flip to leave some direction other than the ordinary numbers unchanged.
 - **M1-W018 (retired).** a later paper that needs the symmetries of Definition 2.8 to keep the products of the units; or a result of M1 that uses the base as a piece that is not a factor of a product.
+- **M1-W022 (retired).** a later paper that needs the states of the fibre to be counted on the covering torus and not on the pillowcase; the least flux meeting both clauses is then two, with two corner signs of each kind and no odd corner.
+- **M1-W029 (retired).** a point of the torus other than the four corners at which the fold, or one step of the drive, leaves the point in place; a line of canon that requires the algebra at a point to be what every power of the drive fixes.
+- **M1-W030 (retired).** a derivation of the two orbits from clause (a) alone; a six-dimensional base other than $\CPtwo\times\Stwo$ on which both orbits are realised.
+- **M1-W053 (retired).** an error in the two evaluations; or a later paper for which the pairing of the cycled corners with $\C_{i},\C_{j},\C_{k}$ is not a convention.
