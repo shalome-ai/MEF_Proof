@@ -270,7 +270,7 @@ Rulings in force (`registers/Rulings_In_Force.md` §3, ll.25–56). All of §3 i
 
 | Thing | Value |
 |---|---|
-| Next Decision Log row | **P168** (P167 records the second session of the build, Pass D to the final check; P166 the ruling on canon l.127; P165 records the first session of the build, Pass A to Pass C; P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
+| Next Decision Log row | **P169** (P168 the PI's reading of the PDF of Pass E and the direction for the third session; P167 records the second session of the build, Pass D to the final check; P166 the ruling on canon l.127; P165 records the first session of the build, Pass A to Pass C; P158 this file and its check; P159 the process; P160 the protocol file; P161 CLAUDE.md §§2, 6, 8, 10 amended; P162 the check of those; P163 the opening brief of M2; P164 its check) |
 | Next write-up log entry | **M1-W044** |
 | Write-up log | 43 entries, 35 active, 8 retired |
 | Next Corpus Errors section | **`## 37.`** |
@@ -403,3 +403,44 @@ A fresh reader was given this file, CLAUDE.md, `papers/M1/HANDOVER.md` from `## 
 **Read this session:** this file whole; `tools/Paper_assembly_protocol.md`; `passC.tex` whole; `COMPOSED.md`; `CHECK_BRIEF.md`; `tools/PAPER_FORMAT.md`, `tools/README.md`, `tools/writelog_check.py`, `tools/gates_on_pass.sh`, `tools/m1_build_v7_0.py`, `edits_C.py`; `canon/MEF_Academic_Register_Guide.md`; Decision Log P159 to P166; the head of the write-up log and M1-W001, the other statements by script only. **Not read** (assumption 14, confirmed by the PI): the rest of the list of §8. The ledger, the Minimality and Future-Mx registers and the series plan were not read. No register other than the Decision Log (P167) was written. No row was added to `tools/ROSETTA_STONE.md`: no new term of jargon was used with the PI.
 
 **Committed and pushed at the PI's direction ("commit and push"), commit `193f1cb`; see `git log`.**
+
+---
+
+## 19. Handover to the third session: the checks after Pass E, the end report, the move into canon (14 November 2026; Decision Log P168)
+
+**Read this section first; then §18 and §17; then §§0 to 16 as they stand, and the reading list of §8 in full** (the second session read only part of it, with the PI's leave, because Pass D could change no sentence; the checks below judge steps, and CLAUDE.md §5 asks for the whole paper and the axioms in view). No physics is proposed here.
+
+**The PI's direction, verbatim.** After the commit of Pass E: "Everything should have completed. 1.  Create a pdf of Paper M1 for me to read 2. check that none of the line has bled over into the margins adjust if needed 3. present for me to read and sign off on 4. Once signed off place M1 into canon and complete all of the supporting files 5. We close this chat 6. Start a new chat with M2 build - to create the SOW/DAG subsequent chats build Paper M2". The architect answered that the checks after Pass E had not been run and listed what was owed. **The PI:** "I have read the pdf - it looks good to me.  We will do the final post-E checks in a new chat, create the handover for the next chat".
+
+**What that is and is not (the architect's reading, to be put to the PI once at the start of the third session and not assumed):** the PI has read the PDF of Pass E and found it good. It is recorded as that. It is not taken as the word that moves the paper into `canon/` (CLAUDE.md §6: "it goes into `canon/` only at the PI's word"), since the PI in the same message put the checks first; and it is not a confirmation of the twelve composed sentences, none of which has been put to the PI in plain English (CLAUDE.md §3: only the read-back the PI confirms is a ruling).
+
+**Done at the PI's steps 1 to 3:** `papers/M1/build_v7/Paper_M1_Six_Axioms_v7_0_passE.pdf`, 47 pages, built from `passE.tex` by `tools/gates_on_pass.sh M1 papers/M1/build_v7/passE.tex 1 2`. Gate 2 passes: "0 overfull box(es); ink in the 25 mm margin on 0 page side(s)". No adjustment was made. The PDF carries the date "13 November 2026 (v7.0)" and the header comment "working pass of the assembly protocol (not canon)"; both are set at the move into canon (presentation).
+
+**The work package, in this order. A session stops at the end of a part or at one of the four stops (§2); if the whole is too much for one chat, stop at the end of a part and hand over.**
+
+*Part 1. The checks after Pass E* (§2, "After Pass E"; `tools/Paper_assembly_protocol.md`, "After Pass E"). None needs the PI unless something fails.
+1. Gates 1 to 5 and gate 8 on `passE.tex` (`tools/gates_on_pass.sh M1 papers/M1/build_v7/passE.tex`; `python3 tools/writelog_check.py M1 papers/M1/build_v7/passE.tex`). As of this section: 1, 2, 4, 5 and 8 pass; gate 3 finds the two "I" voice items of l.66, which it finds on canon v6.3.
+2. The one reader with the whole paper and the six axioms (P104, point 5), not given an open brief to find what is wrong (CLAUDE.md §§5, 11), and given, as the list of what the entries say is not shown or not claimed, items 2 to 6 of §7. Its report is taken by the sense check protocol of CLAUDE.md §11: repeat the task back, reduce before asking, three or four questions to the PI and not twenty, held for the end report unless one is a stop.
+3. The step audit of the new version (gate 6): `papers/M1/STEP_AUDIT.md`, a table for the main theorem of v7.0 (§7, item 8). The red-flag scan (gate 7): `python3 tools/redflags.py` on every source used, the hits at the steps consumed entered in the audit.
+
+*Part 2. The end report to the PI* (§2, "What the PI is shown, and when"), plain English first:
+- that all thirty-five sentences are present word for word (gate 8);
+- the error counts: log A 27, log B 4;
+- **the twelve composed sentences, each in plain English and then as printed** (`COMPOSED.md`; numbers 10, 11 and 12 stand inside statements: Proposition 7.1, the hypotheses of Theorem 8.1, the conclusion of Proposition 5.5), each put as a read-back with every item of CLAUDE.md §3 (trap 5 of §13). Each one confirmed becomes an entry of the write-up log from **M1-W044** on, with its "Place" line; one not confirmed is reworded at the PI's word;
+- the verdict of the two meaning checks: D against C, 16 differences, 12 the same, 2 moved, 2 not sure, all four put back; E against C, 11 differences, none moved (`MEANING_CHECK_D.md`, `FINAL_CHECK_E.md`);
+- the two confirmed rows M1-W030 and M1-W043 (§17, item 3);
+- what is held for the end report: §17 ("Held for the end report" and "From the Lean check"), §18 ("Held for the end report, added by this session"), the appendices of the two error logs, §7 items 2 to 6 as they stand after the whole-paper reader, and the sentence "the base is then determined among products only" (§5).
+
+*Part 3. Changes after the end report.* Any change to the text (from the checks, or because the PI rewords a composed sentence) is made by delete or copy, as a named edit applied to `passE.tex`, and is followed by gate 8, `python3 tools/passD_check.py` against the text before the change, and a fresh reader on the passages changed. The `% COMPOSED` and `% LINK` markers are comments; whether they stay in the canon source is presentation.
+
+*Part 4. The move into canon, at the PI's word and not before* (§12; CLAUDE.md §§6, 7, 8). First the one question of §15: leave to read the ledger's rows for M1, the Minimality Register's rows for M1 and the older Definitions row at its l.107. Then: ledger first, then the paper; `canon/M1/Paper_M1_Six_Axioms_v7_0.tex` and its PDF, with the date and header comment set; v6.3 kept as the folder `canon/M1/superseded/` has earlier versions (look at the folder before moving anything); the numbering table from v6.3 to v7.0 (precedent `canon/M1/NUMBERING_v5_to_v6.md`); the registers proposed for the PI to bank (Definitions, Minimality M1-15 to M1-20, Verified References, Corpus Errors, Future-Mx); the Lean header of `M1_L2_fibre.lean` (§17); **the seven blanks of `papers/M2/HANDOVER.md` §9** (§12: read that §9 for their exact terms and nothing else of the file); all gates passing; the Decision Log row; the paper's handover `papers/M1/HANDOVER.md` and the Status cell. A paper is not committed with a failing gate.
+
+*After that, the PI's steps 5 and 6:* this chat is closed; a new chat opens M2 from `papers/M2/HANDOVER.md` and does one thing, the SOW/DAG; later chats build the paper. The chat that builds M1 is not the chat that opens M2 (§9).
+
+**The Status cell of the series plan** now contains, once in the file, the string
+
+`J1 to J11 all closed; v7.0 in assembly: Pass A to Pass E done in `papers/M1/build_v7/` (P165, P167), Pass E means what Pass C means; twelve composed sentences to be shown to the PI at the end (P166); the checks after Pass E next; canon unchanged (v6.3)**`
+
+Replace it by script without reading the file (§9).
+
+**Numbers:** next Decision Log row **P169**; next write-up log entry **M1-W044**; next Corpus Errors section `## 37.`; last commit before this section `98d0bc0`.
