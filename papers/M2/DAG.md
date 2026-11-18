@@ -1,6 +1,6 @@
 # M2 — the DAG (the SOW/DAG of M2)
 
-**What this is.** What M2 is to derive, what it starts from, and the steps that lead from the one to the other, each step a card in the form of `papers/M2/HANDOVER.md` §3. One work package is one result; a chat does the work packages that §4 gives it (the PI, Decision Log P183). Opened 18 November 2026 by the opening chat (Decision Log P180, P181). **The cards were drawn on 18 November 2026 by the chat that followed the opening chat (Decision Log P183): twenty-four work packages and six packages that are not steps, in twenty-four chats (§3 to §6).**
+**What this is.** What M2 is to derive, what it starts from, and the steps that lead from the one to the other, each step a card in the form of `papers/M2/HANDOVER.md` §3. One work package is one result; a chat does the work packages that §4 gives it (the PI, Decision Log P183). Opened 18 November 2026 by the opening chat (Decision Log P180, P181). **The cards were drawn on 18 November 2026 by the chat that followed the opening chat (Decision Log P183): twenty-four work packages and six packages that are not steps, in twenty-four chats (§3 to §6).** **Amended 18 November 2026 by chat C1 (Decision Log P188): cards S01 and S02 are withdrawn and nothing was logged for them; M2 cites M1 by its printed numbers; the next work package is S03 (§3 rule 10, §4, §7).**
 
 ---
 
@@ -59,6 +59,7 @@
 7. **Where a step would need what a line of `papers/M2/M1_failure_tests.md` says a later paper must not need,** it is reported to the PI at once, in a sentence, with the line.
 8. **Done means, for every step:** its entries are in `papers/M2/WRITE_LOG.md`, each with its place, its mark and its failure test; every term it defines is in `papers/M2/GLOSSARY.md` and in M2's section of the Definitions Register; its rows are in `papers/M2/STEP_AUDIT.md` with the red-flag scan of every source used; its finite or arithmetic parts have their script in `papers/M2/checks/` or their Lean certificate; a fresh reader has checked the chat's records against their sources; the cards after it are brought up to date. A card's own "Done means" line adds to this and takes nothing from it.
 9. **Blind.** The sealed list says that the derivation, when written, is "compared with the sealed material and with the canonical form of the Master Equation": the architect takes it from this that a target exists for the equation itself (S18 to S20). For every card the PI says whether a target exists (`papers/M2/HANDOVER.md` §3); where a card says "none, as the architect takes it", that is the architect's and the PI may say otherwise. Until the PI says, every card is treated as if a target existed, and nothing is looked at.
+10. **S01 and S02 are withdrawn (the PI, 18 November 2026, Decision Log P188).** M1 v7.3 is in canon word for word, and a step cites its results by printed number and TeX label, as each card's line "May use" names them; nothing of M1 is copied into the M2 log as an inventory. Where a card names "the entries of S01" or "the entries of S02" among what it may use (alone or in a range, as in "the entries of S01 to S03"), nothing of S01 or S02 is meant: the step uses the results of M1 v7.3 that its card names, and rule 4 stands. **The checklist.** `papers/M2/checks/S01_S02_quotes.md` (made by `papers/M2/checks/m1_quote.py` from `S01_S02_spec.json`; forty-two passages of M1 v7.3, cut by line) holds, in its parts S02a to S02c, the passages in which M1 itself says that something is not fixed, not shown, assumed, an input, a hypothesis, motivation, a choice or a reading. It is a working aid of the architect: not a source, not a register, not part of the paper. A step that leans on a result of M1 looks there, and then at M1 itself, to see whether M1 says the thing is not shown or is a choice. The question of card S24 on "every item of S02" is asked of that checklist. The section key `m1` is kept for whatever a later step has to quote of M1.
 
 **The sections of the paper** (presentation; the keys are the ones the "Place" line of an entry uses, `papers/M2/WRITE_LOG.md`): `front` (the title and the abstract) · `intro` · `m1` (what is taken from M1) · `states` · `conditions` (what the equation is an equation for, and the first five axioms as conditions on it) · `minimal` (the sixth) · `warp` · `supply` (what the geometry supplies) · `select` (the conditions applied, the selection and the constants) · `theorem` · `checks` · `outlook` · `ack` (the acknowledgements) · `lean` (appendix) · `glossary` (appendix) · `bib` (the bibliography). The entries of S01 and S02 take the key `m1`; S03 to S05, `states`; S06 to S11, `conditions`; S12, `minimal`; S13, `warp`; S14, `supply`; S15 to S19, `select`; S20, `theorem`; S21 to S23, `checks`; S24, `outlook`.
 
@@ -68,8 +69,8 @@
 
 | Chat | Packages | Kind of chat | Expected length |
 |---|---|---|---|
-| C1 | S01, S02 | steps (by reading) | long; mechanical |
-| C2 | S03 | step | short |
+| C1 | S01, S02 | withdrawn (P188): no entry logged; the checklist of §3 rule 10 made | done |
+| C2 | S03 | step; done in chat C1 (P189): M2-W001 to M2-W006 | done |
 | C3 | S04 | step | long |
 | C4 | S05 | step | medium |
 | C5 | S06 | step (a reading of the PI's) | short, but the read-back is the weightiest of the paper |
@@ -104,8 +105,9 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 ### Part I. What M2 stands on
 
 #### S01 · What M1 fixes
+- **Withdrawn, 18 November 2026 (Decision Log P188; §3 rule 10).** The card is kept as it was drawn.
 - **Kind:** computation (an inventory made by reading; every sentence is a quotation of M1 or a statement READ at a line).
-- **May use:** M1 v7.3 whole. Chiefly: equation (1.1), `eq:M12`; Theorem 8.1, `thm:main`; Proposition 5.6, `prop:collapse`; Theorem 5.7, `thm:fibre`; Proposition 5.8, `prop:A2`; Proposition 7.3, `prop:spinc`; Definition 7.4, `def:states`; Proposition 7.6, `prop:twist`; Corollary 7.7, `cor:lift`; Corollary 7.8, `cor:timecircle`; Theorem 7.10, `thm:base`. No entry of the M2 log. No external source.
+- **May use:** M1 v7.3 whole. Chiefly: equation (1), `eq:M12`; Theorem 8.1, `thm:main`; Proposition 5.6, `prop:collapse`; Theorem 5.7, `thm:fibre`; Proposition 5.8, `prop:A2`; Proposition 7.3, `prop:spinc`; Definition 7.4, `def:states`; Proposition 7.6, `prop:twist`; Corollary 7.7, `cor:lift`; Corollary 7.8, `cor:timecircle`; Theorem 7.10, `thm:base`. No entry of the M2 log. No external source.
 - **The question:** What, item by item, does M1 v7.3 fix on the geometry of Theorem 8.1: its pieces, its discrete data, its lengths, and the structures it carries?
 - **Produces:** a list, each item with the printed number of the result of M1 that fixes it; section `m1`.
 - **Done means:** rule 8; each entry marked READ with its line; the fresh reader checks each entry against M1 word for word.
@@ -113,8 +115,9 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 - **Blind:** none, as the architect takes it: the step is an inventory of M1. The PI to say.
 
 #### S02 · What M1 leaves open
+- **Withdrawn, 18 November 2026 (Decision Log P188; §3 rule 10).** The card is kept as it was drawn.
 - **Kind:** computation (an inventory made by reading).
-- **May use:** M1 v7.3 whole. Chiefly: Section 1.4, the paragraph after equation (1.1); Remark 3.4, `rem:mirror`; the sentences of Section 4.1 that end "is a choice and is not derived"; Remark 6.2, `rem:whereH`; the three remarks after Proposition 7.6; the hypothesis "that every symmetry is given one" in the proof of Corollary 7.8; Theorem 8.1 and the paragraph "The deflationary reading" after it. `papers/M2/OWED_BY_M2_FROM_M1.md`. The entries of S01.
+- **May use:** M1 v7.3 whole. Chiefly: Section 1.4, the paragraph after equation (1); Remark 3.4, `rem:mirror`; the sentences of Section 4.1 that end "is a choice and is not derived"; Remark 6.2, `rem:whereH`; the three remarks after Proposition 7.6; the hypothesis "that every symmetry is given one" in the proof of Corollary 7.8; Theorem 8.1 and the paragraph "The deflationary reading" after it. `papers/M2/OWED_BY_M2_FROM_M1.md`. The entries of S01.
 - **The question:** What does M1 v7.3 itself say that it does not fix, does not show, assumes, or declares as an input?
 - **Produces:** a list, each item a quotation with its place; section `m1`. Each item is later marked by the step that takes it up, or stays declared in M2 with its failure test (CLAUDE.md §6), or is recorded as not needed.
 - **Done means:** rule 8; each entry marked READ with its line.
@@ -122,6 +125,7 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 - **Blind:** none, as the architect takes it: the step is an inventory of M1. The PI to say.
 
 #### S03 · A state of the geometry
+- **Done, 18 November 2026 (Decision Log P189):** write-up log M2-W001 to M2-W006; glossary "state (of the geometry)"; Minimality M2-1. Where a later card names "the entries of S03", these six are meant.
 - **Kind:** definition.
 - **May use:** Definition 2.1, `def:A5`; Definition 2.7, `def:levels`, and the paragraph on the complex spinor bundle that follows it in Section 2.4 (the tenth choice); Definition 7.4, `def:states`, and the paragraph after it ("For the canonical $\Spinc$ structure the states at rest are the harmonic spinors of the fibre. We use this as motivation for the definition of a state, and the counts below do not depend on it."); Proposition 7.3, `prop:spinc`. The entries of S01 and S02.
 - **The question:** M1 defines a state at rest, and defines it on the fibre (Definition 7.4). What is a state of the whole geometry, at rest or not: what kind of thing is it, and on which pieces does it live? Does the text of M1 settle this, or is a reading needed?
@@ -179,7 +183,7 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 
 #### S09 · The second axiom as a condition on an equation
 - **Kind:** definition (a reading).
-- **May use:** Axiom 2; Definition 2.4, `def:A2`; Section 2.3 of M1; Section 1.4, the paragraph after equation (1.1) ("it is fixed where the warp is given its law, with the field equation"); Proposition 5.8, `prop:A2`. The entries of S02 to S08.
+- **May use:** Axiom 2; Definition 2.4, `def:A2`; Section 2.3 of M1; Section 1.4, the paragraph after equation (1) ("it is fixed where the warp is given its law, with the field equation"); Proposition 5.8, `prop:A2`. The entries of S02 to S08.
 - **The question:** What does the second axiom, as Definition 2.4 reads it, ask of an equation? What is "its law" in the sentence of Section 1.4, and is that law a part of the equation or a separate statement?
 - **Produces:** a numbered definition, with what in it is a choice said and numbered.
 - **Done means:** rule 8; rule 7 is looked at for lines M1-W025 and M1-W026.
@@ -220,9 +224,9 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 
 #### S13 · The direction of the warp
 - **Kind:** proposition with proof.
-- **May use:** equation (1.1) and the paragraph after it; Definition 2.4, `def:A2`; Proposition 5.8, `prop:A2`; Definition 3.1, `def:modulus`; `papers/M2/OWED_BY_M2_FROM_M1.md`. The entries of S02 and of S07 to S12.
-- **The question:** In $\Keight$ as equation (1.1) displays it, which of the two pieces is scaled, and by a function on which? Do the conditions of S07 to S12 decide it? How is the display to be read or rewritten?
-- **Produces:** a statement with its tag; the sentence that says how equation (1.1) is read in M2.
+- **May use:** equation (1) and the paragraph after it; Definition 2.4, `def:A2`; Proposition 5.8, `prop:A2`; Definition 3.1, `def:modulus`; `papers/M2/OWED_BY_M2_FROM_M1.md`. The entries of S02 and of S07 to S12.
+- **The question:** In $\Keight$ as equation (1) displays it, which of the two pieces is scaled, and by a function on which? Do the conditions of S07 to S12 decide it? How is the display to be read or rewritten?
+- **Produces:** a statement with its tag; the sentence that says how equation (1) is read in M2.
 - **Done means:** rule 8; the item of `OWED_BY_M2_FROM_M1.md` is closed, or declared with its failure test.
 - **Size:** 8 to 10.
 - **Blind:** the PI to say.
@@ -343,3 +347,5 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 ## 7. Record of changes to the plan
 
 - 18 November 2026 (P183): drawn. Twenty-four work packages (S01 to S24), six packages that are not steps (N0 to N5), twenty-four chats.
+- 18 November 2026 (P188), chat C1: S01 and S02 withdrawn, nothing logged; rule 10 of §3 added (M2 cites M1 by number; the checklist); the row of C1 in §4 marked; "equation (1.1)" corrected to "equation (1)" on the cards, which is the number M1 v7.3 prints (6 places; presentation). The line "Blind" of S01 and S02: the PI said there are no targets (P187). Twenty-two work packages remain (S03 to S24); the next is S03, in chat C2.
+- 18 November 2026 (P189), chat C1: S03 done in chat C1 at the PI's direction (M2-W001 to M2-W006). Rule 10 of §3 reworded on what a card may use of M1. Twenty-one work packages remain (S04 to S24); the next is S04, in chat C3.

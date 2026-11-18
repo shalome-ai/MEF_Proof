@@ -1,0 +1,59 @@
+[
+ {"step": "S01a", "part": "S01a · What M1 fixes: the pieces and the lengths", "items": [
+  {"place": 10, "head": "pieces", "where": "Section~1.4, equation~(1)", "label": "eq:M12", "lines": [122, 126]},
+  {"place": 20, "head": "pieces; discrete data", "where": "Theorem~8.1 (minimality)", "label": "thm:main", "lines": [1088, 1100]},
+  {"place": 30, "head": "pieces: the time factor and its step", "where": "Theorem~4.2 (the drive)", "label": "thm:drive", "lines": [339, 339]},
+  {"place": 40, "head": "pieces: the fibre before it is folded", "where": "Proposition~5.5 (the fibre)", "label": "prop:surface", "lines": [548, 552]},
+  {"place": 50, "head": "pieces: the fibre folded", "where": "Theorem~5.7 (the fibre)", "label": "thm:fibre", "lines": [678, 678]},
+  {"place": 60, "head": "lengths", "where": "Proposition~5.8 (the geometry satisfies A2)", "label": "prop:A2", "lines": [704, 704]},
+  {"place": 70, "head": "pieces: the base and the spatial factor", "where": "Theorem~7.10 (the base)", "label": "thm:base", "lines": [1064, 1064]}
+ ]},
+ {"step": "S01b", "part": "S01b · What M1 fixes: the discrete data and the structures", "items": [
+  {"place": 80, "head": "structures: the fibre algebra", "where": "Proposition~5.2", "label": "prop:H", "lines": [504, 504]},
+  {"place": 90, "head": "structures: the algebra at a point", "where": "Proposition~5.6 (the corner algebras)", "label": "prop:collapse", "lines": [612, 612]},
+  {"place": 100, "head": "discrete data: the determinant line on the projective plane", "where": "Proposition~7.3", "label": "prop:spinc", "lines": [806, 806]},
+  {"place": 110, "head": "discrete data: the integers of the determinant line", "where": "Section~7.4, first paragraph", "label": "sec:twist", "lines": [827, 827]},
+  {"place": 120, "head": "structures: the twist, the states, the corner signs", "where": "Definition~7.4 (flux and states)", "label": "def:states", "lines": [832, 840]},
+  {"place": 130, "head": "discrete data: the flux and the odd corner", "where": "Proposition~7.6 (the twist of the fibre)", "label": "prop:twist", "lines": [878, 880]},
+  {"place": 140, "head": "discrete data: the corner signs", "where": "Corollary~7.7 (the corner lift)", "label": "cor:lift", "lines": [932, 932]},
+  {"place": 150, "head": "discrete data: the time circle and the element of the drive on spinors", "where": "Corollary~7.8 (the time circle)", "label": "cor:timecircle", "lines": [952, 952]},
+  {"place": 160, "head": "names: the four corners", "where": "Appendix~B, ``The four corners''", "label": "app:labels", "lines": [1217, 1217]}
+ ]},
+ {"step": "S02a", "part": "S02a · What M1 says it does not fix, does not show, assumes, takes as an input or a hypothesis, or uses as motivation", "items": [
+  {"place": 210, "head": "not fixed: the direction of the warp", "where": "Section~1.4, the paragraph after equation~(1)", "lines": [127, 127],
+   "start": "The symbol $\\times_{w}$ records", "end": "with the field equation."},
+  {"place": 220, "head": "not fixed: the overall size", "where": "Section~2.6", "lines": [248, 248],
+   "start": "The overall size of the shape is not among", "end": "have a meaning."},
+  {"place": 230, "head": "not shown", "where": "Remark~3.4 (mirror image and run backwards)", "label": "rem:mirror", "lines": [291, 291]},
+  {"place": 240, "head": "an input: the trace is taken positive", "where": "Section~4.2, first paragraph", "lines": [334, 334]},
+  {"place": 250, "head": "not supplied by the first five axioms: the two parts of the count", "where": "Section~4.2, the two paragraphs after Proposition~4.5", "lines": [479, 481]},
+  {"place": 260, "head": "not constructed; not shown; assumed", "where": "Remark~6.2 (where the quaternionic structure carries information)", "label": "rem:whereH", "lines": [732, 732]},
+  {"place": 270, "head": "which complex structure is taken", "where": "Section~7.4, the paragraph before Definition~7.4", "lines": [829, 829]},
+  {"place": 280, "head": "used as motivation", "where": "Section~7.4, the paragraph after Definition~7.4", "lines": [843, 843]},
+  {"place": 290, "head": "not derived; not found", "where": "Section~7.4, the three remarks after Proposition~7.6", "lines": [929, 929]},
+  {"place": 300, "head": "a hypothesis: the lifted fold", "where": "Corollary~7.8, proof", "lines": [962, 962]},
+  {"place": 310, "head": "which element the drive is on spinors: what the first five axioms allow, a hypothesis, what is asked, the alternative", "where": "Corollary~7.8, proof, from ``It remains to say'' to its end", "lines": [972, 1004]},
+  {"place": 320, "head": "the declared input; what the theorem does not assert; the readings", "where": "Section~8.1, the paragraph ``The deflationary reading''", "lines": [1121, 1129]}
+ ]},
+ {"step": "S02b", "part": "S02b · What M1 declares as a choice or a reading, in its Sections 2 and 3", "items": [
+  {"place": 410, "head": "the tenth choice", "where": "Section~2.4, after Definition~2.7", "lines": [219, 222]},
+  {"place": 420, "head": "a taking of the fourth axiom", "where": "Section~2.5", "lines": [234, 234],
+   "start": "``Constant change'' means more than motion", "end": "read off from the present."},
+  {"place": 430, "head": "M1's list of the choices of its Section 2", "where": "Section~2.6", "lines": [244, 248],
+   "start": "The five sentences have been turned", "end": "says so."},
+  {"place": 440, "head": "the reading of ``everything''", "where": "Section~3", "lines": [254, 254]},
+  {"place": 450, "head": "the seventh, eighth and ninth choices", "where": "Section~3", "lines": [256, 256]},
+  {"place": 460, "head": "the way of counting drives", "where": "Section~3, after Definition~3.2", "lines": [280, 280],
+   "start": "Clause~(a) is the statement", "end": "both are needed."}
+ ]},
+ {"step": "S02c", "part": "S02c · What M1 declares as a choice or a reading, in its Sections 4 to 7", "items": [
+  {"place": 510, "head": "what the drive moves", "where": "Section~4.1", "lines": [306, 306]},
+  {"place": 520, "head": "the step is the linear map", "where": "Section~4.1", "lines": [310, 310]},
+  {"place": 530, "head": "a reading: the unit and the anti-involution", "where": "Proposition~5.2, proof", "lines": [510, 510]},
+  {"place": 540, "head": "a reading of A1", "where": "Proposition~5.2, proof", "lines": [512, 512]},
+  {"place": 550, "head": "the four fixed points, read geometrically", "where": "Section~5.3, after Proposition~5.5", "lines": [607, 607]},
+  {"place": 560, "head": "the reading in Proposition~5.6", "where": "Section~5.4, after Proposition~5.6", "lines": [629, 629]},
+  {"place": 570, "head": "the tenth choice at work; the phase is not recorded", "where": "Proposition~7.2 (the projective plane)", "label": "prop:CP2", "lines": [792, 792]},
+  {"place": 580, "head": "what clause (c) is applied to", "where": "Section~7.4, after Corollary~7.8", "lines": [1007, 1009]}
+ ]}
+]

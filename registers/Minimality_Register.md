@@ -81,3 +81,4 @@
 
 | # | Node | Choice space | Minimal option | Criterion | Stated at | Failure test | Status |
 |---|---|---|---|---|---|---|---|
+| M2-1 | S03: what a state of the geometry is | a section of the spinor bundle that M1 Definition 2.7 places over the geometry; a point or a subset of the geometry; a section of the twist of M1 Definition 7.4 alone | a section of the spinor bundle of M1 Definition 2.7 over the geometry | clause (b) of M1 Definition 3.2: the definition brings in no object that M1 does not have. The other two are set aside on M1's text and not by a clause: Definition 2.1(iii) asks for "independent" states, which points are not; M1 defines the twist on the covering torus of the fibre and not over the geometry | write-up log M2-W005 | as M2-W005 | confirmed by the PI by read-back (P189); the first numbered choice of M2 |

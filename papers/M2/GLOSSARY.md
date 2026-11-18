@@ -16,3 +16,5 @@
     - **term** · "the defining words, copied" · M2-Wnnn
 
 ## Entries
+
+- **state (of the geometry)** · "A \emph{state} of the geometry is a section of the spinor bundle of M1, Definition~2.7, over $\Mtwelve$." · M2-W005

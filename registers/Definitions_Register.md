@@ -123,3 +123,4 @@
 
 | **term** | definition | source |
 |---|---|---|
+| **state (of the geometry)** | "A \emph{state} of the geometry is a section of the spinor bundle of M1, Definition~2.7, over $\Mtwelve$." It does not mean a quantum state of a whole system, and it does not mean the condition the geometry is in: it is a thing that lives on the geometry. "At rest" is not part of it: on the fibre a state at rest is as M1 Definition 7.4 has it (M2-W006). | `papers/M2/GLOSSARY.md` (the canonical text); write-up log M2-W005; Decision Log P189 |
