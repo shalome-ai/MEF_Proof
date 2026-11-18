@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W020**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W022**.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -144,14 +144,14 @@ A $\Spinc$ structure on $\CPtwo\times\Stwo\times S^{3}$ is determined by the fir
 ```
 - **Place:** `states 080`; after M2-W007
 - **Step:** S04
-- **Rests on:** M2-W009, M2-W010, M2-W011 (its proof); M1 v7.3, Proposition 7.3 (`prop:spinc`), Section 7.4, first paragraph, Proposition 7.9 (`prop:S3`)
+- **Rests on:** M2-W020 (in place of M2-W009, retired; flagged at P195: the statement is unchanged), M2-W010, M2-W011 (its proof); M1 v7.3, Proposition 7.3 (`prop:spinc`), Section 7.4, first paragraph, Proposition 7.9 (`prop:S3`)
 - **Mark:** CHECKED (the proof, M2-W009 to M2-W011); the integers READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.806, "$L=K^{-1}=\Oline{3}$"; l.827, "On $\Stwo$ the canonical structure has the integer two"; l.1058, $\Sigma=S^{3}$). Not shown here: that such a structure exists (M2-W012). M1 names its integers at l.827 on $\CPtwo\times\Stwo\times\Ttwo$ and not on this product: that the structure of the geometry gives one on this product with these integers is not shown here (card S04c puts the pieces together)
 - **Tag:** [D]: the first sentence is proved from cited theorems; the integers are results of M1 tagged [D]
 - **Failure test:** two different $\Spinc$ structures on $\CPtwo\times\Stwo\times S^{3}$ whose determinant lines have the integers three and two; or an error in a cited statement (V-M2-1 to V-M2-4).
 - **Confirmed:** Decision Log P191, 18 November 2026 (sentence 2)
 - **Retires / retired by:** none
 
-### M2-W009 · active
+### M2-W009 · retired
 - **Statement (as it will be printed):**
 ```tex
 The cohomology groups of $\CPtwo$ with integer coefficients are $\Z$ in degrees $0$, $2$ and $4$ and zero in every other degree \cite[Theorem~3.19]{Hatcher}, and those of the sphere $S^{n}$ are $\Z$ in degrees $0$ and $n$ and zero in every other degree \cite[Corollaries~2.14 and~3.3]{Hatcher}. Each is finitely generated and free, so by the K\"unneth formula \cite[Theorem~3.15]{Hatcher}, applied twice, the second cohomology group of $\CPtwo\times\Stwo\times S^{3}$ is $\Z\oplus\Z$, one summand from $\CPtwo$ and one from $\Stwo$; the sphere $S^{3}$ adds nothing in degree two.
@@ -163,7 +163,7 @@ The cohomology groups of $\CPtwo$ with integer coefficients are $\Z$ in degrees 
 - **Tag:** none (a step of a proof)
 - **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}$ outside those two summands, or torsion in that group.
 - **Confirmed:** Decision Log P191, 18 November 2026 (sentence 3)
-- **Retires / retired by:** none
+- **Retires / retired by:** retired by M2-W020 (Decision Log P195, 18 November 2026)
 
 ### M2-W010 · active
 - **Statement (as it will be printed):**
@@ -186,14 +186,14 @@ Two $\Spinc$ structures on $\CPtwo\times\Stwo\times S^{3}$ whose determinant lin
 ```
 - **Place:** `states 110`; the last step of the proof of Proposition `prop:basespace`
 - **Step:** S04
-- **Rests on:** M2-W009, M2-W010
+- **Rests on:** M2-W020 (in place of M2-W009, retired; flagged at P195: the statement is unchanged), M2-W010
 - **Mark:** CHECKED (a hand computation, in full as written: by M2-W010 the two differ by one class $a$, and the first Chern classes differ by $2a$; they are equal, so $2a=0$; by M2-W009 the group is $\Z\oplus\Z$, where $2a=0$ gives $a=0$; the action is free, so the structures are the same)
 - **Tag:** none (a step of a proof)
 - **Failure test:** as M2-W008.
 - **Confirmed:** Decision Log P191, 18 November 2026 (sentence 5)
 - **Retires / retired by:** none
 
-### M2-W012 · active
+### M2-W012 · retired
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:basespace} speaks of the $\Spinc$ structure, and so of the spinor bundle as a bundle. That a $\Spinc$ structure with these integers exists is M1, Proposition~7.3, and is not shown again here. Nothing is said here of the lengths, of how a state is differentiated, of the fibre and its four cone points, or of time.
@@ -205,7 +205,7 @@ Proposition~\ref{prop:basespace} speaks of the $\Spinc$ structure, and so of the
 - **Tag:** none
 - **Failure test:** a sentence of M2-W008 to M2-W011 that speaks of the lengths, of differentiation, of the fibre or of time, or that proves existence.
 - **Confirmed:** Decision Log P191, 18 November 2026 (sentence 6)
-- **Retires / retired by:** none
+- **Retires / retired by:** retired by M2-W021 (Decision Log P195, 18 November 2026)
 
 ### M2-W013 · active
 - **Statement (as it will be printed):**
@@ -230,7 +230,7 @@ The cohomology groups of the circle $S^{1}$ with integer coefficients are $\Z$ i
 ```
 - **Place:** `states 140`; the first step of the proof of Proposition `prop:unfolded` (M2-W013)
 - **Step:** S04
-- **Rests on:** Verified References V-M2-2, V-M2-4; M2-W009
+- **Rests on:** Verified References V-M2-2, V-M2-4; M2-W020 (in place of M2-W009, retired; flagged at P195: the statement is unchanged)
 - **Mark:** verified references, READ at source (V-M2-2, V-M2-4); the count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (2); that $\CPtwo\times\Stwo\times S^{3}$ has no cohomology in degree one is its part (1)); the groups of the circle by the hand steps of M2-W009 at $n=1$. It agrees with M1's sentence (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.827: "one integer for each factor, with no mixed term"), which is not used as the ground
 - **Tag:** none (a step of a proof)
 - **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ outside those three summands, or torsion in that group.
@@ -306,3 +306,31 @@ M1, Proposition~7.6, has: ``Let the fibre satisfy clauses (ii) and~(iii) of Defi
 - **Failure test:** the quoted words do not stand at l.878 of M1 v7.3; or the corner signs of Proposition 7.6 are not those that Definition 7.4 defines for the twist.
 - **Confirmed:** Decision Log P194, 18 November 2026 (the wording given by the PI; READ against M1, no new reading)
 - **Retires / retired by:** retires M2-W017
+
+### M2-W020 · active
+- **Statement (as it will be printed):**
+```tex
+The cohomology groups of $\CPtwo$ with integer coefficients are $\Z$ in degrees $0$, $2$ and $4$ and zero in every other degree \cite[Theorem~3.19]{Hatcher}, and those of the sphere $S^{n}$, $n\geq1$, are $\Z$ in degrees $0$ and $n$ and zero in every other degree \cite[Corollaries~2.14 and~3.3]{Hatcher}. Each is finitely generated and free, so by the K\"unneth formula \cite[Theorem~3.15]{Hatcher}, applied twice, the second cohomology group of $\CPtwo\times\Stwo\times S^{3}$ is $\Z\oplus\Z$, one summand from $\CPtwo$ and one from $\Stwo$; the sphere $S^{3}$ adds nothing in degree two.
+```
+- **Place:** `states 090`; the first step of the proof of Proposition `prop:basespace` (M2-W008), in the place of M2-W009, which it replaces
+- **Step:** S04 (a correction after the fresh reader's check, P193)
+- **Rests on:** Verified References V-M2-2, V-M2-3, V-M2-4
+- **Mark:** verified references, READ at source (V-M2-2 to V-M2-4); the degree-two count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (1)). Hand steps, in full: (i) Theorem 3.19 at $n=2$ gives the ring $\Z[\alpha]/(\alpha^{3})$ with $\alpha$ of degree two, whose groups are $\Z$ in degrees $0,2,4$, spanned by $1,\alpha,\alpha^{2}$, and zero otherwise; (ii) Corollary 2.14 gives the reduced homology of $S^{n}$, $n\geq1$: $\Z$ in degree $n$ and zero otherwise; the unreduced homology has $\Z$ more in degree $0$, the sphere being connected; none of these groups has torsion, so by Corollary 3.3 each cohomology group is the homology group of the same degree. The hypothesis of Theorem 3.15 that the factors are CW complexes is not restated in the entry: Hatcher gives the cell structures (Example 0.3, the sphere; Example 0.6, complex projective space; the locations found by search, the examples not read through), and says of the hypothesis that it "will be shown to be unnecessary in §4.1" (p.216)
+- **Tag:** none (a step of a proof)
+- **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}$ outside those two summands, or torsion in that group.
+- **Confirmed:** Decision Log P195, 18 November 2026 (the corrected wording, its item 1: "$n\geq1$" added; no other word changed)
+- **Retires / retired by:** retires M2-W009
+
+### M2-W021 · active
+- **Statement (as it will be printed):**
+```tex
+Proposition~\ref{prop:basespace} speaks of the $\Spinc$ structure, and so of the spinor bundle as a bundle. That a $\Spinc$ structure with these integers exists is taken from M1 (Proposition~7.3 and Section~7.4) and is not shown here. Nothing is said here of the lengths, of how a state is differentiated, of the fibre and its four cone points, or of time.
+```
+- **Place:** `states 120`; after the proof of Proposition `prop:basespace`, in the place of M2-W012, which it replaces
+- **Step:** S04 (a correction after the fresh reader's check, P193)
+- **Rests on:** M2-W008; M1 v7.3, Proposition 7.3 (`prop:spinc`), Section 7.4, first paragraph
+- **Mark:** READ (M2-W008 as logged; `canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.806, "A $\Spinc$ structure exists" and "$L=K^{-1}=\Oline{3}$"; l.827, "On $\Stwo$ the canonical structure has the integer two"). M1 says these of the geometry and of $\CPtwo\times\Stwo\times\Ttwo$; that the structure of the geometry gives one on $\CPtwo\times\Stwo\times S^{3}$ with these integers is not shown (card S04c)
+- **Tag:** none
+- **Failure test:** a sentence of M2-W008, M2-W020, M2-W010 or M2-W011 that speaks of the lengths, of differentiation, of the fibre or of time, or that proves existence.
+- **Confirmed:** Decision Log P195, 18 November 2026 (item 2: the middle sentence changed; no other word)
+- **Retires / retired by:** retires M2-W012
