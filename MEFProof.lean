@@ -121,6 +121,8 @@ import MEFProof.Paper_M1.M1_L6_twist
 import MEFProof.Paper_M1.M1_L7_onedrive
 
 -- Paper M2: v1.0 withdrawn 10 Nov 2026 (Decision Log P41); its certificates are in superseded/M2_v1/lean/ and are not built
+-- Paper M2 (new start, Decision Log P180 onward)
+import MEFProof.Paper_M2.M2_L2_pillowcase
 
 -- Paper M3
 import MEFProof.Paper_M3.M3_L1_lift

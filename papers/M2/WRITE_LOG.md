@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W022**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W039**.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -231,7 +231,7 @@ The cohomology groups of the circle $S^{1}$ with integer coefficients are $\Z$ i
 - **Place:** `states 140`; the first step of the proof of Proposition `prop:unfolded` (M2-W013)
 - **Step:** S04
 - **Rests on:** Verified References V-M2-2, V-M2-4; M2-W020 (in place of M2-W009, retired; flagged at P195: the statement is unchanged)
-- **Mark:** verified references, READ at source (V-M2-2, V-M2-4); the count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (2); that $\CPtwo\times\Stwo\times S^{3}$ has no cohomology in degree one is its part (1)); the groups of the circle by the hand steps of M2-W009 at $n=1$. It agrees with M1's sentence (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.827: "one integer for each factor, with no mixed term"), which is not used as the ground
+- **Mark:** verified references, READ at source (V-M2-2, V-M2-4); the count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (2); that $\CPtwo\times\Stwo\times S^{3}$ has no cohomology in degree one is its part (1)); the groups of the circle by the hand steps of M2-W009 at $n=1$ (since P195, of M2-W020, which replaces M2-W009 and has the same hand steps; noted after chat C3b's fresh reader, P200). It agrees with M1's sentence (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.827: "one integer for each factor, with no mixed term"), which is not used as the ground
 - **Tag:** none (a step of a proof)
 - **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ outside those three summands, or torsion in that group.
 - **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English; Decision Log P191)
@@ -256,7 +256,7 @@ The integer on $\Ttwo$ is $2d$ for a twist of the fibre of flux $d$ (M1, Section
 ```tex
 The fibre of the geometry is the pillowcase, the torus $\Ttwo$ folded (M1, Theorem~5.7), and M1 passes from the torus to the pillowcase by a lift of the fold: ``A \emph{state on the pillowcase}, for a given lift, is a state at rest that the lift leaves unchanged.'' (M1, Definition~7.4). The same is taken here for a state of the geometry: over the fibre, a state is a section over the covering torus that a lift of the fold to the spinor bundle leaves unchanged. This is a reading and is not derived: it is the second choice of this paper. Clause~(b) of M1, Definition~3.2, is its ground: it brings in no object that M1 does not have.
 ```
-- **Place:** `states 160`; after the proof of Proposition `prop:unfolded` (M2-W015)
+- **Place:** `states 160`; after the proof of Proposition `prop:unfolded` (M2-W015) and, since chat C3b, after the definition M2-W022 at `states 155`
 - **Step:** S04
 - **Rests on:** M1 v7.3, Theorem 5.7 (`thm:fibre`), Definition 7.4 (`def:states`), Definition 3.2 clause (b); M2-W005; Minimality M2-2
 - **Mark:** DECLARED (a reading and a numbered choice, the second of M2; confirmed by the PI by read-back). The quotation READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.834; exact, checked by a word-for-word search; l.678 for the pillowcase as the torus folded; clause (b) at l.275: "nothing is present that is not needed: $M$ carries no object … that A1--A5 do not require"; "it brings in no object that M1 does not have" is the entry's gloss of the clause, in the words of M2-W005). Not shown and not claimed: that a lift of the fold to the spinor bundle of the whole geometry exists; that the data of M1 determine it (M2-W018; card S04b)
@@ -334,3 +334,245 @@ Proposition~\ref{prop:basespace} speaks of the $\Spinc$ structure, and so of the
 - **Failure test:** a sentence of M2-W008, M2-W020, M2-W010 or M2-W011 that speaks of the lengths, of differentiation, of the fibre or of time, or that proves existence.
 - **Confirmed:** Decision Log P195, 18 November 2026 (item 2: the middle sentence changed; no other word)
 - **Retires / retired by:** retires M2-W012
+
+### M2-W022 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{definition}[lift of the fold]\label{def:lift}
+Let $E$ be the covering torus of M1, Section~7.4, with a complex structure for which the fold is $\iota(z)=-z$, as there, and with the flat metric $\lvert\mathrm{d}z\rvert^{2}$ of that structure, and let $N$ be a complex line bundle on $E$. A \emph{lift of the fold} to $N$ is a continuous map $\lambda\colon N\to N$ that carries the fibre of $N$ over each point $p$ of $E$ to the fibre over $\iota(p)$, is linear on each fibre, and applied twice is the identity. At a corner $P_{i}$, which the fold leaves in place, $\lambda$ acts on the fibre over $P_{i}$ as multiplication by a number whose square is $1$; this number, $+1$ or $-1$, is the \emph{sign} of $\lambda$ at $P_{i}$. The spinor bundle of the $\Spinc$ structure that $N$ defines on $E$ is $\Lambda^{0,*}\otimes N$ \cite[Proposition~1.4.25]{Nicolaescu}, and the \emph{lift of the fold} to it that $\lambda$ defines is $\iota^{*}\otimes\lambda$, where $\iota^{*}$ is the pull-back of functions and $(0,1)$-forms by the fold, as in M1, Section~7.4 ($\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$). That a lift of the fold to the spinor bundle of the fibre is of this form is a reading and is not derived: it is the third choice of this paper. Clause~(b) of M1, Definition~3.2, is its ground: it brings in no object that M1 does not have.
+\end{definition}
+```
+- **Place:** `states 155`; after the proof of Proposition `prop:unfolded` (M2-W015) and before M2-W016, which is the first use of the term
+- **Step:** S04b
+- **Rests on:** M1 v7.3, Section 7.4 (the covering torus $E$; the fold on the untwisted spinors), Definition 7.4 (`def:states`, its two lifts), Definition 3.2 clause (b); M2-W005 (the gloss of clause (b)); Verified References V-M2-5, V-M2-6; Minimality M2-3
+- **Mark:** DECLARED (a reading and a numbered choice, the third of M2; confirmed by the PI by read-back). READ: `canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.829 ("Let $E$ be the covering torus of the pillowcase with a complex structure for which the fold is $\iota(z)=-z$"); l.843 ("on the untwisted spinors of the fibre, the functions and the $(0,1)$-forms on $E$, the fold acts by $+1$ and by $-1$ at every corner alike, since $\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$"); l.834 (M1's two lifts, $f(z)\mapsto f(-z)$ and $f(z)\mapsto-f(-z)$; that each applied twice is the identity is a hand step, $f(-(-z))=f(z)$, and is not said at l.834: corrected after the fresh reader's check, P200); l.275 (clause (b); "it brings in no object that M1 does not have" is the entry's gloss of the clause, in the words of M2-W005). Verified reference V-M2-6 (Nicolaescu, Proposition 1.4.25, and Definition 1.4.3 for its setting). **The hypotheses of the cited Proposition 1.4.25** ("$(M,g,J)$ is an almost Kähler manifold … $L\to M$ is a Hermitian line bundle"; added after the fresh reader's check, P200): that $E$ with $\lvert\mathrm{d}z\rvert^{2}$ and its complex structure is almost Kähler is a hand step written in full in the mark of M2-W024; that $N$ need not be given a Hermitian metric for what is used here is **an identification step**: the source defines $\sigma\otimes L$ for every $L$ in $\mathrm{Pic}^{\infty}(M)$, "the space of isomorphism classes of smooth complex line bundles over $M$" (p.5), giving $L$ by an $S^{1}$-cocycle (p.42), which is a Hermitian metric (p.10: "If $L$ has a $U(1)$-structure (i.e. is equipped with a Hermitian metric) then the gluing maps belong to $S^{1}$"), and the Hermitian metric and the connection $B$ of Proposition 1.4.25 enter its Dirac operator, which is not used here; that every complex line bundle carries a Hermitian metric is not stated in the cited sources and is not claimed. Hand steps: a linear map of a line that applied twice is the identity is multiplication by $+1$ or $-1$; $\iota$ is its own inverse, so that the pull-back $\iota^{*}$ carries the forms over $p$ to the forms over $\iota(p)$; $z\mapsto-z$ keeps $\lvert\mathrm{d}z\rvert^{2}$. **An identification step** (CLAUDE.md §5): the source's "$S_{\sigma_L}=\Omega^{0,*}(L)$" is read as "the spinor bundle of $\sigma_L$ is $\Lambda^{0,*}\otimes L$" (the note to V-M2-6). Not shown and not claimed: that the spinor bundle obtained does not depend on which complex structure of $E$ is taken (M1 l.829 says so of the counts; along time the lengths of the fibre vary, M1 Proposition 5.8: card S04c); that a lift of the fold to the spinor bundle of the fibre gives one to the spinor bundle of the whole geometry (card S04c)
+- **Tag:** none: a definition; the choice in it is declared
+- **Failure test:** a later step of M2 that needs the fold to act on the functions and the $(0,1)$-forms of $E$ otherwise than by the pull-back; or that needs the lifts of the fold to be holomorphic; or that needs a lift which applied twice is not the identity.
+- **Confirmed:** Decision Log P199, 18 November 2026 (the read-back of S04b, its item 1, with Minimality M2-3)
+- **Retires / retired by:** none
+
+### M2-W023 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{proposition}[the bundle over the pillowcase]\label{prop:pillowcase}
+Let $E$ be as in Definition~\ref{def:lift}. On $E$ there is exactly one $\Spinc$ structure whose determinant line has the integer six; its spinor bundle is $\Lambda^{0,*}\otimes N$ for a line $N$ of degree three, any two such lines are isomorphic, and the twist $\mathcal{O}(D)$ of a divisor $D$ of flux three on the corners (M1, Definition~7.4) is one. (i) A lift of the fold to $N$ exists. (ii) For every lift of the fold to $N$ the product of its signs at the four corners is $-1$. (iii) Two lifts $\lambda$, $\lambda'$ of the fold to $N$ with the same sign at each corner are carried one to the other by an isomorphism $\phi$ of $N$ to itself that covers the identity of $E$: $\phi\lambda\phi^{-1}=\lambda'$; two with different signs at some corner are not. Up to such isomorphisms there are exactly eight lifts, one for each choice of four signs whose product is $-1$. (iv) For each divisor $D$ of flux three on the corners, of the first and the second lift of M1, Definition~7.4, the one for which the fibre has two states on the pillowcase has the sign $-1$ at the odd corner and $+1$ at the other three; with the naming of M1, Corollary~7.7, under which the odd corner is $P_{4}$, its signs at $P_{1},P_{2},P_{3},P_{4}$ are $+1,+1,+1,-1$. Over the fibre, therefore, the flux, the lift and the corner signs of M1 determine the spinor bundle with its lift of the fold up to isomorphism: nothing is left free in it. \rigD
+\end{proposition}
+```
+- **Place:** `states 190`; after M2-W018, whose point it closes
+- **Step:** S04b
+- **Rests on:** M2-W022; M2-W024 to M2-W026, M2-W034 to M2-W038 and M2-W032 (its proof; M2-W034 to M2-W038 in place of M2-W027 to M2-W031, retired; flagged at P200: the statement is unchanged); M1 v7.3, Section 7.4, Definition 7.4 (`def:states`), Lemma 7.5(b) (`lem:states`), Proposition 7.6 (`prop:twist`), Corollary 7.7 (`cor:lift`), the proof of Proposition 5.5 (`prop:surface`, l.590), Appendix B (the corners by position); Verified References V-M2-1, V-M2-2, V-M2-4 to V-M2-7
+- **Mark:** CHECKED (the proof, M2-W024 to M2-W026, M2-W034 to M2-W038, M2-W032; certificate `MEFProof/Paper_M2/M2_L2_pillowcase.lean`; script `papers/M2/checks/S04b_lift_signs.py`); READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` ll.590, 827, 832–836, 846, 878, 932, 936, 1217). Not shown here: anything of the holomorphic structure of the twist, of the lengths, or of how a state is differentiated; that the result does not depend on which complex structure of $E$ is taken; the spinor bundle of the whole geometry; time and the drive (M2-W033). M1 takes the corner signs "up to one overall sign" (l.836; Corollary 7.7, l.932); (iv) gives the signs of the lift with two states for every divisor: an addition to M1's text and not a contradiction of it; no proof of M1 changes
+- **Tag:** [D]: proved from cited theorems and from results of M1, among them Proposition 7.6 and Corollary 7.7, tagged [D] in M1
+- **Failure test:** two lifts of the fold to a line of degree three on $E$ with the same four signs that no isomorphism covering the identity carries one to the other; a lift whose four signs have the product $+1$; a divisor of flux three on the corners for which the lift with two states has another pattern of signs; or an error in a cited statement (V-M2-1, V-M2-2, V-M2-4 to V-M2-7) or in M1, Lemma 7.5(b).
+- **Confirmed:** Decision Log P199, 18 November 2026 (the read-back of S04b, its item 2)
+- **Retires / retired by:** none
+
+### M2-W024 · active
+- **Statement (as it will be printed):**
+```tex
+By the groups of the circle and the K\"unneth formula, as in the proof of Proposition~\ref{prop:unfolded} \cite[Corollaries~2.14 and~3.3, Theorem~3.15]{Hatcher}, the second cohomology group of $E=S^{1}\times S^{1}$ with integer coefficients is $\Z$, in which $2a=0$ gives $a=0$; so two $\Spinc$ structures on $E$ whose determinant lines have the same first Chern class are the same \cite[Proposition~1]{Gompf1997}. With its complex structure $J$ and the metric $\lvert\mathrm{d}z\rvert^{2}$, $E$ is almost K\"ahler, its two-form being closed since $E$ has dimension two \cite[Definition~1.4.3]{Nicolaescu}. For a line $N$ on $E$ the structure $\sigma_{c}\otimes N$, where $\sigma_{c}$ is the structure induced by $J$, has spinor bundle $\Lambda^{0,*}\otimes N$ and determinant line $K_{E}^{-1}\otimes N^{2}$ \cite[Proposition~1.4.25]{Nicolaescu}, whose first Chern class is that of $K_{E}^{-1}$ plus twice that of $N$ \cite[p.~42]{Nicolaescu}. The canonical line $K_{E}$ is trivial, $\mathrm{d}z$ being a section of it with no zero, so that the integer of the determinant line of $\sigma_{c}\otimes N$ is twice the degree of $N$. The structure with the integer six is therefore $\sigma_{c}\otimes N$ for a line $N$ of degree three, and the twist $\mathcal{O}(D)$ of a divisor of flux three on the corners is such a line (M1, Section~7.4 and Definition~7.4).
+```
+- **Place:** `states 200`; the first step of the proof of Proposition `prop:pillowcase` (M2-W023)
+- **Step:** S04b
+- **Rests on:** Verified References V-M2-1, V-M2-2, V-M2-4, V-M2-5, V-M2-6; M2-W014, M2-W015 (the same argument with the base and space); M2-W020 (the hand steps for the groups of the circle) and M2-W010 (the identification of the source's $c_{1}(s)$ with the determinant line); M1 v7.3, Section 7.4, first paragraph, Definition 7.4
+- **Mark:** verified references, READ at source (V-M2-1, V-M2-2, V-M2-4 to V-M2-6). READ: `canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.827 ("the canonical structure has zero on the torus"; "A twist of the fibre by a line of degree $d$ on the torus multiplies the determinant line by the square of that line, so that the integer on the torus becomes $2d$"), l.832 (a twist of flux $d$ is the line of a divisor of degree $d$, as in the mark of M2-W015). Hand steps: $H^{2}(S^{1}\times S^{1};\Z)=H^{1}\otimes H^{1}=\Z$ from the groups of the circle (the hand steps of M2-W020 at $n=1$) and Theorem 3.15; multiplication by $i$ is a rotation by a quarter-turn, so $J$ keeps $\lvert\mathrm{d}z\rvert^{2}$ and $(E,\lvert\mathrm{d}z\rvert^{2},J)$ is almost Hermitian; its two-form $\omega$ has $\mathrm{d}\omega=0$, a three-form on a manifold of dimension two; $\mathrm{d}z$ is invariant under the translations of the lattice and so is a section of $K_{E}$ with no zero, whence $c_{1}(K_{E}^{-1})=0$ (as M1 l.827 has it); existence of the structure with the integer six: $\sigma_{c}\otimes\mathcal{O}(D)$. **Identification steps** (CLAUDE.md §5): Gompf's spin$^{c}$ structures (classifying maps) and Nicolaescu's (cocycles) are taken as one notion, as M2-W010 takes Gompf's $c_{1}(s)$ for M1's determinant line (the notes to V-M2-1 and V-M2-5); "the integer" of a line on $E$ is its first Chern class in $H^{2}(E;\Z)=\Z$, its degree
+- **Tag:** none (a step of a proof)
+- **Failure test:** two different $\Spinc$ structures on $E$ whose determinant lines have the integer six; or a line of degree three $N$ for which $\sigma_{c}\otimes N$ does not have the integer six; or an error in a cited statement.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** none
+
+### M2-W025 · active
+- **Statement (as it will be printed):**
+```tex
+Two lines $N$ and $N'$ of degree three on $E$ are isomorphic. By the step above, $\sigma_{c}\otimes N$ and $\sigma_{c}\otimes N'$ are the same structure; the lines act freely on the $\Spinc$ structures by $(\sigma,L)\mapsto\sigma\otimes L$ \cite[Proposition~1.3.15]{Nicolaescu}, and $\sigma_{c}\otimes N'=(\sigma_{c}\otimes N)\otimes(N'\otimes N^{-1})$, so that $N'\otimes N^{-1}$ is trivial and $N'$ is isomorphic to $N$.
+```
+- **Place:** `states 210`; the second step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W024; Verified Reference V-M2-5
+- **Mark:** verified reference, READ at source (V-M2-5: the statement; the source leaves the proof of freeness to the reader). Hand steps, in full: $(\sigma\otimes L)\otimes L'=\sigma\otimes(L\otimes L')$, from the cocycle description of the action (the source, p.42: $\sigma\otimes L$ is given by $[h_{\alpha\beta},z_{\alpha\beta}\zeta_{\alpha\beta}]$); a free action has $\sigma\otimes L=\sigma$ only for $L$ trivial; with $\sigma=\sigma_{c}\otimes N$ and $L=N'\otimes N^{-1}$ this gives $N'\otimes N^{-1}$ trivial; then $N'\cong N'\otimes N^{-1}\otimes N\cong N$
+- **Tag:** none (a step of a proof)
+- **Failure test:** two lines of degree three on $E$ that are not isomorphic; or an error in the cited statement.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** none
+
+### M2-W026 · active
+- **Statement (as it will be printed):**
+```tex
+(i). The fold leaves each corner in place, so it carries a divisor $D$ on the corners to itself, and the first lift of M1, Definition~7.4, $f(z)\mapsto f(-z)$, is a lift of the fold to $\mathcal{O}(D)$ in the sense of Definition~\ref{def:lift}. Its sign at $P_{i}$ is the corner sign $(-1)^{a_{i}}$ of M1, Definition~7.4, and the sign of the second lift, $f(z)\mapsto-f(-z)$, is $-(-1)^{a_{i}}$.
+```
+- **Place:** `states 220`; the third step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W022; M1 v7.3, Definition 7.4 (`def:states`); the proof of Proposition 5.5 (`prop:surface`), for the fixed points of the fold
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.590: "$z\mapsto-z$ fixes exactly the four points with $2z\in\Z^{2}$"; l.834: "The fold acts on states at rest by $f(z)\mapsto f(-z)$ or by $f(z)\mapsto-f(-z)$, its two lifts, called here the first and the second"; l.836: "The \emph{corner sign} of the twist at $P_{i}$ is $(-1)^{a_{i}}$, the action of the first lift on the fibre of $\mathcal{O}(D)$ there"). CHECKED by hand, in full: near $P_{i}$, with $z_{i}=z-P_{i}$, the fold is $z_{i}\mapsto-z_{i}$ (since $2P_{i}$ lies in the lattice), and $z_{i}^{-a_{i}}$ is a frame of $\mathcal{O}(D)$ there; $f\mapsto f\circ\iota$ carries it to $(-z_{i})^{-a_{i}}=(-1)^{a_{i}}z_{i}^{-a_{i}}$, so that the map is continuous, linear on each fibre, carries the fibre over $p$ to the fibre over $\iota(p)$, and applied twice is the identity; away from the corners the frame is $1$ and is carried to $1$; the second lift is the first followed by multiplication by $-1$ on each fibre, and so is a lift of the fold too, with the sign $-(-1)^{a_{i}}$ (added after the fresh reader's check, P200). **An identification step:** M1's lift, defined on states at rest, is taken as the map of the line that M1 itself takes it to be at l.836 ("the action of the first lift on the fibre of $\mathcal{O}(D)$")
+- **Tag:** none (a step of a proof)
+- **Failure test:** a divisor on the corners that the fold does not carry to itself; or a corner at which the first lift does not act by $(-1)^{a_{i}}$.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** none
+
+### M2-W027 · retired
+- **Statement (as it will be printed):**
+```tex
+Let $\lambda$ and $\lambda'$ be lifts of the fold to a line $N$. For $v\neq0$ in the fibre over $p$, $\lambda'(v)=g(p)\,\lambda(v)$ for a number $g(p)\neq0$ that does not depend on $v$, and $g\colon E\to\C\setminus\{0\}$ is continuous; applying $\lambda'$ twice gives $g(\iota(p))\,g(p)=1$. At a corner $P_{i}$ the sign of $\lambda'$ is $g(P_{i})$ times that of $\lambda$. An isomorphism $\phi$ of $N$ to itself that covers the identity of $E$ is multiplication by a continuous $h\colon E\to\C\setminus\{0\}$, and $\phi\lambda\phi^{-1}$ is the lift whose function, in the place of $g$, is $h(\iota(p))/h(p)$; at a corner this is $1$. So $\phi\lambda\phi^{-1}$ has the signs of $\lambda$, and two lifts with different signs at some corner are not carried one to the other: this is the second sentence of (iii).
+```
+- **Place:** `states 230`; the fourth step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W022
+- **Mark:** CHECKED by hand, in full: $\lambda(v)$ and $\lambda'(v)$ lie in the fibre over $\iota(p)$, a line, and $\lambda(v)\neq0$, so $\lambda'(v)=g(p)\lambda(v)$, and by linearity $g(p)$ does not depend on $v$; in local frames over neighbourhoods of $p$ and $\iota(p)$ the two maps are continuous functions with no zero, and $g$ is their ratio; $\lambda'(\lambda'(v))=g(\iota(p))\,\lambda(g(p)\lambda(v))=g(\iota(p))\,g(p)\,\lambda(\lambda(v))=g(\iota(p))\,g(p)\,v$, which is $v$; at a corner $\iota(P_{i})=P_{i}$; a linear isomorphism of a line is a non-zero number, continuous in $p$ by local frames; for $v$ over $p$, $\phi\lambda\phi^{-1}(v)=h(\iota(p))\,h(p)^{-1}\lambda(v)$
+- **Tag:** none (a step of a proof)
+- **Failure test:** an isomorphism covering the identity that changes the sign of a lift at a corner.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** retired by M2-W034 (Decision Log P200, 18 November 2026)
+
+### M2-W028 · retired
+- **Statement (as it will be printed):**
+```tex
+Write $E=\R^{2}/\Z^{2}$ with coordinates $(x,y)$, so that the fold is $(x,y)\mapsto(-x,-y)$ and the corners are $C_{m,n}=(\tfrac m2,\tfrac n2)$, $m,n\in\{0,1\}$ (M1, Appendix~B), and read $g$ on $\R^{2}$. The plane $\R^{2}$ is convex, so it is path-connected, locally path-connected and has trivial fundamental group \cite[Example~1.4]{Hatcher}, and by the lifting criterion \cite[Proposition~1.33]{Hatcher} for the covering $s\mapsto(\cos2\pi s,\sin2\pi s)$ of the circle \cite[p.~29]{Hatcher} there is a continuous $\theta\colon\R^{2}\to\R$ with $g/\lvert g\rvert=e^{2\pi i\theta}$. So $g=e^{\Psi}$ with $\Psi=\log\lvert g\rvert+2\pi i\theta$ continuous. Since $g$ has period one in $x$ and in $y$, the differences $\Psi(x+1,y)-\Psi(x,y)$ and $\Psi(x,y+1)-\Psi(x,y)$ are continuous with values in $2\pi i\Z$, and so are constants $2\pi i\mu$ and $2\pi i\nu$; then $\psi=\Psi-2\pi i(\mu x+\nu y)$ has period one in each variable, and $g=e^{2\pi i(\mu x+\nu y)}e^{\psi}$.
+```
+- **Place:** `states 240`; the fifth step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W027; Verified Reference V-M2-7; M1 v7.3, Appendix B (the corners by position)
+- **Mark:** verified reference, READ at source (V-M2-7: Proposition 1.33, p.61; the covering of the circle, p.29; Example 1.4, p.27). READ: `canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.1217 (the corners $P_{1}=(0,0)$, $P_{2}=(\tfrac12,0)$, $P_{3}=(0,\tfrac12)$, $P_{4}=(\tfrac12,\tfrac12)$); l.932 ($C_{m,n}=(\tfrac m2,\tfrac n2)$). Hand steps, in full: a real-linear map of $\R^{2}$ that carries $\Z^{2}$ to the lattice of $E$ identifies $\R^{2}/\Z^{2}$ with $E$ and carries $(x,y)\mapsto(-x,-y)$ to $z\mapsto-z$; open discs are convex, so $\R^{2}$ is locally path-connected; the lifting criterion applies to $g/\lvert g\rvert\colon\R^{2}\to S^{1}$ because $\pi_{1}(\R^{2})=0$; $\log\lvert g\rvert$ is continuous since $\lvert g\rvert>0$; $e^{\Psi(x+1,y)}=e^{\Psi(x,y)}$ gives a difference in $2\pi i\Z$; a continuous map from the connected $\R^{2}$ into the discrete $2\pi i\Z$ is constant; $\psi(x+1,y)=\Psi(x,y)+2\pi i\mu-2\pi i\mu(x+1)-2\pi i\nu y=\psi(x,y)$, and the same in $y$
+- **Tag:** none (a step of a proof)
+- **Failure test:** a continuous $g\colon\R^{2}/\Z^{2}\to\C\setminus\{0\}$ not of the form $e^{2\pi i(\mu x+\nu y)}e^{\psi}$ with $\mu,\nu$ integers and $\psi$ continuous of period one; or an error in the cited statements.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** retired by M2-W035 (Decision Log P200, 18 November 2026)
+
+### M2-W029 · retired
+- **Statement (as it will be printed):**
+```tex
+The condition $g(\iota(p))\,g(p)=1$ gives $e^{\psi(-x,-y)+\psi(x,y)}=1$, so that $\psi(-x,-y)+\psi(x,y)$ is continuous with values in $2\pi i\Z$, and is a constant $2\pi i\ell$. A corner $C_{m,n}$ and its image under the fold differ by a point of $\Z^{2}$, so that $2\psi(C_{m,n})=2\pi i\ell$, and $g(C_{m,n})=e^{\pi i(\mu m+\nu n)}e^{\pi i\ell}=(-1)^{\mu m+\nu n+\ell}$. The product of the four values is $(-1)^{2\mu+2\nu+4\ell}=1$, and the four are all $1$ exactly when $\mu$, $\nu$ and $\ell$ are even (certificates \texttt{L2\_corner\_values}, \texttt{L2\_corner\_values\_all\_even}).
+```
+- **Place:** `states 250`; the sixth step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W027, M2-W028
+- **Mark:** CHECKED (certificate `MEFProof/Paper_M2/M2_L2_pillowcase.lean`, theorems `L2_corner_values`, `L2_corner_values_all_even`; script `papers/M2/checks/S04b_lift_signs.py`, part (2)); hand steps, in full: $g(-x,-y)\,g(x,y)=e^{-2\pi i(\mu x+\nu y)}e^{\psi(-x,-y)}e^{2\pi i(\mu x+\nu y)}e^{\psi(x,y)}$; $\R^{2}$ is connected; $-C_{m,n}=C_{m,n}-(m,n)$ and $\psi$ has period one, so $\psi(-C_{m,n})=\psi(C_{m,n})$; $e^{2\pi i(\mu m/2+\nu n/2)}=e^{\pi i(\mu m+\nu n)}$; the four exponents $\ell$, $\mu+\ell$, $\nu+\ell$, $\mu+\nu+\ell$ add to $2\mu+2\nu+4\ell$
+- **Tag:** none (a step of a proof)
+- **Failure test:** values of $\mu$, $\nu$, $\ell$ for which the four exponents add to an odd number, or are all even without $\mu$, $\nu$, $\ell$ being even.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** retired by M2-W036 (Decision Log P200, 18 November 2026)
+
+### M2-W030 · retired
+- **Statement (as it will be printed):**
+```tex
+If the four values are all $1$, then $\mu$, $\nu$ and $\ell$ are even; $h=e^{-\pi i(\mu x+\nu y)}e^{-\psi/2}$ then has period one in each variable (\texttt{L2\_even\_half}), and $h(-x,-y)/h(x,y)=e^{2\pi i(\mu x+\nu y)}e^{\psi(x,y)}e^{-\pi i\ell}=g(x,y)$ (\texttt{L2\_h\_exponent}). Multiplication by $h$ is then an isomorphism $\phi$ of $N$ to itself that covers the identity of $E$, and $\phi\lambda\phi^{-1}$ is the lift whose function is $h(\iota(p))/h(p)=g(p)$, that is $\lambda'$. This proves the first sentence of (iii) for two lifts to one line.
+```
+- **Place:** `states 260`; the seventh step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W027, M2-W028, M2-W029
+- **Mark:** CHECKED (certificate, theorems `L2_h_exponent`, `L2_even_half`; script, part (3), a numerical check at sample points); hand steps, in full: $\mu=2k$ gives $e^{-\pi i\mu(x+1)}=e^{-\pi i\mu x}e^{-2\pi ik}=e^{-\pi i\mu x}$, and the same for $\nu$; $\psi$ has period one; $h(-x,-y)/h(x,y)=e^{2\pi i(\mu x+\nu y)}e^{(\psi(x,y)-\psi(-x,-y))/2}$ and $\psi(-x,-y)=2\pi i\ell-\psi(x,y)$ give $e^{2\pi i(\mu x+\nu y)}e^{\psi(x,y)}e^{-\pi i\ell}$, and $e^{-\pi i\ell}=1$ for $\ell$ even; $h$ is continuous with no zero; by M2-W027, $\phi\lambda\phi^{-1}$ is the lift with the function $h(\iota(p))/h(p)$, and a lift is fixed by its function relative to $\lambda$
+- **Tag:** none (a step of a proof)
+- **Failure test:** two lifts of the fold to one line with the same four signs that no multiplication by a continuous function with no zero carries one to the other.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** retired by M2-W037 (Decision Log P200, 18 November 2026)
+
+### M2-W031 · retired
+- **Statement (as it will be printed):**
+```tex
+(ii), and the rest of (iii). By (i), the first lift of M1 is a lift of the fold to $\mathcal{O}(D)$, and the product of its signs is $(-1)^{d}=-1$ (M1, the proof of Corollary~7.7; certificate \texttt{L2\_product\_minus\_one}); every other lift of the fold to $\mathcal{O}(D)$ has at $P_{i}$ the sign $g(P_{i})$ times this one, and the product of the four $g(P_{i})$ is $1$. An isomorphism of lines that covers the identity of $E$ carries a lift of the fold to a lift with the same signs, and every line of degree three is isomorphic to $\mathcal{O}(D)$. So every lift of the fold to a line of degree three has the product $-1$, and two such lifts with the same signs, on two lines of degree three, are carried one to the other. Over the twenty divisors of flux three on the corners the first and the second lifts have, between them, all eight patterns of four signs with product $-1$ (certificate \texttt{L2\_eight\_patterns}): up to isomorphism there are exactly eight lifts.
+```
+- **Place:** `states 270`; the eighth step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W025 to M2-W030; M1 v7.3, the proof of Corollary 7.7 (`cor:lift`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.936: "The product of the corner signs of $\mathcal{O}(D)$ is $\prod_{i}(-1)^{a_{i}}=(-1)^{d}$"); CHECKED (certificate, theorems `L2_twenty_divisors`, `L2_product_minus_one`, `L2_eight_patterns`; script, part (1)); hand steps, in full: for an isomorphism $\psi\colon N\to N'$ covering the identity and a lift $\lambda'$ of the fold to $N'$, $\psi^{-1}\lambda'\psi$ is a lift of the fold to $N$, and at a corner the two act on lines by the same number; two lifts on $N$ and $N'$ with the same signs give, through $\psi$, two lifts on $N$ with the same signs, which M2-W030 carries one to the other; there are $2^{4}/2=8$ patterns of four signs with product $-1$
+- **Tag:** none (a step of a proof)
+- **Failure test:** a lift of the fold to a line of degree three whose four signs have the product $+1$; or a pattern of four signs with product $-1$ that no lift has.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** retired by M2-W038 (Decision Log P200, 18 November 2026)
+
+### M2-W032 · active
+- **Statement (as it will be printed):**
+```tex
+(iv). For a divisor $D$ of flux three on the corners, under the first lift the number of states on the pillowcase is $1+\sum_{i}\lfloor a_{i}/2\rfloor$, and under the second it is $d$ less that number, with $d=3$ (M1, Lemma~7.5(b)); exactly one of the two has two states (certificate \texttt{L2\_one\_lift\_two\_states}). Over the twenty divisors, that lift has the sign $-1$ at the odd corner and $+1$ at the other three (\texttt{L2\_one\_odd\_corner}, \texttt{L2\_two\_state\_signs}); with the odd corner at $P_{4}$ its signs at $P_{1},P_{2},P_{3},P_{4}$ are $+1,+1,+1,-1$ (\texttt{L2\_odd\_at\_P4}), which is $(-1)^{mn}$ at $C_{m,n}$ (\texttt{L2\_mn\_pattern}). By (iii), and since any two lines of degree three are isomorphic, the spinor bundle with this lift of the fold is the same, up to isomorphism, whichever divisor with its odd corner at $P_{4}$ is taken.
+```
+- **Place:** `states 280`; the last step of the proof of Proposition `prop:pillowcase`
+- **Step:** S04b
+- **Rests on:** M2-W025, M2-W026, M2-W038 (in place of M2-W031, retired; flagged at P200: the statement is unchanged); M1 v7.3, Definition 7.4 (`def:states`; the odd corner), Lemma 7.5(b) (`lem:states`), Proposition 7.6 (`prop:twist`), Corollary 7.7 (`cor:lift`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.846: "(b) Under the first lift the number of states on the pillowcase is $1+\sum_{i}\lfloor a_{i}/2\rfloor$; under the second it is $d$ less that number"; l.836: "A corner is \emph{odd} if its sign differs from that of the other three"; l.878: "For that lift the fibre has two states on the pillowcase"; l.932: "Naming the corners so that it is $P_{4}$, the sign at $C_{m,n}=(\tfrac m2,\tfrac n2)$ is $(-1)^{mn}$, up to one overall sign"); CHECKED (certificate, theorems `L2_one_lift_two_states`, `L2_one_odd_corner`, `L2_two_state_signs`, `L2_odd_at_P4`, `L2_mn_pattern`; script, part (1); the count of M1 Lemma 7.5(b) taken as given, as M1's certificate `L6` does). Hand step: an isomorphism $\phi$ of lines covering the identity with $\phi\lambda\phi^{-1}=\lambda'$ gives $\mathrm{id}\otimes\phi$ on $\Lambda^{0,*}\otimes N$, which carries $\iota^{*}\otimes\lambda$ to $\iota^{*}\otimes\lambda'$
+- **Tag:** none (a step of a proof)
+- **Failure test:** a divisor of flux three on the corners for which both lifts, or neither, have two states, or for which the lift with two states has another pattern of signs.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English in the read-back of S04b, its item 4; Decision Log P199)
+- **Retires / retired by:** none
+
+### M2-W033 · active
+- **Statement (as it will be printed):**
+```tex
+The lift of the fold through which a state over the fibre is read (the second choice of this paper) is taken here to be the lift of Proposition~\ref{prop:pillowcase}(iv), which is the lift of M1, Proposition~7.6, for which the fibre has two states on the pillowcase; M1 takes it so for the states at rest. Proposition~\ref{prop:pillowcase} speaks of the fibre alone, of the spinor bundle as a bundle, and of one complex structure of $E$. Nothing is said here of the holomorphic structure of the twist, of the lengths, of how a state is differentiated, of the spinor bundle of the whole geometry over the fibre, or of time and the drive.
+```
+- **Place:** `states 290`; after the proof of Proposition `prop:pillowcase` (M2-W032)
+- **Step:** S04b
+- **Rests on:** M2-W016, M2-W023; M1 v7.3, Proposition 7.6 (`prop:twist`)
+- **Mark:** DECLARED (the first sentence carries a reading: which lift M2-W016's "a lift" is; confirmed by the PI by read-back); READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.878: "the states of clause~(iii) being states on the pillowcase for one of the two lifts of the fold … For that lift the fibre has two states on the pillowcase"); the rest READ against M2-W022 to M2-W032 as logged (and, after P200, against M2-W034 to M2-W038, which replace M2-W027 to M2-W031 with no change to what they prove)
+- **Tag:** none
+- **Failure test:** a later step of M2 that needs a state over the fibre which the lift of M1, Proposition 7.6, does not leave unchanged but another lift does; or a sentence of M2-W022 to M2-W026, M2-W032 or M2-W034 to M2-W038 that speaks of the holomorphic structure of the twist, of the lengths, of differentiation, of the whole geometry, or of time. The points left are taken up by cards S04c (time; the whole geometry; the complex structure along time) and S14 (differentiation), and are closed in M2.
+- **Confirmed:** Decision Log P199, 18 November 2026 (the read-back of S04b, its item 3)
+- **Retires / retired by:** none
+
+### M2-W034 · active
+- **Statement (as it will be printed):**
+```tex
+Let $\lambda$ and $\lambda'$ be lifts of the fold to a line $N$. For $v\neq0$ in the fibre over $p$, $\lambda'(v)=\gamma(p)\,\lambda(v)$ for a number $\gamma(p)\neq0$ that does not depend on $v$, and $\gamma\colon E\to\C\setminus\{0\}$ is continuous; applying $\lambda'$ twice gives $\gamma(\iota(p))\,\gamma(p)=1$. At a corner $P_{i}$ the sign of $\lambda'$ is $\gamma(P_{i})$ times that of $\lambda$. An isomorphism $\phi$ of $N$ to itself that covers the identity of $E$ is multiplication by a continuous $\beta\colon E\to\C\setminus\{0\}$, and $\phi\lambda\phi^{-1}$ is the lift whose function, in the place of $\gamma$, is $\beta(\iota(p))/\beta(p)$; at a corner this is $1$. So $\phi\lambda\phi^{-1}$ has the signs of $\lambda$, and two lifts with different signs at some corner are not carried one to the other: this is the last clause of the first sentence of (iii).
+```
+- **Place:** `states 230`; the fourth step of the proof of Proposition `prop:pillowcase`, in the place of M2-W027, which it replaces
+- **Step:** S04b (a correction after the fresh reader's check, P200)
+- **Rests on:** M2-W022
+- **Mark:** CHECKED by hand, in full: $\lambda(v)$ and $\lambda'(v)$ lie in the fibre over $\iota(p)$, a line, and $\lambda(v)\neq0$, so $\lambda'(v)=\gamma(p)\lambda(v)$, and by linearity $\gamma(p)$ does not depend on $v$; in local frames over neighbourhoods of $p$ and $\iota(p)$ the two maps are continuous functions with no zero, and $\gamma$ is their ratio; $\lambda'(\lambda'(v))=\gamma(\iota(p))\,\lambda(\gamma(p)\lambda(v))=\gamma(\iota(p))\,\gamma(p)\,\lambda(\lambda(v))=\gamma(\iota(p))\,\gamma(p)\,v$, which is $v$; at a corner $\iota(P_{i})=P_{i}$; a linear isomorphism of a line is a non-zero number, continuous in $p$ by local frames; for $v$ over $p$, $\phi\lambda\phi^{-1}(v)=\beta(\iota(p))\,\beta(p)^{-1}\lambda(v)$. Changed from M2-W027: "the second sentence of (iii)" becomes "the last clause of the first sentence of (iii)", which is what M2-W023 has (fresh reader, P200); the letters $g$, $h$ become $\gamma$, $\beta$, so that the proof does not use M1's letter $h$ (the hyperplane class, quoted in M2-W003). Nothing else changed
+- **Tag:** none (a step of a proof)
+- **Failure test:** an isomorphism covering the identity that changes the sign of a lift at a corner.
+- **Confirmed:** checked, not read back, 18 November 2026 (a correction of the checked step M2-W027; the PI told in plain English in the closing report of chat C3b; Decision Log P200)
+- **Retires / retired by:** retires M2-W027
+
+### M2-W035 · active
+- **Statement (as it will be printed):**
+```tex
+Write $E=\R^{2}/\Z^{2}$ with the coordinates $(\theta_{\psi},\theta_{\omega})$ of M1, Appendix~B, so that the fold is $(\theta_{\psi},\theta_{\omega})\mapsto(-\theta_{\psi},-\theta_{\omega})$ and the corners are $C_{m,n}=(\tfrac m2,\tfrac n2)$, $m,n\in\{0,1\}$ (M1, Appendix~B and Corollary~7.7), and read $\gamma$ on $\R^{2}$. The plane $\R^{2}$ is convex, so it is path-connected and locally path-connected and has trivial fundamental group \cite[Example~1.4]{Hatcher}, and by the lifting criterion \cite[Proposition~1.33]{Hatcher} for the covering $s\mapsto(\cos2\pi s,\sin2\pi s)$ of the circle \cite[p.~29]{Hatcher} there is a continuous $\xi\colon\R^{2}\to\R$ with $\gamma/\lvert\gamma\rvert=e^{2\pi i\xi}$. So $\gamma=e^{\zeta}$ with $\zeta=\log\lvert\gamma\rvert+2\pi i\xi$ continuous. Since $\gamma$ has period one in $\theta_{\psi}$ and in $\theta_{\omega}$, the differences $\zeta(\theta_{\psi}+1,\theta_{\omega})-\zeta(\theta_{\psi},\theta_{\omega})$ and $\zeta(\theta_{\psi},\theta_{\omega}+1)-\zeta(\theta_{\psi},\theta_{\omega})$ are continuous with values in $2\pi i\Z$, and so are constants $2\pi i\mu$ and $2\pi i\nu$; then $\eta=\zeta-2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})$ has period one in each variable, and $\gamma=e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta}$.
+```
+- **Place:** `states 240`; the fifth step of the proof of Proposition `prop:pillowcase`, in the place of M2-W028, which it replaces
+- **Step:** S04b (a correction after the fresh reader's check, P200)
+- **Rests on:** M2-W034; Verified Reference V-M2-7; M1 v7.3, Appendix B (the corners by position, in the coordinates $(\theta_{\psi},\theta_{\omega})$), Corollary 7.7 (the name $C_{m,n}$)
+- **Mark:** verified reference, READ at source (V-M2-7: Proposition 1.33, p.61; the covering of the circle, p.29; Example 1.4, p.27). READ: `canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.1217 ("The four corners are named by position, $P_{1}=(0,0)$, $P_{2}=(\tfrac12,0)$, $P_{3}=(0,\tfrac12)$, $P_{4}=(\tfrac12,\tfrac12)$ in coordinates $(\theta_{\psi},\theta_{\omega})$"); l.932 ("$C_{m,n}=(\tfrac m2,\tfrac n2)$"). Hand steps, in full: a real-linear map of $\R^{2}$ that carries $\Z^{2}$ to the lattice of $E$ identifies $\R^{2}/\Z^{2}$ with $E$ and carries $(\theta_{\psi},\theta_{\omega})\mapsto(-\theta_{\psi},-\theta_{\omega})$ to $z\mapsto-z$; a convex set is path-connected, the segment between two of its points lying in it; open discs are convex, so $\R^{2}$ is locally path-connected; the lifting criterion applies to $\gamma/\lvert\gamma\rvert\colon\R^{2}\to S^{1}$ because $\pi_{1}(\R^{2})=0$; $\log\lvert\gamma\rvert$ is continuous since $\lvert\gamma\rvert>0$; $e^{\zeta(\theta_{\psi}+1,\theta_{\omega})}=e^{\zeta(\theta_{\psi},\theta_{\omega})}$ gives a difference in $2\pi i\Z$; a continuous map from the connected $\R^{2}$ into the discrete $2\pi i\Z$ is constant; $\eta(\theta_{\psi}+1,\theta_{\omega})=\zeta(\theta_{\psi},\theta_{\omega})+2\pi i\mu-2\pi i\mu(\theta_{\psi}+1)-2\pi i\nu\theta_{\omega}=\eta(\theta_{\psi},\theta_{\omega})$, and the same in $\theta_{\omega}$. Changed from M2-W028 (fresh reader, P200): the name $C_{m,n}$ is credited to Corollary 7.7 as well as Appendix B; the coordinates are M1's $(\theta_{\psi},\theta_{\omega})$ in place of $(x,y)$, which M1 Proposition 5.8 uses for other coordinates; the letters $\theta$, $\Psi$, $\psi$ become $\xi$, $\zeta$, $\eta$, so as not to meet M1's $\theta_{\psi}$; path-connectedness is a hand step of its own. Nothing else changed
+- **Tag:** none (a step of a proof)
+- **Failure test:** a continuous $\gamma\colon\R^{2}/\Z^{2}\to\C\setminus\{0\}$ not of the form $e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta}$ with $\mu,\nu$ integers and $\eta$ continuous of period one; or an error in the cited statements.
+- **Confirmed:** checked, not read back, 18 November 2026 (a correction of the checked step M2-W028; the PI told in plain English in the closing report of chat C3b; Decision Log P200)
+- **Retires / retired by:** retires M2-W028
+
+### M2-W036 · active
+- **Statement (as it will be printed):**
+```tex
+The condition $\gamma(\iota(p))\,\gamma(p)=1$ gives $e^{\eta(-\theta_{\psi},-\theta_{\omega})+\eta(\theta_{\psi},\theta_{\omega})}=1$, so that $\eta(-\theta_{\psi},-\theta_{\omega})+\eta(\theta_{\psi},\theta_{\omega})$ is continuous with values in $2\pi i\Z$, and is a constant $2\pi i\ell$. A corner $C_{m,n}$ and its image under the fold differ by a point of $\Z^{2}$, so that $2\eta(C_{m,n})=2\pi i\ell$, and $\gamma(C_{m,n})=e^{\pi i(\mu m+\nu n)}e^{\pi i\ell}=(-1)^{\mu m+\nu n+\ell}$. The product of the four values is $(-1)^{2\mu+2\nu+4\ell}=1$, and the four are all $1$ exactly when $\mu$, $\nu$ and $\ell$ are even (the arithmetic of the exponents is certified in \texttt{L2\_corner\_values} and \texttt{L2\_corner\_values\_all\_even}).
+```
+- **Place:** `states 250`; the sixth step of the proof of Proposition `prop:pillowcase`, in the place of M2-W029, which it replaces
+- **Step:** S04b (a correction after the fresh reader's check, P200)
+- **Rests on:** M2-W034, M2-W035
+- **Mark:** CHECKED (certificate `MEFProof/Paper_M2/M2_L2_pillowcase.lean`, theorems `L2_corner_values`, `L2_corner_values_all_even`, which certify the parity of the four exponents as written here and not their derivation from $\gamma$; script `papers/M2/checks/S04b_lift_signs.py`, part (2)); hand steps, in full: $\gamma(-\theta_{\psi},-\theta_{\omega})\,\gamma(\theta_{\psi},\theta_{\omega})=e^{-2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta(-\theta_{\psi},-\theta_{\omega})}e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta(\theta_{\psi},\theta_{\omega})}$; $\R^{2}$ is connected; $-C_{m,n}=C_{m,n}-(m,n)$ and $\eta$ has period one, so $\eta(-C_{m,n})=\eta(C_{m,n})$; $e^{2\pi i(\mu m/2+\nu n/2)}=e^{\pi i(\mu m+\nu n)}$; the four exponents $\ell$, $\mu+\ell$, $\nu+\ell$, $\mu+\nu+\ell$ add to $2\mu+2\nu+4\ell$. Changed from M2-W029: the letters of M2-W034 and M2-W035; the certificates are said to certify the arithmetic of the exponents (fresh reader, P200). Nothing else changed
+- **Tag:** none (a step of a proof)
+- **Failure test:** values of $\mu$, $\nu$, $\ell$ for which the four exponents add to an odd number, or are all even without $\mu$, $\nu$, $\ell$ being even.
+- **Confirmed:** checked, not read back, 18 November 2026 (a correction of the checked step M2-W029; the PI told in plain English in the closing report of chat C3b; Decision Log P200)
+- **Retires / retired by:** retires M2-W029
+
+### M2-W037 · active
+- **Statement (as it will be printed):**
+```tex
+If the four values are all $1$, then $\mu$, $\nu$ and $\ell$ are even; $\beta=e^{-\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{-\eta/2}$ then has period one in each variable, and $\beta(-\theta_{\psi},-\theta_{\omega})/\beta(\theta_{\psi},\theta_{\omega})=e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta(\theta_{\psi},\theta_{\omega})}e^{-\pi i\ell}=\gamma(\theta_{\psi},\theta_{\omega})$ (the arithmetic of the exponents is certified in \texttt{L2\_even\_half} and \texttt{L2\_iso\_exponent}). Multiplication by $\beta$ is then an isomorphism $\phi$ of $N$ to itself that covers the identity of $E$, and $\phi\lambda\phi^{-1}$ is the lift whose function is $\beta(\iota(p))/\beta(p)=\gamma(p)$, that is $\lambda'$. This proves the first clause of (iii) for two lifts to one line.
+```
+- **Place:** `states 260`; the seventh step of the proof of Proposition `prop:pillowcase`, in the place of M2-W030, which it replaces
+- **Step:** S04b (a correction after the fresh reader's check, P200)
+- **Rests on:** M2-W034, M2-W035, M2-W036
+- **Mark:** CHECKED (certificate, theorems `L2_iso_exponent`, a linear identity over the integers of the same shape as the identity of the exponents used here, which are complex, and `L2_even_half`; script, part (3), a numerical check at sample points); hand steps, in full: $\mu=2k$ gives $e^{-\pi i\mu(\theta_{\psi}+1)}=e^{-\pi i\mu\theta_{\psi}}e^{-2\pi ik}=e^{-\pi i\mu\theta_{\psi}}$, and the same for $\nu$; $\eta$ has period one; $\beta(-\theta_{\psi},-\theta_{\omega})/\beta(\theta_{\psi},\theta_{\omega})=e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{(\eta(\theta_{\psi},\theta_{\omega})-\eta(-\theta_{\psi},-\theta_{\omega}))/2}$ and $\eta(-\theta_{\psi},-\theta_{\omega})=2\pi i\ell-\eta(\theta_{\psi},\theta_{\omega})$ give $e^{2\pi i(\mu\theta_{\psi}+\nu\theta_{\omega})}e^{\eta(\theta_{\psi},\theta_{\omega})}e^{-\pi i\ell}$, and $e^{-\pi i\ell}=1$ for $\ell$ even; $\beta$ is continuous with no zero; by M2-W034, $\phi\lambda\phi^{-1}$ is the lift with the function $\beta(\iota(p))/\beta(p)$, and a lift is fixed by its function relative to $\lambda$. Changed from M2-W030 (fresh reader, P200): "the first sentence of (iii)" becomes "the first clause of (iii)", the last clause being M2-W034; the certificates are said to certify the arithmetic of the exponents; the letters of M2-W034 to M2-W036; the theorem `L2_h_exponent` is renamed `L2_iso_exponent`. Nothing else changed
+- **Tag:** none (a step of a proof)
+- **Failure test:** two lifts of the fold to one line with the same four signs that no multiplication by a continuous function with no zero carries one to the other.
+- **Confirmed:** checked, not read back, 18 November 2026 (a correction of the checked step M2-W030; the PI told in plain English in the closing report of chat C3b; Decision Log P200)
+- **Retires / retired by:** retires M2-W030
+
+### M2-W038 · active
+- **Statement (as it will be printed):**
+```tex
+(ii), and the rest of (iii). By (i), the first lift of M1 is a lift of the fold to $\mathcal{O}(D)$, and the product of its signs is $(-1)^{d}=-1$ (M1, the proof of Corollary~7.7; certificate \texttt{L2\_product\_minus\_one}); every other lift of the fold to $\mathcal{O}(D)$ has at $P_{i}$ the sign $\gamma(P_{i})$ times this one, and the product of the four $\gamma(P_{i})$ is $1$. An isomorphism of lines that covers the identity of $E$ carries a lift of the fold to a lift with the same signs, and every line of degree three is isomorphic to $\mathcal{O}(D)$. So every lift of the fold to a line of degree three has the product $-1$, and two such lifts with the same signs, on two lines of degree three, are carried one to the other. Over the twenty divisors of flux three on the corners the first and the second lifts have, between them, all eight patterns of four signs with product $-1$ (certificate \texttt{L2\_eight\_patterns}): up to isomorphism there are exactly eight lifts.
+```
+- **Place:** `states 270`; the eighth step of the proof of Proposition `prop:pillowcase`, in the place of M2-W031, which it replaces
+- **Step:** S04b (a correction after the fresh reader's check, P200)
+- **Rests on:** M2-W025, M2-W026, M2-W034 to M2-W037; M1 v7.3, the proof of Corollary 7.7 (`cor:lift`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex` l.936: "The product of the corner signs of $\mathcal{O}(D)$ is $\prod_{i}(-1)^{a_{i}}=(-1)^{d}$"); CHECKED (certificate, theorems `L2_twenty_divisors`, `L2_product_minus_one`, `L2_eight_patterns`; script, part (1)); hand steps, in full: for an isomorphism $\Phi\colon N\to N'$ covering the identity and a lift $\lambda'$ of the fold to $N'$, $\Phi^{-1}\lambda'\Phi$ is a lift of the fold to $N$, and at a corner the two act on lines by the same number; two lifts on $N$ and $N'$ with the same signs give, through $\Phi$, two lifts on $N$ with the same signs, which M2-W037 carries one to the other; there are $2^{4}/2=8$ patterns of four signs with product $-1$. Changed from M2-W031: $g$ becomes $\gamma$, as in M2-W034; in the mark the isomorphism of lines is $\Phi$ (the mark of M2-W031 had $\psi$). Nothing else changed
+- **Tag:** none (a step of a proof)
+- **Failure test:** a lift of the fold to a line of degree three whose four signs have the product $+1$; or a pattern of four signs with product $-1$ that no lift has.
+- **Confirmed:** checked, not read back, 18 November 2026 (a correction of the checked step M2-W031; the PI told in plain English in the closing report of chat C3b; Decision Log P200)
+- **Retires / retired by:** retires M2-W031

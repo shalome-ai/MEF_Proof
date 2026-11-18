@@ -18,3 +18,5 @@
 ## Entries
 
 - **state (of the geometry)** · "A \emph{state} of the geometry is a section of the spinor bundle of M1, Definition~2.7, over $\Mtwelve$." · M2-W005
+- **lift of the fold** (to a line on the covering torus; to the spinor bundle of the fibre) · "A \emph{lift of the fold} to $N$ is a continuous map $\lambda\colon N\to N$ that carries the fibre of $N$ over each point $p$ of $E$ to the fibre over $\iota(p)$, is linear on each fibre, and applied twice is the identity." … "the \emph{lift of the fold} to it that $\lambda$ defines is $\iota^{*}\otimes\lambda$, where $\iota^{*}$ is the pull-back of functions and $(0,1)$-forms by the fold, as in M1, Section~7.4 ($\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$)" · M2-W022
+- **sign** (of a lift of the fold, at a corner) · "At a corner $P_{i}$, which the fold leaves in place, $\lambda$ acts on the fibre over $P_{i}$ as multiplication by a number whose square is $1$; this number, $+1$ or $-1$, is the \emph{sign} of $\lambda$ at $P_{i}$." · M2-W022
