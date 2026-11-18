@@ -147,3 +147,5 @@
 
 | Result | Where | Tag | Inputs | Certificate | Status |
 |---|---|---|---|---|---|
+| Proposition "the base and space" (the statement is M2-W008) | M2, `prop:basespace`; write-up log M2-W008, proof M2-W009 to M2-W011 | [D] | M1 Prop 7.3, Section 7.4, Prop 7.9; V-M2-1 to V-M2-4 | none yet; script `papers/M2/checks/S04_degree_two.py` (1) | proposed, 18 Nov 2026 (P191) |
+| Proposition "the base, space and the fibre before it is folded" (the statement is M2-W013) | M2, `prop:unfolded`; write-up log M2-W013, proof M2-W014, M2-W015 | [D] | M1 Prop 7.3, Section 7.4, Def 7.4, Prop 7.6, Prop 7.9; V-M2-1 to V-M2-4 | none yet; script `papers/M2/checks/S04_degree_two.py` (2) | proposed, 18 Nov 2026 (P191) |

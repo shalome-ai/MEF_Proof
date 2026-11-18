@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W007**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W020**.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -120,3 +120,189 @@ What it is for a state of the geometry to be at rest is not said in Definition~\
 - **Failure test:** a sentence of M2-W005 that says what it is for a state of the geometry to be at rest, or a proof in this section that the states at rest of M1, Definition 7.4, are states in the sense of M2-W005. The two points are taken up by cards S11 and S21 and are closed in M2.
 - **Confirmed:** Decision Log P189, 18 November 2026 (the read-back of S03, its sentence 6)
 - **Retires / retired by:** none
+
+### M2-W007 · active
+- **Statement (as it will be printed):**
+```tex
+By M1, Proposition~7.3, spinors exist on the geometry only through a $\Spinc$ structure. The spinor bundle of M1, Definition~2.7, is therefore the spinor bundle of a $\Spinc$ structure on the geometry, and to say which bundle a state is a section of is to say which $\Spinc$ structure that is.
+```
+- **Place:** `states 070`; after M2-W006
+- **Step:** S04
+- **Rests on:** M1 v7.3, Proposition 7.3 (`prop:spinc`), Definition 2.7 (`def:levels`); M2-W005
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.806: "spinors exist only through a $\Spinc$ structure"; l.214 for the spinor bundle of Definition 2.7, "on a spinor bundle over $M$"; "on the geometry" is the entry's, M1 having "on a geometry whose base contains $\CPtwo$"); the step "therefore" is the architect's reading, confirmed by the PI by read-back. Not claimed: that a $\Spinc$ structure has only one spinor bundle
+- **Tag:** none
+- **Failure test:** a later step of M2 that needs a state which is a section of a bundle belonging to no $\Spinc$ structure of the geometry.
+- **Confirmed:** Decision Log P191, 18 November 2026 (the read-back of S04, part 1, its sentence 1, and the reading in it)
+- **Retires / retired by:** none
+
+### M2-W008 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{proposition}[the base and space]\label{prop:basespace}
+A $\Spinc$ structure on $\CPtwo\times\Stwo\times S^{3}$ is determined by the first Chern class of its determinant line, which is two integers, one on $\CPtwo$ and one on $\Stwo$. For the integers of M1, three on $\CPtwo$ (M1, Proposition~7.3) and two on $\Stwo$ (M1, Section~7.4), there is at most one such structure: over the base and over space M1 leaves nothing free in the $\Spinc$ structure. \rigD
+\end{proposition}
+```
+- **Place:** `states 080`; after M2-W007
+- **Step:** S04
+- **Rests on:** M2-W009, M2-W010, M2-W011 (its proof); M1 v7.3, Proposition 7.3 (`prop:spinc`), Section 7.4, first paragraph, Proposition 7.9 (`prop:S3`)
+- **Mark:** CHECKED (the proof, M2-W009 to M2-W011); the integers READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.806, "$L=K^{-1}=\Oline{3}$"; l.827, "On $\Stwo$ the canonical structure has the integer two"; l.1058, $\Sigma=S^{3}$). Not shown here: that such a structure exists (M2-W012). M1 names its integers at l.827 on $\CPtwo\times\Stwo\times\Ttwo$ and not on this product: that the structure of the geometry gives one on this product with these integers is not shown here (card S04c puts the pieces together)
+- **Tag:** [D]: the first sentence is proved from cited theorems; the integers are results of M1 tagged [D]
+- **Failure test:** two different $\Spinc$ structures on $\CPtwo\times\Stwo\times S^{3}$ whose determinant lines have the integers three and two; or an error in a cited statement (V-M2-1 to V-M2-4).
+- **Confirmed:** Decision Log P191, 18 November 2026 (sentence 2)
+- **Retires / retired by:** none
+
+### M2-W009 · active
+- **Statement (as it will be printed):**
+```tex
+The cohomology groups of $\CPtwo$ with integer coefficients are $\Z$ in degrees $0$, $2$ and $4$ and zero in every other degree \cite[Theorem~3.19]{Hatcher}, and those of the sphere $S^{n}$ are $\Z$ in degrees $0$ and $n$ and zero in every other degree \cite[Corollaries~2.14 and~3.3]{Hatcher}. Each is finitely generated and free, so by the K\"unneth formula \cite[Theorem~3.15]{Hatcher}, applied twice, the second cohomology group of $\CPtwo\times\Stwo\times S^{3}$ is $\Z\oplus\Z$, one summand from $\CPtwo$ and one from $\Stwo$; the sphere $S^{3}$ adds nothing in degree two.
+```
+- **Place:** `states 090`; the first step of the proof of Proposition `prop:basespace` (M2-W008)
+- **Step:** S04
+- **Rests on:** Verified References V-M2-2, V-M2-3, V-M2-4
+- **Mark:** verified references, READ at source (V-M2-2 to V-M2-4); the degree-two count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (1)). Hand steps, in full: (i) Theorem 3.19 at $n=2$ gives the ring $\Z[\alpha]/(\alpha^{3})$ with $\alpha$ of degree two, whose groups are $\Z$ in degrees $0,2,4$, spanned by $1,\alpha,\alpha^{2}$, and zero otherwise; (ii) Corollary 2.14 gives the reduced homology of $S^{n}$, $n\geq1$: $\Z$ in degree $n$ and zero otherwise; the unreduced homology has $\Z$ more in degree $0$, the sphere being connected; none of these groups has torsion, so by Corollary 3.3 each cohomology group is the homology group of the same degree. The hypothesis of Theorem 3.15 that the factors are CW complexes is not restated in the entry: Hatcher gives the cell structures (Example 0.3, the sphere; Example 0.6, complex projective space; the locations found by search, the examples not read through), and says of the hypothesis that it "will be shown to be unnecessary in §4.1" (p.216). **The statement has "the sphere $S^{n}$" with no condition on $n$; it holds for $n\geq1$ (fresh reader, P193): corrected wording put to the PI**
+- **Tag:** none (a step of a proof)
+- **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}$ outside those two summands, or torsion in that group.
+- **Confirmed:** Decision Log P191, 18 November 2026 (sentence 3)
+- **Retires / retired by:** none
+
+### M2-W010 · active
+- **Statement (as it will be printed):**
+```tex
+The $\Spinc$ structures on an oriented manifold, when there is one, are acted on freely and transitively by its second cohomology group with integer coefficients, and the action of a class $a$ adds $2a$ to the first Chern class of the determinant line \cite[Proposition~1]{Gompf1997}.
+```
+- **Place:** `states 100`; the second step of the proof of Proposition `prop:basespace`
+- **Step:** S04
+- **Rests on:** Verified References V-M2-1
+- **Mark:** verified reference, READ at source (V-M2-1: Gompf, Proposition 1, with its setting and its proof, pp.43–45, and Examples 2(b), p.46, for oriented manifolds and their tangent bundles). Two steps of identification, said here: (i) the proposition is stated for a bundle over a CW complex; that it holds for an oriented manifold through its tangent bundle is Gompf's Examples 2(b), p.46; (ii) Gompf's $c_{1}(s)$ is the first Chern class of the line bundle $L$ of the structure (proof, p.45: "$c_{1}(s,\hat\tau)=c_{1}(L,\tau_{L})$"); that this $L$ is what M1 calls the determinant line is not Gompf's wording; Nicolaescu has the same fact with $\det(\sigma)$ (note to V-M2-1)
+- **Tag:** none (a step of a proof)
+- **Failure test:** the cited proposition does not say this of the tangent bundle of an oriented manifold.
+- **Confirmed:** Decision Log P191, 18 November 2026 (sentence 4)
+- **Retires / retired by:** none
+
+### M2-W011 · active
+- **Statement (as it will be printed):**
+```tex
+Two $\Spinc$ structures on $\CPtwo\times\Stwo\times S^{3}$ whose determinant lines have the same first Chern class therefore differ by a class $a$ with $2a=0$, and in $\Z\oplus\Z$ that is $a=0$: they are the same structure.
+```
+- **Place:** `states 110`; the last step of the proof of Proposition `prop:basespace`
+- **Step:** S04
+- **Rests on:** M2-W009, M2-W010
+- **Mark:** CHECKED (a hand computation, in full as written: by M2-W010 the two differ by one class $a$, and the first Chern classes differ by $2a$; they are equal, so $2a=0$; by M2-W009 the group is $\Z\oplus\Z$, where $2a=0$ gives $a=0$; the action is free, so the structures are the same)
+- **Tag:** none (a step of a proof)
+- **Failure test:** as M2-W008.
+- **Confirmed:** Decision Log P191, 18 November 2026 (sentence 5)
+- **Retires / retired by:** none
+
+### M2-W012 · active
+- **Statement (as it will be printed):**
+```tex
+Proposition~\ref{prop:basespace} speaks of the $\Spinc$ structure, and so of the spinor bundle as a bundle. That a $\Spinc$ structure with these integers exists is M1, Proposition~7.3, and is not shown again here. Nothing is said here of the lengths, of how a state is differentiated, of the fibre and its four cone points, or of time.
+```
+- **Place:** `states 120`; after the proof of Proposition `prop:basespace`
+- **Step:** S04
+- **Rests on:** M2-W008; M1 v7.3, Proposition 7.3 (`prop:spinc`)
+- **Mark:** READ (M2-W008 as logged; `canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.806, "A $\Spinc$ structure exists"). **"with these integers" is credited to Proposition 7.3 alone; the integer two is at l.827, Section 7.4 (fresh reader, P193): corrected wording put to the PI**
+- **Tag:** none
+- **Failure test:** a sentence of M2-W008 to M2-W011 that speaks of the lengths, of differentiation, of the fibre or of time, or that proves existence.
+- **Confirmed:** Decision Log P191, 18 November 2026 (sentence 6)
+- **Retires / retired by:** none
+
+### M2-W013 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{proposition}[the base, space and the fibre before it is folded]\label{prop:unfolded}
+A $\Spinc$ structure on $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ is determined by the first Chern class of its determinant line, which is three integers, one on $\CPtwo$, one on $\Stwo$ and one on $\Ttwo$. For the integers of M1, three on $\CPtwo$ (M1, Proposition~7.3), two on $\Stwo$ and, for a twist of the fibre of flux three, six on $\Ttwo$ (M1, Section~7.4 and Proposition~7.6), there is at most one such structure. \rigD
+\end{proposition}
+```
+- **Place:** `states 130`; after M2-W012
+- **Step:** S04
+- **Rests on:** M2-W014, M2-W015 (its proof); M1 v7.3, Proposition 7.3 (`prop:spinc`), Section 7.4, first paragraph, Proposition 7.6 (`prop:twist`), Proposition 7.9 (`prop:S3`)
+- **Mark:** CHECKED (the proof, M2-W014 and M2-W015); the integers READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, ll.806, 827, 832, 878, and l.1058 for $\Sigma=S^{3}$). Not shown here: that such a structure exists; that the structure of the geometry gives one on this product with these integers (as M2-W008); anything of the fibre folded (the pillowcase and its four cone points) or of time
+- **Tag:** [D]: the first sentence is proved from cited theorems; the integers are results of M1 tagged [D]
+- **Failure test:** two different $\Spinc$ structures on $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ whose determinant lines have the integers three, two and six; or an error in a cited statement (V-M2-1 to V-M2-4).
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English; Decision Log P191)
+- **Retires / retired by:** none
+
+### M2-W014 · active
+- **Statement (as it will be printed):**
+```tex
+The cohomology groups of the circle $S^{1}$ with integer coefficients are $\Z$ in degrees $0$ and $1$ and zero in every other degree \cite[Corollaries~2.14 and~3.3]{Hatcher}, and $\Ttwo=S^{1}\times S^{1}$. By the K\"unneth formula \cite[Theorem~3.15]{Hatcher} and the groups found in the proof of Proposition~\ref{prop:basespace}, the second cohomology group of $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ is $\Z\oplus\Z\oplus\Z$, one summand from each of $\CPtwo$, $\Stwo$ and $\Ttwo$: there is no mixed term, since $\CPtwo\times\Stwo\times S^{3}$ has no cohomology in degree one.
+```
+- **Place:** `states 140`; the first step of the proof of Proposition `prop:unfolded` (M2-W013)
+- **Step:** S04
+- **Rests on:** Verified References V-M2-2, V-M2-4; M2-W009
+- **Mark:** verified references, READ at source (V-M2-2, V-M2-4); the count CHECKED (`papers/M2/checks/S04_degree_two.py`, part (2); that $\CPtwo\times\Stwo\times S^{3}$ has no cohomology in degree one is its part (1)); the groups of the circle by the hand steps of M2-W009 at $n=1$. It agrees with M1's sentence (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.827: "one integer for each factor, with no mixed term"), which is not used as the ground
+- **Tag:** none (a step of a proof)
+- **Failure test:** a class of degree two on $\CPtwo\times\Stwo\times S^{3}\times\Ttwo$ outside those three summands, or torsion in that group.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English; Decision Log P191)
+- **Retires / retired by:** none
+
+### M2-W015 · active
+- **Statement (as it will be printed):**
+```tex
+The integer on $\Ttwo$ is $2d$ for a twist of the fibre of flux $d$ (M1, Section~7.4), and the flux is three (M1, Proposition~7.6): it is six. Two $\Spinc$ structures whose determinant lines have the same three integers differ by a class $a$ with $2a=0$ \cite[Proposition~1]{Gompf1997}, and in $\Z\oplus\Z\oplus\Z$ that is $a=0$: they are the same structure.
+```
+- **Place:** `states 150`; the last step of the proof of Proposition `prop:unfolded`
+- **Step:** S04
+- **Rests on:** M2-W010, M2-W014; M1 v7.3, Section 7.4, first paragraph, Definition 7.4 (`def:states`), Proposition 7.6 (`prop:twist`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.827: "A twist of the fibre by a line of degree $d$ on the torus … the integer on the torus becomes $2d$"; l.832 (Definition 7.4), where a twist of flux $d$ is the line of a divisor of degree $d$, so that "degree $d$" at l.827 is "flux $d$"; l.878: "Then the flux is three."); CHECKED (a hand computation, in full as written: $2\cdot3=6$; the rest as M2-W011 with $\Z\oplus\Z\oplus\Z$ for $\Z\oplus\Z$)
+- **Tag:** none (a step of a proof)
+- **Failure test:** as M2-W013.
+- **Confirmed:** checked, not read back, 18 November 2026 (the PI told in plain English; Decision Log P191)
+- **Retires / retired by:** none
+
+### M2-W016 · active
+- **Statement (as it will be printed):**
+```tex
+The fibre of the geometry is the pillowcase, the torus $\Ttwo$ folded (M1, Theorem~5.7), and M1 passes from the torus to the pillowcase by a lift of the fold: ``A \emph{state on the pillowcase}, for a given lift, is a state at rest that the lift leaves unchanged.'' (M1, Definition~7.4). The same is taken here for a state of the geometry: over the fibre, a state is a section over the covering torus that a lift of the fold to the spinor bundle leaves unchanged. This is a reading and is not derived: it is the second choice of this paper. Clause~(b) of M1, Definition~3.2, is its ground: it brings in no object that M1 does not have.
+```
+- **Place:** `states 160`; after the proof of Proposition `prop:unfolded` (M2-W015)
+- **Step:** S04
+- **Rests on:** M1 v7.3, Theorem 5.7 (`thm:fibre`), Definition 7.4 (`def:states`), Definition 3.2 clause (b); M2-W005; Minimality M2-2
+- **Mark:** DECLARED (a reading and a numbered choice, the second of M2; confirmed by the PI by read-back). The quotation READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.834; exact, checked by a word-for-word search; l.678 for the pillowcase as the torus folded; clause (b) at l.275: "nothing is present that is not needed: $M$ carries no object … that A1--A5 do not require"; "it brings in no object that M1 does not have" is the entry's gloss of the clause, in the words of M2-W005). Not shown and not claimed: that a lift of the fold to the spinor bundle of the whole geometry exists; that the data of M1 determine it (M2-W018; card S04b)
+- **Tag:** none: a reading; the choice in it is declared
+- **Failure test:** a later step of M2 that needs a state which the lifted fold does not leave unchanged; or card S21 finding that the states on the pillowcase of M1, Definition 7.4, are not states in this sense. M1's own test stands beside it (`papers/M2/M1_failure_tests.md`, M1-W024): a later paper that needs the states of the fibre to be counted on the covering torus and not on the pillowcase.
+- **Confirmed:** Decision Log P192, 18 November 2026 (the read-back of the fold, its sentence 1, and the reading in it)
+- **Retires / retired by:** none
+
+### M2-W017 · retired
+- **Statement (as it will be printed):**
+```tex
+M1 fixes the lift and its signs at the four corners: ``The corner signs are three alike and one odd, and the odd corner is one of the three that the drive cycles. For that lift the fibre has two states on the pillowcase, and the fold removes a third.'' (M1, Proposition~7.6).
+```
+- **Place:** `states 170`; after M2-W016
+- **Step:** S04
+- **Rests on:** M1 v7.3, Proposition 7.6 (`prop:twist`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.878; the quotation exact, checked by a word-for-word search). **The lead-in says more than l.878 (fresh reader, P193):** the quoted words are the conclusion of Proposition 7.6 under its hypotheses, which are not quoted; "that lift" is "one of the two lifts of the fold"; the corner signs are those of the twist (l.836), and the signs of the lift on spinors are Corollary 7.7. Corrected wording put to the PI
+- **Tag:** none in the sentence; Proposition 7.6 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at l.878 of M1 v7.3.
+- **Confirmed:** Decision Log P192, 18 November 2026 (sentence 2)
+- **Retires / retired by:** retired by M2-W019 (Decision Log P194, 18 November 2026). Rests on it and is flagged: M2-W018 (its statement does not quote this entry and is unchanged; it now rests on M2-W019)
+
+### M2-W018 · active
+- **Statement (as it will be printed):**
+```tex
+Proposition~\ref{prop:unfolded} speaks of the torus before it is folded. That the flux, the lift and the corner signs of M1 determine the spinor bundle over the pillowcase with its four cone points, so that nothing is left free there, is not shown in it. Nothing is said yet of time.
+```
+- **Place:** `states 180`; after M2-W017
+- **Step:** S04
+- **Rests on:** M2-W013, M2-W016, M2-W019 (in place of M2-W017, retired; flagged at P194: the statement is unchanged)
+- **Mark:** READ (M2-W013 to M2-W017 as logged; M2-W019 as logged, which has the hypotheses of M1, Proposition 7.6, where M2-W017 had a lead-in)
+- **Tag:** none
+- **Failure test:** a sentence of M2-W013 to M2-W017 that shows it, or that speaks of time. The two points are taken up by cards S04b and S04c and are closed in M2.
+- **Confirmed:** Decision Log P192, 18 November 2026 (sentence 3)
+- **Retires / retired by:** none
+
+### M2-W019 · active
+- **Statement (as it will be printed):**
+```tex
+M1, Proposition~7.6, has: ``Let the fibre satisfy clauses (ii) and~(iii) of Definition~2.1, the states of clause~(iii) being states on the pillowcase for one of the two lifts of the fold, and let the flux be the least that does so. Then the flux is three. The corner signs are three alike and one odd, and the odd corner is one of the three that the drive cycles. For that lift the fibre has two states on the pillowcase, and the fold removes a third.'' The corner signs are those of the twist (M1, Definition~7.4).
+```
+- **Place:** `states 170`; after M2-W016, in the place of M2-W017, which it replaces
+- **Step:** S04 (the correction of M2-W017 that chat C3 put to the PI, P193; entered in chat C3b)
+- **Rests on:** M1 v7.3, Proposition 7.6 (`prop:twist`), Definition 7.4 (`def:states`)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.878: the quotation is the whole first paragraph of the statement of Proposition 7.6, checked by script to be the line itself with M1's cross-reference `\ref{def:A5}` printed as its number, 2.1; l.836 for the last sentence: "The \emph{corner sign} of the twist at $P_{i}$ is $(-1)^{a_{i}}$"). Not quoted: the second paragraph of the statement of Proposition 7.6 (l.880, the two clauses taken singly). Not said here: the signs of the lift on spinors, which are M1, Corollary 7.7
+- **Tag:** none in the sentence; Proposition 7.6 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at l.878 of M1 v7.3; or the corner signs of Proposition 7.6 are not those that Definition 7.4 defines for the twist.
+- **Confirmed:** Decision Log P194, 18 November 2026 (the wording given by the PI; READ against M1, no new reading)
+- **Retires / retired by:** retires M2-W017

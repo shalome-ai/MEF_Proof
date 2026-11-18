@@ -1,6 +1,6 @@
 # M2 — the DAG (the SOW/DAG of M2)
 
-**What this is.** What M2 is to derive, what it starts from, and the steps that lead from the one to the other, each step a card in the form of `papers/M2/HANDOVER.md` §3. One work package is one result; a chat does the work packages that §4 gives it (the PI, Decision Log P183). Opened 18 November 2026 by the opening chat (Decision Log P180, P181). **The cards were drawn on 18 November 2026 by the chat that followed the opening chat (Decision Log P183): twenty-four work packages and six packages that are not steps, in twenty-four chats (§3 to §6).** **Amended 18 November 2026 by chat C1 (Decision Log P188): cards S01 and S02 are withdrawn and nothing was logged for them; M2 cites M1 by its printed numbers; the next work package is S03 (§3 rule 10, §4, §7).**
+**What this is.** What M2 is to derive, what it starts from, and the steps that lead from the one to the other, each step a card in the form of `papers/M2/HANDOVER.md` §3. One work package is one result; a chat does the work packages that §4 gives it (the PI, Decision Log P183). Opened 18 November 2026 by the opening chat (Decision Log P180, P181). **The cards were drawn on 18 November 2026 by the chat that followed the opening chat (Decision Log P183): twenty-four work packages and six packages that are not steps, in twenty-four chats (§3 to §6).** **Amended 18 November 2026 by chat C1 (Decision Log P188): cards S01 and S02 are withdrawn and nothing was logged for them; M2 cites M1 by its printed numbers; the next work package is S03 (§3 rule 10, §4, §7).** **Amended 18 November 2026 by chat C3 (Decision Log P192): S04 split; cards S04b and S04c added; the next work package is S04b (§4, §5, §7).**
 
 ---
 
@@ -71,7 +71,9 @@
 |---|---|---|---|
 | C1 | S01, S02 | withdrawn (P188): no entry logged; the checklist of §3 rule 10 made | done |
 | C2 | S03 | step; done in chat C1 (P189): M2-W001 to M2-W006 | done |
-| C3 | S04 | step | long |
+| C3 | S04 | step; done as far as its twelve sentences (P191, P192): M2-W007 to M2-W018; split | done |
+| C3b | S04b | step | medium |
+| C3c | S04c | step | long |
 | C4 | S05 | step | medium |
 | C5 | S06 | step (a reading of the PI's) | short, but the read-back is the weightiest of the paper |
 | C6 | S07, S08 | steps | medium |
@@ -96,7 +98,7 @@
 
 A chat that finishes its packages stops and reports; it does not begin the next chat's. Where two packages share a chat and the first runs long, the second moves to a chat of its own and the table is renumbered by the chat that closes.
 
-**What rests on what.** The packages are done in the order S01 to S12, N0, S13 to S24, N1 to N5. What each step rests on is its card's line "May use", which names only steps that come before it.
+**What rests on what.** The packages are done in the order S01 to S12 (S04b and S04c after S04 and before S05), N0, S13 to S24, N1 to N5. What each step rests on is its card's line "May use", which names only steps that come before it.
 
 ---
 
@@ -135,12 +137,31 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 - **Blind:** the PI to say.
 
 #### S04 · Where states live
+- **Done as far as its twelve sentences, 18 November 2026 (Decision Log P191, P192):** write-up log M2-W007 to M2-W018 (the base and space; the fibre before it is folded; the fold read, Minimality M2-2). The card's question is not yet answered for the folded fibre with its four cone points, nor along time: they are cards S04b and S04c below. Where a later card names "the entries of S04", M2-W007 to M2-W018 and the entries of S04b and S04c are meant.
 - **Kind:** proposition with proof.
 - **May use:** Definition 2.7, `def:levels`; Proposition 7.3, `prop:spinc`; Section 7.4, its first paragraph (the three integers of the determinant line); Definition 7.4, `def:states`; Proposition 7.6, `prop:twist`; Proposition 7.9, `prop:S3`; Theorem 5.7, `thm:fibre`; Proposition 5.8, `prop:A2`; Remark 6.2, `rem:whereH`. The entries of S01 to S03. External sources as the step needs them, each entered in Verified References first.
 - **The question:** On what, over the whole geometry, do the states of S03 live, as the data of M1 determine it: over the base, over space, over the fibre with its four cone points, and along time? Is anything in it left free by M1?
 - **Produces:** a statement with its tag; a list of what, if anything, is left free.
 - **Done means:** rule 8; whatever is left free is put to the sixth axiom (rule 6) or to the PI.
 - **Size:** 12; a split is likely (the base and space; the fibre and its cone points; time).
+- **Blind:** the PI to say.
+
+#### S04b · The bundle over the pillowcase
+- **Kind:** proposition with proof.
+- **May use:** Theorem 5.7, `thm:fibre`; Section 7.4, from its second paragraph to the paragraph after Definition 7.4 (the covering torus $E$; Definition 7.4, `def:states`; the one fact about spinors that M1 uses); Lemma 7.5, `lem:states`; Proposition 7.6, `prop:twist`; Corollary 7.7, `cor:lift`, and the two paragraphs after it. M2-W005, M2-W007, M2-W013 to M2-W018. Verified References V-M2-1 to V-M2-4. Further external sources as the step needs them, each entered in Verified References first.
+- **The question:** In the sense of M2-W016, does a lift of the fold to the spinor bundle exist, and is it one or several? Do the flux, the lift and the corner signs that M1 fixes determine the spinor bundle over the pillowcase with its four cone points, or is anything left free there?
+- **Produces:** a statement with its tag; a list of what, if anything, is left free.
+- **Done means:** rule 8; whatever is left free is put to the sixth axiom (rule 6) or to the PI; the point M2-W018 marks as not shown is closed, or declared with its failure test.
+- **Size:** 8 to 10.
+- **Blind:** the PI to say.
+
+#### S04c · Along time
+- **Kind:** proposition with proof.
+- **May use:** Section 4.1 of M1 (the step; that the internal piece is carried round time by a whole number of applications of one map); Theorem 4.2, `thm:drive`; Proposition 5.8, `prop:A2`; Corollary 7.8, `cor:timecircle`, its statement on the number of steps and on $M_{0}^{3}$ (the element of the drive on spinors is the matter of S05: if this step finds that it cannot do without it, rule 4 applies). M2-W005, M2-W007 to M2-W018, and the entries of S04b. Verified References V-M2-1 to V-M2-4. Further external sources, each entered first.
+- **The question:** Time is a circle round which the fibre is carried by the step. What do the data of M1 fix of the spinor bundle over time together with the fibre, and is anything left free? How do the pieces go together: does the structure of the whole geometry give, on the products of M2-W008 and M2-W013, a structure with M1's integers, which those entries mark as not shown?
+- **Produces:** a statement with its tag; a list of what, if anything, is left free.
+- **Done means:** rule 8; whatever is left free is put to the sixth axiom (rule 6) or to the PI; the finite part scripted or certified, with the certificate for the finite parts of S04, S04b and S04c together.
+- **Size:** 10 to 12; a split is possible.
 - **Blind:** the PI to say.
 
 #### S05 · The fold and the drive on states
@@ -349,3 +370,4 @@ A chat that finishes its packages stops and reports; it does not begin the next 
 - 18 November 2026 (P183): drawn. Twenty-four work packages (S01 to S24), six packages that are not steps (N0 to N5), twenty-four chats.
 - 18 November 2026 (P188), chat C1: S01 and S02 withdrawn, nothing logged; rule 10 of §3 added (M2 cites M1 by number; the checklist); the row of C1 in §4 marked; "equation (1.1)" corrected to "equation (1)" on the cards, which is the number M1 v7.3 prints (6 places; presentation). The line "Blind" of S01 and S02: the PI said there are no targets (P187). Twenty-two work packages remain (S03 to S24); the next is S03, in chat C2.
 - 18 November 2026 (P189), chat C1: S03 done in chat C1 at the PI's direction (M2-W001 to M2-W006). Rule 10 of §3 reworded on what a card may use of M1. Twenty-one work packages remain (S04 to S24); the next is S04, in chat C3.
+- 18 November 2026 (P191, P192), chat C3: S04 done as far as twelve logged sentences (M2-W007 to M2-W018) and split there, as the card foresaw: new cards S04b (the bundle over the pillowcase) and S04c (along time), in chats C3b and C3c, before S05. The chats are not renumbered. Twenty-two work packages remain (S04b, S04c, S05 to S24); the next is S04b.
