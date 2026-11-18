@@ -7,7 +7,8 @@ S^2, S^3 and S^1 (each group free; Hatcher Theorem 3.19, Corollaries 2.14 and
 Theorem 3.15) gives the rank of H^k of a product as the coefficient of t^k in
 the product of the polynomials of its factors.  The script multiplies them,
 for
-  (1) CP^2 x S^2 x S^3                    (M2-W009, Proposition "the base and space"),
+  (1) CP^2 x S^2 x S^3                    (M2-W020, which replaced M2-W009 at P195;
+                                           Proposition "the base and space"),
   (2) CP^2 x S^2 x S^3 x S^1 x S^1        (M2-W014, the fibre before it is folded; T^2 = S^1 x S^1),
 and prints the ranks in degrees 1 and 2 and the factors the classes come from.
 
