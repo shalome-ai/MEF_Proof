@@ -118,3 +118,8 @@
 | **state of the fibre at rest**; **state on the pillowcase** | "a holomorphic section of the twist"; one "that the lifted fold leaves unchanged" | M1 Def 7.4 | BANKED (P36). The reading that these are the "objects" of the fifth axiom is the second of M1's six numbered choices **Superseded 14 Nov 2026 at v7.0 (proposed; P135, P136):** in canon v7.0 the holomorphic sections on the covering torus are "states at rest", and "state on the pillowcase" and "the states of the folded fibre at rest" are as the rows of those names in the section "Terms of M1" give them (write-up log M1-W024, M1-W023). |
 | **corner sign** | "(−1)^{aᵢ}, the action of the first lift on the fibre of 𝒪(D)" at Pᵢ; the four taken up to one overall sign | M1 Def 7.4 | BANKED (P36) |
 | **shadow** (of a state) | "Two states of the fibre at rest have the same shadow: they differ only in the internal piece" | M1 Def 2.1(iii), Def 7.4 | BANKED (P36); extends the row *shadow* above from points to states |
+
+## M2 (new start)
+
+| **term** | definition | source |
+|---|---|---|

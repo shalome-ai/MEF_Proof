@@ -2,13 +2,15 @@
 
 **Written 13 November 2026 at the PI's direction ("go", Decision Log P163), by the chat that closed J10 and J8 of M1 and wrote the paper assembly protocol. M2 is started from scratch on the new version of M1 (P94, P95, P96). This file is the brief for the chat that opens M2, and the standing rules for every M2 chat after it.**
 
-**This file contains no physics and no mathematics, and must not, at any time.** The chat that wrote it is not blind for M2: it has read records that describe, in outline, what the abandoned starts of M2 stood on. It has therefore written here only the process, the reading list, and what the first chat does. What M2 is to derive is stated by the PI in the opening chat and is then held in `papers/M2/DAG.md`, not here.
+**Brought up to date on 18 November 2026 by the opening chat, at the PI's direction (Decision Log P180, P181): "You need to create a new handover document that has (1) and has 3 & 2 as the starting points with no reading of the lift_sign.md". The next chat starts at §0A, which governs where an older line of this file differs from it.** The opening chat is not blind for M2 either: besides the reading list it read, with the PI's leave, parts of M1's workshop (the later sections of `papers/M1/HANDOVER.md`; the method and trap sections of `HANDOVER_BUILD.md`, `HANDOVER_J7.md` and `HANDOVER_J10_J8.md`, and §17 of the first; `build_v7/COMPOSED.md`; and `LIFT_SIGN.md` without its §5 and §7). It has written here only process and the PI's own words.
+
+**This file contains no physics and no mathematics, and must not, at any time; the one exception, made at the PI's direction (P181), is the PI's own sentence on what M2 is to derive, quoted in §0A.** The chat that wrote it is not blind for M2: it has read records that describe, in outline, what the abandoned starts of M2 stood on. It has therefore written here only the process, the reading list, and what the first chat does. What M2 is to derive is stated by the PI in the opening chat and is then held in `papers/M2/DAG.md`; here there is only the PI's sentence.
 
 **M2 does not begin until the new M1 is in canon** (P94). **It is, since 14 November 2026: the file is named in §9, and every blank of §9 is filled.** This file was written when that version was expected to be called v7.0; three small versions followed on the day, and the file in canon is v7.3. **Wherever §§1 to 8 of this file say "M1 v7.0", read "M1 as it stands in canon, the file named in §9".** (In §9 the labels of the blanks keep "v7.0", which was the version that first went into canon.)
 
 **Brought up to date on 14 November 2026 by the chat that built M1, at the PI's direction ("create the handover for the M2 SOW/DAG chat", Decision Log P179); what was changed, and its check, are in §10.** The PI calls what the opening chat produces "the SOW/DAG" of M2: it is `papers/M2/DAG.md` with its cards (§2, §3).
 
-**Checked** by a fresh reader and corrected; see §10. The Decision Log rows named in this file (P88, P94–P96, P104, P141, P154, P159, P163, P164, P169, P172–P179) are named for the PI and for the record: **an M2 chat does not open them** (§5).
+**Checked** by a fresh reader and corrected; see §10. The Decision Log rows named in this file (P88, P94–P96, P104, P141, P154, P159, P163, P164, P169, P172–P179) are named for the PI and for the record: **an M2 chat does not open them** (§5). Rows P180 onward are M2's own and are read (§4).
 
 ---
 
@@ -20,6 +22,23 @@
 4. Then the reading list of §4, and nothing else. The list is a whitelist.
 
 Run every command from the repository root, `/home/dhiren/MEF_Proof`.
+
+---
+
+## 0A. Where the next chat starts (18 November 2026; Decision Log P180, P181)
+
+**1. What M2 is to derive.** The PI's words, confirmed by read-back (P181): "What is left for paper M2 to do is to derive the equation that naturally sits on the manifold.  It will need this result, to derive the equation.  How it is used to derive the equation is up to M2 using first principles." The read-back the PI confirmed is `papers/M2/DAG.md` §1, in full, and is read there; it is not restated here. "This result" is named in `papers/M2/DAG.md` §2 and is cited from M1 v7.3 as printed.
+
+**2. The starting points, read first and whole, in this order,** after CLAUDE.md and this file:
+- `registers/Learnings_Register.md` (the lessons of M1, L1 to L25, and of M2 from L26);
+- M1 as it stands in canon, `canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, with its glossary (Appendix B);
+- `papers/M2/DAG.md`.
+
+Then the rest of the list of §4.
+
+**3. `papers/M1/LIFT_SIGN.md` is not read, in any part** (the PI, P181: "with no reading of the lift_sign.md"). What M2 needs of it is in M1 v7.3.
+
+**4. The work package of the next chat** is what remains of §2: its things 2 to 5 (the cards of the DAG, drawn up with the PI; the write-up log opened; the two points the assembly protocol leaves to be settled; the glossary file opened). Thing 1 is done. The sections "M2 (new start)" of the registers and the ledger are open (§5). No step of the DAG is begun in that chat. It is a chat that is not a step (§3) and ends as §3 says; when it rewrites §8 it also brings this section up to date, or removes what of it is spent.
 
 ---
 
@@ -44,7 +63,7 @@ So M2 is written by two protocols and one rule:
 
 **It derives nothing.** It does five things with the PI and stops.
 
-1. **What M2 is to derive.** The PI states it, in the PI's own words. The architect reads it back by CLAUDE.md §3: the words verbatim; a plain-English restatement and the formal translation; which results would rest on it; where a physicist, a mathematician or a philosopher would hear something else; the opposite meaning the words allow; any conflict with earlier statements or rulings. Only the read-back the PI confirms stands. The architect proposes no physics.
+1. **What M2 is to derive.** *(Done, 18 November 2026: §0A, and `papers/M2/DAG.md` §1.)* The PI states it, in the PI's own words. The architect reads it back by CLAUDE.md §3: the words verbatim; a plain-English restatement and the formal translation; which results would rest on it; where a physicist, a mathematician or a philosopher would hear something else; the opposite meaning the words allow; any conflict with earlier statements or rulings. Only the read-back the PI confirms stands. The architect proposes no physics.
 2. **The DAG.** `papers/M2/DAG.md`: the steps from M1 v7.0 and the axioms to what M2 is to derive, each a card in the form of §3, drawn up with the PI. The PI supplies the direction; the architect supplies the form and says where a step is too large. If the cards cannot all be written comfortably in one chat, the opening chat writes the first few and says so; the rest are written a few at a time by the chats that follow (§3, "Chats that are not steps").
 3. **The write-up log.** `papers/M2/WRITE_LOG.md` is opened with its rules and its entry format (CLAUDE.md §10; the form is the head of `papers/M1/WRITE_LOG.md`, §4), and with no entries.
 4. **Two things the assembly protocol leaves to be settled when M2 opens** (its last section): the form of an entry's "place" line that a script can order by; and where the text that is not mathematics comes from (title, abstract, the plain-English openings that `tools/PAPER_FORMAT.md` asks for, headings, bibliography). Each is a point of process, put to the PI in plain English with a proposal.
@@ -112,10 +131,11 @@ Then the end of every chat (§3, steps 4 to 8, so far as they apply), with the s
 - **M2's own sections of the registers and of the ledger** (§5, "How M2 writes and reads its records"): from the heading `## M2 (new start)` to the end of the file, in each.
 - **`papers/M2/`**: this file, `DAG.md`, `WRITE_LOG.md`, `GLOSSARY.md`, `STEP_AUDIT.md`, `checks/`, and the files §9 names, as they come to exist.
 - **`papers/M1/WRITE_LOG.md` from its first line to the line `## Entries` only**, for the form of a write-up log: `sed -n '1,/^## Entries/p' papers/M1/WRITE_LOG.md`. No entry of it is read.
-- **The sealed list, so as to know what is sealed:** `sed -n '/^## Sealed: not to be read/,$p' papers/M1/HANDOVER.md`. Nothing else of that file. The list was written for sessions on M1: where it says that something sealed is "read" somewhere else (for example in M1's step audit), that does not hold for an M2 chat (§5); its note that the folder `papers/M2/` no longer exists is out of date.
+- **The sealed list, so as to know what is sealed:** `sed -n '/^## Sealed: not to be read/,/^---$/p' papers/M1/HANDOVER.md` (33 lines, ending at the first rule after the list; corrected 18 November 2026, P180: the command first written here printed to the end of the file, and sections added to that file afterwards were read by the opening chat). Nothing else of that file. The list was written for sessions on M1: where it says that something sealed is "read" somewhere else (for example in M1's step audit), that does not hold for an M2 chat (§5); its note that the folder `papers/M2/` no longer exists is out of date.
 - **`canon/omega-definition-usage_v2.md` §6a only**, for the names that gate 3 forbids (the sealed list allows it).
 - **The Decision Log: from the first row of M2 on, and no earlier row** unless the PI names it. The first row of M2 is the first row the opening chat writes; its number is recorded in §8. To read M2's rows: `sed -n '/^| P<that number> /,$p' registers/Decision_Log.md`. To find the last row used, without reading any: `grep -o '^| P[0-9]*' registers/Decision_Log.md | tail -1`; the next free row is one more.
 - **`canon/MEF_Academic_Register_Guide.md`** when writing is done (CLAUDE.md §6), **without its §5.2**: `awk '/^### 5\.2 /{skip=1} /^### 5\.3 /{skip=0} !skip' canon/MEF_Academic_Register_Guide.md` (it prints the guide and leaves out everything from the heading of §5.2 to the heading of §5.3; tested on 14 November: 333 of 354 lines, the heading of §5.2 not among them). The chat that built M1 read the guide and reported (13 November) that its §5.2, headed "The Master Equation, in-register" (ll.208–228), prints a display of the Master Equation with a gloss of its terms; the sealed list seals that display elsewhere, so the section is not read by an M2 chat. Whether any other section of the guide holds something of the earlier M2 was not reported; it is not on the sealed list.
+- **`registers/Learnings_Register.md`**, whole, at the start of every chat (opened 18 November 2026 at the PI's direction, P180): the lessons on how the papers are made, beginning with those of M1. It holds process only. A lesson learnt in a chat is proposed as a new row in that chat's closing report.
 - **`tools/ROSETTA_STONE.md`** only when the PI writes "Please Rosetta Translate x", or to add a row.
 - **External sources** the PI supplies or a step needs; each is entered in Verified References before a paper cites it (CLAUDE.md §4).
 
@@ -127,6 +147,7 @@ Then the end of every chat (§3, steps 4 to 8, so far as they apply), with the s
 
 - **Everything on the sealed list** (the section of `papers/M1/HANDOVER.md` that §4 prints). Among it: `superseded/M2_v1/`; `superseded/M2_second_start/`; Decision Log rows P1–P39 with the section of 8 November, and rows P71–P87; `registers/records/2026-11-11_M2_opening_musing_SEALED.md` and its figure; `registers/Rulings_In_Force.md` §§4–6; the ledger's section on M2 v1.0 and the targets after it; the Minimality rows headed "M2 v1.0"; Definitions and Verified References rows that cite `M2_WP…`, M2 or `papers/M2/…` notes of the earlier starts; the display of the Master Equation in `canon/omega-definition-usage_v2.md`; `papers/M1/LIFT_SIGN.md` §5; the series plan's rows for M6, M7, M9, M10 and M16. "Do not search the ledger, the registers or the Decision Log for "M2"."
 - **The Decision Log before the first row of M2.** For rows P88 onward this is the architect's addition and not a ruling: it was flagged at P96 for rows P88–P96, which name in outline what the abandoned second start stood on, and it is extended here to every row up to M2's first, several of which record leads and musings that are premises of nothing.
+- **`papers/M1/LIFT_SIGN.md`, in any part** (the PI, 18 November 2026, P181: "with no reading of the lift_sign.md").
 - **Everything else under `papers/M1/`:** the handovers, `STEP_AUDIT.md`, the notes, the entries of the write-up log, `build_v7/`. They are the workshop of M1; M2 is derived from the finished paper.
 - **`superseded/`, `sources/`** (the old corpus is not used to derive; it is compared with afterwards, CLAUDE.md §6), **`papers/M3/`, `sow/M3/`, `registers/records/`.**
 - **`canon/M2/` and `MEFProof/Paper_M2/`, if they exist when M2 opens.** The chat that wrote this file does not know whether either holds files of a withdrawn M2. If either exists and is not empty, do not open its files: tell the PI, who says what is done with them. M2's own certificates go to `MEFProof/Paper_M2/` only after that.
@@ -179,9 +200,10 @@ All of CLAUDE.md applies. These are the ones the fortnight on M1 showed to matte
 
 *(Rewritten at the end of every M2 chat, in one page. Entries are named by number; no mathematics is restated.)*
 
-- **State, 14 November 2026:** not begun. No DAG, no write-up log, no glossary file, no entry. **M1 is in canon (§9) and every blank of §9 is filled: the opening chat may begin.** `papers/M2/` holds this file and the two files §9 names. `canon/M2/` and `MEFProof/Paper_M2/` do not exist (looked for by name on 14 November, nothing opened).
-- **First Decision Log row of M2:** *(empty: the opening chat writes it here)*
-- **Next chat, and its work package:** the opening chat (§2).
+- **State, 18 November 2026:** opened. What M2 is to derive is confirmed (P181; `papers/M2/DAG.md` §1). `papers/M2/DAG.md` exists and holds no card. No write-up log, no glossary file, no entry, no step begun. `registers/Learnings_Register.md` is written (L1 to L26). The sections "M2 (new start)" are open at the end of Rulings in Force (one row), Definitions, Verified References, Minimality, Corpus Errors, Future-Mx and the ledger. `canon/M2/` and `MEFProof/Paper_M2/` do not exist (looked for by name on 18 November, nothing opened).
+- **Not read by the opening chat, of the list of §4:** `papers/M2/M1_failure_tests.md`; the terms of M1 in the Definitions Register; Rulings in Force to its §3; `canon/omega-definition-usage_v2.md` §6a. The next chat reads them. The register guide was not read either; it is read when writing is done (§4).
+- **First Decision Log row of M2:** P180 (18 November 2026)
+- **Next chat, and its work package:** §0A, point 4.
 - **Size limit of a step:** about a dozen logged sentences (a first guess; §3).
 - **Open, for the PI:** nothing yet.
 
@@ -214,3 +236,5 @@ It found the quotations word for word and **no sentence that states a physical o
 **Brought up to date, 14 November 2026 (Decision Log P173–P179), by the chat that built M1; that chat is not blind for M2 either, and has written here only process.** Changed: the note at the head that the file in canon is v7.3 and that "M1 v7.0" is to be read as the file of §9; the fifth thing the opening chat does (the glossary), with one clause in the card's "Done means", one sentence in step 3 of a step chat, the glossary file in the list of §4, and rule 12 of §6; the register guide read without its §5.2; the glossary of M1 named in §4; §8; the values of §9 and the paragraph on the glossary under its table. A fresh reader was then given this file, CLAUDE.md and `tools/PAPER_FORMAT.md` and asked whether the changed passages state any physics or mathematics or anything about an earlier M2, whether their quotations of the PI are word for word against Decision Log rows P173 and P177 (which it was given, and no other row), and whether they agree with the rest of the file and with CLAUDE.md; its findings and what was done are in Decision Log P179.
 
 **It could not verify, and neither could the chat that wrote this file:** whether `canon/MEF_Academic_Register_Guide.md`, `tools/ROSETTA_STONE.md`, `MEFProof/`, `canon/M2/`, the ledger or the Future-Mx Register hold material of an earlier M2; the row formats of the registers other than Rulings in Force; that each register's table ends its file.
+
+**Brought up to date, 18 November 2026 (Decision Log P180, P181), by the opening chat.** Changed: the two paragraphs at the head; §0A, new; the note "Done" at thing 1 of §2; in §4 the command for the sealed list, corrected, and the Learnings Register added; in §5 the line on `papers/M1/LIFT_SIGN.md`; §8. Nothing else of §§1 to 9 was changed. A fresh reader then checked the changed passages, `papers/M2/DAG.md`, the Learnings Register, the row of Rulings in Force and rows P180 and P181 against their sources, within reading limits that named nothing sealed; its findings and what was done are in Decision Log P182. The corrections were not checked a second time.

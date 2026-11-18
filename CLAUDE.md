@@ -59,7 +59,7 @@ The weak point is the identification step ("this object is that one"), which no 
 - Writing and layout follow `tools/PAPER_FORMAT.md` and `canon/MEF_Academic_Register_Guide.md`. A paper is put together from its write-up log (§10) by `tools/Paper_assembly_protocol.md`. A paper is never finished unattended, and it goes into `canon/` only at the PI's word.
 
 ## 7. Registers and ledger
-All in `registers/`, edited only in this repository: Decision Log, Rulings in Force, Minimality, Definitions, Verified References, Corpus Errors, Future-Mx (steps owed, with the owing paper), and `records/` for verbatim records.
+All in `registers/`, edited only in this repository: Decision Log, Rulings in Force, Minimality, Definitions, Verified References, Corpus Errors, Future-Mx (steps owed, with the owing paper), Learnings (the lessons on how the papers are made; read whole at the start of every session; a lesson is added in the session that learns it), and `records/` for verbatim records.
 - Claude writes the Decision Log entry at the moment of a ruling, with the PI's words verbatim.
 - For every other register and for the ledger, Claude proposes and the PI banks by commit.
 - `ledger/M-Derivation-Proof-Ledger.md` says where a result lives and at what rigour. Ledger first, then the paper. Never edit `canon/` or a banked row silently.

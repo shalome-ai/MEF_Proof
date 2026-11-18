@@ -91,3 +91,6 @@ Source: `papers/M1/STEP_AUDIT.md` §11.21; `papers/M1/WRITE_LOG.md` M1-W037, M1-
 (c) **Not changed:** the row "trace ≥ 4" (l.1007), which keeps its [R] (P154).
 
 **Action.** Corrected in the one new version of M1, built from the active entries of the write-up log.
+
+## M2 (new start)
+

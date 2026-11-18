@@ -94,3 +94,9 @@ A statement the PI opens with "my musings:" is narrative for the architect to tr
 ## 7. Names
 
 Forbidden names for ω: `canon/omega-definition-usage_v2.md` §6a. Gate 3 checks them.
+
+## M2 (new start)
+
+| ruling | source |
+|---|---|
+| **What M2 is to derive (PI, 18 November 2026).** "What is left for paper M2 to do is to derive the equation that naturally sits on the manifold.  It will need this result, to derive the equation.  How it is used to derive the equation is up to M2 using first principles." The read-back the PI confirmed is `papers/M2/DAG.md` §1, in full; "This result" is taken by the architect to be the element of the drive on spinors as M1 v7.3 prints it (Section 5.5 and Corollary 7.8); that taking is the architect's (P181, point 4). | Decision Log P181 |

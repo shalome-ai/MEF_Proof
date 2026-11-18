@@ -142,3 +142,8 @@
 
 ## PROVISIONAL imports from the old ledger (menu only; not citable until re-derived)
 *To be populated per paper at its opening session, from `proof_derivation_ledger_v22.md` rows for the paper's sources, each marked PROVISIONAL (old ledger line n) with the old rigour tag quoted, never trusted. The first import is M3's (Paper XX rows) and M4's (Paper 3 Prop 5; Paper 5 d_odd; Paper XI).*
+
+## M2 (new start)
+
+| Result | Where | Tag | Inputs | Certificate | Status |
+|---|---|---|---|---|---|
