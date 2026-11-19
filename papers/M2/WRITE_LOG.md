@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W099**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W104**.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -1446,3 +1446,73 @@ M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A
 - **Failure test:** the quoted words do not stand at ll.190 and 704 of M1 v7.3.
 - **Confirmed:** Decision Log P232, 19 November 2026 (the corrected wording; the PI: "1, 2, 3 and 4 confirmed, commit and push.")
 - **Retires / retired by:** retires M2-W090
+
+### M2-W099 · active
+- **Statement (as it will be printed):**
+```tex
+Proposition~5.8 of M1 measures lengths on time together with the fibre: ``Let lengths on $T$ together with the fibre be measured by $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$, the fibre at $s+L$ being joined to the fibre at $s$ by the step.'' Here $s$ is the length along $T$, and $x,y$ are the coordinates on the fibre along $v_{1},v_{2}$ (M1, Proposition~5.8). In these lengths the fibre is scaled, by functions on time: beside the lengths at $s=0$, the lengths of the fibre along $v_{1}$ are multiplied by $e^{\kappa s}$ and those along $v_{2}$ by $e^{-\kappa s}$, and lengths along time are not multiplied.
+```
+- **Place:** `warp 010`; the first entry of the section and of S13
+- **Step:** S13
+- **Rests on:** M1 v7.3, Proposition 5.8 (`prop:A2`, l.704)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.704: the quotation is one whole sentence of the statement of Proposition 5.8, checked by script (`papers/M2/checks/S13_quotes.py`) to be a substring of the line; "Here $s$ is the length along $T$" and "the coordinates on the fibre along $v_{1},v_{2}$" are in the words of the same line, "Let $s$ be the length along $T$" and "let $x,y$ be the coordinates on the fibre $\Ttwo=\R^{2}/\Z^{2}$ along $v_{1},v_{2}$", where $v_{1}$ is "a unit eigenvector of $M_{0}$ with eigenvalue $\phi^{2}$" and "$v_{2}=Sv_{1}$"). CHECKED, a hand step in full: in $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$ the coefficient of $\mathrm{d}s^{2}$ is $1$, that of $\mathrm{d}x^{2}$ is $e^{2\kappa s}$ and that of $\mathrm{d}y^{2}$ is $e^{-2\kappa s}$, and there is no mixed term; a length is the square root of the form, so that a displacement along $v_{1}$ alone has length $e^{\kappa s}$ times its length at $s=0$, one along $v_{2}$ alone has $e^{-\kappa s}$ times, and one along time alone has the same length at every $s$; the two factors depend on $s$ and on nothing else. "scaled" and "function on" are the words of M1, l.127, where M1 uses them of the product in its display; M1 does not use them of the lengths of Proposition 5.8, and their use here is the hand step above (added after the fresh reader's check, P235). "the fibre" is here the fibre of l.704, "the fibre $\Ttwo=\R^{2}/\Z^{2}$", as in M2-W048 and M2-W071; in M2-W101 it is $\Ttwo/\Ztwo$; M1 uses the word both ways (P235). Proposition 5.8 is tagged [D] in M1, lays these lengths down and has no proof printed under it (M2-W098). M2-W048, M2-W069 and M2-W071 use the same lengths. **Not shown and not claimed** (the PI told before confirming, P234): which warp the $\times_{w}$ of M1's display records; that the geometry of M1 has no other warp; anything of lengths on space or on the base
+- **Tag:** none in the sentence; Proposition 5.8 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at l.704 of M1 v7.3; or the coefficients of the form read otherwise than in the hand step.
+- **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
+- **Retires / retired by:** none
+
+### M2-W100 · active
+- **Statement (as it will be printed):**
+```tex
+These lengths are a warp as M1, Definition~2.4, has it: the warping direction $s$ of its clause~(ii) is the length along time, the warped piece is the fibre, and the involution of its clause~(iii) is the fold of the fibre, ``Applied twice it is $(s,x,y)\mapsto(s,-x,-y)$, the fold $\iota$.'' (M1, Proposition~5.8). It is of these lengths that M1 has ``The geometry therefore satisfies A2.''
+```
+- **Place:** `warp 020`; after M2-W099
+- **Step:** S13
+- **Rests on:** M2-W099; M2-W098 (the statement of M1, Definition 2.4, quoted whole); M1 v7.3, Definition 2.4 (`def:A2`, l.190), Proposition 5.8 (`prop:A2`, l.704)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.704: the two quotations are the last two sentences of the statement of Proposition 5.8, checked by script to be substrings of the line; l.190, as M2-W098 quotes it whole). A matching of the clauses of Definition 2.4 to Proposition 5.8, term by term: clause (ii) has "along the warping direction $s$ the lengths in one direction of the warped piece are multiplied by $w=e^{\kappa s}$ and those in another by $e^{-\kappa s}$", and by M2-W099 the $s$ of Proposition 5.8 is the length along time and the lengths so multiplied are those of the fibre along $v_{1}$ and along $v_{2}$; clause (iii) has "a symmetry of the shape that swaps $\kappa$ for $-\kappa$, and applied twice it is an involution $\iota$ of the warped piece", and Proposition 5.8 has "The map $(s,x,y)\mapsto(-s,-y,x)$ … swaps $\kappa$ for $-\kappa$. Applied twice it is $(s,x,y)\mapsto(s,-x,-y)$, the fold $\iota$.", a map of the fibre at each $s$. "warp" is the word of M1's glossary (l.1235) and of l.187; "warped piece" and "warping direction" are the words of l.190. No line of M1 says in words that the warped piece of Definition 2.4 is the fibre or that its $s$ is the $s$ of Proposition 5.8: the matching of clauses (ii) and (iii) is the architect's, an identification step, told to the PI in the read-back as a matching term by term (P234); M1 itself has only "The geometry therefore satisfies A2." and, at l.193, that the involution will be found to be the fold. Clause (i) is not matched here: which product of (2) it is met by is said by no entry (reworded after the fresh reader's check, P235; the mark had "it gives no reading of its own"). **Not shown and not claimed** (P234): that this is the warp the display's $\times_{w}$ records; that it is the only warp of the geometry. Rule 7 of the plan: M1-W025 to M1-W028 looked at; M1-W026 ("a later paper that needs the growth to sit elsewhere than between time and the fibre, or a rate that is not $2\log\phi$ per step; a step of the drive that no quarter-turn carries to its inverse.") is not met by this entry, which has the growth between time and the fibre
+- **Tag:** none in the sentence; Proposition 5.8 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at ll.190 and 704 of M1 v7.3; or a clause of M1, Definition 2.4, that the lengths of M2-W099 do not meet with the warping direction and the warped piece named here.
+- **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
+- **Retires / retired by:** none
+
+### M2-W101 · active
+- **Statement (as it will be printed):**
+```tex
+Clause~(i) of M1, Definition~2.4, asks that ``at least one product in~(2) is a warped product'', and (2) is $M=(T\times\Sigma)\times F$ (M1, Definition~2.1). The internal piece is the base with the fibre, $F=\text{base}\times\Ttwo/\Ztwo$ (M1, Remark~6.3). The product beside which the display of M1 prints $\times_{w}$, the base with the fibre, is therefore a product within $F$, and is not one of the products of~(2).
+```
+- **Place:** `warp 030`; after M2-W100
+- **Step:** S13
+- **Rests on:** M1 v7.3, Definition 2.4 (`def:A2`, l.190), Definition 2.1 (`def:A5`, equation (2), `eq:family`, l.148), Remark 6.3 (`rem:split`, l.760), Appendix B (l.1241), the display of ll.124 to 125 and of l.1094 (Theorem 8.1)
+- **Mark:** READ, with one step of the architect's (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.190: the quotation is a substring of the line with M1's cross-reference `\eqref{eq:family}` printed as its number, (2), checked by script; l.148: "M \;=\; (T \times \Sigma) \times F ,", equation (2), in Definition 2.1; l.760: "$F=\text{base}\times\Ttwo/\Ztwo$", in Remark 6.3, also in M1's glossary at l.1241; l.1094: "\Mtwelve=(S^{1}_{\Sol}\times S^{3})\times\bigl[(\CPtwo\times\Stwo)\times_{w}(\Ttwo/\Ztwo)\bigr]^{\Spinc}", where the symbol $\times_{w}$ stands between $\CPtwo\times\Stwo$, the base, and $\Ttwo/\Ztwo$, the fibre, within the bracket, which stands in the place of $F$). "therefore … not one of the products of (2)" is the architect's step from these lines, told to the PI as such before confirming (P234): the two products written in (2) are $T\times\Sigma$ and that of $T\times\Sigma$ with $F$; the product of the base with the fibre is neither, and lies inside the factor $F$. **Not shown and not claimed** (P234): that the product of the base with the fibre is not warped; that it is; what the symbol records (M2-W103)
+- **Tag:** none
+- **Failure test:** a line of M1 v7.3 under which the base with the fibre is one of the products of its equation (2); or the quoted words not standing at ll.190, 148 and 760.
+- **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
+- **Retires / retired by:** none
+
+### M2-W102 · active
+- **Statement (as it will be printed):**
+```tex
+M1 gives the lengths of the geometry by a formula in one place, Proposition~5.8, and there on time together with the fibre; it gives no formula for lengths on space, on the base, or on the base together with the fibre. Lengths are among the structure data of M1, Definition~3.1 (``the lengths, with the warp of Definition~2.4 and its rate $\kappa$''), and M1, Theorem~8.1, is stated ``with the continuous data of the geometry that this paper does not derive held fixed''.
+```
+- **Place:** `warp 040`; after M2-W101
+- **Step:** S13
+- **Rests on:** M1 v7.3 whole for the first sentence; Proposition 5.8 (`prop:A2`, l.704), Definition 3.1 (`def:modulus`, l.267), Theorem 8.1 (`thm:main`, l.1092); M2-W099
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.267: the first quotation is a substring of the line with M1's cross-reference `\ref{def:A2}` printed as its number, 2.4; l.1092: the second quotation is a substring of the line; both checked by script). The first sentence is a statement of what M1 does not have (Learnings L34): M1 was searched, and the lines shown to the PI before the read-back, for "length", "lengths", "metric", "metrics" and "measured" (ll.143, 163, 175, 187, 190, 225, 248, 267, 287, 291, 404, 688, 695, 704, 732, 755, 792, 1076, and the copies in the glossary, ll.1229, 1247, 1251), for "period", "periods" and "distance" (ll.697, 1217), and for "radius" and "Fubini" (nowhere). Of these only l.704 has a formula for lengths on a piece of the geometry; ll.225 and 792 have a formula for the length of an imaginary unit of the fibre algebra ("of length $(x_{1}^{2}+x_{2}^{2}+x_{3}^{2})^{1/2}$"; "of length $(\lvert z_{1}\rvert^{2}+\lvert z_{2}\rvert^{2}+\lvert z_{3}\rvert^{2})^{1/2}$"), which is not a length on a piece of the geometry, and l.697 has a bound on a distance within the covering torus ("at distance at least $\tfrac12\min(L_{\psi},L_{\omega})$"), its periods being named and not given (added after the fresh reader's check, P235); l.688 has "orbifold Gauss--Bonnet with the flat metric" and l.697 speaks of periods of the covering torus, both within the fibre and neither a formula for lengths; l.1076 has "The warping is a metric datum and does not change the homotopy type"; l.187 and l.190 say what a warp is and give the factor ($w=w_{0}e^{\kappa s}$ at l.187, $w=e^{\kappa s}$ at l.190), on no named piece. The searches are of whole words; "size", "scale" and "stretch", in which M1 also speaks of a warp, were searched at the opening of the chat (ll.114, 187, 209, 248, 264, 284, 287, 792, 1125, 1235; ll.13, 267, 792, 1251; ll.116, 127, 240, 1007) and no line has a formula for lengths on a piece; l.1007 has "the stretch is $\phi^{2}$" per step, a factor (P235). **Not shown and not claimed** (P234): that the geometry has no lengths on space or on the base, only that M1 writes no formula for them (the mark had here "they are among the continuous data that M1 holds fixed (M2-W085)", which neither M2-W085 nor ll.267 and 1092 say; struck after the fresh reader's check, P235)
+- **Tag:** none in the sentence; M1 prints no tag on Theorem 8.1 (corrected after the fresh reader's check, P235)
+- **Failure test:** a line of M1 v7.3 with a formula for lengths on space, on the base, or on the base together with the fibre; or the quoted words not standing at ll.267 and 1092.
+- **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
+- **Retires / retired by:** none
+
+### M2-W103 · active
+- **Statement (as it will be printed):**
+```tex
+Of the product that its display marks $\times_{w}$, M1 says: ``Which of the two pieces is scaled, and by a function on which, is not fixed in this paper''. This section does not fix it either.
+```
+- **Place:** `warp 050`; after M2-W102, the last entry of S13
+- **Step:** S13
+- **Rests on:** M1 v7.3, Section 1.4 (l.127); M2-W099 to M2-W102
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.127: the quotation is a substring of the line, checked by script; the sentence goes on ": nothing derived here depends on it, and it is fixed where the warp is given its law, with the field equation.", which M2-W093 quotes whole and of which M2-W088 quotes the last clause; the sentence before it is "The symbol $\times_{w}$ records that the product is warped, as the second axiom requires."). "This section does not fix it either": READ against M2-W099 to M2-W102 as logged. **Not shown and not claimed** (the PI told before confirming, P234): which pieces "the two pieces" are; that a second warp, beside that of M2-W099, exists. The point that the PI left open (P234, option 3): what the $\times_{w}$ of the display records, which piece is scaled and by a function on which; it waits for S14, and then for S15 to S17 and S22 (rule 11 of the plan), with the PI's lead recorded in P234, a premise of nothing. With it stay open point A of P228 (whether "its law" at l.127 is the law of growth of M2-W092) and the item of `papers/M2/OWED_BY_M2_FROM_M1.md` on the direction of the warp. M1's failure test M1-W026 bears on it and is named for the card that takes it up
+- **Tag:** none
+- **Failure test:** the quoted words not standing at l.127 of M1 v7.3; or a sentence of M2-W099 to M2-W102 that says which of the two pieces is scaled in the product the display marks $\times_{w}$, or by a function on which. The point left is taken up after S14 and is closed in M2.
+- **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
+- **Retires / retired by:** none
