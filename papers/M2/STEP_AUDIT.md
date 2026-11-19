@@ -222,6 +222,20 @@
 
 **After the PI's ruling (P218):** M2-W083 and M2-W084 are retired and replaced by M2-W088 ("Outside its outlook, " before its last sentence) and M2-W089 (its lead-in in the words of M1 l.163); M2-W085 and M2-W087, which rested on them, are flagged and unchanged. Where a row or a paragraph of this section names M2-W083 or M2-W084 for what the paper prints, M2-W088 or M2-W089 is meant; their marks are those of the entries they replace, without the two flags. The two new entries were not checked by a reader.
 
+## S07 and S08 · The fifth and the first axiom as conditions on an equation (chat C6, 19 November 2026; Decision Log P220 to P225)
+
+**No entry was logged.** Each card was put to the PI by read-back with its options, and left open at the PI's word: S07 until after S14 (P222), S08 until after S10 (P223); the rule is rule 11 of `papers/M2/DAG.md` §3 (P224). The sentences that were put are not entries and are not kept as text of the paper; the options are in P222 and P223, word for word.
+
+**GAP:** none, nothing being stated. **Open, by the PI's word:** what the shadow of a state is; what the fifth axiom asks of the equation; what the first axiom asks of the equation.
+
+**Red flags** (`python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, 18 hits in the file). One hit at a line that the read-back of S07 quoted: l.139, "This is clause~(i) of the definition below" (a forward reference; the words quoted are the earlier part of the line, and the definition it points to, Definition 2.1, was read). No hit at the other lines quoted in the read-backs or in the sentences put with them (ll.83, 99, 152, 154, 156, 158, 163, 166, 175, 178, 181, 512, 840, 947, 1104). No outside source was read.
+
+**Checks:** the quotations of M1 in the two read-backs were checked by script to be substrings of their lines. No script and no certificate: neither card has a proof or a finite part, and neither logged an entry.
+
+**May use (DAG rule 4; Learnings L32):** the lines of both cards were amended before the read-backs were put. The PI was told in the list of assumptions (P221) of the lines named there; the lines beyond that list (S07: ll.846, 947 and 1104, Proposition 7.9, Corollary 7.8; S08: Theorem 8.1, Corollary 7.8) were put on the cards before use and stand in the text of the read-backs, and of the lines of that list ll.66, 106 and 960 were not needed for S08 and are not on its card.
+
+**Other record of the chat:** the lead-in of M2-W089, which was the architect's: the PI's word on it, read by the architect as confirming it as entered (P220); its line "Confirmed" names that row; its statement is unchanged.
+
 ## Weak steps, to be strengthened before canon
 
 *Opened 19 November 2026 at the PI's word (Decision Log P212: "I agree with your recommendation"). A step is entered here when the chat that made it names it the weakest of its card. It is taken up in package N4 of `papers/M2/DAG.md`, after all the steps are done, and not before unless a later card leans on it harder. Statements are named by number and are not restated. "Recalled" means recalled by the architect and not verified: such a statement is read at a source and entered in Verified References before it is used (CLAUDE.md §4).*
