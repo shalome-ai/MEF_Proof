@@ -56,3 +56,4 @@ M1 says nothing on the direction of the warp in K₈ = [(ℂP² × S²) ×_w (T�
 
 ## M2 (new start)
 
+**F-M2-1 · 19 November 2026 (chat C4; Decision Log P211). A derivation of the step of the unfolded geometry.** M2 takes, as its fifth choice (write-up log M2-W069; Minimality M2-5), that one step of the drive acts on the whole geometry by the map $\tau$ of M2-W069. It is declared there with its failure test and is not derived. The PI (P211): "The derivation of  τ, is in a separate paper not in scope." Entered here as owed by another paper of the series: a derivation of that map from the axioms and the papers before it. Which paper it is, and that it is a later one, is not in the PI's words; the PI names it (wording corrected after the fresh reader's check, P213). Nothing of the old corpus is used for it in M2. Proposed; the PI banks by commit.
