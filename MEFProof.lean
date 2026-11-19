@@ -127,6 +127,7 @@ import MEFProof.Paper_M2.M2_L2_pillowcase
 import MEFProof.Paper_M2.M2_L3_time
 import MEFProof.Paper_M2.M2_L4_whole
 import MEFProof.Paper_M2.M2_L5_step
+import MEFProof.Paper_M2.M2_L6_fibre
 
 -- Paper M3
 import MEFProof.Paper_M3.M3_L1_lift
