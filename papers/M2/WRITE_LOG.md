@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W090**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W099**.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -1320,3 +1320,129 @@ In M1 the objects of clauses (ii) and~(iii) of the fifth axiom are states: ``Tha
 - **Failure test:** the quoted words do not stand at ll.163, 187, 273 and 1092 of M1 v7.3.
 - **Confirmed:** Decision Log P218, 19 November 2026 (the corrected wording; the PI: "confirmed"; the words of the lead-in are the architect's, shown to the PI in the closing report); the PI's word on the lead-in at the opening of chat C6, "i confirm what you wrote", read by the architect as confirming it as entered (Decision Log P220, 19 November 2026)
 - **Retires / retired by:** retires M2-W084
+
+### M2-W090 · retired
+- **Statement (as it will be printed):**
+```tex
+M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A2 if: (i) at least one product in~(2) is a warped product: the lengths measured on one piece depend on where one is in another; (ii) along the warping direction $s$ the lengths in one direction of the warped piece are multiplied by $w=e^{\kappa s}$ and those in another by $e^{-\kappa s}$, for a constant $\kappa\neq0$, so that $\mathrm{d}w/\mathrm{d}s=\kappa\,w$ and both signs of $\kappa$ occur; (iii) there is a symmetry of the shape that swaps $\kappa$ for $-\kappa$, and applied twice it is an involution $\iota$ of the warped piece.'' (M1, Definition~2.4). M1 shows that its geometry meets the condition, with lengths on time together with the fibre: ``The geometry therefore satisfies A2.'' (M1, Proposition~5.8).
+```
+- **Place:** `conditions 300`; the first entry of S09 (the numbers 060 to 290 are left for cards S07 and S08, which are left open and come before it in the paper)
+- **Step:** S09
+- **Rests on:** M1 v7.3, Definition 2.4 (`def:A2`, l.190), Proposition 5.8 (`prop:A2`, l.704)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.190: the first quotation is the whole statement of Definition 2.4, checked by script to be a substring of the line, with M1's cross-reference `\eqref{eq:family}` printed as its number, (2); l.704: "Let lengths on $T$ together with the fibre be measured by $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$, the fibre at $s+L$ being joined to the fibre at $s$ by the step." and the second quotation, its last sentence, both checked by script). "M1 reads the second axiom as a condition on a geometry" is in the words of l.190, "A geometry satisfies A2 if". Proposition 5.8 is tagged [D] in M1. Not said here: anything of the display's $\times_{w}$ (M2-W093). **The lead-in "M1 shows that its geometry meets the condition" says more than l.704 (fresh reader, P231):** Proposition 5.8 begins "Let lengths on $T$ together with the fibre be measured by", so that the lengths are laid down and not derived, it is tagged [D], and M1 prints no proof under it; its words are "The geometry therefore satisfies A2." Corrected wording put to the PI, and confirmed (P232): retired and replaced by M2-W098
+- **Tag:** none in the sentence; Proposition 5.8 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at ll.190 and 704 of M1 v7.3.
+- **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
+- **Retires / retired by:** retired by M2-W098 (Decision Log P232, 19 November 2026). Rest on it and are flagged: M2-W091, M2-W092 and M2-W093 (their statements do not quote this entry and are unchanged; they now rest on M2-W098)
+
+### M2-W091 · active
+- **Statement (as it will be printed):**
+```tex
+Definition~2.4 of M1 speaks of lengths and of a symmetry of the shape, and names no state. The geometry of M1 is given to the equation and nothing of it is unknown (Definition~\ref{def:unknown}). Whether the second axiom holds, as M1, Definition~2.4, reads it, therefore does not depend on the equation: it holds for what is given, whichever equation for a state is taken.
+```
+- **Place:** `conditions 310`; after M2-W090
+- **Step:** S09
+- **Rests on:** M2-W098 (in place of M2-W090, retired; flagged at P232: the statement is unchanged); M2-W085 (`def:unknown`); M1 v7.3, Definition 2.4 (`def:A2`, l.190)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.190, as quoted in M2-W090: its three clauses speak of a warped product and of lengths, (i) and (ii), and of "a symmetry of the shape", (iii); none has the word "state"); M2-W085 as logged ("That the unknown is a state, and that nothing of the geometry is unknown"; "\emph{Given} are: the geometry of M1, Theorem~8.1 … with everything that M1 fixes on it"). Hand step, in full: the condition of Definition 2.4 is made from the geometry alone; the geometry is the same whichever equation for a state is taken and whichever state solves it; so whether the condition holds is the same; and it holds (M2-W090, M1 Proposition 5.8). It carries no reading of the axiom beyond M1's: the entry speaks of the axiom "as M1, Definition~2.4, reads it" and of nothing more. **Not shown and not claimed** (the PI told before confirming, P228): that Definition 2.4 says all that the second axiom asks of an equation; that point is open and waits for S14 with S13 (rule 11 of the plan; M2-W093). Rule 7 of the plan: M1-W025 and M1-W026 looked at; the entry needs none of what they bar. M1 l.187 ("a property of the shape, not of something placed on it", quoted in M2-W089) and l.193 ("the growth is in the geometry rather than in a field placed on it") say the same of the growth and are not quoted here
+- **Tag:** none
+- **Failure test:** a clause of M1, Definition 2.4, that names a state; or a later step of M2 under which a datum of the geometry of which Definition 2.4 speaks depends on the state (which would also meet the failure test of M2-W085).
+- **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
+- **Retires / retired by:** none
+
+### M2-W092 · active
+- **Statement (as it will be printed):**
+```tex
+M1 has one law of growth: ``\,``As a function of itself'' is the law of natural growth: a quantity $w$ whose rate of change is proportional to its own size, $\mathrm{d}w/\mathrm{d}s=\kappa w$, and so $w=w_{0}e^{\kappa s}$.'' (M1, Section~2.3); it is the law of clause~(ii) of M1, Definition~2.4, and for the lengths on time together with the fibre M1 has it with $e^{\kappa L}=\phi^{2}$ (M1, Proposition~5.8). The quantity $w$ is a factor by which lengths are multiplied, and whether the law holds does not depend on the state $\psi$: in an equation for a state (Definition~\ref{def:family}) it could only be a condition that every state meets or that none does. It is a statement about what is given, and not a part of the equation.
+```
+- **Place:** `conditions 320`; after M2-W091
+- **Step:** S09
+- **Rests on:** M2-W098 (in place of M2-W090, retired; flagged at P232: the statement is unchanged); M2-W085, M2-W086 (`def:family`); M1 v7.3, Section 2.3 (l.187), Definition 2.4(ii) (l.190), Proposition 5.8 (l.704)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.187: the quotation is the first sentence of the line, checked by script; l.190, clause (ii): "multiplied by $w=e^{\kappa s}$ … so that $\mathrm{d}w/\mathrm{d}s=\kappa\,w$"; l.704: "The lengths agree across the join if and only if $e^{\kappa L}=\phi^{2}$."). "M1 has one law of growth" is a statement about the corpus (Learnings L34): M1 was searched for "law", singular and plural, and every line shown to the PI before the read-back: ll.127, 169 ("the growth law will be a tie between pieces"), 187, 424 ("the Fibonacci law", another sense) and 1237 (the glossary: "the constant rate of the growth law of Definition~\ref{def:A2}"); l.127 has the word and does not say which law it means (M2-W093). M1 was searched for "warp", "warps", "warped" and "warping" as well (ll.127, 187, 190, 267, 1076, 1139, 1235, 1237, 1251: the display's symbol and the sentence on it; the reading of the axiom and Definition 2.4; Definition 3.1; "The warping is a metric datum"; the elimination table; the glossary), and none of these lines has a law of a warp other than that of ll.187 and 190 (added after the fresh reader's check, P231, which found that the mark named one search where the card and the failure test name two). "M1 has it with $e^{\kappa L}=\phi^{2}$" is the entry's wording: M1's words at l.704 are the lengths $e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$, whose factors are $e^{\pm\kappa s}$, and "The lengths agree across the join if and only if $e^{\kappa L}=\phi^{2}$." "it is the law of clause (ii)": the same relation $\mathrm{d}w/\mathrm{d}s=\kappa w$ stands at l.187 and in clause (ii) at l.190, and l.1237 calls it "the growth law of Definition 2.4". Hand step, in full: by clause (ii) $w$ multiplies lengths of the warped piece; the lengths are given (M2-W085); so whether $\mathrm{d}w/\mathrm{d}s=\kappa w$ holds is the same for every state; a condition that is the same for every state is met by every state or by none; M2-W086 has an equation for a state as "a condition on the unknown $\psi$". **An addition to M1, not a contradiction; no proof of M1 changes:** M1 does not say that the law is separate from the equation; its l.127 has "with the field equation", which allows "as a part of the field equation"; that it is not a part rests on the seventh choice (M2-W085), whose mark carries the point for this card, and not on l.127. The failure test of M2-W085 ("card S09 finding that the law of the warp (M1, Section 1.4) is a part of the equation") is not met. **Not shown and not claimed:** that the law of l.127 is this law (open; it waits for S13, P228)
+- **Tag:** none
+- **Failure test:** a line of M1 v7.3 with another law of growth or of a warp; or a later step of M2 that needs the law $\mathrm{d}w/\mathrm{d}s=\kappa w$ to be a condition on the state.
+- **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
+- **Retires / retired by:** none
+
+### M2-W093 · active
+- **Statement (as it will be printed):**
+```tex
+M1 says of the warp that the symbol $\times_{w}$ of its display records: ``Which of the two pieces is scaled, and by a function on which, is not fixed in this paper: nothing derived here depends on it, and it is fixed where the warp is given its law, with the field equation.'' (M1, Section~1.4). Nothing is said here of which of the two pieces is scaled and by a function on which, of whether the law of that sentence is the law of growth above, of whether the second axiom asks of the equation anything that M1, Definition~2.4, does not say, or of how the symmetry of clause~(iii) of that definition acts on a state.
+```
+- **Place:** `conditions 330`; after M2-W092, the last entry of S09
+- **Step:** S09
+- **Rests on:** M2-W098 (in place of M2-W090, retired; flagged at P232: the statement is unchanged) to M2-W092; M1 v7.3, Section 1.4 (l.127)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.127: the quotation is the last sentence of the line, checked by script; the sentence before it at l.127 is "The symbol $\times_{w}$ records that the product is warped, as the second axiom requires.", which the lead-in follows); the rest READ against M2-W090 to M2-W092 as logged. It carries no reading: it says what the three entries do not say. The two points that the PI left open (P228) are among them: whether the law of l.127 is the law of growth (it waits for S13), and whether the second axiom asks of the equation anything that Definition 2.4 does not say (it waits for S14 with S13). On the symmetry of clause (iii): M1 gives it as a map of the shape (Proposition 5.8, l.704: "The map $(s,x,y)\mapsto(-s,-y,x)$, time run backwards together with the quarter-turn, keeps these lengths, respects the join … and swaps $\kappa$ for $-\kappa$."), and the write-up log has no entry on how it acts on a state. M2-W088 quotes the last clause of the same sentence of l.127 ("it is fixed where the warp is given its law, with the field equation"; corrected after the fresh reader's check, P231)
+- **Tag:** none
+- **Failure test:** a sentence of M2-W090 to M2-W092 that says which of the two pieces is scaled, that the law of l.127 is the law of growth, that the second axiom asks nothing more of the equation, or how the symmetry of clause (iii) acts on a state. The points left are taken up by cards S13 (the warp and its law) and S14 with S13 (what more, if anything, the axiom asks), and are closed in M2.
+- **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
+- **Retires / retired by:** none
+
+### M2-W094 · active
+- **Statement (as it will be printed):**
+```tex
+M1 reads the third axiom as a condition on a geometry: ``The \emph{fibre algebra} $\mathcal{A}$ of a geometry is the collection of operations on the fibres of $F$, with the product of two operations being the result of doing one and then the other, in the order in which they occur in time.'' (M1, Definition~2.5), and ``A geometry satisfies A3 if its fibre algebra is non-commutative: there are operations $a$ and $b$ with $ab\neq ba$.'' (M1, Definition~2.6). For its geometry M1 has: ``Under A1, A2 and A3 the fibre algebra is the quaternions.'' (M1, Proposition~5.2).
+```
+- **Place:** `conditions 400`; after M2-W093, the first entry of S10
+- **Step:** S10
+- **Rests on:** M1 v7.3, Definition 2.5 (`def:fibrealg`, l.202), Definition 2.6 (`def:A3`, l.206), Proposition 5.2 (`prop:H`, l.504)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.202: the whole statement of Definition 2.5; l.206: the whole statement of Definition 2.6; l.504: the whole statement of Proposition 5.2 without its tag; the three quotations checked by script to be substrings of the lines). "M1 reads the third axiom as a condition on a geometry" is in the words of l.206, "A geometry satisfies A3 if". "For its geometry": the geometry of M1, Theorem 8.1, is one of the "geometries $(T\times\Sigma)\times F$ satisfying A1--A5" (l.1088), so that the hypothesis of Proposition 5.2 holds for it; the proposition is tagged [D] in M1, and its proof carries a reading (l.510: "This is a reading and is not derived.")
+- **Tag:** none in the sentence; Proposition 5.2 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at ll.202, 206 and 504 of M1 v7.3.
+- **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
+- **Retires / retired by:** none
+
+### M2-W095 · active
+- **Statement (as it will be printed):**
+```tex
+Definitions~2.5 and~2.6 of M1 name no state, and the geometry of M1 is given to the equation (Definition~\ref{def:unknown}): whether the third axiom holds, as M1, Definition~2.6, reads it, does not depend on the equation. M1 says also where the algebra acts: ``The fibre algebra acts on the geometry at two levels: at the spinor level, on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$'' (M1, Definition~2.7). The spinor bundle of that definition is the bundle of which a state is a section (Definition~\ref{def:state}).
+```
+- **Place:** `conditions 410`; after M2-W094
+- **Step:** S10
+- **Rests on:** M2-W094; M2-W091 (the same step for the second axiom); M2-W085 (`def:unknown`); M2-W005 (`def:state`); M1 v7.3, Definition 2.7 (`def:levels`, l.214)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, ll.202 and 206, as quoted in M2-W094: neither has the word "state"; l.214: the quotation is the statement of Definition 2.7 up to the words "on $M$" after "almost-quaternionic structure", checked by script; the statement goes on, ", a rank-three subbundle of $\operatorname{End}(TM)$ … whose restriction to $F$ carries the full algebra", which is not quoted); M2-W005 as logged ("A \emph{state} of the geometry is a section of the spinor bundle of M1, Definition~2.7, over $\Mtwelve$."); M2-W085 as logged. Hand step, in full, as in M2-W091: the condition of Definition 2.6 is made from the geometry alone; the geometry is the same whichever equation for a state is taken; so whether the condition holds is the same. The entry does not say that the condition holds: for M1's geometry that is the hypothesis "satisfying A1--A5" of M1, Theorem 8.1 (M2-W094). **Not shown and not claimed** (the PI told before confirming, P229): that Definition 2.6 says all that the third axiom asks of an equation; that the fibre algebra acts on the bundle $S_{4}$ of M2-W082, or how: M1 says it of "a spinor bundle over $M$", and the entry says only that this is the bundle of M2-W005; anything of the tangent level, of which M1, Remark 6.2 (l.732), has "That the structure exists on the whole of $\Mtwelve$, which Theorem~\ref{thm:dim} requires of any geometry satisfying A1--A5, is assumed here and is not shown." Rule 7 of the plan: M1-W015, M1-W016, M1-W031, M1-W035, M1-W044 and M1-W045 looked at; the entry needs none of what they bar
+- **Tag:** none
+- **Failure test:** a line of M1, Definition 2.5 or 2.6, that names a state; or a reading of M1, Definition 2.7, under which its spinor bundle is not the bundle of M2-W005.
+- **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
+- **Retires / retired by:** none
+
+### M2-W096 · active
+- **Statement (as it will be printed):**
+```tex
+Of two operations M1 says what they are on spinors: of the fold, ``the lift of $\iota$ to the spinors of the fibre acts at the four corners by signs whose product is $-1$'' (M1, Corollary~7.7), and of the drive, ``On spinors the drive is then the element $-w$, of cube $+1$'' (M1, Corollary~7.8). Of the fold it says also that ``the lift acts on spinors and the reading acts on the algebra, and the identification of the one with the other is a definition rather than a computation'' (M1, Section~5.4). M1 gives no rule by which an element of the fibre algebra acts on a spinor, and no such rule has been given in this paper.
+```
+- **Place:** `conditions 420`; after M2-W095
+- **Step:** S10
+- **Rests on:** M1 v7.3, Corollary 7.7 (`cor:lift`, l.932), Corollary 7.8 (`cor:timecircle`, l.952), Section 5.4 (l.629), and M1 v7.3 whole for the last sentence; M2-W078, M2-W079, and the mark of M2-W053
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, ll.932, 952 and 629; the three quotations checked by script to be substrings of the lines; the first is from the statement of Corollary 7.7, which begins "With the twist of Proposition~\ref{prop:twist}"; the second is from the statement of Corollary 7.8 and goes on ", and not $w$, of cube $-1$, for which six steps would be needed", as M2-W078 quotes it; the third is from the paragraph after the proof of Proposition 5.6). The last sentence is a statement of what M1 does not have (Learnings L34): M1 was searched for "spinor", singular and plural, and every line shown to the PI before the read-back: ll.211, 213, 214, 219, 244, 246, 481, 629, 659, 806, 810, 843, 932, 936, 952, 972; of these ll.932, 952 and 629 are quoted in the statement; l.219 has "data of the fibre algebra carried by spinors are complex-valued: the three imaginary units take values in $\C\otimes\ImH\cong\C^{3}$" (its first half, and l.246, say that the bundle is complex); l.843 has "on the untwisted spinors of the fibre, the functions and the $(0,1)$-forms on $E$, the fold acts by $+1$ and by $-1$ at every corner alike"; ll.211 and 244 have "the non-commutative algebra is the algebra of the shape's own tangent directions and spinors"; ll.213 and 214 are Definition 2.7 (M2-W095); ll.806 and 810 say that spinors exist and through what; ll.481, 659 and 972 speak of the same element of the drive on spinors as l.952, and none of the four lines says how it acts; l.936 speaks of signs. (The sorting of these lines put to the PI in the read-back set l.952 apart from ll.481, 659 and 972 and described ll.211 and 244 as saying "where the algebra acts"; reworded after the fresh reader's check, P231, in the lines' own words.) "Clifford" stands nowhere in M1. "act", "acts" and "action" were searched as whole words (ll.66, 116, 211, 213, 214, 240, 302, 492, 510, 536, 612, 616, 629, 755, 772, 782, 834, 838, 843, 932, 982, 1217, 1259, 1265, 1285; ll.383, 442, 629, 836, 838, 1289): no further line on spinors. In the proof of Corollary 7.8 M1 gives unit quaternions to the symmetries of the torus (ll.980 to 1002; "that every symmetry is given one is a hypothesis of this paragraph"), and does not say how such an element acts on a spinor. "no such rule has been given in this paper": M2-W079 as logged ("Nothing is said here … of how the fibre algebra and the element $-w$ itself act on a spinor"); M2-W078 ("the reading takes from the element its cube and nothing else"); the mark of M2-W053 ("Not shown and not claimed: … anything of the Clifford multiplication"); the write-up log read whole in chat C7. On the item of the Corpus Errors Register that chat C4 read by mistake (P212), nothing is taken beyond M2-W078 and M2-W079
+- **Tag:** none in the sentence; Corollaries 7.7 and 7.8 are tagged [D] in M1
+- **Failure test:** a line of M1 v7.3 that gives a rule by which an element of the fibre algebra acts on a spinor; an entry of this log before M2-W094 that gives one; or the quoted words not standing at ll.932, 952 and 629.
+- **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
+- **Retires / retired by:** none
+
+### M2-W097 · active
+- **Statement (as it will be printed):**
+```tex
+Nothing is said here of by which operation an element of the fibre algebra acts on a state, of how the element $-w$ itself acts on a spinor, of how the order of the operations of the fibre algebra enters an equation, or of whether the third axiom asks of the equation anything that M1, Definitions~2.5 to~2.8, do not say.
+```
+- **Place:** `conditions 430`; after M2-W096, the last entry of S10
+- **Step:** S10
+- **Rests on:** M2-W094 to M2-W096
+- **Mark:** READ against M2-W094 to M2-W096 as logged. "Definitions~2.5 to~2.8" is the wording of the card's question; of Definition 2.8 (`def:orbits`, l.224) the three entries say nothing, and it names no state (READ, l.224; added after the fresh reader's check, P231). It carries no reading: it says what the three entries do not say. The point that the PI left open (P229) is among them: by what operation an element of the fibre algebra acts on a state, and what the third axiom then asks of the equation; it waits for S14 (rule 11 of the plan). M1's failure test M1-W016 bears on it ("a later paper that needs the fibre algebra to be the algebra the Clifford action generates") and is named for the card that takes it up. M2-W079 left to this card "how the fibre algebra and the element $-w$ itself act on a spinor": the card does not say it, and it stays open with the point
+- **Tag:** none
+- **Failure test:** a sentence of M2-W094 to M2-W096 that says by which operation an element of the fibre algebra acts on a state, how the element $-w$ itself acts on a spinor, how the order of the operations enters an equation, or that the third axiom asks nothing more of the equation. The points left are taken up after S14 and are closed in M2.
+- **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
+- **Retires / retired by:** none
+
+### M2-W098 · active
+- **Statement (as it will be printed):**
+```tex
+M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A2 if: (i) at least one product in~(2) is a warped product: the lengths measured on one piece depend on where one is in another; (ii) along the warping direction $s$ the lengths in one direction of the warped piece are multiplied by $w=e^{\kappa s}$ and those in another by $e^{-\kappa s}$, for a constant $\kappa\neq0$, so that $\mathrm{d}w/\mathrm{d}s=\kappa\,w$ and both signs of $\kappa$ occur; (iii) there is a symmetry of the shape that swaps $\kappa$ for $-\kappa$, and applied twice it is an involution $\iota$ of the warped piece.'' (M1, Definition~2.4). Of its geometry, with lengths on time together with the fibre, M1 has: ``The geometry therefore satisfies A2.'' (M1, Proposition~5.8).
+```
+- **Place:** `conditions 300`; the first entry of S09, in the place of M2-W090, which it replaces (the numbers 060 to 290 are left for cards S07 and S08, which are left open)
+- **Step:** S09 (a corrected wording after the fresh reader's check, P231; confirmed by the PI, P232)
+- **Rests on:** M1 v7.3, Definition 2.4 (`def:A2`, l.190), Proposition 5.8 (`prop:A2`, l.704)
+- **Mark:** READ (`canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, l.190: the first quotation is the whole statement of Definition 2.4, a substring of the line with M1's cross-reference `\eqref{eq:family}` printed as its number, (2); l.704: "Let lengths on $T$ together with the fibre be measured by $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$, the fibre at $s+L$ being joined to the fibre at $s$ by the step." and the second quotation, its last sentence; both checked by script after this entry was written). "M1 reads the second axiom as a condition on a geometry" is in the words of l.190, "A geometry satisfies A2 if". Proposition 5.8 is tagged [D] in M1, lays the lengths down and has no proof printed under it; the entry says only what M1 has. Changed from M2-W090 (P232): "Of its geometry, with lengths on time together with the fibre, M1 has:" for "M1 shows that its geometry meets the condition, with lengths on time together with the fibre:"; no other word is changed. Not said here: anything of the display's $\times_{w}$ (M2-W093). This entry was not checked by a reader
+- **Tag:** none in the sentence; Proposition 5.8 is tagged [D] in M1
+- **Failure test:** the quoted words do not stand at ll.190 and 704 of M1 v7.3.
+- **Confirmed:** Decision Log P232, 19 November 2026 (the corrected wording; the PI: "1, 2, 3 and 4 confirmed, commit and push.")
+- **Retires / retired by:** retires M2-W090

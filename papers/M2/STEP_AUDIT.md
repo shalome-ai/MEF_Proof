@@ -236,6 +236,52 @@
 
 **Other record of the chat:** the lead-in of M2-W089, which was the architect's: the PI's word on it, read by the architect as confirming it as entered (P220); its line "Confirmed" names that row; its statement is unchanged.
 
+## S09 · The second axiom as a condition on an equation (chat C7, 19 November 2026; Decision Log P227, P228)
+
+| Entry | What kind of step | Mark | Source | Note |
+|---|---|---|---|---|
+| M2-W090 | two quotations | READ | M1 v7.3 ll.190, 704 | quotations checked by script (the cross-reference of l.190 printed as its number, (2)) |
+| M2-W091 | that Definition 2.4 names no state; that whether it holds does not depend on the equation | READ, with one hand step | M1 v7.3 l.190; M2-W085, M2-W090 | the hand step is in the mark, in full. **Not claimed:** that Definition 2.4 says all the axiom asks of an equation (open, P228) |
+| M2-W092 | one quotation; a statement of what M1 has ("one law of growth"); that the law is a statement about what is given and not a part of the equation | READ, with one hand step | M1 v7.3 ll.187, 190, 704; M1 searched for "law", singular and plural (ll.127, 169, 187, 424, 1237); M2-W085, M2-W086 | **an addition to M1:** M1 does not say that the law is separate from the equation; the ground is the seventh choice (M2-W085), not l.127. **Not claimed:** that the law of l.127 is this law (open, P228) |
+| M2-W093 | one quotation; what is not said | READ | M1 v7.3 l.127; M2-W090 to M2-W092 | carries no reading |
+
+**GAP:** none within what is stated. **Declared:** nothing; no numbered choice. **Open, by the PI's word (P228; rule 11 of the plan):** whether "its law" at M1 l.127 is the law of growth (waits for S13); whether the second axiom asks of the equation anything that M1 Definition 2.4 does not say (waits for S14 with S13). **Not shown, said in M2-W093:** which of the two pieces is scaled and by a function on which (card S13); how the symmetry of clause (iii) of Definition 2.4 acts on a state.
+
+**Red flags** (`python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v7_3.tex`, 18 hits in the file). One hit at a line named: l.1237, the glossary entry of the fold ("the drive and clause (c) are defined below", a forward reference); the words used from that line ("the growth law of Definition 2.4") are not in the flagged sentence, and the line is named in the mark of M2-W092 and quoted in no statement. No hit at ll.127, 169, 187, 190, 193, 267, 704. No outside source was read.
+
+**Failure tests:** on each entry. M1's failure tests M1-W025 and M1-W026 were looked at (rule 7 of the plan; the card's "Done means"): the entries need none of what they bar. Noticed in passing, reported to the PI and not pursued (P227, P228): M1-W026 and M1 Proposition 5.8 (a warp between time and the fibre) beside the display of l.125 and the sentence of l.127; it is the question of card S13.
+
+**Blind:** nothing outside the card and the reading list was looked at. The card's line "Blind" stands as drawn (treated as if a target existed, P205).
+
+**Checks:** the quotations of M1 in the statements and marks (ll.127, 169, 187, 190, 193, 424, 704, 1237) were checked by script to be substrings of their lines; the four statements were written by script from the text of the read-back, and their quotations checked again after they were written. No script in `papers/M2/checks/` and no certificate: the card has no computation, no proof and no finite part.
+
+**May use (DAG rule 4; Learnings L32):** the card's line was amended before the read-back was put (P227, P228): M1 ll.169, 193, 267, 1237; the searches for "law" and "warp"; the two failure-test lines; the entries used (M2-W048, M2-W069, M2-W071, M2-W085 to M2-W089). Of these the statements and marks cite M2-W085, M2-W086, M2-W088 and M2-W089; M2-W048, M2-W069 and M2-W071 were named in the list of assumptions as the entries that already use the lengths of Proposition 5.8 and are cited in no entry of the card.
+
+## S10 · The third axiom as a condition on an equation (chat C7, 19 November 2026; Decision Log P229)
+
+| Entry | What kind of step | Mark | Source | Note |
+|---|---|---|---|---|
+| M2-W094 | three quotations | READ | M1 v7.3 ll.202, 206, 504 | quotations checked by script. "For its geometry": the hypothesis of Proposition 5.2 holds for the geometry of Theorem 8.1 (l.1088) |
+| M2-W095 | that Definitions 2.5 and 2.6 name no state; that whether Definition 2.6 holds does not depend on the equation; one quotation; that the spinor bundle of Definition 2.7 is the bundle of a state | READ, with the hand step of M2-W091 | M1 v7.3 ll.202, 206, 214; M2-W005, M2-W085, M2-W091 | **Not claimed:** that Definition 2.6 says all the axiom asks of an equation (open, P229); that the condition holds (it is a hypothesis of Theorem 8.1); that the algebra acts on $S_{4}$, or how; anything of the tangent level (Remark 6.2, l.732) |
+| M2-W096 | three quotations; a statement of what M1 does not have, and of what M2 does not have | READ | M1 v7.3 ll.932, 952, 629; M1 searched for "spinor", "act", "action" and "Clifford" (the lines are in the entry's mark); M2-W078, M2-W079, the mark of M2-W053 | the statement of absence rests on the searches and on the write-up log read whole |
+| M2-W097 | what is not said | READ | M2-W094 to M2-W096 | carries no reading |
+
+**GAP:** none within what is stated. **Declared:** nothing; no numbered choice. **Open, by the PI's word (P229; rule 11 of the plan):** by what operation an element of the fibre algebra acts on a state, and what the third axiom then asks of the equation (waits for S14). M2-W079 left to this card how the fibre algebra and the element $-w$ itself act on a spinor: the card does not say it.
+
+**Red flags** (the same scan). One hit at a line named in a mark: l.843 ("up to the overall sign"; "the counts below"); the words quoted from it in the mark of M2-W096 are in neither flagged phrase, and no statement quotes the line. No hit at ll.202, 206, 211, 214, 219, 504, 629, 732, 932, 952. No outside source was read.
+
+**Failure tests:** on each entry. M1's failure tests M1-W015, M1-W016, M1-W031, M1-W035, M1-W044 and M1-W045 were looked at (rule 7 of the plan; the card names none): the entries need none of what they bar. M1-W016 bears on the open point and is named in the mark of M2-W097 for the card that takes it up.
+
+**Blind:** nothing outside the card and the reading list was looked at. `registers/Corpus_Errors_Register.md` was not opened; on the item of it that chat C4 read by mistake (P212) nothing is taken beyond M2-W078 and M2-W079. Noticed in passing, told to the PI, not pursued and not logged (P229): M1 l.622 ("$\Ad_{w}\Ad_{i}\Ad_{w}^{-1}=\Ad_{j}$") beside M2-W082(iii).
+
+**Checks:** the quotations of M1 in the statements and marks (ll.202, 206, 214, 219, 504, 510, 622, 629, 732, 843, 932, 952, 980, 1088; l.211 was checked and is quoted in no entry) were checked by script to be substrings of their lines; the four statements were written by script from the text of the read-back, and their quotations checked again after they were written. No script in `papers/M2/checks/` and no certificate: the card has no computation, no proof and no finite part.
+
+**May use (DAG rule 4; Learnings L32):** the card's line was amended before the read-back was put (P229): M1 ll.199, 209, 211, 219, 481, 629, 659, 932, Corollary 7.8 with its proof, Theorem 8.1; the four searches; six failure-test lines; the entries used. M2-W081 is on the amended line for the likeness noticed in passing and is cited in no entry; M2-W086 is on it and is cited in no entry of S10.
+
+**After the check (P231), both cards:** no statement changed. Marks corrected: M2-W092 (the search for "warp" and its lines; M1's own words at l.704), M2-W093 (which words of l.127 M2-W088 quotes), M2-W096 (the lines that have "spinor" described in their own words; its line "Rests on"), M2-W097 (Definition 2.8). The lines "May use" of both cards amended after use, against rule 4 (l.424 for S09; ll.510, 213, 244, 246, 806, 810, 843, 936 for S10): reported to the PI. The red-flag lists above name the lines quoted in statements; of the other lines named in marks, l.843 is the hit named and the scan has no hit at ll.213, 224, 244, 246, 424, 481, 510, 622, 659, 806, 810, 936, 972, 980 or 1088. **One sentence of a confirmed statement says more than its source, and a corrected wording is put to the PI:** the lead-in of the second sentence of M2-W090.
+
+**After the PI's ruling (P232):** M2-W090 is retired and replaced by M2-W098 ("Of its geometry, with lengths on time together with the fibre, M1 has:" as the lead-in of its second sentence); M2-W091 to M2-W093, which rested on it, are flagged and unchanged. Where a row or a paragraph of the section of S09 names M2-W090 for what the paper prints, M2-W098 is meant; its mark is that of the entry it replaces, without the flag. The new entry's quotations were checked by script; it was not checked by a reader.
+
 ## Weak steps, to be strengthened before canon
 
 *Opened 19 November 2026 at the PI's word (Decision Log P212: "I agree with your recommendation"). A step is entered here when the chat that made it names it the weakest of its card. It is taken up in package N4 of `papers/M2/DAG.md`, after all the steps are done, and not before unless a later card leans on it harder. Statements are named by number and are not restated. "Recalled" means recalled by the architect and not verified: such a statement is read at a source and entered in Verified References before it is used (CLAUDE.md §4).*
