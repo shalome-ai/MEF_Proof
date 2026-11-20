@@ -1,5 +1,6 @@
 """Card T1b (chat C9): time run backwards together with the quarter-turn, R(p,s,r) = (Sp,-s,r),
-and the spinor bundle S_4 with its lift of the fold.  Exact arithmetic, standard library only.
+and the spinor bundle S_4 with its lift of the fold.  Standard library only; integer and rational
+arithmetic, and in B3 to B5 complex floats with integer parts (exact for the values used).
 Part A, the line N_4:
  (A1) S has determinant +1 (it keeps the handedness of the fibre, so the degree three is kept);
  (A2) the signs of the lift of the fold pulled back by R, corner by corner: the sign over the

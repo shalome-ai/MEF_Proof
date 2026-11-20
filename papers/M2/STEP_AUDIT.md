@@ -506,3 +506,18 @@ Identification steps: that the map $R$ on $\widetilde{M}$ is the map of M1, Prop
 | M2-W174 | what is not said; in the place of M2-W169, retired | READ (M1 ll.291, 704, as in M2-W169) and by hand |
 
 Weak steps: the map $B$ (M2-W170, M2-W173) is not of the form of the third, fourth and fifth choices and is not singled out by what is given; the degree of a pulled-back line (M2-W171) is by hand. No Verified Reference was entered: no outside statement is cited. Red flags: `python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v7_3.tex` run; no hit printed at ll.291 or 704, the lines consumed. Failure tests: in the entries.
+
+## T2 · The operations that what is given determines (chat C9, 20 November 2026; Decision Log P275, P276)
+
+| Entry | Step | Mark |
+|---|---|---|
+| M2-W175 | the twist at each time; smooth sections, smooth states; an operation of differentiation along time | DECLARED (the tenth choice, Minimality M2-10; the architect's reading, confirmed by the PI, P276); the signs CHECKED (`T2_operations.py` A3, A5; `L13_flux`, `L13_odd_P4`); READ M1 ll.829 to 838 |
+| M2-W185 (in place of M2-W176, retired, P278) | the proposition | CHECKED (M2-W177 to M2-W181; `papers/M2/checks/T2_operations.py`, 10 checks; `MEFProof/Paper_M2/M2_L13_operations.lean`, five theorems, the finite part); the sense of "determines" DECLARED (the architect's wording, confirmed with the read-back, P276) |
+| M2-W177 | (i): the smooth sections are those of a line pulled back from $Y$, carried to $N_{4}$ with $\lambda_{4}$ | CHECKED by hand; rests on M2-W041(ii), M2-W023 |
+| M2-W183 (in place of M2-W178, retired, P277) | (ii): space and the base | CHECKED by hand; the exterior derivative on a product taken as standard |
+| M2-W179 | (iii), (iv): the fibre; the five divisors | CHECKED by hand and by script (A3, A4, B1, B2) and certificate; verified reference V-M2-13 |
+| M2-W184 (in place of M2-W180, retired, P277) | (v) and the first sentence of (vi): the two maps that fail | CHECKED by hand and by script (C1 to C3) and certificate (`L13_dz`) |
+| M2-W181 | (vi), the rest: multiplication by $c$ | CHECKED by hand; nothing finite to certify |
+| M2-W182 | what the proposition does not say | READ (M1 searched for "Hermitian", "connection", "curvature": no line) and by hand |
+
+**After the fresh reader's check (P277):** GAP found, and closed by changed words that the PI confirmed (P278; M2-W185): the last sentence of M2-W176 said "determines" of the operations along space, the base and the fibre, and no proof step shows it in the sense declared in its mark; the half on time is proved (M2-W181). The checks C2 and C3 of the script are at sample points, and B5 of `T1b_reverse.py` and C1 check the arithmetic after the derivative is put in by hand; the marks claim no more. Identification steps: the tenth choice; that the line of the smooth sections is M1's $\mathcal{O}(D)$ on the fibre at $s=0$; the source's half-periods read on the fibre (V-M2-13). GAP: none in what is claimed; **not shown, and said so in M2-W182:** that no rule along time is singled out by a condition M1 does not state; that the functions $h_{s}$ are smooth in the time. Weak steps, taken as standard and read at no source: the exterior derivative on a product and its rules (M2-W183); that a bounded holomorphic function on a punctured disc extends (M2-W179); a partition of unity on $Y$ (M2-W184); the isomorphism of M2-W041(ii) is continuous and is not shown smooth (M2-W177). Red flags: `python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v7_3.tex` run; one hit at a line consumed, l.838 ("its corner signs up to the overall sign"): it is met in M2-W175, where the lift of the fold is fixed by its signs $+1,+1,+1,-1$ and not up to a sign. Failure tests: in the entries.
