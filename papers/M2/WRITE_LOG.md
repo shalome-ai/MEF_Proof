@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W170**. **Reset, 20 November 2026 (the PI, Decision Log P264):** every entry from M2-W090 to M2-W161 is retired (cards S09, S10, S13 and S14); they are kept and are cited by no entry; the active entries are among M2-W001 to M2-W089 and, from the reset on, from M2-W162.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W175**. **Reset, 20 November 2026 (the PI, Decision Log P264):** every entry from M2-W090 to M2-W161 is retired (cards S09, S10, S13 and S14); they are kept and are cited by no entry; the active entries are among M2-W001 to M2-W089 and, from the reset on, from M2-W162.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -2525,7 +2525,7 @@ Let $f$ be a map of $\widetilde{M}$ that commutes with the fold and carries the 
 - **Confirmed:** Decision Log P267, 20 November 2026 (the read-back of T1; the PI: "F, G and H confirmed as worded - proceed")
 - **Retires / retired by:** none
 
-### M2-W169 · active
+### M2-W169 · retired
 - **Statement (as it will be printed):**
 ```tex
 It is not shown here whether $R$ has a lift that carries $S_{4}$ with its lift of the fold to itself: Proposition~\ref{prop:whole}(vi) speaks of structures on the directions of time and of space that keep the handedness of $J_{0}$, and $R$ reverses it. M1 has, of $\Mtwelve$ run backwards with the quarter-turn, ``that it carries every datum of $\Mtwelve$ to itself is not shown here'' (M1, Remark~3.4). No map of space or of the base is tested here: M1 gives lengths by a formula in Proposition~5.8 only.
@@ -2537,4 +2537,76 @@ It is not shown here whether $R$ has a lift that carries $S_{4}$ with its lift o
 - **Tag:** none
 - **Failure test:** a line of M1 that gives by a formula lengths on space or on the base; an active entry that decides whether $R$ carries $S_{4}$ with its lift of the fold to itself
 - **Confirmed:** Decision Log P267, 20 November 2026 (the read-back of T1; the PI: "F, G and H confirmed as worded - proceed")
+- **Retires / retired by:** retired by M2-W174 (chat C9, Decision Log P274): its failure test is met, M2-W170 being an active entry that decides whether $R$ carries $S_{4}$ with its lift of the fold to itself; its second and third sentences are carried word for word into M2-W174. No active entry rests on it
+
+### M2-W170 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{proposition}[time run backwards and the spinor bundle]\label{prop:reverse}
+Let $\widetilde{M}$, $\widetilde{J}$, $N_{4}$, $\lambda_{4}$ and $S_{4}$ be as in Proposition~\ref{prop:step}, $R$ as in Proposition~\ref{prop:maps}(iv), and $\mathrm{d}s,e^{1},e^{2},e^{3}$ the forms dual to the frame $\partial_{s},e_{1},e_{2},e_{3}$ of Definition~\ref{def:spinorwhole}. (i) There is a continuous map $\nu_{R}$ of $N_{4}$ to itself that carries the fibre over each point $m$ of $\widetilde{M}$ linearly and one-to-one onto the fibre over $R(m)$, with $\nu_{R}\lambda_{4}=\lambda_{4}\nu_{R}$. (ii) $R$ carries $\widetilde{J}$ to the almost complex structure $\widetilde{J}^{R}$ that is $\widetilde{J}$ on the directions along the fibre and on the base and is, on the directions of time and of space, the structure $J_{0}^{R}$ with $J_{0}^{R}\partial_{s}=-e_{1}$ and $J_{0}^{R}e_{2}=e_{3}$; $J_{0}^{R}$ has the handedness opposite to that of $J_{0}$. The $(0,1)$-forms of $J_{0}$ are spanned at each point by $\mathrm{d}s-ie^{1}$ and $e^{2}-ie^{3}$, those of $J_{0}^{R}$ by $\mathrm{d}s+ie^{1}$ and $e^{2}-ie^{3}$. The pull-back $(R^{-1})^{*}$ carries the $(0,*)$-forms of $\widetilde{J}$ at $m$ to the $(0,*)$-forms of $\widetilde{J}^{R}$ at $R(m)$: $\mathrm{d}\bar z_{s}$ to $-i\,\mathrm{d}\bar z_{-s}$, $\mathrm{d}s-ie^{1}$ to $-(\mathrm{d}s+ie^{1})$, $e^{2}-ie^{3}$ to itself, and the forms of the base to themselves. (iii) Let $B$ be the map from the $(0,*)$-forms of $\widetilde{J}^{R}$ to those of $\widetilde{J}$, covering the identity of $\widetilde{M}$, that is linear on each fibre, keeps the product of forms, carries $\mathrm{d}s+ie^{1}$ to $\mathrm{d}s-ie^{1}$ and is the identity on $e^{2}-ie^{3}$, on the forms of the fibre and on the forms of the base. Then $\Phi_{QC}=(B\circ(R^{-1})^{*})\otimes\nu_{R}$ is a continuous map of $S_{4}$ to itself that carries the fibre over each point $m$ linearly and one-to-one onto the fibre over $R(m)$, and $\Phi_{QC}\circ(\iota^{*}\otimes\lambda_{4})=(\iota^{*}\otimes\lambda_{4})\circ\Phi_{QC}$. In this sense $R$ has a lift that carries $S_{4}$ with its lift of the fold to itself. \rigD
+\end{proposition}
+```
+- **Place:** `supply 022`; after M2-W168; the first entry of card T1b
+- **Step:** T1b
+- **Rests on:** M2-W167 (the map $R$, part (iv)); M2-W082 ($N_{4}$, $\lambda_{4}$, $S_{4}$); M2-W053 (the frame, $J_{0}$, the spinor bundle and its lift of the fold); M2-W041(ii); M2-W048 and M2-W069 (the coordinates $z_{s}$); M2-W062; M2-W171, M2-W172, M2-W173 (its proof)
+- **Mark:** CHECKED: `papers/M2/checks/T1b_reverse.py` (13 checks, all pass) and `MEFProof/Paper_M2/M2_L12_reverse.lean` (the integer part: `L12_det_S`, `L12_signs_pulled`, `L12_signs_other`, `L12_J0_sq`, `L12_J0R_entries`, `L12_J0R_sq`, `L12_J0R_ne`, `L12_hand_J0`, `L12_hand_J0R`); the proof is M2-W171 to M2-W173. Confirmed by read-back (P274), with the symbol $\Phi_{QC}$ in the place of $\Phi$ at the PI's word ("$\Phi$ is not the golden ratio confirm so quote as  $\Phi$_QC  otherwise you and i will confuse it"); the PI typed `$\Phi$_QC` and the entry prints it as $\Phi_{QC}$ (presentation). **The sense of "carries $S_{4}$ to itself" is that of the bundle with its lift of the fold, up to isomorphism** (assumption 3 of the chat, confirmed by the PI, P273): it is the architect's judgement that a map of $S_{4}$ over $R$ made with $B$ counts as such a lift. **Identification step** (CLAUDE.md §5): the map $B$; it is not of the form of the third, fourth and fifth choices (M2-W174). Told to the PI in the read-back: if a lift must be of the form of those choices with no added map, the answer is no, since $R$ does not keep $J_{0}$ (M2-W167(iv)). Not shown and not claimed: that $\Phi_{QC}$ respects a Clifford multiplication, which no active entry has; that the lift is the only one (M2-W174); anything of the step with its lifts under $R$ beyond M2-W167(iv); anything of maps of space or of the base
+- **Tag:** [D]: computed from the entries cited, under the numbered choices M2-2 to M2-5 that those entries carry, and in the sense of the bundle with its lift of the fold
+- **Failure test:** a failing line of the script or of the certificate; an error in M2-W041(ii); a later step of M2 that needs a lift of $R$ of the form of the third, fourth and fifth choices, with no added map
+- **Confirmed:** Decision Log P274, 20 November 2026 (the read-back of T1b; the PI: "I Confirm T1b as worded with $\Phi$_QC")
 - **Retires / retired by:** none
+
+### M2-W171 · active
+- **Statement (as it will be printed):**
+```tex
+(i). Let $R_{Y}(p,s)=(Sp,-s)$ be the map of $Y$ that $R$ covers; it is well defined and commutes with the fold of $Y$ (Proposition~\ref{prop:maps}(iv)). Let $N_{Y}$, with its lift of the fold $\lambda_{Y}$, be the line on $Y$ of which $N_{4}$ with $\lambda_{4}$ is the pull-back (Proposition~\ref{prop:step}). The pull-back $R_{Y}^{*}N_{Y}$, whose fibre over a point $y$ is the fibre of $N_{Y}$ over $R_{Y}(y)$, is a line on $Y$, and $\lambda_{Y}$ gives a lift of the fold to it, since $R_{Y}$ commutes with the fold. Its restriction to the fibre over $s=0$ is the pull-back by $S$ of the restriction of $N_{Y}$; it has degree three, since $S$ is a one-to-one continuous map of $E$ onto itself that keeps the handedness ($\det S=1$). The sign of its lift on the corner circle of $P_{i}$ is the sign of $\lambda_{Y}$ on the corner circle of $SP_{i}$; $S$ leaves $P_{1}$ and $P_{4}$ in place and exchanges $P_{2}$ and $P_{3}$, so that the signs on the corner circles of $P_{1},P_{2},P_{3},P_{4}$ are $+1,+1,+1,-1$, those of $\lambda_{Y}$. By Proposition~\ref{prop:time}(ii) there is an isomorphism of $N_{Y}$ onto $R_{Y}^{*}N_{Y}$ that covers the identity of $Y$ and carries the one lift to the other. Followed by the map of $R_{Y}^{*}N_{Y}$ to $N_{Y}$ that covers $R_{Y}$ and is the identity on each fibre, it is a continuous map of $N_{Y}$ to itself that carries the fibre over $y$ linearly and one-to-one onto the fibre over $R_{Y}(y)$ and commutes with $\lambda_{Y}$. Its pull-back to $\widetilde{M}$ is $\nu_{R}$: $R$ covers $R_{Y}$ and is the identity on $S^{3}\times\CPtwo\times\Stwo$.
+```
+- **Place:** `supply 024`; after M2-W170; the first step of its proof
+- **Step:** T1b
+- **Rests on:** M2-W167(iv); M2-W082; M2-W039 ($Y$, its fold, the corner circles, the sign); M2-W041(ii); M1, Theorem 4.2 (the quarter-turn $S$)
+- **Mark:** CHECKED by hand, in full in the statement, with `T1b_reverse.py` (A1 to A3) and `M2_L12_reverse.lean` (`L12_det_S`, `L12_signs_pulled`); it brings in no reading. READ: M2-W041(ii) and M2-W082 as logged. Hand step named: that the pull-back of a line of degree three by a one-to-one continuous map of $E$ onto itself that keeps the handedness has degree three (the degree is the integer of the line on $E$ with its handedness; M2-W023 and M2-W041 use the degree in this way). The corner circles under $R_{Y}$: $R_{Y}(P_{i},s)=(SP_{i},-s)$
+- **Tag:** none (a step of proof)
+- **Failure test:** a line on $Y$ with a lift of the fold, of degree three on the fibre over $s=0$ and with the signs $+1,+1,+1,-1$, that is not isomorphic to $N_{Y}$ with $\lambda_{Y}$ (an error in M2-W041(ii)); or a failing line A1 to A3 of the script
+- **Confirmed:** checked, not read back, 20 November 2026 (chat C9); the PI was told in plain English what the step holds, with the read-back (Decision Log P274)
+- **Retires / retired by:** none
+
+### M2-W172 · active
+- **Statement (as it will be printed):**
+```tex
+(ii). $R$ carries $\partial_{s}$ to $-\partial_{s}$ and $e_{1},e_{2},e_{3}$ to themselves (Proposition~\ref{prop:maps}(iv)), so that the structure to which it carries $J_{0}$ sends $-\partial_{s}$ to $e_{1}$ and $e_{2}$ to $e_{3}$: it is $J_{0}^{R}$. The frame $\partial_{s},J_{0}\partial_{s},e_{2},J_{0}e_{2}$ is $\partial_{s},e_{1},e_{2},e_{3}$, and the frame $\partial_{s},J_{0}^{R}\partial_{s},e_{2},J_{0}^{R}e_{2}$ is $\partial_{s},-e_{1},e_{2},e_{3}$: the two have opposite handedness. A form is of type $(0,1)$ for a structure $J$ when it vanishes on every vector $v-iJv$; $\mathrm{d}s-ie^{1}$ and $e^{2}-ie^{3}$ vanish on $\partial_{s}-ie_{1}$ and $e_{2}-ie_{3}$ and on their multiples, and $\mathrm{d}s+ie^{1}$ and $e^{2}-ie^{3}$ vanish on $\partial_{s}+ie_{1}$ and $e_{2}-ie_{3}$ and on their multiples. Since $(R^{-1})^{*}\mathrm{d}s=-\mathrm{d}s$ and $(R^{-1})^{*}e^{a}=e^{a}$ for $a=1,2,3$, the pull-back carries $\mathrm{d}s-ie^{1}$ to $-(\mathrm{d}s+ie^{1})$ and $e^{2}-ie^{3}$ to itself. On the fibre $z_{-s}\circ R=-i\,z_{s}$ (Proposition~\ref{prop:maps}(iv)), so that $R$ carries the complex structure of the fibre at the time $s$ to that of the fibre at the time $-s$, $z_{s}\circ R^{-1}=i\,z_{-s}$, and $(R^{-1})^{*}\mathrm{d}\bar z_{s}=-i\,\mathrm{d}\bar z_{-s}$. On the base $R$ is the identity.
+```
+- **Place:** `supply 026`; after M2-W171; the second step of the proof
+- **Step:** T1b
+- **Rests on:** M2-W167(iv); M2-W053 (the frame and $J_{0}$); M2-W048 (the coordinates $z_{s}$)
+- **Mark:** CHECKED: `T1b_reverse.py` (B1 to B5) and `M2_L12_reverse.lean` (`L12_J0_sq`, `L12_J0R_entries`, `L12_J0R_sq`, `L12_J0R_ne`, `L12_hand_J0`, `L12_hand_J0R`); it brings in no reading. That a form of type $(0,1)$ is one that vanishes on the vectors $v-iJv$ is the usual meaning, with the convention of M2-W053 (forms of type $(0,1)$; $\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$ on the fibre)
+- **Tag:** none (a step of proof)
+- **Failure test:** a failing line B1 to B5 of the script or of the certificate
+- **Confirmed:** checked, not read back, 20 November 2026 (chat C9); the PI was told in plain English what the step holds, with the read-back (Decision Log P274)
+- **Retires / retired by:** none
+
+### M2-W173 · active
+- **Statement (as it will be printed):**
+```tex
+(iii). At each point $1$, $\mathrm{d}s-ie^{1}$, $e^{2}-ie^{3}$ and $(\mathrm{d}s-ie^{1})\wedge(e^{2}-ie^{3})$ are a basis of the $(0,*)$-forms of $J_{0}$, and $1$, $\mathrm{d}s+ie^{1}$, $e^{2}-ie^{3}$ and $(\mathrm{d}s+ie^{1})\wedge(e^{2}-ie^{3})$ a basis of those of $J_{0}^{R}$; on these forms $B$ carries the second basis to the first, in that order, so that it is well defined, continuous, and linear and one-to-one on each fibre. The $(0,*)$-forms of $\widetilde{J}^{R}$ and of $\widetilde{J}$ are the tensor products of these with the $(0,*)$-forms of the fibre and of the base, which are the same for both, as in the proof of Proposition~\ref{prop:whole}(vi), and $B$ is the identity on those. By (ii), $B\circ(R^{-1})^{*}$ carries the $(0,*)$-forms of $\widetilde{J}$ at $m$ linearly and one-to-one onto the $(0,*)$-forms of $\widetilde{J}$ at $R(m)$. Since $R$ commutes with the fold, $(R^{-1})^{*}$ commutes with $\iota^{*}$; $B$ is pulled back from $T\times S^{3}$ on the forms of time and of space and is the identity on the others, and $\iota^{*}$ is the identity on the forms pulled back from $T\times S^{3}$ and commutes with a map pulled back from there; and $\nu_{R}$ commutes with $\lambda_{4}$ by (i). So $\Phi_{QC}$ commutes with $\iota^{*}\otimes\lambda_{4}$. This is (iii).
+```
+- **Place:** `supply 028`; after M2-W172; the last step of the proof
+- **Step:** T1b
+- **Rests on:** M2-W170(i), (ii) through M2-W171 and M2-W172; M2-W062 (the forms of $\widetilde{J}$ as a tensor product; $\iota^{*}$ on the forms pulled back from $T\times S^{3}$); M2-W053; M2-W167(iv) ($R$ commutes with the fold)
+- **Mark:** CHECKED by hand, in full in the statement; the bases are those of `T1b_reverse.py` (B3). The map $B$ is the identification step named in the mark of M2-W170; apart from it the step brings in no reading
+- **Tag:** none (a step of proof)
+- **Failure test:** a point at which the four forms named are not a basis; or a form of the fibre or of the base on which $(R^{-1})^{*}$ and $\iota^{*}$ do not commute
+- **Confirmed:** checked, not read back, 20 November 2026 (chat C9); the PI was told in plain English what the step holds, with the read-back (Decision Log P274)
+- **Retires / retired by:** none
+
+### M2-W174 · active
+- **Statement (as it will be printed):**
+```tex
+The lift $\Phi_{QC}$ of Proposition~\ref{prop:reverse} is a map of the bundle $S_{4}$ with its lift of the fold, and it is not of the form of the third, fourth and fifth choices: $R$ does not keep $\widetilde{J}$, and the map $B$ is added. $B$ is one isomorphism between two bundles on which the frame gives a basis at every point; what is given does not single it out here, and $\Phi_{QC}$ followed by any continuous map of $S_{4}$ to itself that covers the identity of $\widetilde{M}$, is linear and one-to-one on each fibre and commutes with the lift of the fold is another such lift. Nothing is said here of the Clifford multiplication, nor of what $R$ with a lift does to an operation of differentiation. $R$ carries the step to its inverse (Proposition~\ref{prop:maps}(iv)). M1 has, of $\Mtwelve$ run backwards with the quarter-turn, ``that it carries every datum of $\Mtwelve$ to itself is not shown here'' (M1, Remark~3.4). No map of space or of the base is tested here: M1 gives lengths by a formula in Proposition~5.8 only.
+```
+- **Place:** `supply 030`; after M2-W173, the last entry of card T1b; in the place of M2-W169
+- **Step:** T1b
+- **Rests on:** M2-W170; M2-W167(iv); M2-W053, M2-W069 (the third, fourth and fifth choices); M1, Remark 3.4, l.291; M1, l.704
+- **Mark:** Confirmed by read-back (P274). Its last two sentences are those of M2-W169, word for word, with the READ marks of that entry (M1 l.291; the search of M1 for "length", "metric", "isometr", "Fubini", "round sphere" and "Riemannian" recorded there). "Another such lift": hand, a map that covers the identity and commutes with the lift of the fold, put after $\Phi_{QC}$, gives a map with the properties of M2-W170(iii). **Trip-wires** (DAG §3 rule 12): which lift of $R$ is meant matters once an operation is written, and is taken up in card T2, in chat C9; that $R$ carries the step to its inverse comes to the PI at card T4a, and only if $R$ strikes a candidate that no other map strikes
+- **Tag:** none
+- **Failure test:** an active entry that singles out one lift of $R$ from what is given; a line of M1 that gives by a formula lengths on space or on the base
+- **Confirmed:** Decision Log P274, 20 November 2026 (the read-back of T1b; the PI: "I Confirm T1b as worded with $\Phi$_QC")
+- **Retires / retired by:** retires M2-W169

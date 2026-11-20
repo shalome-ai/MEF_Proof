@@ -494,3 +494,15 @@ Identification steps: that the set of M2-W163 is M1's shadow of a subset of the 
 | M2-W169 | what is not shown | READ: M2-W054(vi), M1 l.291; the search of M1 for lengths |
 
 Identification steps: that the map $R$ on $\widetilde{M}$ is the map of M1, Proposition 5.8, "time run backwards together with the quarter-turn" (M1 writes it on time together with the fibre; here it is the identity on space and on the base: M2-W052 has the fold and the step so). GAP: none in what is claimed; **open, and said so in M2-W169:** whether $R$ carries $S_{4}$ with its lift of the fold to itself. Weak step: "that it reverses the handedness of the directions of time and of space" is by hand only. Red flags: none at a line consumed (M1 ll.291, 704, 949). Failure tests: in the entries.
+
+## T1b · Time run backwards and the spinor bundle (chat C9, 20 November 2026; Decision Log P273, P274)
+
+| Entry | Step | Mark |
+|---|---|---|
+| M2-W170 | the proposition: $R$ has a lift, $\Phi_{QC}$, that carries $S_{4}$ with its lift of the fold to itself, in the sense of the bundle with its lift of the fold | CHECKED (M2-W171 to M2-W173; `papers/M2/checks/T1b_reverse.py`, 13 checks; `MEFProof/Paper_M2/M2_L12_reverse.lean`, nine theorems, the integer part); the sense of "carries to itself" DECLARED (the architect's judgement, assumption 3 of the chat, confirmed by the PI, P273) |
+| M2-W171 | (i): the line pulled back by $R$ has degree three and the signs $+1,+1,+1,-1$; M2-W041(ii) gives the map | CHECKED by hand and by script (A1 to A3); rests on M2-W041(ii) |
+| M2-W172 | (ii): the structure carried by $R$, its handedness, the forms of type $(0,1)$, the pull-back | CHECKED by script (B1 to B5) and certificate |
+| M2-W173 | (iii): the map $B$; $\Phi_{QC}$ commutes with the lift of the fold | CHECKED by hand; the map $B$ is DECLARED (an identification step, named in the mark of M2-W170) |
+| M2-W174 | what is not said; in the place of M2-W169, retired | READ (M1 ll.291, 704, as in M2-W169) and by hand |
+
+Weak steps: the map $B$ (M2-W170, M2-W173) is not of the form of the third, fourth and fifth choices and is not singled out by what is given; the degree of a pulled-back line (M2-W171) is by hand. No Verified Reference was entered: no outside statement is cited. Red flags: `python3 tools/redflags.py canon/M1/Paper_M1_Six_Axioms_v7_3.tex` run; no hit printed at ll.291 or 704, the lines consumed. Failure tests: in the entries.
