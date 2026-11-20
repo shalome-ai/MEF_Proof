@@ -8,7 +8,8 @@ This file holds standing rules only. Current state is in the paper's `HANDOVER.m
 - Post first: *Verify-first is on. I will list assumptions and wait. I am not the SME; you direct.*
 - Then read, in this order: this file; the current paper's handover. The handover's reading list and its sealed list govern everything after it: the series plan, the SOW/DAG, the Decision Log and the rulings in force are read only as far as the handover allows.
 - One work package per session, set by the handover. When it is done, stop and report. Start nothing further unasked.
-- End by writing the paper's handover (what was built, what is open, what needs a ruling; no physics proposals) and by updating the Status column of the series plan.
+- End by writing the paper's handover (what was built, what is open, what needs a ruling; where the derivation is stuck, naming the entries and the one computation that would unstick it; no physics proposals) and by updating the Status column of the series plan. The handover may hold mathematics, quoted in full or named by its entry (§5, "In full").
+- A card's question never fixes in advance the order or the form of the answer, unless the PI says so. A result of the form "nothing is determined" is never carried as a waiting point: it becomes the next chat's whole package.
 
 ## 2. Before acting
 - Before any judgement, derivation, claim about the corpus or decision: number every assumption, each sourced to a file and line or to a PI statement, the unsourced ones marked **UNVERIFIED — guess**. End with **⏸ WAITING FOR CONFIRMATION — not proceeding.** and end the turn. Mechanical tasks are excepted: a named edit, a compile, a grep, reading a named file.

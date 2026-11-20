@@ -138,6 +138,7 @@ import MEFProof.Paper_M2.M2_L13_operations
 import MEFProof.Paper_M2.M2_L14_candidates
 import MEFProof.Paper_M2.M2_L15_kept
 import MEFProof.Paper_M2.M2_L16_fifth
+import MEFProof.Paper_M2.M2_L17_time
 
 -- Paper M3
 import MEFProof.Paper_M3.M3_L1_lift
