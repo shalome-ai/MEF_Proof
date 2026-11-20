@@ -132,6 +132,7 @@ import MEFProof.Paper_M2.M2_L7_fibre_time
 import MEFProof.Paper_M2.M2_L8_time_direction
 import MEFProof.Paper_M2.M2_L9_five_time
 import MEFProof.Paper_M2.M2_L10_base
+import MEFProof.Paper_M2.M2_L11_maps
 
 -- Paper M3
 import MEFProof.Paper_M3.M3_L1_lift

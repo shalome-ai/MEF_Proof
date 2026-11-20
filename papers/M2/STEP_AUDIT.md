@@ -465,3 +465,32 @@
 
 Chat C8b4 logged no entry and banked no result; it is sealed (Decision Log P262). No step is audited for it. The principle on how "naturally sits" is read (`papers/M2/DAG.md` §1) is a ruling of the PI and not a result; its failure test is said there.
 
+
+## The reset (chat C8b5, 20 November 2026; Decision Log P264)
+
+At the PI's word every entry from M2-W090 to M2-W161 is retired (cards S09, S10, S13 and S14 in its five parts). The sections of this file for those cards, above, are kept for the record and audit nothing that is active. Of the list "Weak steps, to be strengthened before canon", the lines that name entries from M2-W090 on name retired entries; the lines for M2-W067 and M2-W074 stand.
+
+## S07 · The fifth axiom as a condition on an equation (chat C8b5, 20 November 2026; Decision Log P265)
+
+| Entry | Step | Mark |
+|---|---|---|
+| M2-W162 | what M1 says of the shadow | verified reference: READ, M1 ll.154, 156, 158, 163, 840, word for word; the last sentence rests on the search of M1 for "shadow" (the lines are in the mark) |
+| M2-W163 | the shadow of a state | DECLARED: the eighth choice (Minimality M2-8), the PI's (P256, P262, P265) |
+| M2-W164 | the shadow after one step | CHECKED by hand, in full in the statement; no finite part, no certificate |
+| M2-W165 | an equation that meets the fifth axiom | DECLARED: the ninth choice (Minimality M2-9), the PI's (P256, P265) |
+| M2-W166 | what is not said | READ against M2-W162 to M2-W165 |
+
+Identification steps: that the set of M2-W163 is M1's shadow of a subset of the geometry of M1, Theorem 8.1 (the fold is the identity on time and space, M2-W052); that the last words of M1, Definition 2.1(ii), are asked "of a solution" (the ninth choice). GAP: none. Red flags (`tools/redflags.py` on M1 v7.3: hits at ll.110, 129, 139, 209, 234, 248, 379, 691, 829, 834, 838, 843, 921, 1186, 1237, 1251, 1293): none at a line consumed (ll.154, 156, 158, 163, 840). Failure tests: in the entries.
+
+## T1 · The maps that carry what is given to itself (chat C8b5, 20 November 2026; Decision Log P266, P267)
+
+| Entry | Step | Mark |
+|---|---|---|
+| M2-W167(i) | the fold | READ: M2-W082(i) (commutes with $\tau$), (ii) (acts by its lift), M2-W053 (keeps $\widetilde{J}$); lengths CHECKED (`T1_maps.py`) |
+| M2-W167(ii) | the step once and twice | READ: M2-W082(i), (iv); CHECKED: M2-W168 with the corners (`T1_maps.py`; `L11_M0_corners`, `L11_signs_M0`, `L11_signs_M0sq`) |
+| M2-W167(iii) | a shift of the time | CHECKED (`T1_maps.py`, the line on the shift); it uses $\kappa\neq0$ (M1, Definition 2.4) |
+| M2-W167(iv) | time run backwards together with the quarter-turn | CHECKED (`T1_maps.py`; `L11_S_conj_M0`, `L11_join`, `L11_glue`, `L11_S_sq`, `L11_S_corners`, `L11_signs_S`); that $R$ is $(s,x,y)\mapsto(-s,-y,x)$ in M1's coordinates: hand, in the mark; "does not keep $J_{0}$": hand, in the mark |
+| M2-W168 | the corner signs under a lift | CHECKED by hand, in full |
+| M2-W169 | what is not shown | READ: M2-W054(vi), M1 l.291; the search of M1 for lengths |
+
+Identification steps: that the map $R$ on $\widetilde{M}$ is the map of M1, Proposition 5.8, "time run backwards together with the quarter-turn" (M1 writes it on time together with the fibre; here it is the identity on space and on the base: M2-W052 has the fold and the step so). GAP: none in what is claimed; **open, and said so in M2-W169:** whether $R$ carries $S_{4}$ with its lift of the fold to itself. Weak step: "that it reverses the handedness of the directions of time and of space" is by hand only. Red flags: none at a line consumed (M1 ll.291, 704, 949). Failure tests: in the entries.

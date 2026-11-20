@@ -27,7 +27,7 @@
     - **Confirmed:** Decision Log Pnn, with the date; or "checked, not read back", with the date
     - **Retires / retired by:** (entry numbers, or none)
 
-The heading line carries the status: `· active` or `· retired`. The next number is **M2-W162**.
+The heading line carries the status: `· active` or `· retired`. The next number is **M2-W170**. **Reset, 20 November 2026 (the PI, Decision Log P264):** every entry from M2-W090 to M2-W161 is retired (cards S09, S10, S13 and S14); they are kept and are cited by no entry; the active entries are among M2-W001 to M2-W089 and, from the reset on, from M2-W162.
 
 **The Place line** *(proposed by the architect, 18 November 2026; one of the two points the assembly protocol leaves to be settled; confirmed by the PI, 18 November 2026, Decision Log P187).* The line begins with a section key and a number, for example `states 030`. The section keys, in the order of the paper, are: `front` (the title and the abstract), `intro`, `m1`, `states`, `conditions`, `minimal`, `warp`, `supply`, `select`, `theorem`, `checks`, `outlook`, `ack` (the acknowledgements), `lean`, `glossary`, `bib` (the bibliography). Within a section the entries are printed in the order of their numbers. Numbers are given in tens, so that an entry agreed later can be placed between two earlier ones without renumbering. Pass A is made by a script that sorts the active entries by section key, in the order above, and then by number. A retired entry keeps its Place line. A change to the list of section keys is presentation and is made here, at the head of this log, and nowhere else.
 
@@ -1335,7 +1335,7 @@ M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A
 - **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
 - **Retires / retired by:** retired by M2-W098 (Decision Log P232, 19 November 2026). Rest on it and are flagged: M2-W091, M2-W092 and M2-W093 (their statements do not quote this entry and are unchanged; they now rest on M2-W098)
 
-### M2-W091 · active
+### M2-W091 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Definition~2.4 of M1 speaks of lengths and of a symmetry of the shape, and names no state. The geometry of M1 is given to the equation and nothing of it is unknown (Definition~\ref{def:unknown}). Whether the second axiom holds, as M1, Definition~2.4, reads it, therefore does not depend on the equation: it holds for what is given, whichever equation for a state is taken.
@@ -1349,7 +1349,7 @@ Definition~2.4 of M1 speaks of lengths and of a symmetry of the shape, and names
 - **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
 - **Retires / retired by:** none
 
-### M2-W092 · active
+### M2-W092 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 has one law of growth: ``\,``As a function of itself'' is the law of natural growth: a quantity $w$ whose rate of change is proportional to its own size, $\mathrm{d}w/\mathrm{d}s=\kappa w$, and so $w=w_{0}e^{\kappa s}$.'' (M1, Section~2.3); it is the law of clause~(ii) of M1, Definition~2.4, and for the lengths on time together with the fibre M1 has it with $e^{\kappa L}=\phi^{2}$ (M1, Proposition~5.8). The quantity $w$ is a factor by which lengths are multiplied, and whether the law holds does not depend on the state $\psi$: in an equation for a state (Definition~\ref{def:family}) it could only be a condition that every state meets or that none does. It is a statement about what is given, and not a part of the equation.
@@ -1363,7 +1363,7 @@ M1 has one law of growth: ``\,``As a function of itself'' is the law of natural 
 - **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
 - **Retires / retired by:** none
 
-### M2-W093 · active
+### M2-W093 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 says of the warp that the symbol $\times_{w}$ of its display records: ``Which of the two pieces is scaled, and by a function on which, is not fixed in this paper: nothing derived here depends on it, and it is fixed where the warp is given its law, with the field equation.'' (M1, Section~1.4). Nothing is said here of which of the two pieces is scaled and by a function on which, of whether the law of that sentence is the law of growth above, of whether the second axiom asks of the equation anything that M1, Definition~2.4, does not say, or of how the symmetry of clause~(iii) of that definition acts on a state.
@@ -1377,7 +1377,7 @@ M1 says of the warp that the symbol $\times_{w}$ of its display records: ``Which
 - **Confirmed:** Decision Log P228, 19 November 2026 (the read-back of S09; the PI: "Point A option 3, Point B option 3, log the four sentences")
 - **Retires / retired by:** none
 
-### M2-W094 · active
+### M2-W094 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 reads the third axiom as a condition on a geometry: ``The \emph{fibre algebra} $\mathcal{A}$ of a geometry is the collection of operations on the fibres of $F$, with the product of two operations being the result of doing one and then the other, in the order in which they occur in time.'' (M1, Definition~2.5), and ``A geometry satisfies A3 if its fibre algebra is non-commutative: there are operations $a$ and $b$ with $ab\neq ba$.'' (M1, Definition~2.6). For its geometry M1 has: ``Under A1, A2 and A3 the fibre algebra is the quaternions.'' (M1, Proposition~5.2).
@@ -1391,7 +1391,7 @@ M1 reads the third axiom as a condition on a geometry: ``The \emph{fibre algebra
 - **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
 - **Retires / retired by:** none
 
-### M2-W095 · active
+### M2-W095 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Definitions~2.5 and~2.6 of M1 name no state, and the geometry of M1 is given to the equation (Definition~\ref{def:unknown}): whether the third axiom holds, as M1, Definition~2.6, reads it, does not depend on the equation. M1 says also where the algebra acts: ``The fibre algebra acts on the geometry at two levels: at the spinor level, on a spinor bundle over $M$; and at the tangent level, as an almost-quaternionic structure on $M$'' (M1, Definition~2.7). The spinor bundle of that definition is the bundle of which a state is a section (Definition~\ref{def:state}).
@@ -1405,7 +1405,7 @@ Definitions~2.5 and~2.6 of M1 name no state, and the geometry of M1 is given to 
 - **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
 - **Retires / retired by:** none
 
-### M2-W096 · active
+### M2-W096 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Of two operations M1 says what they are on spinors: of the fold, ``the lift of $\iota$ to the spinors of the fibre acts at the four corners by signs whose product is $-1$'' (M1, Corollary~7.7), and of the drive, ``On spinors the drive is then the element $-w$, of cube $+1$'' (M1, Corollary~7.8). Of the fold it says also that ``the lift acts on spinors and the reading acts on the algebra, and the identification of the one with the other is a definition rather than a computation'' (M1, Section~5.4). M1 gives no rule by which an element of the fibre algebra acts on a spinor, and no such rule has been given in this paper.
@@ -1419,7 +1419,7 @@ Of two operations M1 says what they are on spinors: of the fold, ``the lift of $
 - **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
 - **Retires / retired by:** none
 
-### M2-W097 · active
+### M2-W097 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Nothing is said here of by which operation an element of the fibre algebra acts on a state, of how the element $-w$ itself acts on a spinor, of how the order of the operations of the fibre algebra enters an equation, or of whether the third axiom asks of the equation anything that M1, Definitions~2.5 to~2.8, do not say.
@@ -1433,7 +1433,7 @@ Nothing is said here of by which operation an element of the fibre algebra acts 
 - **Confirmed:** Decision Log P229, 19 November 2026 (the read-back of S10; the PI: "Option 3, log the four sentences, S08 waits for S14")
 - **Retires / retired by:** none
 
-### M2-W098 · active
+### M2-W098 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A2 if: (i) at least one product in~(2) is a warped product: the lengths measured on one piece depend on where one is in another; (ii) along the warping direction $s$ the lengths in one direction of the warped piece are multiplied by $w=e^{\kappa s}$ and those in another by $e^{-\kappa s}$, for a constant $\kappa\neq0$, so that $\mathrm{d}w/\mathrm{d}s=\kappa\,w$ and both signs of $\kappa$ occur; (iii) there is a symmetry of the shape that swaps $\kappa$ for $-\kappa$, and applied twice it is an involution $\iota$ of the warped piece.'' (M1, Definition~2.4). Of its geometry, with lengths on time together with the fibre, M1 has: ``The geometry therefore satisfies A2.'' (M1, Proposition~5.8).
@@ -1447,7 +1447,7 @@ M1 reads the second axiom as a condition on a geometry: ``A geometry satisfies A
 - **Confirmed:** Decision Log P232, 19 November 2026 (the corrected wording; the PI: "1, 2, 3 and 4 confirmed, commit and push.")
 - **Retires / retired by:** retires M2-W090
 
-### M2-W099 · active
+### M2-W099 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~5.8 of M1 measures lengths on time together with the fibre: ``Let lengths on $T$ together with the fibre be measured by $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$, the fibre at $s+L$ being joined to the fibre at $s$ by the step.'' Here $s$ is the length along $T$, and $x,y$ are the coordinates on the fibre along $v_{1},v_{2}$ (M1, Proposition~5.8). In these lengths the fibre is scaled, by functions on time: beside the lengths at $s=0$, the lengths of the fibre along $v_{1}$ are multiplied by $e^{\kappa s}$ and those along $v_{2}$ by $e^{-\kappa s}$, and lengths along time are not multiplied.
@@ -1461,7 +1461,7 @@ Proposition~5.8 of M1 measures lengths on time together with the fibre: ``Let le
 - **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
 - **Retires / retired by:** none
 
-### M2-W100 · active
+### M2-W100 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 These lengths are a warp as M1, Definition~2.4, has it: the warping direction $s$ of its clause~(ii) is the length along time, the warped piece is the fibre, and the involution of its clause~(iii) is the fold of the fibre, ``Applied twice it is $(s,x,y)\mapsto(s,-x,-y)$, the fold $\iota$.'' (M1, Proposition~5.8). It is of these lengths that M1 has ``The geometry therefore satisfies A2.''
@@ -1475,7 +1475,7 @@ These lengths are a warp as M1, Definition~2.4, has it: the warping direction $s
 - **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
 - **Retires / retired by:** none
 
-### M2-W101 · active
+### M2-W101 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Clause~(i) of M1, Definition~2.4, asks that ``at least one product in~(2) is a warped product'', and (2) is $M=(T\times\Sigma)\times F$ (M1, Definition~2.1). The internal piece is the base with the fibre, $F=\text{base}\times\Ttwo/\Ztwo$ (M1, Remark~6.3). The product beside which the display of M1 prints $\times_{w}$, the base with the fibre, is therefore a product within $F$, and is not one of the products of~(2).
@@ -1489,7 +1489,7 @@ Clause~(i) of M1, Definition~2.4, asks that ``at least one product in~(2) is a w
 - **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
 - **Retires / retired by:** none
 
-### M2-W102 · active
+### M2-W102 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 gives the lengths of the geometry by a formula in one place, Proposition~5.8, and there on time together with the fibre; it gives no formula for lengths on space, on the base, or on the base together with the fibre. Lengths are among the structure data of M1, Definition~3.1 (``the lengths, with the warp of Definition~2.4 and its rate $\kappa$''), and M1, Theorem~8.1, is stated ``with the continuous data of the geometry that this paper does not derive held fixed''.
@@ -1503,7 +1503,7 @@ M1 gives the lengths of the geometry by a formula in one place, Proposition~5.8,
 - **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
 - **Retires / retired by:** none
 
-### M2-W103 · active
+### M2-W103 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Of the product that its display marks $\times_{w}$, M1 says: ``Which of the two pieces is scaled, and by a function on which, is not fixed in this paper''. This section does not fix it either.
@@ -1517,7 +1517,7 @@ Of the product that its display marks $\times_{w}$, M1 says: ``Which of the two 
 - **Confirmed:** Decision Log P234, 19 November 2026 (the read-back of S13; the PI: "I confirm sentences 1 to 4 as worded, option 3, and the fifth sentence.  proceed")
 - **Retires / retired by:** none
 
-### M2-W104 · active
+### M2-W104 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 has no sentence that says how a state is differentiated. It says which states on the fibre are at rest: ``A \emph{state at rest} is a holomorphic section of the twist: for $d\geq1$, a function $f$ on the covering torus $E$ whose poles are bounded by $D$.'' (M1, Definition~7.4), the twist being ``the line $\mathcal{O}(D)$ on $E$ of a divisor $D=\sum a_{i}P_{i}$ on the corners''.
@@ -1531,7 +1531,7 @@ M1 has no sentence that says how a state is differentiated. It says which states
 - **Confirmed:** Decision Log P238, 19 November 2026 (the read-back of S14, first part, in which this sentence was shown as worded; the PI: "B 2 wait", option 2 of point B being in the architect's words "log the nine sentences"; taken by the architect as confirming the five sentences shown as worded, of which this is one, and the logging of the four steps of proof that were told in plain English; said to the PI at once)
 - **Retires / retired by:** none
 
-### M2-W105 · active
+### M2-W105 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{definition}[the operator $\bar\partial$ of the twist]\label{def:dbar}
@@ -1551,7 +1551,7 @@ a section of $\Lambda^{0,1}\otimes\mathcal{O}(D)$. On the spinor bundle $\Lambda
 - **Confirmed:** Decision Log P238, 19 November 2026 (the read-back of S14, first part, in which this sentence was shown as worded; the PI: "B 2 wait", option 2 of point B being in the architect's words "log the nine sentences"; taken by the architect as confirming the five sentences shown as worded, of which this is one, and the logging of the four steps of proof that were told in plain English; said to the PI at once)
 - **Retires / retired by:** none
 
-### M2-W106 · active
+### M2-W106 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{proposition}[the fibre at one time]\label{prop:fibre}
@@ -1567,7 +1567,7 @@ Let $E$, $J$, $z$ and $D$ be as in Definition~\ref{def:dbar}. (i) $\bar\partial$
 - **Confirmed:** Decision Log P238, 19 November 2026 (the read-back of S14, first part, in which this sentence was shown as worded; the PI: "B 2 wait", option 2 of point B being in the architect's words "log the nine sentences"; taken by the architect as confirming the five sentences shown as worded, of which this is one, and the logging of the four steps of proof that were told in plain English; said to the PI at once)
 - **Retires / retired by:** none
 
-### M2-W107 · active
+### M2-W107 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (i) and (ii). Where two of the frames meet, $1=z_{i}^{a_{i}}\cdot z_{i}^{-a_{i}}$, and $z_{i}^{a_{i}}$ is holomorphic with no zero there. If $\sigma=f\cdot1=g\,z_{i}^{-a_{i}}$ then $g=z_{i}^{a_{i}}f$, $g$ is continuously differentiable exactly when $f$ is, and $\partial g/\partial\bar z=z_{i}^{a_{i}}\,\partial f/\partial\bar z$: the two frames give the same $\bar\partial\sigma$. Another coordinate of $J$ that is linear in $(\theta_{\psi},\theta_{\omega})$ is $cz$ for a constant $c\neq0$; with it $\partial f/\partial\bar z$ is divided by $\bar c$, $\mathrm{d}\bar z$ is multiplied by $\bar c$, and the frames near the corners are multiplied by constants, so that $\bar\partial$ is unchanged. It is made from $J$, which says which functions are holomorphic, and from $D$, which gives the frames; no length is used. This is (i). A continuously differentiable function $f$ with $\partial f/\partial\bar z=0$ has a complex derivative at each point, and a function with a complex derivative at each point has $\partial f/\partial\bar z=0$. So $\bar\partial\sigma=0$ exactly when $\sigma$ is a holomorphic function $f$ away from the corners and, near $P_{i}$, is $g\,z_{i}^{-a_{i}}$ with $g$ holomorphic, that is when $f$ has at $P_{i}$ a pole of order at most $a_{i}$: a function on $E$ whose poles are bounded by $D$ (M1, Definition~7.4). This is (ii).
@@ -1609,7 +1609,7 @@ The Weierstrass function. By the coordinate $z$, $E$ is the plane $\C$ modulo th
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14, first part; Decision Log P238)
 - **Retires / retired by:** retired by M2-W114 (Decision Log P239, 19 November 2026). Rests on it and is flagged: M2-W106 (its statement is unchanged; its proof is now M2-W107, M2-W113, M2-W114 and M2-W110)
 
-### M2-W110 · active
+### M2-W110 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iii) and (v). For a continuously differentiable function $f$ and $g(z)=f(-z)$, $\frac{\partial g}{\partial\bar z}(z)=-\frac{\partial f}{\partial\bar z}(-z)$, and $\iota^{*}\mathrm{d}\bar z=-\mathrm{d}\bar z$ (Definition~\ref{def:lift}). In the frame $1$ the first lift carries the section $f$ to $g$, and the section $u\,\mathrm{d}\bar z\otimes1$ to $-u(-z)\,\mathrm{d}\bar z\otimes1$; so $\bar\partial$ of the image of $f$ is $-\frac{\partial f}{\partial\bar z}(-z)\,\mathrm{d}\bar z\otimes1$, which is the image of $\bar\partial f$. Near a corner the first lift carries the frame $z_{i}^{-a_{i}}$ to $(-1)^{a_{i}}z_{i}^{-a_{i}}$, a constant multiple, and the same holds there. The second lift is the first followed by multiplication by $-1$, with which $\bar\partial$ commutes. This is (iii). For (v): an isomorphism of $\mathcal{O}(D)$ to itself that covers the identity of $E$ is multiplication by a continuous function $\beta$ with no zero (the proof of Proposition~\ref{prop:pillowcase}). The frames $1$ and $z_{i}^{-a_{i}}$ are differentiable sections with $\bar\partial=0$; so are their images $\beta\cdot1$ and $\beta\,z_{i}^{-a_{i}}$, if the isomorphism carries differentiable sections to differentiable sections and $\bar\partial$ to $\bar\partial$. Then $\beta$ is continuously differentiable with $\partial\beta/\partial\bar z=0$ at every point of $E$; it is an elliptic function with no pole, and so a constant \cite[\S20.12]{WhittakerWatson}.
@@ -1637,7 +1637,7 @@ Proposition~\ref{prop:pillowcase} gives the line of the fibre up to isomorphisms
 - **Confirmed:** Decision Log P238, 19 November 2026 (the read-back of S14, first part, in which this sentence was shown as worded; the PI: "B 2 wait", option 2 of point B being in the architect's words "log the nine sentences"; taken by the architect as confirming the five sentences shown as worded, of which this is one, and the logging of the four steps of proof that were told in plain English; said to the PI at once)
 - **Retires / retired by:** retired by M2-W115 (Decision Log P240, 19 November 2026). Rests on it and is flagged: M2-W112 (its statement does not quote this entry and is unchanged)
 
-### M2-W112 · active
+### M2-W112 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 $\bar\partial$ carries the first summand of the spinor bundle of the fibre into the second. No operation that carries the second into the first, and none that differentiates a state in the direction $z$, is made here. The operator of \cite[Proposition~1.4.25]{Nicolaescu} is stated for ``a Hermitian line bundle'' with ``a Hermitian connection'': it asks for a measure of length in the line of the twist. M1 gives none. Nothing is said here of differentiation along time, on space or on the base, of how the step acts on $\bar\partial$, or of any point that waits for this card.
@@ -1651,7 +1651,7 @@ $\bar\partial$ carries the first summand of the spinor bundle of the fibre into 
 - **Confirmed:** Decision Log P238, 19 November 2026 (the read-back of S14, first part, in which this sentence was shown as worded; the PI: "B 2 wait", option 2 of point B being in the architect's words "log the nine sentences"; taken by the architect as confirming the five sentences shown as worded, of which this is one, and the logging of the four steps of proof that were told in plain English; said to the PI at once)
 - **Retires / retired by:** none
 
-### M2-W113 · active
+### M2-W113 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 The Weierstrass function. By the coordinate $z$, $E$ is the plane $\C$ modulo the lattice that is the image of $\Z^{2}$; $P_{1}$ is the class of $0$, and $P_{2}$, $P_{3}$, $P_{4}$ are the classes of the half-periods $\omega_{1}$, $\omega_{2}$ and $\omega_{1}+\omega_{2}$, where $2\omega_{1}$ and $2\omega_{2}$ are the values of $z$ at $(1,0)$ and $(0,1)$; $\omega_{1}+\omega_{2}$ is congruent to $\omega_{3}=-\omega_{1}-\omega_{2}$. The Weierstrass function $\wp$ of these periods is an even elliptic function whose only singularities are double poles at the points of the lattice, and $\wp'$ is odd \cite[\S\S20.2, 20.21]{WhittakerWatson}. The only singularities of $\wp'$ are triple poles at the points congruent to the origin, and its only zeros are the points congruent to $\omega_{1}$, $\omega_{2}$, $\omega_{3}$; for each of these half-periods $\omega$ the only zeros of $\wp-\wp(\omega)$ are double zeros at the points congruent to $\omega$ \cite[\S20.32]{WhittakerWatson}. An elliptic function has in a cell as many zeros as poles \cite[\S20.13]{WhittakerWatson}, so that the three zeros of $\wp'$ are simple. With $e_{k}=\wp(P_{k})$ for $k=2,3,4$, as M1, Section~7.4, has it for $k=4$ in its smallest case, the divisors on $E$ are therefore: of $\wp-e_{k}$, $2P_{k}-2P_{1}$; of $\wp'$, $P_{2}+P_{3}+P_{4}-3P_{1}$.
@@ -1665,7 +1665,7 @@ The Weierstrass function. By the coordinate $z$, $E$ is the plane $\C$ modulo th
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W108; the PI told in plain English in the closing report of chat C8b; Decision Log P239)
 - **Retires / retired by:** retires M2-W108
 
-### M2-W114 · active
+### M2-W114 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iv). Of the twenty divisors of flux three on the corners, exactly five have, for the lift with two states on the pillowcase (M1, Lemma~7.5(b)), the signs $+1,+1,+1,-1$: $3P_{4}$, $2P_{1}+P_{4}$, $2P_{2}+P_{4}$, $2P_{3}+P_{4}$ and $P_{1}+P_{2}+P_{3}$ (certificate \texttt{L6\_five}); for $P_{1}+P_{2}+P_{3}$ that lift is the second, and for the other four it is the first (\texttt{L6\_which\_lift}; M1, the proof of Proposition~7.6). Let $D=\sum a_{i}P_{i}$ be one of the five and $m$ the function named for it in (iv). By the step above the divisor of $m$ is $D-3P_{4}$ (the arithmetic of the divisors is certified in \texttt{L6\_multipliers}, the divisors of $\wp-e_{k}$ and of $\wp'$ being written into the certificate from the step above). Away from the corners $m$ is holomorphic with no zero, and near $P_{i}$ it is $z_{i}^{a_{i}-b_{i}}$ times a holomorphic function with no zero, where $b_{4}=3$ and $b_{1}=b_{2}=b_{3}=0$. Multiplication by $m$ therefore carries each frame of $\mathcal{O}(D)$ to a frame of $\mathcal{O}(3P_{4})$ times a holomorphic function with no zero: it is an isomorphism of $\mathcal{O}(D)$ onto $\mathcal{O}(3P_{4})$ that covers the identity of $E$, it carries differentiable sections onto differentiable sections, and, since $\partial(mf)/\partial\bar z=m\,\partial f/\partial\bar z$, it carries $\bar\partial$ to $\bar\partial$. The first four multipliers are even functions and the fifth is odd, $\wp$ being even and $\wp'$ odd; the multiplier in which $\wp'$ stands is the one for the divisor whose lift with two states is the second (\texttt{L6\_parity}). For $m$ even, $(mf)(-z)=m(z)\,f(-z)$: multiplication by $m$ carries the first lift to the first. For $m$ odd, $(mf)(-z)=m(z)\cdot\bigl(-f(-z)\bigr)$: it carries the second lift of $\mathcal{O}(D)$ to the first lift of $\mathcal{O}(3P_{4})$. In each case the lift with two states is carried to the lift with two states.
@@ -1679,7 +1679,7 @@ The Weierstrass function. By the coordinate $z$, $E$ is the plane $\C$ modulo th
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W109; the PI told in plain English in the closing report of chat C8b; Decision Log P239)
 - **Retires / retired by:** retires M2-W109
 
-### M2-W115 · active
+### M2-W115 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:pillowcase} gives the line of the fibre up to isomorphisms that cover the identity of $E$, each of which is multiplication by a continuous function with no zero. By Proposition~\ref{prop:fibre}(v) only the constants among them keep $\bar\partial$. The line as a bundle up to isomorphism therefore does not determine $\bar\partial$; $\bar\partial$ comes from M1's twist, the line of a divisor, and not from the bundle alone.
@@ -1693,7 +1693,7 @@ Proposition~\ref{prop:pillowcase} gives the line of the fibre up to isomorphisms
 - **Confirmed:** Decision Log P240, 19 November 2026 (the corrected wording put to the PI in the closing list, its item 1; the PI: "1 to 9 confirmed, commit and push")
 - **Retires / retired by:** retires M2-W111
 
-### M2-W116 · active
+### M2-W116 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 In M1, Section~7.4, the covering torus has a complex structure, ``Let $E$ be the covering torus of the pillowcase with a complex structure for which the fold is $\iota(z)=-z$'', and M1 says of the drive: ``The drive is not a holomorphic map of $E$; it acts on structures through its action on the corners.'' (M1, Definition~7.4). Along time the lengths of M1, Proposition~5.8, give a complex structure $J_{s}$ of $E$ at each time $s$, with the coordinate $z_{s}=e^{-\kappa s}y+ie^{\kappa s}x$ (the proof of Proposition~\ref{prop:time}), and Definition~\ref{def:dbar} gives an operator $\bar\partial$ for each.
@@ -1707,7 +1707,7 @@ In M1, Section~7.4, the covering torus has a complex structure, ``Let $E$ be the
 - **Confirmed:** Decision Log P242, 19 November 2026 (the read-back of S14b, in which this sentence was shown as worded; the PI: "log M2-W116 to M2-W124 (five as worded, four steps of proof)")
 - **Retires / retired by:** none
 
-### M2-W117 · active
+### M2-W117 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{definition}[the twist carried round time]\label{def:twisttime}
@@ -1727,7 +1727,7 @@ which at each time $s$ is the $\bar\partial$ of Definition~\ref{def:dbar} for $J
 - **Confirmed:** Decision Log P242, 19 November 2026 (the read-back of S14b, in which this sentence was shown as worded; the PI: "log M2-W116 to M2-W124 (five as worded, four steps of proof)")
 - **Retires / retired by:** none
 
-### M2-W118 · active
+### M2-W118 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{proposition}[the fibre at every time]\label{prop:fibretime}
@@ -1743,7 +1743,7 @@ Let $J_{s}$, $z_{s}$, $D$ and $\mathcal{O}_{Y}(D)$ be as in Definition~\ref{def:
 - **Confirmed:** Decision Log P242, 19 November 2026 (the read-back of S14b, in which this sentence was shown as worded; the PI: "log M2-W116 to M2-W124 (five as worded, four steps of proof)")
 - **Retires / retired by:** none
 
-### M2-W119 · active
+### M2-W119 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (i) and (ii). With $u=e^{-\kappa s}y$ and $v=e^{\kappa s}x$ the lengths of the fibre at $s$ are $\mathrm{d}u^{2}+\mathrm{d}v^{2}$ and $z_{s}=u+iv$. A linear map of the plane that keeps $\mathrm{d}u^{2}+\mathrm{d}v^{2}$ carries $(1,0)$ to a vector $(a,b)$ of length one and $(0,1)$ to $(-b,a)$ or to $(b,-a)$. In the second case its square is the identity; in the first its square carries $(1,0)$ to $(a^{2}-b^{2},2ab)$, which is $(-1,0)$ exactly when $a=0$ and $b=\pm1$. So the maps that keep the lengths and have square $-1$ are two: the one that carries $\partial_{u}$ to $\partial_{v}$, which is $J_{s}$, and its negative, which reverses the handedness; $J_{s}$ keeps the handedness of $(\theta_{\psi},\theta_{\omega})$ (the proof of Proposition~\ref{prop:time}). This is (i). For (ii): $z_{s}\circ M_{0}^{3}=z_{s+3L}$ (the proof of Proposition~\ref{prop:time}), and $M_{0}^{3}$ leaves each corner in place (M1, Corollary~7.8), so that near $P_{i}$, $z_{s,i}\circ M_{0}^{3}=z_{s+3L,i}$: the pull-back by $M_{0}^{3}$ carries the frame $1$ at the time $s$ to the frame $1$ at the time $s+3L$, and $z_{s,i}^{-a_{i}}$ to $z_{s+3L,i}^{-a_{i}}$. Where two of the frames meet they differ by the factor $z_{s,i}^{a_{i}}$, which is continuous in $(p,s)$ and has no zero there: $\mathcal{O}_{Y}(D)$ is a complex line bundle on $Y$. $M_{0}^{3}$ commutes with the fold, so the first and the second lift, taken at each time, respect the join; at each time they are lifts of the fold with the signs $(-1)^{a_{i}}$ and $-(-1)^{a_{i}}$ at $P_{i}$ (step~(i) of the proof of Proposition~\ref{prop:pillowcase}), and they are lifts of the fold to $\mathcal{O}_{Y}(D)$ with these signs on the corner circles. If $f$ is continuous with derivatives along the fibre that are continuous in $(p,s)$, so is $f\circ M_{0}^{3}$, and since $z_{s}\circ M_{0}^{3}=z_{s+3L}$, $\partial(f\circ M_{0}^{3})/\partial\bar z_{s+3L}=(\partial f/\partial\bar z_{s})\circ M_{0}^{3}$, while the pull-back by $M_{0}^{3}$ carries $\mathrm{d}\bar z_{s}$ to $\mathrm{d}\bar z_{s+3L}$ (the proof of Proposition~\ref{prop:time}): the join carries $\bar\partial$ to $\bar\partial$. At each time $s$ a section differentiable along the fibre is a differentiable section of $\mathcal{O}(D)$ of $(E,J_{s})$, and the last two clauses of (ii) are Proposition~\ref{prop:fibre}(iii) and~(ii) at each time.
@@ -1771,7 +1771,7 @@ Let $J_{s}$, $z_{s}$, $D$ and $\mathcal{O}_{Y}(D)$ be as in Definition~\ref{def:
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b; Decision Log P242)
 - **Retires / retired by:** retired by M2-W125 (Decision Log P243)
 
-### M2-W121 · active
+### M2-W121 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (v). Let $\nu'$ be a map as in (v). For $w\neq0$ in the fibre over $y$, $\nu'(w)=c(y)\,\nu_{D}(w)$ for a number $c(y)\neq0$ that does not depend on $w$, and $c\colon Y\to\C\setminus\{0\}$ is continuous. The frames of $\mathcal{O}_{Y}(D')$ are differentiable along the fibre with $\bar\partial=0$, and $\nu_{D}$ carries them to the frames $e$ of $\mathcal{O}_{Y}(D)$; so $\nu'$ carries them to the sections $b\,e$, with $b=c\circ\tau_{Y}^{-1}$, which are differentiable along the fibre with $\bar\partial(b\,e)=0$. At each time, therefore, $b$ is continuously differentiable on the fibre with $\partial b/\partial\bar z=0$ at every point; as in the last step of the proof of Proposition~\ref{prop:fibre}, it is an elliptic function with no pole, and so a constant \cite[\S20.12]{WhittakerWatson}. So $b$, and with it $c$, depends on the time alone. For the second sentence: the divisor $D'$ of $D=3P_{2}$ is $3P_{4}$, that of $3P_{3}$ is $3P_{2}$, and that of $3P_{4}$ is $3P_{3}$ (\texttt{L7\_chain}). The composite of $\nu_{3P_{2}}$, $\nu_{3P_{3}}$ and $\nu_{3P_{4}}$ carries a section that is $f$ in the frame $1$ near $(p,s)$ to the section that is $f\circ M_{0}^{-3}$ in the frame $1$ near $(M_{0}^{3}p,s-3L)$, which is the point $(p,s)$; by the join, a section that is $f\circ M_{0}^{-3}$ near $(M_{0}^{3}p,s-3L)$ is $f\circ M_{0}^{-3}\circ M_{0}^{3}=f$ near $(p,s)$. In the same way it carries each frame near a corner circle to itself. The composite is the identity.
@@ -1785,7 +1785,7 @@ Let $J_{s}$, $z_{s}$, $D$ and $\mathcal{O}_{Y}(D)$ be as in Definition~\ref{def:
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b; Decision Log P242)
 - **Retires / retired by:** none
 
-### M2-W122 · active
+### M2-W122 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (vi). A complex structure $J$ of $E$ with a coordinate $z$ linear in $(\theta_{\psi},\theta_{\omega})$ is, at every point, one and the same linear map of $\R^{2}$ with $J^{2}=-1$, and $M_{0}$, whose differential at every point is the matrix $M_{0}$, is holomorphic from $(E,J)$ to $(E,J)$ exactly when $M_{0}J=JM_{0}$. For a real matrix $J=\bigl(\begin{smallmatrix}p&q\\r&t\end{smallmatrix}\bigr)$, $M_{0}J=JM_{0}$ exactly when $r=q$ and $t=p-q$; the first entry of the square of $\bigl(\begin{smallmatrix}p&q\\q&p-q\end{smallmatrix}\bigr)$ is $p^{2}+q^{2}$, which is not $-1$ (the arithmetic is certified over the integers in \texttt{L7\_commutant}, \texttt{L7\_square\_entry} and \texttt{L7\_not\_minus\_one}). So there is no such $J$. That $M_{0}$ is holomorphic from the fibre at $s$ to the fibre at $s-L$ is in the first step of the proof of Proposition~\ref{prop:step}.
@@ -1813,7 +1813,7 @@ Propositions~\ref{prop:whole} and~\ref{prop:step} give the line of the fibre car
 - **Confirmed:** Decision Log P242, 19 November 2026 (the read-back of S14b, in which this sentence was shown as worded; the PI: "log M2-W116 to M2-W124 (five as worded, four steps of proof)")
 - **Retires / retired by:** retired by M2-W126 (Decision Log P244)
 
-### M2-W124 · active
+### M2-W124 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:fibretime} speaks of $Y$, of the directions along the fibre, and of one divisor at a time. That the multipliers of Proposition~\ref{prop:fibre}(iv), taken at each time, carry $\mathcal{O}_{Y}(D)$ onto $\mathcal{O}_{Y}(3P_{4})$ continuously in the time is not shown here. Nothing is made here that differentiates a state in the direction of time, and it is not said whether the function of the time alone of Proposition~\ref{prop:fibretime}(v) is fixed further. Nothing is said here of space, of the base, of the unfolded geometry as a whole, or of any point that waits for this card.
@@ -1827,7 +1827,7 @@ Proposition~\ref{prop:fibretime} speaks of $Y$, of the directions along the fibr
 - **Confirmed:** Decision Log P242, 19 November 2026 (the read-back of S14b, in which this sentence was shown as worded; the PI: "log M2-W116 to M2-W124 (five as worded, four steps of proof)")
 - **Retires / retired by:** none
 
-### M2-W125 · active
+### M2-W125 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iii) and (iv). Let $D$ be one of the five divisors of Proposition~\ref{prop:fibre}(iv). By (ii), $\mathcal{O}_{Y}(D)$ with its lift with two states on the pillowcase is a line on $Y$ with a lift of the fold; its restriction to the fibre over $s=0$ is the line $\mathcal{O}(D)$ of $(E,J_{0})$, which has degree three (the proof of Proposition~\ref{prop:pillowcase}), with a lift whose signs are $+1,+1,+1,-1$ (Proposition~\ref{prop:fibre}(iv)). The line of Proposition~\ref{prop:whole}(iii) with its lift of the fold is another such line, and by Proposition~\ref{prop:time}(ii) the two are carried one to the other by an isomorphism that covers the identity of $Y$ and carries lift to lift. This is (iii). For (iv): $z_{s-L}\circ M_{0}=z_{s}$ (the proof of Proposition~\ref{prop:step}), and $M_{0}$ carries $P_{i}$ to $M_{0}P_{i}$, so that near $P_{i}$ the coordinate $z_{s-L}-z_{s-L}(M_{0}P_{i})$ of the fibre at $s-L$, carried back by $M_{0}$, is $z_{s,i}$. The pull-back by $M_{0}$ therefore carries the frame of $\mathcal{O}(D)$ of $(E,J_{s-L})$ near $M_{0}P_{i}$, the power $-a'_{i}$ of that coordinate, to $z_{s,i}^{-a'_{i}}$, the frame of $\mathcal{O}(D')$ of $(E,J_{s})$ near $P_{i}$, and the frame $1$ to the frame $1$ (how $M_{0}$ moves the corners is certified in \texttt{L7\_corners}, and, for the twenty divisors of flux three, that the moved divisor has flux three in \texttt{L7\_moved\_flux}). Its inverse $\nu_{D}$, the pull-back by $M_{0}^{-1}$, carries frame to frame, so that it is continuous and carries the fibre of $\mathcal{O}_{Y}(D')$ over $y$ linearly and one-to-one onto the fibre of $\mathcal{O}_{Y}(D)$ over $\tau_{Y}(y)$; it respects the join, $M_{0}$ commuting with $M_{0}^{3}$ (\texttt{L7\_cube}). $M_{0}$ commutes with the fold, so $\nu_{D}$ carries the first lift to the first and the second to the second. For $f$ continuous with derivatives along the fibre that are continuous in $(p,s)$, so is $f\circ M_{0}^{-1}$, and in the same way so is $g\circ M_{0}$ for such a $g$, so that $\nu_{D}$ carries the sections differentiable along the fibre onto the sections differentiable along the fibre; and $\partial(f\circ M_{0}^{-1})/\partial\bar z_{s-L}=(\partial f/\partial\bar z_{s})\circ M_{0}^{-1}$, while the pull-back by $\tau_{Y}^{-1}$ carries $\mathrm{d}\bar z_{s}$ to $\mathrm{d}\bar z_{s-L}$: $\nu_{D}$ carries $\bar\partial$ to $\bar\partial$.
@@ -1841,7 +1841,7 @@ Proposition~\ref{prop:fibretime} speaks of $Y$, of the directions along the fibr
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W120; the PI told in plain English in the closing report of chat C8b2; Decision Log P243)
 - **Retires / retired by:** retires M2-W120
 
-### M2-W126 · active
+### M2-W126 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:whole} gives the line of the fibre carried round time up to isomorphism, and Proposition~\ref{prop:step} the lifts of the step up to continuous functions with no zero. By Proposition~\ref{prop:fibretime}(iii) to~(v), M1's twist, taken at every time, gives that line with its $\bar\partial$, and maps over the step that keep $\bar\partial$, fixed up to functions of the time alone; for the maps $\nu_{3P_{2}}$, $\nu_{3P_{3}}$ and $\nu_{3P_{4}}$ three steps are the identity. The constants $1$ and $-1$ are functions of the time alone: $\bar\partial$ does not decide the sixth choice of this paper. A family of complex structures carried round time other than that of Definition~\ref{def:step} does not keep both the lengths of M1, Proposition~5.8, and the handedness of $(\theta_{\psi},\theta_{\omega})$ (Proposition~\ref{prop:fibretime}(i)). M1's sentence that the drive is not a holomorphic map of $E$ and the sentence of the proof of Proposition~\ref{prop:step} that $M_{0}$ is holomorphic from the fibre at $s$ to the fibre at $s-L$ do not contradict one another: the second speaks of the fibres at two times, whose complex structures are different, and for one complex structure with a linear coordinate Proposition~\ref{prop:fibretime}(vi) shows the first.
@@ -1869,7 +1869,7 @@ M1 names the direction of time among what a relabelling carries, ``carries the d
 - **Confirmed:** Decision Log P246, 19 November 2026 (the read-back of S14b2, in which this sentence was shown as worded; the PI: "log M2-W127 to M2-W134 (four as worded, four steps of proof)")
 - **Retires / retired by:** retired by M2-W137 (Decision Log P248)
 
-### M2-W128 · active
+### M2-W128 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{proposition}[the direction of time]\label{prop:timedir}
@@ -1921,7 +1921,7 @@ The function $\bar z_{s,i}/z_{s,i}$ has modulus one and takes every value of mod
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b2; Decision Log P246)
 - **Retires / retired by:** retired by M2-W136 (Decision Log P247)
 
-### M2-W131 · active
+### M2-W131 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iv). Away from the corner circles a section is $F\cdot1$ for a function $F$ of $(p,s)$. By Definition~\ref{def:twisttime} a section that is $f$ in the frame $1$ near $(M_{0}^{3}p,s)$ is $f\circ M_{0}^{3}$ near $(p,s+3L)$: $F(p,s+3L)=F(M_{0}^{3}p,s)$, and differentiating in $s$ gives the same for $\partial_{s}F$. The first lift carries the section with the function $F(p,s)$ to the one with $F(\iota(p),s)$, and the second to the one with $-F(\iota(p),s)$ (M1, Definition~7.4, at each time); $\nu_{D}$ carries it to the one with the function $H(q,t)=F(M_{0}^{-1}q,t+L)$ (Proposition~\ref{prop:fibretime}(iv)). Each of these maps carries corner circles to corner circles. In each the point of the fibre is moved by a map that does not depend on the time, and the time is shifted by a constant, so that the derivative in the time of the image is the image of the derivative: $\partial_{t}H(q,t)=(\partial_{s}F)(M_{0}^{-1}q,t+L)$, and likewise for the lifts. The map $c\,\nu_{D}$ carries the section with the function $F$ to the one with $b\,H$, where $b=c\circ\tau_{Y}^{-1}$ is a function of the time alone (the third step of the proof of Proposition~\ref{prop:fibretime}), with a continuous derivative $b'$ when $c$ has one; and $\partial_{t}(bH)=b\,\partial_{t}H+b'H$, while the image of $(\partial_{s}F)\cdot1$ is $b\,\partial_{t}H\cdot1$. The two are the same for every section exactly when $b'H=0$ for every $H$, that is when $b'=0$: $b$, and with it $c$, is constant.
@@ -1935,7 +1935,7 @@ The function $\bar z_{s,i}/z_{s,i}$ has modulus one and takes every value of mod
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b2; Decision Log P246)
 - **Retires / retired by:** none
 
-### M2-W132 · active
+### M2-W132 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (v). Let $\sigma$ be as in (iii) at the corner circle of $P_{i}$. Near that circle and away from it, by (iii),
@@ -1971,7 +1971,7 @@ Proposition~\ref{prop:fibretime} made nothing that differentiates in the directi
 - **Confirmed:** Decision Log P246, 19 November 2026 (the read-back of S14b2, in which this sentence was shown as worded; the PI: "log M2-W127 to M2-W134 (four as worded, four steps of proof)")
 - **Retires / retired by:** retired by M2-W138 (Decision Log P248)
 
-### M2-W134 · active
+### M2-W134 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:timedir} speaks of $Y$ and of one divisor at a time. It is not shown here that what M1 gives singles out one of the functions $A$ of its part~(v), and it is not shown that it singles out none. That the multipliers of Proposition~\ref{prop:fibre}(iv), taken at each time, are continuous in the time, and how they carry the derivative in $s$ in the frame $1$ of one of the five divisors to that of another, is not shown here. No operation is made here that differentiates a $(0,1)$-form with values in the twist in the direction of time and gives such a form. How smooth a state is, is not said. Nothing is said here of space, of the base, of the unfolded geometry as a whole, or of any point that waits for this card.
@@ -1985,7 +1985,7 @@ Proposition~\ref{prop:timedir} speaks of $Y$ and of one divisor at a time. It is
 - **Confirmed:** Decision Log P246, 19 November 2026 (the read-back of S14b2, in which this sentence was shown as worded; the PI: "log M2-W127 to M2-W134 (four as worded, four steps of proof)")
 - **Retires / retired by:** none
 
-### M2-W135 · active
+### M2-W135 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (i) and (ii). In the coordinates $(s,x,y)$ the lengths $\mathrm{d}s^{2}+e^{2\kappa s}\mathrm{d}x^{2}+e^{-2\kappa s}\mathrm{d}y^{2}$ have no term in which $\mathrm{d}s$ stands with $\mathrm{d}x$ or with $\mathrm{d}y$. The vector $\partial_{s}$, whose components are $(1,0,0)$, therefore has length one and is at right angles to every vector along the fibre; and a vector with the components $(\alpha,\beta,\gamma)$ that is at right angles to $\partial_{x}$ and to $\partial_{y}$ has $e^{2\kappa s}\beta=0$ and $e^{-2\kappa s}\gamma=0$, so that it is $\alpha\,\partial_{s}$, of length $\lvert\alpha\rvert$, which is one exactly when $\alpha=1$ or $\alpha=-1$. The curves $t\mapsto(p,s+3L+t)$ and $t\mapsto(M_{0}^{3}p,s+t)$ are one curve of $Y$ (Definition~\ref{def:time}), so that $\partial_{s}$ is a vector field on $Y$ and the join carries $\partial_{s}$ to $\partial_{s}$. The fold carries the curve $t\mapsto(p,s+t)$ to $t\mapsto(\iota(p),s+t)$, and $\tau_{Y}$ carries it to $t\mapsto(M_{0}p,s-L+t)$: each carries $\partial_{s}$ to $\partial_{s}$. The map $(s,x,y)\mapsto(-s,-y,x)$ ``keeps these lengths'' (M1, Proposition~5.8) and carries the curve $t\mapsto(s+t,x,y)$ to $t\mapsto(-s-t,-y,x)$, so that it carries $\partial_{s}$ to $-\partial_{s}$. A function on $Y$ is a function $f$ of $(p,s)$ with $f(p,s+3L)=f(M_{0}^{3}p,s)$; differentiating in $s$ gives the same for $\partial_{s}f$, which is continuous when the first derivatives of $f$ are. This is (i). For (ii): $z_{s}=e^{-\kappa s}y+ie^{\kappa s}x$, so that at fixed $x$ and $y$, $\partial_{s}z_{s}=-\kappa e^{-\kappa s}y+i\kappa e^{\kappa s}x=-\kappa\,(e^{-\kappa s}y-ie^{\kappa s}x)=-\kappa\,\bar z_{s}$ (the signs are certified, with integers in the place of the real numbers, in \texttt{L8\_dz}). In the same way the derivative in $s$ of the coefficients of $\mathrm{d}\bar z_{s}=e^{-\kappa s}\mathrm{d}y-ie^{\kappa s}\mathrm{d}x$ gives $-\kappa e^{-\kappa s}\mathrm{d}y-i\kappa e^{\kappa s}\mathrm{d}x=-\kappa\,\mathrm{d}z_{s}$. The $(0,1)$-forms of $J_{s}$ are the multiples of $\mathrm{d}\bar z_{s}$, and $-\kappa\,\mathrm{d}z_{s}$ is not one: the determinant of the coefficients of $\mathrm{d}z_{s}$ and of $\mathrm{d}\bar z_{s}$ in $\mathrm{d}x$ and $\mathrm{d}y$ is $2i$, and $\kappa\neq0$ (M1, Definition~2.4(ii)). If $J_{s'}=J_{s}$, then $z_{s'}$ is a coordinate of $J_{s}$ that is linear in $(\theta_{\psi},\theta_{\omega})$, and so is $c\,z_{s}$ for a constant $c\neq0$ (the first step of the proof of Proposition~\ref{prop:fibre}); comparing the coefficients of $y$ and of $x$ gives $c=e^{-\kappa(s'-s)}$ and $c=e^{\kappa(s'-s)}$, so that $e^{2\kappa(s'-s)}=1$ and $s'=s$.
@@ -2000,7 +2000,7 @@ Proposition~\ref{prop:timedir} speaks of $Y$ and of one divisor at a time. It is
 - **Retires / retired by:** retires M2-W129
 
 
-### M2-W136 · active
+### M2-W136 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iii). Near the corner circle of $P_{i}$ and away from it, $f=g\,z_{s,i}^{-a_{i}}$. For $p$ near $P_{i}$, $z_{s,i}(p)$ is $z_{s}$ of the difference $p-P_{i}$, $z_{s}$ being linear, so that by (ii) $\partial_{s}z_{s,i}=-\kappa\,\bar z_{s,i}$, and
@@ -2019,7 +2019,7 @@ Proposition~\ref{prop:timedir} speaks of $Y$ and of one divisor at a time. It is
 - **Retires / retired by:** retires M2-W130
 
 
-### M2-W137 · active
+### M2-W137 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 names the direction of time among what a relabelling carries, ``carries the direction of time of the one to that of the other'' (M1, Definition~3.3), and it measures time by a length: ``Let $s$ be the length along $T$'' (M1, Proposition~5.8). Where M1 writes a derivative in $s$, it is of the factor by which lengths are multiplied: ``a quantity $w$ whose rate of change is proportional to its own size, $\mathrm{d}w/\mathrm{d}s=\kappa w$'' (M1, Section~2.3); clause~(ii) of M1, Definition~2.4, has the same equation.
@@ -2034,7 +2034,7 @@ M1 names the direction of time among what a relabelling carries, ``carries the d
 - **Retires / retired by:** retires M2-W127
 
 
-### M2-W138 · active
+### M2-W138 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 After Proposition~\ref{prop:fibretime} it was said that nothing is made there that differentiates a state in the direction of time. By Proposition~\ref{prop:timedir}(i), in the lengths of M1, Proposition~5.8, the only vectors of length one at right angles to the fibre are $\partial_{s}$ and $-\partial_{s}$, and for a function $f$ on $Y$ with continuous first derivatives $\partial_{s}f$ is a continuous function on $Y$; M1 counts the direction of time among what a relabelling carries (M1, Definition~3.3). By (iii), for a section $\sigma=f\cdot1=g\,z_{s,i}^{-a_{i}}$ as there and a corner circle with $a_{i}\neq0$, the sections $(\partial_{s}f)\cdot1$ and $(\partial_{s}g)\,z_{s,i}^{-a_{i}}$ differ wherever $g\neq0$, and the first is continuous up to a point of that corner circle exactly when $g=0$ at that point. By (v), for a continuous function $A$ on $Y$ away from the corner circles, the sections $(\partial_{s}f+Af)\cdot1$ are continuous over the corner circles, for every section $\sigma$ as in (iii), exactly when each $A+a_{i}\kappa\,\bar z_{s,i}/z_{s,i}$ is continuous up to the corner circle of $P_{i}$; such functions $A$ exist, and two of them differ by a continuous function on $Y$. By (iv), among the maps of Proposition~\ref{prop:fibretime}(v) whose function of the time alone has a continuous derivative, those that carry the derivative in $s$ in the frame $1$, away from the corner circles, to itself are the constant multiples of $\nu_{D}$. The constants $1$ and $-1$ are among them: on $Y$, the derivative in $s$ in the frame $1$ does not decide the sixth choice of this paper.
@@ -2062,7 +2062,7 @@ M1 takes the covering torus with one complex structure, ``Let $E$ be the coverin
 - **Confirmed:** Decision Log P250, 19 November 2026 (the read-back of S14b2b, in which this sentence was shown as worded; the PI: "I  confirm M2-W139, M2-W140, M2-W145 and M2-W146 as worded, with the four steps of proof to be logged as checked")
 - **Retires / retired by:** retired by M2-W150 (P252), for one corrected word
 
-### M2-W140 · active
+### M2-W140 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{proposition}[the five divisors at every time]\label{prop:fivetime}
@@ -2139,7 +2139,7 @@ Near the corner circle of $P_{j}$, $j\neq1,k$, and on it, $\wp_{s}-e_{k}$ is con
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b2b; Decision Log P250)
 - **Retires / retired by:** retired by M2-W149 (P251), for the wordings its mark names
 
-### M2-W144 · active
+### M2-W144 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (v) and (vi). By (ii), away from the corner circles $m_{D}$ has no zero and a derivative in $s$ that is continuous, and by the rule for the derivative of a product $\partial_{s}(m_{D}f)=m_{D}\,\partial_{s}f+(\partial_{s}m_{D})f=m_{D}\bigl(\partial_{s}f+(\partial_{s}m_{D}/m_{D})\,f\bigr)$; so $m_{D}(\partial_{s}f+Af)=\partial_{s}(m_{D}f)+(A-\partial_{s}m_{D}/m_{D})\,m_{D}f$. The function $\partial_{s}m_{D}$ is a function on $Y$ away from the corner circles, as in the first step of the proof of Proposition~\ref{prop:timedir}, so that $A'=A-\partial_{s}m_{D}/m_{D}$ is a continuous function on $Y$ away from the corner circles. Near the corner circle of $P_{i}$ and away from it, $m_{D}=z_{s,i}^{a_{i}-b_{i}}h$ and $\partial_{s}z_{s,i}=-\kappa\,\bar z_{s,i}$ (the second step of the proof of Proposition~\ref{prop:timedir}), so that
@@ -2158,7 +2158,7 @@ By (ii) $\partial_{s}h/h$ is continuous up to the corner circle; so $A'+b_{i}\ka
 - **Confirmed:** checked, not read back, 19 November 2026 (the PI told in plain English in the read-back of S14b2b; Decision Log P250)
 - **Retires / retired by:** none
 
-### M2-W145 · active
+### M2-W145 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 After Proposition~\ref{prop:timedir} it was said that it is not shown there that the multipliers of Proposition~\ref{prop:fibre}(iv), taken at each time, are continuous in the time, nor how they carry the derivative in $s$ in the frame $1$ of one of the five divisors to that of another. By Proposition~\ref{prop:fivetime}(ii) and~(iii), for $D$ one of the five divisors, $m_{D}$ is a continuous function with no zero on $Y$ away from the corner circles, and multiplication by $m_{D}$ in the frames $1$ is an isomorphism of $\mathcal{O}_{Y}(D)$ onto $\mathcal{O}_{Y}(3P_{4})$ that covers the identity of $Y$ and carries $\bar\partial$ to $\bar\partial$ and the lift with two states on the pillowcase to the lift with two states on the pillowcase. By (iv), an isomorphism of $\mathcal{O}_{Y}(D)$ onto $\mathcal{O}_{Y}(3P_{4})$ that covers the identity of $Y$ and carries sections differentiable along the fibre to such sections and $\bar\partial$ to $\bar\partial$ is multiplication by $c\,m_{D}$, for a continuous function $c$ with no zero that depends on the time alone. By (v), for a continuous function $A$ on $Y$ away from the corner circles, $A$ is one of the functions of Proposition~\ref{prop:timedir}(v) for $D$ exactly when $A-\partial_{s}m_{D}/m_{D}$ is one of them for $3P_{4}$. By (vi), for $D$ one of the four divisors other than $3P_{4}$, there is no function $c$ of the time alone, with no zero and with a continuous derivative, for which multiplication by $c\,m_{D}$ carries $(\partial_{s}f)\cdot1$ to $\bigl(\partial_{s}(c\,m_{D}f)\bigr)\cdot1$ for every section $f\cdot1$ of $\mathcal{O}_{Y}(D)$ away from the corner circles with $f$ having continuous first derivatives.
@@ -2172,7 +2172,7 @@ After Proposition~\ref{prop:timedir} it was said that it is not shown there that
 - **Confirmed:** Decision Log P250, 19 November 2026 (the read-back of S14b2b, in which this sentence was shown as worded; the PI: "I  confirm M2-W139, M2-W140, M2-W145 and M2-W146 as worded, with the four steps of proof to be logged as checked")
 - **Retires / retired by:** none
 
-### M2-W146 · active
+### M2-W146 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:fivetime} speaks of $Y$ and of the five divisors of Proposition~\ref{prop:fibre}(iv). It is not shown here that what M1 gives singles out one of the functions $A$ of Proposition~\ref{prop:timedir}(v), and it is not shown that it singles out none. Nothing is said here of how the functions $m_{D}$ are carried by the step, of the divisors of flux three whose odd corner is not $P_{4}$, or of a function $c$ in part~(vi) that is only continuous. No operation is made here that differentiates a $(0,1)$-form with values in the twist in the direction of time and gives such a form. How smooth a state is, is not said. Nothing is said here of space, of the base, of the unfolded geometry as a whole, or of any point that waits for this card.
@@ -2186,7 +2186,7 @@ Proposition~\ref{prop:fivetime} speaks of $Y$ and of the five divisors of Propos
 - **Confirmed:** Decision Log P250, 19 November 2026 (the read-back of S14b2b, in which this sentence was shown as worded; the PI: "I  confirm M2-W139, M2-W140, M2-W145 and M2-W146 as worded, with the four steps of proof to be logged as checked")
 - **Retires / retired by:** none
 
-### M2-W147 · active
+### M2-W147 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (i). A point $p$ of $E$ is the class of a vector $u$ of $\R^{2}$, and $z_{s}$ is linear, so that the lattice of the periods at the time $s$ is the set of the numbers $z_{s}(n)$, $n\in\Z^{2}$, and
@@ -2215,7 +2215,7 @@ At a fixed vector $w$, $\partial_{s}z_{s}(w)=-\kappa\,\overline{z_{s}(w)}$ (Prop
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W141; the PI told in plain English in the closing list of chat C8b2c; Decision Log P251)
 - **Retires / retired by:** retires M2-W141
 
-### M2-W148 · active
+### M2-W148 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (ii). Write $G=\wp_{s}(p)-z_{s,1}^{-2}$ near the corner circle of $P_{1}$; by the step above $G$ and $\partial_{s}G$ are continuous near that circle and on it. At each time $s$ and for $k=2,3,4$, the function $\wp_{s}-e_{k}$ on $E$ has the divisor $2P_{k}-2P_{1}$ (the second step of the proof of Proposition~\ref{prop:fibre}). Its translate $p\mapsto\wp_{s}(p+P_{k})-e_{k}$ is again an elliptic function, with the divisor moved as adding $P_{k}$ moves the corners; adding $P_{k}$ exchanges $P_{1}$ with $P_{k}$ and the other two corners with one another (\texttt{L9\_translate}), so that the divisor is $2P_{1}-2P_{k}$. The product of the two has the divisor zero (\texttt{L9\_product\_zero}): it is an elliptic function with no pole and no zero, and so a constant $c_{k}(s)\neq0$ \cite[\S20.12]{WhittakerWatson}. In the same way $(\wp_{s}')^{2}$ divided by $(\wp_{s}-e_{2})(\wp_{s}-e_{3})(\wp_{s}-e_{4})$ has the divisor zero (\texttt{L9\_square\_zero}) and is a constant $c_{0}(s)\neq0$. The numbers $c_{k}(s)$ and $c_{0}(s)$ are the values of these functions at the point $(\tfrac14,\tfrac14)$, which with its translates by the corners is not a corner; by (i) they are continuous in $s$ with continuous derivatives. Near the corner circle of $P_{1}$ and away from it, $\wp_{s}-e_{k}=z_{s,1}^{-2}\bigl(1+z_{s,1}^{2}(G-e_{k})\bigr)$. Near the corner circle of $P_{k}$ and away from it, $z_{s,1}(p-P_{k})=z_{s,k}(p)$, and by the constant product
@@ -2233,7 +2233,7 @@ Near the corner circle of $P_{j}$, $j\neq1,k$, and on it, $\wp_{s}-e_{k}$ is con
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W142; the PI told in plain English in the closing list of chat C8b2c; Decision Log P251)
 - **Retires / retired by:** retires M2-W142
 
-### M2-W149 · active
+### M2-W149 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iii) and (iv). At each time $s$, $m_{D}$ is the function named for $D$ in Proposition~\ref{prop:fibre}(iv) for $(E,J_{s})$ with the coordinate $z_{s}$, and by the third step of the proof of that proposition multiplication by it is an isomorphism of $\mathcal{O}(D)$ onto $\mathcal{O}(3P_{4})$ of $(E,J_{s})$ that covers the identity of $E$ and carries differentiable sections onto differentiable sections, $\bar\partial$ to $\bar\partial$ and the lift with two states on the pillowcase to the lift with two states on the pillowcase. In the frames $1$ the map is multiplication by $m_{D}$, and from the frame $z_{s,i}^{-a_{i}}$ to the frame $z_{s,i}^{-b_{i}}$ it is multiplication by the function $h$ of (ii), taken on the corner circle with its limit; by (ii) both are continuous in $(p,s)$ with no zero. By (i), and since $M_{0}^{3}$ leaves each corner in place, $m_{D}(p,s+3L)=m_{D}(M_{0}^{3}p,s)$, so that the map respects the join of Definition~\ref{def:twisttime}. It is therefore an isomorphism of $\mathcal{O}_{Y}(D)$ onto $\mathcal{O}_{Y}(3P_{4})$ that covers the identity of $Y$, and at each time it carries the lift with two states on the pillowcase to the lift with two states on the pillowcase. At each time $m_{D}$ and $h$ are holomorphic, and their derivatives in $z_{s}$ are continuous in $(p,s)$: that of $\wp_{s}$ is $\wp_{s}'$; that of $\wp_{s}'$ is, by the constant $c_{0}$ of the step above, $\tfrac12c_{0}(s)$ times the sum of the three products of two of the $\wp_{s}-e_{k}$; that of $G$ is $\wp_{s}'+2z_{s,1}^{-3}$, continuous near the corner circle of $P_{1}$ and on it by the first step; and that of the $h$ of the fifth divisor is that of $q$ divided by $2h$. For $f$ continuous with derivatives along the fibre that are continuous in $(p,s)$, so therefore is $m_{D}f$, and in the same way so is $f/m_{D}$: the map carries the sections differentiable along the fibre onto the sections differentiable along the fibre, and, since $\partial(m_{D}f)/\partial\bar z_{s}=m_{D}\,\partial f/\partial\bar z_{s}$, it carries $\bar\partial$ to $\bar\partial$. This is (iii). For (iv): let $\beta$ be an isomorphism as in (iv). For $w\neq0$ in the fibre of $\mathcal{O}_{Y}(D)$ over $y$, $\beta(w)=c(y)\,m_{D}w$ for a number $c(y)\neq0$ that does not depend on $w$, and $c\colon Y\to\C\setminus\{0\}$ is continuous. The frames $\varepsilon$ of $\mathcal{O}_{Y}(D)$ are differentiable along the fibre with $\bar\partial\varepsilon=0$; so are their images $m_{D}\varepsilon$ under the map of (iii), and their images $c\,m_{D}\varepsilon$ under $\beta$. In the frames of $\mathcal{O}_{Y}(3P_{4})$ the function of $m_{D}\varepsilon$ is $m_{D}$ or $h$, at each time holomorphic with no zero, and that of $c\,m_{D}\varepsilon$ is $c$ times it; so at each time $c$ is continuously differentiable on $E$ with $\partial c/\partial\bar z_{s}=0$ at every point, and as in the last step of the proof of Proposition~\ref{prop:fibre} it is an elliptic function with no pole, and so a constant \cite[\S20.12]{WhittakerWatson}. So $c$ depends on the time alone.
@@ -2247,7 +2247,7 @@ Near the corner circle of $P_{j}$, $j\neq1,k$, and on it, $\wp_{s}-e_{k}$ is con
 - **Confirmed:** checked, not read back, 19 November 2026 (a correction of the checked step M2-W143; the PI told in plain English in the closing list of chat C8b2c; Decision Log P251)
 - **Retires / retired by:** retires M2-W143
 
-### M2-W150 · active
+### M2-W150 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 takes the covering torus with a complex structure, ``Let $E$ be the covering torus of the pillowcase with a complex structure for which the fold is $\iota(z)=-z$'', and says of it: ``The counts below do not depend on which such complex structure is taken.'' (M1, Section~7.4). It writes the states of its smallest case with the Weierstrass function of that torus: ``Take $D=3P_{4}$, and write $\wp$ for the Weierstrass function of $E$ and $e_{4}=\wp(P_{4})$.'' and ``The three states are $1$, $1/(\wp-e_{4})$ and $\wp'/(\wp-e_{4})^{2}$.'' (M1, Section~7.4). M1 has no sentence that says how the Weierstrass function changes when the complex structure of $E$ changes.
@@ -2261,7 +2261,7 @@ M1 takes the covering torus with a complex structure, ``Let $E$ be the covering 
 - **Confirmed:** Decision Log P252, 19 November 2026 (the corrected wording put to the PI in the closing list, its item 1, its first sentence shown as worded; the PI: "1 to 12 confirmed, commit and push")
 - **Retires / retired by:** retires M2-W139
 
-### M2-W151 · active
+### M2-W151 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 M1 names space and the two factors of the base by what they are. Of space: ``So $\Sigma=S^{3}=\mathrm{Sp}(1)$, the unit quaternions, and the block is modelled on $\Hquat^{\times}=\R_{>0}\times S^{3}$.'' (M1, Proposition~7.9). Of the base: ``The space of complex lines in $\C^{3}$ is $\CPtwo=U(3)/(U(1)\times U(2))=SU(3)/U(2)$'' (M1, Proposition~7.2), and ``The sphere is the complex projective line'' (M1, Section~7.4); Definition~\ref{def:spinorwhole} takes on each its complex structure. Of the almost-quaternionic structure on time and space M1 says: ``it therefore carries no information there, and the time--space block $T\times\Sigma$ is such a piece'' (M1, Remark~6.2). M1 gives no formula for lengths on space or on the base (Section~\ref{sec:warp}).
@@ -2275,7 +2275,7 @@ M1 names space and the two factors of the base by what they are. Of space: ``So 
 - **Confirmed:** Decision Log P254, 19 November 2026 (read back by CLAUDE.md §3; the PI: "log the six sentences, verdicts stand, close the chat.")
 - **Retires / retired by:** none
 
-### M2-W152 · active
+### M2-W152 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{definition}[the twist over the unfolded geometry; the operator $\bar\partial_{B}$ of the base]\label{def:dbarbase}
@@ -2291,7 +2291,7 @@ Let $\widetilde{M}$ be the unfolded geometry (Definition~\ref{def:unfolded}) wit
 - **Confirmed:** Decision Log P254, 19 November 2026 (read back by CLAUDE.md §3; the PI: "log the six sentences, verdicts stand, close the chat.")
 - **Retires / retired by:** none
 
-### M2-W153 · active
+### M2-W153 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{definition}[$\bar\partial$ along the fibre, over the unfolded geometry]\label{def:dbarwhole}
@@ -2307,7 +2307,7 @@ Let $S_{D}$ be as in Definition~\ref{def:dbarbase}. For a section $\psi$ of $S_{
 - **Confirmed:** Decision Log P254, 19 November 2026 (read back by CLAUDE.md §3; the PI: "log the six sentences, verdicts stand, close the chat.")
 - **Retires / retired by:** none
 
-### M2-W154 · active
+### M2-W154 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 \begin{proposition}[the base and the whole geometry]\label{prop:wholesupply}
@@ -2337,7 +2337,7 @@ Let $\widetilde{M}$, $\widetilde{J}$, $B$, $D$, $\mathcal{O}_{\widetilde{M}}(D)$
 - **Confirmed:** checked, not read back, 19 November 2026 (told to the PI in plain English in the read-back, P254)
 - **Retires / retired by:** retired by M2-W160 (P255)
 
-### M2-W156 · active
+### M2-W156 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (ii) and (iii). Let $\Theta$ be as in (ii) and $\psi$ a section of $S_{D}$. The image of $\psi$ is the section $\Theta\circ\psi\circ g^{-1}$, $g$ being the map $(y,u,b)\mapsto(\gamma(y,u),b)$, and its restriction to the base over $\gamma(y,u)$ is $b\mapsto(\theta_{y,u}\otimes1)\,\psi(y,u,b)$. In bases of $V_{y,u}$ and of $V'_{\gamma(y,u)}$ the components of this form are sums of those of the restriction of $\psi$ with coefficients, the entries of the matrix of $\theta_{y,u}$, that do not depend on $b$; so they have continuous first derivatives if those of $\psi$ have, their parts of each type are the same sums of the parts of that type, and, the exterior derivative being linear, so are their exterior derivatives. Hence $\bar\partial_{B}$ of the image is the image of $\bar\partial_{B}\psi$. This is (ii). In (iii) the maps of (c) are as in (ii) with the two divisors exchanged, and that of (d) with the bundle made for $\widetilde{J}'$ in the second place. For (a): the fold of $\widetilde{M}$ is the fold of $Y$ and the identity on $S^{3}\times B$ (Definition~\ref{def:unfolded}); $\iota^{*}$ is the identity on the forms of time, of space and of the base (Definition~\ref{def:spinorwhole}) and the pull-back by the fold of $Y$ on those along the fibre; and the first and the second lift carry the fibre of $\mathcal{O}_{Y}(D)$ over $y$ to that over the image of $y$ under the fold. So $\iota^{*}\otimes\lambda$ is $\theta_{y,u}\otimes1$, with $\gamma(y,u)$ the image of $y$ under the fold, with $u$. For (b): multiplication by $m_{D}$ in the frames $1$ is a linear map of the fibre of $\mathcal{O}_{Y}(D)$ over $y$ onto that of $\mathcal{O}_{Y}(3P_{4})$ over $y$ (Proposition~\ref{prop:fivetime}(iii)), and $\gamma$ is the identity. For (c): $\tau$ is $\tau_{Y}$ on $Y$ and the identity on $S^{3}\times B$ (Definition~\ref{def:step}), so that $(\tau^{-1})^{*}$ is the identity on $\Lambda^{0,*}_{b}$ and, on the forms along the fibre and of time and of space, a linear map that depends on $(y,u)$ alone; $\nu_{D}$ carries the fibre of $\mathcal{O}_{Y}(D')$ over $y$ onto that of $\mathcal{O}_{Y}(D)$ over $\tau_{Y}(y)$ (Proposition~\ref{prop:fibretime}(iv)); and a function of the time and of the point of space alone multiplies $\theta_{y,u}$ by a number that does not depend on $b$. Here $\gamma(y,u)$ is $\tau_{Y}(y)$ with $u$. For (d): the isomorphism of Proposition~\ref{prop:whole}(vi) is the pull-back of an isomorphism between the two bundles of forms on $T\times S^{3}$, tensored with the identity on the other factors and on the line (the last step of the proof of that proposition); it does not depend on $b$, and $\gamma$ is the identity.
@@ -2365,7 +2365,7 @@ Let $\widetilde{M}$, $\widetilde{J}$, $B$, $D$, $\mathcal{O}_{\widetilde{M}}(D)$
 - **Confirmed:** checked, not read back, 19 November 2026 (told to the PI in plain English in the read-back, P254)
 - **Retires / retired by:** retired by M2-W161 (P255)
 
-### M2-W158 · active
+### M2-W158 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 After Proposition~\ref{prop:fivetime} it was said that nothing is said there of space, of the base, or of the unfolded geometry as a whole. By Proposition~\ref{prop:wholesupply}(i), on the base $\bar\partial_{B}$ is made from the complex structures of $\CPtwo$ and of $\Stwo$ and from the exterior derivative on $B$, and no length enters it. Along the fibre, $\bar\partial$ is made at each time from $J_{s}$ and $D$ (Proposition~\ref{prop:fibre}(i)), and $J_{s}$ is the only complex structure on the tangent planes of the fibre that keeps the lengths of M1, Proposition~5.8, on the fibre at $s$ and the handedness of $(\theta_{\psi},\theta_{\omega})$ (Proposition~\ref{prop:fibretime}(i)); the derivative in $s$ is taken along $\partial_{s}$, which has length one in the lengths of M1, Proposition~5.8 (Proposition~\ref{prop:timedir}(i)). The lengths of M1, Proposition~5.8, on time together with the fibre therefore enter the operations made in this section; no length on space, on the base, or between the base and the fibre enters any of them. By Proposition~\ref{prop:wholesupply}(iii)(c) and~(iv), the lift of the step $(\tau^{-1})^{*}\otimes\nu_{D}$, multiplied by a continuous function with no zero that depends on the time and on the point of space alone, carries $\bar\partial_{B}$ to $\bar\partial_{B}$ and the $\bar\partial$ of Definition~\ref{def:dbarwhole} to itself. The constants $1$ and $-1$ are such functions: on the unfolded geometry, $\bar\partial_{B}$ and $\bar\partial$ along the fibre do not decide the sixth choice of this paper. No operation made in this section is an action of an element of the fibre algebra on a state, and nothing made in this section makes, from a state, a field on time and space.
@@ -2379,7 +2379,7 @@ After Proposition~\ref{prop:fivetime} it was said that nothing is said there of 
 - **Confirmed:** Decision Log P254, 19 November 2026 (read back by CLAUDE.md §3; the PI: "log the six sentences, verdicts stand, close the chat.")
 - **Retires / retired by:** none
 
-### M2-W159 · active
+### M2-W159 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 Proposition~\ref{prop:wholesupply} speaks of the unfolded geometry and of the directions along the base and along the fibre. No operation is made here that differentiates a state along space: to make one, the forms of type $(0,*)$ of time and of space at different points of space would have to be compared, and nothing in this section compares them; M1 singles out no complex structure on the directions of time and of space, and $J_{0}$ was fixed to write the spinors down (Definition~\ref{def:spinorwhole}). It is not shown here that what M1 gives makes such an operation, and it is not shown that it makes none. It is not shown that the maps of Proposition~\ref{prop:wholesupply}(iii) are the only ones that carry $\bar\partial_{B}$ to $\bar\partial_{B}$. Nothing is said here of $\bar\partial_{B}$ applied twice, of the order in which $\bar\partial_{B}$ and $\bar\partial$ along the fibre are applied, of how the functions $m_{D}$ are carried by the step, of the divisors of flux three whose odd corner is not $P_{4}$, or of whether what M1 gives singles out one of the functions $A$ of Proposition~\ref{prop:timedir}(v). This section does not fix which of the two pieces of M1's display is scaled, and by a function on which.
@@ -2392,7 +2392,7 @@ Proposition~\ref{prop:wholesupply} speaks of the unfolded geometry and of the di
 - **Failure test:** an entry of section `supply` that makes one of the things this sentence says is not made or not said.
 - **Confirmed:** Decision Log P254, 19 November 2026 (read back by CLAUDE.md §3; the PI: "log the six sentences, verdicts stand, close the chat.")
 - **Retires / retired by:** none
-### M2-W160 · active
+### M2-W160 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (i). Let $v_{1},\dots,v_{n}$ be a basis of $V_{y,u}$. A form $\varphi$ on $B$ with values in $V_{y,u}$ is $\sum_{k}\varphi_{k}v_{k}$ for forms $\varphi_{k}$ on $B$ with complex values, and its exterior derivative is $\sum_{k}(\mathrm{d}\varphi_{k})v_{k}$. For another basis $v'_{j}=\sum_{k}c_{jk}v_{k}$, with constants $c_{jk}$, and $\varphi=\sum_{j}\varphi'_{j}v'_{j}$, one has $\varphi_{k}=\sum_{j}c_{jk}\varphi'_{j}$ and, $\mathrm{d}$ being linear, $\mathrm{d}\varphi_{k}=\sum_{j}c_{jk}\,\mathrm{d}\varphi'_{j}$, so that $\sum_{k}(\mathrm{d}\varphi_{k})v_{k}=\sum_{j}(\mathrm{d}\varphi'_{j})v'_{j}$: the exterior derivative does not depend on the basis. Taking the part of a given type is linear as well, so that in the same way the parts of each type of $\varphi$, the sums of the parts of that type of the $\varphi_{k}$ times $v_{k}$, do not depend on the basis; with the two, $\bar\partial_{B}$ does not depend on the basis. The exterior derivative of a form on $B$ does not depend on the coordinates in which it is computed (the chain rule). A one-form $\alpha$ at a point of $B$ is of type $(0,1)$ when $\alpha(J\xi)=-i\,\alpha(\xi)$ for every tangent vector $\xi$, $J$ being the complex structure of $B$, that of $\CPtwo$ on the one factor and that of $\Stwo$ on the other, and of type $(1,0)$ when $\alpha(J\xi)=i\,\alpha(\xi)$; every one-form is in one way the sum of one of each type, a form of degree $q$ is of type $(0,q)$ when it is a sum of products of $q$ forms of type $(0,1)$, and every form of degree $q+1$ is in one way a sum of forms that are sums of products of $a$ forms of type $(1,0)$ and $q+1-a$ of type $(0,1)$, $a=0,\dots,q+1$; its part of type $(0,q+1)$ is the term with $a=0$. So $\bar\partial_{B}$ is made from $J$ and the exterior derivative, and from no length. $B$ has real dimension $4+2$, and so complex dimension three (certificate \texttt{L10\_base\_dim}). Its forms of type $(0,1)$ at a point are a space of dimension three, and those of type $(0,q)$ a space whose dimension is the number of ways of taking $q$ of three, which is $1,3,3,1$ for $q=0,1,2,3$ and $0$ for $q=4$ (\texttt{L10\_types}). The exterior derivative of a form of type $(0,q)$ has degree $q+1$, and $\bar\partial_{B}$ takes its part of type $(0,q+1)$, which for $q=3$ is zero.
@@ -2406,7 +2406,7 @@ Proposition~\ref{prop:wholesupply} speaks of the unfolded geometry and of the di
 - **Confirmed:** checked, not read back, 19 November 2026 (in the place of M2-W155 after the fresh reader's check, P255: one sentence added, that the parts of each type do not depend on the basis, which M2-W155 did not print though M2-W154(i) says it of $\bar\partial_{B}$; the tangent vector written $\xi$, the letter $v$ being the basis; told to the PI in the closing list)
 - **Retires / retired by:** retires M2-W155
 
-### M2-W161 · active
+### M2-W161 · retired (reset, Decision Log P264)
 - **Statement (as it will be printed):**
 ```tex
 (iv). The $\bar\partial$ of Definition~\ref{def:dbarwhole} is, over each $(s,u,b)$, the $\bar\partial$ of Definition~\ref{def:dbar} for $J_{s}$ applied to components in a basis of $W_{s,u,b}$; as in the first step it does not depend on the basis, $\bar\partial$ being linear, and a linear map of $W_{s,u,b}$ that does not depend on the point $p$ of the fibre carries differentiable components to differentiable components and commutes with it. For (a): in the frame $1$ the first lift carries a section $f$ to $z\mapsto f(-z)$, and near a corner it carries the frame $z_{i}^{-a_{i}}$ to a constant multiple of itself (the proof of Proposition~\ref{prop:fibre}), so that it carries differentiable sections to differentiable sections, and so does the second lift, which is the first followed by multiplication by $-1$; $\bar\partial$ commutes with the action on sections of the first and of the second lift of the fold (Proposition~\ref{prop:fibre}(iii)), and on $W_{s,u,b}$ the lift of the fold is the identity. For (b): at each time, multiplication by $m_{D}$ carries $\mathcal{O}(D)$ onto $\mathcal{O}(3P_{4})$, differentiable sections onto differentiable sections and $\bar\partial$ to $\bar\partial$ (Proposition~\ref{prop:fibre}(iv), for $J_{s}$), and it does not act on $W_{s,u,b}$. For (c): $\nu_{D}$ carries sections differentiable along the fibre onto sections differentiable along the fibre and, the $(0,1)$-forms being carried by the pull-back by $\tau_{Y}^{-1}$, $\bar\partial$ to $\bar\partial$ (Proposition~\ref{prop:fibretime}(iv)), which is used here at each time; on $W_{s,u,b}$ the map $(\tau^{-1})^{*}$ is linear and does not depend on $p$; and a function of the time and of the point of space alone is, over each $(s,u,b)$, a constant. For (d): the isomorphism of Proposition~\ref{prop:whole}(vi) is pulled back from $T\times S^{3}$; over each $(s,u,b)$ it is a linear map of $W_{s,u,b}$ that does not depend on $p$, and the identity on the other factor.
@@ -2420,3 +2420,121 @@ Proposition~\ref{prop:wholesupply} speaks of the unfolded geometry and of the di
 - **Confirmed:** checked, not read back, 19 November 2026 (in the place of M2-W157 after the fresh reader's check, P255: for (a) the clause that the lifts carry differentiable sections to differentiable sections is now printed, from M2-W110 as logged; told to the PI in the closing list)
 - **Retires / retired by:** retires M2-W157
 
+
+### M2-W162 · active
+- **Statement (as it will be printed):**
+```tex
+M1, Definition~2.1, has: ``the image under $\pi$ of a point or of a subset of $M$ being its \emph{shadow}''; ``(ii) the structure carried by the internal piece is not carried to itself by one step of the drive of the fourth axiom, so that what is seen of one thing is not the same at every step''; and ``(iii) the internal piece has at least two independent states at rest with the same shadow: states that differ only in the internal piece.'' Of a state at rest M1 says that its shadow is ``what is left of it when the internal piece is forgotten'' (M1, Section~2.1), and that two states on the pillowcase for the same lift of the fold ``have the same shadow: they differ only in the internal piece'' (M1, Definition~7.4). The shadow that M1 gives by a formula is that of a point or of a subset.
+```
+- **Place:** `conditions 060`; after M2-W087, the first entry of S07
+- **Step:** S07
+- **Rests on:** M1, Definition 2.1 (`def:A5`), ll.154, 156, 158; Section 2.1, l.163; Definition 7.4 (`def:states`), l.840
+- **Mark:** READ (M1 v7.3, ll.154, 156, 158, 163, 840); quotations only. The last sentence is a statement of what M1 has: M1 was searched for "shadow", singular and plural (ll.74, 98, 99, 106, 135, 137, 139, 141, 145, 154, 158, 163, 165, 166, 244, 840, 947, 1121, 1222, 1233); the one formula is at l.154 (repeated in the glossary, l.1233); ll.163 and 840 speak of the shadow of a state at rest in words. Confirmed by read-back (P265).
+- **Tag:** none
+- **Failure test:** a line of M1 that gives by a formula the shadow of a state; or a quotation that is not word for word
+- **Confirmed:** Decision Log P265, 20 November 2026 (the read-back of S07; the PI: "A to E confirmed as worded, D(ii) "has a solution" - proceed")
+- **Retires / retired by:** none
+
+### M2-W163 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{definition}[the shadow of a state]\label{def:shadowstate}
+Let $\psi$ be a state of the geometry, read through the lift of the fold (Definition~\ref{def:unknown}). The \emph{shadow} of $\psi$ is the shadow, as M1, Definition~2.1(i), has it, of the set of points of the geometry at which $\psi$ is not zero: the set of points $(s,x)$ of time and space such that $\psi$ is not zero at some point $(p,s,x,b)$ of $\widetilde{M}$, $p\in E$, $b\in\CPtwo\times\Stwo$, the time $s$ being taken on the time circle of three steps. That the shadow of a state is the shadow of the set on which it is not zero is a choice and is not derived: it is the eighth choice of this paper. Clause~(b) of M1, Definition~3.2, is its ground: it brings in no object that M1 does not have. The shadow of a state records where in time and space the state is present; the values of the state, and any field on time and space, are not part of it.
+\end{definition}
+```
+- **Place:** `conditions 070`; after M2-W162
+- **Step:** S07
+- **Rests on:** M2-W162; M1, Definition 2.1(i), l.154; M2-W052, M2-W085; clause (b) of M1, Definition 3.2
+- **Mark:** DECLARED: a reading, the eighth choice of this paper (Minimality M2-8), confirmed by read-back (P265); the PI's choice of option 1 of choice 1 of P222 (P256), "shadow" as M1 has it (P262). The alternatives not taken are options 2 and 3 of choice 1 of P222. The cost was told to the PI in the words of P222 ("Its values, and any field in four dimensions, are not part of the shadow."); the last sentence of the statement says it in the statement's own words ("any field on time and space"), as the PI confirmed them (corrected after the fresh reader's check, chat C8b5). The fold of the unfolded geometry is the identity on time and space (M2-W052), so the set is the image under M1's $\pi$ of a subset of the geometry of M1, Theorem 8.1.
+- **Tag:** none (a definition)
+- **Failure test:** a later step of M2 that needs, of what is seen of a state, its values or a field on time and space; then the choice is changed to option 2 of P222 and every entry that rests on this one is flagged
+- **Confirmed:** Decision Log P265, 20 November 2026 (the read-back of S07; the PI: "A to E confirmed as worded, D(ii) "has a solution" - proceed")
+- **Retires / retired by:** none
+
+### M2-W164 · active
+- **Statement (as it will be printed):**
+```tex
+Let $\psi$ be a state. The section $((\tau^{-1})^{*}\otimes\nu_{1})\circ\psi\circ\tau^{-1}$ of $S_{2}$ that one step makes of $\psi$ (Proposition~\ref{prop:step}(iv)) is not zero at $\tau(m)$ exactly when $\psi$ is not zero at $m$, the lift of the step being linear and one-to-one on each fibre (Definition~\ref{def:step}). Since $\tau(p,s,r)=(M_{0}p,s-L,r)$, the set of points $(s,x)$ of time and space over which that section is not zero is the shadow of $\psi$ moved by one step in time: it is the set of the points $(s-L,x)$, $(s,x)$ in the shadow of $\psi$. It is called here the \emph{shadow of $\psi$ after one step}.
+```
+- **Place:** `conditions 080`; after M2-W163
+- **Step:** S07
+- **Rests on:** M2-W069 (the step and its lift), M2-W082(iv), M2-W163
+- **Mark:** CHECKED by hand, in full in the statement: a map that is linear and one-to-one on each fibre carries a non-zero value to a non-zero value and zero to zero; $\tau$ is the identity on space and moves the time by $-L$. Not a reading, confirmed with the read-back (P265). It has no finite part and no Lean certificate. It defines the phrase "shadow after one step".
+- **Tag:** none
+- **Failure test:** a lift of the step, in the sense of M2-W069, that is zero on a non-zero value; or $\tau$ moving a point of space
+- **Confirmed:** Decision Log P265, 20 November 2026 (the read-back of S07; the PI: "A to E confirmed as worded, D(ii) "has a solution" - proceed")
+- **Retires / retired by:** none
+
+### M2-W165 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{definition}[the fifth axiom for an equation]\label{def:A5eq}
+An equation for a state (Definition~\ref{def:family}) \emph{meets the fifth axiom} if (i) it has two linearly independent solutions with the same shadow; and (ii) it has a solution whose shadow after one step is not its shadow. That the fifth axiom asks this of the equation is a choice and is not derived: it is the ninth choice of this paper. Clause~(i) is M1, Definition~2.1(iii), asked of the solutions, and clause~(ii) is the last words of M1, Definition~2.1(ii), ``what is seen of one thing is not the same at every step'', asked of a solution. The first words of M1, Definition~2.1(ii), on the structure, are met by what is given, whichever equation is taken (Proposition~\ref{prop:step}(iv)).
+\end{definition}
+```
+- **Place:** `conditions 090`; after M2-W164
+- **Step:** S07
+- **Rests on:** M2-W086, M2-W163, M2-W164; M1, Definition 2.1(ii) and (iii), ll.156, 158; M2-W082(iv)
+- **Mark:** DECLARED: a reading, the ninth choice of this paper (Minimality M2-9), confirmed by read-back (P265); the PI's choice of option 2 of choice 2 of P222 (P256); P222 has "at least two linearly independent solutions" where the statement, as the PI confirmed it (P265), has "it has two linearly independent solutions", which is met by any larger number (noted after the fresh reader's check, chat C8b5). The alternatives not taken are options 1, 3 and 4 of choice 2 of P222, and, for clause (ii), "every solution other than zero" in the place of "it has a solution": the PI confirmed "has a solution" (P265). Told to the PI before confirming, as the architect's reading: clause (ii) can be met only by a solution that is zero on the whole internal piece over some set of points of time and space; an equation all of whose solutions have a shadow that a shift by one step of time leaves unchanged does not meet it.
+- **Tag:** none (a definition)
+- **Failure test:** no candidate of the list of the principle (DAG \S1) meets clauses (i) and (ii) together: then the choice comes back to the PI
+- **Confirmed:** Decision Log P265, 20 November 2026 (the read-back of S07; the PI: "A to E confirmed as worded, D(ii) "has a solution" - proceed")
+- **Retires / retired by:** none
+
+### M2-W166 · active
+- **Statement (as it will be printed):**
+```tex
+Nothing is said here of whether any equation for a state meets the fifth axiom, of whether the two solutions of clause~(i) are at rest, or of a field on time and space made from a state.
+```
+- **Place:** `conditions 100`; after M2-W165, the last entry of S07
+- **Step:** S07
+- **Rests on:** M2-W163, M2-W165
+- **Mark:** READ against M2-W162 to M2-W165 as logged; it carries no reading; confirmed by read-back (P265).
+- **Tag:** none
+- **Failure test:** a sentence of M2-W162 to M2-W165 that says that an equation meets the fifth axiom, that the two solutions are at rest, or that makes a field on time and space from a state
+- **Confirmed:** Decision Log P265, 20 November 2026 (the read-back of S07; the PI: "A to E confirmed as worded, D(ii) "has a solution" - proceed")
+- **Retires / retired by:** none
+
+### M2-W167 · active
+- **Statement (as it will be printed):**
+```tex
+\begin{proposition}[the maps]\label{prop:maps}
+Let $\widetilde{M}$, $\widetilde{J}$, $\tau$, $N_{4}$, $\lambda_{4}$ and $S_{4}$ be as in Proposition~\ref{prop:step}, and $s$, $x$, $y$, $L$, $\kappa$ and $S$ as in M1, Proposition~5.8. (i) The fold keeps the lengths of M1, Proposition~5.8, keeps $\widetilde{J}$, commutes with $\tau$, and carries $S_{4}$ to itself by its lift of the fold. (ii) The maps $\tau$ and $\tau$ applied twice keep those lengths and $\widetilde{J}$ and commute with $\tau$ (Proposition~\ref{prop:step}(i)). Neither has a lift from $N_{4}$ to itself that carries $\lambda_{4}$ to $\lambda_{4}$ or to $-\lambda_{4}$: they carry the corner circle of $P_{4}$ to that of $P_{2}$ and to that of $P_{3}$. Applied three times $\tau$ is the identity. (iii) For a real number $c$ the map $(p,s,r)\mapsto(p,s+c,r)$ multiplies the lengths along $x$ by $e^{\kappa c}$ and those along $y$ by $e^{-\kappa c}$; it keeps the lengths of M1, Proposition~5.8, only if $c=0$. (iv) The map $R(p,s,r)=(Sp,-s,r)$, time run backwards together with the quarter-turn, is well defined on $\widetilde{M}$, since $M_{0}^{3}SM_{0}^{3}=S$. It keeps the lengths of M1, Proposition~5.8, and commutes with the fold. It carries the corner circles of $P_{1}$ and of $P_{4}$ to themselves and exchanges those of $P_{2}$ and $P_{3}$. It is holomorphic from the fibre at the time $s$ to the fibre at the time $-s$, with $z_{-s}\circ R=-i\,z_{s}$. Applied twice it is the fold, and $R\tau R^{-1}=\tau^{-1}$. It carries $\partial_{s}$ to $-\partial_{s}$ and is the identity on space, so that it reverses the handedness of the directions of time and of space and does not keep $J_{0}$. \rigD
+\end{proposition}
+```
+- **Place:** `supply 010`; the first entry of the section, and of card T1
+- **Step:** T1
+- **Rests on:** M1, Proposition 5.8 (`prop:A2`), l.704; Remark 3.4 (`rem:mirror`), l.291; the paragraph after Corollary 7.7, l.949; Proposition 4.4 (`prop:threecycle`); M2-W039, M2-W048, M2-W052, M2-W053, M2-W069, M2-W082; M2-W168
+- **Mark:** CHECKED: `papers/M2/checks/T1_maps.py` (21 checks, all pass: the matrix identities, the corners and the signs, the lengths under each map, the coordinate $z_{s}$ under each map) and `MEFProof/Paper_M2/M2_L11_maps.lean` (the integer part: `L11_S_conj_M0`, `L11_join`, `L11_glue`, `L11_S_sq`, `L11_S_corners`, `L11_M0_corners`, `L11_signs_S`, `L11_signs_M0cubed`, `L11_signs_M0`, `L11_signs_M0sq`); of part (i), that the fold keeps the lengths is CHECKED by the script, that it keeps $\widetilde{J}$ is READ at M2-W053 ("The fold commutes with $\widetilde{J}$"), that it commutes with $\tau$ is READ at M2-W082(i), and that it carries $S_{4}$ to itself by its lift is READ at M2-W082(ii); the first sentence of (ii) is READ at M2-W082(i) for $\tau$, and for $\tau$ applied twice follows because a map that keeps the lengths and $\widetilde{J}$, applied twice, keeps them (hand); part (iii) uses $\kappa\neq0$ (M1, Definition 2.4, l.190) (corrected after the fresh reader's check, chat C8b5); the second sentence of (ii) is M2-W168 with the corners of the script (for $\tau$ it is also M2-W082(iv)); in (iv), that $R$ is $(s,x,y)\mapsto(-s,-y,x)$ in the coordinates of M1, Proposition 5.8, is because $v_{2}=Sv_{1}$ and $S^{2}=-1$ (hand, in full here), and that $R$ commutes with the fold because $S$ is linear; "does not keep $J_{0}$": $J_{0}\partial_{s}=e_{1}$ (M2-W053), $R$ carries $\partial_{s}$ to $-\partial_{s}$ and $e_{1}$ to $e_{1}$. Confirmed by read-back (P267). Not claimed: that $R$ carries, or does not carry, $S_{4}$ with its lift of the fold to itself (M2-W169); anything of maps of space or of the base.
+- **Tag:** [D]: computed from M1, Proposition 5.8, and the entries cited, under the numbered choices M2-2 to M2-5 that those entries carry
+- **Failure test:** a failing line of the script or of the certificate; a lift of $\tau$ or of $\tau$ applied twice from $N_{4}$ to itself that carries $\lambda_{4}$ to $\pm\lambda_{4}$; a real $c\neq0$ whose shift keeps the lengths
+- **Confirmed:** Decision Log P267, 20 November 2026 (the read-back of T1; the PI: "F, G and H confirmed as worded - proceed")
+- **Retires / retired by:** none
+
+### M2-W168 · active
+- **Statement (as it will be printed):**
+```tex
+Let $f$ be a map of $\widetilde{M}$ that commutes with the fold and carries the corner circle of $P_{1}$ to itself, and let $\nu$ be a continuous map of $N_{4}$ to itself that carries the fibre over each point $m$ linearly and one-to-one onto the fibre over $f(m)$, with $\nu\lambda_{4}=\epsilon\lambda_{4}\nu$, $\epsilon=\pm1$. Over a point $m$ of a corner circle $C$, on which $\lambda_{4}$ has the sign $\epsilon_{C}$, this gives $\epsilon_{C}=\epsilon\,\epsilon_{f(C)}$. For $C$ the corner circle of $P_{1}$ it gives $\epsilon=1$, and then for that of $P_{4}$ it gives $-1=\epsilon_{f(C)}$: $f$ carries the corner circle of $P_{4}$ to itself.
+```
+- **Place:** `supply 020`; after M2-W167; the step of proof for part (ii)
+- **Step:** T1
+- **Rests on:** M2-W052 (the sign of a lift of the fold over a corner circle); M2-W082 (the signs of $\lambda_{4}$: $-1$ on the corner circle of $P_{4}$, $+1$ on the other three)
+- **Mark:** CHECKED by hand, in full in the statement; it brings in no reading; confirmed with the read-back (P267). $f$ commuting with the fold carries points that the fold leaves in place to such points, hence corner circles to corner circles (M2-W052: the fold leaves in place exactly the points over the four corner circles).
+- **Tag:** none (a step of proof)
+- **Failure test:** a map $f$ and a $\nu$ as in the statement with $f$ moving the corner circle of $P_{4}$
+- **Confirmed:** Decision Log P267, 20 November 2026 (the read-back of T1; the PI: "F, G and H confirmed as worded - proceed")
+- **Retires / retired by:** none
+
+### M2-W169 · active
+- **Statement (as it will be printed):**
+```tex
+It is not shown here whether $R$ has a lift that carries $S_{4}$ with its lift of the fold to itself: Proposition~\ref{prop:whole}(vi) speaks of structures on the directions of time and of space that keep the handedness of $J_{0}$, and $R$ reverses it. M1 has, of $\Mtwelve$ run backwards with the quarter-turn, ``that it carries every datum of $\Mtwelve$ to itself is not shown here'' (M1, Remark~3.4). No map of space or of the base is tested here: M1 gives lengths by a formula in Proposition~5.8 only.
+```
+- **Place:** `supply 030`; after M2-W168, the last entry of card T1
+- **Step:** T1
+- **Rests on:** M2-W054(vi); M1, Remark 3.4, l.291; M1, l.704; M2-W167
+- **Mark:** READ (M2-W054(vi) as logged; M1 l.291, word for word); the last sentence is a statement of what M1 has: M1 was searched for "length", "metric", "isometr", "Fubini", "round sphere" and "Riemannian" (ll.55, 143, 163, 175, 187, 190, 225, 267, 287, 291, 381, 404, 607, 688, 695, 704, 724, 732, 755, 792, 1076, 1229, 1247, 1251, 1300, and the preamble ll.20, 22 and 23); a formula for lengths of the geometry stands at l.704 only (ll.225 and 792 give the length of an element of the algebra). Confirmed by read-back (P267).
+- **Tag:** none
+- **Failure test:** a line of M1 that gives by a formula lengths on space or on the base; an active entry that decides whether $R$ carries $S_{4}$ with its lift of the fold to itself
+- **Confirmed:** Decision Log P267, 20 November 2026 (the read-back of T1; the PI: "F, G and H confirmed as worded - proceed")
+- **Retires / retired by:** none
